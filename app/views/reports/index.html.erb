@@ -1,0 +1,63 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Report</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Hba1c</th>
+      <th>Ldc</th>
+      <th>Pa</th>
+      <th>Medical adhesion</th>
+      <th>Algorithm adherence</th>
+      <th>Use aas</th>
+      <th>Use stain</th>
+      <th>Pains feet hands</th>
+      <th>Waist measured ratio</th>
+      <th>Microalbuminuria evaluation</th>
+      <th>Blurred vision</th>
+      <th>Periodontal disease evaluation</th>
+      <th>Depression assessment</th>
+      <th>Presence stroke coronary heart disease</th>
+      <th>Influenza vaccination</th>
+      <th>H1n1 antipneumococcal</th>
+      <th>Participation diabetes nutritional education program</th>
+      <th>Smoker</th>
+      <th>Situation</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @reports.each do |report| %>
+      <tr>
+        <td><%= report.hba1c %></td>
+        <td><%= report.ldc %></td>
+        <td><%= report.pa %></td>
+        <td><%= report.medical_adhesion %></td>
+        <td><%= report.algorithm_adherence %></td>
+        <td><%= report.use_AAS %></td>
+        <td><%= report.use_stain %></td>
+        <td><%= report.pains_feet_hands %></td>
+        <td><%= report.waist_measured_ratio %></td>
+        <td><%= report.microalbuminuria_evaluation %></td>
+        <td><%= report.blurred_vision %></td>
+        <td><%= report.periodontal_disease_evaluation %></td>
+        <td><%= report.depression_assessment %></td>
+        <td><%= report.presence_stroke_coronary_heart_disease %></td>
+        <td><%= report.influenza_vaccination %></td>
+        <td><%= report.h1n1_antipneumococcal %></td>
+        <td><%= report.participation_diabetes_nutritional_education_program %></td>
+        <td><%= report.smoker %></td>
+        <td><%= report.situation %></td>
+        <td><%= link_to 'Show', report %></td>
+        <td><%= link_to 'Edit', edit_report_path(report) %></td>
+        <td><%= link_to 'Destroy', report, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Report', new_report_path %>

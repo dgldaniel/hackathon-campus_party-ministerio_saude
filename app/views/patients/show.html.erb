@@ -1,0 +1,28 @@
+<% if notice %>
+  <div class="notification is-primary">
+    <button class="delete"></button>
+    <p id="notice"><%= notice %></p>
+  </div>
+<% end %>
+<div class="box">
+  <div>
+    <strong>Email:</strong>
+    <%= @patient.email %>
+  </div>
+  <div>
+    <strong>Full name:</strong>
+    <%= @patient.full_name %>
+  </div>
+  <div>
+    <strong>Age:</strong>
+    <%= @patient.age %>
+  </div>
+  <% unless @patient.report.nil? %>
+    <div>
+      <strong>Situation:</strong>
+      <%= @patient.report.situation.round(3) %>
+    </div>
+  <% end %>
+</div>
+<%= link_to 'Edit', edit_patient_path(@patient), class: "button is-warning" %> |
+<%= link_to 'Back', patients_path, class: 'button is-info' %>

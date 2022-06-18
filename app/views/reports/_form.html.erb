@@ -1,0 +1,112 @@
+<%= form_with(model: report, local: true) do |form| %>
+  <% if report.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(report.errors.count, "error") %> prohibited this report from being saved:</h2>
+
+      <ul>
+        <% report.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :hba1c %>
+    <%= form.text_field :hba1c %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ldc %>
+    <%= form.text_field :ldc %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pa %>
+    <%= form.text_field :pa %>
+  </div>
+
+  <div class="field">
+    <%= form.label :medical_adhesion %>
+    <%= form.check_box :medical_adhesion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :algorithm_adherence %>
+    <%= form.check_box :algorithm_adherence %>
+  </div>
+
+  <div class="field">
+    <%= form.label :use_AAS %>
+    <%= form.check_box :use_AAS %>
+  </div>
+
+  <div class="field">
+    <%= form.label :use_stain %>
+    <%= form.check_box :use_stain %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pains_feet_hands %>
+    <%= form.check_box :pains_feet_hands %>
+  </div>
+
+  <div class="field">
+    <%= form.label :waist_measured_ratio %>
+    <%= form.check_box :waist_measured_ratio %>
+  </div>
+
+  <div class="field">
+    <%= form.label :microalbuminuria_evaluation %>
+    <%= form.check_box :microalbuminuria_evaluation %>
+  </div>
+
+  <div class="field">
+    <%= form.label :blurred_vision %>
+    <%= form.check_box :blurred_vision %>
+  </div>
+
+  <div class="field">
+    <%= form.label :periodontal_disease_evaluation %>
+    <%= form.check_box :periodontal_disease_evaluation %>
+  </div>
+
+  <div class="field">
+    <%= form.label :depression_assessment %>
+    <%= form.check_box :depression_assessment %>
+  </div>
+
+  <div class="field">
+    <%= form.label :presence_stroke_coronary_heart_disease %>
+    <%= form.check_box :presence_stroke_coronary_heart_disease %>
+  </div>
+
+  <div class="field">
+    <%= form.label :influenza_vaccination %>
+    <%= form.check_box :influenza_vaccination %>
+  </div>
+
+  <div class="field">
+    <%= form.label :h1n1_antipneumococcal %>
+    <%= form.check_box :h1n1_antipneumococcal %>
+  </div>
+
+  <div class="field">
+    <%= form.label :participation_diabetes_nutritional_education_program %>
+    <%= form.check_box :participation_diabetes_nutritional_education_program %>
+  </div>
+
+  <div class="field">
+    <%= form.label :smoker %>
+    <%= form.check_box :smoker %>
+  </div>
+
+  <div class="field">
+    <%= form.label :situation %>
+    <%= form.text_field :situation %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

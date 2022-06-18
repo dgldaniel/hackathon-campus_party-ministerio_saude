@@ -1,0 +1,5 @@
+vendor
+db/schema.rb
+db/migrate/*
+db/config/*
+bin

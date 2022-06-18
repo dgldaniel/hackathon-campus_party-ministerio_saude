@@ -1,0 +1,2 @@
+module IndividualRegistrationsHelper
+end

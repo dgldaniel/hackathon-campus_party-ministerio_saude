@@ -1,0 +1,92 @@
+<div class="tab">
+  <div class="field">
+    <%= form.label :full_name, class: 'label' %>
+    <div class="control">
+      <%= form.text_field :full_name, class: 'input' %>
+    </div>
+  </div>
+  <div class="field is-horizontal">
+    <div class="field-body">
+      <div class="field">
+        <%= form.label :email, class: 'label' %>
+        <div class="control">
+          <%= form.text_field :email, class: 'input' %>
+        </div>
+      </div>
+      <div class="field">
+        <%= form.label :age, class: 'label' %>
+        <div class="control">
+          <%= form.number_field :age, class: 'input' %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="field">
+    <label class="label">Gênero</label>
+    <div class="control">
+      <%= form.collection_radio_buttons :gender, @gender_types, :second, :first do |button| %>
+        <label class="radio">
+          <%= button.radio_button %>
+          <%= button.text %>
+        </label>
+      <% end %>
+    </div>
+  </div>
+  <%= form.fields_for :address do |address_form| %>
+    <div class="field">
+      <%= address_form.label :zip_code, class: 'label' %>
+      <div class="control">
+        <%= address_form.text_field :zip_code, class: 'input', maxlength: 9,  placeholder: '99999-999' %>
+      </div>
+    </div>
+    <div class="field is-horizontal">
+      <div class="field-body">
+        <div class="field">
+          <%= address_form.label :city, class: 'label' %>
+          <div class="control">
+            <%= address_form.text_field :city, class: 'input', readonly: true %>
+          </div>
+        </div>
+        <div class="field">
+          <%= address_form.label :state, class: 'label' %>
+          <div class="control">
+            <%= address_form.text_field :state, class: 'input', readonly: true %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="field is-horizontal">
+      <div class="field-body">
+        <div class="field">
+          <%= address_form.label :street, class: 'label' %>
+          <div class="control">
+            <%= address_form.text_field :street, class: 'input' %>
+          </div>
+        </div>
+        <div class="field">
+          <%= address_form.label :number, class: 'label' %>
+          <div class="control">
+            <%= address_form.number_field :number, class: 'input' %>
+          </div>
+        </div>
+        <label class="checkbox">
+          <input id="number-checkbox" type="checkbox">
+          Sem número
+        </label>
+      </div>
+    </div>
+    <div class="field">
+      <%= address_form.label :complement, class: 'label' %>
+      <div class="control">
+        <%= address_form.text_field :complement, class: 'input' %>
+      </div>
+    </div>
+  <% end %>
+  <div class="field">
+    <%= form.label :phone, class: 'label' %>
+    <div class="control">
+      <%= form.text_field :phone, class: 'input', placeholder: '(99) 99999-9999' %>
+    </div>
+  </div>
+</div>
+<!-- tab -->

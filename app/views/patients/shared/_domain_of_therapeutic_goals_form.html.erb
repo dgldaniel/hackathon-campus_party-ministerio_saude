@@ -1,0 +1,27 @@
+<div class="tab">
+  <div class="field">
+    <%= report_form.label :hba1c, class: 'label' %>
+    <div class="control">
+      <%= report_form.text_field :hba1c, class: 'input' %>
+    </div>
+  </div>
+  <div class="field">
+    <%= report_form.label :ldc, class: 'label' %>
+    <div class="control">
+      <%= report_form.text_field :ldc, class: 'input' %>
+    </div>
+  </div>
+  <div class="field">
+    <%= report_form.label :pa, class: 'label' %>
+    <div class="control">
+      <%= report_form.text_field :pa, class: 'input' %>
+    </div>
+  </div>
+  <div class="field">
+    <%= report_form.label :medical_adhesion, class: 'checkbox' do %>
+      <%= report_form.check_box :medical_adhesion %>
+      <%= translate 'activerecord.attributes.report.medical_adhesion' %>
+    <% end %>
+  </div>
+</div>
+<!-- tab -->

@@ -1,0 +1,43 @@
+<% if notice %>
+  <div class="notification is-primary is-light">
+    <button class="delete"></button>
+    <%= notice %>
+  </div>
+<% end %>
+<h1 class="subtitle is-1">Patients</h1>
+<%= form_tag(patients_path, method: :get, class: 'is-pulled-right', id: 'container-dropdown') do %>
+  <div class="select">
+    <%= select_tag :situation_options, options_for_select([['Situação ok', 'ok'], ['Precisa de atenção', 'warning'], ['Atenção urgente', 'bad']], selected: select_value_approppriate), include_blank: 'Todas as Situações' %>
+  </div>
+  <%= submit_tag 'Filtrar', name: nil, class: "button is-info" %>
+<% end %>
+<% if @patients.empty? %>
+  <h1>Sem Pacientes</h1>
+<% else %>
+  <table class="table is-narrow is-fullwidth">
+    <thead>
+      <tr>
+        <th>Email</th>
+        <th>Full name</th>
+        <th>Age</th>
+        <th>Situation</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @patients.each do |patient| %>
+        <tr>
+          <td><%= patient.email %></td>
+          <td><%= patient.full_name %></td>
+          <td><%= patient.age %></td>
+          <td><%= patient.report.nil? ? nil : patient.report.situation.round(3) %></td>
+          <td><%= link_to '<i class="fa fa-eye fa-2x"></i>'.html_safe, patient %></td>
+          <td><%= link_to '<i class="fa fa-edit fa-2x"></i>'.html_safe, edit_patient_path(patient) %></td>
+          <td><%= link_to '<i class="fa fa-trash fa-2x"></i>'.html_safe, patient, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% end %>
+<br>
+<%= link_to 'New Patient', new_patient_path, class: 'button is-link is-light' %>

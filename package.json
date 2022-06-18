@@ -1,0 +1,25 @@
+{
+  "name": "laila_diagnosis",
+  "private": true,
+  "scripts": {
+    "format-ruby": "./node_modules/.bin/prettier --write '**/*.rb'"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "@rails/actioncable": "^6.0.0",
+    "@rails/activestorage": "^6.0.0",
+    "@rails/ujs": "^6.0.0",
+    "@rails/webpacker": "4.2.2",
+    "apexcharts": "^3.35.3",
+    "bulma": "^0.8.2",
+    "bulma-steps-component": "^0.5.3",
+    "cep-promise": "^3.0.9"
+  },
+  "version": "0.1.0",
+  "devDependencies": {
+    "@prettier/plugin-ruby": "^3.1.2",
+    "prettier": "^2.7.0",
+    "prettier-plugin-erb": "^0.4.0",
+    "webpack-dev-server": "^3.10.3"
+  }
+}

@@ -1,0 +1,27 @@
+<div class="tab">
+  <div class="field">
+    <%= report_form.label :influenza_vaccination, class: 'checkbox' do %>
+      <%= report_form.check_box :influenza_vaccination %>
+      <%= translate 'activerecord.attributes.report.influenza_vaccination' %>
+    <% end %>
+  </div>
+  <div class="field">
+    <%= report_form.label :h1n1_antipneumococcal, class: 'checkbox' do %>
+      <%= report_form.check_box :h1n1_antipneumococcal %>
+      <%= translate 'activerecord.attributes.report.h1n1_antipneumococcal' %>
+    <% end %>
+  </div>
+  <div class="field">
+    <%= report_form.label :participation_diabetes_nutritional_education_program, class: 'checkbox' do %>
+      <%= report_form.check_box :participation_diabetes_nutritional_education_program %>
+      <%= translate 'activerecord.attributes.report.participation_diabetes_nutritional_education_program' %>
+    <% end %>
+  </div>
+  <div class="field">
+    <%= report_form.label :smoker, class: 'checkbox' do %>
+      <%= report_form.check_box :smoker %>
+      <%= translate 'activerecord.attributes.report.smoker' %>
+    <% end %>
+  </div>
+</div>
+<!-- tab -->

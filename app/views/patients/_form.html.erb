@@ -1,0 +1,38 @@
+<%= form_with(model: patient, local: true, id: 'patient-form') do |form| %>
+  <% if patient.errors.any? %>
+    <div>
+      <button class="delete"></button>
+      <div id="error_explanation">
+        <h2><%= pluralize(patient.errors.count, "error") %> prohibited this patient from being saved:</h2>
+        <ul>
+          <% patient.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  <% end %>
+  <!-- Circles which indicates the steps of the form: -->
+  <div style="text-align:center;">
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+  </div>
+  <h1 id="title-tab" class="title"></h1>
+  <%= render 'patients/shared/personal_data_form', form: form %>
+  <%= form.fields_for :report do |report_form| %>
+    <%= render 'patients/shared/domain_of_therapeutic_goals_form', report_form: report_form %>
+    <%= render 'patients/shared/domain_of_health_providers_adherence_to_treatment_protocols_form', report_form: report_form %>
+    <%= render 'patients/shared/complication_identification_domain_form', report_form: report_form %>
+    <%= render 'patients/shared/domain_of_preventive_actions_form', report_form: report_form %>
+  <% end %>
+  <div style="overflow:auto;">
+    <div style="float:right;">
+      <button type="button" id="prevBtn" class="button is-warning">Previous</button>
+      <button type="button" id="nextBtn" class="button is-info">Next</button>
+      <%= form.submit "Registrar Paciente", class: "button is-success", id: 'submitBtn', style: "display:none" %>
+    </div>
+  </div>
+<% end %>

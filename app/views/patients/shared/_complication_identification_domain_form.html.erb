@@ -1,0 +1,51 @@
+<div class="tab">
+  <div class="field">
+    <%= report_form.label :pains_feet_hands, class: 'checkbox' do %>
+      <%= report_form.check_box :pains_feet_hands %>
+      <%= translate 'activerecord.attributes.report.pains_feet_hands' %>
+    <% end %>
+  </div>
+  <div class="field">
+    <label class="label" for="waist-measurement">Medida da Cintura</label>
+    <input id="waist-measurement" class="input" type="text" placeholder="Medida da Cintura">
+  </div>
+  <div class="field">
+    <label class="label" for="hip-measurement">Medida do Quadril</label>
+    <input id="hip-measurement" class="input" type="text" placeholder="Medida do Quadril">
+  </div>
+  <div class="field">
+    <%= report_form.label :waist_measured_ratio, class: 'label' %>
+    <%= report_form.text_field :waist_measured_ratio, class: 'input', readonly: true %>
+  </div>
+  <div class="field">
+    <%= report_form.label :microalbuminuria_evaluation, class: 'checkbox' do %>
+      <%= report_form.check_box :microalbuminuria_evaluation %>
+      <%= translate 'activerecord.attributes.report.microalbuminuria_evaluation' %>
+    <% end %>
+  </div>
+  <div class="field">
+    <%= report_form.label :blurred_vision, class: 'checkbox' do %>
+      <%= report_form.check_box :blurred_vision %>
+      <%= translate 'activerecord.attributes.report.blurred_vision' %>
+    <% end %>
+  </div>
+  <div class="field">
+    <%= report_form.label :periodontal_disease_evaluation, class: 'checkbox' do %>
+      <%= report_form.check_box :periodontal_disease_evaluation %>
+      <%= translate 'activerecord.attributes.report.periodontal_disease_evaluation' %>
+    <% end %>
+  </div>
+  <div class="field">
+    <%= report_form.label :depression_assessment, class: 'checkbox' do %>
+      <%= report_form.check_box :depression_assessment %>
+      <%= translate 'activerecord.attributes.report.depression_assessment' %>
+    <% end %>
+  </div>
+  <div class="field">
+    <%= report_form.label :presence_stroke_coronary_heart_disease, class: 'checkbox' do %>
+      <%= report_form.check_box :presence_stroke_coronary_heart_disease %>
+      <%= translate 'activerecord.attributes.report.presence_stroke_coronary_heart_disease' %>
+    <% end %>
+  </div>
+</div>
+<!-- tab -->

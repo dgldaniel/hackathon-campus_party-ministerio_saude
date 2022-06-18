@@ -1,0 +1,51 @@
+<h1>Graphics</h1>
+
+<% seriesA = [{ name: 'Tem Diabetes', data: @diabetes_sim_cidade_A }, { name: 'Não tem Diabetes', data: @diabetes_nao_cidade_A }] %>
+<% seriesB = [{ name: 'Tem Diabetes', data: @diabetes_sim_cidade_B }, { name: 'Não tem Diabetes', data: @diabetes_nao_cidade_B }] %>
+<% seriesC = [{ name: 'Tem Diabetes', data: @diabetes_sim_cidade_C }, { name: 'Não tem Diabetes', data: @diabetes_nao_cidade_C }] %>
+
+<div class="card">
+  <div class="card-content">
+    <p class="title">
+    Diabéticos - CIDADE A
+    </p>
+  </div>
+
+  <div class="card-content">
+    <div class="content">
+      <%= pie_chart seriesA, legend: "left" %>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="card">
+  <div class="card-content">
+    <p class="title">
+    Diabéticos - CIDADE B
+    </p>
+  </div>
+
+  <div class="card-content">
+    <div class="content">
+      <%= pie_chart seriesB, legend: "left" %>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="card">
+  <div class="card-content">
+    <p class="title">
+    Diabéticos - CIDADE C
+    </p>
+  </div>
+
+  <div class="card-content">
+    <div class="content">
+      <%= pie_chart seriesC, legend: "left" %>
+    </div>
+  </div>
+</div>

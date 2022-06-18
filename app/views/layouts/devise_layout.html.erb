@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LailaDiagnosis</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= javascript_pack_tag 'application' %>
+    <%= stylesheet_link_tag 'devise', media: 'all' %>
+  </head>
+  <body>
+    <div class="container">
+      <div class="columns is-flex is-vcentered is-centered">
+        <div class="column is-two-thirds-mobile is-half-tablet">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+alert('Mensagem Enviada com Sucesso')
+
+  function closeModal($el) {
+    $el.classList.remove('is-active');
+  }
+
+function closeAllModals() {
+    (document.querySelectorAll('.modal') || []).forEach(($modal) => {
+      closeModal($modal);
+    });
+  }
+
+closeAllModals()

@@ -1,0 +1,21 @@
+<div class="tab">
+  <div class="field">
+    <%= report_form.label :algorithm_adherence, class: 'checkbox' do %>
+      <%= report_form.check_box :algorithm_adherence %>
+      <%= translate 'activerecord.attributes.report.algorithm_adherence' %>
+    <% end %>
+  </div>
+  <div class="field">
+    <%= report_form.label :use_AAS, class: 'checkbox' do %>
+      <%= report_form.check_box :use_AAS %>
+      <%= translate 'activerecord.attributes.report.use_AAS' %>
+    <% end %>
+  </div>
+  <div class="field">
+    <%= report_form.label :use_stain, class: 'checkbox' do %>
+      <%= report_form.check_box :use_stain %>
+      <%= translate 'activerecord.attributes.report.use_stain' %>
+    <% end %>
+  </div>
+</div>
+<!-- tab -->

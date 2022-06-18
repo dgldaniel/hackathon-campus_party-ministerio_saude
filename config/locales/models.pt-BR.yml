@@ -1,0 +1,46 @@
+"pt-BR":
+  activerecord:
+    models:
+      patient:
+        one: Paciente
+        others: Pacientes
+      address:
+        one: Endereço
+        others: Endereços
+      report:
+        one: Relatório
+        others: Relatórios
+    attributes:
+      patient:
+        email: E-mail
+        full_name: Nome Completo
+        age: Idade
+        phone: Telefone
+        gender: Gênero
+      address:
+        street: Rua / Avenida
+        number: Número
+        state: Estado
+        city: Cidade
+        complement: Complemento
+        zip_code: CEP
+      report:
+        hba1c: Índice de HbA1c
+        ldc: LDC
+        pa: PA
+        medical_adhesion: Aderência à medicação anti-diabética
+        algorithm_adherence: Adesão dos profissionais médicos aos algoritmos de tratamento para diabetes
+        use_AAS: Utilização de AAS
+        use_stain: Utilização de estatina
+        pains_feet_hands: Dores pés e mãos
+        waist_measured_ratio: Relação medida cintura
+        microalbuminuria_evaluation: Avaliação anual de microalbuminúria
+        blurred_vision: Visão turva
+        periodontal_disease_evaluation: Avaliação anual de doença periodontal
+        depression_assessment: Avaliação de depressão
+        presence_stroke_coronary_heart_disease: Presença de AVC ou doenças coronárias
+        influenza_vaccination: Vacinação anti-influenza
+        h1n1_antipneumococcal: H1N1 e anti-pneumocócica
+        participation_diabetes_nutritional_education_program: Participação no programa de educação em diabetes e nutricional
+        smoker: É fumante
+        situation: Situação

@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Individual Registrations</h1>
+
+<%= link_to 'Ver Gráficos', graphics_index_path %>
+
+<%= search_form_for @q do |f| %>
+  <b>Pesquisar Nome:</b>
+  <%= f.label :nome_completo %>
+  <%= f.search_field :nome_completo_eq %>
+  <br>
+  <b>Pesquisar Cidades:</b>
+  <%= f.select :municipio_uf_nascimento_eq, ['Cidade A', 'Cidade B', 'Cidade C'], { include_blank: true }  %>
+  <br>
+  <b>Pesquisar Diabetes:</b>
+  <%= f.select :diabetes_eq, ['Sim', 'Não'], { include_blank: true }  %>
+  <br>
+  <%= f.submit %>
+<% end %>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome Completo</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @individual_registrations.each do |individual_registration| %>
+      <tr>
+        <td><%= individual_registration.nome_completo %></td>
+        <td><%= link_to 'Show', individual_registration %></td>
+        <td><%= link_to 'Edit', edit_individual_registration_path(individual_registration) %></td>
+        <td><%= link_to 'Destroy', individual_registration, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Individual Registration', new_individual_registration_path %>
+
+<%= paginate @individual_registrations %>
