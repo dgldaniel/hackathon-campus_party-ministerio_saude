@@ -1,4 +1,4 @@
-<%= form_with(model: individual_registration) do |form| %>
+<%= form_with(model: individual_registration, id: 'form-register') do |form| %>
   <% if individual_registration.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(individual_registration.errors.count, "error") %> prohibited this individual_registration from being saved:</h2>
@@ -11,6 +11,7 @@
     </div>
   <% end %>
 
+<div class="tab">
   <div class="field">
     <%= form.label :cns_profissional %>
     <%= form.text_field :cns_profissional %>
@@ -55,6 +56,9 @@
     <%= form.label :etnia %>
     <%= form.text_field :etnia %>
   </div>
+</div>
+
+<div class="tab">
 
   <div class="field">
     <%= form.label :pis_pasep %>
@@ -102,7 +106,9 @@
     <%= form.label :email %>
     <%= form.text_field :email %>
   </div>
+</div>
 
+<div class="tab">
   <div class="field">
     <b>Relação de Parentesco com o Responsável Familiar</b><br />
     <%= form.radio_button :relacao_parentesco_responsavel_familiar, 'Cônjuge/Companheiro' %> Cônjuge/Companheiro<br />
@@ -191,7 +197,9 @@
     <%= form.radio_button :saida_cidadao_cadastro, 'Mudança de território' %> Mudança de território<br />
     <%= form.radio_button :saida_cidadao_cadastro, 'Óbito' %> Óbito<br />
   </div>
+</div>
 
+<div class="tab">
   <div class="field">
     <b>ESTÁ GESTANTE?</b><br />
     <%= form.radio_button :gestante, 'Sim' %> Sim<br />
@@ -260,7 +268,9 @@
     <%= form.radio_button :infarto, 'Sim' %> Sim<br />
     <%= form.radio_button :infarto, 'Não' %> Não<br />
   </div>
+</div>
 
+<div class="tab">
   <div class="field">
     <b>ESTÁ COM HANSENÍASE?</b><br />
     <%= form.radio_button :hanseniase, 'Sim' %> Sim<br />
@@ -309,7 +319,9 @@
     <%= form.radio_button :outras_praticas_integrativas_complementares, 'Sim' %> Sim<br />
     <%= form.radio_button :outras_praticas_integrativas_complementares, 'Não' %> Não<br />
   </div>
+</div>
 
+<div class="tab">
   <div class="field">
     <b>ESTÁ EM SITUAÇÃO DE RUA?</b><br />
     <%= form.radio_button :situacao_rua, 'Não' %> Não<br />
@@ -386,6 +398,9 @@
     <%= form.radio_button :consultou_psicologo, 'Sim' %> Sim<br />
     <%= form.radio_button :consultou_psicologo, 'Não' %> Não<br />
   </div>
+</div>
+
+<div class="tab">
 
   <div class="field">
     <b>PESO</b><br />
@@ -410,8 +425,22 @@
     <%= form.label :peadesao_medicamento %>
     <%= form.text_field :peadesao_medicamento %>
   </div>
+</div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div style="overflow:auto;">
+    <div style="float:right;">
+      <button type="button" id="prevBtn">Previous</button>
+      <button type="button" id="nextBtn">Next</button>
+    </div>
   </div>
+
+<div style="text-align:center;margin-top:40px;">
+  <span class="step"></span>
+  <span class="step"></span>
+  <span class="step"></span>
+  <span class="step"></span>
+  <span class="step"></span>
+  <span class="step"></span>
+  <span class="step"></span>
+</div>
 <% end %>
