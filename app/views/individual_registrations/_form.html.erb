@@ -13,8 +13,7 @@
 
 <div class="tab">
   <div class="field">
-    <%= form.label :ciap_cid %>
-    <%= form.text_field :ciap_cid %>
+    <%= form.collection_check_boxes(:ciap_cid, { 'K75': 'K75', 'T89': 'T89', 'F84.5': 'F84.5', 'F20.0': 'F20.0'}, :last, :first) %>
   </div>
 
   <div class="field">

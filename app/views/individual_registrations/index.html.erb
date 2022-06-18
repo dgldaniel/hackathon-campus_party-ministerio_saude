@@ -15,6 +15,12 @@
   <b>Pesquisar Diabetes:</b>
   <%= f.select :diabetes_eq, ['Sim', 'Não'], { include_blank: true }  %>
   <br>
+  <b>Pesquisar por CID / CIAP </b>
+  <% [{id: 'K75', name: 'K75'}, { id: 'T89', name: 'F84.5'}, { id: 'F20.0', name: 'F20.0'} ].each do |c| %>
+    <%= check_box_tag('q[ciap_cid_count_any][]', c[:name])%>
+    <%= c[:name] %>
+  <% end %>
+  </b>
   <%= f.submit %>
 <% end %>
 

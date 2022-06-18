@@ -45,7 +45,7 @@ end
 
   def create_to_database(city_name, index, nome = nil, email = nil, phone = nil)
     {
-      ciap_cid: Faker::Alphanumeric.alpha(number: 10),
+      ciap_cid: ['K75', 'T89', 'F84.5', 'F20.0'].sample,
       cns_cpf_cidadao: Faker::CPF.pretty,
       cns_cpf_responsavel_familiar: Faker::CPF.pretty,
       nome_completo: nome.nil? ? Faker::Name.name : nome,

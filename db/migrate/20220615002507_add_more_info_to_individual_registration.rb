@@ -14,6 +14,6 @@ class AddMoreInfoToIndividualRegistration < ActiveRecord::Migration[6.1]
     add_column(:individual_registrations, :imc, :string)
     add_column(:individual_registrations, :peadesao_medicamento, :string)
     add_column(:individual_registrations, :autismo_leve, :string)
-    add_column(:individual_registrations, :ciap_cid, :string)
+    add_column(:individual_registrations, :ciap_cid, :string, array: true, :default => [])
   end
 end

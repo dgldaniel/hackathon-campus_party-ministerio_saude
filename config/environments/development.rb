@@ -45,6 +45,8 @@ Rails.application.configure do
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
+  config.hosts << ENV['NGROK_HOST'] if ENV['NGROK_HOST'].present?
+
   # Raise exceptions for disallowed deprecations.
   config.active_support.disallowed_deprecation = :raise
 

@@ -99,7 +99,7 @@ ActiveRecord::Schema.define(version: 2022_06_15_002507) do
     t.string "imc"
     t.string "peadesao_medicamento"
     t.string "autismo_leve"
-    t.string "ciap_cid"
+    t.string "ciap_cid", default: [], array: true
   end
 
   create_table "patients", force: :cascade do |t|
