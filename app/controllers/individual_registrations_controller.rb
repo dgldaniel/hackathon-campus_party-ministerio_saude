@@ -66,6 +66,11 @@ class IndividualRegistrationsController < ApplicationController
     end
   end
 
+  def search
+    @results = IndividualRegistration.where("cns_cpf_cidadao ILIKE ?", "%#{params[:search].downcase}%")
+              .or(IndividualRegistration.where("nome_completo ILIKE ?", "%#{params[:search].downcase}%"))
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_individual_registration

@@ -18,5 +18,8 @@ module LailaDiagnosis
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    # Set FactoryBot dir
+    config.generators.factory_bot dir: 'features/factories'
   end
 end

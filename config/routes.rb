@@ -20,4 +20,6 @@ Rails.application.routes.draw do
 
   get 'graphics/index'
   post '/notify_patient' => 'individual_registrations#notify_patient'
+
+  get 'individual_registrations_search' => 'individual_registrations#search'
 end

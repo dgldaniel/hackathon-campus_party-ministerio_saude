@@ -13,7 +13,8 @@
     "apexcharts": "^3.35.3",
     "bulma": "^0.8.2",
     "bulma-steps-component": "^0.5.3",
-    "cep-promise": "^3.0.9"
+    "cep-promise": "^3.0.9",
+    "js-autocomplete": "^1.0.4"
   },
   "version": "0.1.0",
   "devDependencies": {
