@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
 
+<%= link_to 'Gerar XML', generate_only_xml_path(id: @individual_registration.id) %>
+
 <%= puts @individual_registration.ciap_cid %>
 <p>
   <strong>Cns cpf cidadao:</strong>
@@ -265,4 +267,6 @@
   </div>
 
   <button class="modal-close is-large" aria-label="close"></button>
+
+
 </div>

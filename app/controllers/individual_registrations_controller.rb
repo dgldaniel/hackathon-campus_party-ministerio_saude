@@ -1,5 +1,5 @@
 class IndividualRegistrationsController < ApplicationController
-  before_action :set_individual_registration, only: %i[ show edit update destroy ]
+  before_action :set_individual_registration, only: %i[ show edit update destroy generate_only_xml]
 
   # GET /individual_registrations or /individual_registrations.json
   def index
@@ -69,6 +69,12 @@ class IndividualRegistrationsController < ApplicationController
   def search
     @results = IndividualRegistration.where("cns_cpf_cidadao ILIKE ?", "%#{params[:search].downcase}%")
               .or(IndividualRegistration.where("nome_completo ILIKE ?", "%#{params[:search].downcase}%"))
+  end
+
+  def generate_only_xml
+    GenerateXmlIndividualRegistrationsJob.perform_now @individual_registration
+
+    render :show, status: :ok
   end
 
   private
