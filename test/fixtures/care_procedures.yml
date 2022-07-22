@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  numProntuario: MyString
+  cnsCidadao: MyString
+  dtNascimento: MyString
+  sexo: 1
+  localAtendimento: 1
+  turn: 1
+  statusEscutaInicialOrientacao: false
+  procedimentos: MyString
+  dataHoraInicialAtendimento: MyString
+  dataHoraFinalAtendimento: MyString
+  pesoAcompanhamentoNutricional: 1.5
+  alturaAcompanhamentoNutricional: 1.5
+
+two:
+  numProntuario: MyString
+  cnsCidadao: MyString
+  dtNascimento: MyString
+  sexo: 1
+  localAtendimento: 1
+  turn: 1
+  statusEscutaInicialOrientacao: false
+  procedimentos: MyString
+  dataHoraInicialAtendimento: MyString
+  dataHoraFinalAtendimento: MyString
+  pesoAcompanhamentoNutricional: 1.5
+  alturaAcompanhamentoNutricional: 1.5

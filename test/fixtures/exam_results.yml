@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  exame: MyString
+  dataSolicitacao: 2022-07-22 20:05:57
+  dataRealizacao: 2022-07-22 20:05:57
+  dataResultado: 2022-07-22 20:05:57
+  result: one
+
+two:
+  exame: MyString
+  dataSolicitacao: 2022-07-22 20:05:57
+  dataRealizacao: 2022-07-22 20:05:57
+  dataResultado: 2022-07-22 20:05:57
+  result: two

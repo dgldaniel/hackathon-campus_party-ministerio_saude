@@ -1,0 +1,2 @@
+class ProcedureSheet < ApplicationRecord
+end

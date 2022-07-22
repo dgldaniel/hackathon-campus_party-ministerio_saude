@@ -1,0 +1,92 @@
+<%= form_with(model: collective_activity_sheet) do |form| %>
+  <% if collective_activity_sheet.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(collective_activity_sheet.errors.count, "error") %> prohibited this collective_activity_sheet from being saved:</h2>
+
+      <ul>
+        <% collective_activity_sheet.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :uuidFicha %>
+    <%= form.text_field :uuidFicha %>
+  </div>
+
+  <div class="field">
+    <%= form.label :inep %>
+    <%= form.text_field :inep %>
+  </div>
+
+  <div class="field">
+    <%= form.label :numParticipantes %>
+    <%= form.number_field :numParticipantes %>
+  </div>
+
+  <div class="field">
+    <%= form.label :numAvaliacoesAlterada %>
+    <%= form.number_field :numAvaliacoesAlterada %>
+  </div>
+
+  <div class="field">
+    <%= form.label :atividadeTipo %>
+    <%= form.number_field :atividadeTipo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :publicoAlvo %>
+    <%= form.text_field :publicoAlvo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :participant_id %>
+    <%= form.text_field :participant_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :professional_id %>
+    <%= form.text_field :professional_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tbCdsOrigem %>
+    <%= form.number_field :tbCdsOrigem %>
+  </div>
+
+  <div class="field">
+    <%= form.label :procedimento %>
+    <%= form.text_field :procedimento %>
+  </div>
+
+  <div class="field">
+    <%= form.label :turno %>
+    <%= form.number_field :turno %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pseEducacao %>
+    <%= form.check_box :pseEducacao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pseSaude %>
+    <%= form.check_box :pseSaude %>
+  </div>
+
+  <div class="field">
+    <%= form.label :temasParaSaude %>
+    <%= form.text_field :temasParaSaude %>
+  </div>
+
+  <div class="field">
+    <%= form.label :praticasEmSaude %>
+    <%= form.text_field :praticasEmSaude %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

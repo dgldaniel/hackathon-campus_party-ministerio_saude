@@ -1,0 +1,82 @@
+<%= form_with(model: medicine) do |form| %>
+  <% if medicine.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(medicine.errors.count, "error") %> prohibited this medicine from being saved:</h2>
+
+      <ul>
+        <% medicine.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :codigoCatmat %>
+    <%= form.text_field :codigoCatmat %>
+  </div>
+
+  <div class="field">
+    <%= form.label :viaAdministracao %>
+    <%= form.number_field :viaAdministracao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dose %>
+    <%= form.text_field :dose %>
+  </div>
+
+  <div class="field">
+    <%= form.label :doseUnica %>
+    <%= form.check_box :doseUnica %>
+  </div>
+
+  <div class="field">
+    <%= form.label :usoContinuo %>
+    <%= form.check_box :usoContinuo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :doseFrequenciaTipo %>
+    <%= form.number_field :doseFrequenciaTipo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :doseFrequencia %>
+    <%= form.text_field :doseFrequencia %>
+  </div>
+
+  <div class="field">
+    <%= form.label :doseFrequenciaQuantidade %>
+    <%= form.number_field :doseFrequenciaQuantidade %>
+  </div>
+
+  <div class="field">
+    <%= form.label :doseFrequenciaUnidadeMedida %>
+    <%= form.number_field :doseFrequenciaUnidadeMedida %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dtInicioTratamento %>
+    <%= form.text_field :dtInicioTratamento %>
+  </div>
+
+  <div class="field">
+    <%= form.label :duracaoTratamento %>
+    <%= form.number_field :duracaoTratamento %>
+  </div>
+
+  <div class="field">
+    <%= form.label :duracaoTratamentoMedida %>
+    <%= form.number_field :duracaoTratamentoMedida %>
+  </div>
+
+  <div class="field">
+    <%= form.label :quantidadeReceitada %>
+    <%= form.number_field :quantidadeReceitada %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

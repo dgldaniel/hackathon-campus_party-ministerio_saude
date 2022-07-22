@@ -1,0 +1,2 @@
+class Forwarding < ApplicationRecord
+end

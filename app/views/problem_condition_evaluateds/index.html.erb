@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Problem Condition Evaluateds</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ciaps</th>
+      <th>Outrociap1</th>
+      <th>Cid10</th>
+      <th>Cid10 2</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @problem_condition_evaluateds.each do |problem_condition_evaluated| %>
+      <tr>
+        <td><%= problem_condition_evaluated.ciaps %></td>
+        <td><%= problem_condition_evaluated.outroCiap1 %></td>
+        <td><%= problem_condition_evaluated.cid10 %></td>
+        <td><%= problem_condition_evaluated.cid10_2 %></td>
+        <td><%= link_to 'Show', problem_condition_evaluated %></td>
+        <td><%= link_to 'Edit', edit_problem_condition_evaluated_path(problem_condition_evaluated) %></td>
+        <td><%= link_to 'Destroy', problem_condition_evaluated, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Problem Condition Evaluated', new_problem_condition_evaluated_path %>

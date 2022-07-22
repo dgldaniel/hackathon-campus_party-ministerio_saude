@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  especialidade: 1
+  hipoteseDiagnosticoCid10: MyString
+  classificacaoRisco: 1
+
+two:
+  especialidade: 1
+  hipoteseDiagnosticoCid10: MyString
+  classificacaoRisco: 1

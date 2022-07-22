@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Care Procedures</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Numprontuario</th>
+      <th>Cnscidadao</th>
+      <th>Dtnascimento</th>
+      <th>Sexo</th>
+      <th>Localatendimento</th>
+      <th>Turn</th>
+      <th>Statusescutainicialorientacao</th>
+      <th>Procedimentos</th>
+      <th>Datahorainicialatendimento</th>
+      <th>Datahorafinalatendimento</th>
+      <th>Pesoacompanhamentonutricional</th>
+      <th>Alturaacompanhamentonutricional</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @care_procedures.each do |care_procedure| %>
+      <tr>
+        <td><%= care_procedure.numProntuario %></td>
+        <td><%= care_procedure.cnsCidadao %></td>
+        <td><%= care_procedure.dtNascimento %></td>
+        <td><%= care_procedure.sexo %></td>
+        <td><%= care_procedure.localAtendimento %></td>
+        <td><%= care_procedure.turn %></td>
+        <td><%= care_procedure.statusEscutaInicialOrientacao %></td>
+        <td><%= care_procedure.procedimentos %></td>
+        <td><%= care_procedure.dataHoraInicialAtendimento %></td>
+        <td><%= care_procedure.dataHoraFinalAtendimento %></td>
+        <td><%= care_procedure.pesoAcompanhamentoNutricional %></td>
+        <td><%= care_procedure.alturaAcompanhamentoNutricional %></td>
+        <td><%= link_to 'Show', care_procedure %></td>
+        <td><%= link_to 'Edit', edit_care_procedure_path(care_procedure) %></td>
+        <td><%= link_to 'Destroy', care_procedure, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Care Procedure', new_care_procedure_path %>

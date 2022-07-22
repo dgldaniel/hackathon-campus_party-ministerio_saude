@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Exame:</strong>
+  <%= @exam_result.exame %>
+</p>
+
+<p>
+  <strong>Datasolicitacao:</strong>
+  <%= @exam_result.dataSolicitacao %>
+</p>
+
+<p>
+  <strong>Datarealizacao:</strong>
+  <%= @exam_result.dataRealizacao %>
+</p>
+
+<p>
+  <strong>Dataresultado:</strong>
+  <%= @exam_result.dataResultado %>
+</p>
+
+<p>
+  <strong>Result:</strong>
+  <%= @exam_result.result_id %>
+</p>
+
+<%= link_to 'Edit', edit_exam_result_path(@exam_result) %> |
+<%= link_to 'Back', exam_results_path %>

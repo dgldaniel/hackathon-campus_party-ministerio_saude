@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Especialidade:</strong>
+  <%= @forwarding.especialidade %>
+</p>
+
+<p>
+  <strong>Hipotesediagnosticocid10:</strong>
+  <%= @forwarding.hipoteseDiagnosticoCid10 %>
+</p>
+
+<p>
+  <strong>Classificacaorisco:</strong>
+  <%= @forwarding.classificacaoRisco %>
+</p>
+
+<%= link_to 'Edit', edit_forwarding_path(@forwarding) %> |
+<%= link_to 'Back', forwardings_path %>

@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Medicines</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Codigocatmat</th>
+      <th>Viaadministracao</th>
+      <th>Dose</th>
+      <th>Doseunica</th>
+      <th>Usocontinuo</th>
+      <th>Dosefrequenciatipo</th>
+      <th>Dosefrequencia</th>
+      <th>Dosefrequenciaquantidade</th>
+      <th>Dosefrequenciaunidademedida</th>
+      <th>Dtiniciotratamento</th>
+      <th>Duracaotratamento</th>
+      <th>Duracaotratamentomedida</th>
+      <th>Quantidadereceitada</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @medicines.each do |medicine| %>
+      <tr>
+        <td><%= medicine.codigoCatmat %></td>
+        <td><%= medicine.viaAdministracao %></td>
+        <td><%= medicine.dose %></td>
+        <td><%= medicine.doseUnica %></td>
+        <td><%= medicine.usoContinuo %></td>
+        <td><%= medicine.doseFrequenciaTipo %></td>
+        <td><%= medicine.doseFrequencia %></td>
+        <td><%= medicine.doseFrequenciaQuantidade %></td>
+        <td><%= medicine.doseFrequenciaUnidadeMedida %></td>
+        <td><%= medicine.dtInicioTratamento %></td>
+        <td><%= medicine.duracaoTratamento %></td>
+        <td><%= medicine.duracaoTratamentoMedida %></td>
+        <td><%= medicine.quantidadeReceitada %></td>
+        <td><%= link_to 'Show', medicine %></td>
+        <td><%= link_to 'Edit', edit_medicine_path(medicine) %></td>
+        <td><%= link_to 'Destroy', medicine, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Medicine', new_medicine_path %>

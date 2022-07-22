@@ -1,0 +1,2 @@
+module IndividualCallsHelper
+end

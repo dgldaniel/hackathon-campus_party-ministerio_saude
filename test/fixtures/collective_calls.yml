@@ -1,0 +1,35 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  uuidFicha: 
+  inep: MyString
+  numParticipantes: 1
+  numAvaliacoesAlteradas: 1
+  atividadeTipo: 1
+  publicoAlvo: 
+  tbCdsOrigem: 1
+  procedimento: MyString
+  turno: 1
+  pseEducacao: false
+  pseSaude: false
+  temasParaSaude: 
+  praticasEmSaude: 
+  Participant: one
+  Professional: one
+
+two:
+  uuidFicha: 
+  inep: MyString
+  numParticipantes: 1
+  numAvaliacoesAlteradas: 1
+  atividadeTipo: 1
+  publicoAlvo: 
+  tbCdsOrigem: 1
+  procedimento: MyString
+  turno: 1
+  pseEducacao: false
+  pseSaude: false
+  temasParaSaude: 
+  praticasEmSaude: 
+  Participant: two
+  Professional: two

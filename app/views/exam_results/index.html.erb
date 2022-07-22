@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Exam Results</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Exame</th>
+      <th>Datasolicitacao</th>
+      <th>Datarealizacao</th>
+      <th>Dataresultado</th>
+      <th>Result</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @exam_results.each do |exam_result| %>
+      <tr>
+        <td><%= exam_result.exame %></td>
+        <td><%= exam_result.dataSolicitacao %></td>
+        <td><%= exam_result.dataRealizacao %></td>
+        <td><%= exam_result.dataResultado %></td>
+        <td><%= exam_result.result_id %></td>
+        <td><%= link_to 'Show', exam_result %></td>
+        <td><%= link_to 'Edit', edit_exam_result_path(exam_result) %></td>
+        <td><%= link_to 'Destroy', exam_result, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Exam Result', new_exam_result_path %>

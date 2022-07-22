@@ -1,0 +1,69 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  numeroProntuario: MyString
+  cnsCidadao: MyString
+  dataNascimento: 2022-07-22 20:06:04
+  localDeAtendimento: 1
+  sexo: 1
+  turno: 1
+  tipoAtendimento: 1
+  pesoAcompanhamentoNutricional: 1.5
+  alturaAcompanhamentoNutricional: 1.5
+  aleitamentoMaterno: 1
+  dumDaGestante: 2022-07-22 20:06:04
+  idadeGestacional: 1
+  atencaoDomiciliarModalidade: 1
+  vacinaEmDia: false
+  ficouEmObservacao: false
+  nasfs: 1
+  condutas: 
+  stGravidezPlanejada: false
+  nuGestasPrevias: 1
+  nuPartos: 1
+  racionalidadeSaude: 1
+  perimetroCefalico: 1.5
+  dataHoraInicialAtendimento: 2022-07-22 20:06:04
+  dataHoraFinalAtendimento: 2022-07-22 20:06:04
+  ExamResult: one
+  Professional: one
+  Participant: one
+  CollectiveActivitySheet: one
+  Exam: one
+  Medicine: one
+  Forwarding: one
+  ExamResult: one
+
+two:
+  numeroProntuario: MyString
+  cnsCidadao: MyString
+  dataNascimento: 2022-07-22 20:06:04
+  localDeAtendimento: 1
+  sexo: 1
+  turno: 1
+  tipoAtendimento: 1
+  pesoAcompanhamentoNutricional: 1.5
+  alturaAcompanhamentoNutricional: 1.5
+  aleitamentoMaterno: 1
+  dumDaGestante: 2022-07-22 20:06:04
+  idadeGestacional: 1
+  atencaoDomiciliarModalidade: 1
+  vacinaEmDia: false
+  ficouEmObservacao: false
+  nasfs: 1
+  condutas: 
+  stGravidezPlanejada: false
+  nuGestasPrevias: 1
+  nuPartos: 1
+  racionalidadeSaude: 1
+  perimetroCefalico: 1.5
+  dataHoraInicialAtendimento: 2022-07-22 20:06:04
+  dataHoraFinalAtendimento: 2022-07-22 20:06:04
+  ExamResult: two
+  Professional: two
+  Participant: two
+  CollectiveActivitySheet: two
+  Exam: two
+  Medicine: two
+  Forwarding: two
+  ExamResult: two

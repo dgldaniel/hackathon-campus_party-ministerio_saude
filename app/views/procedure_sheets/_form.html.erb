@@ -1,0 +1,62 @@
+<%= form_with(model: procedure_sheet) do |form| %>
+  <% if procedure_sheet.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(procedure_sheet.errors.count, "error") %> prohibited this procedure_sheet from being saved:</h2>
+
+      <ul>
+        <% procedure_sheet.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :uuidFicha %>
+    <%= form.text_field :uuidFicha %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tpCdsOrigem %>
+    <%= form.number_field :tpCdsOrigem %>
+  </div>
+
+  <div class="field">
+    <%= form.label :numTotalAfericaoPa %>
+    <%= form.number_field :numTotalAfericaoPa %>
+  </div>
+
+  <div class="field">
+    <%= form.label :numTotalAfericaoTemperatura %>
+    <%= form.number_field :numTotalAfericaoTemperatura %>
+  </div>
+
+  <div class="field">
+    <%= form.label :numTotalCurativoSimples %>
+    <%= form.number_field :numTotalCurativoSimples %>
+  </div>
+
+  <div class="field">
+    <%= form.label :numTotalColetaMaterialParaExameLaboratorial %>
+    <%= form.number_field :numTotalColetaMaterialParaExameLaboratorial %>
+  </div>
+
+  <div class="field">
+    <%= form.label :numTotalGlicemiaCapilar %>
+    <%= form.number_field :numTotalGlicemiaCapilar %>
+  </div>
+
+  <div class="field">
+    <%= form.label :numTotalMedicaoAltura %>
+    <%= form.number_field :numTotalMedicaoAltura %>
+  </div>
+
+  <div class="field">
+    <%= form.label :numTotalMedicaoPeso %>
+    <%= form.number_field :numTotalMedicaoPeso %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

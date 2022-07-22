@@ -2,13 +2,26 @@
 require 'sidekiq/web'
 
 Rails.application.routes.draw do
+  resources :procedure_sheets
+  resources :care_procedures
+  resources :collective_calls
+  resources :individual_calls
+  resources :exam_results
+  resources :results
+  resources :forwardings
+  resources :medicines
+  resources :exams
+  resources :problem_condition_evaluateds
+  resources :collective_activity_sheets
+  resources :participants
+  resources :professionals
+  resources :individual_registrations
   mount Sidekiq::Web => '/sidekiq'
 
   resources :patients
   resources :doctors
   resources :reports
   resources :addresses
-  resources :individual_registrations
 
   devise_for :users,
              controllers: {

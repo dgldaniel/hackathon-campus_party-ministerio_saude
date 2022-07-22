@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cnsParticipante: MyString
+  dataNascimento: 2022-07-22 20:05:04
+  avaliacaoAlterada: false
+  cessouHabitoFumar: false
+  abandonouGrupo: false
+  sexo: 1
+
+two:
+  cnsParticipante: MyString
+  dataNascimento: 2022-07-22 20:05:04
+  avaliacaoAlterada: false
+  cessouHabitoFumar: false
+  abandonouGrupo: false
+  sexo: 1

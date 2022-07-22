@@ -1,0 +1,2 @@
+class ProblemConditionEvaluated < ApplicationRecord
+end

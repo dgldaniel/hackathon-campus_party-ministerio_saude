@@ -1,0 +1,37 @@
+<%= form_with(model: problem_condition_evaluated) do |form| %>
+  <% if problem_condition_evaluated.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(problem_condition_evaluated.errors.count, "error") %> prohibited this problem_condition_evaluated from being saved:</h2>
+
+      <ul>
+        <% problem_condition_evaluated.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :ciaps %>
+    <%= form.text_field :ciaps %>
+  </div>
+
+  <div class="field">
+    <%= form.label :outroCiap1 %>
+    <%= form.text_field :outroCiap1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cid10 %>
+    <%= form.text_field :cid10 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cid10_2 %>
+    <%= form.text_field :cid10_2 %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

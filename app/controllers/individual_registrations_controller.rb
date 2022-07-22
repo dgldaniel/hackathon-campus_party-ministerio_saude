@@ -1,10 +1,9 @@
 class IndividualRegistrationsController < ApplicationController
-  before_action :set_individual_registration, only: %i[ show edit update destroy generate_only_xml]
+  before_action :set_individual_registration, only: %i[ show edit update destroy ]
 
   # GET /individual_registrations or /individual_registrations.json
   def index
-    @q = IndividualRegistration.ransack params[:q]
-    @individual_registrations =  @q.result(distinct: true).page(params[:page])
+    @individual_registrations = IndividualRegistration.all
   end
 
   # GET /individual_registrations/1 or /individual_registrations/1.json
@@ -58,25 +57,6 @@ class IndividualRegistrationsController < ApplicationController
     end
   end
 
-  def notify_patient
-    respond_to do |format|
-      format.js {
-        NotifyPatientJob.perform_later individual_registration_notify_patient_params
-      }
-    end
-  end
-
-  def search
-    @results = IndividualRegistration.where("cns_cpf_cidadao ILIKE ?", "%#{params[:search].downcase}%")
-              .or(IndividualRegistration.where("nome_completo ILIKE ?", "%#{params[:search].downcase}%"))
-  end
-
-  def generate_only_xml
-    GenerateXmlIndividualRegistrationsJob.perform_now @individual_registration
-
-    render :show, status: :ok
-  end
-
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_individual_registration
@@ -85,10 +65,6 @@ class IndividualRegistrationsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def individual_registration_params
-      params.require(:individual_registration).permit(:ciap_cid, :autismo_leve, :cns_cpf_cidadao, :cns_cpf_responsavel_familiar, :nome_completo, :data_nascimento, :sexo, :raca_cor, :etnia, :pis_pasep, :nome_completo_mae, :nome_completo_pai, :nacionalidade, :pais_nascimento, :data_naturalizacao, :municipio_uf_nascimento, :telefone_celular, :email, :relacao_parentesco_responsavel_familiar, :curso_elevado_frequenta_frequentou, :situacao_mercado_trabalho, :frequenta_cuidador_tradicional, :participa_grupo_comunitario, :possui_plano_saude_privado, :orientacao_sexual, :identidade_genero, :saida_cidadao_cadastro, :gestante, :peso, :fumante, :uso_alcool, :uso_outras_drogas, :hipertensao_arterial, :diabetes, :avc_derrame, :infarto, :hanseniase, :tuberculose, :tem_ou_teve_cancer, :alguma_internacao_ultimos_12_meses, :diagnostico_algum_problema_saude_mental_profissional_saude, :acamado, :domiciliado, :outras_praticas_integrativas_complementares, :situacao_rua, :recebe_algum_beneficio, :possui_referencia_familiar, :dor_pernas, :hem_glicada, :dentista_semestre, :vacinou_h1n1, :vacinou_covid, :consulta_cardiologista_ano, :classica_auto_cuidado, :entende_importancia_alimentacao_diabetes, :consegue_alimentacao_saudavel, :consultou_psicologo, :altura, :imc, :peadesao_medicamento)
-    end
-
-    def individual_registration_notify_patient_params
-      params.permit(:id, :title, :nome_completo, :description)
+      params.require(:individual_registration).permit(:statusTemDoencaRespiratoria, :statusTemTeveDoencasRins, :statusTeveDoencaCardiaca, :statusTeveInternadoEm12Meses, :statusUsaPlantaMedicinais, :grauParentescoFamiliarFrequentado, :higienePessoalSituacaoRua, :origemAlimentoSituacaoRua, :outraInstituicaoQueAcompanha, :quantidadeAlimentacoesAoDiaSituacaoRua, :statusAcompanhadoPorOutraInstituicao, :statusTemAcessoHigienePessoalSituacaoRua, :statusVisitaFamiliarFrequentemente, :tempoSituacaoRua, :fichaAtualizada, :codigoIbgeMunicipioNascimento, :desconheceNomeMae, :statusEhResponsavel, :nomePaiCidadao, :desconheceNomePai, :microArea, :stForaArea, :deficienciasCidadao, :grauInstrucaoCidadao, :ocupacaoCodigoCbo2002, :statusFrequentaEscola, :statusMembroPovoComunidadeTradicional, :statusDesejaInformarIdentidadeGenero, :coPovoComunidadeTradicional, :statusTermoRecusaCadastroIndividualAtencaoBasica, :uuid, :uuidFichaOriginadora, :profissionalCNS, :cboCodigo_2002, :cnes, :ine, :dataAtendimento, :codigoIbgeMunicipio, :uuidDadoSerializado, :tipoDadoSerializado, :codIbge, :cnesDadoSerializado, :ineDadoSerializado, :numLote, :fichaAtualizada, :statusTermoRecusaCadastroIndividualAtencaoBasica, :tpCdsOrigem, :descricaoCausaInternacaoEm12Meses, :descricaoOutraCondicao1, :descricaoOutraCondicao2, :descricaoPlantasMedicinaisUsadas, :doencaCardiaca, :doencaRespiratoria, :doencaRins, :maternidadeDeReferencia, :situacaoPeso, :statusEhDependenteAlcool, :statusEhDependenteOutrasDrogas, :statusEhFumante, :statusEhGestante, :statusEstaAcamado, :statusEstaDomiciliado, :statusTemDiabetes, :statusTemDoencaRespiratoria, :statusTemHanseniase, :statusTemHipertensaoArterial, :statusTemTeveCancer, :statusTemTeveDoencasRins, :statusTemTuberculose, :statusTeveAvcDerrame, :statusTeveDoencaCardiaca, :statusTeveInfarto, :statusTeveInternadoEm12Meses, :statusUsaPlantaMedicinais, :statusDiagnosticoMental, :grauParentescoFamiliarFrequentado, :higienePessoalSituacaoRua, :higienePessoalSituacaoRua, :origemAlimentoSituacaoRua, :origemAlimentoSituacaoRua, :outraInstituicaoQueAcompanha, :quantidadeAlimentacoesAoDiaSituacaoRua, :statusAcompanhadoPorOutraInstituicao, :statusPossuiReferenciaFamiliar, :statusRecebeBeneficio, :statusSituacaoRua, :statusTemAcessoHigienePessoalSituacaoRua, :statusVisitaFamiliarFrequentemente, :tempoSituacaoRua, :codigoIbgeMunicipioNascimento, :dataNascimentoCidadao, :desconheceNomeMae, :emailCidadao, :nacionalidadeCidadao, :nomeCidadao, :nomeMaeCidadao, :cpfCidadao, :telefoneCelular, :paisNascimento, :racaCorCidadao, :sexoCidadao, :statusEhResponsavel, :etnia, :nomePaiCidadao, :desconheceNomePai, :microArea, :stForaArea, :deficienciasCidadao, :deficienciasCidadao, :ocupacaoCodigoCbo2002, :orientacaoSexualCidadao, :situacaoMercadoTrabalhoCidadao, :statusDesejaInformarOrientacaoSexual, :statusFrequentaBenzedeira, :statusFrequentaEscola, :statusMembroPovoComunidadeTradicional, :statusParticipaGrupoComunitario, :statusPossuiPlanoSaudePrivado, :statusTemAlgumaDeficiencia, :identidadeGeneroCidadao, :statusDesejaInformarIdentidadeGenero, :coPovoComunidadeTradicional)
     end
 end

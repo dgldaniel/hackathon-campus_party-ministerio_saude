@@ -42,7 +42,7 @@ class GenerateXmlIndividualRegistrationsJob < ApplicationJob
     condicoesDeSaude = REXML::Element.new("condicoesDeSaude")
 
     descricaoCausaInternacaoEm12Meses = REXML::Element.new("descricaoCausaInternacaoEm12Meses")
-    descricaoCausaInternacaoEm12Meses.text = 'gripe'
+    descricaoCausaInternacaoEm12Meses.text = individual_registration[:alguma_internacao_ultimos_12_meses]
     condicoesDeSaude.add_element descricaoCausaInternacaoEm12Meses
 
     descricaoOutraCondicao1 = REXML::Element.new("descricaoOutraCondicao1")
@@ -57,7 +57,7 @@ class GenerateXmlIndividualRegistrationsJob < ApplicationJob
     descricaoPlantasMedicinaisUsadas.text = "macela e boldo"
     condicoesDeSaude.add_element descricaoPlantasMedicinaisUsadas
 
-    doencaCardiaca = REXML::Element.new("doencaCardiacao")
+    doencaCardiaca = REXML::Element.new("doencaCardiaca")
     doencaCardiaca.text = 26
     condicoesDeSaude.add_element doencaCardiaca
 
@@ -78,320 +78,308 @@ class GenerateXmlIndividualRegistrationsJob < ApplicationJob
     condicoesDeSaude.add_element situacaoPeso
 
     statusEhDependenteAlcool = REXML::Element.new("statusEhDependenteAlcool")
-    statusEhDependenteAlcool.text = false
+    statusEhDependenteAlcool.text = individual_registration[:uso_alcool]
     condicoesDeSaude.add_element statusEhDependenteAlcool
 
     statusEhDependenteOutrasDrogas = REXML::Element.new("statusEhDependenteOutrasDrogas")
-    statusEhDependenteOutrasDrogas.text = false
+    statusEhDependenteOutrasDrogas.text = individual_registration[:uso_outras_drogas]
     condicoesDeSaude.add_element statusEhDependenteOutrasDrogas
 
     statusEhFumante = REXML::Element.new("statusEhFumante")
-    statusEhFumante.text = false
+    statusEhFumante.text = individual_registration[:fumante]
     condicoesDeSaude.add_element statusEhFumante
 
     statusEhGestante = REXML::Element.new("statusEhGestante")
-    statusEhGestante.text = false
+    statusEhGestante.text = individual_registration[:gestante]
     condicoesDeSaude.add_element statusEhGestante
 
     statusEstaAcamado = REXML::Element.new("statusEstaAcamado")
-    statusEstaAcamado.text = false
+    statusEstaAcamado.text = individual_registration[:acamado]
     condicoesDeSaude.add_element statusEstaAcamado
 
     statusEstaDomiciliado = REXML::Element.new("statusEstaDomiciliado")
-    statusEstaDomiciliado.text = false
+    statusEstaDomiciliado.text = individual_registration[:domiciliado]
     condicoesDeSaude.add_element statusEstaDomiciliado
 
     statusTemDiabetes = REXML::Element.new("statusTemDiabetes")
-    statusTemDiabetes.text = false
+    statusTemDiabetes.text = individual_registration[:diabetes]
     condicoesDeSaude.add_element statusTemDiabetes
 
     statusTemDoencaRespiratoria = REXML::Element.new("statusTemDoencaRespiratoria")
-    statusTemDoencaRespiratoria.text = false
+    statusTemDoencaRespiratoria.text = individual_registration[:alguma_internacao_ultimos_12_meses]
     condicoesDeSaude.add_element statusTemDoencaRespiratoria
 
     statusTemHanseniase = REXML::Element.new("statusTemHanseniase")
-    statusTemHanseniase.text = false
+    statusTemHanseniase.text = individual_registration[:hanseniase]
     condicoesDeSaude.add_element statusTemHanseniase
 
     statusTemHipertensaoArterial = REXML::Element.new("statusTemHipertensaoArterial")
-    statusTemHipertensaoArterial.text = false
+    statusTemHipertensaoArterial.text = individual_registration[:hipertensao_arterial]
     condicoesDeSaude.add_element statusTemHipertensaoArterial
 
     statusTemTeveCancer = REXML::Element.new("statusTemTeveCancer")
-    statusTemTeveCancer.text = false
+    statusTemTeveCancer.text = individual_registration[:tem_ou_teve_cancer]
     condicoesDeSaude.add_element statusTemTeveCancer
 
     statusTemTeveDoencasRins = REXML::Element.new("statusTemTeveDoencasRins")
-    statusTemTeveDoencasRins.text = false
+    statusTemTeveDoencasRins.text = individual_registration[:alguma_internacao_ultimos_12_meses]
     condicoesDeSaude.add_element statusTemTeveDoencasRins
 
     statusTemTuberculose = REXML::Element.new("statusTemTuberculose")
-    statusTemTuberculose.text = false
+    statusTemTuberculose.text = individual_registration[:tuberculose]
     condicoesDeSaude.add_element statusTemTuberculose
 
     statusTeveAvcDerrame = REXML::Element.new("statusTeveAvcDerrame")
-    statusTeveAvcDerrame.text = false
+    statusTeveAvcDerrame.text = individual_registration[:avc_derrame]
     condicoesDeSaude.add_element statusTeveAvcDerrame
 
     statusTeveDoencaCardiaca = REXML::Element.new("statusTeveDoencaCardiaca")
-    statusTeveDoencaCardiaca.text = false
+    statusTeveDoencaCardiaca.text = individual_registration[:alguma_internacao_ultimos_12_meses]
     condicoesDeSaude.add_element statusTeveDoencaCardiaca
 
     statusTeveInfarto = REXML::Element.new("statusTeveInfarto")
-    statusTeveInfarto.text = false
+    statusTeveInfarto.text = individual_registration[:infarto]
     condicoesDeSaude.add_element statusTeveInfarto
 
     statusTeveInternadoEm12Meses = REXML::Element.new("statusTeveInternadoEm12Meses")
-    statusTeveInternadoEm12Meses.text = false
+    statusTeveInternadoEm12Meses.text = individual_registration[:alguma_internacao_ultimos_12_meses]
     condicoesDeSaude.add_element statusTeveInternadoEm12Meses
 
     statusUsaPlantaMedicinais = REXML::Element.new("statusUsaPlantaMedicinais")
-    statusUsaPlantaMedicinais.text = false
+    statusUsaPlantaMedicinais.text = individual_registration[:alguma_internacao_ultimos_12_meses]
     condicoesDeSaude.add_element statusUsaPlantaMedicinais
 
     statusDiagnosticoMental = REXML::Element.new("statusDiagnosticoMental")
-    statusDiagnosticoMental.text = false
+    statusDiagnosticoMental.text = individual_registration[:diagnostico_algum_problema_saude_mental_profissional_saude]
     condicoesDeSaude.add_element statusDiagnosticoMental
 
     emSituacaoDeRua = REXML::Element.new("emSituacaoDeRua")
 
     grauParentescoFamiliarFrequentado = REXML::Element.new("grauParentescoFamiliarFrequentado")
-    grauParentescoFamiliarFrequentado.text = false
+    grauParentescoFamiliarFrequentado.text = individual_registration[:alguma_internacao_ultimos_12_meses]
     emSituacaoDeRua.add_element grauParentescoFamiliarFrequentado
 
     higienePessoalSituacaoRua = REXML::Element.new("higienePessoalSituacaoRua")
-    higienePessoalSituacaoRua.text = false
+    higienePessoalSituacaoRua.text = individual_registration[:alguma_internacao_ultimos_12_meses]
     emSituacaoDeRua.add_element higienePessoalSituacaoRua
 
     higienePessoalSituacaoRua = REXML::Element.new("higienePessoalSituacaoRua")
-    higienePessoalSituacaoRua.text = false
+    higienePessoalSituacaoRua.text = individual_registration[:alguma_internacao_ultimos_12_meses]
     emSituacaoDeRua.add_element higienePessoalSituacaoRua
 
     origemAlimentoSituacaoRua = REXML::Element.new("origemAlimentoSituacaoRua")
-    origemAlimentoSituacaoRua.text = false
+    origemAlimentoSituacaoRua.text = individual_registration[:alguma_internacao_ultimos_12_meses]
     emSituacaoDeRua.add_element origemAlimentoSituacaoRua
 
     origemAlimentoSituacaoRua = REXML::Element.new("origemAlimentoSituacaoRua")
-    origemAlimentoSituacaoRua.text = false
+    origemAlimentoSituacaoRua.text = individual_registration[:alguma_internacao_ultimos_12_meses]
     emSituacaoDeRua.add_element origemAlimentoSituacaoRua
 
     outraInstituicaoQueAcompanha = REXML::Element.new("outraInstituicaoQueAcompanha")
-    outraInstituicaoQueAcompanha.text = false
+    outraInstituicaoQueAcompanha.text = individual_registration[:alguma_internacao_ultimos_12_meses]
     emSituacaoDeRua.add_element outraInstituicaoQueAcompanha
 
     quantidadeAlimentacoesAoDiaSituacaoRua = REXML::Element.new("quantidadeAlimentacoesAoDiaSituacaoRua")
-    quantidadeAlimentacoesAoDiaSituacaoRua.text = false
+    quantidadeAlimentacoesAoDiaSituacaoRua.text = individual_registration[:alguma_internacao_ultimos_12_meses]
     emSituacaoDeRua.add_element quantidadeAlimentacoesAoDiaSituacaoRua
 
     statusAcompanhadoPorOutraInstituicao = REXML::Element.new("statusAcompanhadoPorOutraInstituicao")
-    statusAcompanhadoPorOutraInstituicao.text = false
+    statusAcompanhadoPorOutraInstituicao.text = individual_registration[:alguma_internacao_ultimos_12_meses]
     emSituacaoDeRua.add_element statusAcompanhadoPorOutraInstituicao
 
     statusPossuiReferenciaFamiliar = REXML::Element.new("statusPossuiReferenciaFamiliar")
-    statusPossuiReferenciaFamiliar.text = false
+    statusPossuiReferenciaFamiliar.text = individual_registration[:possui_referencia_familiar]
     emSituacaoDeRua.add_element statusPossuiReferenciaFamiliar
 
     statusRecebeBeneficio = REXML::Element.new("statusRecebeBeneficio")
-    statusRecebeBeneficio.text = false
+    statusRecebeBeneficio.text = individual_registration[:recebe_algum_beneficio]
     emSituacaoDeRua.add_element statusRecebeBeneficio
 
     statusSituacaoRua = REXML::Element.new("statusSituacaoRua")
-    statusSituacaoRua.text = false
+    statusSituacaoRua.text = individual_registration[:situacao_rua]
     emSituacaoDeRua.add_element statusSituacaoRua
 
     statusTemAcessoHigienePessoalSituacaoRua = REXML::Element.new("statusTemAcessoHigienePessoalSituacaoRua")
-    statusTemAcessoHigienePessoalSituacaoRua.text = false
+    statusTemAcessoHigienePessoalSituacaoRua.text = individual_registration[:alguma_internacao_ultimos_12_meses]
     emSituacaoDeRua.add_element statusTemAcessoHigienePessoalSituacaoRua
 
     statusVisitaFamiliarFrequentemente = REXML::Element.new("statusVisitaFamiliarFrequentemente")
-    statusVisitaFamiliarFrequentemente.text = false
+    statusVisitaFamiliarFrequentemente.text = individual_registration[:alguma_internacao_ultimos_12_meses]
     emSituacaoDeRua.add_element statusVisitaFamiliarFrequentemente
 
     tempoSituacaoRua = REXML::Element.new("tempoSituacaoRua")
-    tempoSituacaoRua.text = false
+    tempoSituacaoRua.text = individual_registration[:alguma_internacao_ultimos_12_meses]
     emSituacaoDeRua.add_element tempoSituacaoRua
 
     fichaAtualizada = REXML::Element.new("fichaAtualizada")
-    fichaAtualizada.text = false
+    fichaAtualizada.text = individual_registration[:alguma_internacao_ultimos_12_meses]
 
     identificacaoUsuarioCidadao = REXML::Element.new("identificacaoUsuarioCidadao")
 
     codigoIbgeMunicipioNascimento = REXML::Element.new("codigoIbgeMunicipioNascimento")
-    codigoIbgeMunicipioNascimento.text = false
+    codigoIbgeMunicipioNascimento.text = individual_registration[:alguma_internacao_ultimos_12_meses]
     identificacaoUsuarioCidadao.add_element codigoIbgeMunicipioNascimento
 
     dataNascimentoCidadao = REXML::Element.new("dataNascimentoCidadao")
-    dataNascimentoCidadao.text = false
+    dataNascimentoCidadao.text = individual_registration[:data_nascimento]
     identificacaoUsuarioCidadao.add_element dataNascimentoCidadao
 
     desconheceNomeMae = REXML::Element.new("desconheceNomeMae")
-    desconheceNomeMae.text = false
+    desconheceNomeMae.text = individual_registration[:alguma_internacao_ultimos_12_meses]
     identificacaoUsuarioCidadao.add_element desconheceNomeMae
 
     emailCidadao = REXML::Element.new("emailCidadao")
-    emailCidadao.text = false
+    emailCidadao.text = individual_registration[:email]
     identificacaoUsuarioCidadao.add_element emailCidadao
 
     nacionalidadeCidadao = REXML::Element.new("nacionalidadeCidadao")
-    nacionalidadeCidadao.text = false
+    nacionalidadeCidadao.text = individual_registration[:nacionalidade]
     identificacaoUsuarioCidadao.add_element nacionalidadeCidadao
 
     nomeCidadao = REXML::Element.new("nomeCidadao")
-    nomeCidadao.text = false
+    nomeCidadao.text = individual_registration[:nome_completo]
     identificacaoUsuarioCidadao.add_element nomeCidadao
 
     nomeMaeCidadao = REXML::Element.new("nomeMaeCidadao")
-    nomeMaeCidadao.text = false
+    nomeMaeCidadao.text = individual_registration[:nome_completo_ma]
     identificacaoUsuarioCidadao.add_element nomeMaeCidadao
 
     cpfCidadao = REXML::Element.new("cpfCidadao")
-    cpfCidadao.text = false
+    cpfCidadao.text = individual_registration[:cns_cpf_cidadao]
     identificacaoUsuarioCidadao.add_element cpfCidadao
 
     telefoneCelular = REXML::Element.new("telefoneCelular")
-    telefoneCelular.text = false
+    telefoneCelular.text = individual_registration[:telefone_celular]
     identificacaoUsuarioCidadao.add_element telefoneCelular
 
     paisNascimento = REXML::Element.new("paisNascimento")
-    paisNascimento.text = false
+    paisNascimento.text = individual_registration[:pais_nascimento]
     identificacaoUsuarioCidadao.add_element paisNascimento
 
     racaCorCidadao = REXML::Element.new("racaCorCidadao")
-    racaCorCidadao.text = false
+    racaCorCidadao.text = individual_registration[:raca_cor]
     identificacaoUsuarioCidadao.add_element racaCorCidadao
 
     sexoCidadao = REXML::Element.new("sexoCidadao")
-    sexoCidadao.text = false
+    sexoCidadao.text = individual_registration[:sexo]
     identificacaoUsuarioCidadao.add_element sexoCidadao
 
     statusEhResponsavel = REXML::Element.new("statusEhResponsavel")
-    statusEhResponsavel.text = false
+    statusEhResponsavel.text = individual_registration[:alguma_internacao_ultimos_12_meses]
     identificacaoUsuarioCidadao.add_element statusEhResponsavel
 
     etnia = REXML::Element.new("etnia")
-    etnia.text = false
+    etnia.text = individual_registration[:etnia]
     identificacaoUsuarioCidadao.add_element etnia
 
     nomePaiCidadao = REXML::Element.new("nomePaiCidadao")
-    nomePaiCidadao.text = false
-    identificacaoUsuarioCidadao.add_element nomePaiCidadao
-
-    nomePaiCidadao = REXML::Element.new("nomePaiCidadao")
-    nomePaiCidadao.text = false
-    identificacaoUsuarioCidadao.add_element nomePaiCidadao
-
-    nomePaiCidadao = REXML::Element.new("nomePaiCidadao")
-    nomePaiCidadao.text = false
+    nomePaiCidadao.text = individual_registration[:alguma_internacao_ultimos_12_meses]
     identificacaoUsuarioCidadao.add_element nomePaiCidadao
 
     desconheceNomePai = REXML::Element.new("desconheceNomePai")
-    desconheceNomePai.text = false
+    desconheceNomePai.text = individual_registration[:alguma_internacao_ultimos_12_meses]
     identificacaoUsuarioCidadao.add_element desconheceNomePai
 
     microArea = REXML::Element.new("microArea")
-    microArea.text = false
+    microArea.text = individual_registration[:alguma_internacao_ultimos_12_meses]
     identificacaoUsuarioCidadao.add_element microArea
 
     stForaArea = REXML::Element.new("stForaArea")
-    stForaArea.text = false
+    stForaArea.text = individual_registration[:alguma_internacao_ultimos_12_meses]
     identificacaoUsuarioCidadao.add_element stForaArea
 
     informacoesSocioDemograficas = REXML::Element.new("informacoesSocioDemograficas")
 
     deficienciasCidadao = REXML::Element.new("deficienciasCidadao")
-    deficienciasCidadao.text = false
+    deficienciasCidadao.text = individual_registration[:alguma_internacao_ultimos_12_meses]
     informacoesSocioDemograficas.add_element deficienciasCidadao
 
     deficienciasCidadao = REXML::Element.new("deficienciasCidadao")
-    deficienciasCidadao.text = false
+    deficienciasCidadao.text = individual_registration[:alguma_internacao_ultimos_12_meses]
     informacoesSocioDemograficas.add_element deficienciasCidadao
 
     grauInstrucaoCidadao = REXML::Element.new("grauInstrucaoCidadao")
-    grauInstrucaoCidadao.text = false
+    grauInstrucaoCidadao.text = individual_registration[:alguma_internacao_ultimos_12_meses]
     informacoesSocioDemograficas.add_element grauInstrucaoCidadao
 
     ocupacaoCodigoCbo2002 = REXML::Element.new("ocupacaoCodigoCbo2002")
-    ocupacaoCodigoCbo2002.text = false
+    ocupacaoCodigoCbo2002.text = individual_registration[:alguma_internacao_ultimos_12_meses]
     informacoesSocioDemograficas.add_element ocupacaoCodigoCbo2002
 
     orientacaoSexualCidadao = REXML::Element.new("orientacaoSexualCidadao")
-    orientacaoSexualCidadao.text = false
+    orientacaoSexualCidadao.text = individual_registration[:orientacao_sexual]
     informacoesSocioDemograficas.add_element orientacaoSexualCidadao
 
     situacaoMercadoTrabalhoCidadao = REXML::Element.new("situacaoMercadoTrabalhoCidadao")
-    situacaoMercadoTrabalhoCidadao.text = false
+    situacaoMercadoTrabalhoCidadao.text = individual_registration[:situacao_mercado_trabalho]
     informacoesSocioDemograficas.add_element situacaoMercadoTrabalhoCidadao
 
     statusFrequentaBenzedeira = REXML::Element.new("statusFrequentaBenzedeira")
-    statusFrequentaBenzedeira.text = false
+    statusFrequentaBenzedeira.text = individual_registration[:frequenta_cuidador_tradicional]
     informacoesSocioDemograficas.add_element statusFrequentaBenzedeira
 
     statusFrequentaEscola = REXML::Element.new("statusFrequentaEscola")
-    statusFrequentaEscola.text = false
+    statusFrequentaEscola.text = individual_registration[:alguma_internacao_ultimos_12_meses]
     informacoesSocioDemograficas.add_element statusFrequentaEscola
 
-    situacaoMercadoTrabalhoCidadao = REXML::Element.new("situacaoMercadoTrabalhoCidadao")
-    situacaoMercadoTrabalhoCidadao.text = false
-    informacoesSocioDemograficas.add_element situacaoMercadoTrabalhoCidadao
-
     statusMembroPovoComunidadeTradicional = REXML::Element.new("statusMembroPovoComunidadeTradicional")
-    statusMembroPovoComunidadeTradicional.text = false
+    statusMembroPovoComunidadeTradicional.text = individual_registration[:alguma_internacao_ultimos_12_meses]
     informacoesSocioDemograficas.add_element statusMembroPovoComunidadeTradicional
 
     statusParticipaGrupoComunitario = REXML::Element.new("statusParticipaGrupoComunitario")
-    statusParticipaGrupoComunitario.text = false
+    statusParticipaGrupoComunitario.text = individual_registration[:participa_grupo_comunitario]
     informacoesSocioDemograficas.add_element statusParticipaGrupoComunitario
 
     identidadeGeneroCidadao = REXML::Element.new("identidadeGeneroCidadao")
-    identidadeGeneroCidadao.text = false
+    identidadeGeneroCidadao.text = individual_registration[:identidade_genero]
     informacoesSocioDemograficas.add_element identidadeGeneroCidadao
 
     statusDesejaInformarIdentidadeGenero = REXML::Element.new("statusDesejaInformarIdentidadeGenero")
-    statusDesejaInformarIdentidadeGenero.text = false
+    statusDesejaInformarIdentidadeGenero.text = individual_registration[:alguma_internacao_ultimos_12_meses]
     informacoesSocioDemograficas.add_element statusDesejaInformarIdentidadeGenero
 
     coPovoComunidadeTradicional = REXML::Element.new("coPovoComunidadeTradicional")
-    coPovoComunidadeTradicional.text = false
+    coPovoComunidadeTradicional.text = individual_registration[:alguma_internacao_ultimos_12_meses]
     informacoesSocioDemograficas.add_element coPovoComunidadeTradicional
 
     saidaCidadaoCadastro = REXML::Element.new("saidaCidadaoCadastro")
 
     statusTermoRecusaCadastroIndividualAtencaoBasica = REXML::Element.new("statusTermoRecusaCadastroIndividualAtencaoBasica")
-    statusTermoRecusaCadastroIndividualAtencaoBasica.text = false
+    statusTermoRecusaCadastroIndividualAtencaoBasica.text = individual_registration[:alguma_internacao_ultimos_12_meses]
 
     tpCdsOrigem = REXML::Element.new("tpCdsOrigem")
-    tpCdsOrigem.text = false
+    tpCdsOrigem.text = individual_registration[:alguma_internacao_ultimos_12_meses]
 
     uuid = REXML::Element.new("uuid")
-    uuid.text = false
+    uuid.text = individual_registration[:alguma_internacao_ultimos_12_meses]
 
     uuidFichaOriginadora = REXML::Element.new("uuidFichaOriginadora")
-    uuidFichaOriginadora.text = false
+    uuidFichaOriginadora.text = individual_registration[:alguma_internacao_ultimos_12_meses]
 
     headerTransport = REXML::Element.new("headerTransport")
 
     profissionalCNS = REXML::Element.new("profissionalCNS")
-    profissionalCNS.text = false
+    profissionalCNS.text = individual_registration[:alguma_internacao_ultimos_12_meses]
     headerTransport.add_element profissionalCNS
 
     cboCodigo_2002 = REXML::Element.new("cboCodigo_2002")
-    cboCodigo_2002.text = false
+    cboCodigo_2002.text = individual_registration[:alguma_internacao_ultimos_12_meses]
     headerTransport.add_element cboCodigo_2002
 
     cnes = REXML::Element.new("cnes")
-    cnes.text = false
+    cnes.text = individual_registration[:alguma_internacao_ultimos_12_meses]
     headerTransport.add_element cnes
 
     ine = REXML::Element.new("ine")
-    ine.text = false
+    ine.text = individual_registration[:alguma_internacao_ultimos_12_meses]
     headerTransport.add_element ine
 
     dataAtendimento = REXML::Element.new("dataAtendimento")
-    dataAtendimento.text = false
+    dataAtendimento.text = individual_registration[:alguma_internacao_ultimos_12_meses]
     headerTransport.add_element dataAtendimento
 
     codigoIbgeMunicipio = REXML::Element.new("codigoIbgeMunicipio")
-    codigoIbgeMunicipio.text = false
+    codigoIbgeMunicipio.text = individual_registration[:alguma_internacao_ultimos_12_meses]
     headerTransport.add_element codigoIbgeMunicipio
 
     ns4.add_element condicoesDeSaude
@@ -406,38 +394,50 @@ class GenerateXmlIndividualRegistrationsJob < ApplicationJob
     ns4.add_element uuidFichaOriginadora
     ns4.add_element headerTransport
 
-    ns2remetente = REXML::Element.new("ns2:remetentee")
+    ns2remetente = REXML::Element.new("ns2:remetente")
     ns2originadora = REXML::Element.new("ns2:originadora")
 
     contraChave = REXML::Element.new("contraChave")
+    contraChave2 = REXML::Element.new("contraChave")
     contraChave.text = 'TREINAMENTO'
+    contraChave2.text = 'TREINAMENTO'
     ns2remetente.add_element contraChave
-    ns2originadora.add_element contraChave
+    ns2originadora.add_element contraChave2
 
     uuidInstalacao = REXML::Element.new("uuidInstalacao")
+    uuidInstalacao2 = REXML::Element.new("uuidInstalacao")
     uuidInstalacao.text = 'TREINAMENTO'
+    uuidInstalacao2.text = 'TREINAMENTO'
     ns2remetente.add_element uuidInstalacao
-    ns2originadora.add_element uuidInstalacao
+    ns2originadora.add_element uuidInstalacao2
 
     cpfOuCnpj = REXML::Element.new("cpfOuCnpj")
-    cpfOuCnpj.text = 'TREINAMENTO'
+    cpfOuCnpj2 = REXML::Element.new("cpfOuCnpj")
+    cpfOuCnpj.text = '01234567890'
+    cpfOuCnpj2.text = '01234567890'
     ns2remetente.add_element cpfOuCnpj
-    ns2originadora.add_element cpfOuCnpj
+    ns2originadora.add_element cpfOuCnpj2
 
     nomeOuRazaoSocial = REXML::Element.new("nomeOuRazaoSocial")
-    nomeOuRazaoSocial.text = 'TREINAMENTO'
+    nomeOuRazaoSocial2 = REXML::Element.new("nomeOuRazaoSocial")
+    nomeOuRazaoSocial.text = 'ADMINISTRADOR INSTALAÇÃO'
+    nomeOuRazaoSocial2.text = 'ADMINISTRADOR INSTALAÇÃO'
     ns2remetente.add_element nomeOuRazaoSocial
-    ns2originadora.add_element nomeOuRazaoSocial
+    ns2originadora.add_element nomeOuRazaoSocial2
 
     versaoSistema = REXML::Element.new("versaoSistema")
-    versaoSistema.text = 'TREINAMENTO'
+    versaoSistema2 = REXML::Element.new("versaoSistema")
+    versaoSistema.text = '3.2.18'
+    versaoSistema2.text = '3.2.18'
     ns2remetente.add_element versaoSistema
-    ns2originadora.add_element versaoSistema
+    ns2originadora.add_element versaoSistema2
 
     nomeBancoDados = REXML::Element.new("nomeBancoDados")
-    nomeBancoDados.text = 'TREINAMENTO'
+    nomeBancoDados2 = REXML::Element.new("nomeBancoDados")
+    nomeBancoDados.text = 'Oracle'
+    nomeBancoDados2.text = 'Oracle'
     ns2remetente.add_element nomeBancoDados
-    ns2originadora.add_element nomeBancoDados
+    ns2originadora.add_element nomeBancoDados2
 
     versao = REXML::Element.new("versao")
     versao.add_attribute 'major', 4
@@ -451,6 +451,14 @@ class GenerateXmlIndividualRegistrationsJob < ApplicationJob
 
     doc.add_element ns3
 
-    puts doc
+    doc.write(File.open("#{individual_registration[:id]}.xml","w"))
+
+    individual_registration.registration_xml.attach(
+      io: File.open("#{individual_registration[:id]}.xml"),
+      filename: "#{individual_registration[:id]}.xml"
+    )
+
+    File.delete("#{individual_registration[:id]}.xml")
   end
 end
+

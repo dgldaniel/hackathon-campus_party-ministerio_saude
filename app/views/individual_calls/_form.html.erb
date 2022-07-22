@@ -1,0 +1,177 @@
+<%= form_with(model: individual_call) do |form| %>
+  <% if individual_call.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(individual_call.errors.count, "error") %> prohibited this individual_call from being saved:</h2>
+
+      <ul>
+        <% individual_call.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :numeroProntuario %>
+    <%= form.text_field :numeroProntuario %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cnsCidadao %>
+    <%= form.text_field :cnsCidadao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dataNascimento %>
+    <%= form.datetime_select :dataNascimento %>
+  </div>
+
+  <div class="field">
+    <%= form.label :localDeAtendimento %>
+    <%= form.number_field :localDeAtendimento %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sexo %>
+    <%= form.number_field :sexo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :turno %>
+    <%= form.number_field :turno %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tipoAtendimento %>
+    <%= form.number_field :tipoAtendimento %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pesoAcompanhamentoNutricional %>
+    <%= form.text_field :pesoAcompanhamentoNutricional %>
+  </div>
+
+  <div class="field">
+    <%= form.label :alturaAcompanhamentoNutricional %>
+    <%= form.text_field :alturaAcompanhamentoNutricional %>
+  </div>
+
+  <div class="field">
+    <%= form.label :aleitamentoMaterno %>
+    <%= form.number_field :aleitamentoMaterno %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dumDaGestante %>
+    <%= form.datetime_select :dumDaGestante %>
+  </div>
+
+  <div class="field">
+    <%= form.label :idadeGestacional %>
+    <%= form.number_field :idadeGestacional %>
+  </div>
+
+  <div class="field">
+    <%= form.label :atencaoDomiciliarModalidade %>
+    <%= form.number_field :atencaoDomiciliarModalidade %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vacinaEmDia %>
+    <%= form.check_box :vacinaEmDia %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ficouEmObservacao %>
+    <%= form.check_box :ficouEmObservacao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nasfs %>
+    <%= form.number_field :nasfs %>
+  </div>
+
+  <div class="field">
+    <%= form.label :condutas %>
+    <%= form.text_field :condutas %>
+  </div>
+
+  <div class="field">
+    <%= form.label :stGravidezPlanejada %>
+    <%= form.check_box :stGravidezPlanejada %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nuGestasPrevias %>
+    <%= form.number_field :nuGestasPrevias %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nuPartos %>
+    <%= form.number_field :nuPartos %>
+  </div>
+
+  <div class="field">
+    <%= form.label :racionalidadeSaude %>
+    <%= form.number_field :racionalidadeSaude %>
+  </div>
+
+  <div class="field">
+    <%= form.label :perimetroCefalico %>
+    <%= form.text_field :perimetroCefalico %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dataHoraInicialAtendimento %>
+    <%= form.datetime_select :dataHoraInicialAtendimento %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dataHoraFinalAtendimento %>
+    <%= form.datetime_select :dataHoraFinalAtendimento %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ExamResult_id %>
+    <%= form.text_field :ExamResult_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Professional_id %>
+    <%= form.text_field :Professional_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Participant_id %>
+    <%= form.text_field :Participant_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :CollectiveActivitySheet_id %>
+    <%= form.text_field :CollectiveActivitySheet_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Exam_id %>
+    <%= form.text_field :Exam_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Medicine_id %>
+    <%= form.text_field :Medicine_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Forwarding_id %>
+    <%= form.text_field :Forwarding_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ExamResult_id %>
+    <%= form.text_field :ExamResult_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Collective Calls</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Uuidficha</th>
+      <th>Inep</th>
+      <th>Numparticipantes</th>
+      <th>Numavaliacoesalteradas</th>
+      <th>Atividadetipo</th>
+      <th>Publicoalvo</th>
+      <th>Tbcdsorigem</th>
+      <th>Procedimento</th>
+      <th>Turno</th>
+      <th>Pseeducacao</th>
+      <th>Psesaude</th>
+      <th>Temasparasaude</th>
+      <th>Praticasemsaude</th>
+      <th>Participant</th>
+      <th>Professional</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @collective_calls.each do |collective_call| %>
+      <tr>
+        <td><%= collective_call.uuidFicha %></td>
+        <td><%= collective_call.inep %></td>
+        <td><%= collective_call.numParticipantes %></td>
+        <td><%= collective_call.numAvaliacoesAlteradas %></td>
+        <td><%= collective_call.atividadeTipo %></td>
+        <td><%= collective_call.publicoAlvo %></td>
+        <td><%= collective_call.tbCdsOrigem %></td>
+        <td><%= collective_call.procedimento %></td>
+        <td><%= collective_call.turno %></td>
+        <td><%= collective_call.pseEducacao %></td>
+        <td><%= collective_call.pseSaude %></td>
+        <td><%= collective_call.temasParaSaude %></td>
+        <td><%= collective_call.praticasEmSaude %></td>
+        <td><%= collective_call.Participant_id %></td>
+        <td><%= collective_call.Professional_id %></td>
+        <td><%= link_to 'Show', collective_call %></td>
+        <td><%= link_to 'Edit', edit_collective_call_path(collective_call) %></td>
+        <td><%= link_to 'Destroy', collective_call, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Collective Call', new_collective_call_path %>

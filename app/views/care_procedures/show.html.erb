@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Numprontuario:</strong>
+  <%= @care_procedure.numProntuario %>
+</p>
+
+<p>
+  <strong>Cnscidadao:</strong>
+  <%= @care_procedure.cnsCidadao %>
+</p>
+
+<p>
+  <strong>Dtnascimento:</strong>
+  <%= @care_procedure.dtNascimento %>
+</p>
+
+<p>
+  <strong>Sexo:</strong>
+  <%= @care_procedure.sexo %>
+</p>
+
+<p>
+  <strong>Localatendimento:</strong>
+  <%= @care_procedure.localAtendimento %>
+</p>
+
+<p>
+  <strong>Turn:</strong>
+  <%= @care_procedure.turn %>
+</p>
+
+<p>
+  <strong>Statusescutainicialorientacao:</strong>
+  <%= @care_procedure.statusEscutaInicialOrientacao %>
+</p>
+
+<p>
+  <strong>Procedimentos:</strong>
+  <%= @care_procedure.procedimentos %>
+</p>
+
+<p>
+  <strong>Datahorainicialatendimento:</strong>
+  <%= @care_procedure.dataHoraInicialAtendimento %>
+</p>
+
+<p>
+  <strong>Datahorafinalatendimento:</strong>
+  <%= @care_procedure.dataHoraFinalAtendimento %>
+</p>
+
+<p>
+  <strong>Pesoacompanhamentonutricional:</strong>
+  <%= @care_procedure.pesoAcompanhamentoNutricional %>
+</p>
+
+<p>
+  <strong>Alturaacompanhamentonutricional:</strong>
+  <%= @care_procedure.alturaAcompanhamentoNutricional %>
+</p>
+
+<%= link_to 'Edit', edit_care_procedure_path(@care_procedure) %> |
+<%= link_to 'Back', care_procedures_path %>

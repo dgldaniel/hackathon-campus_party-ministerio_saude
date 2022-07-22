@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  uuidFicha: 
+  tpCdsOrigem: 1
+  numTotalAfericaoPa: 1
+  numTotalAfericaoTemperatura: 1
+  numTotalCurativoSimples: 1
+  numTotalColetaMaterialParaExameLaboratorial: 1
+  numTotalGlicemiaCapilar: 1
+  numTotalMedicaoAltura: 1
+  numTotalMedicaoPeso: 1
+
+two:
+  uuidFicha: 
+  tpCdsOrigem: 1
+  numTotalAfericaoPa: 1
+  numTotalAfericaoTemperatura: 1
+  numTotalCurativoSimples: 1
+  numTotalColetaMaterialParaExameLaboratorial: 1
+  numTotalGlicemiaCapilar: 1
+  numTotalMedicaoAltura: 1
+  numTotalMedicaoPeso: 1

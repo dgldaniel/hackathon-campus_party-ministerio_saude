@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ciaps:</strong>
+  <%= @problem_condition_evaluated.ciaps %>
+</p>
+
+<p>
+  <strong>Outrociap1:</strong>
+  <%= @problem_condition_evaluated.outroCiap1 %>
+</p>
+
+<p>
+  <strong>Cid10:</strong>
+  <%= @problem_condition_evaluated.cid10 %>
+</p>
+
+<p>
+  <strong>Cid10 2:</strong>
+  <%= @problem_condition_evaluated.cid10_2 %>
+</p>
+
+<%= link_to 'Edit', edit_problem_condition_evaluated_path(@problem_condition_evaluated) %> |
+<%= link_to 'Back', problem_condition_evaluateds_path %>

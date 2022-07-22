@@ -1,4 +1,4 @@
-<%= form_with(model: individual_registration, id: 'form-register') do |form| %>
+<%= form_with(model: individual_registration) do |form| %>
   <% if individual_registration.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(individual_registration.errors.count, "error") %> prohibited this individual_registration from being saved:</h2>
@@ -11,443 +11,617 @@
     </div>
   <% end %>
 
-<div class="tab">
   <div class="field">
-    <%= form.collection_check_boxes(:ciap_cid, { 'K75': 'K75', 'T89': 'T89', 'F84.5': 'F84.5', 'F20.0': 'F20.0'}, :last, :first) do |b| %>
-      <%= b.label(class:"checkbox") { b.check_box(class:"checkbox") + b.text } %>
-      <br>
-    <% end %>
+    <%= form.label :statusTemDoencaRespiratoria %>
+    <%= form.check_box :statusTemDoencaRespiratoria %>
   </div>
 
   <div class="field">
-    <%= form.label :cns_profissional %>
-    <%= form.text_field :cns_profissional, class: 'input' %>
+    <%= form.label :statusTemTeveDoencasRins %>
+    <%= form.check_box :statusTemTeveDoencasRins %>
   </div>
 
   <div class="field">
-    <%= form.label :cns_cpf_cidadao %>
-    <%= form.text_field :cns_cpf_cidadao %>
+    <%= form.label :statusTeveDoencaCardiaca %>
+    <%= form.check_box :statusTeveDoencaCardiaca %>
   </div>
 
   <div class="field">
-    <%= form.label :cns_cpf_responsavel_familiar %>
-    <%= form.text_field :cns_cpf_responsavel_familiar %>
+    <%= form.label :statusTeveInternadoEm12Meses %>
+    <%= form.check_box :statusTeveInternadoEm12Meses %>
   </div>
 
   <div class="field">
-    <%= form.label :nome_completo %>
-    <%= form.text_field :nome_completo %>
+    <%= form.label :statusUsaPlantaMedicinais %>
+    <%= form.check_box :statusUsaPlantaMedicinais %>
   </div>
 
   <div class="field">
-    <%= form.label :data_nascimento %>
-    <%= form.date_select :data_nascimento %>
+    <%= form.label :grauParentescoFamiliarFrequentado %>
+    <%= form.text_field :grauParentescoFamiliarFrequentado %>
   </div>
 
   <div class="field">
-    <b>SEXO:</b><br />
-    <%= form.radio_button :sexo, 'Masculino' %> Masculino<br />
-    <%= form.radio_button :sexo, 'Feminino' %> Feminino<br />
+    <%= form.label :higienePessoalSituacaoRua %>
+    <%= form.text_field :higienePessoalSituacaoRua %>
   </div>
 
   <div class="field">
-    <b>Raça/Cor</b><br />
-    <%= form.radio_button :raca_cor, 'Branca' %> Branca<br />
-    <%= form.radio_button :raca_cor, 'Preta' %> Preta<br />
-    <%= form.radio_button :raca_cor, 'Parda' %> Parda<br />
-    <%= form.radio_button :raca_cor, 'Amarela' %> Amarela<br />
-    <%= form.radio_button :raca_cor, 'Indigena' %> Indigena<br />
+    <%= form.label :origemAlimentoSituacaoRua %>
+    <%= form.text_field :origemAlimentoSituacaoRua %>
+  </div>
+
+  <div class="field">
+    <%= form.label :outraInstituicaoQueAcompanha %>
+    <%= form.text_field :outraInstituicaoQueAcompanha %>
+  </div>
+
+  <div class="field">
+    <%= form.label :quantidadeAlimentacoesAoDiaSituacaoRua %>
+    <%= form.number_field :quantidadeAlimentacoesAoDiaSituacaoRua %>
+  </div>
+
+  <div class="field">
+    <%= form.label :statusAcompanhadoPorOutraInstituicao %>
+    <%= form.check_box :statusAcompanhadoPorOutraInstituicao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :statusTemAcessoHigienePessoalSituacaoRua %>
+    <%= form.check_box :statusTemAcessoHigienePessoalSituacaoRua %>
+  </div>
+
+  <div class="field">
+    <%= form.label :statusVisitaFamiliarFrequentemente %>
+    <%= form.check_box :statusVisitaFamiliarFrequentemente %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tempoSituacaoRua %>
+    <%= form.number_field :tempoSituacaoRua %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fichaAtualizada %>
+    <%= form.check_box :fichaAtualizada %>
+  </div>
+
+  <div class="field">
+    <%= form.label :codigoIbgeMunicipioNascimento %>
+    <%= form.text_field :codigoIbgeMunicipioNascimento %>
+  </div>
+
+  <div class="field">
+    <%= form.label :desconheceNomeMae %>
+    <%= form.check_box :desconheceNomeMae %>
+  </div>
+
+  <div class="field">
+    <%= form.label :statusEhResponsavel %>
+    <%= form.check_box :statusEhResponsavel %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nomePaiCidadao %>
+    <%= form.text_field :nomePaiCidadao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :desconheceNomePai %>
+    <%= form.check_box :desconheceNomePai %>
+  </div>
+
+  <div class="field">
+    <%= form.label :microArea %>
+    <%= form.text_field :microArea %>
+  </div>
+
+  <div class="field">
+    <%= form.label :stForaArea %>
+    <%= form.check_box :stForaArea %>
+  </div>
+
+  <div class="field">
+    <%= form.label :deficienciasCidadao %>
+    <%= form.text_field :deficienciasCidadao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :grauInstrucaoCidadao %>
+    <%= form.number_field :grauInstrucaoCidadao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ocupacaoCodigoCbo2002 %>
+    <%= form.text_field :ocupacaoCodigoCbo2002 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :statusFrequentaEscola %>
+    <%= form.check_box :statusFrequentaEscola %>
+  </div>
+
+  <div class="field">
+    <%= form.label :statusMembroPovoComunidadeTradicional %>
+    <%= form.check_box :statusMembroPovoComunidadeTradicional %>
+  </div>
+
+  <div class="field">
+    <%= form.label :statusDesejaInformarIdentidadeGenero %>
+    <%= form.check_box :statusDesejaInformarIdentidadeGenero %>
+  </div>
+
+  <div class="field">
+    <%= form.label :coPovoComunidadeTradicional %>
+    <%= form.number_field :coPovoComunidadeTradicional %>
+  </div>
+
+  <div class="field">
+    <%= form.label :statusTermoRecusaCadastroIndividualAtencaoBasica %>
+    <%= form.check_box :statusTermoRecusaCadastroIndividualAtencaoBasica %>
+  </div>
+
+  <div class="field">
+    <%= form.label :uuid %>
+    <%= form.text_field :uuid %>
+  </div>
+
+  <div class="field">
+    <%= form.label :uuidFichaOriginadora %>
+    <%= form.text_field :uuidFichaOriginadora %>
+  </div>
+
+  <div class="field">
+    <%= form.label :profissionalCNS %>
+    <%= form.text_field :profissionalCNS %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cboCodigo_2002 %>
+    <%= form.text_field :cboCodigo_2002 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cnes %>
+    <%= form.text_field :cnes %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ine %>
+    <%= form.text_field :ine %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dataAtendimento %>
+    <%= form.datetime_select :dataAtendimento %>
+  </div>
+
+  <div class="field">
+    <%= form.label :codigoIbgeMunicipio %>
+    <%= form.text_field :codigoIbgeMunicipio %>
+  </div>
+
+  <div class="field">
+    <%= form.label :uuidDadoSerializado %>
+    <%= form.text_field :uuidDadoSerializado %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tipoDadoSerializado %>
+    <%= form.number_field :tipoDadoSerializado %>
+  </div>
+
+  <div class="field">
+    <%= form.label :codIbge %>
+    <%= form.text_field :codIbge %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cnesDadoSerializado %>
+    <%= form.text_field :cnesDadoSerializado %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ineDadoSerializado %>
+    <%= form.text_field :ineDadoSerializado %>
+  </div>
+
+  <div class="field">
+    <%= form.label :numLote %>
+    <%= form.number_field :numLote %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fichaAtualizada %>
+    <%= form.check_box :fichaAtualizada %>
+  </div>
+
+  <div class="field">
+    <%= form.label :statusTermoRecusaCadastroIndividualAtencaoBasica %>
+    <%= form.check_box :statusTermoRecusaCadastroIndividualAtencaoBasica %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tpCdsOrigem %>
+    <%= form.number_field :tpCdsOrigem %>
+  </div>
+
+  <div class="field">
+    <%= form.label :descricaoCausaInternacaoEm12Meses %>
+    <%= form.text_field :descricaoCausaInternacaoEm12Meses %>
+  </div>
+
+  <div class="field">
+    <%= form.label :descricaoOutraCondicao1 %>
+    <%= form.text_field :descricaoOutraCondicao1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :descricaoOutraCondicao2 %>
+    <%= form.text_field :descricaoOutraCondicao2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :descricaoPlantasMedicinaisUsadas %>
+    <%= form.text_field :descricaoPlantasMedicinaisUsadas %>
+  </div>
+
+  <div class="field">
+    <%= form.label :doencaCardiaca %>
+    <%= form.number_field :doencaCardiaca %>
+  </div>
+
+  <div class="field">
+    <%= form.label :doencaRespiratoria %>
+    <%= form.number_field :doencaRespiratoria %>
+  </div>
+
+  <div class="field">
+    <%= form.label :doencaRins %>
+    <%= form.number_field :doencaRins %>
+  </div>
+
+  <div class="field">
+    <%= form.label :maternidadeDeReferencia %>
+    <%= form.text_field :maternidadeDeReferencia %>
+  </div>
+
+  <div class="field">
+    <%= form.label :situacaoPeso %>
+    <%= form.number_field :situacaoPeso %>
+  </div>
+
+  <div class="field">
+    <%= form.label :statusEhDependenteAlcool %>
+    <%= form.check_box :statusEhDependenteAlcool %>
+  </div>
+
+  <div class="field">
+    <%= form.label :statusEhDependenteOutrasDrogas %>
+    <%= form.check_box :statusEhDependenteOutrasDrogas %>
+  </div>
+
+  <div class="field">
+    <%= form.label :statusEhFumante %>
+    <%= form.check_box :statusEhFumante %>
+  </div>
+
+  <div class="field">
+    <%= form.label :statusEhGestante %>
+    <%= form.check_box :statusEhGestante %>
+  </div>
+
+  <div class="field">
+    <%= form.label :statusEstaAcamado %>
+    <%= form.check_box :statusEstaAcamado %>
+  </div>
+
+  <div class="field">
+    <%= form.label :statusEstaDomiciliado %>
+    <%= form.check_box :statusEstaDomiciliado %>
+  </div>
+
+  <div class="field">
+    <%= form.label :statusTemDiabetes %>
+    <%= form.check_box :statusTemDiabetes %>
+  </div>
+
+  <div class="field">
+    <%= form.label :statusTemDoencaRespiratoria %>
+    <%= form.check_box :statusTemDoencaRespiratoria %>
+  </div>
+
+  <div class="field">
+    <%= form.label :statusTemHanseniase %>
+    <%= form.check_box :statusTemHanseniase %>
+  </div>
+
+  <div class="field">
+    <%= form.label :statusTemHipertensaoArterial %>
+    <%= form.check_box :statusTemHipertensaoArterial %>
+  </div>
+
+  <div class="field">
+    <%= form.label :statusTemTeveCancer %>
+    <%= form.check_box :statusTemTeveCancer %>
+  </div>
+
+  <div class="field">
+    <%= form.label :statusTemTeveDoencasRins %>
+    <%= form.check_box :statusTemTeveDoencasRins %>
+  </div>
+
+  <div class="field">
+    <%= form.label :statusTemTuberculose %>
+    <%= form.check_box :statusTemTuberculose %>
+  </div>
+
+  <div class="field">
+    <%= form.label :statusTeveAvcDerrame %>
+    <%= form.check_box :statusTeveAvcDerrame %>
+  </div>
+
+  <div class="field">
+    <%= form.label :statusTeveDoencaCardiaca %>
+    <%= form.check_box :statusTeveDoencaCardiaca %>
+  </div>
+
+  <div class="field">
+    <%= form.label :statusTeveInfarto %>
+    <%= form.check_box :statusTeveInfarto %>
+  </div>
+
+  <div class="field">
+    <%= form.label :statusTeveInternadoEm12Meses %>
+    <%= form.check_box :statusTeveInternadoEm12Meses %>
+  </div>
+
+  <div class="field">
+    <%= form.label :statusUsaPlantaMedicinais %>
+    <%= form.check_box :statusUsaPlantaMedicinais %>
+  </div>
+
+  <div class="field">
+    <%= form.label :statusDiagnosticoMental %>
+    <%= form.check_box :statusDiagnosticoMental %>
+  </div>
+
+  <div class="field">
+    <%= form.label :grauParentescoFamiliarFrequentado %>
+    <%= form.text_field :grauParentescoFamiliarFrequentado %>
+  </div>
+
+  <div class="field">
+    <%= form.label :higienePessoalSituacaoRua %>
+    <%= form.number_field :higienePessoalSituacaoRua %>
+  </div>
+
+  <div class="field">
+    <%= form.label :higienePessoalSituacaoRua %>
+    <%= form.number_field :higienePessoalSituacaoRua %>
+  </div>
+
+  <div class="field">
+    <%= form.label :origemAlimentoSituacaoRua %>
+    <%= form.number_field :origemAlimentoSituacaoRua %>
+  </div>
+
+  <div class="field">
+    <%= form.label :origemAlimentoSituacaoRua %>
+    <%= form.number_field :origemAlimentoSituacaoRua %>
+  </div>
+
+  <div class="field">
+    <%= form.label :outraInstituicaoQueAcompanha %>
+    <%= form.text_field :outraInstituicaoQueAcompanha %>
+  </div>
+
+  <div class="field">
+    <%= form.label :quantidadeAlimentacoesAoDiaSituacaoRua %>
+    <%= form.number_field :quantidadeAlimentacoesAoDiaSituacaoRua %>
+  </div>
+
+  <div class="field">
+    <%= form.label :statusAcompanhadoPorOutraInstituicao %>
+    <%= form.check_box :statusAcompanhadoPorOutraInstituicao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :statusPossuiReferenciaFamiliar %>
+    <%= form.check_box :statusPossuiReferenciaFamiliar %>
+  </div>
+
+  <div class="field">
+    <%= form.label :statusRecebeBeneficio %>
+    <%= form.check_box :statusRecebeBeneficio %>
+  </div>
+
+  <div class="field">
+    <%= form.label :statusSituacaoRua %>
+    <%= form.check_box :statusSituacaoRua %>
+  </div>
+
+  <div class="field">
+    <%= form.label :statusTemAcessoHigienePessoalSituacaoRua %>
+    <%= form.check_box :statusTemAcessoHigienePessoalSituacaoRua %>
+  </div>
+
+  <div class="field">
+    <%= form.label :statusVisitaFamiliarFrequentemente %>
+    <%= form.check_box :statusVisitaFamiliarFrequentemente %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tempoSituacaoRua %>
+    <%= form.number_field :tempoSituacaoRua %>
+  </div>
+
+  <div class="field">
+    <%= form.label :codigoIbgeMunicipioNascimento %>
+    <%= form.text_field :codigoIbgeMunicipioNascimento %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dataNascimentoCidadao %>
+    <%= form.text_field :dataNascimentoCidadao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :desconheceNomeMae %>
+    <%= form.check_box :desconheceNomeMae %>
+  </div>
+
+  <div class="field">
+    <%= form.label :emailCidadao %>
+    <%= form.text_field :emailCidadao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nacionalidadeCidadao %>
+    <%= form.number_field :nacionalidadeCidadao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nomeCidadao %>
+    <%= form.text_field :nomeCidadao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nomeMaeCidadao %>
+    <%= form.text_field :nomeMaeCidadao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cpfCidadao %>
+    <%= form.text_field :cpfCidadao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :telefoneCelular %>
+    <%= form.text_field :telefoneCelular %>
+  </div>
+
+  <div class="field">
+    <%= form.label :paisNascimento %>
+    <%= form.text_field :paisNascimento %>
+  </div>
+
+  <div class="field">
+    <%= form.label :racaCorCidadao %>
+    <%= form.number_field :racaCorCidadao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sexoCidadao %>
+    <%= form.number_field :sexoCidadao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :statusEhResponsavel %>
+    <%= form.check_box :statusEhResponsavel %>
   </div>
 
   <div class="field">
     <%= form.label :etnia %>
-    <%= form.text_field :etnia %>
-  </div>
-</div>
-
-<div class="tab">
-
-  <div class="field">
-    <%= form.label :pis_pasep %>
-    <%= form.text_field :pis_pasep %>
+    <%= form.number_field :etnia %>
   </div>
 
   <div class="field">
-    <%= form.label :nome_completo_mae %>
-    <%= form.text_field :nome_completo_mae %>
+    <%= form.label :nomePaiCidadao %>
+    <%= form.text_field :nomePaiCidadao %>
   </div>
 
   <div class="field">
-    <%= form.label :nome_completo_pai %>
-    <%= form.text_field :nome_completo_pai %>
+    <%= form.label :desconheceNomePai %>
+    <%= form.check_box :desconheceNomePai %>
   </div>
 
   <div class="field">
-    <b>Nacionalidade</b><br />
-    <%= form.radio_button :nacionalidade, 'Brasileira' %> Brasileira<br />
-    <%= form.radio_button :nacionalidade, 'Naturalizado' %> Naturalizado<br />
-    <%= form.radio_button :nacionalidade, 'Estrangeiro' %> Estrangeiro<br />
+    <%= form.label :microArea %>
+    <%= form.text_field :microArea %>
   </div>
 
   <div class="field">
-    <%= form.label :pais_nascimento %>
-    <%= form.date_select :pais_nascimento %>
+    <%= form.label :stForaArea %>
+    <%= form.check_box :stForaArea %>
   </div>
 
   <div class="field">
-    <%= form.label :data_naturalizacao %>
-    <%= form.text_field :data_naturalizacao %>
+    <%= form.label :deficienciasCidadao %>
+    <%= form.number_field :deficienciasCidadao %>
   </div>
 
   <div class="field">
-    <%= form.label :municipio_uf_nascimento %>
-    <%= form.text_field :municipio_uf_nascimento %>
+    <%= form.label :deficienciasCidadao %>
+    <%= form.number_field :deficienciasCidadao %>
   </div>
 
   <div class="field">
-    <%= form.label :telefone_celular %>
-    <%= form.text_field :telefone_celular %>
+    <%= form.label :ocupacaoCodigoCbo2002 %>
+    <%= form.text_field :ocupacaoCodigoCbo2002 %>
   </div>
 
   <div class="field">
-    <%= form.label :email %>
-    <%= form.text_field :email %>
-  </div>
-</div>
-
-<div class="tab">
-  <div class="field">
-    <b>Relação de Parentesco com o Responsável Familiar</b><br />
-    <%= form.radio_button :relacao_parentesco_responsavel_familiar, 'Cônjuge/Companheiro' %> Cônjuge/Companheiro<br />
-    <%= form.radio_button :relacao_parentesco_responsavel_familiar, 'Filho(a)' %> Filho(a)<br />
-    <%= form.radio_button :relacao_parentesco_responsavel_familiar, 'Enteado(a)' %> Enteado(a)<br />
-    <%= form.radio_button :relacao_parentesco_responsavel_familiar, 'Neto(a)/Bisneto(a)' %> Neto(a)/Bisneto(a)<br />
-    <%= form.radio_button :relacao_parentesco_responsavel_familiar, 'Pai/Mãe' %> Pai/Mãe<br />
-    <%= form.radio_button :relacao_parentesco_responsavel_familiar, 'Sogro(a)' %> Sogro(a)<br />
-    <%= form.radio_button :relacao_parentesco_responsavel_familiar, 'Irmão/Irmã' %> Irmão/Irmã<br />
-    <%= form.radio_button :relacao_parentesco_responsavel_familiar, 'Genro/Nora' %> Genro/Nora<br />
-    <%= form.radio_button :relacao_parentesco_responsavel_familiar, 'Outro parente' %> Outro parente<br />
-    <%= form.radio_button :relacao_parentesco_responsavel_familiar, 'Não parente' %> Não parente<br />
+    <%= form.label :orientacaoSexualCidadao %>
+    <%= form.number_field :orientacaoSexualCidadao %>
   </div>
 
   <div class="field">
-    <b>Qual é o curso mais elevado que frequenta ou frequentou?</b><br />
-    <%= form.radio_button :curso_elevado_frequenta_frequentou, 'Creche' %> Creche<br />
-    <%= form.radio_button :curso_elevado_frequenta_frequentou, 'Pré-escola (exceto CA)' %> Pré-escola (exceto CA)<br />
-    <%= form.radio_button :curso_elevado_frequenta_frequentou, 'Classe de Alfabetização - CA' %> Classe de Alfabetização - CA<br />
-    <%= form.radio_button :curso_elevado_frequenta_frequentou, 'Ensino Fundamental 1ª a 4ª séries' %> Ensino Fundamental 1ª a 4ª séries<br />
-    <%= form.radio_button :curso_elevado_frequenta_frequentou, 'Ensino Fundamental 5ª a 8ª séries' %> Ensino Fundamental 5ª a 8ª séries<br />
-    <%= form.radio_button :curso_elevado_frequenta_frequentou, 'Ensino Fundamental Completo' %> Ensino Fundamental Completo<br />
-    <%= form.radio_button :curso_elevado_frequenta_frequentou, 'Ensino Fundamental Especial' %> Ensino Fundamental Especial<br />
-    <%= form.radio_button :curso_elevado_frequenta_frequentou, 'Ensino Fundamental EJA - séries iniciais' %> (Supletivo 1ª a 4ª)<br />
-    <%= form.radio_button :curso_elevado_frequenta_frequentou, 'Ensino Fundamental EJA - séries finais (Supletivo 5ª a 8ª)' %> Ensino Fundamental EJA - séries finais (Supletivo 5ª a 8ª)  <br />
-    <%= form.radio_button :curso_elevado_frequenta_frequentou, 'Ensino Médio, Médio 2º Ciclo (Científico, Técnico etc.)' %> Ensino Médio, Médio 2º Ciclo (Científico, Técnico etc.)<br />
-    <%= form.radio_button :curso_elevado_frequenta_frequentou, 'Ensino Médio Especial' %> (Supletivo 1ª a 4ª)<br />
-    <%= form.radio_button :curso_elevado_frequenta_frequentou, 'Ensino Médio EJA (Supletivo)' %> Ensino Médio EJA (Supletivo) <br />
-    <%= form.radio_button :curso_elevado_frequenta_frequentou, 'Superior, Aperfeiçoamento, Especialização, Mestrado, Doutorado' %> Superior, Aperfeiçoamento, Especialização, Mestrado, Doutorado<br />
-    <%= form.radio_button :curso_elevado_frequenta_frequentou, 'Alfabetização para Adultos (Mobral etc.)' %> Alfabetização para Adultos (Mobral etc.)<br />
-    <%= form.radio_button :curso_elevado_frequenta_frequentou, 'Nenhum' %> Nenhum <br />
+    <%= form.label :situacaoMercadoTrabalhoCidadao %>
+    <%= form.number_field :situacaoMercadoTrabalhoCidadao %>
   </div>
 
   <div class="field">
-    <b>Situação no Mercado de Trabalho</b><br />
-    <%= form.radio_button :situacao_mercado_trabalho, 'Empregador' %> Empregador<br />
-    <%= form.radio_button :situacao_mercado_trabalho, 'Assalariado com carteira de trabalho' %> Assalariado com carteira de trabalho<br />
-    <%= form.radio_button :situacao_mercado_trabalho, 'Assalariado sem carteira de trabalho' %> Assalariado sem carteira de trabalho<br />
-    <%= form.radio_button :situacao_mercado_trabalho, 'Autônomo com previdência social' %> Autônomo com previdência social<br />
-    <%= form.radio_button :situacao_mercado_trabalho, 'Autônomo sem previdência social' %> Autônomo sem previdência social<br />
-    <%= form.radio_button :situacao_mercado_trabalho, 'Aposentado/Pensionista' %> Aposentado/Pensionista<br />
-    <%= form.radio_button :situacao_mercado_trabalho, 'Desempregado' %> Desempregado<br />
-    <%= form.radio_button :situacao_mercado_trabalho, 'Não trabalha' %> Não trabalha<br />
-    <%= form.radio_button :situacao_mercado_trabalho, 'Servidor público/militar' %> Servidor público/militar<br />
-    <%= form.radio_button :situacao_mercado_trabalho, 'Outro' %> Outro<br />
+    <%= form.label :statusDesejaInformarOrientacaoSexual %>
+    <%= form.check_box :statusDesejaInformarOrientacaoSexual %>
   </div>
 
   <div class="field">
-    <b>FREQUENTA CUIDADOR TRADICIONAL?</b><br />
-    <%= form.radio_button :frequenta_cuidador_tradicional, 'Sim' %> Sim<br />
-    <%= form.radio_button :frequenta_cuidador_tradicional, 'Não' %> Não<br />
+    <%= form.label :statusFrequentaBenzedeira %>
+    <%= form.check_box :statusFrequentaBenzedeira %>
   </div>
 
   <div class="field">
-    <b>PARTICIPA DE ALGUM GRUPO COMUNITÁRIO?</b><br />
-    <%= form.radio_button :participa_grupo_comunitario, 'Sim' %> Sim<br />
-    <%= form.radio_button :participa_grupo_comunitario, 'Não' %> Não<br />
+    <%= form.label :statusFrequentaEscola %>
+    <%= form.check_box :statusFrequentaEscola %>
   </div>
 
   <div class="field">
-    <b>POSSUI PLANO DE SAÚDE PRIVADO?</b><br />
-    <%= form.radio_button :possui_plano_saude_privado, 'Sim' %> Sim<br />
-    <%= form.radio_button :possui_plano_saude_privado, 'Não' %> Não<br />
+    <%= form.label :statusMembroPovoComunidadeTradicional %>
+    <%= form.check_box :statusMembroPovoComunidadeTradicional %>
   </div>
 
   <div class="field">
-    <b>DESEJA INFORMAR ORIENTAÇÃO SEXUAL?</b><br />
-    <%= form.radio_button :orientacao_sexual, 'Não' %> Não<br />
-    <%= form.radio_button :orientacao_sexual, 'Heterossexual' %> Heterossexual<br />
-    <%= form.radio_button :orientacao_sexual, 'Bissexual' %> Bissexual<br />
-    <%= form.radio_button :orientacao_sexual, 'Homossexual (gay / lésbica)' %> Homossexual (gay / lésbica)<br />
-    <%= form.radio_button :orientacao_sexual, 'Outra' %> Outra<br />
+    <%= form.label :statusParticipaGrupoComunitario %>
+    <%= form.check_box :statusParticipaGrupoComunitario %>
   </div>
 
   <div class="field">
-    <b>DESEJA INFORMAR IDENTIDADE DE GÊNERO?</b><br />
-    <%= form.radio_button :identidade_genero, 'Não' %> Não<br />
-    <%= form.radio_button :identidade_genero, 'Homem transexual' %> Homem transexual<br />
-    <%= form.radio_button :identidade_genero, 'Travesti' %> Travesti<br />
-    <%= form.radio_button :identidade_genero, 'Mulher transexual' %> Mulher transexual<br />
-    <%= form.radio_button :identidade_genero, 'Outro' %> Outro<br />
+    <%= form.label :statusPossuiPlanoSaudePrivado %>
+    <%= form.check_box :statusPossuiPlanoSaudePrivado %>
   </div>
 
   <div class="field">
-    <b>SAÍDA DO CIDADÃO DO CADASTRO</b><br />
-    <%= form.radio_button :saida_cidadao_cadastro, 'Mudança de território' %> Mudança de território<br />
-    <%= form.radio_button :saida_cidadao_cadastro, 'Óbito' %> Óbito<br />
-  </div>
-</div>
-
-<div class="tab">
-  <div class="field">
-    <b>ESTÁ GESTANTE?</b><br />
-    <%= form.radio_button :gestante, 'Sim' %> Sim<br />
-    <%= form.radio_button :gestante, 'Não' %> Não<br />
+    <%= form.label :statusTemAlgumaDeficiencia %>
+    <%= form.check_box :statusTemAlgumaDeficiencia %>
   </div>
 
   <div class="field">
-    <b>POSSUI PLANO DE SAÚDE PRIVADO?</b><br />
-    <%= form.radio_button :possui_plano_saude_privado, 'Sim' %> Sim<br />
-
-    <%= form.label :possui_plano_saude_privado %>
-    <%= form.text_field :possui_plano_saude_privado %>
+    <%= form.label :identidadeGeneroCidadao %>
+    <%= form.number_field :identidadeGeneroCidadao %>
   </div>
 
   <div class="field">
-    <b>SOBRE SEU PESO, VOCÊ SE CONSIDERA?</b><br />
-    <%= form.radio_button :peso, 'Abaixo do Peso' %> Abaixo do Peso<br />
-    <%= form.radio_button :peso, 'Peso Adequado' %> Peso Adequado<br />
-    <%= form.radio_button :peso, 'Acima do Peso' %> Acima do Peso<br />
+    <%= form.label :statusDesejaInformarIdentidadeGenero %>
+    <%= form.check_box :statusDesejaInformarIdentidadeGenero %>
   </div>
 
   <div class="field">
-    <b>ESTÁ FUMANTE?</b><br />
-    <%= form.radio_button :fumante, 'Sim' %> Sim<br />
-    <%= form.radio_button :fumante, 'Não' %> Não<br />
+    <%= form.label :coPovoComunidadeTradicional %>
+    <%= form.number_field :coPovoComunidadeTradicional %>
   </div>
 
-  <div class="field">
-    <b>FAZ USO DE ÁLCOOL?</b><br />
-    <%= form.radio_button :uso_alcool, 'Sim' %> Sim<br />
-    <%= form.radio_button :uso_alcool, 'Não' %> Não<br />
+  <div class="actions">
+    <%= form.submit %>
   </div>
-
-  <div class="field">
-    <b>FAZ USO DE OUTRAS DROGAS?</b><br />
-    <%= form.radio_button :uso_outras_drogas, 'Sim' %> Sim<br />
-    <%= form.radio_button :uso_outras_drogas, 'Não' %> Não<br />
-  </div>
-
-  <div class="field">
-    <b>TEM AUTISMO LEVE</b><br />
-    <%= form.radio_button :autismo_leve, 'Sim' %> Sim<br />
-    <%= form.radio_button :autismo_leve, 'Não' %> Não<br />
-  </div>
-
-  <div class="field">
-    <b>TEM HIPERTENSÃO ARTERIAL?</b><br />
-    <%= form.radio_button :hipertensao_arterial, 'Sim' %> Sim<br />
-    <%= form.radio_button :hipertensao_arterial, 'Não' %> Não<br />
-  </div>
-
-  <div class="field">
-    <b>TEM DIABETES?</b><br />
-    <%= form.radio_button :diabetes, 'Sim' %> Sim<br />
-    <%= form.radio_button :diabetes, 'Não' %> Não<br />
-  </div>
-
-  <div class="field">
-    <b>TEVE AVC/DERRAME?</b><br />
-    <%= form.radio_button :avc_derrame, 'Sim' %> Sim<br />
-    <%= form.radio_button :avc_derrame, 'Não' %> Não<br />
-  </div>
-
-  <div class="field">
-    <b>TEVE INFARTO?</b><br />
-    <%= form.radio_button :infarto, 'Sim' %> Sim<br />
-    <%= form.radio_button :infarto, 'Não' %> Não<br />
-  </div>
-</div>
-
-<div class="tab">
-  <div class="field">
-    <b>ESTÁ COM HANSENÍASE?</b><br />
-    <%= form.radio_button :hanseniase, 'Sim' %> Sim<br />
-    <%= form.radio_button :hanseniase, 'Não' %> Não<br />
-  </div>
-
-  <div class="field">
-    <b>ESTÁ COM TUBERCULOSE?</b><br />
-    <%= form.radio_button :tuberculose, 'Sim' %> Sim<br />
-    <%= form.radio_button :tuberculose, 'Não' %> Não<br />
-  </div>
-
-  <div class="field">
-    <b>TEM OU TEVE CÂNCER?</b><br />
-    <%= form.radio_button :tem_ou_teve_cancer, 'Sim' %> Sim<br />
-    <%= form.radio_button :tem_ou_teve_cancer, 'Não' %> Não<br />
-  </div>
-
-  <div class="field">
-    <b>TTEVE ALGUMA INTERNAÇÃO NOS ÚLTIMOS 12 MESES?</b><br />
-    <%= form.radio_button :alguma_internacao_ultimos_12_meses, 'Não' %> Não<br />
-    <%= form.label :alguma_internacao_ultimos_12_meses %>
-    <%= form.text_field :alguma_internacao_ultimos_12_meses %>
-  </div>
-
-  <div class="field">
-    <b>TEVE DIAGNÓSTICO DE ALGUM PROBLEMA DE SAÚDE MENTAL POR PROFISSIONAL DE SAÚDE?</b><br />
-    <%= form.radio_button :diagnostico_algum_problema_saude_mental_profissional_saude, 'Sim' %> Sim<br />
-    <%= form.radio_button :diagnostico_algum_problema_saude_mental_profissional_saude, 'Não' %> Não<br />
-  </div>
-
-  <div class="field">
-    <b>ESTÁ ACAMADO?</b><br />
-    <%= form.radio_button :acamado, 'Sim' %> Sim<br />
-    <%= form.radio_button :acamado, 'Não' %> Não<br />
-  </div>
-
-  <div class="field">
-    <b>ESTÁ DOMICILIADO?</b><br />
-    <%= form.radio_button :domiciliado, 'Sim' %> Sim<br />
-    <%= form.radio_button :domiciliado, 'Não' %> Não<br />
-  </div>
-
-  <div class="field">
-    <b>USA OUTRAS PRÁTICAS INTEGRATIVAS E COMPLEMENTARES?</b><br />
-    <%= form.radio_button :outras_praticas_integrativas_complementares, 'Sim' %> Sim<br />
-    <%= form.radio_button :outras_praticas_integrativas_complementares, 'Não' %> Não<br />
-  </div>
-</div>
-
-<div class="tab">
-  <div class="field">
-    <b>ESTÁ EM SITUAÇÃO DE RUA?</b><br />
-    <%= form.radio_button :situacao_rua, 'Não' %> Não<br />
-    <%= form.radio_button :situacao_rua, '< 6 meses' %> < 6 meses<br />
-    <%= form.radio_button :situacao_rua, '6 a 12 meses' %> 6 a 12 meses<br />
-    <%= form.radio_button :situacao_rua, '1 a 5 anos' %> 1 a 5 anos<br />
-    <%= form.radio_button :situacao_rua, '> 5 anos' %> > 5 anos<br />
-  </div>
-
-  <div class="field">
-    <b>RECEBE ALGUM BENEFÍCIO?</b><br />
-    <%= form.radio_button :recebe_algum_beneficio, 'Sim' %> Sim<br />
-    <%= form.radio_button :recebe_algum_beneficio, 'Não' %> Não<br />
-  </div>
-
-  <div class="field">
-    <b>POSSUI REFERÊNCIA FAMILIAR?</b><br />
-    <%= form.radio_button :possui_referencia_familiar, 'Não' %> Não<br />
-    <%= form.radio_button :possui_referencia_familiar, '1 vez' %> 1 vez<br />
-    <%= form.radio_button :possui_referencia_familiar, '2 ou 3 vezes' %> 2 ou 3 vezes<br />
-    <%= form.radio_button :possui_referencia_familiar, 'mais de 3 vezes' %> mais de 3 vezes<br />
-  </div>
-
-  <div class="field">
-    <b>DOR NAS PERNAS?</b><br />
-    <%= form.radio_button :dor_pernas, 'Sim' %> Sim<br />
-    <%= form.radio_button :dor_pernas, 'Não' %> Não<br />
-  </div>
-
-  <div class="field">
-    <b>Hemoglobia Glicada</b><br />
-    <%= form.label :hem_glicada %>
-    <%= form.number_field :hem_glicada %>
-  </div>
-
-  <div class="field">
-    <b>Procurou dentista no semestre?</b><br />
-    <%= form.radio_button :dentista_semestre, 'Sim' %> Sim<br />
-    <%= form.radio_button :dentista_semestre, 'Não' %> Não<br />
-  </div>
-
-  <div class="field">
-    <b>Vacinou H1N1?</b><br />
-    <%= form.radio_button :vacinou_h1n1, 'Sim' %> Sim<br />
-    <%= form.radio_button :vacinou_h1n1, 'Não' %> Não<br />
-  </div>
-
-  <div class="field">
-    <b>Vacinou COVID?</b><br />
-    <%= form.radio_button :vacinou_covid, 'Sim' %> Sim<br />
-    <%= form.radio_button :vacinou_covid, 'Não' %> Não<br />
-  </div>
-
-  <div class="field">
-    <b>COMO CLASSIFICA SEU AUTO CUIDADO?</b><br />
-    <%= form.label :classica_auto_cuidado %>
-    <%= form.text_field :classica_auto_cuidado %>
-  </div>
-
-  <div class="field">
-    <b>ENTENDE A IMPORTÂNCIA DA ALIMENTAÇÃO NO TRATAMENTO DA DIABETES?</b><br />
-    <%= form.radio_button :entende_importancia_alimentacao_diabetes, 'Sim' %> Sim<br />
-    <%= form.radio_button :entende_importancia_alimentacao_diabetes, 'Não' %> Não<br />
-  </div>
-
-  <div class="field">
-    <b>CONSEGUE EXECUTAR A ALIMENTAÇÃO SAUDÁVEL?</b><br />
-    <%= form.radio_button :consegue_alimentacao_saudavel, 'Sim' %> Sim<br />
-    <%= form.radio_button :consegue_alimentacao_saudavel, 'Não' %> Não<br />
-  </div>
-
-  <div class="field">
-    <b>JÁ CONSULTOU COM PSICOLOGO?</b><br />
-    <%= form.radio_button :consultou_psicologo, 'Sim' %> Sim<br />
-    <%= form.radio_button :consultou_psicologo, 'Não' %> Não<br />
-  </div>
-</div>
-
-<div class="tab">
-
-  <div class="field">
-    <b>PESO</b><br />
-    <%= form.label :altura %>
-    <%= form.number_field :altura %>
-  </div>
-
-  <div class="field">
-    <b>PASSOU EM CONSULTA CARDIOLOGISTA NO ANO?</b><br />
-    <%= form.radio_button :consulta_cardiologista_ano, 'Sim' %> Sim<br />
-    <%= form.radio_button :consulta_cardiologista_ano, 'Não' %> Não<br />
-  </div>
-
-  <div class="field">
-    <b>IMC</b><br />
-    <%= form.label :imc %>
-    <%= form.number_field :imc %>
-  </div>
-
-  <div class="field">
-    <b>PEADESÃO DO MEDICAMENTO?</b><br />
-    <%= form.label :peadesao_medicamento %>
-    <%= form.text_field :peadesao_medicamento %>
-  </div>
-</div>
-
-  <div style="overflow:auto;">
-    <div style="float:right;">
-      <button type="button" id="prevBtn">Previous</button>
-      <button type="button" id="nextBtn">Next</button>
-    </div>
-  </div>
-
-<div style="text-align:center;margin-top:40px;">
-  <span class="step"></span>
-  <span class="step"></span>
-  <span class="step"></span>
-  <span class="step"></span>
-  <span class="step"></span>
-  <span class="step"></span>
-  <span class="step"></span>
-</div>
 <% end %>

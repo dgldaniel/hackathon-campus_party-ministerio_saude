@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cnsparticipante:</strong>
+  <%= @participant.cnsParticipante %>
+</p>
+
+<p>
+  <strong>Datanascimento:</strong>
+  <%= @participant.dataNascimento %>
+</p>
+
+<p>
+  <strong>Avaliacaoalterada:</strong>
+  <%= @participant.avaliacaoAlterada %>
+</p>
+
+<p>
+  <strong>Cessouhabitofumar:</strong>
+  <%= @participant.cessouHabitoFumar %>
+</p>
+
+<p>
+  <strong>Abandonougrupo:</strong>
+  <%= @participant.abandonouGrupo %>
+</p>
+
+<p>
+  <strong>Sexo:</strong>
+  <%= @participant.sexo %>
+</p>
+
+<%= link_to 'Edit', edit_participant_path(@participant) %> |
+<%= link_to 'Back', participants_path %>

@@ -1,0 +1,42 @@
+<%= form_with(model: exam_result) do |form| %>
+  <% if exam_result.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(exam_result.errors.count, "error") %> prohibited this exam_result from being saved:</h2>
+
+      <ul>
+        <% exam_result.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :exame %>
+    <%= form.text_field :exame %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dataSolicitacao %>
+    <%= form.datetime_select :dataSolicitacao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dataRealizacao %>
+    <%= form.datetime_select :dataRealizacao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dataResultado %>
+    <%= form.datetime_select :dataResultado %>
+  </div>
+
+  <div class="field">
+    <%= form.label :result_id %>
+    <%= form.text_field :result_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

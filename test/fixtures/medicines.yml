@@ -1,0 +1,31 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  codigoCatmat: MyString
+  viaAdministracao: 1
+  dose: MyString
+  doseUnica: false
+  usoContinuo: false
+  doseFrequenciaTipo: 1
+  doseFrequencia: MyString
+  doseFrequenciaQuantidade: 1
+  doseFrequenciaUnidadeMedida: 1
+  dtInicioTratamento: MyString
+  duracaoTratamento: 1
+  duracaoTratamentoMedida: 1
+  quantidadeReceitada: 1
+
+two:
+  codigoCatmat: MyString
+  viaAdministracao: 1
+  dose: MyString
+  doseUnica: false
+  usoContinuo: false
+  doseFrequenciaTipo: 1
+  doseFrequencia: MyString
+  doseFrequenciaQuantidade: 1
+  doseFrequenciaUnidadeMedida: 1
+  dtInicioTratamento: MyString
+  duracaoTratamento: 1
+  duracaoTratamentoMedida: 1
+  quantidadeReceitada: 1
