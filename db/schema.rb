@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_07_22_200625) do
+ActiveRecord::Schema.define(version: 2022_07_25_222725) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -64,13 +64,15 @@ ActiveRecord::Schema.define(version: 2022_07_22_200625) do
     t.integer "localAtendimento"
     t.integer "turn"
     t.boolean "statusEscutaInicialOrientacao"
-    t.string "procedimentos"
+    t.string "procedimentos", default: [], array: true
     t.string "dataHoraInicialAtendimento"
     t.string "dataHoraFinalAtendimento"
     t.float "pesoAcompanhamentoNutricional"
     t.float "alturaAcompanhamentoNutricional"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "procedure_sheet_id"
+    t.index ["procedure_sheet_id"], name: "index_care_procedures_on_procedure_sheet_id"
   end
 
   create_table "collective_activity_sheets", force: :cascade do |t|

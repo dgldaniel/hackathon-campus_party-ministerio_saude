@@ -65,6 +65,32 @@ class ProcedureSheetsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def procedure_sheet_params
-      params.require(:procedure_sheet).permit(:uuidFicha, :tpCdsOrigem, :numTotalAfericaoPa, :numTotalAfericaoTemperatura, :numTotalCurativoSimples, :numTotalColetaMaterialParaExameLaboratorial, :numTotalGlicemiaCapilar, :numTotalMedicaoAltura, :numTotalMedicaoPeso)
+      params.require(:procedure_sheet)
+            .permit(:uuidFicha,
+                    :tpCdsOrigem,
+                    :numTotalAfericaoPa,
+                    :numTotalAfericaoTemperatura,
+                    :numTotalCurativoSimples,
+                    :numTotalColetaMaterialParaExameLaboratorial,
+                    :numTotalGlicemiaCapilar,
+                    :numTotalMedicaoAltura,
+                    :numTotalMedicaoPeso,
+                    care_procedures_attributes: [
+                      :id,
+                      :numProntuario,
+                      :cnsCidadao,
+                      :dtNascimento,
+                      :sexo,
+                      :localAtendimento,
+                      :turn,
+                      :statusEscutaInicialOrientacao,
+                      :procedimentos,
+                      :dataHoraInicialAtendimento,
+                      :dataHoraFinalAtendimento,
+                      :pesoAcompanhamentoNutricional,
+                      :alturaAcompanhamentoNutricional,
+                      :_destroy,
+                    ]
+                    )
     end
 end

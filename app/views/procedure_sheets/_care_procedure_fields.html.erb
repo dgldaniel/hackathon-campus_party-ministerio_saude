@@ -1,0 +1,67 @@
+<!-- COMENTÁRIO:
+  Dentro da partial todo conteúdo deve estar dentro de uma div .nested-fields
+-->
+<div class="nested-fields">
+  <div class="field">
+    <%= f.label :numProntuario %>
+    <%= f.text_field :numProntuario %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cnsCidadao %>
+    <%= f.text_field :cnsCidadao %>
+  </div>
+
+  <div class="field">
+    <%= f.label :dtNascimento %>
+    <%= f.text_field :dtNascimento %>
+  </div>
+
+  <div class="field">
+    <%= f.label :sexo %>
+    <%= f.text_field :sexo %>
+  </div>
+
+  <div class="field">
+    <%= f.label :localAtendimento %>
+    <%= f.text_field :localAtendimento %>
+  </div>
+
+  <div class="field">
+    <%= f.label :turn %>
+    <%= f.text_field :turn %>
+  </div>
+
+  <div class="field">
+    <%= f.label :statusEscutaInicialOrientacao %>
+    <%= f.text_field :statusEscutaInicialOrientacao %>
+  </div>
+
+  <div class="field">
+    <%= f.label :dataHoraInicialAtendimento %>
+    <%= f.text_field :dataHoraInicialAtendimento %>
+  </div>
+
+
+  <div class="field">
+    <%= f.label :dataHoraFinalAtendimento %>
+    <%= f.text_field :dataHoraFinalAtendimento %>
+  </div>
+
+   <div class="field">
+    <%= f.label :pesoAcompanhamentoNutricional %>
+    <%= f.text_field :pesoAcompanhamentoNutricional %>
+  </div>
+
+
+   <div class="field">
+    <%= f.label :alturaAcompanhamentoNutricional %>
+    <%= f.text_field :alturaAcompanhamentoNutricional %>
+  </div>
+  <!-- COMENTÁRIO:
+    link_to_remove_association é o helper que o cocoon nos fornece para deletar algum nested
+  -->
+  <%= link_to_remove_association "remove care procedures", f %>
+
+  <br><br><br>
+</div>

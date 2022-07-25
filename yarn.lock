@@ -1887,6 +1887,11 @@ coa@^2.0.2:
     chalk "^2.4.1"
     q "^1.1.2"
 
+cocoon-js-vanilla@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/cocoon-js-vanilla/-/cocoon-js-vanilla-1.2.0.tgz#595348499d315d3b5828dd77a20974756cf59321"
+  integrity sha512-qLomIVL0Krfc983WLgaYPPktMjMtBN+F/CV15NPVDc9U9BCe2OL5WyAIYkPrVhDRphoYBmHCdIlZkq+vSBI4xg==
+
 code-point-at@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"

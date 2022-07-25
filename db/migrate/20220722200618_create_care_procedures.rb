@@ -8,7 +8,7 @@ class CreateCareProcedures < ActiveRecord::Migration[6.1]
       t.integer :localAtendimento
       t.integer :turn
       t.boolean :statusEscutaInicialOrientacao
-      t.string :procedimentos
+      t.string :procedimentos, array: true, default: []
       t.string :dataHoraInicialAtendimento
       t.string :dataHoraFinalAtendimento
       t.float :pesoAcompanhamentoNutricional

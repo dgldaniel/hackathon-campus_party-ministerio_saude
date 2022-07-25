@@ -56,6 +56,25 @@
     <%= form.number_field :numTotalMedicaoPeso %>
   </div>
 
+  <div id="care-procedures">
+    <%= form.fields_for :care_procedures do |care_procedure| %>
+      <!-- COMENTÁRIO:
+        é uma exigencia também que os campos do seu nested esteja numa partial "nome_do_seu_nested_no_singular_fields"
+        no nosso caso _experience_fields.html.erb
+      -->
+      <%= render 'care_procedure_fields', f: care_procedure %>
+    <% end %>
+
+    <!-- COMENTÁRIO:
+      O link para adicionar dinamicamente os fields deve estar dentro de uma div .links
+    -->
+    <div class="links">
+      <!-- COMENTÁRIO: O link_to_add_association é um helper provido pela gem -->
+      <%= link_to_add_association 'add care procedure', form, :care_procedures %>
+      <br><br>
+    </div>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
