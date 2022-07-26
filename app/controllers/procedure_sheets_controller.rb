@@ -1,5 +1,5 @@
 class ProcedureSheetsController < ApplicationController
-  before_action :set_procedure_sheet, only: %i[ show edit update destroy ]
+  before_action :set_procedure_sheet, only: %i[ show edit update destroy generate_xml]
 
   # GET /procedure_sheets or /procedure_sheets.json
   def index
@@ -8,6 +8,10 @@ class ProcedureSheetsController < ApplicationController
 
   # GET /procedure_sheets/1 or /procedure_sheets/1.json
   def show
+    respond_to do |format|
+      format.html { render :show, status: :ok }
+      format.xml { render :show }
+    end
   end
 
   # GET /procedure_sheets/new
@@ -55,6 +59,12 @@ class ProcedureSheetsController < ApplicationController
       format.html { redirect_to procedure_sheets_url, notice: "Procedure sheet was successfully destroyed." }
       format.json { head :no_content }
     end
+  end
+
+  def generate_xml
+    GenerateXmlProcedureSheetJob.perform_now @procedure_sheet
+
+    render :show
   end
 
   private

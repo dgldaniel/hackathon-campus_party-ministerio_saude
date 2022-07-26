@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
 
+<%= link_to 'Gerar', generate_only_xml_path(id: @procedure_sheet.id) %>
+
 <p>
   <strong>Uuidficha:</strong>
   <%= @procedure_sheet.uuidFicha %>

@@ -35,5 +35,5 @@ Rails.application.routes.draw do
   post '/notify_patient' => 'individual_registrations#notify_patient'
 
   get 'individual_registrations_search' => 'individual_registrations#search'
-  get 'generate_only_xml' => 'individual_registrations#generate_only_xml'
+  get 'generate_only_xml' => 'procedure_sheets#generate_xml'
 end
