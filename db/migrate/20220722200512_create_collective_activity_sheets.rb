@@ -7,8 +7,6 @@ class CreateCollectiveActivitySheets < ActiveRecord::Migration[6.1]
       t.integer :numAvaliacoesAlterada
       t.integer :atividadeTipo
       t.string :publicoAlvo, array: true, default: []
-      t.references :participant, null: false, foreign_key: true
-      t.references :professional, null: false, foreign_key: true
       t.integer :tbCdsOrigem
       t.string :procedimento
       t.integer :turno

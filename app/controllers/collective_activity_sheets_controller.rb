@@ -8,11 +8,18 @@ class CollectiveActivitySheetsController < ApplicationController
 
   # GET /collective_activity_sheets/1 or /collective_activity_sheets/1.json
   def show
+    respond_to do |format|
+      format.html { render :show, status: :ok }
+      format.xml { render :show }
+    end
   end
 
   # GET /collective_activity_sheets/new
   def new
     @collective_activity_sheet = CollectiveActivitySheet.new
+
+    @participant = @collective_activity_sheet.participants.build
+    @professional = @collective_activity_sheet.professionals.build
   end
 
   # GET /collective_activity_sheets/1/edit
@@ -65,6 +72,36 @@ class CollectiveActivitySheetsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def collective_activity_sheet_params
-      params.require(:collective_activity_sheet).permit(:uuidFicha, :inep, :numParticipantes, :numAvaliacoesAlterada, :atividadeTipo, :publicoAlvo, :participant_id, :professional_id, :tbCdsOrigem, :procedimento, :turno, :pseEducacao, :pseSaude, :temasParaSaude, :praticasEmSaude)
+      params.require(:collective_activity_sheet)
+            .permit(:uuidFicha,
+                    :inep,
+                    :numParticipantes,
+                    :numAvaliacoesAlterada,
+                    :atividadeTipo,
+                    :publicoAlvo,
+                    :tbCdsOrigem,
+                    :procedimento,
+                    :turno,
+                    :pseEducacao,
+                    :pseSaude,
+                    :temasParaSaude,
+                    :praticasEmSaude,
+                    participants_attributes: [
+                      :id,
+                      :cnsParticipante,
+                      :dataNascimento,
+                      :avaliacaoAlterada,
+                      :cessouHabitoFumar,
+                      :abandonouGrupo,
+                      :sexo,
+                      :_destroy
+                    ],
+                    professionals_attributes: [
+                      :id,
+                      :cnsProfissional,
+                      :codigoCbo2002,
+                      :_destroy
+                    ]
+                  )
     end
 end

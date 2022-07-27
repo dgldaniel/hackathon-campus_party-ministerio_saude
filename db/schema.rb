@@ -82,8 +82,6 @@ ActiveRecord::Schema.define(version: 2022_07_25_222725) do
     t.integer "numAvaliacoesAlterada"
     t.integer "atividadeTipo"
     t.string "publicoAlvo", default: [], array: true
-    t.bigint "participant_id", null: false
-    t.bigint "professional_id", null: false
     t.integer "tbCdsOrigem"
     t.string "procedimento"
     t.integer "turno"
@@ -93,8 +91,6 @@ ActiveRecord::Schema.define(version: 2022_07_25_222725) do
     t.string "praticasEmSaude", default: [], array: true
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["participant_id"], name: "index_collective_activity_sheets_on_participant_id"
-    t.index ["professional_id"], name: "index_collective_activity_sheets_on_professional_id"
   end
 
   create_table "collective_calls", force: :cascade do |t|
@@ -312,6 +308,8 @@ ActiveRecord::Schema.define(version: 2022_07_25_222725) do
     t.integer "sexo"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "collective_activity_sheet_id"
+    t.index ["collective_activity_sheet_id"], name: "index_participants_on_collective_activity_sheet_id"
   end
 
   create_table "patients", force: :cascade do |t|
@@ -356,6 +354,8 @@ ActiveRecord::Schema.define(version: 2022_07_25_222725) do
     t.string "codigoCbo2002"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "collective_activity_sheet_id"
+    t.index ["collective_activity_sheet_id"], name: "index_professionals_on_collective_activity_sheet_id"
   end
 
   create_table "reports", force: :cascade do |t|
@@ -398,8 +398,6 @@ ActiveRecord::Schema.define(version: 2022_07_25_222725) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
-  add_foreign_key "collective_activity_sheets", "participants"
-  add_foreign_key "collective_activity_sheets", "professionals"
   add_foreign_key "collective_calls", "participants", column: "participants_id"
   add_foreign_key "collective_calls", "professionals", column: "professionals_id"
   add_foreign_key "patients", "doctors"

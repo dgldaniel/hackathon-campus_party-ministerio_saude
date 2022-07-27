@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns3:dadoTransporteTransportXml xmlns:ns2="http://esus.ufsc.br/dadoinstalacao" xmlns:ns3="http://esus.ufsc.br/dadotransporte" xmlns:ns4="http://esus.ufsc.br/fichaatividadecoletiva">
+	<uuidDadoSerializado>0019615-40a7d073-3710-4a13-b7c8-428de1f5cd2a</uuidDadoSerializado>
+	<tipoDadoSerializado>6</tipoDadoSerializado>
+	<codIbge>4205407</codIbge>
+	<cnesDadoSerializado>0019615</cnesDadoSerializado>
+	<ineDadoSerializado>0000471828</ineDadoSerializado>
+	<numLote>4</numLote>
+	<ns4:fichaAtividadeColetivaTransport>
+		<uuidFicha><%= @collective_activity_sheet.uuidFicha %></uuidFicha>
+		<inep><%= @collective_activity_sheet.inep %></inep>
+		<numParticipantes><%= @collective_activity_sheet.numParticipantes %></numParticipantes>
+		<numAvaliacoesAlteradas><%= @collective_activity_sheet.numAvaliacoesAlterada %></numAvaliacoesAlteradas>
+    <% @collective_activity_sheet.professionals.each do |professional| %>
+      <profissionais>
+        <cnsProfissional><%= professional.cnsProfissional %></cnsProfissional>
+        <codigoCbo2002><%= professional.codigoCbo2002 %></codigoCbo2002>
+      </profissionais>
+    <% end %>
+		<atividadeTipo><%= @collective_activity_sheet.atividadeTipo %></atividadeTipo>
+    <% @collective_activity_sheet.publicoAlvo.each do |publicoAlvo| %>
+		  <publicoAlvo><%= publicoAlvo %></publicoAlvo>
+    <% end %>
+    <% @collective_activity_sheet.participants.each do |participant| %>
+      <participantes>
+        <cnsParticipante><%= participant.cnsParticipante %></cnsParticipante>
+        <dataNascimento><%= participant.dataNascimento %></dataNascimento>
+        <avaliacaoAlterada><%= participant.avaliacaoAlterada %></avaliacaoAlterada>
+        <cessouHabitoFumar><%= participant.cessouHabitoFumar %></cessouHabitoFumar>
+        <abandonouGrupo><%= participant.abandonouGrupo %></abandonouGrupo>
+        <sexo><%= participant.sexo %></sexo>
+      </participantes>
+    <% end %>
+		<tbCdsOrigem><%= @collective_activity_sheet.tbCdsOrigem %></tbCdsOrigem>
+		<procedimento><%= @collective_activity_sheet.procedimento %></procedimento>
+		<turno><%= @collective_activity_sheet.turno %></turno>
+		<pseEducacao><%= @collective_activity_sheet.pseEducacao %></pseEducacao>
+		<pseSaude><%= @collective_activity_sheet.pseSaude %></pseSaude>
+		<headerTransport>
+			<profissionalCNS>898001161481488</profissionalCNS>
+			<cboCodigo_2002>223208</cboCodigo_2002>
+			<cnes>0019615</cnes>
+			<ine>0000471828</ine>
+			<dataAtendimento>1549465200000</dataAtendimento>
+			<codigoIbgeMunicipio>4205407</codigoIbgeMunicipio>
+		</headerTransport>
+
+    <% @collective_activity_sheet.temasParaSaude.each do |temasParaSaude| %>
+		  <temasParaSaude><%= temasParaSaude %></temasParaSaude>
+    <% end %>
+
+     <% @collective_activity_sheet.praticasEmSaude.each do |praticasEmSaude| %>
+		  <praticasEmSaude><%= praticasEmSaude %></praticasEmSaude>
+    <% end %>
+	</ns4:fichaAtividadeColetivaTransport>
+	<ns2:remetente>
+		<contraChave>TREINAMENTO</contraChave>
+		<uuidInstalacao>TREINAMENTO</uuidInstalacao>
+		<cpfOuCnpj>01234567890</cpfOuCnpj>
+		<nomeOuRazaoSocial>ADMINISTRADOR INSTALAÇÃO</nomeOuRazaoSocial>
+		<fone>8216756527</fone>
+		<email>prof@esus.br</email>
+		<versaoSistema>3.2.18</versaoSistema>
+		<nomeBancoDados>Oracle</nomeBancoDados>
+	</ns2:remetente>
+	<ns2:originadora>
+		<contraChave>TREINAMENTO</contraChave>
+		<uuidInstalacao>TREINAMENTO</uuidInstalacao>
+		<cpfOuCnpj>01234567890</cpfOuCnpj>
+		<nomeOuRazaoSocial>ADMINISTRADOR INSTALAÇÃO</nomeOuRazaoSocial>
+		<fone>8216756527</fone>
+		<email>prof@esus.br</email>
+		<versaoSistema>3.2.18</versaoSistema>
+		<nomeBancoDados>Oracle</nomeBancoDados>
+	</ns2:originadora>
+	<versao major="3" minor="2" revision="4" />
+</ns3:dadoTransporteTransportXml>

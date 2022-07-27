@@ -1,0 +1,37 @@
+<div class="nested-fields">
+  <h3>Participant</h3>
+
+  <div class="field">
+    <%= f.label :cnsParticipante %>
+    <%= f.text_field :cnsParticipante %>
+  </div>
+
+  <div class="field">
+    <%= f.label :dataNascimento %>
+    <%= f.text_field :dataNascimento %>
+  </div>
+
+  <div class="field">
+    <%= f.label :avaliacaoAlterada %>
+    <%= f.text_field :avaliacaoAlterada %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cessouHabitoFumar %>
+    <%= f.text_field :cessouHabitoFumar %>
+  </div>
+
+  <div class="field">
+    <%= f.label :abandonouGrupo %>
+    <%= f.text_field :abandonouGrupo %>
+  </div>
+
+  <div class="field">
+    <%= f.label :sexo %>
+    <%= f.text_field :sexo %>
+  </div>
+
+  <%= link_to_remove_association "remove participant", f %>
+
+  <br><br><br>
+</div>

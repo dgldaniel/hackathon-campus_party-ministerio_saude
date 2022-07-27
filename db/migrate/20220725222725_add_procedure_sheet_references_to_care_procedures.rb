@@ -6,5 +6,7 @@ class AddProcedureSheetReferencesToCareProcedures < ActiveRecord::Migration[6.1]
     add_reference(:exam_results, :individual_call, index: true)
     add_reference(:medicines, :individual_call, index: true)
     add_reference(:forwardings, :individual_call, index: true)
+    add_reference(:participants, :collective_activity_sheet, index: true)
+    add_reference(:professionals, :collective_activity_sheet, index: true)
   end
 end
