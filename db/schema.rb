@@ -133,10 +133,12 @@ ActiveRecord::Schema.define(version: 2022_07_25_222725) do
     t.datetime "dataSolicitacao"
     t.datetime "dataRealizacao"
     t.datetime "dataResultado"
-    t.bigint "result_id", null: false
+    t.integer "tipoResultado"
+    t.integer "valorResultado"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["result_id"], name: "index_exam_results_on_result_id"
+    t.bigint "individual_call_id"
+    t.index ["individual_call_id"], name: "index_exam_results_on_individual_call_id"
   end
 
   create_table "exams", force: :cascade do |t|
@@ -144,6 +146,8 @@ ActiveRecord::Schema.define(version: 2022_07_25_222725) do
     t.string "solicitadoAvaliado", default: [], array: true
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "individual_call_id"
+    t.index ["individual_call_id"], name: "index_exams_on_individual_call_id"
   end
 
   create_table "forwardings", force: :cascade do |t|
@@ -152,6 +156,8 @@ ActiveRecord::Schema.define(version: 2022_07_25_222725) do
     t.integer "classificacaoRisco"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "individual_call_id"
+    t.index ["individual_call_id"], name: "index_forwardings_on_individual_call_id"
   end
 
   create_table "individual_calls", force: :cascade do |t|
@@ -179,22 +185,8 @@ ActiveRecord::Schema.define(version: 2022_07_25_222725) do
     t.float "perimetroCefalico"
     t.datetime "dataHoraInicialAtendimento"
     t.datetime "dataHoraFinalAtendimento"
-    t.bigint "exam_results_id", null: false
-    t.bigint "professionals_id", null: false
-    t.bigint "participants_id", null: false
-    t.bigint "collective_activity_sheets_id", null: false
-    t.bigint "exams_id", null: false
-    t.bigint "medicines_id", null: false
-    t.bigint "forwardings_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["collective_activity_sheets_id"], name: "index_individual_calls_on_collective_activity_sheets_id"
-    t.index ["exam_results_id"], name: "index_individual_calls_on_exam_results_id"
-    t.index ["exams_id"], name: "index_individual_calls_on_exams_id"
-    t.index ["forwardings_id"], name: "index_individual_calls_on_forwardings_id"
-    t.index ["medicines_id"], name: "index_individual_calls_on_medicines_id"
-    t.index ["participants_id"], name: "index_individual_calls_on_participants_id"
-    t.index ["professionals_id"], name: "index_individual_calls_on_professionals_id"
   end
 
   create_table "individual_registrations", force: :cascade do |t|
@@ -307,6 +299,8 @@ ActiveRecord::Schema.define(version: 2022_07_25_222725) do
     t.integer "quantidadeReceitada"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "individual_call_id"
+    t.index ["individual_call_id"], name: "index_medicines_on_individual_call_id"
   end
 
   create_table "participants", force: :cascade do |t|
@@ -339,6 +333,8 @@ ActiveRecord::Schema.define(version: 2022_07_25_222725) do
     t.string "cid10_2"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "individual_call_id"
+    t.index ["individual_call_id"], name: "index_problem_condition_evaluateds_on_individual_call_id"
   end
 
   create_table "procedure_sheets", force: :cascade do |t|
@@ -388,13 +384,6 @@ ActiveRecord::Schema.define(version: 2022_07_25_222725) do
     t.index ["patient_id"], name: "index_reports_on_patient_id"
   end
 
-  create_table "results", force: :cascade do |t|
-    t.integer "tipoResultado"
-    t.string "valorResultado"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "users", force: :cascade do |t|
     t.string "email", limit: 50, default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -413,13 +402,5 @@ ActiveRecord::Schema.define(version: 2022_07_25_222725) do
   add_foreign_key "collective_activity_sheets", "professionals"
   add_foreign_key "collective_calls", "participants", column: "participants_id"
   add_foreign_key "collective_calls", "professionals", column: "professionals_id"
-  add_foreign_key "exam_results", "results"
-  add_foreign_key "individual_calls", "collective_activity_sheets", column: "collective_activity_sheets_id"
-  add_foreign_key "individual_calls", "exam_results", column: "exam_results_id"
-  add_foreign_key "individual_calls", "exams", column: "exams_id"
-  add_foreign_key "individual_calls", "forwardings", column: "forwardings_id"
-  add_foreign_key "individual_calls", "medicines", column: "medicines_id"
-  add_foreign_key "individual_calls", "participants", column: "participants_id"
-  add_foreign_key "individual_calls", "professionals", column: "professionals_id"
   add_foreign_key "patients", "doctors"
 end

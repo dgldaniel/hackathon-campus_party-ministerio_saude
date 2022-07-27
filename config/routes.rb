@@ -7,7 +7,6 @@ Rails.application.routes.draw do
   resources :collective_calls
   resources :individual_calls
   resources :exam_results
-  resources :results
   resources :forwardings
   resources :medicines
   resources :exams

@@ -8,11 +8,21 @@ class IndividualCallsController < ApplicationController
 
   # GET /individual_calls/1 or /individual_calls/1.json
   def show
+    respond_to do |format|
+      format.html { render :show, status: :ok }
+      format.xml { render :show }
+    end
   end
 
   # GET /individual_calls/new
   def new
     @individual_call = IndividualCall.new
+
+    @individual_call.build_problem_condition_evaluated
+    @individual_call.exams.build
+    @individual_call.exam_results.build
+    @individual_call.medicines.build
+    @individual_call.forwardings.build
   end
 
   # GET /individual_calls/1/edit
@@ -65,6 +75,79 @@ class IndividualCallsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def individual_call_params
-      params.require(:individual_call).permit(:numeroProntuario, :cnsCidadao, :dataNascimento, :localDeAtendimento, :sexo, :turno, :tipoAtendimento, :pesoAcompanhamentoNutricional, :alturaAcompanhamentoNutricional, :aleitamentoMaterno, :dumDaGestante, :idadeGestacional, :atencaoDomiciliarModalidade, :vacinaEmDia, :ficouEmObservacao, :nasfs, :condutas, :stGravidezPlanejada, :nuGestasPrevias, :nuPartos, :racionalidadeSaude, :perimetroCefalico, :dataHoraInicialAtendimento, :dataHoraFinalAtendimento, :ExamResult_id, :Professional_id, :Participant_id, :CollectiveActivitySheet_id, :Exam_id, :Medicine_id, :Forwarding_id, :ExamResult_id)
+      params.require(:individual_call)
+            .permit(:numeroProntuario,
+                    :cnsCidadao,
+                    :dataNascimento,
+                    :localDeAtendimento,
+                    :sexo,
+                    :turno,
+                    :tipoAtendimento,
+                    :pesoAcompanhamentoNutricional,
+                    :alturaAcompanhamentoNutricional,
+                    :aleitamentoMaterno,
+                    :dumDaGestante,
+                    :idadeGestacional,
+                    :atencaoDomiciliarModalidade,
+                    :vacinaEmDia,
+                    :ficouEmObservacao,
+                    :nasfs,
+                    :condutas,
+                    :stGravidezPlanejada,
+                    :nuGestasPrevias,
+                    :nuPartos,
+                    :racionalidadeSaude,
+                    :perimetroCefalico,
+                    :dataHoraInicialAtendimento,
+                    :dataHoraFinalAtendimento,
+                    problem_condition_evaluated_attributes: [
+                      :id,
+                      :ciaps,
+                      :outroCiap1,
+                      :cid10,
+                      :cid10_2,
+                      :_destroy
+                    ],
+                    exams_attributes: [
+                      :id,
+                      :codigoExame,
+                      :solicitadoAvaliado,
+                      :_destroy
+                    ],
+                    exam_results_attributes: [
+                      :id,
+                      :exame,
+                      :dataSolicitacao,
+                      :dataRealizacao,
+                      :dataResultado,
+                      :tipoResultado,
+                      :valorResultado,
+                      :_destroy,
+                    ],
+                    medicines_attributes: [
+                      :id,
+                      :codigoCatmat,
+                      :viaAdministracao,
+                      :dose,
+                      :doseUnica,
+                      :usoContinuo,
+                      :doseFrequenciaTipo,
+                      :doseFrequencia,
+                      :doseFrequenciaQuantidade,
+                      :doseFrequenciaUnidadeMedida,
+                      :dtInicioTratamento,
+                      :duracaoTratamento,
+                      :duracaoTratamentoMedida,
+                      :quantidadeReceitada,
+                      :_destroy
+                    ],
+                    forwardings_attributes: [
+                      :id,
+                      :especialidade,
+                      :hipoteseDiagnosticoCid10,
+                      :classificacaoRisco,
+                      :_destroy
+                    ]
+                    )
     end
 end

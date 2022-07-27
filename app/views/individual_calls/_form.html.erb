@@ -131,44 +131,70 @@
     <%= form.datetime_select :dataHoraFinalAtendimento %>
   </div>
 
-  <div class="field">
-    <%= form.label :ExamResult_id %>
-    <%= form.text_field :ExamResult_id %>
+  <%= form.fields_for :problem_condition_evaluated do |field| %>
+    <div class="field">
+      <%= field.label :ciaps %>
+      <%= field.text_field :ciaps %>
+    </div>
+
+    <div class="field">
+      <%= field.label :outroCiap1 %>
+      <%= field.text_field :outroCiap1 %>
+    </div>
+
+    <div class="field">
+      <%= field.label :cid10 %>
+      <%= field.text_field :cid10 %>
+    </div>
+
+    <div class="field">
+      <%= field.label :cid10_2 %>
+      <%= field.text_field :cid10_2 %>
+    </div>
+  <% end %>
+
+  <div id="exams">
+    <%= form.fields_for :exams do |exam| %>
+      <%= render 'exam_fields', f: exam %>
+    <% end %>
+
+    <div class="links">
+      <%= link_to_add_association 'add exam', form, :exams %>
+      <br><br>
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :Professional_id %>
-    <%= form.text_field :Professional_id %>
+  <div id="exam_results">
+    <%= form.fields_for :exam_results do |exam_result| %>
+      <%= render 'exam_result_fields', f: exam_result %>
+    <% end %>
+
+    <div class="links">
+      <%= link_to_add_association 'add exam_result', form, :exam_results %>
+      <br><br>
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :Participant_id %>
-    <%= form.text_field :Participant_id %>
+    <div id="medicines">
+    <%= form.fields_for :medicines do |medicine| %>
+      <%= render 'medicine_fields', f: medicine %>
+    <% end %>
+
+    <div class="links">
+      <%= link_to_add_association 'add medicine', form, :medicines %>
+      <br><br>
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :CollectiveActivitySheet_id %>
-    <%= form.text_field :CollectiveActivitySheet_id %>
-  </div>
+  <div id="forwardings">
+    <%= form.fields_for :forwardings do |forwarding| %>
+      <%= render 'forwarding_fields', f: forwarding %>
+    <% end %>
 
-  <div class="field">
-    <%= form.label :Exam_id %>
-    <%= form.text_field :Exam_id %>
-  </div>
-
-  <div class="field">
-    <%= form.label :Medicine_id %>
-    <%= form.text_field :Medicine_id %>
-  </div>
-
-  <div class="field">
-    <%= form.label :Forwarding_id %>
-    <%= form.text_field :Forwarding_id %>
-  </div>
-
-  <div class="field">
-    <%= form.label :ExamResult_id %>
-    <%= form.text_field :ExamResult_id %>
+    <div class="links">
+      <%= link_to_add_association 'add forwarding', form, :forwardings %>
+      <br><br>
+    </div>
   </div>
 
   <div class="actions">

@@ -11,8 +11,6 @@ class CreateProcedureSheets < ActiveRecord::Migration[6.1]
       t.integer :numTotalMedicaoAltura
       t.integer :numTotalMedicaoPeso
 
-      # t.references(:care_procedures, null: false, foreign_key: true)
-
       t.timestamps
     end
   end

@@ -5,7 +5,8 @@ class CreateExamResults < ActiveRecord::Migration[6.1]
       t.datetime :dataSolicitacao
       t.datetime :dataRealizacao
       t.datetime :dataResultado
-      t.references :result, null: false, foreign_key: true
+      t.integer :tipoResultado
+      t.integer :valorResultado
 
       t.timestamps
     end

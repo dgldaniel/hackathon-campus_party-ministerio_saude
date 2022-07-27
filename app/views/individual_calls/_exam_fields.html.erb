@@ -1,0 +1,17 @@
+<div class="nested-fields">
+  <h3>Exams</h3>
+
+  <div class="field">
+    <%= f.label :codigoExame %>
+    <%= f.text_field :codigoExame %>
+  </div>
+
+  <div class="field">
+    <%= f.label :solicitadoAvaliado %>
+    <%= f.text_field :solicitadoAvaliado %>
+  </div>
+
+  <%= link_to_remove_association "remove exam", f %>
+
+  <br><br><br>
+</div>

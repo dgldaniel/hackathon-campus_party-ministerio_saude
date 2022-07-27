@@ -1,0 +1,37 @@
+<div class="nested-fields">
+  <h3>Exam_Result</h3>
+
+  <div class="field">
+    <%= f.label :exame %>
+    <%= f.text_field :exame %>
+  </div>
+
+  <div class="field">
+    <%= f.label :dataSolicitacao %>
+    <%= f.text_field :dataSolicitacao %>
+  </div>
+
+  <div class="field">
+    <%= f.label :dataRealizacao %>
+    <%= f.text_field :dataRealizacao %>
+  </div>
+
+  <div class="field">
+    <%= f.label :dataResultado %>
+    <%= f.text_field :dataResultado %>
+  </div>
+
+  <div class="field">
+    <%= f.label :tipoResultado %>
+    <%= f.text_field :tipoResultado %>
+  </div>
+
+  <div class="field">
+    <%= f.label :valorResultado %>
+    <%= f.text_field :valorResultado %>
+  </div>
+
+  <%= link_to_remove_association "remove exam_result", f %>
+
+  <br><br><br>
+</div>

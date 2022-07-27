@@ -1,3 +1,3 @@
 class ExamResult < ApplicationRecord
-  belongs_to :result
+  belongs_to :individual_call
 end

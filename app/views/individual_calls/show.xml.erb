@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns3:dadoTransporteTransportXml xmlns:ns2="http://esus.ufsc.br/dadoinstalacao" xmlns:ns3="http://esus.ufsc.br/dadotransporte" xmlns:ns4="http://esus.ufsc.br/fichaatendimentoindividualmaster">
+	<uuidDadoSerializado>0019615-edee6500-bf76-4691-b9c7-f7b1d550bc7a</uuidDadoSerializado>
+	<tipoDadoSerializado>4</tipoDadoSerializado>
+	<codIbge>4205407</codIbge>
+	<cnesDadoSerializado>0019615</cnesDadoSerializado>
+	<ineDadoSerializado>0000471828</ineDadoSerializado>
+	<numLote>2</numLote>
+	<ns4:fichaAtendimentoIndividualMasterTransport>
+		<headerTransport>
+			<lotacaoFormPrincipal>
+				<profissionalCNS>898001161481488</profissionalCNS>
+				<cboCodigo_2002>225142</cboCodigo_2002>
+				<cnes>0019615</cnes>
+				<ine>0000471828</ine>
+			</lotacaoFormPrincipal>
+			<dataAtendimento>1586095200000</dataAtendimento>
+			<codigoIbgeMunicipio>4205407</codigoIbgeMunicipio>
+		</headerTransport>
+		<atendimentosIndividuais>
+			<numeroProntuario><%= @individual_call.numeroProntuario %></numeroProntuario>
+			<cnsCidadao><%= @individual_call.cnsCidadao %></cnsCidadao>
+			<dataNascimento><%= @individual_call.dataNascimento %></dataNascimento>
+			<localDeAtendimento><%= @individual_call.localDeAtendimento %></localDeAtendimento>
+			<sexo><%= @individual_call.sexo %></sexo>
+			<turno><%= @individual_call.turno %></turno>
+			<tipoAtendimento><%= @individual_call.tipoAtendimento %></tipoAtendimento>
+			<pesoAcompanhamentoNutricional><%= @individual_call.pesoAcompanhamentoNutricional %></pesoAcompanhamentoNutricional>
+			<alturaAcompanhamentoNutricional><%= @individual_call.alturaAcompanhamentoNutricional %></alturaAcompanhamentoNutricional>
+			<aleitamentoMaterno><%= @individual_call.aleitamentoMaterno %></aleitamentoMaterno>
+			<dumDaGestante><%= @individual_call.dumDaGestante %></dumDaGestante>
+			<idadeGestacional><%= @individual_call.idadeGestacional %></idadeGestacional>
+			<atencaoDomiciliarModalidade><%= @individual_call.atencaoDomiciliarModalidade %></atencaoDomiciliarModalidade>
+			<problemaCondicaoAvaliada>
+        <% @individual_call.problem_condition_evaluated.ciaps do |ciap| %>
+				  <ciaps><%= ciap %></ciaps>
+        <% end %>
+
+        <% @individual_call.problem_condition_evaluated.outroCiap1 do |outroCiap1| %>
+				  <outroCiap1><%= outroCiap1 %></outroCiap1>
+        <% end %>
+
+				<cid10><%= @individual_call.problem_condition_evaluated.cid10 %></cid10>
+				<cid10_2><%= @individual_call.problem_condition_evaluated.cid10_2 %></cid10_2>
+			</problemaCondicaoAvaliada>
+
+      <% @individual_call.exams do |exam| %>
+        <exame>
+          <codigoExame><%= exam.codigoExame %></codigoExame>
+
+          <% exam.solicitadoAvaliado do |sa| %>
+            <solicitadoAvaliado><%= sa.solicitadoAvaliado %></solicitadoAvaliado>
+          <% end %>
+        </exame>
+      <% end %>
+
+			<vacinaEmDia><%= @individual_call.vacinaEmDia %></vacinaEmDia>
+			<ficouEmObservacao><%= @individual_call.ficouEmObservacao %></ficouEmObservacao>
+			<nasfs><%= @individual_call.nasfs %></nasfs>
+
+      <% @individual_call.condutas do |conduta| %>
+        <condutas><%= conduta %></condutas>
+      <% end %>
+
+			<stGravidezPlanejada><%= @individual_call.stGravidezPlanejada %></stGravidezPlanejada>
+			<nuGestasPrevias><%= @individual_call.nuGestasPrevias %></nuGestasPrevias>
+			<nuPartos><%= @individual_call.nuPartos %></nuPartos>
+			<racionalidadeSaude><%= @individual_call.racionalidadeSaude %></racionalidadeSaude>
+			<perimetroCefalico><%= @individual_call.perimetroCefalico %></perimetroCefalico>
+			<dataHoraInicialAtendimento><%= @individual_call.dataHoraInicialAtendimento %></dataHoraInicialAtendimento>
+			<dataHoraFinalAtendimento><%= @individual_call.dataHoraFinalAtendimento %></dataHoraFinalAtendimento>
+
+      <% @individual_call.exam_results.each do |exam_result| %>
+        <resultadosExames>
+          <exame><%= exam_result.exame %></exame>
+          <dataSolicitacao><%= exam_result.dataSolicitacao %></dataSolicitacao>
+          <dataRealizacao><%= exam_result.dataRealizacao %></dataRealizacao>
+          <dataResultado><%= exam_result.dataResultado %></dataResultado>
+          <resultadoExame>
+            <tipoResultado><%= exam_result.tipoResultado %></tipoResultado>
+            <valorResultado><%= exam_result.valorResultado %></valorResultado>
+          </resultadoExame>
+        </resultadosExames>
+      <% end %>
+
+      <% @individual_call.medicines.each do |medicine| %>
+        <medicamentos>
+          <codigoCatmat><%= medicine.codigoCatmat %></codigoCatmat>
+          <viaAdministracao><%= medicine.viaAdministracao %></viaAdministracao>
+          <dose><%= medicine.dose %></dose>
+          <doseUnica><%= medicine.doseUnica %></doseUnica>
+          <usoContinuo><%= medicine.usoContinuo %></usoContinuo>
+          <doseFrequenciaTipo><%= medicine.doseFrequenciaTipo %></doseFrequenciaTipo>
+          <doseFrequencia><%= medicine.doseFrequencia %></doseFrequencia>
+          <doseFrequenciaQuantidade><%= medicine.doseFrequenciaQuantidade %></doseFrequenciaQuantidade>
+          <doseFrequenciaUnidadeMedida><%= medicine.doseFrequenciaUnidadeMedida %></doseFrequenciaUnidadeMedida>
+          <dtInicioTratamento><%= medicine.dtInicioTratamento %></dtInicioTratamento>
+          <duracaoTratamento><%= medicine.duracaoTratamento %></duracaoTratamento>
+          <duracaoTratamentoMedida><%= medicine.duracaoTratamentoMedida %></duracaoTratamentoMedida>
+          <quantidadeReceitada><%= medicine.quantidadeReceitada %></quantidadeReceitada>
+        </medicamentos>
+      <% end %>
+
+      <% @individual_call.forwardings.each do |forwarding| %>
+        <encaminhamentos>
+          <especialidade><%= forwarding.especialidade %></especialidade>
+          <hipoteseDiagnosticoCid10><%= forwarding.hipoteseDiagnosticoCid10 %></hipoteseDiagnosticoCid10>
+          <classificacaoRisco><%= forwarding.classificacaoRisco %></classificacaoRisco>
+        </encaminhamentos>
+      <% end %>
+		</atendimentosIndividuais>
+		<tpCdsOrigem>1</tpCdsOrigem>
+		<uuidFicha>0019615-edee6500-bf76-4691-b9c7-f7b1d550bc7a</uuidFicha>
+	</ns4:fichaAtendimentoIndividualMasterTransport>
+	<ns2:remetente>
+		<contraChave>TREINAMENTO</contraChave>
+		<uuidInstalacao>TREINAMENTO</uuidInstalacao>
+		<cpfOuCnpj>01234567890</cpfOuCnpj>
+		<nomeOuRazaoSocial>ADMINISTRADOR INSTALAÇÃO</nomeOuRazaoSocial>
+		<versaoSistema>4.1.0</versaoSistema>
+		<nomeBancoDados>Oracle</nomeBancoDados>
+	</ns2:remetente>
+	<ns2:originadora>
+		<contraChave>TREINAMENTO</contraChave>
+		<uuidInstalacao>TREINAMENTO</uuidInstalacao>
+		<cpfOuCnpj>01234567890</cpfOuCnpj>
+		<nomeOuRazaoSocial>ADMINISTRADOR INSTALAÇÃO</nomeOuRazaoSocial>
+		<versaoSistema>4.1.0</versaoSistema>
+		<nomeBancoDados>Oracle</nomeBancoDados>
+	</ns2:originadora>
+	<versao major="4" minor="2" revision="0" />
+</ns3:dadoTransporteTransportXml>

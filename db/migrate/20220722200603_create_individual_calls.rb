@@ -25,13 +25,6 @@ class CreateIndividualCalls < ActiveRecord::Migration[6.1]
       t.float :perimetroCefalico
       t.datetime :dataHoraInicialAtendimento
       t.datetime :dataHoraFinalAtendimento
-      t.references :exam_results, null: false, foreign_key: true
-      t.references :professionals, null: false, foreign_key: true
-      t.references :participants, null: false, foreign_key: true
-      t.references :collective_activity_sheets, null: false, foreign_key: true
-      t.references :exams, null: false, foreign_key: true
-      t.references :medicines, null: false, foreign_key: true
-      t.references :forwardings, null: false, foreign_key: true
 
       t.timestamps
     end

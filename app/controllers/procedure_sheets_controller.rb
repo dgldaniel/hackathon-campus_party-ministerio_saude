@@ -17,6 +17,7 @@ class ProcedureSheetsController < ApplicationController
   # GET /procedure_sheets/new
   def new
     @procedure_sheet = ProcedureSheet.new
+    @care_procedure = @procedure_sheet.care_procedures.build
   end
 
   # GET /procedure_sheets/1/edit
@@ -99,7 +100,7 @@ class ProcedureSheetsController < ApplicationController
                       :dataHoraFinalAtendimento,
                       :pesoAcompanhamentoNutricional,
                       :alturaAcompanhamentoNutricional,
-                      :_destroy,
+                      :_destroy
                     ]
                     )
     end
