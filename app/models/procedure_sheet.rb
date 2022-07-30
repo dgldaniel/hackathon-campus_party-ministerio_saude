@@ -4,10 +4,18 @@ class ProcedureSheet < ApplicationRecord
 
   has_one_attached :xml_file
 
-  # after_create_commit :append_xml
+  before_create :generate_xml
+  before_update :generate_xml
 
   private
-  def append_xml
-    GenerateXmlProcedureSheetJob.perform_now self
+  def generate_xml
+    generate_xml = ActionController::Base.new.render_to_string(
+      'procedure_sheets/show.xml.erb',
+      :locals => { :@procedure_sheet => self }
+    )
+
+    self.xml_file.attach(io: StringIO.new(generate_xml),
+                           filename: "#{self.uuidFicha}.xml"
+                          )
   end
 end

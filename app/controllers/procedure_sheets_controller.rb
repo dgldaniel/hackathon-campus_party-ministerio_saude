@@ -1,5 +1,5 @@
 class ProcedureSheetsController < ApplicationController
-  before_action :set_procedure_sheet, only: %i[ show edit update destroy generate_xml]
+  before_action :set_procedure_sheet, only: %i[ show edit update destroy ]
 
   # GET /procedure_sheets or /procedure_sheets.json
   def index
@@ -62,12 +62,6 @@ class ProcedureSheetsController < ApplicationController
     end
   end
 
-  def generate_xml
-    GenerateXmlProcedureSheetJob.perform_now @procedure_sheet
-
-    render :show
-  end
-
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_procedure_sheet
@@ -86,6 +80,7 @@ class ProcedureSheetsController < ApplicationController
                     :numTotalGlicemiaCapilar,
                     :numTotalMedicaoAltura,
                     :numTotalMedicaoPeso,
+                    :xml_file,
                     care_procedures_attributes: [
                       :id,
                       :numProntuario,

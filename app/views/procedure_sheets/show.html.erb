@@ -1,6 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<%= link_to 'Gerar', generate_only_xml_path(id: @procedure_sheet.id) %>
+<% if @procedure_sheet.xml_file.attached? %>
+  <%= link_to 'Baixar XML', rails_blob_url(@procedure_sheet.xml_file) %>
+<% end %>
 
 <p>
   <strong>Uuidficha:</strong>
