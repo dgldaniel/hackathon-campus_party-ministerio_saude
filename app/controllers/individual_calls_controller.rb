@@ -1,5 +1,6 @@
 class IndividualCallsController < ApplicationController
   before_action :set_individual_call, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!
 
   # GET /individual_calls or /individual_calls.json
   def index

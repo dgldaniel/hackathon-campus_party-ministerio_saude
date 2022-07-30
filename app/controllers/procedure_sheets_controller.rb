@@ -1,5 +1,6 @@
 class ProcedureSheetsController < ApplicationController
   before_action :set_procedure_sheet, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!
 
   # GET /procedure_sheets or /procedure_sheets.json
   def index
@@ -60,6 +61,14 @@ class ProcedureSheetsController < ApplicationController
       format.html { redirect_to procedure_sheets_url, notice: "Procedure sheet was successfully destroyed." }
       format.json { head :no_content }
     end
+  end
+
+  def generate_xml_zip
+    procudures_selected = ProcedureSheet.generate_xml_from params[:start_date], params[:end]
+
+    GenerateXmlProcedureSheetJob.perform_now procudures_selected, current_user
+
+    render :index
   end
 
   private

@@ -1,5 +1,9 @@
 <p id="notice"><%= notice %></p>
 
+<% if @individual_registration.xml_file.attached? %>
+  <%= link_to 'Baixar XML', rails_blob_url(@individual_registration.xml_file) %>
+<% end %>
+
 <p>
   <strong>Statustemdoencarespiratoria:</strong>
   <%= @individual_registration.statusTemDoencaRespiratoria %>

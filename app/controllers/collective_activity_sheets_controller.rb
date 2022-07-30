@@ -1,5 +1,6 @@
 class CollectiveActivitySheetsController < ApplicationController
   before_action :set_collective_activity_sheet, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!
 
   # GET /collective_activity_sheets or /collective_activity_sheets.json
   def index

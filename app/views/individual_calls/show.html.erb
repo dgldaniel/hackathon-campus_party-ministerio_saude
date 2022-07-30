@@ -1,5 +1,9 @@
 <p id="notice"><%= notice %></p>
 
+<% if @individual_call.xml_file.attached? %>
+  <%= link_to 'Baixar XML', rails_blob_url(@individual_call.xml_file) %>
+<% end %>
+
 <p>
   <strong>Numeroprontuario:</strong>
   <%= @individual_call.numeroProntuario %>

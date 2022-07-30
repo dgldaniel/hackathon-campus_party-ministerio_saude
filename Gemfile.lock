@@ -354,6 +354,7 @@ DEPENDENCIES
   ransack
   redis
   rspec-expectations (~> 3.4)
+  rubyzip
   sass-rails (>= 6)
   selenium-webdriver (>= 4.0.0.rc1)
   sidekiq

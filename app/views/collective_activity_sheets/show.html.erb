@@ -1,5 +1,9 @@
 <p id="notice"><%= notice %></p>
 
+<% if @collective_activity_sheet.xml_file.attached? %>
+  <%= link_to 'Baixar XML', rails_blob_url(@collective_activity_sheet.xml_file) %>
+<% end %>
+
 <p>
   <strong>Uuidficha:</strong>
   <%= @collective_activity_sheet.uuidFicha %>

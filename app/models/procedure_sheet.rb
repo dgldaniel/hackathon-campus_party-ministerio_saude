@@ -7,6 +7,8 @@ class ProcedureSheet < ApplicationRecord
   before_create :generate_xml
   before_update :generate_xml
 
+  scope :generate_xml_from, -> (start_date, end_date) { where("created_at >= ? AND created_at <= ?", start_date, end_date )}
+
   private
   def generate_xml
     generate_xml = ActionController::Base.new.render_to_string(

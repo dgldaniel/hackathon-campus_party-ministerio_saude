@@ -7,19 +7,6 @@
     <tr>
       <th>Uuidficha</th>
       <th>Inep</th>
-      <th>Numparticipantes</th>
-      <th>Numavaliacoesalterada</th>
-      <th>Atividadetipo</th>
-      <th>Publicoalvo</th>
-      <th>Participant</th>
-      <th>Professional</th>
-      <th>Tbcdsorigem</th>
-      <th>Procedimento</th>
-      <th>Turno</th>
-      <th>Pseeducacao</th>
-      <th>Psesaude</th>
-      <th>Temasparasaude</th>
-      <th>Praticasemsaude</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -29,19 +16,6 @@
       <tr>
         <td><%= collective_activity_sheet.uuidFicha %></td>
         <td><%= collective_activity_sheet.inep %></td>
-        <td><%= collective_activity_sheet.numParticipantes %></td>
-        <td><%= collective_activity_sheet.numAvaliacoesAlterada %></td>
-        <td><%= collective_activity_sheet.atividadeTipo %></td>
-        <td><%= collective_activity_sheet.publicoAlvo %></td>
-        <td><%= collective_activity_sheet.participant_id %></td>
-        <td><%= collective_activity_sheet.professional_id %></td>
-        <td><%= collective_activity_sheet.tbCdsOrigem %></td>
-        <td><%= collective_activity_sheet.procedimento %></td>
-        <td><%= collective_activity_sheet.turno %></td>
-        <td><%= collective_activity_sheet.pseEducacao %></td>
-        <td><%= collective_activity_sheet.pseSaude %></td>
-        <td><%= collective_activity_sheet.temasParaSaude %></td>
-        <td><%= collective_activity_sheet.praticasEmSaude %></td>
         <td><%= link_to 'Show', collective_activity_sheet %></td>
         <td><%= link_to 'Edit', edit_collective_activity_sheet_path(collective_activity_sheet) %></td>
         <td><%= link_to 'Destroy', collective_activity_sheet, method: :delete, data: { confirm: 'Are you sure?' } %></td>

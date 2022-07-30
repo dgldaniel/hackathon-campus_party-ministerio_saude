@@ -6,14 +6,6 @@
   <thead>
     <tr>
       <th>Uuidficha</th>
-      <th>Tpcdsorigem</th>
-      <th>Numtotalafericaopa</th>
-      <th>Numtotalafericaotemperatura</th>
-      <th>Numtotalcurativosimples</th>
-      <th>Numtotalcoletamaterialparaexamelaboratorial</th>
-      <th>Numtotalglicemiacapilar</th>
-      <th>Numtotalmedicaoaltura</th>
-      <th>Numtotalmedicaopeso</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -22,14 +14,6 @@
     <% @procedure_sheets.each do |procedure_sheet| %>
       <tr>
         <td><%= procedure_sheet.uuidFicha %></td>
-        <td><%= procedure_sheet.tpCdsOrigem %></td>
-        <td><%= procedure_sheet.numTotalAfericaoPa %></td>
-        <td><%= procedure_sheet.numTotalAfericaoTemperatura %></td>
-        <td><%= procedure_sheet.numTotalCurativoSimples %></td>
-        <td><%= procedure_sheet.numTotalColetaMaterialParaExameLaboratorial %></td>
-        <td><%= procedure_sheet.numTotalGlicemiaCapilar %></td>
-        <td><%= procedure_sheet.numTotalMedicaoAltura %></td>
-        <td><%= procedure_sheet.numTotalMedicaoPeso %></td>
         <td><%= link_to 'Show', procedure_sheet %></td>
         <td><%= link_to 'Edit', edit_procedure_sheet_path(procedure_sheet) %></td>
         <td><%= link_to 'Destroy', procedure_sheet, method: :delete, data: { confirm: 'Are you sure?' } %></td>

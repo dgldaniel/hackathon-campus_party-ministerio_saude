@@ -2,6 +2,10 @@
 require 'sidekiq/web'
 
 Rails.application.routes.draw do
+  root to: 'pages#index'
+
+  mount Sidekiq::Web => '/sidekiq'
+
   resources :procedure_sheets
   resources :care_procedures
   resources :collective_calls
@@ -15,8 +19,6 @@ Rails.application.routes.draw do
   resources :participants
   resources :professionals
   resources :individual_registrations
-  mount Sidekiq::Web => '/sidekiq'
-
   resources :patients
   resources :doctors
   resources :reports
@@ -28,11 +30,8 @@ Rails.application.routes.draw do
              }
 
   #Custom routes
-  root to: 'individual_registrations#index'
-
   get 'graphics/index'
   post '/notify_patient' => 'individual_registrations#notify_patient'
 
   get 'individual_registrations_search' => 'individual_registrations#search'
-  get 'generate_only_xml' => 'procedure_sheets#generate_xml'
 end

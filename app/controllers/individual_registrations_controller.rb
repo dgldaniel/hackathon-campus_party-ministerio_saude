@@ -1,5 +1,6 @@
 class IndividualRegistrationsController < ApplicationController
   before_action :set_individual_registration, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!
 
   # GET /individual_registrations or /individual_registrations.json
   def index
