@@ -2,6 +2,20 @@
 
 <h1>Procedure Sheets</h1>
 
+<%= form_with url: generate_xml_zip_path, method: :get, local: false do |form| %>
+  <h2>Gerar Zip</h2>
+
+  <%= form.label :start_date, "Data de Inicio" %>
+  <%= form.date_field :start_date %>
+
+  <%= form.label :end_date, "Data Final" %>
+  <%= form.date_field :end_date %>
+
+  <br>
+
+  <%= form.submit "Gerar" %>
+<% end %>
+
 <table>
   <thead>
     <tr>

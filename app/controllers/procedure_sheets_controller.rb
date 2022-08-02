@@ -64,11 +64,15 @@ class ProcedureSheetsController < ApplicationController
   end
 
   def generate_xml_zip
-    procudures_selected = ProcedureSheet.generate_xml_from params[:start_date], params[:end]
+    respond_to do |format|
+      format.js do
+        procudures_selected = ProcedureSheet.generate_xml_from(params[:start_date],
+                                                              params[:end_date])
 
-    GenerateXmlProcedureSheetJob.perform_now procudures_selected, current_user
-
-    render :index
+        GenerateXmlProcedureSheetJob.perform_now(procudures_selected,
+                                                 current_user)
+      end
+    end
   end
 
   private
