@@ -25,4 +25,34 @@
   <% end %>
 </div>
 <%= link_to 'Edit', edit_patient_path(@patient), class: "button is-warning" %> |
-<%= link_to 'Back', patients_path, class: 'button is-info' %>
+<%= link_to 'Back', patients_path, class: 'button is-info' %> |
+<button class="js-modal-trigger button is-link" data-target="modal-js-example">
+  Enviar mensagem
+</button>
+<div id="modal-js-example" class="modal">
+  <div class="modal-background"></div>
+
+  <div class="modal-content">
+    <div class="box">
+      <div class="field">
+        <label>Nome do Paciente</>
+        <input type='text' value="<%= @patient.full_name %>" readonly >
+      </div>
+     <div class="field">
+        <label>E-mail</>
+        <input type='text' value="<%= @patient.email %>" readonly >
+      </div>
+      <div class="field">
+        <label>Mensagem</>
+        <input type='text' >
+      </div>
+      <div class="actions control">
+        <input type='submit' value="Enviar Mensagem" class='button is-success' >
+      </div>
+    </div>
+    </div>
+
+  </div>
+
+  <button class="modal-close is-large" aria-label="close"></button>
+</div>

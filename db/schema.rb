@@ -187,13 +187,15 @@ ActiveRecord::Schema.define(version: 2022_07_25_222725) do
 
   create_table "individual_registrations", force: :cascade do |t|
     t.boolean "statusTemDoencaRespiratoria"
+    t.boolean "statusUsaOutrasPraticasIntegrativasOuComplementares"
     t.boolean "statusTemTeveDoencasRins"
     t.boolean "statusTeveDoencaCardiaca"
     t.boolean "statusTeveInternadoEm12Meses"
     t.boolean "statusUsaPlantaMedicinais"
     t.string "grauParentescoFamiliarFrequentado"
-    t.string "higienePessoalSituacaoRua", default: [], array: true
-    t.string "origemAlimentoSituacaoRua", default: [], array: true
+    t.string "nomeSocial"
+    t.integer "higienePessoalSituacaoRua", default: [], array: true
+    t.integer "origemAlimentoSituacaoRua", default: [], array: true
     t.string "outraInstituicaoQueAcompanha"
     t.integer "quantidadeAlimentacoesAoDiaSituacaoRua"
     t.boolean "statusAcompanhadoPorOutraInstituicao"
@@ -205,11 +207,15 @@ ActiveRecord::Schema.define(version: 2022_07_25_222725) do
     t.boolean "statusEhResponsavel"
     t.string "nomePaiCidadao"
     t.boolean "desconheceNomePai"
+    t.date "dtNaturalizacao"
+    t.date "dtEntradaBrasil"
     t.string "microArea"
     t.boolean "stForaArea"
-    t.string "deficienciasCidadao", default: [], array: true
+    t.integer "deficienciasCidadao", default: [], array: true
+    t.integer "responsavelPorCrianca", default: [], array: true
     t.integer "grauInstrucaoCidadao"
     t.string "ocupacaoCodigoCbo2002"
+    t.string "portariaNaturalizacao"
     t.boolean "statusFrequentaEscola"
     t.boolean "statusMembroPovoComunidadeTradicional"
     t.boolean "statusDesejaInformarIdentidadeGenero"
@@ -230,14 +236,16 @@ ActiveRecord::Schema.define(version: 2022_07_25_222725) do
     t.string "ineDadoSerializado"
     t.integer "numLote"
     t.boolean "fichaAtualizada"
+    t.boolean "motivoSaidaCidadao"
     t.integer "tpCdsOrigem"
     t.string "descricaoCausaInternacaoEm12Meses"
     t.string "descricaoOutraCondicao1"
     t.string "descricaoOutraCondicao2"
+    t.string "descricaoOutraCondicao3"
     t.string "descricaoPlantasMedicinaisUsadas"
-    t.integer "doencaCardiaca"
-    t.integer "doencaRespiratoria"
-    t.integer "doencaRins"
+    t.integer "doencaCardiaca", default: [], array: true
+    t.integer "doencaRespiratoria", default: [], array: true
+    t.integer "doencaRins", default: [], array: true
     t.string "maternidadeDeReferencia"
     t.integer "situacaoPeso"
     t.boolean "statusEhDependenteAlcool"
@@ -257,24 +265,34 @@ ActiveRecord::Schema.define(version: 2022_07_25_222725) do
     t.boolean "statusPossuiReferenciaFamiliar"
     t.boolean "statusRecebeBeneficio"
     t.boolean "statusSituacaoRua"
-    t.string "dataNascimentoCidadao"
+    t.date "dataNascimentoCidadao"
     t.string "emailCidadao"
     t.integer "nacionalidadeCidadao"
     t.string "nomeCidadao"
     t.string "nomeMaeCidadao"
     t.string "cpfCidadao"
+    t.string "cpfResponsavelFamiliar"
+    t.string "cnsCidadao"
+    t.string "cnsResponsavelFamiliar"
     t.string "telefoneCelular"
-    t.string "paisNascimento"
+    t.string "numeroNisPisPasep"
+    t.integer "paisNascimento"
     t.integer "racaCorCidadao"
     t.integer "sexoCidadao"
     t.integer "etnia"
     t.integer "orientacaoSexualCidadao"
+    t.integer "relacaoParentescoCidadao"
     t.integer "situacaoMercadoTrabalhoCidadao"
     t.boolean "statusDesejaInformarOrientacaoSexual"
     t.boolean "statusFrequentaBenzedeira"
     t.boolean "statusParticipaGrupoComunitario"
     t.boolean "statusPossuiPlanoSaudePrivado"
     t.boolean "statusTemAlgumaDeficiencia"
+    t.integer "identidadeGeneroCidadao"
+    t.date "dataObito"
+    t.string "numeroDO"
+    t.boolean "statusCadastroIndividualInativo"
+    t.boolean "statusGeradoAutomaticamente"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
