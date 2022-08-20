@@ -12,7 +12,14 @@
  *
  *= require_tree .
  *= require_self
+ *= require fontawesome
+ *= require icofont
+ *= require themify
+ *= require flag-icon
+ *= require feather-icon
+ *= require datatables
+ *= require bootstrap
+ *= require style
+ *= require color-3
+ *= require responsive
  */
-
-@import "bulma/bulma";
-@import "@fortawesome/fontawesome-free/css/all.css";
