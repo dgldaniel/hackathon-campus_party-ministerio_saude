@@ -5,7 +5,7 @@ class GenerateXmlProcedureSheetJob < ApplicationJob
 
   def perform(procudures_selected, current_user)
     current_doctor = current_user.doctor
-    zip_file_name = Tempfile.new 'procudures_sheets_xml_files.zip'
+    zip_file_name = Tempfile.new('procudures_sheets_xml_files.zip')
 
     Zip::File.open(zip_file_name.path, Zip::File::CREATE) do |zipfile|
       procudures_selected.each do |each_procedure_sheet|

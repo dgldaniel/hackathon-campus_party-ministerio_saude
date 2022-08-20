@@ -13,33 +13,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
-
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag 'application', media: 'all' %>
     <%= stylesheet_link_tag controller_name, media: 'all' %>
     <%= javascript_pack_tag 'application' %>
     <%= javascript_pack_tag controller_name %>
   </head>
   <body>
-    <div class="container">
-      <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-          <%= image_tag 'laila_diabetes.png', width: 125, alt: "laila-logo" %>
-          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <%= link_to 'Sair', destroy_user_session_path, method: :delete, class: "button is-danger" %>
+    <div class="page-wrapper null compact-wrapper" id="pageWrapper">
+      <%= render 'shared/navbar_application' %>
+      <div class='page-body-wrapper null'>
+        <%= render 'shared/sidebar_application' %>
+        <div class='page-body'>
+          <div class='container-fluid'>
+            <div class='row'>
+              <%= yield %>
+            </div>
           </div>
         </div>
-      </nav>
-      <%= yield %>
+      </div>
     </div>
   </body>
 </html>
