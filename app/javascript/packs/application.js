@@ -8,12 +8,20 @@ require("@rails/ujs").start()
 require("@rails/activestorage").start()
 require("channels")
 
-//= require icons/feather-icon/feather.min
-//= require sidebar-menu
-//= require config
-//= require bootstrap/bootstrap.min
-//= require datatable/datatables/jquery.dataTables.min
-//= require datatable/datatables/datatable.custom
-//= require tooltip-init
-//= require script
-//= require theme-customizer/customizer
+// require('icons/feather-icon/feather.min')
+// require('sidebar-menu')
+require('config')
+require('bootstrap/bootstrap.min')
+// require('datatable/datatables/jquery.dataTables.min')
+// require('datatable/datatables/datatable.custom')
+// require('datepicker/date-time-picker/moment.min')
+// require('datepicker/date-time-picker/tempusdominus-bootstrap-4.min')
+// require('datepicker/date-time-picker/datetimepicker.custom')
+require('form-wizard/form-wizard')
+// require('datepicker/form-wizard/jquery.backstretch.min')
+// require('tooltip-init')
+// require('script')
+// require('theme-customizer/customizer')
+require('hello')
+
+

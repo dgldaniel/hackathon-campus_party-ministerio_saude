@@ -1,0 +1,70 @@
+<div class="tab">
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= form.label :grauParentescoFamiliarFrequentado %>
+        <%= form.text_field :grauParentescoFamiliarFrequentado, class: 'form-control btn-pill' %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= form.label :higienePessoalSituacaoRua %>
+        <%= form.number_field :higienePessoalSituacaoRua, class: 'form-control btn-pill' %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= form.label :origemAlimentoSituacaoRua %>
+        <%= form.number_field :origemAlimentoSituacaoRua, class: 'form-control btn-pill' %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= form.label :outraInstituicaoQueAcompanha %>
+        <%= form.text_field :outraInstituicaoQueAcompanha, class: 'form-control btn-pill' %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= form.label :quantidadeAlimentacoesAoDiaSituacaoRua %>
+        <%= form.number_field :quantidadeAlimentacoesAoDiaSituacaoRua, class: 'form-control btn-pill' %>
+      </div>
+    </div>
+  </div>
+  <div class="checkbox checkbox-dark">
+    <%= form.check_box :statusAcompanhadoPorOutraInstituicao %>
+    <%= form.label :statusAcompanhadoPorOutraInstituicao %>
+  </div>
+  <div class="checkbox checkbox-dark">
+    <%= form.check_box :statusPossuiReferenciaFamiliar %>
+    <%= form.label :statusPossuiReferenciaFamiliar %>
+  </div>
+  <div class="checkbox checkbox-dark">
+    <%= form.check_box :statusSituacaoRua %>
+    <%= form.label :statusSituacaoRua %>
+  </div>
+  <div class="checkbox checkbox-dark">
+    <%= form.check_box :statusTemAcessoHigienePessoalSituacaoRua %>
+    <%= form.label :statusTemAcessoHigienePessoalSituacaoRua %>
+  </div>
+  <div class="checkbox checkbox-dark">
+    <%= form.check_box :statusVisitaFamiliarFrequentemente %>
+    <%= form.label :statusVisitaFamiliarFrequentemente %>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= form.label :tempoSituacaoRua %>
+        <%= form.number_field :tempoSituacaoRua, class: 'form-control btn-pill' %>
+      </div>
+    </div>
+  </div>
+</div>
