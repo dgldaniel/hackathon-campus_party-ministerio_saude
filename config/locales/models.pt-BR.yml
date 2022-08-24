@@ -1,4 +1,4 @@
-"pt-BR":
+:pt-BR:
   activerecord:
     models:
       patient:
@@ -10,6 +10,9 @@
       report:
         one: Relatório
         others: Relatórios
+      individual_registration:
+        one: Cadastro Individual
+        others: Cadastros Individuais
     attributes:
       patient:
         email: E-mail
@@ -44,3 +47,111 @@
         participation_diabetes_nutritional_education_program: Participação no programa de educação em diabetes e nutricional
         smoker: É fumante
         situation: Situação
+      individual_registration:
+        statusTemDoencaRespiratoria: Tem Doença respiratória no Pulmão?
+        statusUsaOutrasPraticasIntegrativasOuComplementares: Usa outras práticas integrativas e complementares?
+        statusTemTeveDoencasRins: Tem ou teve doença nos ruins?
+        statusTeveDoencaCardiaca: Tem doença cardíaca/do coração?
+        statusTeveInternadoEm12Meses: Teve alguma internação nos últimos 12 meses?
+        statusUsaPlantaMedicinais: Usa plantas medicinais?
+        grauParentescoFamiliarFrequentado: Visita algum familiar com frequência?
+        nomeSocial: Nome Social
+        higienePessoalSituacaoRua: Se sim, indique qual(is)
+        origemAlimentoSituacaoRua: Qual origem da alimentação?
+        outraInstituicaoQueAcompanha:  Se sim, indique qual(is)
+        quantidadeAlimentacoesAoDiaSituacaoRua: Quantas vezes se alimenta ao dia?
+        statusAcompanhadoPorOutraInstituicao: É acompanhado por outra instituição?
+        statusTemAcessoHigienePessoalSituacaoRua: Tem acesso à higiene pessoal?
+        statusVisitaFamiliarFrequentemente: Se sim, qual é o grau de parentesco?
+        tempoSituacaoRua: Tempo em situação de rua?
+        codigoIbgeMunicipioNascimento: Código IBGE do Municipio de Nascimento
+        desconheceNomeMae: Desconhece nome da Mãe
+        statusEhResponsavel: É responsável familiar?
+        nomePaiCidadao: Nome Completo do Pai
+        desconheceNomePai: Desconhece nome do Pai
+        dtNaturalizacao: Data de Naturalização
+        dtEntradaBrasil: Data de Entrada no Brasil
+        microArea: Mircroárea
+        stForaArea: Fora da área
+        deficienciasCidadao: Se sim, qual (is)?
+        responsavelPorCrianca: Criança de 0 a 9 anos, com quem fica?
+        grauInstrucaoCidadao:
+        ocupacaoCodigoCbo2002: Ocupação
+        portariaNaturalizacao: Portaria de Naturalização
+        statusFrequentaEscola: Frequenta Escola ou Creche?
+        statusMembroPovoComunidadeTradicional: É membro de Povo ou Comunidade Tradicional?
+        statusDesejaInformarIdentidadeGenero: Deseja informar identidade de gênero?
+        coPovoComunidadeTradicional: Se sim, qual?
+        statusTermoRecusaCadastroIndividualAtencaoBasica: Termo de Recusa do Cadastro Individual da Atenção Básica
+        uuid: UUID
+        uuidFichaOriginadora: UUID da Ficha Originadora
+        profissionalCNS: CNS do Profissional
+        cboCodigo_2002: CBO
+        cnes: CNES
+        ine: INE
+        dataAtendimento: Data de Atendimento
+        codigoIbgeMunicipio: Código IBGE do Munícipio
+        uuidDadoSerializado: UUID do Dado Serializado
+        tipoDadoSerializado: Tipo de Dado Serializado
+        codIbge: Código do IBGE
+        cnesDadoSerializado: CNES do Dado Serializado
+        ineDadoSerializado: INE do Dado Serializado
+        numLote: Número do Lote
+        fichaAtualizada:
+        motivoSaidaCidadao: Saída do Cidadão do Cadastro
+        tpCdsOrigem: CDS de Origem
+        descricaoCausaInternacaoEm12Meses: Se sim, por qual causa?
+        descricaoOutraCondicao1: Outra Condição 1
+        descricaoOutraCondicao2: Outra Condição 1
+        descricaoOutraCondicao3: Outra Condição 1
+        descricaoPlantasMedicinaisUsadas: Se sim, indique qual(is)
+        doencaCardiaca: Se sim, indique qual(is)
+        doencaRespiratoria: Se sim, indique qual(is)
+        doencaRins: Se sim, indique qual(is)
+        maternidadeDeReferencia: Se sim, qual é a maternidade de referência?
+        situacaoPeso: Sobre seu peso, você se considera?
+        statusEhDependenteAlcool: Faz uso de Álcool?
+        statusEhDependenteOutrasDrogas: Faz uso de outras Drogas?
+        statusEhFumante: Está Fumante?
+        statusEhGestante: Está Gestante?
+        statusEstaAcamado: Está Acamado?
+        statusEstaDomiciliado: Está Domiciliado?
+        statusTemDiabetes: Tem Diabetes?
+        statusTemHanseniase: Está com Hanseníase?
+        statusTemHipertensaoArterial: Tem Hipertensão Arterial?
+        statusTemTeveCancer: Tem ou teve câncer?
+        statusTemTuberculose: Está com Tuberculose?
+        statusTeveAvcDerrame: Teve AVC/Derrame?
+        statusTeveInfarto: Teve Infarto?
+        statusDiagnosticoMental: Teve diagnóstico de algum problema de saúde mental por profissional de saúde?
+        statusPossuiReferenciaFamiliar: Possui Referência Familiar?
+        statusRecebeBeneficio: Recebe algum Benefício?
+        statusSituacaoRua: Está em Situação de Rua?
+        dataNascimentoCidadao: Data de Nascimento
+        emailCidadao: E-mail
+        nacionalidadeCidadao: Nacionalidade
+        nomeCidadao: Nome
+        nomeMaeCidadao: Nome Completo da Mãe
+        cpfCidadao: CPF
+        cpfResponsavelFamiliar: CPF do Responsável Familiar
+        cnsCidadao: CNS
+        cnsResponsavelFamiliar: CNS do Responsável Familiar
+        telefoneCelular: Telefone Celular
+        numeroNisPisPasep: Nº NIS (PIS/PASEP)
+        paisNascimento: País de Nascimento
+        racaCorCidadao: Raça/Cor
+        sexoCidadao: Sexo
+        etnia: Etnia
+        orientacaoSexualCidadao: Deseja informar Orientação Sexual?
+        relacaoParentescoCidadao: Relação de Parentesco com o Responsável Familiar
+        situacaoMercadoTrabalhoCidadao: Situação no Mercado de Trabalho
+        statusDesejaInformarOrientacaoSexual: Deseja informar Orientação Sexual?
+        statusFrequentaBenzedeira: Frequenta Cuidador Tradicional?
+        statusParticipaGrupoComunitario: Participa de algum grupo comunitário?
+        statusPossuiPlanoSaudePrivado: Possui Plano de Saúde Privado?
+        statusTemAlgumaDeficiencia: Tem alguma Deficiência?
+        identidadeGeneroCidadao: Deseja informar Identidade de Gênero?
+        dataObito: Data óbito
+        numeroDO: Número DO
+        statusCadastroIndividualInativo: Tem Cadastro Individual Inativo?
+        statusGeradoAutomaticamente: É gerdo automaticamente?
