@@ -53,7 +53,7 @@
         statusTemTeveDoencasRins: Tem ou teve doença nos ruins?
         statusTeveDoencaCardiaca: Tem doença cardíaca/do coração?
         statusTeveInternadoEm12Meses: Teve alguma internação nos últimos 12 meses?
-        statusUsaPlantaMedicinais: Usa plantas medicinais?
+        statusUsaPlantasMedicinais: Usa plantas medicinais?
         grauParentescoFamiliarFrequentado: Visita algum familiar com frequência?
         nomeSocial: Nome Social
         higienePessoalSituacaoRua: Se sim, indique qual(is)
@@ -71,11 +71,11 @@
         desconheceNomePai: Desconhece nome do Pai
         dtNaturalizacao: Data de Naturalização
         dtEntradaBrasil: Data de Entrada no Brasil
-        microArea: Mircroárea
+        microArea: Microárea
         stForaArea: Fora da área
         deficienciasCidadao: Se sim, qual (is)?
         responsavelPorCrianca: Criança de 0 a 9 anos, com quem fica?
-        grauInstrucaoCidadao:
+        grauInstrucaoCidadao: Grau de Instrução
         ocupacaoCodigoCbo2002: Ocupação
         portariaNaturalizacao: Portaria de Naturalização
         statusFrequentaEscola: Frequenta Escola ou Creche?

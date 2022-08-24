@@ -2,5 +2,13 @@
   <div class="card-header pb-0">
     <h5>Novo Cadastro Individual</h5>
   </div>
-  <%= render 'form', individual_registration: @individual_registration %>
+  <div class='card-body'>
+    <div class='row'>
+      <div class='col-md-12'>
+        <div class='datetime-picker'>
+          <%= render 'form', individual_registration: @individual_registration %>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

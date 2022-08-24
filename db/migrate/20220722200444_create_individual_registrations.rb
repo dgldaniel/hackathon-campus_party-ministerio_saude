@@ -6,7 +6,7 @@ class CreateIndividualRegistrations < ActiveRecord::Migration[6.1]
       t.boolean :statusTemTeveDoencasRins, null: true
       t.boolean :statusTeveDoencaCardiaca, null: true
       t.boolean :statusTeveInternadoEm12Meses, null: true
-      t.boolean :statusUsaPlantaMedicinais, null: true
+      t.boolean :statusUsaPlantasMedicinais, null: true
       t.string :grauParentescoFamiliarFrequentado, null: true, limit: 100
       t.string :nomeSocial, null: true, limit: 70
       t.integer :higienePessoalSituacaoRua, array: true, default: []
@@ -17,14 +17,14 @@ class CreateIndividualRegistrations < ActiveRecord::Migration[6.1]
       t.boolean :statusTemAcessoHigienePessoalSituacaoRua, null: true
       t.boolean :statusVisitaFamiliarFrequentemente, null: true
       t.integer :tempoSituacaoRua, null: true
-      t.string :codigoIbgeMunicipioNascimento, null: true, 'char(7)'
+      t.string :codigoIbgeMunicipioNascimento, null: true, limit: 7
       t.boolean :desconheceNomeMae, null: true
       t.boolean :statusEhResponsavel, null: true
       t.string :nomePaiCidadao, null: true, limit: 70
       t.boolean :desconheceNomePai, null: true
       t.date :dtNaturalizacao, null: true
       t.date :dtEntradaBrasil, null: true
-      t.string :microArea, null: true, 'char(2)'
+      t.string :microArea, null: true, limit: 2
       t.boolean :stForaArea, null: true
       t.integer :deficienciasCidadao, array: true, default: []
       t.integer :responsavelPorCrianca, array: true, default: []
@@ -85,12 +85,12 @@ class CreateIndividualRegistrations < ActiveRecord::Migration[6.1]
       t.integer :nacionalidadeCidadao, null: false
       t.string :nomeCidadao, null: false, limit: 70
       t.string :nomeMaeCidadao, null: true, limit: 70
-      t.string :cpfCidadao, null: true, 'char(11)'
-      t.string :cpfResponsavelFamiliar, null: true, 'char(11)'
-      t.string :cnsCidadao, null: true, 'char(15)'
-      t.string :cnsResponsavelFamiliar, null: true, 'char(15)'
+      t.string :cpfCidadao, null: true, limit: 11
+      t.string :cpfResponsavelFamiliar, null: true, limit: 11
+      t.string :cnsCidadao, null: true, limit: 15
+      t.string :cnsResponsavelFamiliar, null: true, limit: 15
       t.string :telefoneCelular, null: true, limit: 11
-      t.string :numeroNisPisPasep, null: true, 'char(11)'
+      t.string :numeroNisPisPasep, null: true, limit: 11
       t.integer :paisNascimento, null: true
       t.integer :racaCorCidadao, null: false
       t.integer :sexoCidadao, null: false
@@ -105,7 +105,7 @@ class CreateIndividualRegistrations < ActiveRecord::Migration[6.1]
       t.boolean :statusTemAlgumaDeficiencia, null: true
       t.integer :identidadeGeneroCidadao, null: true
       t.date :dataObito, null: true
-      t.string :numeroDO, null: true, 'char(9)'
+      t.string :numeroDO, null: true, limit: 9
       t.boolean :statusCadastroIndividualInativo, null: true
       t.boolean :statusGeradoAutomaticamente, null: true
 

@@ -5,7 +5,7 @@ one:
   statusTemTeveDoencasRins: false
   statusTeveDoencaCardiaca: false
   statusTeveInternadoEm12Meses: false
-  statusUsaPlantaMedicinais: false
+  statusUsaPlantasMedicinais: false
   grauParentescoFamiliarFrequentado: MyString
   higienePessoalSituacaoRua: 
   origemAlimentoSituacaoRua: 
@@ -74,7 +74,7 @@ one:
   statusTeveDoencaCardiaca: false
   statusTeveInfarto: false
   statusTeveInternadoEm12Meses: false
-  statusUsaPlantaMedicinais: false
+  statusUsaPlantasMedicinais: false
   statusDiagnosticoMental: false
   grauParentescoFamiliarFrequentado: MyString
   higienePessoalSituacaoRua: 1
@@ -129,7 +129,7 @@ two:
   statusTemTeveDoencasRins: false
   statusTeveDoencaCardiaca: false
   statusTeveInternadoEm12Meses: false
-  statusUsaPlantaMedicinais: false
+  statusUsaPlantasMedicinais: false
   grauParentescoFamiliarFrequentado: MyString
   higienePessoalSituacaoRua: 
   origemAlimentoSituacaoRua: 
@@ -198,7 +198,7 @@ two:
   statusTeveDoencaCardiaca: false
   statusTeveInfarto: false
   statusTeveInternadoEm12Meses: false
-  statusUsaPlantaMedicinais: false
+  statusUsaPlantasMedicinais: false
   statusDiagnosticoMental: false
   grauParentescoFamiliarFrequentado: MyString
   higienePessoalSituacaoRua: 1

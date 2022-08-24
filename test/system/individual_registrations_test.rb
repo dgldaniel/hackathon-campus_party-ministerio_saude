@@ -95,7 +95,7 @@ class IndividualRegistrationsTest < ApplicationSystemTestCase
     check "Statustevedoencacardiaca" if @individual_registration.statusTeveDoencaCardiaca
     check "Statusteveinfarto" if @individual_registration.statusTeveInfarto
     check "Statusteveinternadoem12meses" if @individual_registration.statusTeveInternadoEm12Meses
-    check "Statususaplantamedicinais" if @individual_registration.statusUsaPlantaMedicinais
+    check "statusUsaPlantasMedicinais" if @individual_registration.statusUsaPlantasMedicinais
     check "Statusvisitafamiliarfrequentemente" if @individual_registration.statusVisitaFamiliarFrequentemente
     fill_in "Telefonecelular", with: @individual_registration.telefoneCelular
     fill_in "Temposituacaorua", with: @individual_registration.tempoSituacaoRua
@@ -195,7 +195,7 @@ class IndividualRegistrationsTest < ApplicationSystemTestCase
     check "Statustevedoencacardiaca" if @individual_registration.statusTeveDoencaCardiaca
     check "Statusteveinfarto" if @individual_registration.statusTeveInfarto
     check "Statusteveinternadoem12meses" if @individual_registration.statusTeveInternadoEm12Meses
-    check "Statususaplantamedicinais" if @individual_registration.statusUsaPlantaMedicinais
+    check "statusUsaPlantasMedicinais" if @individual_registration.statusUsaPlantasMedicinais
     check "Statusvisitafamiliarfrequentemente" if @individual_registration.statusVisitaFamiliarFrequentemente
     fill_in "Telefonecelular", with: @individual_registration.telefoneCelular
     fill_in "Temposituacaorua", with: @individual_registration.tempoSituacaoRua

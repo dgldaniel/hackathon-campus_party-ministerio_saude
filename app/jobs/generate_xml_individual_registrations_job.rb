@@ -145,9 +145,9 @@ class GenerateXmlIndividualRegistrationsJob < ApplicationJob
     statusTeveInternadoEm12Meses.text = individual_registration[:alguma_internacao_ultimos_12_meses]
     condicoesDeSaude.add_element statusTeveInternadoEm12Meses
 
-    statusUsaPlantaMedicinais = REXML::Element.new("statusUsaPlantaMedicinais")
-    statusUsaPlantaMedicinais.text = individual_registration[:alguma_internacao_ultimos_12_meses]
-    condicoesDeSaude.add_element statusUsaPlantaMedicinais
+    statusUsaPlantasMedicinais = REXML::Element.new("statusUsaPlantasMedicinais")
+    statusUsaPlantasMedicinais.text = individual_registration[:alguma_internacao_ultimos_12_meses]
+    condicoesDeSaude.add_element statusUsaPlantasMedicinais
 
     statusDiagnosticoMental = REXML::Element.new("statusDiagnosticoMental")
     statusDiagnosticoMental.text = individual_registration[:diagnostico_algum_problema_saude_mental_profissional_saude]

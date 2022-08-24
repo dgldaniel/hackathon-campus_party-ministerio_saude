@@ -1,4 +1,8 @@
 <div class="tab">
+  <div class="checkbox checkbox-dark">
+    <%= form.check_box :statusTeveInternadoEm12Meses %>
+    <%= form.label :statusTeveInternadoEm12Meses %>
+  </div>
   <div class="row">
     <div class="col">
       <div class="mb-3">
@@ -31,6 +35,10 @@
       </div>
     </div>
   </div>
+  <div class="checkbox checkbox-dark">
+    <%= form.check_box :statusUsaPlantasMedicinais  %>
+    <%= form.label :statusUsaPlantasMedicinais  %>
+  </div>
   <div class="row">
     <div class="col">
       <div class="mb-3">
@@ -38,6 +46,10 @@
         <%= form.text_field :descricaoPlantasMedicinaisUsadas, class: 'form-control btn-pill' %>
       </div>
     </div>
+  </div>
+  <div class="checkbox checkbox-dark">
+    <%= form.check_box :statusTeveDoencaCardiaca %>
+    <%= form.label :statusTeveDoencaCardiaca %>
   </div>
   <div class="row">
     <div class="col">
@@ -47,6 +59,10 @@
       </div>
     </div>
   </div>
+  <div class="checkbox checkbox-dark">
+    <%= form.check_box :statusTemDoencaRespiratoria %>
+    <%= form.label :statusTemDoencaRespiratoria %>
+  </div>
   <div class="row">
     <div class="col">
       <div class="mb-3">
@@ -55,6 +71,10 @@
       </div>
     </div>
   </div>
+  <div class="checkbox checkbox-dark">
+    <%= form.check_box :statusTemTeveDoencasRins %>
+    <%= form.label :statusTemTeveDoencasRins %>
+  </div>
   <div class="row">
     <div class="col">
       <div class="mb-3">
@@ -62,6 +82,10 @@
         <%= form.number_field :doencaRins, class: 'form-control btn-pill' %>
       </div>
     </div>
+  </div>
+  <div class="checkbox checkbox-dark">
+    <%= form.check_box :statusEhGestante %>
+    <%= form.label :statusEhGestante %>
   </div>
   <div class="row">
     <div class="col">
@@ -92,10 +116,6 @@
     <%= form.label :statusEhFumante %>
   </div>
   <div class="checkbox checkbox-dark">
-    <%= form.check_box :statusEhGestante %>
-    <%= form.label :statusEhGestante %>
-  </div>
-  <div class="checkbox checkbox-dark">
     <%= form.check_box :statusEstaAcamado %>
     <%= form.label :statusEstaAcamado %>
   </div>
@@ -106,10 +126,6 @@
   <div class="checkbox checkbox-dark">
     <%= form.check_box :statusTemDiabetes %>
     <%= form.label :statusTemDiabetes %>
-  </div>
-  <div class="checkbox checkbox-dark">
-    <%= form.check_box :statusTemDoencaRespiratoria %>
-    <%= form.label :statusTemDoencaRespiratoria %>
   </div>
   <div class="checkbox checkbox-dark">
     <%= form.check_box :statusTemHanseniase %>
@@ -136,24 +152,12 @@
     <%= form.label :statusTeveAvcDerrame %>
   </div>
   <div class="checkbox checkbox-dark">
-    <%= form.check_box :statusTeveDoencaCardiaca %>
-    <%= form.label :statusTeveDoencaCardiaca %>
-  </div>
-  <div class="checkbox checkbox-dark">
     <%= form.check_box :statusTeveInfarto %>
     <%= form.label :statusTeveInfarto %>
   </div>
   <div class="checkbox checkbox-dark">
-    <%= form.check_box :statusTeveInternadoEm12Meses %>
-    <%= form.label :statusTeveInternadoEm12Meses %>
-  </div>
-  <div class="checkbox checkbox-dark">
-    <%= form.check_box :statusTeveInternadoEm12Meses %>
-    <%= form.label :statusTeveInternadoEm12Meses %>
-  </div>
-  <div class="checkbox checkbox-dark">
-    <%= form.check_box :statusUsaPlantaMedicinais %>
-    <%= form.label :statusUsaPlantaMedicinais %>
+    <%= form.check_box :statusUsaOutrasPraticasIntegrativasOuComplementares %>
+    <%= form.label :statusUsaOutrasPraticasIntegrativasOuComplementares %>
   </div>
   <div class="checkbox checkbox-dark">
     <%= form.check_box :statusDiagnosticoMental %>

@@ -3,7 +3,7 @@
     <div class="col">
       <div class="mb-3">
         <%= form.label :nomeSocial %>
-        <%= form.text_field :nomeSocial, class: 'form-control btn-pill' %>
+        <%= form.text_field :nomeSocial, class: 'form-control btn-pill', maxlength: 70 %>
       </div>
     </div>
   </div>
@@ -11,7 +11,7 @@
     <div class="col">
       <div class="mb-3">
         <%= form.label :codigoIbgeMunicipioNascimento %>
-        <%= form.text_field :codigoIbgeMunicipioNascimento, class: 'form-control btn-pill' %>
+        <%= form.text_field :codigoIbgeMunicipioNascimento, class: 'form-control btn-pill', size: 7 %>
       </div>
     </div>
   </div>
@@ -19,7 +19,9 @@
     <div class="col">
       <div class="mb-3">
         <%= form.label :dataNascimentoCidadao %>
-        <%= form.text_field :dataNascimentoCidadao, class: 'form-control btn-pill' %>
+        <div class="input-group">
+          <%= form.text_field :dataNascimentoCidadao, class: 'btn-pill datepicker-here form-control digits', 'data-language': "en", 'data-bs-original-title': 'data-bs-original-title', title: 'title' %>
+        </div>
       </div>
     </div>
   </div>
@@ -143,7 +145,9 @@
     <div class="col">
       <div class="mb-3">
         <%= form.label :dtNaturalizacao %>
-        <%= form.text_field :dtNaturalizacao, class: 'form-control btn-pill' %>
+        <div class="input-group">
+          <%= form.text_field :dtNaturalizacao, class: 'btn-pill datepicker-here form-control digits', 'data-language': "en", 'data-bs-original-title': 'data-bs-original-title', title: 'title' %>
+        </div>
       </div>
     </div>
   </div>
@@ -159,7 +163,9 @@
     <div class="col">
       <div class="mb-3">
         <%= form.label :dtEntradaBrasil %>
-        <%= form.text_field :dtEntradaBrasil, class: 'form-control btn-pill' %>
+        <div class="input-group">
+          <%= form.text_field :dtEntradaBrasil, class: 'btn-pill datepicker-here form-control digits', 'data-language': "en", 'data-bs-original-title': 'data-bs-original-title', title: 'title' %>
+        </div>
       </div>
     </div>
   </div>

@@ -191,31 +191,31 @@ ActiveRecord::Schema.define(version: 2022_07_25_222725) do
     t.boolean "statusTemTeveDoencasRins"
     t.boolean "statusTeveDoencaCardiaca"
     t.boolean "statusTeveInternadoEm12Meses"
-    t.boolean "statusUsaPlantaMedicinais"
-    t.string "grauParentescoFamiliarFrequentado"
-    t.string "nomeSocial"
+    t.boolean "statusUsaPlantasMedicinais"
+    t.string "grauParentescoFamiliarFrequentado", limit: 100
+    t.string "nomeSocial", limit: 70
     t.integer "higienePessoalSituacaoRua", default: [], array: true
     t.integer "origemAlimentoSituacaoRua", default: [], array: true
-    t.string "outraInstituicaoQueAcompanha"
+    t.string "outraInstituicaoQueAcompanha", limit: 100
     t.integer "quantidadeAlimentacoesAoDiaSituacaoRua"
     t.boolean "statusAcompanhadoPorOutraInstituicao"
     t.boolean "statusTemAcessoHigienePessoalSituacaoRua"
     t.boolean "statusVisitaFamiliarFrequentemente"
     t.integer "tempoSituacaoRua"
-    t.string "codigoIbgeMunicipioNascimento"
+    t.string "codigoIbgeMunicipioNascimento", limit: 7
     t.boolean "desconheceNomeMae"
     t.boolean "statusEhResponsavel"
-    t.string "nomePaiCidadao"
+    t.string "nomePaiCidadao", limit: 70
     t.boolean "desconheceNomePai"
     t.date "dtNaturalizacao"
     t.date "dtEntradaBrasil"
-    t.string "microArea"
+    t.string "microArea", limit: 2
     t.boolean "stForaArea"
     t.integer "deficienciasCidadao", default: [], array: true
     t.integer "responsavelPorCrianca", default: [], array: true
     t.integer "grauInstrucaoCidadao"
     t.string "ocupacaoCodigoCbo2002"
-    t.string "portariaNaturalizacao"
+    t.string "portariaNaturalizacao", limit: 16
     t.boolean "statusFrequentaEscola"
     t.boolean "statusMembroPovoComunidadeTradicional"
     t.boolean "statusDesejaInformarIdentidadeGenero"
@@ -237,16 +237,16 @@ ActiveRecord::Schema.define(version: 2022_07_25_222725) do
     t.integer "numLote"
     t.boolean "fichaAtualizada"
     t.boolean "motivoSaidaCidadao"
-    t.integer "tpCdsOrigem"
-    t.string "descricaoCausaInternacaoEm12Meses"
-    t.string "descricaoOutraCondicao1"
-    t.string "descricaoOutraCondicao2"
-    t.string "descricaoOutraCondicao3"
-    t.string "descricaoPlantasMedicinaisUsadas"
+    t.integer "tpCdsOrigem", null: false
+    t.string "descricaoCausaInternacaoEm12Meses", limit: 100
+    t.string "descricaoOutraCondicao1", limit: 100
+    t.string "descricaoOutraCondicao2", limit: 100
+    t.string "descricaoOutraCondicao3", limit: 100
+    t.string "descricaoPlantasMedicinaisUsadas", limit: 100
     t.integer "doencaCardiaca", default: [], array: true
     t.integer "doencaRespiratoria", default: [], array: true
     t.integer "doencaRins", default: [], array: true
-    t.string "maternidadeDeReferencia"
+    t.string "maternidadeDeReferencia", limit: 100
     t.integer "situacaoPeso"
     t.boolean "statusEhDependenteAlcool"
     t.boolean "statusEhDependenteOutrasDrogas"
@@ -265,20 +265,20 @@ ActiveRecord::Schema.define(version: 2022_07_25_222725) do
     t.boolean "statusPossuiReferenciaFamiliar"
     t.boolean "statusRecebeBeneficio"
     t.boolean "statusSituacaoRua"
-    t.date "dataNascimentoCidadao"
-    t.string "emailCidadao"
-    t.integer "nacionalidadeCidadao"
-    t.string "nomeCidadao"
-    t.string "nomeMaeCidadao"
-    t.string "cpfCidadao"
-    t.string "cpfResponsavelFamiliar"
-    t.string "cnsCidadao"
-    t.string "cnsResponsavelFamiliar"
-    t.string "telefoneCelular"
-    t.string "numeroNisPisPasep"
+    t.date "dataNascimentoCidadao", null: false
+    t.string "emailCidadao", limit: 100
+    t.integer "nacionalidadeCidadao", null: false
+    t.string "nomeCidadao", limit: 70, null: false
+    t.string "nomeMaeCidadao", limit: 70
+    t.string "cpfCidadao", limit: 11
+    t.string "cpfResponsavelFamiliar", limit: 11
+    t.string "cnsCidadao", limit: 15
+    t.string "cnsResponsavelFamiliar", limit: 15
+    t.string "telefoneCelular", limit: 11
+    t.string "numeroNisPisPasep", limit: 11
     t.integer "paisNascimento"
-    t.integer "racaCorCidadao"
-    t.integer "sexoCidadao"
+    t.integer "racaCorCidadao", null: false
+    t.integer "sexoCidadao", null: false
     t.integer "etnia"
     t.integer "orientacaoSexualCidadao"
     t.integer "relacaoParentescoCidadao"
@@ -290,7 +290,7 @@ ActiveRecord::Schema.define(version: 2022_07_25_222725) do
     t.boolean "statusTemAlgumaDeficiencia"
     t.integer "identidadeGeneroCidadao"
     t.date "dataObito"
-    t.string "numeroDO"
+    t.string "numeroDO", limit: 9
     t.boolean "statusCadastroIndividualInativo"
     t.boolean "statusGeradoAutomaticamente"
     t.datetime "created_at", precision: 6, null: false

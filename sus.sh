@@ -3,7 +3,7 @@ statusTemDoencaRespiratoria:boolean \
 statusTemTeveDoencasRins:boolean \
 statusTeveDoencaCardiaca:boolean \
 statusTeveInternadoEm12Meses:boolean \
-statusUsaPlantaMedicinais:boolean \
+statusUsaPlantasMedicinais:boolean \
 grauParentescoFamiliarFrequentado \
 higienePessoalSituacaoRua:array \
 origemAlimentoSituacaoRua:array \
@@ -72,7 +72,7 @@ statusTeveAvcDerrame:boolean \
 statusTeveDoencaCardiaca:boolean \
 statusTeveInfarto:boolean \
 statusTeveInternadoEm12Meses:boolean \
-statusUsaPlantaMedicinais:boolean \
+statusUsaPlantasMedicinais:boolean \
 statusDiagnosticoMental:boolean \
 grauParentescoFamiliarFrequentado \
 higienePessoalSituacaoRua:integer \

@@ -7,6 +7,7 @@ environment.plugins.prepend('Provide',
     jQuery: 'jquery',
     Popper: ["@popperjs/core@2/dist/umd/popper.js", "default"],
     moment: 'moment',
+    'window.moment': 'moment',
   })
 )
 
