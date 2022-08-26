@@ -55,7 +55,12 @@
     <div class="col">
       <div class="mb-3">
         <%= form.label :doencaCardiaca %>
-        <%= form.number_field :doencaCardiaca, class: 'form-control btn-pill' %>
+        <%= form.collection_check_boxes :doencaCardiaca, IndividualRegistration.doencaCardiacas.map{ |a| [a.first,a.first] }, :first, :second do |b| %>
+          <div class="checkbox checkbox-dark">
+            <%= b.label %>
+            <%= b.check_box %>
+          </div>
+        <% end %>
       </div>
     </div>
   </div>

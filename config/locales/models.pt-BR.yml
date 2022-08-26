@@ -51,7 +51,7 @@
         statusTemDoencaRespiratoria: Tem Doença respiratória no Pulmão?
         statusUsaOutrasPraticasIntegrativasOuComplementares: Usa outras práticas integrativas e complementares?
         statusTemTeveDoencasRins: Tem ou teve doença nos ruins?
-        statusTeveDoencaCardiaca: Tem doença cardíaca/do coração?
+        statusTeveDoencaCardiaca: Tem doença cardíaca do coração?
         statusTeveInternadoEm12Meses: Teve alguma internação nos últimos 12 meses?
         statusUsaPlantasMedicinais: Usa plantas medicinais?
         grauParentescoFamiliarFrequentado: Visita algum familiar com frequência?
