@@ -163,17 +163,61 @@ SaidaCidadaoCadastro
   Só pode ser preenchido se o campo motivoSaidaCidadao = 135
 */
 
+function handleDisabledInputTextByInputCheckbox(inputText, inputCheckbox) {
+  inputCheckbox.addEventListener('change', event => {
+    if (event.target.checked) {
+      inputText.disabled = false;
+      inputText.attributes["required"] = "";
+    } else {
+      inputText.disabled = true
+      inputText.removeAttribute("required")
+    }
+  })
+}
 
-// document.addEventListener('DOMContentLoaded', () => {
-//   const $termoRecusa = document.getElementById('individual_registration_statusTermoRecusaCadastroIndividualAtencaoBasica')
+function handleDisplayOptionsByInputCheckbox(containerDiv, inputCheckbox) {
+  inputCheckbox.addEventListener('change', event => {
+    if (event.target.checked) {
+      containerDiv.style.display = 'block'
+    } else {
+      containerDiv.style.display = 'none'
+    }
+  })
 
-//   $termoRecusa.addEventListener('change', (event) => {
-//     if (event.target.checked) {
-//       console.log("Checkbox is checked..");
-//     } else {
-//       console.log("Checkbox is not checked..");
-//     }
-//   })
+}
 
-// });
+
+document.addEventListener('DOMContentLoaded', () => {
+  // const $termoRecusa = document.getElementById('individual_registration_statusTermoRecusaCadastroIndividualAtencaoBasica')
+
+  // CondicoesDeSaude
+
+  const $statusTeveInternadoem12MesesInput = document.getElementById('individual_registration_statusTeveInternadoEm12Meses')
+  const $descricaoCausaInternacaoEm12MesessInput = document.getElementById('individual_registration_descricaoCausaInternacaoEm12Meses')
+  const $descricaoPlantasMedicinaisUsadasInput = document.getElementById('individual_registration_descricaoPlantasMedicinaisUsadas')
+  const $statusUsaPlantasMedicinaisInput = document.getElementById('individual_registration_statusUsaPlantasMedicinais')
+  const $doencaCardiacaInput = document.getElementById('individual_registration_doencaCardiaca')
+  const $statusTeveDoencaCardiacaInput = document.getElementById('individual_registration_statusTeveDoencaCardiaca')
+  const $doencaRespiratoriaInput = document.getElementById('individual_registration_doencaRespiratoria')
+  const $statusTemDoencaRespiratoriaInput = document.getElementById('individual_registration_statusTemDoencaRespiratoria')
+  const $doencaRinsInput = document.getElementById('individual_registration_doencaRins')
+  const $statusTemTeveDoencasRinsInput = document.getElementById('individual_registration_statusTemTeveDoencasRins')
+  const $maternidadeDeReferenciaInput = document.getElementById('individual_registration_maternidadeDeReferencia')
+  const $statusEhGestanteInput = document.getElementById('individual_registration_statusEhGestante')
+  const $sexoCidadaoInput = document.getElementById('individual_registration_sexoCidadao')
+  const $dataNascimentoCidadaoInput = document.getElementById('individual_registration_dataNascimentoCidadao')
+
+  const $doencaCardiacaOptions = document.getElementById('doencaCardiaca-options');
+  const $doencaRespiratoriaOptions = document.getElementById('doencaRespiratoria-options');
+  const $doencaRinsOptions = document.getElementById('doencaRins-options');
+
+  handleDisabledInputTextByInputCheckbox($descricaoCausaInternacaoEm12MesessInput, $statusTeveInternadoem12MesesInput)
+  handleDisabledInputTextByInputCheckbox($descricaoPlantasMedicinaisUsadasInput, $statusUsaPlantasMedicinaisInput)
+  handleDisabledInputTextByInputCheckbox($maternidadeDeReferenciaInput, $statusEhGestanteInput)
+
+  handleDisplayOptionsByInputCheckbox($doencaCardiacaOptions, $statusTeveDoencaCardiacaInput)
+  handleDisplayOptionsByInputCheckbox($doencaRespiratoriaOptions,  $statusTemDoencaRespiratoriaInput)
+  handleDisplayOptionsByInputCheckbox($doencaRinsOptions, $statusTemTeveDoencasRinsInput)
+
+});
 

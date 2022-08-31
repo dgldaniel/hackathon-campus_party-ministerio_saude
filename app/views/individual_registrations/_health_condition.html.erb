@@ -7,7 +7,7 @@
     <div class="col">
       <div class="mb-3">
         <%= form.label :descricaoCausaInternacaoEm12Meses %>
-        <%= form.text_field :descricaoCausaInternacaoEm12Meses, class: 'form-control btn-pill' %>
+        <%= form.text_field :descricaoCausaInternacaoEm12Meses, class: 'form-control btn-pill', disabled: true %>
       </div>
     </div>
   </div>
@@ -43,7 +43,7 @@
     <div class="col">
       <div class="mb-3">
         <%= form.label :descricaoPlantasMedicinaisUsadas %>
-        <%= form.text_field :descricaoPlantasMedicinaisUsadas, class: 'form-control btn-pill' %>
+        <%= form.text_field :descricaoPlantasMedicinaisUsadas, class: 'form-control btn-pill', disabled: true %>
       </div>
     </div>
   </div>
@@ -51,7 +51,7 @@
     <%= form.check_box :statusTeveDoencaCardiaca %>
     <%= form.label :statusTeveDoencaCardiaca %>
   </div>
-  <div class="row">
+  <div id='doencaCardiaca-options' class="row" style="display:none;">
     <div class="col">
       <div class="mb-3">
         <%= form.label :doencaCardiaca %>
@@ -68,11 +68,16 @@
     <%= form.check_box :statusTemDoencaRespiratoria %>
     <%= form.label :statusTemDoencaRespiratoria %>
   </div>
-  <div class="row">
+  <div id='doencaRespiratoria-options' class="row" style="display:none;">
     <div class="col">
       <div class="mb-3">
         <%= form.label :doencaRespiratoria %>
-        <%= form.number_field :doencaRespiratoria, class: 'form-control btn-pill' %>
+        <%= form.collection_check_boxes :doencaRespiratoria, IndividualRegistration.doencaRespiratoria.map{ |a| [a.first,a.first] }, :first, :second do |b| %>
+          <div class="checkbox checkbox-dark">
+            <%= b.label %>
+            <%= b.check_box %>
+          </div>
+        <% end %>
       </div>
     </div>
   </div>
@@ -80,11 +85,16 @@
     <%= form.check_box :statusTemTeveDoencasRins %>
     <%= form.label :statusTemTeveDoencasRins %>
   </div>
-  <div class="row">
+  <div id='doencaRins-options' class="row" style="display:none;">
     <div class="col">
       <div class="mb-3">
         <%= form.label :doencaRins %>
-        <%= form.number_field :doencaRins, class: 'form-control btn-pill' %>
+        <%= form.collection_check_boxes :doencaRins, IndividualRegistration.doencaRins.map{ |a| [a.first,a.first] }, :first, :second do |b| %>
+          <div class="checkbox checkbox-dark">
+            <%= b.label %>
+            <%= b.check_box %>
+          </div>
+        <% end %>
       </div>
     </div>
   </div>
@@ -96,7 +106,7 @@
     <div class="col">
       <div class="mb-3">
         <%= form.label :maternidadeDeReferencia %>
-        <%= form.text_field :maternidadeDeReferencia, class: 'form-control btn-pill' %>
+        <%= form.text_field :maternidadeDeReferencia, class: 'form-control btn-pill', disabled: true %>
       </div>
     </div>
   </div>
@@ -104,7 +114,12 @@
     <div class="col">
       <div class="mb-3">
         <%= form.label :situacaoPeso %>
-        <%= form.number_field :situacaoPeso, class: 'form-control btn-pill' %>
+        <%= form.collection_check_boxes :situacaoPeso, IndividualRegistration.situacaoPesos.map{ |a| [a.first,a.first] }, :first, :second do |b| %>
+          <div class="checkbox checkbox-dark">
+            <%= b.label %>
+            <%= b.check_box %>
+          </div>
+        <% end %>
       </div>
     </div>
   </div>
