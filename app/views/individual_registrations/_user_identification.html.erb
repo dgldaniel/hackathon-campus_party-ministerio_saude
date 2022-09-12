@@ -7,7 +7,7 @@
       </div>
     </div>
   </div>
-  <div class="row">
+  <div id='container-codigoIbgeMunicipioNascimento' class="row" style="display:none;">
     <div class="col">
       <div class="mb-3">
         <%= form.label :codigoIbgeMunicipioNascimento %>
@@ -25,9 +25,15 @@
       </div>
     </div>
   </div>
-  <div class="checkbox checkbox-dark">
-    <%= form.check_box :desconheceNomeMae %>
-    <%= form.label :desconheceNomeMae %>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= form.label :dataNascimentoResponsavel %>
+        <div class="input-group">
+          <%= form.text_field :dataNascimentoResponsavel, class: 'btn-pill datepicker-here form-control digits', 'data-language': "en", 'data-bs-original-title': 'data-bs-original-title', title: 'title' %>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="row">
     <div class="col">
@@ -41,7 +47,12 @@
     <div class="col">
       <div class="mb-3">
         <%= form.label :nacionalidadeCidadao %>
-        <%= form.number_field :nacionalidadeCidadao, class: 'form-control btn-pill' %>
+        <%= form.collection_radio_buttons :nacionalidadeCidadao, IndividualRegistration.nacionalidadeCidadaos.map{ |a| [a.first,a.first] }, :first, :second do |b| %>
+          <div class="d-block">
+            <%= b.radio_button %>
+            <%= b.label %>
+          </div>
+        <% end %>
       </div>
     </div>
   </div>
@@ -60,6 +71,10 @@
         <%= form.text_field :nomeMaeCidadao, class: 'form-control btn-pill' %>
       </div>
     </div>
+  </div>
+  <div class="d-block">
+    <%= form.check_box :desconheceNomeMae %>
+    <%= form.label :desconheceNomeMae %>
   </div>
   <div class="row">
     <div class="col">
@@ -93,7 +108,7 @@
       </div>
     </div>
   </div>
-  <div class="row">
+  <div id='container-paisNascimento' class="row" style="display:none;">
     <div class="col">
       <div class="mb-3">
         <%= form.label :paisNascimento %>
@@ -105,7 +120,12 @@
     <div class="col">
       <div class="mb-3">
         <%= form.label :racaCorCidadao %>
-        <%= form.number_field :racaCorCidadao, class: 'form-control btn-pill' %>
+        <%= form.collection_radio_buttons :racaCorCidadao, IndividualRegistration.racaCorCidadaos.map{ |a| [a.first,a.first] }, :first, :second do |b| %>
+          <div class="d-block">
+            <%= b.radio_button %>
+            <%= b.label %>
+          </div>
+        <% end %>
       </div>
     </div>
   </div>
@@ -113,13 +133,26 @@
     <div class="col">
       <div class="mb-3">
         <%= form.label :sexoCidadao %>
-        <%= form.number_field :sexoCidadao, class: 'form-control btn-pill' %>
+        <%= form.collection_radio_buttons :sexoCidadao, IndividualRegistration.sexoCidadaos.map{ |a| [a.first,a.first] }, :first, :second do |b| %>
+          <div class="d-block">
+            <%= b.radio_button %>
+            <%= b.label %>
+          </div>
+        <% end %>
       </div>
     </div>
   </div>
-  <div class="checkbox checkbox-dark">
+  <div class="d-block">
     <%= form.check_box :statusEhResponsavel %>
     <%= form.label :statusEhResponsavel %>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= form.label :numeroCartaoSusResponsavel %>
+        <%= form.text_field :numeroCartaoSusResponsavel, class: 'form-control btn-pill', disabled: true %>
+      </div>
+    </div>
   </div>
   <div class="row">
     <div class="col">
@@ -137,7 +170,7 @@
       </div>
     </div>
   </div>
-  <div class="checkbox checkbox-dark">
+  <div class="d-block">
     <%= form.check_box :desconheceNomePai %>
     <%= form.label :desconheceNomePai %>
   </div>
@@ -177,7 +210,7 @@
       </div>
     </div>
   </div>
-  <div class="checkbox checkbox-dark">
+  <div class="d-block">
     <%= form.check_box :stForaArea %>
     <%= form.label :stForaArea %>
   </div>

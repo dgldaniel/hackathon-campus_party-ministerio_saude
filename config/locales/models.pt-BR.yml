@@ -154,4 +154,5 @@
         dataObito: Data óbito
         numeroDO: Número DO
         statusCadastroIndividualInativo: Tem Cadastro Individual Inativo?
-        statusGeradoAutomaticamente: É gerdo automaticamente?
+        statusGeradoAutomaticamente: É gerado automaticamente?
+        numeroCartaoSusResponsavel: Número do Cartão SUS do Responsável

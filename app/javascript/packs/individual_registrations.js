@@ -175,6 +175,18 @@ function handleDisabledInputTextByInputCheckbox(inputText, inputCheckbox) {
   })
 }
 
+function handleDisabledInputTextByInputCheckboxInverse(inputText, inputCheckbox) {
+  inputCheckbox.addEventListener('change', event => {
+    if (!event.target.checked) {
+      inputText.disabled = false;
+      inputText.attributes["required"] = "";
+    } else {
+      inputText.disabled = true
+      inputText.removeAttribute("required")
+    }
+  })
+}
+
 function handleDisplayOptionsByInputCheckbox(containerDiv, inputCheckbox) {
   inputCheckbox.addEventListener('change', event => {
     if (event.target.checked) {
@@ -184,6 +196,43 @@ function handleDisplayOptionsByInputCheckbox(containerDiv, inputCheckbox) {
     }
   })
 
+}
+
+function showSelectedOnNacionalidade() {
+  const $containerCodigoIbgeMunicipioNascimento = document.getElementById('container-codigoIbgeMunicipioNascimento')
+  const $containerpaisNascimento = document.getElementById('container-paisNascimento')
+
+  if (this.value === 'brasileira') {
+    $containerCodigoIbgeMunicipioNascimento.style.display = 'block';
+    $containerpaisNascimento.style.display = 'none';
+  } else {
+    $containerCodigoIbgeMunicipioNascimento.style.display = 'none';
+    $containerpaisNascimento.style.display = 'block';
+  }
+}
+
+function calculateAge(inputText) {
+  inputText.addEventListener('blur', event => {
+    if (!event.target.value) return;
+
+    birthDate = new Date(event.target.value);
+    otherDate = new Date();
+
+    var years = (otherDate.getFullYear() - birthDate.getFullYear());
+
+    if (otherDate.getMonth() < birthDate.getMonth() ||
+        otherDate.getMonth() == birthDate.getMonth() && otherDate.getDate() < birthDate.getDate()) {
+        years--;
+    }
+
+    if (years < 130) {
+      inputText.classList.add('is-valid')
+      inputText.classList.remove('is-invalid')
+    } else {
+      inputText.classList.add('is-invalid')
+      inputText.classList.remove('is-valid')
+    }
+  })
 }
 
 
@@ -219,5 +268,29 @@ document.addEventListener('DOMContentLoaded', () => {
   handleDisplayOptionsByInputCheckbox($doencaRespiratoriaOptions,  $statusTemDoencaRespiratoriaInput)
   handleDisplayOptionsByInputCheckbox($doencaRinsOptions, $statusTemTeveDoencasRinsInput)
 
+  // Dados Gerais
+  const $nacionalidadeCidadaoInput = document.querySelectorAll('input[name="individual_registration[nacionalidadeCidadao]"]');
+
+  const $nomeMaeCidadao = document.getElementById('individual_registration_nomeMaeCidadao')
+  const $desconheceNomeMae = document.getElementById('individual_registration_desconheceNomeMae')
+  const $nomePaiCidadao = document.getElementById('individual_registration_nomePaiCidadao')
+  const $desconheceNomePai = document.getElementById('individual_registration_desconheceNomePai')
+  const $numeroCartaoSusResponsavel = document.getElementById('individual_registration_numeroCartaoSusResponsavel')
+  const $statusEhResponsavel = document.getElementById('individual_registration_statusEhResponsavel')
+  const $dataNascimentoResponsavel = document.getElementById('individual_registration_dataNascimentoResponsavel')
+  const $dataNascimentoCidadao = document.getElementById('individual_registration_dataNascimentoCidadao')
+
+  for (const $inputButton of $nacionalidadeCidadaoInput) {
+    $inputButton.addEventListener('change', showSelectedOnNacionalidade);
+  }
+
+  handleDisabledInputTextByInputCheckboxInverse($nomeMaeCidadao, $desconheceNomeMae)
+  handleDisabledInputTextByInputCheckboxInverse($nomePaiCidadao, $desconheceNomePai)
+  handleDisabledInputTextByInputCheckbox($numeroCartaoSusResponsavel, $statusEhResponsavel)
+
+  calculateAge($dataNascimentoResponsavel)
+  calculateAge($dataNascimentoCidadao)
 });
+
+
 

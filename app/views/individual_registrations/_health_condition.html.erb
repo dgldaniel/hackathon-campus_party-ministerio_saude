@@ -1,5 +1,5 @@
 <div class="tab">
-  <div class="checkbox checkbox-dark">
+  <div class="d-block">
     <%= form.check_box :statusTeveInternadoEm12Meses %>
     <%= form.label :statusTeveInternadoEm12Meses %>
   </div>
@@ -35,7 +35,7 @@
       </div>
     </div>
   </div>
-  <div class="checkbox checkbox-dark">
+  <div class="d-block">
     <%= form.check_box :statusUsaPlantasMedicinais  %>
     <%= form.label :statusUsaPlantasMedicinais  %>
   </div>
@@ -47,7 +47,7 @@
       </div>
     </div>
   </div>
-  <div class="checkbox checkbox-dark">
+  <div class="d-block">
     <%= form.check_box :statusTeveDoencaCardiaca %>
     <%= form.label :statusTeveDoencaCardiaca %>
   </div>
@@ -56,7 +56,7 @@
       <div class="mb-3">
         <%= form.label :doencaCardiaca %>
         <%= form.collection_check_boxes :doencaCardiaca, IndividualRegistration.doencaCardiacas.map{ |a| [a.first,a.first] }, :first, :second do |b| %>
-          <div class="checkbox checkbox-dark">
+          <div class="d-block">
             <%= b.label %>
             <%= b.check_box %>
           </div>
@@ -64,7 +64,7 @@
       </div>
     </div>
   </div>
-  <div class="checkbox checkbox-dark">
+  <div class="d-block">
     <%= form.check_box :statusTemDoencaRespiratoria %>
     <%= form.label :statusTemDoencaRespiratoria %>
   </div>
@@ -73,7 +73,7 @@
       <div class="mb-3">
         <%= form.label :doencaRespiratoria %>
         <%= form.collection_check_boxes :doencaRespiratoria, IndividualRegistration.doencaRespiratoria.map{ |a| [a.first,a.first] }, :first, :second do |b| %>
-          <div class="checkbox checkbox-dark">
+          <div class="d-block">
             <%= b.label %>
             <%= b.check_box %>
           </div>
@@ -81,7 +81,7 @@
       </div>
     </div>
   </div>
-  <div class="checkbox checkbox-dark">
+  <div class="d-block">
     <%= form.check_box :statusTemTeveDoencasRins %>
     <%= form.label :statusTemTeveDoencasRins %>
   </div>
@@ -90,7 +90,7 @@
       <div class="mb-3">
         <%= form.label :doencaRins %>
         <%= form.collection_check_boxes :doencaRins, IndividualRegistration.doencaRins.map{ |a| [a.first,a.first] }, :first, :second do |b| %>
-          <div class="checkbox checkbox-dark">
+          <div class="d-block">
             <%= b.label %>
             <%= b.check_box %>
           </div>
@@ -98,7 +98,7 @@
       </div>
     </div>
   </div>
-  <div class="checkbox checkbox-dark">
+  <div class="d-block">
     <%= form.check_box :statusEhGestante %>
     <%= form.label :statusEhGestante %>
   </div>
@@ -115,71 +115,71 @@
       <div class="mb-3">
         <%= form.label :situacaoPeso %>
         <%= form.collection_check_boxes :situacaoPeso, IndividualRegistration.situacaoPesos.map{ |a| [a.first,a.first] }, :first, :second do |b| %>
-          <div class="checkbox checkbox-dark">
-            <%= b.label %>
+          <div class="d-block">
             <%= b.check_box %>
+            <%= b.label %>
           </div>
         <% end %>
       </div>
     </div>
   </div>
-  <div class="checkbox checkbox-dark">
+  <div class="d-block">
     <%= form.check_box :statusEhDependenteAlcool %>
     <%= form.label :statusEhDependenteAlcool %>
   </div>
-  <div class="checkbox checkbox-dark">
+  <div class="d-block">
     <%= form.check_box :statusEhDependenteOutrasDrogas %>
     <%= form.label :statusEhDependenteOutrasDrogas %>
   </div>
-  <div class="checkbox checkbox-dark">
+  <div class="d-block">
     <%= form.check_box :statusEhFumante %>
     <%= form.label :statusEhFumante %>
   </div>
-  <div class="checkbox checkbox-dark">
+  <div class="d-block">
     <%= form.check_box :statusEstaAcamado %>
     <%= form.label :statusEstaAcamado %>
   </div>
-  <div class="checkbox checkbox-dark">
+  <div class="d-block">
     <%= form.check_box :statusEstaDomiciliado %>
     <%= form.label :statusEstaDomiciliado %>
   </div>
-  <div class="checkbox checkbox-dark">
+  <div class="d-block">
     <%= form.check_box :statusTemDiabetes %>
     <%= form.label :statusTemDiabetes %>
   </div>
-  <div class="checkbox checkbox-dark">
+  <div class="d-block">
     <%= form.check_box :statusTemHanseniase %>
     <%= form.label :statusTemHanseniase %>
   </div>
-  <div class="checkbox checkbox-dark">
+  <div class="d-block">
     <%= form.check_box :statusTemHipertensaoArterial %>
     <%= form.label :statusTemHipertensaoArterial %>
   </div>
-  <div class="checkbox checkbox-dark">
+  <div class="d-block">
     <%= form.check_box :statusTemTeveCancer %>
     <%= form.label :statusTemTeveCancer %>
   </div>
-  <div class="checkbox checkbox-dark">
+  <div class="d-block">
     <%= form.check_box :statusTemTeveDoencasRins %>
     <%= form.label :statusTemTeveDoencasRins %>
   </div>
-  <div class="checkbox checkbox-dark">
+  <div class="d-block">
     <%= form.check_box :statusTemTuberculose %>
     <%= form.label :statusTemTuberculose %>
   </div>
-  <div class="checkbox checkbox-dark">
+  <div class="d-block">
     <%= form.check_box :statusTeveAvcDerrame %>
     <%= form.label :statusTeveAvcDerrame %>
   </div>
-  <div class="checkbox checkbox-dark">
+  <div class="d-block">
     <%= form.check_box :statusTeveInfarto %>
     <%= form.label :statusTeveInfarto %>
   </div>
-  <div class="checkbox checkbox-dark">
+  <div class="d-block">
     <%= form.check_box :statusUsaOutrasPraticasIntegrativasOuComplementares %>
     <%= form.label :statusUsaOutrasPraticasIntegrativasOuComplementares %>
   </div>
-  <div class="checkbox checkbox-dark">
+  <div class="d-block">
     <%= form.check_box :statusDiagnosticoMental %>
     <%= form.label :statusDiagnosticoMental %>
   </div>
