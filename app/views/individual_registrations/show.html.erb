@@ -1,618 +1,490 @@
 <p id="notice"><%= notice %></p>
-
 <% if @individual_registration.xml_file.attached? %>
   <%= link_to 'Baixar XML', rails_blob_url(@individual_registration.xml_file) %>
 <% end %>
-
 <p>
   <strong>Statustemdoencarespiratoria:</strong>
   <%= @individual_registration.statusTemDoencaRespiratoria %>
 </p>
-
 <p>
   <strong>Statustemtevedoencasrins:</strong>
   <%= @individual_registration.statusTemTeveDoencasRins %>
 </p>
-
 <p>
   <strong>Statustevedoencacardiaca:</strong>
   <%= @individual_registration.statusTeveDoencaCardiaca %>
 </p>
-
 <p>
   <strong>Statusteveinternadoem12meses:</strong>
   <%= @individual_registration.statusTeveInternadoEm12Meses %>
 </p>
-
 <p>
   <strong>statusUsaPlantasMedicinais:</strong>
   <%= @individual_registration.statusUsaPlantasMedicinais %>
 </p>
-
 <p>
   <strong>Grauparentescofamiliarfrequentado:</strong>
   <%= @individual_registration.grauParentescoFamiliarFrequentado %>
 </p>
-
 <p>
   <strong>Higienepessoalsituacaorua:</strong>
   <%= @individual_registration.higienePessoalSituacaoRua %>
 </p>
-
 <p>
   <strong>Origemalimentosituacaorua:</strong>
   <%= @individual_registration.origemAlimentoSituacaoRua %>
 </p>
-
 <p>
   <strong>Outrainstituicaoqueacompanha:</strong>
   <%= @individual_registration.outraInstituicaoQueAcompanha %>
 </p>
-
-<p>
-  <strong>Quantidadealimentacoesaodiasituacaorua:</strong>
-  <%= @individual_registration.quantidadeAlimentacoesAoDiaSituacaoRua %>
-</p>
-
 <p>
   <strong>Statusacompanhadoporoutrainstituicao:</strong>
   <%= @individual_registration.statusAcompanhadoPorOutraInstituicao %>
 </p>
-
 <p>
   <strong>Statustemacessohigienepessoalsituacaorua:</strong>
   <%= @individual_registration.statusTemAcessoHigienePessoalSituacaoRua %>
 </p>
-
 <p>
   <strong>Statusvisitafamiliarfrequentemente:</strong>
   <%= @individual_registration.statusVisitaFamiliarFrequentemente %>
 </p>
-
 <p>
   <strong>Temposituacaorua:</strong>
   <%= @individual_registration.tempoSituacaoRua %>
 </p>
-
 <p>
   <strong>Fichaatualizada:</strong>
   <%= @individual_registration.fichaAtualizada %>
 </p>
-
 <p>
   <strong>Codigoibgemunicipionascimento:</strong>
   <%= @individual_registration.codigoIbgeMunicipioNascimento %>
 </p>
-
 <p>
   <strong>Desconhecenomemae:</strong>
   <%= @individual_registration.desconheceNomeMae %>
 </p>
-
 <p>
   <strong>Statusehresponsavel:</strong>
   <%= @individual_registration.statusEhResponsavel %>
 </p>
-
 <p>
   <strong>Nomepaicidadao:</strong>
   <%= @individual_registration.nomePaiCidadao %>
 </p>
-
 <p>
   <strong>Desconhecenomepai:</strong>
   <%= @individual_registration.desconheceNomePai %>
 </p>
-
 <p>
   <strong>Microarea:</strong>
   <%= @individual_registration.microArea %>
 </p>
-
 <p>
   <strong>Stforaarea:</strong>
   <%= @individual_registration.stForaArea %>
 </p>
-
 <p>
   <strong>Deficienciascidadao:</strong>
   <%= @individual_registration.deficienciasCidadao %>
 </p>
-
 <p>
   <strong>Grauinstrucaocidadao:</strong>
   <%= @individual_registration.grauInstrucaoCidadao %>
 </p>
-
 <p>
   <strong>Ocupacaocodigocbo2002:</strong>
   <%= @individual_registration.ocupacaoCodigoCbo2002 %>
 </p>
-
 <p>
   <strong>Statusfrequentaescola:</strong>
   <%= @individual_registration.statusFrequentaEscola %>
 </p>
-
 <p>
   <strong>Statusmembropovocomunidadetradicional:</strong>
   <%= @individual_registration.statusMembroPovoComunidadeTradicional %>
 </p>
-
 <p>
   <strong>Statusdesejainformaridentidadegenero:</strong>
   <%= @individual_registration.statusDesejaInformarIdentidadeGenero %>
 </p>
-
 <p>
   <strong>Copovocomunidadetradicional:</strong>
   <%= @individual_registration.coPovoComunidadeTradicional %>
 </p>
-
 <p>
   <strong>Statustermorecusacadastroindividualatencaobasica:</strong>
   <%= @individual_registration.statusTermoRecusaCadastroIndividualAtencaoBasica %>
 </p>
-
 <p>
   <strong>Uuid:</strong>
   <%= @individual_registration.uuid %>
 </p>
-
 <p>
   <strong>Uuidfichaoriginadora:</strong>
   <%= @individual_registration.uuidFichaOriginadora %>
 </p>
-
 <p>
   <strong>Profissionalcns:</strong>
   <%= @individual_registration.profissionalCNS %>
 </p>
-
 <p>
   <strong>Cbocodigo 2002:</strong>
   <%= @individual_registration.cboCodigo_2002 %>
 </p>
-
 <p>
   <strong>Cnes:</strong>
   <%= @individual_registration.cnes %>
 </p>
-
 <p>
   <strong>Ine:</strong>
   <%= @individual_registration.ine %>
 </p>
-
 <p>
   <strong>Dataatendimento:</strong>
   <%= @individual_registration.dataAtendimento %>
 </p>
-
 <p>
   <strong>Codigoibgemunicipio:</strong>
   <%= @individual_registration.codigoIbgeMunicipio %>
 </p>
-
 <p>
   <strong>Uuiddadoserializado:</strong>
   <%= @individual_registration.uuidDadoSerializado %>
 </p>
-
 <p>
   <strong>Tipodadoserializado:</strong>
   <%= @individual_registration.tipoDadoSerializado %>
 </p>
-
 <p>
   <strong>Codibge:</strong>
   <%= @individual_registration.codIbge %>
 </p>
-
 <p>
   <strong>Cnesdadoserializado:</strong>
   <%= @individual_registration.cnesDadoSerializado %>
 </p>
-
 <p>
   <strong>Inedadoserializado:</strong>
   <%= @individual_registration.ineDadoSerializado %>
 </p>
-
 <p>
   <strong>Numlote:</strong>
   <%= @individual_registration.numLote %>
 </p>
-
 <p>
   <strong>Fichaatualizada:</strong>
   <%= @individual_registration.fichaAtualizada %>
 </p>
-
 <p>
   <strong>Statustermorecusacadastroindividualatencaobasica:</strong>
   <%= @individual_registration.statusTermoRecusaCadastroIndividualAtencaoBasica %>
 </p>
-
 <p>
   <strong>Tpcdsorigem:</strong>
   <%= @individual_registration.tpCdsOrigem %>
 </p>
-
 <p>
   <strong>Descricaocausainternacaoem12meses:</strong>
   <%= @individual_registration.descricaoCausaInternacaoEm12Meses %>
 </p>
-
 <p>
   <strong>Descricaooutracondicao1:</strong>
   <%= @individual_registration.descricaoOutraCondicao1 %>
 </p>
-
 <p>
   <strong>Descricaooutracondicao2:</strong>
   <%= @individual_registration.descricaoOutraCondicao2 %>
 </p>
-
 <p>
   <strong>Descricaoplantasmedicinaisusadas:</strong>
   <%= @individual_registration.descricaoPlantasMedicinaisUsadas %>
 </p>
-
 <p>
   <strong>Doencacardiaca:</strong>
   <%= @individual_registration.doencaCardiaca %>
 </p>
-
 <p>
   <strong>Doencarespiratoria:</strong>
   <%= @individual_registration.doencaRespiratoria %>
 </p>
-
 <p>
   <strong>Doencarins:</strong>
   <%= @individual_registration.doencaRins %>
 </p>
-
 <p>
   <strong>Maternidadedereferencia:</strong>
   <%= @individual_registration.maternidadeDeReferencia %>
 </p>
-
 <p>
   <strong>Situacaopeso:</strong>
   <%= @individual_registration.situacaoPeso %>
 </p>
-
 <p>
   <strong>Statusehdependentealcool:</strong>
   <%= @individual_registration.statusEhDependenteAlcool %>
 </p>
-
 <p>
   <strong>Statusehdependenteoutrasdrogas:</strong>
   <%= @individual_registration.statusEhDependenteOutrasDrogas %>
 </p>
-
 <p>
   <strong>Statusehfumante:</strong>
   <%= @individual_registration.statusEhFumante %>
 </p>
-
 <p>
   <strong>Statusehgestante:</strong>
   <%= @individual_registration.statusEhGestante %>
 </p>
-
 <p>
   <strong>Statusestaacamado:</strong>
   <%= @individual_registration.statusEstaAcamado %>
 </p>
-
 <p>
   <strong>Statusestadomiciliado:</strong>
   <%= @individual_registration.statusEstaDomiciliado %>
 </p>
-
 <p>
   <strong>Statustemdiabetes:</strong>
   <%= @individual_registration.statusTemDiabetes %>
 </p>
-
 <p>
   <strong>Statustemdoencarespiratoria:</strong>
   <%= @individual_registration.statusTemDoencaRespiratoria %>
 </p>
-
 <p>
   <strong>Statustemhanseniase:</strong>
   <%= @individual_registration.statusTemHanseniase %>
 </p>
-
 <p>
   <strong>Statustemhipertensaoarterial:</strong>
   <%= @individual_registration.statusTemHipertensaoArterial %>
 </p>
-
 <p>
   <strong>Statustemtevecancer:</strong>
   <%= @individual_registration.statusTemTeveCancer %>
 </p>
-
 <p>
   <strong>Statustemtevedoencasrins:</strong>
   <%= @individual_registration.statusTemTeveDoencasRins %>
 </p>
-
 <p>
   <strong>Statustemtuberculose:</strong>
   <%= @individual_registration.statusTemTuberculose %>
 </p>
-
 <p>
   <strong>Statusteveavcderrame:</strong>
   <%= @individual_registration.statusTeveAvcDerrame %>
 </p>
-
 <p>
   <strong>Statustevedoencacardiaca:</strong>
   <%= @individual_registration.statusTeveDoencaCardiaca %>
 </p>
-
 <p>
   <strong>Statusteveinfarto:</strong>
   <%= @individual_registration.statusTeveInfarto %>
 </p>
-
 <p>
   <strong>Statusteveinternadoem12meses:</strong>
   <%= @individual_registration.statusTeveInternadoEm12Meses %>
 </p>
-
 <p>
   <strong>statusUsaPlantasMedicinais:</strong>
   <%= @individual_registration.statusUsaPlantasMedicinais %>
 </p>
-
 <p>
   <strong>Statusdiagnosticomental:</strong>
   <%= @individual_registration.statusDiagnosticoMental %>
 </p>
-
 <p>
   <strong>Grauparentescofamiliarfrequentado:</strong>
   <%= @individual_registration.grauParentescoFamiliarFrequentado %>
 </p>
-
 <p>
   <strong>Higienepessoalsituacaorua:</strong>
   <%= @individual_registration.higienePessoalSituacaoRua %>
 </p>
-
 <p>
   <strong>Higienepessoalsituacaorua:</strong>
   <%= @individual_registration.higienePessoalSituacaoRua %>
 </p>
-
 <p>
   <strong>Origemalimentosituacaorua:</strong>
   <%= @individual_registration.origemAlimentoSituacaoRua %>
 </p>
-
 <p>
   <strong>Origemalimentosituacaorua:</strong>
   <%= @individual_registration.origemAlimentoSituacaoRua %>
 </p>
-
 <p>
   <strong>Outrainstituicaoqueacompanha:</strong>
   <%= @individual_registration.outraInstituicaoQueAcompanha %>
 </p>
-
 <p>
   <strong>Quantidadealimentacoesaodiasituacaorua:</strong>
   <%= @individual_registration.quantidadeAlimentacoesAoDiaSituacaoRua %>
 </p>
-
 <p>
   <strong>Statusacompanhadoporoutrainstituicao:</strong>
   <%= @individual_registration.statusAcompanhadoPorOutraInstituicao %>
 </p>
-
 <p>
   <strong>Statuspossuireferenciafamiliar:</strong>
   <%= @individual_registration.statusPossuiReferenciaFamiliar %>
 </p>
-
 <p>
   <strong>Statusrecebebeneficio:</strong>
   <%= @individual_registration.statusRecebeBeneficio %>
 </p>
-
 <p>
   <strong>Statussituacaorua:</strong>
   <%= @individual_registration.statusSituacaoRua %>
 </p>
-
 <p>
   <strong>Statustemacessohigienepessoalsituacaorua:</strong>
   <%= @individual_registration.statusTemAcessoHigienePessoalSituacaoRua %>
 </p>
-
 <p>
   <strong>Statusvisitafamiliarfrequentemente:</strong>
   <%= @individual_registration.statusVisitaFamiliarFrequentemente %>
 </p>
-
 <p>
   <strong>Temposituacaorua:</strong>
   <%= @individual_registration.tempoSituacaoRua %>
 </p>
-
 <p>
   <strong>Codigoibgemunicipionascimento:</strong>
   <%= @individual_registration.codigoIbgeMunicipioNascimento %>
 </p>
-
 <p>
   <strong>Datanascimentocidadao:</strong>
   <%= @individual_registration.dataNascimentoCidadao %>
 </p>
-
 <p>
   <strong>Desconhecenomemae:</strong>
   <%= @individual_registration.desconheceNomeMae %>
 </p>
-
 <p>
   <strong>Emailcidadao:</strong>
   <%= @individual_registration.emailCidadao %>
 </p>
-
 <p>
   <strong>Nacionalidadecidadao:</strong>
   <%= @individual_registration.nacionalidadeCidadao %>
 </p>
-
 <p>
   <strong>Nomecidadao:</strong>
   <%= @individual_registration.nomeCidadao %>
 </p>
-
 <p>
   <strong>Nomemaecidadao:</strong>
   <%= @individual_registration.nomeMaeCidadao %>
 </p>
-
 <p>
   <strong>Cpfcidadao:</strong>
   <%= @individual_registration.cpfCidadao %>
 </p>
-
 <p>
   <strong>Telefonecelular:</strong>
   <%= @individual_registration.telefoneCelular %>
 </p>
-
 <p>
   <strong>Paisnascimento:</strong>
   <%= @individual_registration.paisNascimento %>
 </p>
-
 <p>
   <strong>Racacorcidadao:</strong>
   <%= @individual_registration.racaCorCidadao %>
 </p>
-
 <p>
   <strong>Sexocidadao:</strong>
   <%= @individual_registration.sexoCidadao %>
 </p>
-
 <p>
   <strong>Statusehresponsavel:</strong>
   <%= @individual_registration.statusEhResponsavel %>
 </p>
-
 <p>
   <strong>Etnia:</strong>
   <%= @individual_registration.etnia %>
 </p>
-
 <p>
   <strong>Nomepaicidadao:</strong>
   <%= @individual_registration.nomePaiCidadao %>
 </p>
-
 <p>
   <strong>Desconhecenomepai:</strong>
   <%= @individual_registration.desconheceNomePai %>
 </p>
-
 <p>
   <strong>Microarea:</strong>
   <%= @individual_registration.microArea %>
 </p>
-
 <p>
   <strong>Stforaarea:</strong>
   <%= @individual_registration.stForaArea %>
 </p>
-
 <p>
   <strong>Deficienciascidadao:</strong>
   <%= @individual_registration.deficienciasCidadao %>
 </p>
-
 <p>
   <strong>Deficienciascidadao:</strong>
   <%= @individual_registration.deficienciasCidadao %>
 </p>
-
 <p>
   <strong>Ocupacaocodigocbo2002:</strong>
   <%= @individual_registration.ocupacaoCodigoCbo2002 %>
 </p>
-
 <p>
   <strong>Orientacaosexualcidadao:</strong>
   <%= @individual_registration.orientacaoSexualCidadao %>
 </p>
-
 <p>
   <strong>Situacaomercadotrabalhocidadao:</strong>
   <%= @individual_registration.situacaoMercadoTrabalhoCidadao %>
 </p>
-
 <p>
   <strong>Statusdesejainformarorientacaosexual:</strong>
   <%= @individual_registration.statusDesejaInformarOrientacaoSexual %>
 </p>
-
 <p>
   <strong>Statusfrequentabenzedeira:</strong>
   <%= @individual_registration.statusFrequentaBenzedeira %>
 </p>
-
 <p>
   <strong>Statusfrequentaescola:</strong>
   <%= @individual_registration.statusFrequentaEscola %>
 </p>
-
 <p>
   <strong>Statusmembropovocomunidadetradicional:</strong>
   <%= @individual_registration.statusMembroPovoComunidadeTradicional %>
 </p>
-
 <p>
   <strong>Statusparticipagrupocomunitario:</strong>
   <%= @individual_registration.statusParticipaGrupoComunitario %>
 </p>
-
 <p>
   <strong>Statuspossuiplanosaudeprivado:</strong>
   <%= @individual_registration.statusPossuiPlanoSaudePrivado %>
 </p>
-
 <p>
   <strong>Statustemalgumadeficiencia:</strong>
   <%= @individual_registration.statusTemAlgumaDeficiencia %>
 </p>
-
 <p>
   <strong>Identidadegenerocidadao:</strong>
   <%= @individual_registration.identidadeGeneroCidadao %>
 </p>
-
 <p>
   <strong>Statusdesejainformaridentidadegenero:</strong>
   <%= @individual_registration.statusDesejaInformarIdentidadeGenero %>
 </p>
-
 <p>
   <strong>Copovocomunidadetradicional:</strong>
   <%= @individual_registration.coPovoComunidadeTradicional %>
 </p>
-
 <%= link_to 'Edit', edit_individual_registration_path(@individual_registration) %> |
 <%= link_to 'Back', individual_registrations_path %>

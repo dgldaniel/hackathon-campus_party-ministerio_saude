@@ -293,6 +293,7 @@ GEM
     sys-uname (1.2.2)
       ffi (~> 1.1)
     thor (1.2.1)
+    thrift (0.16.0)
     tilt (2.0.10)
     twilio-ruby (5.67.3)
       faraday (>= 0.9, < 3.0)
@@ -359,6 +360,7 @@ DEPENDENCIES
   selenium-webdriver (>= 4.0.0.rc1)
   sidekiq
   spring
+  thrift
   twilio-ruby (~> 5.67.3)
   tzinfo-data
   web-console (>= 4.1.0)

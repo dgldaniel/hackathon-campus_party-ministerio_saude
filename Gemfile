@@ -39,6 +39,8 @@ gem "cocoon"
 # Official Rubyzip repository
 gem 'rubyzip'
 
+gem 'thrift'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 

@@ -1,0 +1,9 @@
+<h1>Migre seus arquivos .esus</h1>
+<p>
+  Faça o Upload do .zip que contem os arquivos .esus para fazer migração para nossa plataforma
+</p>
+<%= form_tag handle_upload_esus_files_path, method: :post, multipart: true do %>
+  <%= label_tag 'archive', 'Selecione o arquivo .zip' %>
+  <%= file_field_tag 'archive' %>
+  <%= submit_tag 'Migrar' %>
+<% end %>

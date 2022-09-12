@@ -34,16 +34,16 @@ class IndividualRegistration < ApplicationRecord
                               }
   enum orientacaoSexualCidadao: { heterossexual: 148, homossexual: 153, bissexual: 154, outro5: 155 }
   enum relacaoParentescoCidadao: {
-                                  conjugeCompanheiro: 51,
-                                  filho: 52,
-                                  enteado: 53,
-                                  neto: 54,
-                                  paiMae: 55,
-                                  sogro: 56,
-                                  irmaoIrma: 61,
-                                  genroNora: 58,
-                                  outroParente: 59,
-                                  naoParente: 60,
+                                  conjugeCompanheiro: 137,
+                                  filho: 138,
+                                  enteado: 139,
+                                  neto: 140,
+                                  paiMae: 141,
+                                  sogro: 142,
+                                  irmaoIrma: 143,
+                                  genroNora: 144,
+                                  outroParente: 145,
+                                  naoParente: 146,
                                 }
   enum situacaoMercadoTrabalhoCidadao: {
                                         empregador: 66,
@@ -58,8 +58,11 @@ class IndividualRegistration < ApplicationRecord
                                         outro6: 74,
                                       }
   enum identidadeGeneroCidadao: { homemTranssexual: 149, mulherTranssexual: 150, travesti: 156, outro3: 151 }
-  enum responsavelPorCrianca: { adulto: 1, outrasCriancas: 2, adolescente: 133, sozinha: 3, creche2: 134, outro4: 4 }
+  # enum responsavelPorCrianca: { adulto: 1, outrasCriancas: 2, adolescente: 133, sozinha: 3, creche2: 134, outro4: 4 }
   enum motivoSaidaCidadao: { obito: 135, mudancaTerritorio: 136 }
+
+  # validates :cpfCidadao, uniqueness: true
+  # validates :cnsCidadao, uniqueness: true
 
   before_create :generate_xml
   before_update :generate_xml
