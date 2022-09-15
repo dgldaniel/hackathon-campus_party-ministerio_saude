@@ -11,7 +11,12 @@
     <div class="col">
       <div class="mb-3">
         <%= form.label :higienePessoalSituacaoRua %>
-        <%= form.number_field :higienePessoalSituacaoRua, class: 'form-control btn-pill' %>
+        <%= form.collection_check_boxes :higienePessoalSituacaoRua, @options[:acesso_higiene], :second, :first do |b| %>
+          <div class="d-block">
+            <%= b.label %>
+            <%= b.check_box %>
+          </div>
+        <% end %>
       </div>
     </div>
   </div>
@@ -19,7 +24,12 @@
     <div class="col">
       <div class="mb-3">
         <%= form.label :origemAlimentoSituacaoRua %>
-        <%= form.number_field :origemAlimentoSituacaoRua, class: 'form-control btn-pill' %>
+        <%= form.collection_check_boxes :origemAlimentoSituacaoRua, @options[:origem_alimento], :second, :first do |b| %>
+          <div class="d-block">
+            <%= b.label %>
+            <%= b.check_box %>
+          </div>
+        <% end %>
       </div>
     </div>
   </div>
@@ -35,7 +45,12 @@
     <div class="col">
       <div class="mb-3">
         <%= form.label :quantidadeAlimentacoesAoDiaSituacaoRua %>
-        <%= form.number_field :quantidadeAlimentacoesAoDiaSituacaoRua, class: 'form-control btn-pill' %>
+        <%= form.collection_radio_buttons :quantidadeAlimentacoesAoDiaSituacaoRua, @options[:quantas_vezes_alimentacao], :second, :first do |b| %>
+          <div class="d-block">
+            <%= b.radio_button %>
+            <%= b.label %>
+          </div>
+        <% end %>
       </div>
     </div>
   </div>
@@ -63,7 +78,12 @@
     <div class="col">
       <div class="mb-3">
         <%= form.label :tempoSituacaoRua %>
-        <%= form.number_field :tempoSituacaoRua, class: 'form-control btn-pill' %>
+        <%= form.collection_radio_buttons :tempoSituacaoRua, @options[:tempo_situacao_rua], :second, :first do |b| %>
+          <div class="d-block">
+            <%= b.radio_button %>
+            <%= b.label %>
+          </div>
+        <% end %>
       </div>
     </div>
   </div>

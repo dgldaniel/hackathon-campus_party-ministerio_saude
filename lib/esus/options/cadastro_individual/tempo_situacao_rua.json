@@ -1,0 +1,22 @@
+[
+ {
+   "Código": 17,
+   "Descrição": "Menos de 6 meses",
+   "Observações": "-"
+ },
+ {
+   "Código": 18,
+   "Descrição": "6 a 12 meses",
+   "Observações": "-"
+ },
+ {
+   "Código": 19,
+   "Descrição": "1 a 5 anos",
+   "Observações": "-"
+ },
+ {
+   "Código": 20,
+   "Descrição": "Mais de 5 anos",
+   "Observações": "-"
+ }
+]

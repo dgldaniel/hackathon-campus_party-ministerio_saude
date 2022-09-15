@@ -1,0 +1,22 @@
+[
+ {
+   "Código": 30,
+   "Descrição": "Asma",
+   "Observações": "-"
+ },
+ {
+   "Código": 31,
+   "Descrição": "DPOC / Enfisema",
+   "Observações": "-"
+ },
+ {
+   "Código": 32,
+   "Descrição": "Outro",
+   "Observações": "-"
+ },
+ {
+   "Código": 33,
+   "Descrição": "Não sabe",
+   "Observações": "-"
+ }
+]

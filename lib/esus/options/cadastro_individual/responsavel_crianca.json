@@ -1,0 +1,32 @@
+[
+ {
+   "Código": 1,
+   "Descrição": "Adulto responsável",
+   "Observações": "-"
+ },
+ {
+   "Código": 2,
+   "Descrição": "Outra(s) criança(s)",
+   "Observações": "-"
+ },
+ {
+   "Código": 133,
+   "Descrição": "Adolescente",
+   "Observações": "-"
+ },
+ {
+   "Código": 3,
+   "Descrição": "Sozinha",
+   "Observações": "-"
+ },
+ {
+   "Código": 134,
+   "Descrição": "Creche",
+   "Observações": "-"
+ },
+ {
+   "Código": 4,
+   "Descrição": "Outro",
+   "Observações": "-"
+ }
+]

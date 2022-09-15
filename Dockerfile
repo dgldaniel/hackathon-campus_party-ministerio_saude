@@ -12,7 +12,7 @@ RUN apt-get install -y nodejs
 # Install Yarn.
 RUN npm install -g yarn
 
-RUN gem install bundler -v 1.17.2
+RUN gem install bundler -v 2.1.4
 
 WORKDIR /app
 

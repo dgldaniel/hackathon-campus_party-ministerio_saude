@@ -1,25 +1,31 @@
 <div class="tab">
-  <div class="row">
-    <div class="col">
-      <div class="mb-3">
-        <%= form.label :deficienciasCidadao %>
-        <%= form.number_field :deficienciasCidadao, class: 'form-control btn-pill' %>
-      </div>
+  <div class="col">
+    <div class="mb-3">
+      <%= form.label :deficienciasCidadao %>
+      <%= form.collection_check_boxes :deficienciasCidadao, @options[:deficiencia_cidadao], :second, :first do |b| %>
+        <div class="d-block">
+          <%= b.label %>
+          <%= b.check_box %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+  <div class="col">
+    <div class="mb-3">
+      <%= form.label :grauInstrucaoCidadao %>
+      <%= form.collection_radio_buttons :grauInstrucaoCidadao, @options[:curso_mais_elevado], :second, :first do |b| %>
+        <div class="d-block">
+          <%= b.radio_button %>
+          <%= b.label %>
+        </div>
+      <% end %>
     </div>
   </div>
   <div class="row">
     <div class="col">
       <div class="mb-3">
-        <%= form.label :grauInstrucaoCidadao %>
-        <%= form.number_field :grauInstrucaoCidadao, class: 'form-control btn-pill' %>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      <div class="mb-3">
-        <%= form.label :ocupacaoCodigoCbo2002 %>
-        <%= form.text_field :ocupacaoCodigoCbo2002, class: 'form-control btn-pill' %>
+        <%= form.label :codigoIbgeMunicipioNascimento %>
+        <%= form.select :codigoIbgeMunicipioNascimento, @options[:cbo] %>
       </div>
     </div>
   </div>
@@ -27,7 +33,12 @@
     <div class="col">
       <div class="mb-3">
         <%= form.label :orientacaoSexualCidadao %>
-        <%= form.number_field :orientacaoSexualCidadao, class: 'form-control btn-pill' %>
+        <%= form.collection_radio_buttons :orientacaoSexualCidadao, @options[:orientacao_sexual], :second, :first do |b| %>
+          <div class="d-block">
+            <%= b.radio_button %>
+            <%= b.label %>
+          </div>
+        <% end %>
       </div>
     </div>
   </div>
@@ -35,7 +46,12 @@
     <div class="col">
       <div class="mb-3">
         <%= form.label :relacaoParentescoCidadao %>
-        <%= form.number_field :relacaoParentescoCidadao, class: 'form-control btn-pill' %>
+        <%= form.collection_radio_buttons :relacaoParentescoCidadao, @options[:relacao_parentesco], :second, :first do |b| %>
+          <div class="d-block">
+            <%= b.radio_button %>
+            <%= b.label %>
+          </div>
+        <% end %>
       </div>
     </div>
   </div>
@@ -43,7 +59,12 @@
     <div class="col">
       <div class="mb-3">
         <%= form.label :situacaoMercadoTrabalhoCidadao %>
-        <%= form.number_field :situacaoMercadoTrabalhoCidadao, class: 'form-control btn-pill' %>
+        <%= form.collection_radio_buttons :situacaoMercadoTrabalhoCidadao, @options[:situacao_mercado_trabalho], :second, :first do |b| %>
+          <div class="d-block">
+            <%= b.radio_button %>
+            <%= b.label %>
+          </div>
+        <% end %>
       </div>
     </div>
   </div>
@@ -78,22 +99,19 @@
   <div class="row">
     <div class="col">
       <div class="mb-3">
-        <%= form.label :identidadeGeneroCidadao %>
-        <%= form.number_field :identidadeGeneroCidadao, class: 'form-control btn-pill' %>
+        <%= form.label :responsavelPorCrianca %>
+        <%= form.collection_radio_buttons :responsavelPorCrianca, @options[:responsavel_crianca], :second, :first do |b| %>
+          <div class="d-block">
+            <%= b.radio_button %>
+            <%= b.label %>
+          </div>
+        <% end %>
       </div>
     </div>
   </div>
   <div class="checkbox checkbox-dark">
-    <%= form.check_box :statusDesejaInformarIdentidadeGenero %>
-    <%= form.label :statusDesejaInformarIdentidadeGenero %>
-  </div>
-  <div class="row">
-    <div class="col">
-      <div class="mb-3">
-        <%= form.label :responsavelPorCrianca %>
-        <%= form.number_field :responsavelPorCrianca, class: 'form-control btn-pill' %>
-      </div>
-    </div>
+    <%= form.check_box :statusMembroPovoComunidadeTradicional %>
+    <%= form.label :statusMembroPovoComunidadeTradicional %>
   </div>
   <div class="row">
     <div class="col">

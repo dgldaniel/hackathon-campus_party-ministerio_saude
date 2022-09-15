@@ -1,10 +1,13 @@
 <div class="tab">
   <div class="row">
     <div class="col">
-      <div class="mb-3">
-        <%= form.label :motivoSaidaCidadao %>
-        <%= form.number_field :motivoSaidaCidadao, class: 'form-control btn-pill' %>
-      </div>
+      <%= form.label :motivoSaidaCidadao %>
+      <%= form.collection_radio_buttons :motivoSaidaCidadao, @options[:motivo_saida], :second, :first do |b| %>
+        <div class="d-block">
+          <%= b.radio_button %>
+          <%= b.label %>
+        </div>
+      <% end %>
     </div>
   </div>
   <div class="row">

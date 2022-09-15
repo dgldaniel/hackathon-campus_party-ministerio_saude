@@ -3,64 +3,6 @@
 class IndividualRegistration < ApplicationRecord
   has_one_attached :xml_file
 
-  enum doencaCardiaca: { insuficienciaCardiaca: 24, outro: 25, naoSabe: 26 }
-  enum doencaRespiratoria: { asma: 30, dpoc: 31, outro1: 32, naoSabe1: 33 }
-  enum doencaRins: { insuficienciaRenal: 27, outro2: 28, naoSabe2: 29 }
-  enum situacaoPeso: { abaixo: 21, adequado: 22, acima: 23 }
-  enum higienePessoalSituacaoRua: { banho: 42, sanitario: 43, higieneBucal: 44, outros: 45 }
-  enum origemAlimentoSituacaoRua: { restaurantePopular: 37, grupoReligioso: 38, doacaoRestaurante: 39, doacaoPopular: 40, outros1: 41 }
-  enum quantidadeAlimentacoesAoDiaSituacaoRua: { umaVez: 34, doisOuTresVezes: 35, maisTresVezes: 36 }
-  enum tempoSituacaoRua: { menosSeisMeses: 17, seisADozeMeses: 18, umACincoMeses: 19, maisCincoAnos: 20 }
-  enum nacionalidadeCidadao: { brasileira: 1, naturalizado: 2, estrangeiro: 3 }
-  enum racaCorCidadao: { branca: 1, preta: 2, parda: 4, amarela: 3, indigena: 5, semInfo: 6 }
-  enum sexoCidadao: { masculino: 0, feminino: 1, ignorado: 4 }
-  enum deficienciasCidadao: { auditiva: 12, visual: 13, intelectual: 14, fisica: 15, outra: 16 }
-  enum grauInstrucaoCidadao: {
-                               creche: 51,
-                               preEscola: 52,
-                               alfabetizacao: 53,
-                               fundamental1: 54,
-                               fundamental2: 55,
-                               fundamentalCompleto: 56,
-                               fundamentalEspecial: 61,
-                               fundamentalEJAInicial: 58,
-                               fundamentalEJAFinal: 59,
-                               ensinoMedio: 60,
-                               ensinoMedioEspecial: 57,
-                               ensinoMedioEJA: 62,
-                               superior: 63,
-                               alfabetizacaoAdulta: 64,
-                               nenhum: 65,
-                              }
-  enum orientacaoSexualCidadao: { heterossexual: 148, homossexual: 153, bissexual: 154, outro5: 155 }
-  enum relacaoParentescoCidadao: {
-                                  conjugeCompanheiro: 137,
-                                  filho: 138,
-                                  enteado: 139,
-                                  neto: 140,
-                                  paiMae: 141,
-                                  sogro: 142,
-                                  irmaoIrma: 143,
-                                  genroNora: 144,
-                                  outroParente: 145,
-                                  naoParente: 146,
-                                }
-  enum situacaoMercadoTrabalhoCidadao: {
-                                        empregador: 66,
-                                        assalariadoComCarteiraTrabalho: 67,
-                                        assalariadoSemCarteiraTrabalho: 68,
-                                        autonomoComPrevidenciaSocial: 69,
-                                        autonomoSemPrevidenciaSocial: 70,
-                                        aposentadoPensionista: 71,
-                                        desempregado: 72,
-                                        naoTrabalha: 73,
-                                        servidorPublicoMilitar: 147,
-                                        outro6: 74,
-                                      }
-  enum identidadeGeneroCidadao: { homemTranssexual: 149, mulherTranssexual: 150, travesti: 156, outro3: 151 }
-  # enum responsavelPorCrianca: { adulto: 1, outrasCriancas: 2, adolescente: 133, sozinha: 3, creche2: 134, outro4: 4 }
-  enum motivoSaidaCidadao: { obito: 135, mudancaTerritorio: 136 }
-
   # validates :cpfCidadao, uniqueness: true
   # validates :cnsCidadao, uniqueness: true
 
@@ -69,9 +11,7 @@ class IndividualRegistration < ApplicationRecord
 
   scope :generate_xml_from, -> (start_date, end_date) { where("created_at >= ? AND created_at <= ?", start_date, end_date)}
 
-  private
-
-  def generate_xml
+  def self.generate_xml
     generate_xml = ActionController::Base.new.render_to_string(
       'individual_registrations/show.xml.erb',
       :locals => { :@individual_registration => self }
@@ -81,4 +21,33 @@ class IndividualRegistration < ApplicationRecord
                            filename: "#{id}.xml"
     )
   end
+
+  def self.build_options
+    {
+      municipios: JSON.parse(Rails.cache.read('@CI_Municipio')),
+      nacionalidade: JSON.parse(Rails.cache.read('@CI_Nacionalidade')),
+      pais: JSON.parse(Rails.cache.read('@CI_Pais')),
+      raca_cor: JSON.parse(Rails.cache.read('@CI_Raca_Cor')),
+      sexo: JSON.parse(Rails.cache.read('@CI_Sexo')),
+      doenca_cardiaca: JSON.parse(Rails.cache.read('@CI_Doenca_Cardiaca')),
+      doenca_respiratoria: JSON.parse(Rails.cache.read('@CI_Doenca_Respiratoria')),
+      problema_rins: JSON.parse(Rails.cache.read('@CI_Problema_Rins')),
+      situacao_peso: JSON.parse(Rails.cache.read('@CI_Situacao_Peso')),
+      acesso_higiene: JSON.parse(Rails.cache.read('@CI_Acesso_Higiene')),
+      origem_alimento: JSON.parse(Rails.cache.read('@CI_Origem_Alimento')),
+      quantas_vezes_alimentacao: JSON.parse(Rails.cache.read('@CI_Quantas_Vezes_Alimentacao')),
+      tempo_situacao_rua: JSON.parse(Rails.cache.read('@CI_Tempo_Situacao_Rua')),
+      deficiencia_cidadao: JSON.parse(Rails.cache.read('@CI_Deficiencia_Cidadao')),
+      curso_mais_elevado: JSON.parse(Rails.cache.read('@CI_Curso_Mais_Elevado')),
+      motivo_saida: JSON.parse(Rails.cache.read('@CI_Motivo_Saida')),
+      cbo: JSON.parse(Rails.cache.read('@CI_CBO')),
+      orientacao_sexual: JSON.parse(Rails.cache.read('@CI_Orientacao_Sexual')),
+      relacao_parentesco: JSON.parse(Rails.cache.read('@CI_Relacao_Parentesco')),
+      responsavel_crianca: JSON.parse(Rails.cache.read('@CI_Responsavel_Crianca')),
+      situacao_mercado_trabalho: JSON.parse(Rails.cache.read('@CI_Situacao_Mercado')),
+    }
+  end
+
+  # private_class_method :build_options
+  # private_class_method :generate_xml
 end

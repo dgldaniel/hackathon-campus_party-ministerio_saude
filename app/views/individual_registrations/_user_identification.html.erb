@@ -11,7 +11,7 @@
     <div class="col">
       <div class="mb-3">
         <%= form.label :codigoIbgeMunicipioNascimento %>
-        <%= form.text_field :codigoIbgeMunicipioNascimento, class: 'form-control btn-pill', size: 7 %>
+        <%= form.select :codigoIbgeMunicipioNascimento, @options[:municipios] %>
       </div>
     </div>
   </div>
@@ -47,7 +47,7 @@
     <div class="col">
       <div class="mb-3">
         <%= form.label :nacionalidadeCidadao %>
-        <%= form.collection_radio_buttons :nacionalidadeCidadao, IndividualRegistration.nacionalidadeCidadaos.map{ |a| [a.first,a.first] }, :first, :second do |b| %>
+        <%= form.collection_radio_buttons :nacionalidadeCidadao, @options[:nacionalidade], :second, :first do |b| %>
           <div class="d-block">
             <%= b.radio_button %>
             <%= b.label %>
@@ -120,7 +120,7 @@
     <div class="col">
       <div class="mb-3">
         <%= form.label :racaCorCidadao %>
-        <%= form.collection_radio_buttons :racaCorCidadao, IndividualRegistration.racaCorCidadaos.map{ |a| [a.first,a.first] }, :first, :second do |b| %>
+        <%= form.collection_radio_buttons :racaCorCidadao, @options[:raca_cor], :second, :first do |b| %>
           <div class="d-block">
             <%= b.radio_button %>
             <%= b.label %>
@@ -133,7 +133,7 @@
     <div class="col">
       <div class="mb-3">
         <%= form.label :sexoCidadao %>
-        <%= form.collection_radio_buttons :sexoCidadao, IndividualRegistration.sexoCidadaos.map{ |a| [a.first,a.first] }, :first, :second do |b| %>
+        <%= form.collection_radio_buttons :sexoCidadao, @options[:sexo], :second, :first do |b| %>
           <div class="d-block">
             <%= b.radio_button %>
             <%= b.label %>

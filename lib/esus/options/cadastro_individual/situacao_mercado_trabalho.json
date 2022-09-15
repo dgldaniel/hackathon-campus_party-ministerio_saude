@@ -1,0 +1,47 @@
+[
+ {
+   "Código": 66,
+   "Descrição": "Empregador",
+   "Observações": "-"
+ },
+ {
+   "Código": 67,
+   "Descrição": "Assalariado com carteira de trabalho",
+   "Observações": "-"
+ },
+ {
+   "Código": 68,
+   "Descrição": "Assalariado sem carteira de trabalho",
+   "Observações": "-"
+ },
+ {
+   "Código": 69,
+   "Descrição": "Autônomo com previdência social",
+   "Observações": "-"
+ },
+ {
+   "Código": 70,
+   "Descrição": "Autônomo sem previdência social",
+   "Observações": "-"
+ },
+ {
+   "Código": 71,
+   "Descrição": "Aposentado / Pensionista",
+   "Observações": "-"
+ },
+ {
+   "Código": 72,
+   "Descrição": "Desempregado",
+   "Observações": "-"
+ },
+ {
+   "Código": 73,
+   "Descrição": "Não trabalha",
+   "Observações": "-"
+ },
+ {
+   "Código": 74,
+   "Descrição": "Outro",
+   "Observações": "-"
+ }
+]

@@ -25,6 +25,7 @@ gem 'devise'
 gem 'rails-i18n', '~> 6.0.0'
 gem 'sidekiq'
 gem 'redis'
+gem 'hiredis'
 gem 'kaminari'
 gem 'ransack'
 

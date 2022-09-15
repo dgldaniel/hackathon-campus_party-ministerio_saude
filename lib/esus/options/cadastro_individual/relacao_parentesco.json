@@ -1,0 +1,52 @@
+[
+ {
+   "Código": 137,
+   "Descrição": "Cônjuge / Companheiro(a)",
+   "Observações": "-"
+ },
+ {
+   "Código": 138,
+   "Descrição": "Filho(a)",
+   "Observações": "-"
+ },
+ {
+   "Código": 139,
+   "Descrição": "Enteado(a)",
+   "Observações": "-"
+ },
+ {
+   "Código": 140,
+   "Descrição": "Neto(a) / Bisneto(a)",
+   "Observações": "-"
+ },
+ {
+   "Código": 141,
+   "Descrição": "Pai / Mãe",
+   "Observações": "-"
+ },
+ {
+   "Código": 142,
+   "Descrição": "Sogro(a)",
+   "Observações": "-"
+ },
+ {
+   "Código": 143,
+   "Descrição": "Irmão / Irmã",
+   "Observações": "-"
+ },
+ {
+   "Código": 144,
+   "Descrição": "Genro / Nora",
+   "Observações": "-"
+ },
+ {
+   "Código": 145,
+   "Descrição": "Outro parente",
+   "Observações": "-"
+ },
+ {
+   "Código": 146,
+   "Descrição": "Não parente",
+   "Observações": "-"
+ }
+]

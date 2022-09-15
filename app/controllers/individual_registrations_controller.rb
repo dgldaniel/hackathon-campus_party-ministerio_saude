@@ -1,5 +1,6 @@
+# frozen_string_literal: true
 class IndividualRegistrationsController < ApplicationController
-  before_action :set_individual_registration, only: %i[ show edit update destroy ]
+  before_action :set_individual_registration, only: %i[show edit update destroy]
   before_action :authenticate_user!
 
   # GET /individual_registrations or /individual_registrations.json
@@ -14,6 +15,10 @@ class IndividualRegistrationsController < ApplicationController
   # GET /individual_registrations/new
   def new
     @individual_registration = IndividualRegistration.new
+
+    @options = IndividualRegistration.build_options
+
+    puts @options[:nacionalidade].inspect
   end
 
   # GET /individual_registrations/1/edit
@@ -26,11 +31,11 @@ class IndividualRegistrationsController < ApplicationController
 
     respond_to do |format|
       if @individual_registration.save
-        format.html { redirect_to individual_registration_url(@individual_registration), notice: "Individual registration was successfully created." }
-        format.json { render :show, status: :created, location: @individual_registration }
+        format.html { redirect_to(individual_registration_url(@individual_registration), notice: "Individual registration was successfully created.") }
+        format.json { render(:show, status: :created, location: @individual_registration) }
       else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @individual_registration.errors, status: :unprocessable_entity }
+        format.html { render(:new, status: :unprocessable_entity) }
+        format.json { render(json: @individual_registration.errors, status: :unprocessable_entity) }
       end
     end
   end
@@ -39,11 +44,11 @@ class IndividualRegistrationsController < ApplicationController
   def update
     respond_to do |format|
       if @individual_registration.update(individual_registration_params)
-        format.html { redirect_to individual_registration_url(@individual_registration), notice: "Individual registration was successfully updated." }
-        format.json { render :show, status: :ok, location: @individual_registration }
+        format.html { redirect_to(individual_registration_url(@individual_registration), notice: "Individual registration was successfully updated.") }
+        format.json { render(:show, status: :ok, location: @individual_registration) }
       else
-        format.html { render :edit, status: :unprocessable_entity }
-        format.json { render json: @individual_registration.errors, status: :unprocessable_entity }
+        format.html { render(:edit, status: :unprocessable_entity) }
+        format.json { render(json: @individual_registration.errors, status: :unprocessable_entity) }
       end
     end
   end
@@ -53,12 +58,13 @@ class IndividualRegistrationsController < ApplicationController
     @individual_registration.destroy
 
     respond_to do |format|
-      format.html { redirect_to individual_registrations_url, notice: "Individual registration was successfully destroyed." }
-      format.json { head :no_content }
+      format.html { redirect_to(individual_registrations_url, notice: "Individual registration was successfully destroyed.") }
+      format.json { head(:no_content) }
     end
   end
 
   private
+
     # Use callbacks to share common setup or constraints between actions.
     def set_individual_registration
       @individual_registration = IndividualRegistration.find(params[:id])

@@ -1,0 +1,17 @@
+[
+ {
+   "Código": 21,
+   "Descrição": "Abaixo do peso",
+   "Observações": "-"
+ },
+ {
+   "Código": 22,
+   "Descrição": "Peso adequado",
+   "Observações": "-"
+ },
+ {
+   "Código": 23,
+   "Descrição": "Acima do peso",
+   "Observações": "-"
+ }
+]

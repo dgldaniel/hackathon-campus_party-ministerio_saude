@@ -55,7 +55,7 @@
     <div class="col">
       <div class="mb-3">
         <%= form.label :doencaCardiaca %>
-        <%= form.collection_check_boxes :doencaCardiaca, IndividualRegistration.doencaCardiacas.map{ |a| [a.first,a.first] }, :first, :second do |b| %>
+        <%= form.collection_check_boxes :doencaCardiaca, @options[:doenca_cardiaca], :second, :first do |b| %>
           <div class="d-block">
             <%= b.label %>
             <%= b.check_box %>
@@ -72,7 +72,7 @@
     <div class="col">
       <div class="mb-3">
         <%= form.label :doencaRespiratoria %>
-        <%= form.collection_check_boxes :doencaRespiratoria, IndividualRegistration.doencaRespiratoria.map{ |a| [a.first,a.first] }, :first, :second do |b| %>
+        <%= form.collection_check_boxes :doencaRespiratoria, @options[:doenca_respiratoria], :second, :first do |b| %>
           <div class="d-block">
             <%= b.label %>
             <%= b.check_box %>
@@ -89,7 +89,7 @@
     <div class="col">
       <div class="mb-3">
         <%= form.label :doencaRins %>
-        <%= form.collection_check_boxes :doencaRins, IndividualRegistration.doencaRins.map{ |a| [a.first,a.first] }, :first, :second do |b| %>
+        <%= form.collection_check_boxes :doencaRins, @options[:problema_rins], :second, :first do |b| %>
           <div class="d-block">
             <%= b.label %>
             <%= b.check_box %>
@@ -114,7 +114,7 @@
     <div class="col">
       <div class="mb-3">
         <%= form.label :situacaoPeso %>
-        <%= form.collection_check_boxes :situacaoPeso, IndividualRegistration.situacaoPesos.map{ |a| [a.first,a.first] }, :first, :second do |b| %>
+        <%= form.collection_check_boxes :situacaoPeso, @options[:situacao_peso], :second, :first do |b| %>
           <div class="d-block">
             <%= b.check_box %>
             <%= b.label %>

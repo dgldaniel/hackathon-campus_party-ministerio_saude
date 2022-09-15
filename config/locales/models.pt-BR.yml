@@ -156,3 +156,4 @@
         statusCadastroIndividualInativo: Tem Cadastro Individual Inativo?
         statusGeradoAutomaticamente: É gerado automaticamente?
         numeroCartaoSusResponsavel: Número do Cartão SUS do Responsável
+        dataNascimentoResponsavel: Data de Nascimento do Responsável

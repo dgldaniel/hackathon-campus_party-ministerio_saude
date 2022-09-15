@@ -1,0 +1,77 @@
+[
+ {
+   "Código": 51,
+   "Descrição": "Creche",
+   "Observações": "-"
+ },
+ {
+   "Código": 52,
+   "Descrição": "Pré-escola (exceto CA)",
+   "Observações": "-"
+ },
+ {
+   "Código": 53,
+   "Descrição": "Classe alfabetizada - CA",
+   "Observações": "-"
+ },
+ {
+   "Código": 54,
+   "Descrição": "Ensino fundamental 1ª a 4ª séries",
+   "Observações": "-"
+ },
+ {
+   "Código": 55,
+   "Descrição": "Ensino fundamental 5ª a 8ª séries",
+   "Observações": "-"
+ },
+ {
+   "Código": 56,
+   "Descrição": "Ensino fundamental completo",
+   "Observações": "-"
+ },
+ {
+   "Código": 61,
+   "Descrição": "Ensino fundamental especial",
+   "Observações": "-"
+ },
+ {
+   "Código": 58,
+   "Descrição": "Ensino fundamental EJA - séries iniciais (supletivo 1ª a 4ª)",
+   "Observações": "-"
+ },
+ {
+   "Código": 59,
+   "Descrição": "Ensino fundamental EJA - séries finais (supletivo 5ª a 8ª)",
+   "Observações": "-"
+ },
+ {
+   "Código": 60,
+   "Descrição": "Ensino médio, médio 2º ciclo (científico, técnico e etc)",
+   "Observações": "-"
+ },
+ {
+   "Código": 57,
+   "Descrição": "Ensino médio especial",
+   "Observações": "-"
+ },
+ {
+   "Código": 62,
+   "Descrição": "Ensino médio EJA (supletivo)",
+   "Observações": "-"
+ },
+ {
+   "Código": 63,
+   "Descrição": "Superior, aperfeiçoamento, especialização, mestrado, doutorado",
+   "Observações": "-"
+ },
+ {
+   "Código": 64,
+   "Descrição": "Alfabetização para adultos (Mobral, etc)",
+   "Observações": "-"
+ },
+ {
+   "Código": 65,
+   "Descrição": "Nenhum",
+   "Observações": "-"
+ }
+]

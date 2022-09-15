@@ -1,0 +1,22 @@
+[
+ {
+   "Código": 42,
+   "Descrição": "Banho",
+   "Observações": "-"
+ },
+ {
+   "Código": 43,
+   "Descrição": "Acesso a sanitário",
+   "Observações": "-"
+ },
+ {
+   "Código": 44,
+   "Descrição": "Higiene bucal",
+   "Observações": "-"
+ },
+ {
+   "Código": 45,
+   "Descrição": "Outros",
+   "Observações": "-"
+ }
+]
