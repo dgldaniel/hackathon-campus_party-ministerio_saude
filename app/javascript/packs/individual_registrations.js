@@ -202,7 +202,7 @@ function showSelectedOnNacionalidade() {
   const $containerCodigoIbgeMunicipioNascimento = document.getElementById('container-codigoIbgeMunicipioNascimento')
   const $containerpaisNascimento = document.getElementById('container-paisNascimento')
 
-  if (this.value === 'brasileira') {
+  if (this.value === '1') {
     $containerCodigoIbgeMunicipioNascimento.style.display = 'block';
     $containerpaisNascimento.style.display = 'none';
   } else {
@@ -290,6 +290,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   calculateAge($dataNascimentoResponsavel)
   calculateAge($dataNascimentoCidadao)
+
+
 });
 
 

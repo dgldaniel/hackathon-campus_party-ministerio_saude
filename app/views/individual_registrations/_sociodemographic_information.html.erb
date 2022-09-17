@@ -24,8 +24,8 @@
   <div class="row">
     <div class="col">
       <div class="mb-3">
-        <%= form.label :codigoIbgeMunicipioNascimento %>
-        <%= form.select :codigoIbgeMunicipioNascimento, @options[:cbo] %>
+        <%= form.label :cbo %>
+        <%= form.select :cbo, @options[:cbo], {}, { class: 'js-example-basic-single col-sm-12' } %>
       </div>
     </div>
   </div>
@@ -68,31 +68,31 @@
       </div>
     </div>
   </div>
-  <div class="checkbox checkbox-dark">
+  <div class="d-block">
     <%= form.check_box :statusDesejaInformarOrientacaoSexual %>
     <%= form.label :statusDesejaInformarOrientacaoSexual %>
   </div>
-  <div class="checkbox checkbox-dark">
+  <div class="d-block">
     <%= form.check_box :statusFrequentaBenzedeira %>
     <%= form.label :statusFrequentaBenzedeira %>
   </div>
-  <div class="checkbox checkbox-dark">
+  <div class="d-block">
     <%= form.check_box :statusFrequentaEscola %>
     <%= form.label :statusFrequentaEscola %>
   </div>
-  <div class="checkbox checkbox-dark">
+  <div class="d-block">
     <%= form.check_box :statusMembroPovoComunidadeTradicional %>
     <%= form.label :statusMembroPovoComunidadeTradicional %>
   </div>
-  <div class="checkbox checkbox-dark">
+  <div class="d-block">
     <%= form.check_box :statusParticipaGrupoComunitario %>
     <%= form.label :statusParticipaGrupoComunitario %>
   </div>
-  <div class="checkbox checkbox-dark">
+  <div class="d-block">
     <%= form.check_box :statusPossuiPlanoSaudePrivado %>
     <%= form.label :statusPossuiPlanoSaudePrivado %>
   </div>
-  <div class="checkbox checkbox-dark">
+  <div class="d-block">
     <%= form.check_box :statusTemAlgumaDeficiencia %>
     <%= form.label :statusTemAlgumaDeficiencia %>
   </div>
@@ -109,7 +109,7 @@
       </div>
     </div>
   </div>
-  <div class="checkbox checkbox-dark">
+  <div class="d-block">
     <%= form.check_box :statusMembroPovoComunidadeTradicional %>
     <%= form.label :statusMembroPovoComunidadeTradicional %>
   </div>
