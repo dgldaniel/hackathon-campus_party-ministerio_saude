@@ -54,7 +54,7 @@
         statusTeveDoencaCardiaca: Tem doença cardíaca do coração?
         statusTeveInternadoEm12Meses: Teve alguma internação nos últimos 12 meses?
         statusUsaPlantasMedicinais: Usa plantas medicinais?
-        grauParentescoFamiliarFrequentado: Visita algum familiar com frequência?
+        grauParentescoFamiliarFrequentado: Se sim, qual é o grau de parentesco?
         nomeSocial: Nome Social
         higienePessoalSituacaoRua: Se sim, indique qual(is)
         origemAlimentoSituacaoRua: Qual origem da alimentação?
@@ -62,7 +62,7 @@
         quantidadeAlimentacoesAoDiaSituacaoRua: Quantas vezes se alimenta ao dia?
         statusAcompanhadoPorOutraInstituicao: É acompanhado por outra instituição?
         statusTemAcessoHigienePessoalSituacaoRua: Tem acesso à higiene pessoal?
-        statusVisitaFamiliarFrequentemente: Se sim, qual é o grau de parentesco?
+        statusVisitaFamiliarFrequentemente: Visita algum familiar com frequência?
         tempoSituacaoRua: Tempo em situação de rua?
         codigoIbgeMunicipioNascimento: Código IBGE do Municipio de Nascimento
         desconheceNomeMae: Desconhece nome da Mãe
@@ -142,7 +142,7 @@
         racaCorCidadao: Raça/Cor
         sexoCidadao: Sexo
         etnia: Etnia
-        orientacaoSexualCidadao: Deseja informar Orientação Sexual?
+        orientacaoSexualCidadao: Se sim, indique qual
         relacaoParentescoCidadao: Relação de Parentesco com o Responsável Familiar
         situacaoMercadoTrabalhoCidadao: Situação no Mercado de Trabalho
         statusDesejaInformarOrientacaoSexual: Deseja informar Orientação Sexual?
