@@ -9,7 +9,13 @@
 
 User.create(email: 'dgldaniel@gmail.com', password: '123456', password_confirmation: '123456')
 
-Doctor.create(full_name: Faker::Name.first_name, CRM: '123456', user_id: 1)
+Doctor.create(profissionalCNS: '898001161481488',
+              cboCodigo_2002: '515105',
+              cnes: '0019615',
+              ine: '0000471828',
+              dataAtendimento: Time.now,
+              codigoIbgeMunicipio: '4205407',
+              user_id: 1)
 
 15.times do
   current_patient = Patient.create(full_name: Faker::Name.first_name,
@@ -19,8 +25,6 @@ Doctor.create(full_name: Faker::Name.first_name, CRM: '123456', user_id: 1)
                                    phone: '991745677',
                                    doctor_id: 1
                                   )
-
-
 
   Report.create(patient_id: current_patient.id,
                 hba1c: rand(0.065..0.079),
@@ -41,5 +45,5 @@ Doctor.create(full_name: Faker::Name.first_name, CRM: '123456', user_id: 1)
                 h1n1_antipneumococcal: Faker::Boolean.boolean,
                 participation_diabetes_nutritional_education_program: Faker::Boolean.boolean,
                 smoker: Faker::Boolean.boolean
-              )
+               )
 end

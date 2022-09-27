@@ -1,47 +1,50 @@
 <div class="card">
-  <div class="card-header">
-    <p class="card-header-title">Sign up</p>
+  <div class="card-header pb-0">
+    <h5>Default Form Layout</h5>
   </div>
-  <div class="card-content">
-    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <div class="card-body">
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name),  html: { class: 'theme-form' }) do |f| %>
       <%= render "devise/shared/error_messages", resource: resource %>
       <%= f.fields_for :doctor do |doctor_form| %>
-        <div class="field">
-          <%= doctor_form.label :full_name, class: 'label' %>
-          <div class="control">
-            <%= doctor_form.text_field :full_name, autofocus: true, class: 'input' %>
-          </div>
+        <div class="mb-3">
+          <%= doctor_form.label :profissionalCNS, class: 'col-form-label pt-0' %>
+          <%= doctor_form.text_field :profissionalCNS, autofocus: true, class: 'form-control' %>
         </div>
-        <div class="field">
-          <%= doctor_form.label :CRM , class: 'label' %>
-          <div class="control">
-            <%= doctor_form.text_field :CRM, class: 'input' %>
-          </div>
+        <div class="mb-3">
+          <%= doctor_form.label :cboCodigo_2002 , class: 'col-form-label pt-0' %>
+          <%= doctor_form.text_field :cboCodigo_2002, class: 'form-control' %>
+        </div>
+        <div class="mb-3">
+          <%= doctor_form.label :cnes , class: 'col-form-label pt-0' %>
+          <%= doctor_form.text_field :cnes, class: 'form-control' %>
+        </div>
+        <div class="mb-3">
+          <%= doctor_form.label :ine , class: 'col-form-label pt-0' %>
+          <%= doctor_form.text_field :ine, class: 'form-control' %>
+        </div>
+        <div class="mb-3">
+          <%= doctor_form.label :codigoIbgeMunicipio , class: 'col-form-label pt-0' %>
+          <%= doctor_form.text_field :codigoIbgeMunicipio, class: 'form-control' %>
         </div>
       <% end %>
-      <div class="field">
-        <%= f.label :email, class: 'label' %>
-        <div class="control">
-          <%= f.email_field :email, class: 'input' %>
-        </div>
+      <div class="mb-3">
+        <%= f.label :email, class: 'col-form-label pt-0' %>
+        <%= f.email_field :email, class: 'form-control' %>
       </div>
-      <div class="field">
-        <%= f.label :password, class: 'label' %>
+      <div class="mb-3">
+        <%= f.label :password, class: 'col-form-label pt-0' %>
         <% if @minimum_password_length %>
           <em>(<%= @minimum_password_length %> characters minimum)</em>
         <% end %><br />
-        <div class="control">
-          <%= f.password_field :password, autocomplete: "new-password", class: 'input' %>
-        </div>
+        <%= f.password_field :password, autocomplete: "new-password", class: 'form-control' %>
       </div>
-      <div class="field">
-        <%= f.label :password_confirmation, class: 'label'%>
-        <%= f.password_field :password_confirmation, autocomplete: "new-password", class: 'input' %>
+      <div class="mb-3">
+        <%= f.label :password_confirmation, class: 'col-form-label pt-0'%>
+        <%= f.password_field :password_confirmation, autocomplete: "new-password", class: 'form-control' %>
       </div>
-      <div class="actions control">
-        <%= f.submit "Sign up", class: "button is-primary" %>
+      <div class="card-footer">
+        <%= f.submit "Sign up", class: "btn btn-primary" %>
       </div>
     <% end %>
-    <%= render "devise/shared/links" %>
   </div>
 </div>

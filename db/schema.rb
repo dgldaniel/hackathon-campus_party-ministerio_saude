@@ -116,8 +116,12 @@ ActiveRecord::Schema.define(version: 2022_07_25_222725) do
   end
 
   create_table "doctors", force: :cascade do |t|
-    t.string "full_name", limit: 50
-    t.string "CRM", limit: 15
+    t.string "profissionalCNS", limit: 15, null: false
+    t.string "cboCodigo_2002", null: false
+    t.string "cnes", limit: 7, null: false
+    t.string "ine", limit: 10
+    t.datetime "dataAtendimento", null: false
+    t.string "codigoIbgeMunicipio", limit: 15, null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "user_id"
@@ -219,7 +223,7 @@ ActiveRecord::Schema.define(version: 2022_07_25_222725) do
     t.boolean "statusFrequentaEscola"
     t.boolean "statusMembroPovoComunidadeTradicional"
     t.boolean "statusDesejaInformarIdentidadeGenero"
-    t.integer "coPovoComunidadeTradicional"
+    t.string "coPovoComunidadeTradicional"
     t.boolean "statusTermoRecusaCadastroIndividualAtencaoBasica"
     t.uuid "uuid"
     t.uuid "uuidFichaOriginadora"

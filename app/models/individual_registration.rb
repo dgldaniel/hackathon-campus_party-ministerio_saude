@@ -2,16 +2,23 @@
 # municipios, cbo e comunidade
 class IndividualRegistration < ApplicationRecord
   has_one_attached :xml_file
+  has_one_attached :thrift_file
+
+  # belongs_to :doctor
 
   # validates :cpfCidadao, uniqueness: true
   # validates :cnsCidadao, uniqueness: true
 
-  before_create :generate_xml
-  before_update :generate_xml
+  # before_create :serialize_data
+  before_update :serialize_data
 
   scope :generate_xml_from, -> (start_date, end_date) { where("created_at >= ? AND created_at <= ?", start_date, end_date)}
 
-  def self.generate_xml
+  def serialize_data
+    self.uuid = Digest::UUID.uuid_v4
+    self.uuidFichaOriginadora = Digest::UUID.uuid_v4
+    self.tpCdsOrigem = 3
+
     generate_xml = ActionController::Base.new.render_to_string(
       'individual_registrations/show.xml.erb',
       :locals => { :@individual_registration => self }
@@ -20,6 +27,8 @@ class IndividualRegistration < ApplicationRecord
     xml_file.attach(io: StringIO.new(generate_xml),
                            filename: "#{id}.xml"
     )
+
+    SerializeEsusJob.perform_now(self)
   end
 
   def self.build_options

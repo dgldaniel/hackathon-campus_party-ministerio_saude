@@ -17,17 +17,17 @@ class IndividualRegistrationsController < ApplicationController
     @individual_registration = IndividualRegistration.new
 
     @options = IndividualRegistration.build_options
-
-    puts @options[:nacionalidade].inspect
   end
 
   # GET /individual_registrations/1/edit
   def edit
+    @options = IndividualRegistration.build_options
   end
 
   # POST /individual_registrations or /individual_registrations.json
   def create
     @individual_registration = IndividualRegistration.new(individual_registration_params)
+    @individual_registration.doctor = current_user.doctor
 
     respond_to do |format|
       if @individual_registration.save

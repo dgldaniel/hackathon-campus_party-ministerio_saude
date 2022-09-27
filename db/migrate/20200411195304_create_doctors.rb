@@ -2,8 +2,12 @@
 class CreateDoctors < ActiveRecord::Migration[6.0]
   def change
     create_table(:doctors) do |t|
-      t.string(:full_name, limit: 50)
-      t.string(:CRM, limit: 15)
+      t.string(:profissionalCNS, limit: 15, null: false)
+      t.string(:cboCodigo_2002, null: false)
+      t.string(:cnes, limit: 7, null: false)
+      t.string(:ine, limit: 10, null: true)
+      t.datetime(:dataAtendimento, null: false)
+      t.string(:codigoIbgeMunicipio, limit: 15, null: false)
 
       t.timestamps
     end

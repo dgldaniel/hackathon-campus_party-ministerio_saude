@@ -7,14 +7,19 @@
     <%= stylesheet_link_tag 'application', media: 'all' %>
     <%= javascript_pack_tag 'application' %>
     <%= stylesheet_link_tag 'devise', media: 'all' %>
+    <%= javascript_pack_tag 'devise' %>
   </head>
   <body>
-    <div class="container">
-      <div class="columns is-flex is-vcentered is-centered">
-        <div class="column is-two-thirds-mobile is-half-tablet">
-          <%= yield %>
+    <!-- page-wrapper Start-->
+    <section>
+      <div class="container-fluid p-0">
+        <div class="row">
+          <div class="col-12">
+            <%= yield %>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
+    <!-- page-wrapper end-->
   </body>
 </html>
