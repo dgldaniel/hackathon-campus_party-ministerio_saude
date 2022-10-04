@@ -1,5 +1,14 @@
-<h1>New Collective Activity Sheet</h1>
-
-<%= render 'form', collective_activity_sheet: @collective_activity_sheet %>
-
-<%= link_to 'Back', collective_activity_sheets_path %>
+<div class='card'>
+  <div class="card-header pb-0">
+    <h5>Nova Ficha de Atividade Coletiva</h5>
+  </div>
+  <div class='card-body'>
+    <div class='row'>
+      <div class='col-md-12'>
+        <div class='datetime-picker'>
+          <%= render 'form', collective_activity_sheet: @collective_activity_sheet %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

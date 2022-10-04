@@ -1,53 +1,52 @@
-<p id="notice"><%= notice %></p>
-
-<% if @procedure_sheet.xml_file.attached? %>
-  <%= link_to 'Baixar XML', rails_blob_url(@procedure_sheet.xml_file) %>
-<% end %>
-
-<p>
-  <strong>Uuidficha:</strong>
-  <%= @procedure_sheet.uuidFicha %>
-</p>
-
-<p>
-  <strong>Tpcdsorigem:</strong>
-  <%= @procedure_sheet.tpCdsOrigem %>
-</p>
-
-<p>
-  <strong>Numtotalafericaopa:</strong>
-  <%= @procedure_sheet.numTotalAfericaoPa %>
-</p>
-
-<p>
-  <strong>Numtotalafericaotemperatura:</strong>
-  <%= @procedure_sheet.numTotalAfericaoTemperatura %>
-</p>
-
-<p>
-  <strong>Numtotalcurativosimples:</strong>
-  <%= @procedure_sheet.numTotalCurativoSimples %>
-</p>
-
-<p>
-  <strong>Numtotalcoletamaterialparaexamelaboratorial:</strong>
-  <%= @procedure_sheet.numTotalColetaMaterialParaExameLaboratorial %>
-</p>
-
-<p>
-  <strong>Numtotalglicemiacapilar:</strong>
-  <%= @procedure_sheet.numTotalGlicemiaCapilar %>
-</p>
-
-<p>
-  <strong>Numtotalmedicaoaltura:</strong>
-  <%= @procedure_sheet.numTotalMedicaoAltura %>
-</p>
-
-<p>
-  <strong>Numtotalmedicaopeso:</strong>
-  <%= @procedure_sheet.numTotalMedicaoPeso %>
-</p>
-
-<%= link_to 'Edit', edit_procedure_sheet_path(@procedure_sheet) %> |
-<%= link_to 'Back', procedure_sheets_path %>
+<div class="col-sm-12">
+  <div class="card">
+    <div class="card-header">
+      <p id="notice"><%= notice %></p>
+      <% if @procedure_sheet.xml_file.attached? %>
+        <%= link_to 'Baixar XML', rails_blob_url(@procedure_sheet.xml_file) %>
+      <% end %>
+    </div>
+    <div class="card-body">
+      <p>
+        <strong>Uuidficha:</strong>
+        <%= @procedure_sheet.uuidFicha %>
+      </p>
+      <p>
+        <strong>Tpcdsorigem:</strong>
+        <%= @procedure_sheet.tpCdsOrigem %>
+      </p>
+      <p>
+        <strong>Numtotalafericaopa:</strong>
+        <%= @procedure_sheet.numTotalAfericaoPa %>
+      </p>
+      <p>
+        <strong>Numtotalafericaotemperatura:</strong>
+        <%= @procedure_sheet.numTotalAfericaoTemperatura %>
+      </p>
+      <p>
+        <strong>Numtotalcurativosimples:</strong>
+        <%= @procedure_sheet.numTotalCurativoSimples %>
+      </p>
+      <p>
+        <strong>Numtotalcoletamaterialparaexamelaboratorial:</strong>
+        <%= @procedure_sheet.numTotalColetaMaterialParaExameLaboratorial %>
+      </p>
+      <p>
+        <strong>Numtotalglicemiacapilar:</strong>
+        <%= @procedure_sheet.numTotalGlicemiaCapilar %>
+      </p>
+      <p>
+        <strong>Numtotalmedicaoaltura:</strong>
+        <%= @procedure_sheet.numTotalMedicaoAltura %>
+      </p>
+      <p>
+        <strong>Numtotalmedicaopeso:</strong>
+        <%= @procedure_sheet.numTotalMedicaoPeso %>
+      </p>
+    </div>
+    <div class="card-footer">
+      <%= link_to 'Edit', edit_procedure_sheet_path(@procedure_sheet) %> |
+      <%= link_to 'Back', procedure_sheets_path %>
+    </div>
+  </div>
+</div>

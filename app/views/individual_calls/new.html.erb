@@ -1,5 +1,14 @@
-<h1>New Individual Call</h1>
-
-<%= render 'form', individual_call: @individual_call %>
-
-<%= link_to 'Back', individual_calls_path %>
+<div class='card'>
+  <div class="card-header pb-0">
+    <h5>Novo Atendimento Individual</h5>
+  </div>
+  <div class='card-body'>
+    <div class='row'>
+      <div class='col-md-12'>
+        <div class='datetime-picker'>
+          <%= render 'form',  individual_call: @individual_call %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

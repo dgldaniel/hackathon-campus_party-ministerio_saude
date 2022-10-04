@@ -1,74 +1,68 @@
-<p id="notice"><%= notice %></p>
-
-<% if @collective_activity_sheet.xml_file.attached? %>
-  <%= link_to 'Baixar XML', rails_blob_url(@collective_activity_sheet.xml_file) %>
-<% end %>
-
-<p>
-  <strong>Uuidficha:</strong>
-  <%= @collective_activity_sheet.uuidFicha %>
-</p>
-
-<p>
-  <strong>Inep:</strong>
-  <%= @collective_activity_sheet.inep %>
-</p>
-
-<p>
-  <strong>Numparticipantes:</strong>
-  <%= @collective_activity_sheet.numParticipantes %>
-</p>
-
-<p>
-  <strong>Numavaliacoesalterada:</strong>
-  <%= @collective_activity_sheet.numAvaliacoesAlterada %>
-</p>
-
-<p>
-  <strong>Atividadetipo:</strong>
-  <%= @collective_activity_sheet.atividadeTipo %>
-</p>
-
-<p>
-  <strong>Publicoalvo:</strong>
-  <%= @collective_activity_sheet.publicoAlvo %>
-</p>
-
-
-<p>
-  <strong>Tbcdsorigem:</strong>
-  <%= @collective_activity_sheet.tbCdsOrigem %>
-</p>
-
-<p>
-  <strong>Procedimento:</strong>
-  <%= @collective_activity_sheet.procedimento %>
-</p>
-
-<p>
-  <strong>Turno:</strong>
-  <%= @collective_activity_sheet.turno %>
-</p>
-
-<p>
-  <strong>Pseeducacao:</strong>
-  <%= @collective_activity_sheet.pseEducacao %>
-</p>
-
-<p>
-  <strong>Psesaude:</strong>
-  <%= @collective_activity_sheet.pseSaude %>
-</p>
-
-<p>
-  <strong>Temasparasaude:</strong>
-  <%= @collective_activity_sheet.temasParaSaude %>
-</p>
-
-<p>
-  <strong>Praticasemsaude:</strong>
-  <%= @collective_activity_sheet.praticasEmSaude %>
-</p>
-
-<%= link_to 'Edit', edit_collective_activity_sheet_path(@collective_activity_sheet) %> |
-<%= link_to 'Back', collective_activity_sheets_path %>
+<div class="col-sm-12">
+  <div class="card">
+    <div class="card-header">
+      <p id="notice"><%= notice %></p>
+      <% if @collective_activity_sheet.xml_file.attached? %>
+        <%= link_to 'Baixar XML', rails_blob_url(@collective_activity_sheet.xml_file) %>
+      <% end %>
+    </div>
+    <div class="card-body">
+      <p>
+        <strong>Uuidficha:</strong>
+        <%= @collective_activity_sheet.uuidFicha %>
+      </p>
+      <p>
+        <strong>Inep:</strong>
+        <%= @collective_activity_sheet.inep %>
+      </p>
+      <p>
+        <strong>Numparticipantes:</strong>
+        <%= @collective_activity_sheet.numParticipantes %>
+      </p>
+      <p>
+        <strong>Numavaliacoesalterada:</strong>
+        <%= @collective_activity_sheet.numAvaliacoesAlterada %>
+      </p>
+      <p>
+        <strong>Atividadetipo:</strong>
+        <%= @collective_activity_sheet.atividadeTipo %>
+      </p>
+      <p>
+        <strong>Publicoalvo:</strong>
+        <%= @collective_activity_sheet.publicoAlvo %>
+      </p>
+      <p>
+        <strong>Tbcdsorigem:</strong>
+        <%= @collective_activity_sheet.tbCdsOrigem %>
+      </p>
+      <p>
+        <strong>Procedimento:</strong>
+        <%= @collective_activity_sheet.procedimento %>
+      </p>
+      <p>
+        <strong>Turno:</strong>
+        <%= @collective_activity_sheet.turno %>
+      </p>
+      <p>
+        <strong>Pseeducacao:</strong>
+        <%= @collective_activity_sheet.pseEducacao %>
+      </p>
+      <p>
+        <strong>Psesaude:</strong>
+        <%= @collective_activity_sheet.pseSaude %>
+      </p>
+      <p>
+        <strong>Temasparasaude:</strong>
+        <%= @collective_activity_sheet.temasParaSaude %>
+      </p>
+      <p>
+        <strong>Praticasemsaude:</strong>
+        <%= @collective_activity_sheet.praticasEmSaude %>
+      </p>
+    </div>
+    <div class="card-footer">
+      <%= link_to 'Edit', edit_collective_activity_sheet_path(@collective_activity_sheet) %> |
+      <%= link_to 'Back', collective_activity_sheets_path %>
+    </div>
+  </div>
+</div>

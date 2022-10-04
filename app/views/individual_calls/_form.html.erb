@@ -1,8 +1,7 @@
-<%= form_with(model: individual_call) do |form| %>
+<%= form_with(model: individual_call, id: 'regForm', class: 'form-wizard') do |form| %>
   <% if individual_call.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(individual_call.errors.count, "error") %> prohibited this individual_call from being saved:</h2>
-
       <ul>
         <% individual_call.errors.each do |error| %>
           <li><%= error.full_message %></li>
@@ -10,194 +9,176 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= form.label :numeroProntuario %>
-    <%= form.text_field :numeroProntuario %>
-  </div>
-
-  <div class="field">
-    <%= form.label :cnsCidadao %>
-    <%= form.text_field :cnsCidadao %>
-  </div>
-
-  <div class="field">
-    <%= form.label :dataNascimento %>
-    <%= form.datetime_select :dataNascimento %>
-  </div>
-
-  <div class="field">
-    <%= form.label :localDeAtendimento %>
-    <%= form.number_field :localDeAtendimento %>
-  </div>
-
-  <div class="field">
-    <%= form.label :sexo %>
-    <%= form.number_field :sexo %>
-  </div>
-
-  <div class="field">
-    <%= form.label :turno %>
-    <%= form.number_field :turno %>
-  </div>
-
-  <div class="field">
-    <%= form.label :tipoAtendimento %>
-    <%= form.number_field :tipoAtendimento %>
-  </div>
-
-  <div class="field">
-    <%= form.label :pesoAcompanhamentoNutricional %>
-    <%= form.text_field :pesoAcompanhamentoNutricional %>
-  </div>
-
-  <div class="field">
-    <%= form.label :alturaAcompanhamentoNutricional %>
-    <%= form.text_field :alturaAcompanhamentoNutricional %>
-  </div>
-
-  <div class="field">
-    <%= form.label :aleitamentoMaterno %>
-    <%= form.number_field :aleitamentoMaterno %>
-  </div>
-
-  <div class="field">
-    <%= form.label :dumDaGestante %>
-    <%= form.datetime_select :dumDaGestante %>
-  </div>
-
-  <div class="field">
-    <%= form.label :idadeGestacional %>
-    <%= form.number_field :idadeGestacional %>
-  </div>
-
-  <div class="field">
-    <%= form.label :atencaoDomiciliarModalidade %>
-    <%= form.number_field :atencaoDomiciliarModalidade %>
-  </div>
-
-  <div class="field">
-    <%= form.label :vacinaEmDia %>
-    <%= form.check_box :vacinaEmDia %>
-  </div>
-
-  <div class="field">
-    <%= form.label :ficouEmObservacao %>
-    <%= form.check_box :ficouEmObservacao %>
-  </div>
-
-  <div class="field">
-    <%= form.label :nasfs %>
-    <%= form.number_field :nasfs %>
-  </div>
-
-  <div class="field">
-    <%= form.label :condutas %>
-    <%= form.text_field :condutas %>
-  </div>
-
-  <div class="field">
-    <%= form.label :stGravidezPlanejada %>
-    <%= form.check_box :stGravidezPlanejada %>
-  </div>
-
-  <div class="field">
-    <%= form.label :nuGestasPrevias %>
-    <%= form.number_field :nuGestasPrevias %>
-  </div>
-
-  <div class="field">
-    <%= form.label :nuPartos %>
-    <%= form.number_field :nuPartos %>
-  </div>
-
-  <div class="field">
-    <%= form.label :racionalidadeSaude %>
-    <%= form.number_field :racionalidadeSaude %>
-  </div>
-
-  <div class="field">
-    <%= form.label :perimetroCefalico %>
-    <%= form.text_field :perimetroCefalico %>
-  </div>
-
-  <div class="field">
-    <%= form.label :dataHoraInicialAtendimento %>
-    <%= form.datetime_select :dataHoraInicialAtendimento %>
-  </div>
-
-  <div class="field">
-    <%= form.label :dataHoraFinalAtendimento %>
-    <%= form.datetime_select :dataHoraFinalAtendimento %>
-  </div>
-
-  <%= form.fields_for :problem_condition_evaluated do |field| %>
+  <div class="tab">
     <div class="field">
-      <%= field.label :ciaps %>
-      <%= field.text_field :ciaps %>
+      <%= form.label :numeroProntuario %>
+      <%= form.text_field :numeroProntuario %>
     </div>
-
     <div class="field">
-      <%= field.label :outroCiap1 %>
-      <%= field.text_field :outroCiap1 %>
+      <%= form.label :cnsCidadao %>
+      <%= form.text_field :cnsCidadao %>
     </div>
-
     <div class="field">
-      <%= field.label :cid10 %>
-      <%= field.text_field :cid10 %>
+      <%= form.label :dataNascimento %>
+      <%= form.datetime_select :dataNascimento %>
     </div>
-
     <div class="field">
-      <%= field.label :cid10_2 %>
-      <%= field.text_field :cid10_2 %>
+      <%= form.label :localDeAtendimento %>
+      <%= form.number_field :localDeAtendimento %>
     </div>
-  <% end %>
-
-  <div id="exams">
+    <div class="field">
+      <%= form.label :sexo %>
+      <%= form.number_field :sexo %>
+    </div>
+    <div class="field">
+      <%= form.label :turno %>
+      <%= form.number_field :turno %>
+    </div>
+    <div class="field">
+      <%= form.label :tipoAtendimento %>
+      <%= form.number_field :tipoAtendimento %>
+    </div>
+    <div class="field">
+      <%= form.label :pesoAcompanhamentoNutricional %>
+      <%= form.text_field :pesoAcompanhamentoNutricional %>
+    </div>
+    <div class="field">
+      <%= form.label :alturaAcompanhamentoNutricional %>
+      <%= form.text_field :alturaAcompanhamentoNutricional %>
+    </div>
+    <div class="field">
+      <%= form.label :aleitamentoMaterno %>
+      <%= form.number_field :aleitamentoMaterno %>
+    </div>
+    <div class="field">
+      <%= form.label :dumDaGestante %>
+      <%= form.datetime_select :dumDaGestante %>
+    </div>
+    <div class="field">
+      <%= form.label :idadeGestacional %>
+      <%= form.number_field :idadeGestacional %>
+    </div>
+    <div class="field">
+      <%= form.label :atencaoDomiciliarModalidade %>
+      <%= form.number_field :atencaoDomiciliarModalidade %>
+    </div>
+    <div class="field">
+      <%= form.label :vacinaEmDia %>
+      <%= form.check_box :vacinaEmDia %>
+    </div>
+    <div class="field">
+      <%= form.label :ficouEmObservacao %>
+      <%= form.check_box :ficouEmObservacao %>
+    </div>
+    <div class="field">
+      <%= form.label :nasfs %>
+      <%= form.number_field :nasfs %>
+    </div>
+    <div class="field">
+      <%= form.label :condutas %>
+      <%= form.text_field :condutas %>
+    </div>
+    <div class="field">
+      <%= form.label :stGravidezPlanejada %>
+      <%= form.check_box :stGravidezPlanejada %>
+    </div>
+    <div class="field">
+      <%= form.label :nuGestasPrevias %>
+      <%= form.number_field :nuGestasPrevias %>
+    </div>
+    <div class="field">
+      <%= form.label :nuPartos %>
+      <%= form.number_field :nuPartos %>
+    </div>
+    <div class="field">
+      <%= form.label :racionalidadeSaude %>
+      <%= form.number_field :racionalidadeSaude %>
+    </div>
+    <div class="field">
+      <%= form.label :perimetroCefalico %>
+      <%= form.text_field :perimetroCefalico %>
+    </div>
+    <div class="field">
+      <%= form.label :dataHoraInicialAtendimento %>
+      <%= form.datetime_select :dataHoraInicialAtendimento %>
+    </div>
+    <div class="field">
+      <%= form.label :dataHoraFinalAtendimento %>
+      <%= form.datetime_select :dataHoraFinalAtendimento %>
+    </div>
+  </div>
+  <div class="tab">
+    <%= form.fields_for :problem_condition_evaluated do |field| %>
+      <div class="field">
+        <%= field.label :ciaps %>
+        <%= field.text_field :ciaps %>
+      </div>
+      <div class="field">
+        <%= field.label :outroCiap1 %>
+        <%= field.text_field :outroCiap1 %>
+      </div>
+      <div class="field">
+        <%= field.label :cid10 %>
+        <%= field.text_field :cid10 %>
+      </div>
+      <div class="field">
+        <%= field.label :cid10_2 %>
+        <%= field.text_field :cid10_2 %>
+      </div>
+    <% end %>
+  </div>
+  <div class="tab" id="exams">
     <%= form.fields_for :exams do |exam| %>
       <%= render 'exam_fields', f: exam %>
     <% end %>
-
     <div class="links">
       <%= link_to_add_association 'add exam', form, :exams %>
-      <br><br>
+      <br>
+      <br>
     </div>
   </div>
-
-  <div id="exam_results">
+  <div class="tab" id="exam_results">
     <%= form.fields_for :exam_results do |exam_result| %>
       <%= render 'exam_result_fields', f: exam_result %>
     <% end %>
-
     <div class="links">
       <%= link_to_add_association 'add exam_result', form, :exam_results %>
-      <br><br>
+      <br>
+      <br>
     </div>
   </div>
-
-    <div id="medicines">
+  <div class="tab" id="medicines">
     <%= form.fields_for :medicines do |medicine| %>
       <%= render 'medicine_fields', f: medicine %>
     <% end %>
-
     <div class="links">
       <%= link_to_add_association 'add medicine', form, :medicines %>
-      <br><br>
+      <br>
+      <br>
     </div>
   </div>
-
-  <div id="forwardings">
+  <div class="tab" id="forwardings">
     <%= form.fields_for :forwardings do |forwarding| %>
       <%= render 'forwarding_fields', f: forwarding %>
     <% end %>
-
     <div class="links">
       <%= link_to_add_association 'add forwarding', form, :forwardings %>
-      <br><br>
+      <br>
+      <br>
     </div>
   </div>
-
-  <div class="actions">
-    <%= form.submit %>
+  <div class="text-end btn-mb">
+    <button class="btn btn-warning" id="prevBtn" type="button">Anterior</button>
+    <button class="btn btn-primary" id="nextBtn" type="button">Próximo</button>
+    <%= form.submit "Registrar Atendimento Individual", class: "btn btn-success", id: 'submitBtn', style: "display:none" %>
+  </div>
+  <!-- Circles which indicates the steps of the form:-->
+  <div class="text-center">
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
   </div>
 <% end %>
