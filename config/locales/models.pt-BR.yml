@@ -13,6 +13,15 @@
       individual_registration:
         one: Cadastro Individual
         others: Cadastros Individuais
+      individual_call:
+        one: Ficha de Atendimento Individual
+        others: Fichas de Atendimento Individual
+      problem_condition_evaluated:
+        one: Problema Condição Avaliação
+        others: Problemas Condições Avaliações
+      exam:
+        one: OutrosSia
+        others: OutrosSias
     attributes:
       patient:
         email: E-mail
@@ -157,3 +166,35 @@
         statusGeradoAutomaticamente: É gerado automaticamente?
         numeroCartaoSusResponsavel: Número do Cartão SUS do Responsável
         dataNascimentoResponsavel: Data de Nascimento do Responsável
+      individual_call:
+        numeroProntuario: Número do prontuário
+        cnsCidadao: CNS do cidadão
+        dataNascimento: Data de nascimento do cidadão
+        localDeAtendimento: Local onde o atendimento foi realizado
+        sexo: Sexo do cidadão
+        turno: Turno em que o atendimento foi realizado
+        tipoAtendimento: Tipo de atendimento realizado
+        pesoAcompanhamentoNutricional: Peso do cidadão em Kilogramas
+        alturaAcompanhamentoNutricional: Altura do cidadão em centímetros
+        aleitamentoMaterno: Marcador referente ao aleitamento matern
+        dumDaGestante: Data da última menstruação da gestante
+        idadeGestacional: Idade gestacional em semanas
+        atencaoDomiciliarModalidade: Modalidade AD do cidadão atendido
+        examesSolicitados: Lista de exames solicitados que são apresentados na ficha
+        examesAvaliados: Lista de exames avaliados que são apresentados na ficha
+        vacinaEmDia: Marcador referente a vacinação em dia do cidadão
+        pic: Práticas Integrativas e Complementares
+        ficouEmObservacao: 'O cidadão ficou em observação no atendimento'
+        nasfs: Código das ações realizadas pelo Núcleo de Atenção a Saúde da Família
+        condutas: Código das condutas adotadas no atendimento
+        stGravidezPlanejada: A gravidez é planejada
+        nuGestasPrevias: Número de gestações prévias
+        nuPartos: Número de partos que a mulher já teve
+      problem_condition_evaluated:
+        ciaps: CIAPs
+        outroCiap1: CIAP1 registrado no antedimento
+        outroCiap2: CIAP2 registrado no antedimento
+        cid10: CID10 registrado no atendimento
+      exam:
+        codigoExame: Código do exame solicitado ou avaliado
+        solicitadoAvaliado: Código do indicador

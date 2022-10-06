@@ -64,6 +64,44 @@ namespace :store_records_on_cache do
 
     situacao_mercado_trabalho_data = get_path_json('cadastro_individual', 'situacao_mercado_trabalho')
     store_json_cache(situacao_mercado_trabalho_data, { first: 'Descrição', second: 'Código' }, '@CI_Situacao_Mercado')
+
+    # Ficha de Atendimento Individual
+
+    aleitamento_materno_data = get_path_json('ficha_atendimento_individual', 'aleitamento_materno')
+    store_json_cache(aleitamento_materno_data, { first: 'Descrição', second: 'Código' }, '@FAI_Aleitamento_Materno')
+
+    conduta_encaminhamento_data = get_path_json('ficha_atendimento_individual', 'conduta_encaminhamento')
+    store_json_cache(conduta_encaminhamento_data, { first: 'Descrição', second: 'Código' }, '@FAI_Conduta_Encaminhamento')
+
+    lista_ciap_data = get_path_json('ficha_atendimento_individual', 'lista_ciap')
+    store_json_cache(lista_ciap_data, { first: 'Descrição', second: 'Código' }, '@FAI_Lista_CIAP')
+
+    lista_exame_solicitado_data = get_path_json('ficha_atendimento_individual', 'lista_exame_solicitado')
+    store_json_cache(lista_exame_solicitado_data, { first: 'Descrição', second: 'Código' }, '@FAI_Lista_Exame_Solicitado')
+
+    local_atendimento_data = get_path_json('ficha_atendimento_individual', 'local_atendimento')
+    store_json_cache(local_atendimento_data, { first: 'Descrição', second: 'Código' }, '@FAI_Local_Atendimento')
+
+    modalidade_ad_data = get_path_json('ficha_atendimento_individual', 'modalidade_ad')
+    store_json_cache(modalidade_ad_data, { first: 'Descrição', second: 'Código' }, '@FAI_Modalidade_AD')
+
+    nasf_data = get_path_json('ficha_atendimento_individual', 'nasf')
+    store_json_cache(nasf_data, { first: 'Descrição', second: 'Código' }, '@FAI_NASF')
+
+    praticas_integrativas_complementares_data = get_path_json('ficha_atendimento_individual', 'praticas_integrativas_complementares')
+    store_json_cache(praticas_integrativas_complementares_data, { first: 'Descrição', second: 'Código' }, '@FAI_Praticas_Integrativas_Complementares')
+
+    situacao_exame_data = get_path_json('ficha_atendimento_individual', 'situacao_exame')
+    store_json_cache(situacao_exame_data, { first: 'Descrição', second: 'Código' }, '@FAI_Situacao_Exame')
+
+    tipo_atendimento_data = get_path_json('ficha_atendimento_individual', 'tipo_atendimento')
+    store_json_cache(tipo_atendimento_data, { first: 'Descrição', second: 'Código' }, '@FAI_Tipo_Atendimento')
+
+    turno_data = get_path_json('ficha_atendimento_individual', 'turno')
+    store_json_cache(turno_data, { first: 'Descrição', second: 'Código' }, '@FAI_Turno')
+
+    pic_data = get_path_json('ficha_atendimento_individual', 'pic')
+    store_json_cache(pic_data, { first: 'Descrição', second: 'Código' }, '@FAI_PIC')
   end
 
   private

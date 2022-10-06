@@ -1,0 +1,90 @@
+[
+  {
+    "Código": "ABP009",
+    "Descrição": "Asma"
+  },
+  {
+    "Código": "ABP019",
+    "Descrição": "Dengue"
+  },
+  {
+    "Código": "ABP008",
+    "Descrição": "Desnutrição"
+  },
+  {
+    "Código": "ABP006",
+    "Descrição": "Diabetes"
+  },
+  {
+    "Código": "ABP010",
+    "Descrição": "DPOC"
+  },
+  {
+    "Código": "ABP020",
+    "Descrição": "DST"
+  },
+  {
+    "Código": "ABP018",
+    "Descrição": "Hanseníase"
+  },
+  {
+    "Código": "ABP005",
+    "Descrição": "Hipertensão Arterial"
+  },
+  {
+    "Código": "ABP007",
+    "Descrição": "Obesidade"
+  },
+  {
+    "Código": "ABP001",
+    "Descrição": "Pré-natal"
+  },
+  {
+    "Código": "ABP004",
+    "Descrição": "Puericultura"
+  },
+  {
+    "Código": "ABP002",
+    "Descrição": "Puerpério (até 42 dias)"
+  },
+  {
+    "Código": "ABP023",
+    "Descrição": "Rastreamento de Câncer de mama"
+  },
+  {
+    "Código": "ABP022",
+    "Descrição": "Rastreamento de Câncer do colo do útero"
+  },
+  {
+    "Código": "ABP024",
+    "Descrição": "Rastreamento de Risco cardiovascular"
+  },
+  {
+    "Código": "ABP015",
+    "Descrição": "Reabilitação"
+  },
+  {
+    "Código": "ABP014",
+    "Descrição": "Saúde Mental"
+  },
+  {
+    "Código": "ABP003",
+    "Descrição": "Saúde Sexual e Reprodutiva"
+  },
+  {
+    "Código": "ABP011",
+    "Descrição": "Tabagismo"
+  },
+  {
+    "Código": "ABP017",
+    "Descrição": "Tuberculose"
+  },
+  {
+    "Código": "ABP012",
+    "Descrição": "Usuário de álcool"
+  },
+  {
+    "Código": "ABP013",
+    "Descrição": "Usuário de outras drogas"
+  }
+]

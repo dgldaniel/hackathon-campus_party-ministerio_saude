@@ -1,0 +1,27 @@
+[
+  {
+    "Código": 1,
+    "Descrição": "Consulta agendada programada / Cuidado continuado",
+    "Observações": "-"
+  },
+  {
+    "Código": 2,
+    "Descrição": "Consulta agendada",
+    "Observações": "-"
+  },
+  {
+    "Código": 4,
+    "Descrição": "Escuta inicial / Orientação",
+    "Observações": "-"
+  },
+  {
+    "Código": 5,
+    "Descrição": "Consulta no dia",
+    "Observações": "-"
+  },
+  {
+    "Código": 6,
+    "Descrição": "Atendimento de urgência",
+    "Observações": "-"
+  }
+]

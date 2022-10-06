@@ -1,0 +1,22 @@
+[
+  {
+    "Código": 1,
+    "Descrição": "AD 1",
+    "Observações": "-"
+  },
+  {
+    "Código": 2,
+    "Descrição": "AD 2",
+    "Observações": "-"
+  },
+  {
+    "Código": 3,
+    "Descrição": "AD 3",
+    "Observações": "-"
+  },
+  {
+    "Código": 4,
+    "Descrição": "Inelegível",
+    "Observações": "Utilizado apenas na ficha de avaliação de elegibilidade"
+  }
+]

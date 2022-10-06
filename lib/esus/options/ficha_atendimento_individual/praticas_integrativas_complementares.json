@@ -1,0 +1,42 @@
+[
+  {
+    "Código": 1,
+    "Descrição": "Medicina tradicional chinesa",
+    "Observações": "-"
+  },
+  {
+    "Código": 2,
+    "Descrição": "Antroposofia aplicado a saúde",
+    "Observações": "-"
+  },
+  {
+    "Código": 3,
+    "Descrição": "Homeopatia",
+    "Observações": "-"
+  },
+  {
+    "Código": 4,
+    "Descrição": "Fitoterapia",
+    "Observações": "-"
+  },
+  {
+    "Código": 5,
+    "Descrição": "Termalismo / Crenoterapia",
+    "Observações": "-"
+  },
+  {
+    "Código": 6,
+    "Descrição": "Práticas corporais e mentais em PICS",
+    "Observações": "-"
+  },
+  {
+    "Código": 7,
+    "Descrição": "Técnicas manuais em PICS",
+    "Observações": "-"
+  },
+  {
+    "Código": 8,
+    "Descrição": "Outros",
+    "Observações": "-"
+  }
+]

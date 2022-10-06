@@ -10,120 +10,259 @@
     </div>
   <% end %>
   <div class="tab">
-    <div class="field">
-      <%= form.label :numeroProntuario %>
-      <%= form.text_field :numeroProntuario %>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :numeroProntuario %>
+          <%= form.text_field :numeroProntuario, class: 'form-control btn-pill', maxlength: 30 %>
+        </div>
+      </div>
     </div>
-    <div class="field">
-      <%= form.label :cnsCidadao %>
-      <%= form.text_field :cnsCidadao %>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :cnsCidadao %>
+          <%= form.text_field :cnsCidadao, class: 'form-control btn-pill', maxlength: 3 %>
+        </div>
+      </div>
     </div>
-    <div class="field">
-      <%= form.label :dataNascimento %>
-      <%= form.datetime_select :dataNascimento %>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :dataNascimento %>
+          <div class="input-group">
+            <%= form.text_field :dataNascimento, class: 'btn-pill datepicker-here form-control digits', 'data-language': "en", 'data-bs-original-title': 'data-bs-original-title', title: 'title' %>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="field">
-      <%= form.label :localDeAtendimento %>
-      <%= form.number_field :localDeAtendimento %>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :localDeAtendimento %>
+          <%= form.select :codigoIbgeMunicipioNascimento, @options[:local_atendimento], {}, { class: 'js-example-basic-single col-sm-12' } %>
+        </div>
+      </div>
     </div>
-    <div class="field">
-      <%= form.label :sexo %>
-      <%= form.number_field :sexo %>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :sexo %>
+          <%= form.collection_radio_buttons :sexo, @options[:sexo], :second, :first do |b| %>
+            <div class="d-block">
+              <%= b.radio_button %>
+              <%= b.label %>
+            </div>
+          <% end %>
+        </div>
+      </div>
     </div>
-    <div class="field">
-      <%= form.label :turno %>
-      <%= form.number_field :turno %>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :turno %>
+          <%= form.collection_radio_buttons :turno, @options[:turno], :second, :first do |b| %>
+            <div class="d-block">
+              <%= b.radio_button %>
+              <%= b.label %>
+            </div>
+          <% end %>
+        </div>
+      </div>
     </div>
-    <div class="field">
-      <%= form.label :tipoAtendimento %>
-      <%= form.number_field :tipoAtendimento %>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :tipoAtendimento %>
+          <%= form.collection_radio_buttons :tipoAtendimento, @options[:tipo_atendimento], :second, :first do |b| %>
+            <div class="d-block">
+              <%= b.radio_button %>
+              <%= b.label %>
+            </div>
+          <% end %>
+        </div>
+      </div>
     </div>
-    <div class="field">
-      <%= form.label :pesoAcompanhamentoNutricional %>
-      <%= form.text_field :pesoAcompanhamentoNutricional %>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :pesoAcompanhamentoNutricional %>
+          <%= form.number_field :pesoAcompanhamentoNutricional, class: 'form-control btn-pill', maxlength: 3 %>
+        </div>
+      </div>
     </div>
-    <div class="field">
-      <%= form.label :alturaAcompanhamentoNutricional %>
-      <%= form.text_field :alturaAcompanhamentoNutricional %>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :alturaAcompanhamentoNutricional %>
+          <%= form.number_field :alturaAcompanhamentoNutricional, class: 'form-control btn-pill', maxlength: 3 %>
+        </div>
+      </div>
     </div>
-    <div class="field">
-      <%= form.label :aleitamentoMaterno %>
-      <%= form.number_field :aleitamentoMaterno %>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :aleitamentoMaterno %>
+          <%= form.collection_radio_buttons :turno, @options[:aleitamento_materno], :second, :first do |b| %>
+            <div class="d-block">
+              <%= b.radio_button %>
+              <%= b.label %>
+            </div>
+          <% end %>
+        </div>
+      </div>
     </div>
-    <div class="field">
-      <%= form.label :dumDaGestante %>
-      <%= form.datetime_select :dumDaGestante %>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :dumDaGestante %>
+          <div class="input-group">
+            <%= form.text_field :dumDaGestante, class: 'btn-pill datepicker-here form-control digits', 'data-language': "en", 'data-bs-original-title': 'data-bs-original-title', title: 'title' %>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="field">
-      <%= form.label :idadeGestacional %>
-      <%= form.number_field :idadeGestacional %>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :idadeGestacional %>
+          <%= form.number_field :idadeGestacional, class: 'form-control btn-pill', maxlength: 3 %>
+        </div>
+      </div>
     </div>
-    <div class="field">
-      <%= form.label :atencaoDomiciliarModalidade %>
-      <%= form.number_field :atencaoDomiciliarModalidade %>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :atencaoDomiciliarModalidade %>
+          <%= form.collection_radio_buttons :atencaoDomiciliarModalidade, @options[:modalidade_ad], :second, :first do |b| %>
+            <div class="d-block">
+              <%= b.radio_button %>
+              <%= b.label %>
+            </div>
+          <% end %>
+        </div>
+      </div>
     </div>
-    <div class="field">
-      <%= form.label :vacinaEmDia %>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :examesSolicitados %>
+          <%= form.collection_check_boxes :examesSolicitados, @options[:lista_exame_solicitado], :second, :first do |b| %>
+            <div class="d-block">
+              <%= b.check_box %>
+              <%= b.label %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :examesAvaliados %>
+          <%= form.collection_check_boxes :examesAvaliados, @options[:lista_exame_solicitado], :second, :first do |b| %>
+            <div class="d-block">
+              <%= b.check_box %>
+              <%= b.label %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <div class="d-block">
+      <%= form.label :pic %>
+      <%= form.collection_radio_buttons :pic, @options[:pic], :second, :first do |b| %>
+        <div class="d-block">
+          <%= b.radio_button %>
+          <%= b.label %>
+        </div>
+      <% end %>
+    </div>
+    <div class="d-block">
       <%= form.check_box :vacinaEmDia %>
+      <%= form.label :vacinaEmDia %>
     </div>
-    <div class="field">
-      <%= form.label :ficouEmObservacao %>
-      <%= form.check_box :ficouEmObservacao %>
+    <div class="row">
+      <div class="col">
+        <div class="d-block">
+          <%= form.check_box :ficouEmObservacao %>
+          <%= form.label :ficouEmObservacao %>
+        </div>
+      </div>
     </div>
-    <div class="field">
-      <%= form.label :nasfs %>
-      <%= form.number_field :nasfs %>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :nasfs %>
+          <%= form.collection_radio_buttons :nasfs, @options[:nasf], :second, :first do |b| %>
+            <div class="d-block">
+              <%= b.radio_button %>
+              <%= b.label %>
+            </div>
+          <% end %>
+        </div>
+      </div>
     </div>
-    <div class="field">
-      <%= form.label :condutas %>
-      <%= form.text_field :condutas %>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :condutas %>
+          <%= form.collection_check_boxes :condutas, @options[:conduta_encaminhamento], :second, :first do |b| %>
+            <div class="d-block">
+              <%= b.check_box %>
+              <%= b.label %>
+            </div>
+          <% end %>
+        </div>
+      </div>
     </div>
-    <div class="field">
-      <%= form.label :stGravidezPlanejada %>
-      <%= form.check_box :stGravidezPlanejada %>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3" id='container-stGravidezPlanejada' style="display:none;">
+          <%= form.check_box :stGravidezPlanejada %>
+          <%= form.label :stGravidezPlanejada %>
+        </div>
+      </div>
     </div>
-    <div class="field">
-      <%= form.label :nuGestasPrevias %>
-      <%= form.number_field :nuGestasPrevias %>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :nuGestasPrevias %>
+          <%= form.number_field :nuGestasPrevias, class: 'form-control btn-pill', disabled: true %>
+        </div>
+      </div>
     </div>
-    <div class="field">
-      <%= form.label :nuPartos %>
-      <%= form.number_field :nuPartos %>
-    </div>
-    <div class="field">
-      <%= form.label :racionalidadeSaude %>
-      <%= form.number_field :racionalidadeSaude %>
-    </div>
-    <div class="field">
-      <%= form.label :perimetroCefalico %>
-      <%= form.text_field :perimetroCefalico %>
-    </div>
-    <div class="field">
-      <%= form.label :dataHoraInicialAtendimento %>
-      <%= form.datetime_select :dataHoraInicialAtendimento %>
-    </div>
-    <div class="field">
-      <%= form.label :dataHoraFinalAtendimento %>
-      <%= form.datetime_select :dataHoraFinalAtendimento %>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :nuPartos %>
+          <%= form.number_field :nuPartos, class: 'form-control btn-pill', disabled: true %>
+        </div>
+      </div>
     </div>
   </div>
   <div class="tab">
     <%= form.fields_for :problem_condition_evaluated do |field| %>
       <div class="field">
         <%= field.label :ciaps %>
-        <%= field.text_field :ciaps %>
+        <%= field.collection_check_boxes :ciaps, @options[:lista_ciap], :second, :first do |b| %>
+          <div class="d-block">
+            <%= b.check_box %>
+            <%= b.label %>
+          </div>
+        <% end %>
       </div>
       <div class="field">
         <%= field.label :outroCiap1 %>
-        <%= field.text_field :outroCiap1 %>
+        <%= field.select :outroCiap1, @options[:lista_ciap], {}, { class: 'js-example-basic-single col-sm-12' } %>
       </div>
       <div class="field">
         <%= field.label :cid10 %>
-        <%= field.text_field :cid10 %>
+        <%= field.select :cid10, @options[:lista_ciap], {}, { class: 'js-example-basic-single col-sm-12' } %>
       </div>
       <div class="field">
         <%= field.label :cid10_2 %>
-        <%= field.text_field :cid10_2 %>
+        <%= field.select :cid10_2, @options[:lista_ciap], {}, { class: 'js-example-basic-single col-sm-12' } %>
       </div>
     <% end %>
   </div>
@@ -137,36 +276,6 @@
       <br>
     </div>
   </div>
-  <div class="tab" id="exam_results">
-    <%= form.fields_for :exam_results do |exam_result| %>
-      <%= render 'exam_result_fields', f: exam_result %>
-    <% end %>
-    <div class="links">
-      <%= link_to_add_association 'add exam_result', form, :exam_results %>
-      <br>
-      <br>
-    </div>
-  </div>
-  <div class="tab" id="medicines">
-    <%= form.fields_for :medicines do |medicine| %>
-      <%= render 'medicine_fields', f: medicine %>
-    <% end %>
-    <div class="links">
-      <%= link_to_add_association 'add medicine', form, :medicines %>
-      <br>
-      <br>
-    </div>
-  </div>
-  <div class="tab" id="forwardings">
-    <%= form.fields_for :forwardings do |forwarding| %>
-      <%= render 'forwarding_fields', f: forwarding %>
-    <% end %>
-    <div class="links">
-      <%= link_to_add_association 'add forwarding', form, :forwardings %>
-      <br>
-      <br>
-    </div>
-  </div>
   <div class="text-end btn-mb">
     <button class="btn btn-warning" id="prevBtn" type="button">Anterior</button>
     <button class="btn btn-primary" id="nextBtn" type="button">Próximo</button>
@@ -174,9 +283,6 @@
   </div>
   <!-- Circles which indicates the steps of the form:-->
   <div class="text-center">
-    <span class="step"></span>
-    <span class="step"></span>
-    <span class="step"></span>
     <span class="step"></span>
     <span class="step"></span>
     <span class="step"></span>

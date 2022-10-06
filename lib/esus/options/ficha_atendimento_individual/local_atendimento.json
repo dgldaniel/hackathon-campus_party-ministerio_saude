@@ -1,0 +1,77 @@
+[
+  {
+    "Código": 1,
+    "Descrição": "UBS",
+    "Observações": "-"
+  },
+  {
+    "Código": 2,
+    "Descrição": "Unidade móvel",
+    "Observações": "-"
+  },
+  {
+    "Código": 3,
+    "Descrição": "Rua",
+    "Observações": "-"
+  },
+  {
+    "Código": 4,
+    "Descrição": "Domicílio",
+    "Observações": "-"
+  },
+  {
+    "Código": 5,
+    "Descrição": "Escola / Creche",
+    "Observações": "-"
+  },
+  {
+    "Código": 6,
+    "Descrição": "Outros",
+    "Observações": "-"
+  },
+  {
+    "Código": 7,
+    "Descrição": "Polo (academia da saúde)",
+    "Observações": "-"
+  },
+  {
+    "Código": 8,
+    "Descrição": "Instituição / Abrigo",
+    "Observações": "-"
+  },
+  {
+    "Código": 9,
+    "Descrição": "Unidade prisional ou congêneres",
+    "Observações": "-"
+  },
+  {
+    "Código": 10,
+    "Descrição": "Unidade socioeducativa",
+    "Observações": "-"
+  },
+  {
+    "Código": 11,
+    "Descrição": "Hospital",
+    "Observações": "Utilizado apenas na ficha de atendimento domiciliar"
+  },
+  {
+    "Código": 12,
+    "Descrição": "Unidade de pronto atendimento",
+    "Observações": "Utilizado apenas na ficha de atendimento domiciliar"
+  },
+  {
+    "Código": 13,
+    "Descrição": "CACON / UNACON",
+    "Observações": "Utilizado apenas na ficha de atendimento domiciliar"
+  },
+  {
+    "Código": 14,
+    "Descrição": "Hospital SOS Urgência / Emergência",
+    "Observações": "Utilizado apenas na ficha de atendimento domiciliar"
+  },
+  {
+    "Código": 15,
+    "Descrição": "Hospital SOS demais setores",
+    "Observações": "Utilizado apenas na ficha de atendimento domiciliar"
+  }
+]

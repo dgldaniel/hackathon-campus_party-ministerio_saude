@@ -1,0 +1,17 @@
+[
+  {
+    "Código": 1,
+    "Descrição": "Avaliação / Diagnóstico",
+    "Observações": "-"
+  },
+  {
+    "Código": 2,
+    "Descrição": "Procedimentos clínicos terapeuticos",
+    "Observações": "-"
+  },
+  {
+    "Código": 3,
+    "Descrição": "Prescrição terapêutica",
+    "Observações": "-"
+  }
+]

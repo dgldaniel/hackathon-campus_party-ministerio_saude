@@ -1,0 +1,22 @@
+[
+  {
+    "Código": 1,
+    "Descrição": "Exclusivo",
+    "Observações": "-"
+  },
+  {
+    "Código": 2,
+    "Descrição": "Predominante",
+    "Observações": "-"
+  },
+  {
+    "Código": 3,
+    "Descrição": "Complementado",
+    "Observações": "-"
+  },
+  {
+    "Código": 4,
+    "Descrição": "Inexistente",
+    "Observações": "-"
+  }
+]

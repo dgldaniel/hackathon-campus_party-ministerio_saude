@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_07_25_222725) do
+ActiveRecord::Schema.define(version: 2022_10_06_000054) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -187,6 +187,9 @@ ActiveRecord::Schema.define(version: 2022_07_25_222725) do
     t.datetime "dataHoraFinalAtendimento"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "pic"
+    t.string "examesSolicitados", default: [], array: true
+    t.string "examesAvaliados", default: [], array: true
   end
 
   create_table "individual_registrations", force: :cascade do |t|

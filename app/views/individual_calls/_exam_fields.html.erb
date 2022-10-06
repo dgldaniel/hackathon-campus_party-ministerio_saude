@@ -1,17 +1,20 @@
 <div class="nested-fields">
-  <h3>Exams</h3>
-
+  <h3>Outros Sia</h3>
   <div class="field">
     <%= f.label :codigoExame %>
-    <%= f.text_field :codigoExame %>
+    <%= f.text_field :codigoExame, class: 'form-control btn-pill' %>
   </div>
-
   <div class="field">
     <%= f.label :solicitadoAvaliado %>
-    <%= f.text_field :solicitadoAvaliado %>
+    <%= f.collection_check_boxes :solicitadoAvaliado, @options[:situacao_exame], :second, :first do |b| %>
+      <div class="d-block">
+        <%= b.check_box %>
+        <%= b.label %>
+      </div>
+    <% end %>
   </div>
-
   <%= link_to_remove_association "remove exam", f %>
-
-  <br><br><br>
+  <br>
+  <br>
+  <br>
 </div>

@@ -1,0 +1,94 @@
+[
+  {
+    "Código": "ABEX002",
+    "Descrição": "Colesterol total"
+  },
+  {
+    "Código": "ABEX003",
+    "Descrição": "Creatinina"
+  },
+  {
+    "Código": "ABEX027",
+    "Descrição": "EAS / EQU"
+  },
+  {
+    "Código": "ABEX004",
+    "Descrição": "Eletrocardiograma"
+  },
+  {
+    "Código": "ABEX030",
+    "Descrição": "Eletroforese de Hemoglobina"
+  },
+  {
+    "Código": "ABEX005",
+    "Descrição": "Espirometria"
+  },
+  {
+    "Código": "ABEX006",
+    "Descrição": "Exame de escarro"
+  },
+  {
+    "Código": "ABEX026",
+    "Descrição": "Glicemia"
+  },
+  {
+    "Código": "ABEX007",
+    "Descrição": "HDL"
+  },
+  {
+    "Código": "ABEX008",
+    "Descrição": "Hemoglobina glicada"
+  },
+  {
+    "Código": "ABEX028",
+    "Descrição": "Hemograma"
+  },
+  {
+    "Código": "ABEX009",
+    "Descrição": "LDL"
+  },
+  {
+    "Código": "ABEX013",
+    "Descrição": "Retinografia/Fundo de olho com oftamologista"
+  },
+  {
+    "Código": "ABEX019",
+    "Descrição": "Sorologia de Sifilis (VDRL)"
+  },
+  {
+    "Código": "ABEX016",
+    "Descrição": "Sorologia para Dengue"
+  },
+  {
+    "Código": "ABEX018",
+    "Descrição": "Sorologia para HIV"
+  },
+  {
+    "Código": "ABEX031",
+    "Descrição": "Teste indireto de antiglobulina humana (TIA)"
+  },
+  {
+    "Código": "ABEX020",
+    "Descrição": "Teste da orelhinha"
+  },
+  {
+    "Código": "ABEX023",
+    "Descrição": "Teste de gravidez"
+  },
+  {
+    "Código": "ABEX022",
+    "Descrição": "Teste do olhinho"
+  },
+  {
+    "Código": "ABEX021",
+    "Descrição": "Teste do pezinho"
+  },
+  {
+    "Código": "ABEX024",
+    "Descrição": "Ultrassonografia obstétrica"
+  },
+  {
+    "Código": "ABEX029",
+    "Descrição": "Urocultura"
+  }
+]

@@ -1,5 +1,6 @@
+# frozen_string_literal: true
 class IndividualCallsController < ApplicationController
-  before_action :set_individual_call, only: %i[ show edit update destroy ]
+  before_action :set_individual_call, only: %i[show edit update destroy]
   before_action :authenticate_user!
 
   # GET /individual_calls or /individual_calls.json
@@ -10,8 +11,8 @@ class IndividualCallsController < ApplicationController
   # GET /individual_calls/1 or /individual_calls/1.json
   def show
     respond_to do |format|
-      format.html { render :show, status: :ok }
-      format.xml { render :show }
+      format.html { render(:show, status: :ok) }
+      format.xml { render(:show) }
     end
   end
 
@@ -24,10 +25,13 @@ class IndividualCallsController < ApplicationController
     @individual_call.exam_results.build
     @individual_call.medicines.build
     @individual_call.forwardings.build
+
+    @options = IndividualCall.build_options
   end
 
   # GET /individual_calls/1/edit
   def edit
+    @options = IndividualCall.build_options
   end
 
   # POST /individual_calls or /individual_calls.json
@@ -36,11 +40,11 @@ class IndividualCallsController < ApplicationController
 
     respond_to do |format|
       if @individual_call.save
-        format.html { redirect_to individual_call_url(@individual_call), notice: "Individual call was successfully created." }
-        format.json { render :show, status: :created, location: @individual_call }
+        format.html { redirect_to(individual_call_url(@individual_call), notice: "Individual call was successfully created.") }
+        format.json { render(:show, status: :created, location: @individual_call) }
       else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @individual_call.errors, status: :unprocessable_entity }
+        format.html { render(:new, status: :unprocessable_entity) }
+        format.json { render(json: @individual_call.errors, status: :unprocessable_entity) }
       end
     end
   end
@@ -49,11 +53,11 @@ class IndividualCallsController < ApplicationController
   def update
     respond_to do |format|
       if @individual_call.update(individual_call_params)
-        format.html { redirect_to individual_call_url(@individual_call), notice: "Individual call was successfully updated." }
-        format.json { render :show, status: :ok, location: @individual_call }
+        format.html { redirect_to(individual_call_url(@individual_call), notice: "Individual call was successfully updated.") }
+        format.json { render(:show, status: :ok, location: @individual_call) }
       else
-        format.html { render :edit, status: :unprocessable_entity }
-        format.json { render json: @individual_call.errors, status: :unprocessable_entity }
+        format.html { render(:edit, status: :unprocessable_entity) }
+        format.json { render(json: @individual_call.errors, status: :unprocessable_entity) }
       end
     end
   end
@@ -63,12 +67,13 @@ class IndividualCallsController < ApplicationController
     @individual_call.destroy
 
     respond_to do |format|
-      format.html { redirect_to individual_calls_url, notice: "Individual call was successfully destroyed." }
-      format.json { head :no_content }
+      format.html { redirect_to(individual_calls_url, notice: "Individual call was successfully destroyed.") }
+      format.json { head(:no_content) }
     end
   end
 
   private
+
     # Use callbacks to share common setup or constraints between actions.
     def set_individual_call
       @individual_call = IndividualCall.find(params[:id])
@@ -107,13 +112,13 @@ class IndividualCallsController < ApplicationController
                       :outroCiap1,
                       :cid10,
                       :cid10_2,
-                      :_destroy
+                      :_destroy,
                     ],
                     exams_attributes: [
                       :id,
                       :codigoExame,
                       :solicitadoAvaliado,
-                      :_destroy
+                      :_destroy,
                     ],
                     exam_results_attributes: [
                       :id,
@@ -140,15 +145,15 @@ class IndividualCallsController < ApplicationController
                       :duracaoTratamento,
                       :duracaoTratamentoMedida,
                       :quantidadeReceitada,
-                      :_destroy
+                      :_destroy,
                     ],
                     forwardings_attributes: [
                       :id,
                       :especialidade,
                       :hipoteseDiagnosticoCid10,
                       :classificacaoRisco,
-                      :_destroy
+                      :_destroy,
                     ]
-                    )
+                   )
     end
 end

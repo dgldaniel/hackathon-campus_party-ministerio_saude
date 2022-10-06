@@ -1,0 +1,62 @@
+[
+  {
+    "Código": 1,
+    "Descrição": "Retorno para consulta agendada",
+    "Observações": "-"
+  },
+  {
+    "Código": 2,
+    "Descrição": "Retorno para cuidado continuado / programado",
+    "Observações": "-"
+  },
+  {
+    "Código": 12,
+    "Descrição": "Agendamento para grupos",
+    "Observações": "-"
+  },
+  {
+    "Código": 3,
+    "Descrição": "Agendamento para NASF",
+    "Observações": "-"
+  },
+  {
+    "Código": 9,
+    "Descrição": "Alta do episódio",
+    "Observações": "-"
+  },
+  {
+    "Código": 11,
+    "Descrição": "Encaminhamento interno no dia",
+    "Observações": "-"
+  },
+  {
+    "Código": 4,
+    "Descrição": "Encaminhamento para serviço especializado",
+    "Observações": "-"
+  },
+  {
+    "Código": 5,
+    "Descrição": "Encaminhamento para CAPS",
+    "Observações": "-"
+  },
+  {
+    "Código": 6,
+    "Descrição": "Encaminhamento para internação hospitalar",
+    "Observações": "-"
+  },
+  {
+    "Código": 7,
+    "Descrição": "Encaminhamento para urgência",
+    "Observações": "-"
+  },
+  {
+    "Código": 8,
+    "Descrição": "Encaminhamento para serviço de atenção domiciliar",
+    "Observações": "-"
+  },
+  {
+    "Código": 10,
+    "Descrição": "Encaminhamento intersetorial",
+    "Observações": "-"
+  }
+]
