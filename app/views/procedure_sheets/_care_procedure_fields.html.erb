@@ -1,62 +1,95 @@
 <div class="nested-fields">
-  <div class="field">
-    <%= f.label :numProntuario %>
-    <%= f.text_field :numProntuario %>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :numProntuario %>
+        <%= f.text_field :numProntuario, class: 'form-control btn-pill' %>
+      </div>
+    </div>
   </div>
-
-  <div class="field">
-    <%= f.label :cnsCidadao %>
-    <%= f.text_field :cnsCidadao %>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :cnsCidadao %>
+        <%= f.text_field :cnsCidadao, class: 'form-control btn-pill' %>
+      </div>
+    </div>
   </div>
-
-  <div class="field">
-    <%= f.label :dtNascimento %>
-    <%= f.text_field :dtNascimento %>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :dtNascimento %>
+        <div class="input-group">
+          <%= f.text_field :dtNascimento, class: 'btn-pill datepicker-here form-control digits', 'data-language': "en", 'data-bs-original-title': 'data-bs-original-title', title: 'title' %>
+        </div>
+      </div>
+    </div>
   </div>
-
-  <div class="field">
-    <%= f.label :sexo %>
-    <%= f.text_field :sexo %>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :sexo %>
+        <%= f.collection_radio_buttons :sexo, @options[:sexo], :second, :first do |b| %>
+          <div class="d-block">
+            <%= b.radio_button %>
+            <%= b.label %>
+          </div>
+        <% end %>
+      </div>
+    </div>
   </div>
-
-  <div class="field">
-    <%= f.label :localAtendimento %>
-    <%= f.text_field :localAtendimento %>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :localAtendimento %>
+        <%= f.select :localAtendimento, @options[:local_atendimento], {}, { class: 'js-example-basic-single col-sm-12' } %>
+      </div>
+    </div>
   </div>
-
-  <div class="field">
-    <%= f.label :turn %>
-    <%= f.text_field :turn %>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :turn %>
+        <%= f.collection_radio_buttons :turn, @options[:turno], :second, :first do |b| %>
+          <div class="d-block">
+            <%= b.radio_button %>
+            <%= b.label %>
+          </div>
+        <% end %>
+      </div>
+    </div>
   </div>
-
-  <div class="field">
-    <%= f.label :statusEscutaInicialOrientacao %>
-    <%= f.text_field :statusEscutaInicialOrientacao %>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :statusEscutaInicialOrientacao %>
+        <%= f.text_field :statusEscutaInicialOrientacao, class: 'form-control btn-pill' %>
+      </div>
+    </div>
   </div>
-
-  <div class="field">
-    <%= f.label :dataHoraInicialAtendimento %>
-    <%= f.text_field :dataHoraInicialAtendimento %>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :procedimentos %>
+        <%= f.collection_check_boxes :procedimentos, @options[:lista_procedimentos], :second, :first do |b| %>
+          <div class="d-block">
+            <%= b.check_box %>
+            <%= b.label %>
+          </div>
+        <% end %>
+      </div>
+    </div>
   </div>
-
-
-  <div class="field">
-    <%= f.label :dataHoraFinalAtendimento %>
-    <%= f.text_field :dataHoraFinalAtendimento %>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :outrosSiaProcedimentos %>
+        <%= f.text_field :outrosSiaProcedimentos, class: 'form-control btn-pill' %>
+      </div>
+    </div>
   </div>
-
-   <div class="field">
-    <%= f.label :pesoAcompanhamentoNutricional %>
-    <%= f.text_field :pesoAcompanhamentoNutricional %>
-  </div>
-
-
-   <div class="field">
-    <%= f.label :alturaAcompanhamentoNutricional %>
-    <%= f.text_field :alturaAcompanhamentoNutricional %>
-  </div>
-
   <%= link_to_remove_association "remove care procedures", f %>
-
-  <br><br><br>
+  <br>
+  <br>
+  <br>
 </div>

@@ -102,6 +102,11 @@ namespace :store_records_on_cache do
 
     pic_data = get_path_json('ficha_atendimento_individual', 'pic')
     store_json_cache(pic_data, { first: 'Descrição', second: 'Código' }, '@FAI_PIC')
+
+    # Ficha de Procedimentos
+
+    lista_procedimentos_data = get_path_json('ficha_procedimentos', 'lista_procedimentos')
+    store_json_cache(lista_procedimentos_data, { first: 'Descrição', second: 'Código' }, '@FP_Lista_Procedimentos')
   end
 
   private

@@ -1,0 +1,130 @@
+[
+  {
+    "Código": "ABPG001",
+    "Descrição": "Acupuntura com inserção de agulhas"
+  },
+  {
+    "Código": "ABPG002",
+    "Descrição": "Administração de vitamina A"
+  },
+  {
+    "Código": "ABPG003",
+    "Descrição": "Cateterismo vesical de alívio"
+  },
+  {
+    "Código": "ABPG004",
+    "Descrição": "Cauterização química de pequenas lesões"
+  },
+  {
+    "Código": "ABPG005",
+    "Descrição": "Cirurgia de unha (cantoplastia)"
+  },
+  {
+    "Código": "ABPG006",
+    "Descrição": "Cuidado de estomas"
+  },
+  {
+    "Código": "ABPG007",
+    "Descrição": "Curativo especial"
+  },
+  {
+    "Código": "ABPG008",
+    "Descrição": "Drenagem de abscesso"
+  },
+  {
+    "Código": "ABEX004",
+    "Descrição": "Eletrocardiograma"
+  },
+  {
+    "Código": "ABPG010",
+    "Descrição": "Coleta de citopatológico de colo uterino"
+  },
+  {
+    "Código": "ABPG011",
+    "Descrição": "Exame do pé diabético"
+  },
+  {
+    "Código": "ABPG012",
+    "Descrição": "Exérese / Biópsia / Punção de tumores superficiais de pele"
+  },
+  {
+    "Código": "ABPG013",
+    "Descrição": "Fundoscopia (exame de fundo de olho)"
+  },
+  {
+    "Código": "ABPG014",
+    "Descrição": "Infiltração em cavidade sinovial"
+  },
+  {
+    "Código": "ABPG015",
+    "Descrição": "Remoção de corpo estranho da cavidade auditiva e nasal"
+  },
+  {
+    "Código": "ABPG016",
+    "Descrição": "Remoção de corpo estranho subcutâneo"
+  },
+  {
+    "Código": "ABPG017",
+    "Descrição": "Retirada de cerume"
+  },
+  {
+    "Código": "ABPG018",
+    "Descrição": "Retirada de pontos de cirurgias"
+  },
+  {
+    "Código": "ABPG019",
+    "Descrição": "Sutura simples"
+  },
+  {
+    "Código": "ABPG020",
+    "Descrição": "Triagem oftalmológica"
+  },
+  {
+    "Código": "ABPG021",
+    "Descrição": "Tamponamento de epistaxe"
+  },
+  {
+    "Código": "ABPG022",
+    "Descrição": "Teste rápido de gravidez"
+  },
+  {
+    "Código": "ABPG040",
+    "Descrição": "Teste rápido para dosagem de proteinúria"
+  },
+  {
+    "Código": "ABPG024",
+    "Descrição": "Teste rápido para HIV"
+  },
+  {
+    "Código": "ABPG025",
+    "Descrição": "Teste rápido para hepatite C"
+  },
+  {
+    "Código": "ABPG026",
+    "Descrição": "Teste rápido para sífilis"
+  },
+  {
+    "Código": "ABPG027",
+    "Descrição": "Administração de medicamentos via oral"
+  },
+  {
+    "Código": "ABPG028",
+    "Descrição": "Administração de medicamentos via intramuscular"
+  },
+  {
+    "Código": "ABPG029",
+    "Descrição": "Administração de medicamentos via endovenosa"
+  },
+  {
+    "Código": "ABPG030",
+    "Descrição": "Administração de medicamentos via inalação / nebulização"
+  },
+  {
+    "Código": "ABPG031",
+    "Descrição": "Administração de medicamentos via tópica"
+  },
+  {
+    "Código": "ABPG032",
+    "Descrição": "Administração de penincilina para tratamento de sífilis"
+  }
+]

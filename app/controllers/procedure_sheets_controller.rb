@@ -1,5 +1,6 @@
+# frozen_string_literal: true
 class ProcedureSheetsController < ApplicationController
-  before_action :set_procedure_sheet, only: %i[ show edit update destroy ]
+  before_action :set_procedure_sheet, only: %i[show edit update destroy]
   before_action :authenticate_user!
 
   # GET /procedure_sheets or /procedure_sheets.json
@@ -10,8 +11,8 @@ class ProcedureSheetsController < ApplicationController
   # GET /procedure_sheets/1 or /procedure_sheets/1.json
   def show
     respond_to do |format|
-      format.html { render :show, status: :ok }
-      format.xml { render :show }
+      format.html { render(:show, status: :ok) }
+      format.xml { render(:show) }
     end
   end
 
@@ -19,10 +20,13 @@ class ProcedureSheetsController < ApplicationController
   def new
     @procedure_sheet = ProcedureSheet.new
     @care_procedure = @procedure_sheet.care_procedures.build
+
+    @options = ProcedureSheet.build_options
   end
 
   # GET /procedure_sheets/1/edit
   def edit
+    @options = ProcedureSheet.build_options
   end
 
   # POST /procedure_sheets or /procedure_sheets.json
@@ -31,11 +35,11 @@ class ProcedureSheetsController < ApplicationController
 
     respond_to do |format|
       if @procedure_sheet.save
-        format.html { redirect_to procedure_sheet_url(@procedure_sheet), notice: "Procedure sheet was successfully created." }
-        format.json { render :show, status: :created, location: @procedure_sheet }
+        format.html { redirect_to(procedure_sheet_url(@procedure_sheet), notice: "Procedure sheet was successfully created.") }
+        format.json { render(:show, status: :created, location: @procedure_sheet) }
       else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @procedure_sheet.errors, status: :unprocessable_entity }
+        format.html { render(:new, status: :unprocessable_entity) }
+        format.json { render(json: @procedure_sheet.errors, status: :unprocessable_entity) }
       end
     end
   end
@@ -44,11 +48,11 @@ class ProcedureSheetsController < ApplicationController
   def update
     respond_to do |format|
       if @procedure_sheet.update(procedure_sheet_params)
-        format.html { redirect_to procedure_sheet_url(@procedure_sheet), notice: "Procedure sheet was successfully updated." }
-        format.json { render :show, status: :ok, location: @procedure_sheet }
+        format.html { redirect_to(procedure_sheet_url(@procedure_sheet), notice: "Procedure sheet was successfully updated.") }
+        format.json { render(:show, status: :ok, location: @procedure_sheet) }
       else
-        format.html { render :edit, status: :unprocessable_entity }
-        format.json { render json: @procedure_sheet.errors, status: :unprocessable_entity }
+        format.html { render(:edit, status: :unprocessable_entity) }
+        format.json { render(json: @procedure_sheet.errors, status: :unprocessable_entity) }
       end
     end
   end
@@ -58,8 +62,8 @@ class ProcedureSheetsController < ApplicationController
     @procedure_sheet.destroy
 
     respond_to do |format|
-      format.html { redirect_to procedure_sheets_url, notice: "Procedure sheet was successfully destroyed." }
-      format.json { head :no_content }
+      format.html { redirect_to(procedure_sheets_url, notice: "Procedure sheet was successfully destroyed.") }
+      format.json { head(:no_content) }
     end
   end
 
@@ -76,6 +80,7 @@ class ProcedureSheetsController < ApplicationController
   end
 
   private
+
     # Use callbacks to share common setup or constraints between actions.
     def set_procedure_sheet
       @procedure_sheet = ProcedureSheet.find(params[:id])
@@ -108,8 +113,8 @@ class ProcedureSheetsController < ApplicationController
                       :dataHoraFinalAtendimento,
                       :pesoAcompanhamentoNutricional,
                       :alturaAcompanhamentoNutricional,
-                      :_destroy
+                      :_destroy,
                     ]
-                    )
+                   )
     end
 end
