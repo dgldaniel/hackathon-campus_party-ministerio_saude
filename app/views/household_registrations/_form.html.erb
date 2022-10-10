@@ -1,0 +1,153 @@
+<%= form_with(model: household_registration) do |form| %>
+  <% if household_registration.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(household_registration.errors.count, "error") %> prohibited this household_registration from being saved:</h2>
+      <ul>
+        <% household_registration.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div id="families">
+    <%= form.fields_for :families do |family| %>
+      <%= render 'family_fields', f: family %>
+    <% end %>
+    <div class="links">
+      <%= link_to_add_association 'add family', form, :families %>
+      <br>
+      <br>
+    </div>
+  </div>
+  <div class="field">
+    <%= form.label :animaisNoDomicilio %>
+    <%= form.text_field :animaisNoDomicilio %>
+  </div>
+  <div class="field">
+    <%= form.label :fichaAtualizada %>
+    <%= form.check_box :fichaAtualizada %>
+  </div>
+  <div class="field">
+    <%= form.label :quantosAnimaisNoDomicilio %>
+    <%= form.text_field :quantosAnimaisNoDomicilio %>
+  </div>
+  <div class="field">
+    <%= form.label :stAnimaisNoDomicilio %>
+    <%= form.check_box :stAnimaisNoDomicilio %>
+  </div>
+  <div class="field">
+    <%= form.label :statusTermoRecusaCadatroDomiciliarAtencaoBasica %>
+    <%= form.text_field :statusTermoRecusaCadatroDomiciliarAtencaoBasica %>
+  </div>
+  <div class="field">
+    <%= form.label :tpCdsOrigem %>
+    <%= form.number_field :tpCdsOrigem %>
+  </div>
+  <div class="field">
+    <%= form.label :uuid %>
+    <%= form.text_field :uuid %>
+  </div>
+  <div class="field">
+    <%= form.label :uuidFichaOriginadora %>
+    <%= form.text_field :uuidFichaOriginadora %>
+  </div>
+  <div class="field">
+    <%= form.label :bairro %>
+    <%= form.text_field :bairro %>
+  </div>
+  <div class="field">
+    <%= form.label :cep %>
+    <%= form.text_field :cep %>
+  </div>
+  <div class="field">
+    <%= form.label :codigoIbgeMunicipio %>
+    <%= form.text_field :codigoIbgeMunicipio %>
+  </div>
+  <div class="field">
+    <%= form.label :complemento %>
+    <%= form.text_field :complemento %>
+  </div>
+  <div class="field">
+    <%= form.label :nomeLogradouro %>
+    <%= form.text_field :nomeLogradouro %>
+  </div>
+  <div class="field">
+    <%= form.label :numero %>
+    <%= form.text_field :numero %>
+  </div>
+  <div class="field">
+    <%= form.label :numeroDneUf %>
+    <%= form.text_field :numeroDneUf %>
+  </div>
+  <div class="field">
+    <%= form.label :telReferencial %>
+    <%= form.text_field :telReferencial %>
+  </div>
+  <div class="field">
+    <%= form.label :telResidencial %>
+    <%= form.text_field :telResidencial %>
+  </div>
+  <div class="field">
+    <%= form.label :tipoLogradouroNumeroDne %>
+    <%= form.text_field :tipoLogradouroNumeroDne %>
+  </div>
+  <div class="field">
+    <%= form.label :stSemNumero %>
+    <%= form.check_box :stSemNumero %>
+  </div>
+  <div class="field">
+    <%= form.label :abastecimentoAgua %>
+    <%= form.number_field :abastecimentoAgua %>
+  </div>
+  <div class="field">
+    <%= form.label :areaProducaoRural %>
+    <%= form.number_field :areaProducaoRural %>
+  </div>
+  <div class="field">
+    <%= form.label :destinoLixo %>
+    <%= form.number_field :destinoLixo %>
+  </div>
+  <div class="field">
+    <%= form.label :formaEscoamentoBanheiro %>
+    <%= form.number_field :formaEscoamentoBanheiro %>
+  </div>
+  <div class="field">
+    <%= form.label :localizacao %>
+    <%= form.number_field :localizacao %>
+  </div>
+  <div class="field">
+    <%= form.label :materialPredominanteParedesExtDomicilio %>
+    <%= form.number_field :materialPredominanteParedesExtDomicilio %>
+  </div>
+  <div class="field">
+    <%= form.label :nuComodos %>
+    <%= form.text_field :nuComodos %>
+  </div>
+  <div class="field">
+    <%= form.label :nuMoradores %>
+    <%= form.number_field :nuMoradores %>
+  </div>
+  <div class="field">
+    <%= form.label :situacaoMoradiaPosseTerra %>
+    <%= form.number_field :situacaoMoradiaPosseTerra %>
+  </div>
+  <div class="field">
+    <%= form.label :stDiponibilidadeEnergiaeletrica %>
+    <%= form.check_box :stDiponibilidadeEnergiaeletrica %>
+  </div>
+  <div class="field">
+    <%= form.label :tipoAcessoDomicilio %>
+    <%= form.number_field :tipoAcessoDomicilio %>
+  </div>
+  <div class="field">
+    <%= form.label :tipoDomicilio %>
+    <%= form.number_field :tipoDomicilio %>
+  </div>
+  <div class="field">
+    <%= form.label :tratamentoAguaDomicilio %>
+    <%= form.number_field :tratamentoAguaDomicilio %>
+  </div>
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

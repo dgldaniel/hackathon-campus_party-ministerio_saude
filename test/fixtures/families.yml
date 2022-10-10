@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  dataNascimentoResponsavel: 2022-10-10 19:16:18
+  numeroCnsResponsavel: MyString
+  numeroMembrosFamilia: 1
+  numeroProntuario: MyString
+  rendaFamiliar: 1
+  resideDesde: 2022-10-10 19:16:18
+  stMudanca: false
+  references: 
+
+two:
+  dataNascimentoResponsavel: 2022-10-10 19:16:18
+  numeroCnsResponsavel: MyString
+  numeroMembrosFamilia: 1
+  numeroProntuario: MyString
+  rendaFamiliar: 1
+  resideDesde: 2022-10-10 19:16:18
+  stMudanca: false
+  references: 

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_10_06_180546) do
+ActiveRecord::Schema.define(version: 2022_10_10_191618) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -151,6 +151,20 @@ ActiveRecord::Schema.define(version: 2022_10_06_180546) do
     t.index ["individual_call_id"], name: "index_exams_on_individual_call_id"
   end
 
+  create_table "families", force: :cascade do |t|
+    t.datetime "dataNascimentoResponsavel"
+    t.string "numeroCnsResponsavel"
+    t.integer "numeroMembrosFamilia"
+    t.string "numeroProntuario"
+    t.integer "rendaFamiliar"
+    t.datetime "resideDesde"
+    t.boolean "stMudanca"
+    t.bigint "household_registration_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["household_registration_id"], name: "index_families_on_household_registration_id"
+  end
+
   create_table "forwardings", force: :cascade do |t|
     t.integer "especialidade"
     t.string "hipoteseDiagnosticoCid10"
@@ -159,6 +173,43 @@ ActiveRecord::Schema.define(version: 2022_10_06_180546) do
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "individual_call_id"
     t.index ["individual_call_id"], name: "index_forwardings_on_individual_call_id"
+  end
+
+  create_table "household_registrations", force: :cascade do |t|
+    t.integer "animaisNoDomicilio", default: [], array: true
+    t.boolean "fichaAtualizada"
+    t.string "quantosAnimaisNoDomicilio"
+    t.boolean "stAnimaisNoDomicilio"
+    t.string "statusTermoRecusaCadatroDomiciliarAtencaoBasica"
+    t.integer "tpCdsOrigem"
+    t.uuid "uuid"
+    t.uuid "uuidFichaOriginadora"
+    t.string "bairro"
+    t.string "cep"
+    t.string "codigoIbgeMunicipio"
+    t.string "complemento"
+    t.string "nomeLogradouro"
+    t.string "numero"
+    t.string "numeroDneUf"
+    t.string "telReferencial"
+    t.string "telResidencial"
+    t.string "tipoLogradouroNumeroDne"
+    t.boolean "stSemNumero"
+    t.integer "abastecimentoAgua"
+    t.integer "areaProducaoRural"
+    t.integer "destinoLixo"
+    t.integer "formaEscoamentoBanheiro"
+    t.integer "localizacao"
+    t.integer "materialPredominanteParedesExtDomicilio"
+    t.string "nuComodos"
+    t.integer "nuMoradores"
+    t.integer "situacaoMoradiaPosseTerra"
+    t.boolean "stDiponibilidadeEnergiaeletrica"
+    t.integer "tipoAcessoDomicilio"
+    t.integer "tipoDomicilio"
+    t.integer "tratamentoAguaDomicilio"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "individual_calls", force: :cascade do |t|
@@ -426,5 +477,6 @@ ActiveRecord::Schema.define(version: 2022_10_06_180546) do
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
   add_foreign_key "collective_calls", "participants", column: "participants_id"
   add_foreign_key "collective_calls", "professionals", column: "professionals_id"
+  add_foreign_key "families", "household_registrations"
   add_foreign_key "patients", "doctors"
 end

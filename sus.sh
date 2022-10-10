@@ -269,3 +269,46 @@ numTotalMedicaoAltura:integer \
 numTotalMedicaoPeso:integer
 CareProcedure:references
 
+docker-compose exec app bundle exec rails g scaffold HouseholdRegistration \
+animaisNoDomicilio:array \
+fichaAtualizada:boolean \
+quantosAnimaisNoDomicilio \
+stAnimaisNoDomicilio:boolean \
+statusTermoRecusaCadatroDomiciliarAtencaoBasica \
+tpCdsOrigem:integer \
+uuid:uuid \
+uuidFichaOriginadora:uuid \
+bairro \
+cep \
+codigoIbgeMunicipio \
+complemento \
+nomeLogradouro \
+numero \
+numeroDneUf \
+telReferencial \
+telResidencial \
+tipoLogradouroNumeroDne \
+stSemNumero:boolean \
+abastecimentoAgua:integer \
+areaProducaoRural:integer \
+destinoLixo:integer \
+formaEscoamentoBanheiro:integer \
+localizacao:integer \
+materialPredominanteParedesExtDomicilio:integer \
+nuComodos \
+nuMoradores:integer \
+situacaoMoradiaPosseTerra:integer \
+stDiponibilidadeEnergiaeletrica:boolean \
+tipoAcessoDomicilio:integer \
+tipoDomicilio:integer \
+tratamentoAguaDomicilio:integer
+
+docker-compose exec app bundle exec rails g scaffold Family \
+dataNascimentoResponsavel:datetime \
+numeroCnsResponsavel \
+numeroMembrosFamilia:integer \
+numeroProntuario \
+rendaFamiliar:integer \
+resideDesde:datetime \
+stMudanca:boolean \
+references:HouseholdRegistration

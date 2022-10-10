@@ -1,0 +1,66 @@
+<div class="nested-fields">
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :dataNascimentoResponsavel %>
+        <div class="input-group">
+          <%= f.text_field :dataNascimentoResponsavel, class: 'btn-pill datepicker-here form-control digits', 'data-language': "en", 'data-bs-original-title': 'data-bs-original-title', title: 'title' %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :numeroCnsResponsavel %>
+        <%= f.text_field :numeroCnsResponsavel, class: 'form-control btn-pill' %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :numeroMembrosFamilia %>
+        <%= f.text_field :numeroMembrosFamilia, class: 'form-control btn-pill' %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :numeroProntuario %>
+        <%= f.text_field :numeroProntuario, class: 'form-control btn-pill' %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :rendaFamiliar %>
+        <%= f.text_field :rendaFamiliar, class: 'form-control btn-pill' %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :resideDesde %>
+        <div class="input-group">
+          <%= f.text_field :resideDesde, class: 'btn-pill datepicker-here form-control digits', 'data-language': "en", 'data-bs-original-title': 'data-bs-original-title', title: 'title' %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :stMudanca %>
+        <%= f.text_field :stMudanca, class: 'form-control btn-pill' %>
+      </div>
+    </div>
+  </div>
+  <%= link_to_remove_association "remove family", f %>
+  <br>
+  <br>
+  <br>
+</div>

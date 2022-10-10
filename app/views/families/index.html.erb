@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Families</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Datanascimentoresponsavel</th>
+      <th>Numerocnsresponsavel</th>
+      <th>Numeromembrosfamilia</th>
+      <th>Numeroprontuario</th>
+      <th>Rendafamiliar</th>
+      <th>Residedesde</th>
+      <th>Stmudanca</th>
+      <th>References</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @families.each do |family| %>
+      <tr>
+        <td><%= family.dataNascimentoResponsavel %></td>
+        <td><%= family.numeroCnsResponsavel %></td>
+        <td><%= family.numeroMembrosFamilia %></td>
+        <td><%= family.numeroProntuario %></td>
+        <td><%= family.rendaFamiliar %></td>
+        <td><%= family.resideDesde %></td>
+        <td><%= family.stMudanca %></td>
+        <td><%= family.references %></td>
+        <td><%= link_to 'Show', family %></td>
+        <td><%= link_to 'Edit', edit_family_path(family) %></td>
+        <td><%= link_to 'Destroy', family, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Family', new_family_path %>

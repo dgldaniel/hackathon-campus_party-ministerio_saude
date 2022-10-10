@@ -35,6 +35,8 @@ services:
     command: redis-server
     ports:
       - "6379:6379"
+    volumes:
+      - redis_data:/data
 
   sidekiq:
     build:
@@ -73,3 +75,4 @@ volumes:
   db_data:
   node_modules:
   shared_database:
+  redis_data:

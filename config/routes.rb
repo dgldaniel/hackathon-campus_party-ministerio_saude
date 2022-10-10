@@ -2,6 +2,8 @@
 require 'sidekiq/web'
 
 Rails.application.routes.draw do
+  resources :families
+  resources :household_registrations
   root to: 'pages#index'
 
   mount Sidekiq::Web => '/sidekiq'
