@@ -1,0 +1,22 @@
+[
+  {
+    "Código": 93,
+    "Descrição": "Coletado",
+    "Observações": "-"
+  },
+  {
+    "Código": 94,
+    "Descrição": "Queimado / Enterrado",
+    "Observações": "-"
+  },
+  {
+    "Código": 95,
+    "Descrição": "Céu aberto",
+    "Observações": "-"
+  },
+  {
+    "Código": 96,
+    "Descrição": "Outro",
+    "Observações": "-"
+  }
+]

@@ -107,6 +107,50 @@ namespace :store_records_on_cache do
 
     lista_procedimentos_data = get_path_json('ficha_procedimentos', 'lista_procedimentos')
     store_json_cache(lista_procedimentos_data, { first: 'Descrição', second: 'Código' }, '@FP_Lista_Procedimentos')
+
+    # Cadastro Domiliciar
+
+    abastecimento_agua_data = get_path_json('cadastro_domiciliar', 'abastecimento_agua')
+    store_json_cache(abastecimento_agua_data, { first: 'Descrição', second: 'Código' }, '@CD_Abastecimento_Agua')
+
+    acesso_domicilio_data = get_path_json('cadastro_domiciliar', 'acesso_domicilio')
+    store_json_cache(acesso_domicilio_data, { first: 'Descrição', second: 'Código' }, '@CD_Acesso_Domicilio')
+
+    animal_domicilio_data = get_path_json('cadastro_domiciliar', 'animal_domicilio')
+    store_json_cache(animal_domicilio_data, { first: 'Descrição', second: 'Código' }, '@CD_Animal_Domicilio')
+
+    destino_lixo_data = get_path_json('cadastro_domiciliar', 'destino_lixo')
+    store_json_cache(destino_lixo_data, { first: 'Descrição', second: 'Código' }, '@CD_Destino_Lixo')
+
+    escoamento_banheiro_data = get_path_json('cadastro_domiciliar', 'escoamento_banheiro')
+    store_json_cache(escoamento_banheiro_data, { first: 'Descrição', second: 'Código' }, '@CD_Escoamento_Banheiro')
+
+    estados_data = get_path_json('cadastro_domiciliar', 'estados')
+    store_json_cache(estados_data, { first: 'Nome', second: 'Código DNE' }, '@CD_Estados')
+
+    localizacao_moradia_data = get_path_json('cadastro_domiciliar', 'localizacao_moradia')
+    store_json_cache(localizacao_moradia_data, { first: 'Descrição', second: 'Código' }, '@CD_Localizacao_Moradia')
+
+    material_predominante_construcao_data = get_path_json('cadastro_domiciliar', 'material_predominante_construcao')
+    store_json_cache(material_predominante_construcao_data, { first: 'Descrição', second: 'Código' }, '@CD_Material_Predominante_Construcao')
+
+    posse_uso_terra_data = get_path_json('cadastro_domiciliar', 'posse_uso_terra')
+    store_json_cache(posse_uso_terra_data, { first: 'Descrição', second: 'Código' }, '@CD_Posse_Uso_Terra')
+
+    renda_familiar_data = get_path_json('cadastro_domiciliar', 'renda_familiar')
+    store_json_cache(renda_familiar_data, { first: 'Descrição', second: 'Código' }, '@CD_Renda_Familiar')
+
+    situacao_moradia_data = get_path_json('cadastro_domiciliar', 'situacao_moradia')
+    store_json_cache(situacao_moradia_data, { first: 'Descrição', second: 'Código' }, '@CD_Situacao_Moradia')
+
+    tipo_domicilio_data = get_path_json('cadastro_domiciliar', 'tipo_domicilio')
+    store_json_cache(tipo_domicilio_data, { first: 'Descrição', second: 'Código' }, '@CD_Tipo_Domicilio')
+
+    tipo_logradouro_data = get_path_json('cadastro_domiciliar', 'tipo_logradouro')
+    store_json_cache(tipo_logradouro_data, { first: 'Nome', second: 'Código' }, '@CD_Tipo_Logradouro')
+
+    tratamento_agua_domicilio_data = get_path_json('cadastro_domiciliar', 'tratamento_agua_domicilio')
+    store_json_cache(tratamento_agua_domicilio_data, { first: 'Descrição', second: 'Código' }, '@CD_Tratamento_Agua_Domicilio')
   end
 
   private

@@ -1,0 +1,27 @@
+[
+  {
+    "Código": 128,
+    "Descrição": "Gato",
+    "Observações": "-"
+  },
+  {
+    "Código": 129,
+    "Descrição": "Cachorro",
+    "Observações": "-"
+  },
+  {
+    "Código": 130,
+    "Descrição": "Pássaro",
+    "Observações": "-"
+  },
+  {
+    "Código": 131,
+    "Descrição": "De criação (porco, galinha...)",
+    "Observações": "-"
+  },
+  {
+    "Código": 132,
+    "Descrição": "Outros",
+    "Observações": "-"
+  }
+]

@@ -6,7 +6,7 @@ class CreateHouseholdRegistrations < ActiveRecord::Migration[6.1]
       t.boolean(:fichaAtualizada)
       t.string(:quantosAnimaisNoDomicilio)
       t.boolean(:stAnimaisNoDomicilio)
-      t.string(:statusTermoRecusaCadatroDomiciliarAtencaoBasica)
+      t.boolean(:statusTermoRecusaCadatroDomiciliarAtencaoBasica)
       t.integer(:tpCdsOrigem)
       t.uuid(:uuid)
       t.uuid(:uuidFichaOriginadora)

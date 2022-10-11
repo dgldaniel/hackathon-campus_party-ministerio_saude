@@ -1,0 +1,1118 @@
+[
+  {
+    "Código": 1,
+    "Nome": "ACESSO"
+  },
+  {
+    "Código": 2,
+    "Nome": "ADRO"
+  },
+  {
+    "Código": 4,
+    "Nome": "ALAMEDA"
+  },
+  {
+    "Código": 5,
+    "Nome": "ALTO"
+  },
+  {
+    "Código": 7,
+    "Nome": "ATALHO"
+  },
+  {
+    "Código": 8,
+    "Nome": "AVENIDA"
+  },
+  {
+    "Código": 9,
+    "Nome": "BALNEÁRIO"
+  },
+  {
+    "Código": 10,
+    "Nome": "BELVEDERE"
+  },
+  {
+    "Código": 11,
+    "Nome": "BECO"
+  },
+  {
+    "Código": 12,
+    "Nome": "BLOCO"
+  },
+  {
+    "Código": 13,
+    "Nome": "BOSQUE"
+  },
+  {
+    "Código": 14,
+    "Nome": "BOULEVARD"
+  },
+  {
+    "Código": 15,
+    "Nome": "BAIXA"
+  },
+  {
+    "Código": 16,
+    "Nome": "CAIS"
+  },
+  {
+    "Código": 17,
+    "Nome": "CAMINHO"
+  },
+  {
+    "Código": 19,
+    "Nome": "CHAPADÃO"
+  },
+  {
+    "Código": 20,
+    "Nome": "CONJUNTO"
+  },
+  {
+    "Código": 21,
+    "Nome": "COLÔNIA"
+  },
+  {
+    "Código": 22,
+    "Nome": "CORREDOR"
+  },
+  {
+    "Código": 23,
+    "Nome": "CAMPO"
+  },
+  {
+    "Código": 24,
+    "Nome": "CÓRREGO"
+  },
+  {
+    "Código": 27,
+    "Nome": "DESVIO"
+  },
+  {
+    "Código": 28,
+    "Nome": "DISTRITO"
+  },
+  {
+    "Código": 30,
+    "Nome": "ESCADA"
+  },
+  {
+    "Código": 31,
+    "Nome": "ESTRADA"
+  },
+  {
+    "Código": 32,
+    "Nome": "ESTAÇÃO"
+  },
+  {
+    "Código": 33,
+    "Nome": "ESTÁDIO"
+  },
+  {
+    "Código": 36,
+    "Nome": "FAVELA"
+  },
+  {
+    "Código": 37,
+    "Nome": "FAZENDA"
+  },
+  {
+    "Código": 38,
+    "Nome": "FERROVIA"
+  },
+  {
+    "Código": 39,
+    "Nome": "FONTE"
+  },
+  {
+    "Código": 40,
+    "Nome": "FEIRA"
+  },
+  {
+    "Código": 43,
+    "Nome": "FORTE"
+  },
+  {
+    "Código": 45,
+    "Nome": "GALERIA"
+  },
+  {
+    "Código": 46,
+    "Nome": "GRANJA"
+  },
+  {
+    "Código": 50,
+    "Nome": "ILHA"
+  },
+  {
+    "Código": 52,
+    "Nome": "JARDIM"
+  },
+  {
+    "Código": 53,
+    "Nome": "LADEIRA"
+  },
+  {
+    "Código": 54,
+    "Nome": "LARGO"
+  },
+  {
+    "Código": 55,
+    "Nome": "LAGOA"
+  },
+  {
+    "Código": 56,
+    "Nome": "LOTEAMENTO"
+  },
+  {
+    "Código": 59,
+    "Nome": "MORRO"
+  },
+  {
+    "Código": 60,
+    "Nome": "MONTE"
+  },
+  {
+    "Código": 62,
+    "Nome": "PARALELA"
+  },
+  {
+    "Código": 63,
+    "Nome": "PASSEIO"
+  },
+  {
+    "Código": 64,
+    "Nome": "PÁTIO"
+  },
+  {
+    "Código": 65,
+    "Nome": "PRAÇA"
+  },
+  {
+    "Código": 67,
+    "Nome": "PARADA"
+  },
+  {
+    "Código": 70,
+    "Nome": "PRAIA"
+  },
+  {
+    "Código": 71,
+    "Nome": "PROLONGAMENTO"
+  },
+  {
+    "Código": 72,
+    "Nome": "PARQUE"
+  },
+  {
+    "Código": 73,
+    "Nome": "PASSARELA"
+  },
+  {
+    "Código": 74,
+    "Nome": "PASSAGEM"
+  },
+  {
+    "Código": 76,
+    "Nome": "PONTE"
+  },
+  {
+    "Código": 77,
+    "Nome": "QUADRA"
+  },
+  {
+    "Código": 79,
+    "Nome": "QUINTA"
+  },
+  {
+    "Código": 81,
+    "Nome": "RUA"
+  },
+  {
+    "Código": 82,
+    "Nome": "RAMAL"
+  },
+  {
+    "Código": 87,
+    "Nome": "RECANTO"
+  },
+  {
+    "Código": 88,
+    "Nome": "RETIRO"
+  },
+  {
+    "Código": 89,
+    "Nome": "RETA"
+  },
+  {
+    "Código": 90,
+    "Nome": "RODOVIA"
+  },
+  {
+    "Código": 91,
+    "Nome": "RETORNO"
+  },
+  {
+    "Código": 92,
+    "Nome": "SÍTIO"
+  },
+  {
+    "Código": 94,
+    "Nome": "SERVIDÃO"
+  },
+  {
+    "Código": 95,
+    "Nome": "SETOR"
+  },
+  {
+    "Código": 96,
+    "Nome": "SUBIDA"
+  },
+  {
+    "Código": 97,
+    "Nome": "TRINCHEIRA"
+  },
+  {
+    "Código": 98,
+    "Nome": "TERMINAL"
+  },
+  {
+    "Código": 99,
+    "Nome": "TREVO"
+  },
+  {
+    "Código": 100,
+    "Nome": "TRAVESSA"
+  },
+  {
+    "Código": 101,
+    "Nome": "VIA"
+  },
+  {
+    "Código": 103,
+    "Nome": "VIADUTO"
+  },
+  {
+    "Código": 104,
+    "Nome": "VILA"
+  },
+  {
+    "Código": 105,
+    "Nome": "VIELA"
+  },
+  {
+    "Código": 106,
+    "Nome": "VALE"
+  },
+  {
+    "Código": 108,
+    "Nome": "ZIGUE-ZAGUE"
+  },
+  {
+    "Código": 452,
+    "Nome": "TRECHO"
+  },
+  {
+    "Código": 453,
+    "Nome": "VEREDA"
+  },
+  {
+    "Código": 465,
+    "Nome": "ARTÉRIA"
+  },
+  {
+    "Código": 468,
+    "Nome": "ELEVADA"
+  },
+  {
+    "Código": 469,
+    "Nome": "PORTO"
+  },
+  {
+    "Código": 470,
+    "Nome": "BALÃO"
+  },
+  {
+    "Código": 471,
+    "Nome": "PARADOURO"
+  },
+  {
+    "Código": 472,
+    "Nome": "ÁREA"
+  },
+  {
+    "Código": 473,
+    "Nome": "JARDINETE"
+  },
+  {
+    "Código": 474,
+    "Nome": "ESPLANADA"
+  },
+  {
+    "Código": 475,
+    "Nome": "QUINTAS"
+  },
+  {
+    "Código": 476,
+    "Nome": "RÓTULA"
+  },
+  {
+    "Código": 477,
+    "Nome": "MARINA"
+  },
+  {
+    "Código": 478,
+    "Nome": "DESCIDA"
+  },
+  {
+    "Código": 479,
+    "Nome": "CIRCULAR"
+  },
+  {
+    "Código": 480,
+    "Nome": "UNIDADE"
+  },
+  {
+    "Código": 481,
+    "Nome": "CHÁCARA"
+  },
+  {
+    "Código": 482,
+    "Nome": "RAMPA"
+  },
+  {
+    "Código": 483,
+    "Nome": "PONTA"
+  },
+  {
+    "Código": 484,
+    "Nome": "VIA DE PEDESTRE"
+  },
+  {
+    "Código": 485,
+    "Nome": "CONDOMÍNIO"
+  },
+  {
+    "Código": 486,
+    "Nome": "NÚCLEO HABITACIONAL"
+  },
+  {
+    "Código": 487,
+    "Nome": "RESIDENCIAL"
+  },
+  {
+    "Código": 495,
+    "Nome": "CANAL"
+  },
+  {
+    "Código": 496,
+    "Nome": "BURACO"
+  },
+  {
+    "Código": 497,
+    "Nome": "MÓDULO"
+  },
+  {
+    "Código": 498,
+    "Nome": "ESTÂNCIA"
+  },
+  {
+    "Código": 499,
+    "Nome": "LAGO"
+  },
+  {
+    "Código": 500,
+    "Nome": "NÚCLEO"
+  },
+  {
+    "Código": 501,
+    "Nome": "AEROPORTO"
+  },
+  {
+    "Código": 502,
+    "Nome": "PASSAGEM SUBTERRÂNEA"
+  },
+  {
+    "Código": 503,
+    "Nome": "COMPLEXO VIÁRIO"
+  },
+  {
+    "Código": 504,
+    "Nome": "PRAÇA DE ESPORTES"
+  },
+  {
+    "Código": 505,
+    "Nome": "VIA ELEVADO"
+  },
+  {
+    "Código": 506,
+    "Nome": "ROTATÓRIA"
+  },
+  {
+    "Código": 507,
+    "Nome": "1ª TRAVESSA"
+  },
+  {
+    "Código": 508,
+    "Nome": "2ª TRAVESSA"
+  },
+  {
+    "Código": 509,
+    "Nome": "3ª TRAVESSA"
+  },
+  {
+    "Código": 510,
+    "Nome": "4ª TRAVESSA"
+  },
+  {
+    "Código": 511,
+    "Nome": "5ª TRAVESSA"
+  },
+  {
+    "Código": 512,
+    "Nome": "6ª TRAVESSA"
+  },
+  {
+    "Código": 513,
+    "Nome": "7ª TRAVESSA"
+  },
+  {
+    "Código": 514,
+    "Nome": "8ª TRAVESSA"
+  },
+  {
+    "Código": 515,
+    "Nome": "9ª TRAVESSA"
+  },
+  {
+    "Código": 516,
+    "Nome": "10ª TRAVESSA"
+  },
+  {
+    "Código": 517,
+    "Nome": "11ª TRAVESSA"
+  },
+  {
+    "Código": 518,
+    "Nome": "12ª TRAVESSA"
+  },
+  {
+    "Código": 519,
+    "Nome": "13ª TRAVESSA"
+  },
+  {
+    "Código": 520,
+    "Nome": "14ª TRAVESSA"
+  },
+  {
+    "Código": 521,
+    "Nome": "15ª TRAVESSA"
+  },
+  {
+    "Código": 522,
+    "Nome": "16ª TRAVESSA"
+  },
+  {
+    "Código": 523,
+    "Nome": "1º ALTO"
+  },
+  {
+    "Código": 524,
+    "Nome": "2º ALTO"
+  },
+  {
+    "Código": 525,
+    "Nome": "3º ALTO"
+  },
+  {
+    "Código": 526,
+    "Nome": "4º ALTO"
+  },
+  {
+    "Código": 527,
+    "Nome": "5º ALTO"
+  },
+  {
+    "Código": 528,
+    "Nome": "1º BECO"
+  },
+  {
+    "Código": 529,
+    "Nome": "2º BECO"
+  },
+  {
+    "Código": 530,
+    "Nome": "3º BECO"
+  },
+  {
+    "Código": 531,
+    "Nome": "4º BECO"
+  },
+  {
+    "Código": 532,
+    "Nome": "5º BECO"
+  },
+  {
+    "Código": 533,
+    "Nome": "1ª PARALELA"
+  },
+  {
+    "Código": 534,
+    "Nome": "2ª PARALELA"
+  },
+  {
+    "Código": 535,
+    "Nome": "3ª PARALELA"
+  },
+  {
+    "Código": 536,
+    "Nome": "4ª PARALELA"
+  },
+  {
+    "Código": 537,
+    "Nome": "5ª PARALELA"
+  },
+  {
+    "Código": 538,
+    "Nome": "1ª SUBIDA"
+  },
+  {
+    "Código": 539,
+    "Nome": "2ª SUBIDA"
+  },
+  {
+    "Código": 540,
+    "Nome": "3ª SUBIDA"
+  },
+  {
+    "Código": 541,
+    "Nome": "4ª SUBIDA"
+  },
+  {
+    "Código": 542,
+    "Nome": "5ª SUBIDA"
+  },
+  {
+    "Código": 543,
+    "Nome": "6ª SUBIDA"
+  },
+  {
+    "Código": 544,
+    "Nome": "1ª VILA"
+  },
+  {
+    "Código": 545,
+    "Nome": "2ª VILA"
+  },
+  {
+    "Código": 546,
+    "Nome": "3ª VILA"
+  },
+  {
+    "Código": 547,
+    "Nome": "4ª VILA"
+  },
+  {
+    "Código": 548,
+    "Nome": "5ª VILA"
+  },
+  {
+    "Código": 549,
+    "Nome": "1º PARQUE"
+  },
+  {
+    "Código": 550,
+    "Nome": "2º PARQUE"
+  },
+  {
+    "Código": 551,
+    "Nome": "3º PARQUE"
+  },
+  {
+    "Código": 552,
+    "Nome": "1ª RUA"
+  },
+  {
+    "Código": 553,
+    "Nome": "2ª RUA"
+  },
+  {
+    "Código": 554,
+    "Nome": "3ª RUA"
+  },
+  {
+    "Código": 555,
+    "Nome": "5ª RUA"
+  },
+  {
+    "Código": 556,
+    "Nome": "4ª RUA"
+  },
+  {
+    "Código": 557,
+    "Nome": "6ª RUA"
+  },
+  {
+    "Código": 558,
+    "Nome": "7ª RUA"
+  },
+  {
+    "Código": 559,
+    "Nome": "8ª RUA"
+  },
+  {
+    "Código": 560,
+    "Nome": "9ª RUA"
+  },
+  {
+    "Código": 561,
+    "Nome": "10ª RUA"
+  },
+  {
+    "Código": 562,
+    "Nome": "11ª RUA"
+  },
+  {
+    "Código": 563,
+    "Nome": "12ª RUA"
+  },
+  {
+    "Código": 564,
+    "Nome": "ESTACIONAMENTO"
+  },
+  {
+    "Código": 565,
+    "Nome": "VALA"
+  },
+  {
+    "Código": 566,
+    "Nome": "RUA DE PEDESTRE"
+  },
+  {
+    "Código": 567,
+    "Nome": "TÚNEL"
+  },
+  {
+    "Código": 568,
+    "Nome": "VARIANTE"
+  },
+  {
+    "Código": 569,
+    "Nome": "RODO ANEL"
+  },
+  {
+    "Código": 570,
+    "Nome": "TRAVESSA PARTICULAR"
+  },
+  {
+    "Código": 571,
+    "Nome": "CALÇADA"
+  },
+  {
+    "Código": 572,
+    "Nome": "VIA DE ACESSO"
+  },
+  {
+    "Código": 573,
+    "Nome": "ENTRADA PARTICULAR"
+  },
+  {
+    "Código": 645,
+    "Nome": "ACAMPAMENTO"
+  },
+  {
+    "Código": 646,
+    "Nome": "VIA EXPRESSA"
+  },
+  {
+    "Código": 650,
+    "Nome": "ESTRADA MUNICIPAL"
+  },
+  {
+    "Código": 651,
+    "Nome": "AVENIDA CONTORNO"
+  },
+  {
+    "Código": 652,
+    "Nome": "ENTRE QUADRA"
+  },
+  {
+    "Código": 653,
+    "Nome": "RUA DE LIGAÇÃO"
+  },
+  {
+    "Código": 654,
+    "Nome": "ÁREA ESPECIAL"
+  },
+  {
+    "Código": 655,
+    "Nome": "1ª AVENIDA"
+  },
+  {
+    "Código": 656,
+    "Nome": "2ª AVENIDA"
+  },
+  {
+    "Código": 657,
+    "Nome": "3ª AVENIDA"
+  },
+  {
+    "Código": 658,
+    "Nome": "4ª AVENIDA"
+  },
+  {
+    "Código": 659,
+    "Nome": "18ª TRAVESSA"
+  },
+  {
+    "Código": 660,
+    "Nome": "19ª TRAVESSA"
+  },
+  {
+    "Código": 661,
+    "Nome": "5ª AVENIDA"
+  },
+  {
+    "Código": 662,
+    "Nome": "RECREIO"
+  },
+  {
+    "Código": 663,
+    "Nome": "PARQUE MUNICIPAL"
+  },
+  {
+    "Código": 664,
+    "Nome": "CONJUNTO MUTIRÃO"
+  },
+  {
+    "Código": 665,
+    "Nome": "PARQUE RESIDENCIAL"
+  },
+  {
+    "Código": 666,
+    "Nome": "VIA LOCAL"
+  },
+  {
+    "Código": 667,
+    "Nome": "ACESSO LOCAL"
+  },
+  {
+    "Código": 668,
+    "Nome": "VIA COLETORA"
+  },
+  {
+    "Código": 669,
+    "Nome": "RUA PARTICULAR"
+  },
+  {
+    "Código": 670,
+    "Nome": "RUA INTEGRAÇÃO"
+  },
+  {
+    "Código": 671,
+    "Nome": "ESTRADA VELHA"
+  },
+  {
+    "Código": 672,
+    "Nome": "RUA VELHA"
+  },
+  {
+    "Código": 673,
+    "Nome": "TRAVESSA VELHA"
+  },
+  {
+    "Código": 674,
+    "Nome": "ANTIGA ESTRADA"
+  },
+  {
+    "Código": 675,
+    "Nome": "ESTRADA DE LIGAÇÃO"
+  },
+  {
+    "Código": 676,
+    "Nome": "ESTRADA ESTADUAL"
+  },
+  {
+    "Código": 677,
+    "Nome": "AVENIDA MARGINAL"
+  },
+  {
+    "Código": 678,
+    "Nome": "AVENIDA VELHA"
+  },
+  {
+    "Código": 679,
+    "Nome": "AVENIDA MARGINAL ESQUERDA"
+  },
+  {
+    "Código": 680,
+    "Nome": "AVENIDA MARGINAL DIREITA"
+  },
+  {
+    "Código": 681,
+    "Nome": "ESTRADA PARTICULAR"
+  },
+  {
+    "Código": 682,
+    "Nome": "ESTRADA ANTIGA"
+  },
+  {
+    "Código": 683,
+    "Nome": "6ª AVENIDA"
+  },
+  {
+    "Código": 685,
+    "Nome": "VIA LITORANEA"
+  },
+  {
+    "Código": 686,
+    "Nome": "CONTORNO"
+  },
+  {
+    "Código": 687,
+    "Nome": "BLOCOS"
+  },
+  {
+    "Código": 688,
+    "Nome": "CICLOVIA"
+  },
+  {
+    "Código": 689,
+    "Nome": "BULEVAR"
+  },
+  {
+    "Código": 690,
+    "Nome": "ESCADARIA"
+  },
+  {
+    "Código": 691,
+    "Nome": "PRIMEIRA LADEIRA"
+  },
+  {
+    "Código": 692,
+    "Nome": "2ª LADEIRA"
+  },
+  {
+    "Código": 693,
+    "Nome": "3ª LADEIRA"
+  },
+  {
+    "Código": 694,
+    "Nome": "QUARTA LADEIRA"
+  },
+  {
+    "Código": 695,
+    "Nome": "QUINTA LADEIRA"
+  },
+  {
+    "Código": 696,
+    "Nome": "PASSAGEM DE PEDESTRES"
+  },
+  {
+    "Código": 697,
+    "Nome": "ESTRADA VICINAL"
+  },
+  {
+    "Código": 698,
+    "Nome": "RUA PROJETADA"
+  },
+  {
+    "Código": 699,
+    "Nome": "RUA PRINCIPAL"
+  },
+  {
+    "Código": 700,
+    "Nome": "TERCEIRA AVENIDA"
+  },
+  {
+    "Código": 701,
+    "Nome": "SEGUNDA AVENIDA"
+  },
+  {
+    "Código": 702,
+    "Nome": "PASSEIO PÚBLICO"
+  },
+  {
+    "Código": 704,
+    "Nome": "ENTRE BLOCO"
+  },
+  {
+    "Código": 705,
+    "Nome": "ENSEADA"
+  },
+  {
+    "Código": 706,
+    "Nome": "ILHOTA"
+  },
+  {
+    "Código": 707,
+    "Nome": "VIA DE PEDESTRES"
+  },
+  {
+    "Código": 708,
+    "Nome": "2ª TRAVESSA DA RODOVIA"
+  },
+  {
+    "Código": 709,
+    "Nome": "1ª TRAVESSA DA RODOVIA"
+  },
+  {
+    "Código": 710,
+    "Nome": "ESTRADA INTERMUNICIPAL"
+  },
+  {
+    "Código": 711,
+    "Nome": "VIA COSTEIRA"
+  },
+  {
+    "Código": 712,
+    "Nome": "ESTRADA DE SERVIDÃO"
+  },
+  {
+    "Código": 713,
+    "Nome": "COMUNIDADE"
+  },
+  {
+    "Código": 714,
+    "Nome": "EIXO INDUSTRIAL"
+  },
+  {
+    "Código": 715,
+    "Nome": "MERCADO"
+  },
+  {
+    "Código": 716,
+    "Nome": "EVANGÉLICA"
+  },
+  {
+    "Código": 717,
+    "Nome": "CAMPUS"
+  },
+  {
+    "Código": 718,
+    "Nome": "PROJEÇÃO"
+  },
+  {
+    "Código": 719,
+    "Nome": "NÚCLEO RURAL"
+  },
+  {
+    "Código": 720,
+    "Nome": "MARGEM"
+  },
+  {
+    "Código": 721,
+    "Nome": "ÁREA VERDE"
+  },
+  {
+    "Código": 722,
+    "Nome": "CONDOMÍNIO RESIDENCIAL"
+  },
+  {
+    "Código": 723,
+    "Nome": "CALÇADÃO"
+  },
+  {
+    "Código": 724,
+    "Nome": "RUELA"
+  },
+  {
+    "Código": 725,
+    "Nome": "AVENIDA PERIMETRAL"
+  },
+  {
+    "Código": 726,
+    "Nome": "VIA PRINCIPAL"
+  },
+  {
+    "Código": 727,
+    "Nome": "VIA PEDESTRE"
+  },
+  {
+    "Código": 728,
+    "Nome": "VIA LATERAL"
+  },
+  {
+    "Código": 729,
+    "Nome": "CAMINHO DE SERVIDÃO"
+  },
+  {
+    "Código": 730,
+    "Nome": "AVENIDA MARGINAL NORTE"
+  },
+  {
+    "Código": 731,
+    "Nome": "ESTRADA DE FERRO"
+  },
+  {
+    "Código": 732,
+    "Nome": "EIXO PRINCIPAL"
+  },
+  {
+    "Código": 733,
+    "Nome": "EIXO"
+  },
+  {
+    "Código": 734,
+    "Nome": "OUTEIRO"
+  },
+  {
+    "Código": 735,
+    "Nome": "ESTRADA NOVA"
+  },
+  {
+    "Código": 736,
+    "Nome": "CONJUNTO HABITACIONAL"
+  },
+  {
+    "Código": 737,
+    "Nome": "JARDIM RESIDENCIAL"
+  },
+  {
+    "Código": 738,
+    "Nome": "ANEL VIÁRIO"
+  },
+  {
+    "Código": 739,
+    "Nome": "SERVIDÃO DE PASSAGEM"
+  },
+  {
+    "Código": 740,
+    "Nome": "17ª TRAVESSA"
+  },
+  {
+    "Código": 741,
+    "Nome": "ANTIGA ESTAÇÃO"
+  },
+  {
+    "Código": 742,
+    "Nome": "20ª TRAVESSA"
+  },
+  {
+    "Código": 743,
+    "Nome": "21ª TRAVESSA"
+  },
+  {
+    "Código": 744,
+    "Nome": "22ª TRAVESSA"
+  },
+  {
+    "Código": 745,
+    "Nome": "CONJUNTO RESIDENCIAL"
+  },
+  {
+    "Código": 746,
+    "Nome": "2ª ALAMEDA"
+  },
+  {
+    "Código": 747,
+    "Nome": "VARIANTE DA ESTRADA"
+  },
+  {
+    "Código": 748,
+    "Nome": "VIA MARGINAL"
+  },
+  {
+    "Código": 749,
+    "Nome": "MÓDULO COMERCIAL"
+  }
+]

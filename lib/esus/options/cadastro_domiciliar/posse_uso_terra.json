@@ -1,0 +1,42 @@
+[
+  {
+    "Código": 101,
+    "Descrição": "Proprietário",
+    "Observações": "-"
+  },
+  {
+    "Código": 102,
+    "Descrição": "Parceiro(a) / Meeiro(a)",
+    "Observações": "-"
+  },
+  {
+    "Código": 103,
+    "Descrição": "Assentado(a)",
+    "Observações": "-"
+  },
+  {
+    "Código": 104,
+    "Descrição": "Posseiro",
+    "Observações": "-"
+  },
+  {
+    "Código": 105,
+    "Descrição": "Arrendatário(a)",
+    "Observações": "-"
+  },
+  {
+    "Código": 106,
+    "Descrição": "Comodatário(a)",
+    "Observações": "-"
+  },
+  {
+    "Código": 107,
+    "Descrição": "Beneficiário(a) do banco da terra",
+    "Observações": "-"
+  },
+  {
+    "Código": 108,
+    "Descrição": "Não se aplica",
+    "Observações": "-"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "Código": "89",
+    "Descrição": "Pavimento",
+    "observações": "-"
+  },
+  {
+    "Código": "90",
+    "Descrição": "Chão batido",
+    "observações": "-"
+  },
+  {
+    "Código": "91",
+    "Descrição": "Fluvial",
+    "observações": "-"
+  },
+  {
+    "Código": "92",
+    "Descrição": "Outro",
+    "observações": "-"
+  }
+]

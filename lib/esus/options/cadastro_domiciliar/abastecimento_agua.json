@@ -1,0 +1,27 @@
+[
+  {
+    "Código": 117,
+    "Descrição": "Rede encanada até o domicílio",
+    "Observações": "-"
+  },
+  {
+    "Código": 118,
+    "Descrição": "Poço / Nascente no domicílio",
+    "Observações": "-"
+  },
+  {
+    "Código": 119,
+    "Descrição": "Cisterna",
+    "Observações": "-"
+  },
+  {
+    "Código": 120,
+    "Descrição": "Carro pipa",
+    "Observações": "-"
+  },
+  {
+    "Código": 121,
+    "Descrição": "Outro",
+    "Observações": "-"
+  }
+]

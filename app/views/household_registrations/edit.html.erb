@@ -1,6 +1,14 @@
-<h1>Editing Household Registration</h1>
-
-<%= render 'form', household_registration: @household_registration %>
-
-<%= link_to 'Show', @household_registration %> |
-<%= link_to 'Back', household_registrations_path %>
+<div class='card'>
+  <div class="card-header pb-0">
+    <h5>Editando Cadastro Domiliciar</h5>
+  </div>
+  <div class='card-body'>
+    <div class='row'>
+      <div class='col-md-12'>
+        <div class='datetime-picker'>
+          <%= render 'form', household_registration: @household_registration %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

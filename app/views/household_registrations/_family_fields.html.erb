@@ -37,7 +37,12 @@
     <div class="col">
       <div class="mb-3">
         <%= f.label :rendaFamiliar %>
-        <%= f.text_field :rendaFamiliar, class: 'form-control btn-pill' %>
+        <%= f.collection_radio_buttons :rendaFamiliar, @options[:renda_familiar], :second, :first do |b| %>
+          <div class="d-block">
+            <%= b.radio_button %>
+            <%= b.label %>
+          </div>
+        <% end %>
       </div>
     </div>
   </div>

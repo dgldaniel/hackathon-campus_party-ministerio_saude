@@ -1,0 +1,37 @@
+[
+  {
+    "Código": 1,
+    "Descrição": "1/4 de salário mínimo",
+    "Observações": "-"
+  },
+  {
+    "Código": 2,
+    "Descrição": "Meio salário mínimo",
+    "Observações": "-"
+  },
+  {
+    "Código": 3,
+    "Descrição": "Um salário mínimo",
+    "Observações": "-"
+  },
+  {
+    "Código": 4,
+    "Descrição": "Dois salários mínimos",
+    "Observações": "-"
+  },
+  {
+    "Código": 7,
+    "Descrição": "Três salários mínimos",
+    "Observações": "-"
+  },
+  {
+    "Código": 5,
+    "Descrição": "Quatro salários mínimos",
+    "Observações": "-"
+  },
+  {
+    "Código": 6,
+    "Descrição": "Acima de quatro salários mínimos",
+    "Observações": "-"
+  }
+]

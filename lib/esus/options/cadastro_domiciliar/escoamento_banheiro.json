@@ -1,0 +1,32 @@
+[
+  {
+    "Código": 122,
+    "Descrição": "Rede coletora de esgoto / pluvial",
+    "Observações": "-"
+  },
+  {
+    "Código": 123,
+    "Descrição": "Fossa séptica",
+    "Observações": "-"
+  },
+  {
+    "Código": 124,
+    "Descrição": "Fossa rudimentar",
+    "Observações": "-"
+  },
+  {
+    "Código": 125,
+    "Descrição": "Direto para um rio / lago / mar",
+    "Observações": "-"
+  },
+  {
+    "Código": 126,
+    "Descrição": "Céu aberto",
+    "Observações": "-"
+  },
+  {
+    "Código": 127,
+    "Descrição": "Outra forma",
+    "Observações": "-"
+  }
+]

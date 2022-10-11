@@ -28,6 +28,12 @@
       care_procedure:
         one: Atendimento Procedimento
         others: Atendimentos Procedimentos
+      household_registration:
+        one: Cadastro Domiciliar
+        others: Cadastros Domiciliares
+      family:
+        one: Família
+        others: Familias
     attributes:
       patient:
         email: E-mail
@@ -224,3 +230,45 @@
         statusEscutaInicialOrientacao: Indique a realização da escuta inicial
         procedimentos: Procedimentos que são registrados na ficha
         outrosSiaProcedimentos: Outros procedimentos do SIGTAP ou SISAB
+      household_registration:
+        animaisNoDomicilio: Animais no domicílio
+        fichaAtualizada: A ficha é uma atualização?
+        quantosAnimaisNoDomicilio: Número de animais no domicílio
+        stAnimaisNoDomicilio: Indica se existem animais no domicílio
+        statusTermoRecusaCadatroDomiciliarAtencaoBasica: O cadastro foi utilizado o termo de recusa de cadastro do domicílio
+        tpCdsOrigem: Tipo de origem dos dados do registro
+        uuid: UUID para identificar a ficha na base de dados nacional
+        uuidFichaOriginadora: UUID para identificar a ficha que deu origem ao cadastro do registro
+        bairro: Bairro onde está localizado o domicílio
+        cep: CEP do logradouro do domicílio
+        codigoIbgeMunicipio: Código IBGE do município
+        complemento: Complemento do endereço do domicílio
+        nomeLogradouro: Nome do logradouro
+        numero: Número do domicílio
+        numeroDneUf: Código indexador referente a Unidade Federativa
+        telReferencial: Telefone de referência
+        telResidencial: Telefone residencial
+        tipoLogradouroNumeroDne: Tipo do logradouro onde está o domicílio
+        stSemNumero: Indica que o domicílio não possui número
+        abastecimentoAgua: Tipo de abastecimento de água
+        areaProducaoRural: Condição de posse e uso da terra
+        destinoLixo: Destino do lixo
+        formaEscoamentoBanheiro: Forma de escoamento do banheiro ou sanitário
+        localizacao: Localização do domicílio
+        materialPredominanteParedesExtDomicilio: Tipo de material predominante nas paredes externas do domicílio
+        nuComodos: Número de cômodos do domicílio
+        nuMoradores: Número de moradores do domicílio
+        situacaoMoradiaPosseTerra: Código da situação de moradia ou de posse da terra
+        stDiponibilidadeEnergiaeletrica: Existe disponibilidade de energia elétrica
+        tipoAcessoDomicilio: Tipo de acesso ao domicílio
+        tipoDomicilio: Tipo de domicílio
+        tratamentoAguaDomicilio: Tipo do tratamento de água do domicílio
+      family:
+        dataNascimentoResponsavel: Data de nascimento
+        numeroCnsResponsavel: CNS do responsável familiar
+        numeroMembrosFamilia: Quantidade de membros do núcleo familiar
+        numeroProntuario: Código do prontuário familiar na UBS
+        rendaFamiliar: Renda familiar em salários mínimos
+        resideDesde: Mês e ano que a família começou a residir no domicílio
+        stMudanca: Indica se a familia mudou-se
+

@@ -1,89 +1,48 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Household Registrations</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Animaisnodomicilio</th>
-      <th>Fichaatualizada</th>
-      <th>Quantosanimaisnodomicilio</th>
-      <th>Stanimaisnodomicilio</th>
-      <th>Statustermorecusacadatrodomiciliaratencaobasica</th>
-      <th>Tpcdsorigem</th>
-      <th>Uuid</th>
-      <th>Uuidfichaoriginadora</th>
-      <th>Bairro</th>
-      <th>Cep</th>
-      <th>Codigoibgemunicipio</th>
-      <th>Complemento</th>
-      <th>Nomelogradouro</th>
-      <th>Numero</th>
-      <th>Numerodneuf</th>
-      <th>Telreferencial</th>
-      <th>Telresidencial</th>
-      <th>Tipologradouronumerodne</th>
-      <th>Stsemnumero</th>
-      <th>Abastecimentoagua</th>
-      <th>Areaproducaorural</th>
-      <th>Destinolixo</th>
-      <th>Formaescoamentobanheiro</th>
-      <th>Localizacao</th>
-      <th>Materialpredominanteparedesextdomicilio</th>
-      <th>Nucomodos</th>
-      <th>Numoradores</th>
-      <th>Situacaomoradiaposseterra</th>
-      <th>Stdiponibilidadeenergiaeletrica</th>
-      <th>Tipoacessodomicilio</th>
-      <th>Tipodomicilio</th>
-      <th>Tratamentoaguadomicilio</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @household_registrations.each do |household_registration| %>
-      <tr>
-        <td><%= household_registration.animaisNoDomicilio %></td>
-        <td><%= household_registration.fichaAtualizada %></td>
-        <td><%= household_registration.quantosAnimaisNoDomicilio %></td>
-        <td><%= household_registration.stAnimaisNoDomicilio %></td>
-        <td><%= household_registration.statusTermoRecusaCadatroDomiciliarAtencaoBasica %></td>
-        <td><%= household_registration.tpCdsOrigem %></td>
-        <td><%= household_registration.uuid %></td>
-        <td><%= household_registration.uuidFichaOriginadora %></td>
-        <td><%= household_registration.bairro %></td>
-        <td><%= household_registration.cep %></td>
-        <td><%= household_registration.codigoIbgeMunicipio %></td>
-        <td><%= household_registration.complemento %></td>
-        <td><%= household_registration.nomeLogradouro %></td>
-        <td><%= household_registration.numero %></td>
-        <td><%= household_registration.numeroDneUf %></td>
-        <td><%= household_registration.telReferencial %></td>
-        <td><%= household_registration.telResidencial %></td>
-        <td><%= household_registration.tipoLogradouroNumeroDne %></td>
-        <td><%= household_registration.stSemNumero %></td>
-        <td><%= household_registration.abastecimentoAgua %></td>
-        <td><%= household_registration.areaProducaoRural %></td>
-        <td><%= household_registration.destinoLixo %></td>
-        <td><%= household_registration.formaEscoamentoBanheiro %></td>
-        <td><%= household_registration.localizacao %></td>
-        <td><%= household_registration.materialPredominanteParedesExtDomicilio %></td>
-        <td><%= household_registration.nuComodos %></td>
-        <td><%= household_registration.nuMoradores %></td>
-        <td><%= household_registration.situacaoMoradiaPosseTerra %></td>
-        <td><%= household_registration.stDiponibilidadeEnergiaeletrica %></td>
-        <td><%= household_registration.tipoAcessoDomicilio %></td>
-        <td><%= household_registration.tipoDomicilio %></td>
-        <td><%= household_registration.tratamentoAguaDomicilio %></td>
-        <td><%= link_to 'Show', household_registration %></td>
-        <td><%= link_to 'Edit', edit_household_registration_path(household_registration) %></td>
-        <td><%= link_to 'Destroy', household_registration, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+<div class="col-sm-12">
+  <div class="card">
+    <div class="card-header">
+      <h4>Cadastro Domiciliar</h4>
+      <p id="notice"><%= notice %></p>
+    </div>
+    <div class="card-body">
+      <% if @household_registrations.empty? %>
+        <h5>Sem Registros</h5>
+      <% end %>
+      <% unless @household_registrations.empty? %>
+        <div class="table-responsive">
+          <table class="display" id="API-2">
+            <thead>
+              <th>Uuid</th>
+              <th colspan="3"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @household_registrations.each do |household_registration| %>
+              <tr>
+                <td><%= household_registration.uuid %></td>
+                <td>
+                  <%= link_to household_registration do %>
+                    <i class="fa fa-eye fa-2x"></i>
+                  <% end %>
+                </td>
+                <td>
+                  <%= link_to edit_household_registration_path(household_registration) do %>
+                    <i class="fa fa-edit fa-2x"></i>
+                  <% end %>
+                </td>
+                <td>
+                  <%= link_to household_registration, method: :delete, data: { confirm: 'Are you sure?' } do %>
+                    <i class="fa fa-trash fa-2x"></i>
+                  <% end %>
+                </td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
     <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Household Registration', new_household_registration_path %>
+    <br>
+    <%= link_to 'New Household Registration', new_household_registration_path, id: "addRow", class: 'btn btn-primary mb-3' %>
+  </div>
+</div>
+</div>

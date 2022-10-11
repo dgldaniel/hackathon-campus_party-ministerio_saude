@@ -14,10 +14,14 @@ class HouseholdRegistrationsController < ApplicationController
   # GET /household_registrations/new
   def new
     @household_registration = HouseholdRegistration.new
+    @household_registration.families.build
+
+    @options = HouseholdRegistration.build_options
   end
 
   # GET /household_registrations/1/edit
   def edit
+    @options = HouseholdRegistration.build_options
   end
 
   # POST /household_registrations or /household_registrations.json

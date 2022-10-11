@@ -1,0 +1,42 @@
+[
+  {
+    "Código": 109,
+    "Descrição": "Alvenaria com revestimento",
+    "Observações": "-"
+  },
+  {
+    "Código": 110,
+    "Descrição": "Alvenaria sem revestimento",
+    "Observações": "-"
+  },
+  {
+    "Código": 111,
+    "Descrição": "Taipa com revestimento",
+    "Observações": "-"
+  },
+  {
+    "Código": 112,
+    "Descrição": "Taipa sem revestimento",
+    "Observações": "-"
+  },
+  {
+    "Código": 113,
+    "Descrição": "Madeira emparelhada",
+    "Observações": "-"
+  },
+  {
+    "Código": 114,
+    "Descrição": "Material aproveitado",
+    "Observações": "-"
+  },
+  {
+    "Código": 115,
+    "Descrição": "Palha",
+    "Observações": "-"
+  },
+  {
+    "Código": 116,
+    "Descrição": "Outro material",
+    "Observações": "-"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "Código": 75,
+    "Descrição": "Próprio",
+    "Observações": "-"
+  },
+  {
+    "Código": 76,
+    "Descrição": "Financiado",
+    "Observações": "-"
+  },
+  {
+    "Código": 77,
+    "Descrição": "Alugado",
+    "Observações": "-"
+  },
+  {
+    "Código": 78,
+    "Descrição": "Arrendado",
+    "Observações": "-"
+  },
+  {
+    "Código": 79,
+    "Descrição": "Cedido",
+    "Observações": "-"
+  },
+  {
+    "Código": 80,
+    "Descrição": "Ocupação",
+    "Observações": "-"
+  },
+  {
+    "Código": 81,
+    "Descrição": "Situação de rua",
+    "Observações": "-"
+  },
+  {
+    "Código": 82,
+    "Descrição": "Outra",
+    "Observações": "-"
+  }
+]

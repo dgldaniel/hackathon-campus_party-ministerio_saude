@@ -9,7 +9,7 @@
       </ul>
     </div>
   <% end %>
-  <div id="families">
+  <div id="families" class="tab">
     <%= form.fields_for :families do |family| %>
       <%= render 'family_fields', f: family %>
     <% end %>
@@ -19,135 +19,333 @@
       <br>
     </div>
   </div>
-  <div class="field">
-    <%= form.label :animaisNoDomicilio %>
-    <%= form.text_field :animaisNoDomicilio %>
+  <div class="tab">
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :animaisNoDomicilio %>
+          <%= form.collection_check_boxes :animaisNoDomicilio, @options[:animal_domicilio], :second, :first do |b| %>
+            <div class="d-block">
+              <%= b.check_box %>
+              <%= b.label %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.check_box :fichaAtualizada %>
+          <%= form.label :fichaAtualizada %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.check_box :stAnimaisNoDomicilio %>
+          <%= form.label :stAnimaisNoDomicilio %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :quantosAnimaisNoDomicilio %>
+          <%= form.text_field :quantosAnimaisNoDomicilio, class: 'form-control btn-pill' %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.check_box :statusTermoRecusaCadatroDomiciliarAtencaoBasica %>
+          <%= form.label :statusTermoRecusaCadatroDomiciliarAtencaoBasica %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :tpCdsOrigem %>
+          <%= form.number_field :tpCdsOrigem, class: 'form-control btn-pill' %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :uuid %>
+          <%= form.text_field :uuid, class: 'form-control btn-pill' %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :uuidFichaOriginadora %>
+          <%= form.text_field :uuidFichaOriginadora, class: 'form-control btn-pill' %>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="field">
-    <%= form.label :fichaAtualizada %>
-    <%= form.check_box :fichaAtualizada %>
+  <div class="tab">
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :bairro %>
+          <%= form.text_field :bairro, class: 'form-control btn-pill' %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :cep %>
+          <%= form.text_field :cep, class: 'form-control btn-pill' %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :codigoIbgeMunicipio %>
+          <%= form.select :codigoIbgeMunicipio, @options[:municipios], {}, { class: 'js-example-basic-single col-sm-12' } %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :complemento %>
+          <%= form.text_field :complemento, class: 'form-control btn-pill' %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :nomeLogradouro %>
+          <%= form.text_field :nomeLogradouro, class: 'form-control btn-pill' %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :numero %>
+          <%= form.text_field :numero, class: 'form-control btn-pill' %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :numeroDneUf %>
+          <%= form.select :numeroDneUf, @options[:estados], {}, { class: 'js-example-basic-single col-sm-12' } %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :telReferencial %>
+          <%= form.text_field :telReferencial, class: 'form-control btn-pill' %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :telResidencial %>
+          <%= form.text_field :telResidencial, class: 'form-control btn-pill' %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :tipoLogradouroNumeroDne %>
+          <%= form.select :tipoLogradouroNumeroDne, @options[:tipo_logradouro], {}, { class: 'js-example-basic-single col-sm-12' } %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.check_box :stSemNumero %>
+          <%= form.label :stSemNumero %>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="field">
-    <%= form.label :quantosAnimaisNoDomicilio %>
-    <%= form.text_field :quantosAnimaisNoDomicilio %>
+  <div class="tab">
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :abastecimentoAgua %>
+          <%= form.collection_radio_buttons :abastecimentoAgua, @options[:abastecimento_agua], :second, :first do |b| %>
+            <div class="d-block">
+              <%= b.radio_button %>
+              <%= b.label %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :areaProducaoRural %>
+          <%= form.collection_radio_buttons :areaProducaoRural, @options[:posse_uso_terra], :second, :first do |b| %>
+            <div class="d-block">
+              <%= b.radio_button %>
+              <%= b.label %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :destinoLixo %>
+          <%= form.collection_radio_buttons :destinoLixo, @options[:destino_lixo], :second, :first do |b| %>
+            <div class="d-block">
+              <%= b.radio_button %>
+              <%= b.label %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :formaEscoamentoBanheiro %>
+          <%= form.collection_radio_buttons :formaEscoamentoBanheiro, @options[:escoamento_banheiro], :second, :first do |b| %>
+            <div class="d-block">
+              <%= b.radio_button %>
+              <%= b.label %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :localizacao %>
+          <%= form.collection_radio_buttons :localizacao, @options[:localizacao_moradia], :second, :first do |b| %>
+            <div class="d-block">
+              <%= b.radio_button %>
+              <%= b.label %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :materialPredominanteParedesExtDomicilio %>
+          <%= form.collection_radio_buttons :materialPredominanteParedesExtDomicilio, @options[:material_predominante_construcao], :second, :first do |b| %>
+            <div class="d-block">
+              <%= b.radio_button %>
+              <%= b.label %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :nuComodos %>
+          <%= form.text_field :nuComodos, class: 'form-control btn-pill' %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :nuMoradores %>
+          <%= form.number_field :nuMoradores, class: 'form-control btn-pill' %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :situacaoMoradiaPosseTerra %>
+          <%= form.collection_radio_buttons :situacaoMoradiaPosseTerra, @options[:situacao_moradia], :second, :first do |b| %>
+            <div class="d-block">
+              <%= b.radio_button %>
+              <%= b.label %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.check_box :stDiponibilidadeEnergiaeletrica %>
+          <%= form.label :stDiponibilidadeEnergiaeletrica %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :tipoAcessoDomicilio %>
+          <%= form.collection_radio_buttons :tipoAcessoDomicilio, @options[:acesso_domicilio], :second, :first do |b| %>
+            <div class="d-block">
+              <%= b.radio_button %>
+              <%= b.label %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :tipoDomicilio %>
+          <%= form.collection_radio_buttons :tipoDomicilio, @options[:tipo_domicilio], :second, :first do |b| %>
+            <div class="d-block">
+              <%= b.radio_button %>
+              <%= b.label %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :tratamentoAguaDomicilio %>
+          <%= form.collection_radio_buttons :tratamentoAguaDomicilio, @options[:tratamento_agua_domicilio], :second, :first do |b| %>
+            <div class="d-block">
+              <%= b.radio_button %>
+              <%= b.label %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="field">
-    <%= form.label :stAnimaisNoDomicilio %>
-    <%= form.check_box :stAnimaisNoDomicilio %>
+  <div class="text-end btn-mb">
+    <button class="btn btn-warning" id="prevBtn" type="button">Anterior</button>
+    <button class="btn btn-primary" id="nextBtn" type="button">Próximo</button>
+    <%= form.submit "Registrar Cadastro Domiliciar", class: "btn btn-success", id: 'submitBtn', style: "display:none" %>
   </div>
-  <div class="field">
-    <%= form.label :statusTermoRecusaCadatroDomiciliarAtencaoBasica %>
-    <%= form.text_field :statusTermoRecusaCadatroDomiciliarAtencaoBasica %>
-  </div>
-  <div class="field">
-    <%= form.label :tpCdsOrigem %>
-    <%= form.number_field :tpCdsOrigem %>
-  </div>
-  <div class="field">
-    <%= form.label :uuid %>
-    <%= form.text_field :uuid %>
-  </div>
-  <div class="field">
-    <%= form.label :uuidFichaOriginadora %>
-    <%= form.text_field :uuidFichaOriginadora %>
-  </div>
-  <div class="field">
-    <%= form.label :bairro %>
-    <%= form.text_field :bairro %>
-  </div>
-  <div class="field">
-    <%= form.label :cep %>
-    <%= form.text_field :cep %>
-  </div>
-  <div class="field">
-    <%= form.label :codigoIbgeMunicipio %>
-    <%= form.text_field :codigoIbgeMunicipio %>
-  </div>
-  <div class="field">
-    <%= form.label :complemento %>
-    <%= form.text_field :complemento %>
-  </div>
-  <div class="field">
-    <%= form.label :nomeLogradouro %>
-    <%= form.text_field :nomeLogradouro %>
-  </div>
-  <div class="field">
-    <%= form.label :numero %>
-    <%= form.text_field :numero %>
-  </div>
-  <div class="field">
-    <%= form.label :numeroDneUf %>
-    <%= form.text_field :numeroDneUf %>
-  </div>
-  <div class="field">
-    <%= form.label :telReferencial %>
-    <%= form.text_field :telReferencial %>
-  </div>
-  <div class="field">
-    <%= form.label :telResidencial %>
-    <%= form.text_field :telResidencial %>
-  </div>
-  <div class="field">
-    <%= form.label :tipoLogradouroNumeroDne %>
-    <%= form.text_field :tipoLogradouroNumeroDne %>
-  </div>
-  <div class="field">
-    <%= form.label :stSemNumero %>
-    <%= form.check_box :stSemNumero %>
-  </div>
-  <div class="field">
-    <%= form.label :abastecimentoAgua %>
-    <%= form.number_field :abastecimentoAgua %>
-  </div>
-  <div class="field">
-    <%= form.label :areaProducaoRural %>
-    <%= form.number_field :areaProducaoRural %>
-  </div>
-  <div class="field">
-    <%= form.label :destinoLixo %>
-    <%= form.number_field :destinoLixo %>
-  </div>
-  <div class="field">
-    <%= form.label :formaEscoamentoBanheiro %>
-    <%= form.number_field :formaEscoamentoBanheiro %>
-  </div>
-  <div class="field">
-    <%= form.label :localizacao %>
-    <%= form.number_field :localizacao %>
-  </div>
-  <div class="field">
-    <%= form.label :materialPredominanteParedesExtDomicilio %>
-    <%= form.number_field :materialPredominanteParedesExtDomicilio %>
-  </div>
-  <div class="field">
-    <%= form.label :nuComodos %>
-    <%= form.text_field :nuComodos %>
-  </div>
-  <div class="field">
-    <%= form.label :nuMoradores %>
-    <%= form.number_field :nuMoradores %>
-  </div>
-  <div class="field">
-    <%= form.label :situacaoMoradiaPosseTerra %>
-    <%= form.number_field :situacaoMoradiaPosseTerra %>
-  </div>
-  <div class="field">
-    <%= form.label :stDiponibilidadeEnergiaeletrica %>
-    <%= form.check_box :stDiponibilidadeEnergiaeletrica %>
-  </div>
-  <div class="field">
-    <%= form.label :tipoAcessoDomicilio %>
-    <%= form.number_field :tipoAcessoDomicilio %>
-  </div>
-  <div class="field">
-    <%= form.label :tipoDomicilio %>
-    <%= form.number_field :tipoDomicilio %>
-  </div>
-  <div class="field">
-    <%= form.label :tratamentoAguaDomicilio %>
-    <%= form.number_field :tratamentoAguaDomicilio %>
-  </div>
-  <div class="actions">
-    <%= form.submit %>
+  <!-- Circles which indicates the steps of the form:-->
+  <div class="text-center">
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
   </div>
 <% end %>

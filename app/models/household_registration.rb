@@ -2,4 +2,24 @@
 class HouseholdRegistration < ApplicationRecord
   has_many :families, inverse_of: :household_registration, dependent: :destroy
   accepts_nested_attributes_for :families, reject_if: :all_blank, allow_destroy: true
+
+  def self.build_options
+    {
+      municipios: JSON.parse(Rails.cache.read('@CI_Municipio')),
+      abastecimento_agua: JSON.parse(Rails.cache.read('@CD_Abastecimento_Agua')),
+      acesso_domicilio: JSON.parse(Rails.cache.read('@CD_Acesso_Domicilio')),
+      animal_domicilio: JSON.parse(Rails.cache.read('@CD_Animal_Domicilio')),
+      destino_lixo: JSON.parse(Rails.cache.read('@CD_Destino_Lixo')),
+      escoamento_banheiro: JSON.parse(Rails.cache.read('@CD_Escoamento_Banheiro')),
+      estados: JSON.parse(Rails.cache.read('@CD_Estados')),
+      localizacao_moradia: JSON.parse(Rails.cache.read('@CD_Localizacao_Moradia')),
+      material_predominante_construcao: JSON.parse(Rails.cache.read('@CD_Material_Predominante_Construcao')),
+      posse_uso_terra: JSON.parse(Rails.cache.read('@CD_Posse_Uso_Terra')),
+      renda_familiar: JSON.parse(Rails.cache.read('@CD_Renda_Familiar')),
+      situacao_moradia: JSON.parse(Rails.cache.read('@CD_Situacao_Moradia')),
+      tipo_domicilio: JSON.parse(Rails.cache.read('@CD_Tipo_Domicilio')),
+      tipo_logradouro: JSON.parse(Rails.cache.read('@CD_Tipo_Logradouro')),
+      tratamento_agua_domicilio: JSON.parse(Rails.cache.read('@CD_Tratamento_Agua_Domicilio')),
+    }
+  end
 end
