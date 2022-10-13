@@ -1,7 +1,32 @@
 # frozen_string_literal: true
+
 class HouseholdRegistration < ApplicationRecord
+  require 'esus/models/cadastro_domiciliar/cadastro_domiciliar_thrift'
+  require 'esus/models/dado_transporte/dado_transporte_thrift'
+  require 'esus/models/common_types'
+
+  require 'date'
+
   has_many :families, inverse_of: :household_registration, dependent: :destroy
   accepts_nested_attributes_for :families, reject_if: :all_blank, allow_destroy: true
+
+  has_one_attached :thrift_file
+
+  before_create :serialize_thrift
+
+  def serialize_thrift
+    uuid_random = Digest::UUID.uuid_v4
+
+    self.uuid = uuid_random
+    self.uuidFichaOriginadora = uuid_random
+    self.tpCdsOrigem = 3
+
+    manager_thrift = CadastroDomiciliarGerenciarThrift.new(self)
+
+    serialized_record = manager_thrift.serialize
+
+    thrift_file.attach(io: serialized_record, filename: "#{self.uuid}.thrift"
+  end
 
   def self.build_options
     {
@@ -22,4 +47,5 @@ class HouseholdRegistration < ApplicationRecord
       tratamento_agua_domicilio: JSON.parse(Rails.cache.read('@CD_Tratamento_Agua_Domicilio')),
     }
   end
+
 end
