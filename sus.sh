@@ -312,3 +312,5 @@ rendaFamiliar:integer \
 resideDesde:datetime \
 stMudanca:boolean \
 references:HouseholdRegistration
+
+docker-compose exec app bundle exec rails db:environment:set RAILS_ENV=development db:drop db:create db:migrate db:seed

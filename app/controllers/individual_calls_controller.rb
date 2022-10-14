@@ -5,7 +5,7 @@ class IndividualCallsController < ApplicationController
 
   # GET /individual_calls or /individual_calls.json
   def index
-    @individual_calls = IndividualCall.all
+    @individual_calls = current_user.doctor.individual_calls
   end
 
   # GET /individual_calls/1 or /individual_calls/1.json
@@ -37,6 +37,7 @@ class IndividualCallsController < ApplicationController
   # POST /individual_calls or /individual_calls.json
   def create
     @individual_call = IndividualCall.new(individual_call_params)
+    @individual_call.doctor = current_user.doctor
 
     respond_to do |format|
       if @individual_call.save

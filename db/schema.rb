@@ -90,8 +90,10 @@ ActiveRecord::Schema.define(version: 2022_10_10_191618) do
     t.boolean "pseSaude"
     t.string "temasParaSaude", default: [], array: true
     t.string "praticasEmSaude", default: [], array: true
+    t.bigint "doctor_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["doctor_id"], name: "index_collective_activity_sheets_on_doctor_id"
   end
 
   create_table "collective_calls", force: :cascade do |t|
@@ -180,7 +182,7 @@ ActiveRecord::Schema.define(version: 2022_10_10_191618) do
     t.boolean "fichaAtualizada"
     t.string "quantosAnimaisNoDomicilio"
     t.boolean "stAnimaisNoDomicilio"
-    t.string "statusTermoRecusaCadatroDomiciliarAtencaoBasica"
+    t.boolean "statusTermoRecusaCadatroDomiciliarAtencaoBasica"
     t.integer "tpCdsOrigem"
     t.uuid "uuid"
     t.uuid "uuidFichaOriginadora"
@@ -208,8 +210,10 @@ ActiveRecord::Schema.define(version: 2022_10_10_191618) do
     t.integer "tipoAcessoDomicilio"
     t.integer "tipoDomicilio"
     t.integer "tratamentoAguaDomicilio"
+    t.bigint "doctor_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["doctor_id"], name: "index_household_registrations_on_doctor_id"
   end
 
   create_table "individual_calls", force: :cascade do |t|
@@ -237,11 +241,13 @@ ActiveRecord::Schema.define(version: 2022_10_10_191618) do
     t.float "perimetroCefalico"
     t.datetime "dataHoraInicialAtendimento"
     t.datetime "dataHoraFinalAtendimento"
+    t.bigint "doctor_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "pic"
     t.string "examesSolicitados", default: [], array: true
     t.string "examesAvaliados", default: [], array: true
+    t.index ["doctor_id"], name: "index_individual_calls_on_doctor_id"
   end
 
   create_table "individual_registrations", force: :cascade do |t|
@@ -279,7 +285,6 @@ ActiveRecord::Schema.define(version: 2022_10_10_191618) do
     t.boolean "statusMembroPovoComunidadeTradicional"
     t.boolean "statusDesejaInformarIdentidadeGenero"
     t.string "coPovoComunidadeTradicional"
-    t.boolean "statusTermoRecusaCadastroIndividualAtencaoBasica"
     t.uuid "uuid"
     t.uuid "uuidFichaOriginadora"
     t.string "profissionalCNS"
@@ -352,8 +357,11 @@ ActiveRecord::Schema.define(version: 2022_10_10_191618) do
     t.string "numeroDO", limit: 9
     t.boolean "statusCadastroIndividualInativo"
     t.boolean "statusGeradoAutomaticamente"
+    t.boolean "statusTermoRecusaCadastroIndividualAtencaoBasica", default: false
+    t.bigint "doctor_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["doctor_id"], name: "index_individual_registrations_on_doctor_id"
   end
 
   create_table "medicines", force: :cascade do |t|
@@ -422,8 +430,10 @@ ActiveRecord::Schema.define(version: 2022_10_10_191618) do
     t.integer "numTotalGlicemiaCapilar"
     t.integer "numTotalMedicaoAltura"
     t.integer "numTotalMedicaoPeso"
+    t.bigint "doctor_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["doctor_id"], name: "index_procedure_sheets_on_doctor_id"
   end
 
   create_table "professionals", force: :cascade do |t|
@@ -475,8 +485,13 @@ ActiveRecord::Schema.define(version: 2022_10_10_191618) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "collective_activity_sheets", "doctors"
   add_foreign_key "collective_calls", "participants", column: "participants_id"
   add_foreign_key "collective_calls", "professionals", column: "professionals_id"
   add_foreign_key "families", "household_registrations"
+  add_foreign_key "household_registrations", "doctors"
+  add_foreign_key "individual_calls", "doctors"
+  add_foreign_key "individual_registrations", "doctors"
   add_foreign_key "patients", "doctors"
+  add_foreign_key "procedure_sheets", "doctors"
 end

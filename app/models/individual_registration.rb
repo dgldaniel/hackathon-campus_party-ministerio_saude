@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 # municipios, cbo e comunidade
 class IndividualRegistration < ApplicationRecord
+  belongs_to :doctor
+
   has_one_attached :xml_file
   has_one_attached :thrift_file
-
-  # belongs_to :doctor
 
   # validates :cpfCidadao, uniqueness: true
   # validates :cnsCidadao, uniqueness: true

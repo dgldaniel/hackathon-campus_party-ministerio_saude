@@ -2,14 +2,17 @@
 
 class HouseholdRegistration < ApplicationRecord
   require 'esus/models/cadastro_domiciliar/cadastro_domiciliar_thrift'
-  require 'esus/models/dado_transporte/dado_transporte_thrift'
+  require 'esus/models/dado_transporte/dado_transporte_thirft'
   require 'esus/models/common_types'
 
   require 'date'
 
+  belongs_to :doctor
+
   has_many :families, inverse_of: :household_registration, dependent: :destroy
   accepts_nested_attributes_for :families, reject_if: :all_blank, allow_destroy: true
 
+  has_one_attached :xml_file
   has_one_attached :thrift_file
 
   before_create :serialize_thrift
@@ -25,7 +28,7 @@ class HouseholdRegistration < ApplicationRecord
 
     serialized_record = manager_thrift.serialize
 
-    thrift_file.attach(io: serialized_record, filename: "#{self.uuid}.thrift"
+    thrift_file.attach(io: serialized_record, filename: "#{uuid}.thrift")
   end
 
   def self.build_options

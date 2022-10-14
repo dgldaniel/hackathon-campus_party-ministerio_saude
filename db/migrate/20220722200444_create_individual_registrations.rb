@@ -36,7 +36,6 @@ class CreateIndividualRegistrations < ActiveRecord::Migration[6.1]
       t.boolean(:statusMembroPovoComunidadeTradicional, null: true)
       t.boolean(:statusDesejaInformarIdentidadeGenero, null: true)
       t.string(:coPovoComunidadeTradicional, null: true)
-      t.boolean(:statusTermoRecusaCadastroIndividualAtencaoBasica, null: true)
       t.uuid(:uuid)
       t.uuid(:uuidFichaOriginadora, null: true)
       t.string(:profissionalCNS)

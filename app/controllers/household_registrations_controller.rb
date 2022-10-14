@@ -4,7 +4,7 @@ class HouseholdRegistrationsController < ApplicationController
 
   # GET /household_registrations or /household_registrations.json
   def index
-    @household_registrations = HouseholdRegistration.all
+    @household_registrations = current_user.doctor.household_registrations
   end
 
   # GET /household_registrations/1 or /household_registrations/1.json
@@ -27,6 +27,7 @@ class HouseholdRegistrationsController < ApplicationController
   # POST /household_registrations or /household_registrations.json
   def create
     @household_registration = HouseholdRegistration.new(household_registration_params)
+    @household_registration.doctor = current_user.doctor
 
     respond_to do |format|
       if @household_registration.save

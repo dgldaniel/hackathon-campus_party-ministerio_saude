@@ -1,9 +1,12 @@
 # frozen_string_literal: true
 class ProcedureSheet < ApplicationRecord
+  belongs_to :doctor
+
   has_many :care_procedures, inverse_of: :procedure_sheet, dependent: :destroy
   accepts_nested_attributes_for :care_procedures, reject_if: :all_blank, allow_destroy: true
 
   has_one_attached :xml_file
+  has_one_attached :thrift_file
 
   before_create :generate_xml
   before_update :generate_xml

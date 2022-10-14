@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 class IndividualCall < ApplicationRecord
+  belongs_to :doctor
+
   has_one :problem_condition_evaluated, inverse_of: :individual_call, dependent: :destroy
   accepts_nested_attributes_for :problem_condition_evaluated, reject_if: :all_blank, allow_destroy: true
 
@@ -16,6 +18,7 @@ class IndividualCall < ApplicationRecord
   accepts_nested_attributes_for :forwardings, reject_if: :all_blank, allow_destroy: true
 
   has_one_attached :xml_file
+  has_one_attached :thrift_file
 
   before_create :generate_xml
   before_update :generate_xml

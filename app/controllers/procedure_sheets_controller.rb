@@ -5,7 +5,7 @@ class ProcedureSheetsController < ApplicationController
 
   # GET /procedure_sheets or /procedure_sheets.json
   def index
-    @procedure_sheets = ProcedureSheet.all
+    @procedure_sheets = current_user.doctor.procedure_sheets
   end
 
   # GET /procedure_sheets/1 or /procedure_sheets/1.json
@@ -32,6 +32,7 @@ class ProcedureSheetsController < ApplicationController
   # POST /procedure_sheets or /procedure_sheets.json
   def create
     @procedure_sheet = ProcedureSheet.new(procedure_sheet_params)
+    @procedure_sheet.doctor = current_user.doctor
 
     respond_to do |format|
       if @procedure_sheet.save

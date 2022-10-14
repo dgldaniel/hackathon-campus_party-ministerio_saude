@@ -52,7 +52,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
         :email,
         :password,
         :password_confirmation,
-        doctor_attributes: %i[full_name crm],
+        doctor_attributes: %i[profissionalCNS cboCodigo_2002 cnes ine codigoIbgeMunicipio],
       ]
     )
   end
