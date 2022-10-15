@@ -15,8 +15,8 @@ class CollectiveActivitySheet < ApplicationRecord
   has_one_attached :xml_file
   has_one_attached :thrift_file
 
-  before_create :generate_xml
-  before_update :generate_xml
+  before_create :serialize_thrift
+  before_update :serialize_thrift
 
   scope :generate_xml_from, -> (start_date, end_date) { where("created_at >= ? AND created_at <= ?", start_date, end_date)}
 
@@ -28,10 +28,10 @@ class CollectiveActivitySheet < ApplicationRecord
     manager_thrift = FichaAtividadeColetivaGerenciarThrift.new(self)
     serialized_record = manager_thrift.serialize
 
-    manager_dado_transporte = DadoTransporteGerenciarThrift.new(doctor, serialized_record)
+    manager_dado_transporte = DadoTransporteGerenciarThrift.new(doctor, serialized_record, 6)
     serialized_file = manager_dado_transporte.serialize
 
-    thrift_file.attach(io: serialized_file, filename: "#{uuidFicha}.thrift")
+    SerializeEsusJob.perform_now(self, serialized_file, uuid_random)
   end
 
   def self.build_options

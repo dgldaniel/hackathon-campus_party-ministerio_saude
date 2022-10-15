@@ -1,164 +1,135 @@
 <p id="notice"><%= notice %></p>
-
+<br>
+<% if @household_registration.thrift_file.attached? %>
+  <%= link_to 'Baixar Thrift', rails_blob_url(@household_registration.thrift_file) %>
+<% end %>
 <p>
   <strong>Animaisnodomicilio:</strong>
   <%= @household_registration.animaisNoDomicilio %>
 </p>
-
 <p>
   <strong>Fichaatualizada:</strong>
   <%= @household_registration.fichaAtualizada %>
 </p>
-
 <p>
   <strong>Quantosanimaisnodomicilio:</strong>
   <%= @household_registration.quantosAnimaisNoDomicilio %>
 </p>
-
 <p>
   <strong>Stanimaisnodomicilio:</strong>
   <%= @household_registration.stAnimaisNoDomicilio %>
 </p>
-
 <p>
   <strong>Statustermorecusacadatrodomiciliaratencaobasica:</strong>
   <%= @household_registration.statusTermoRecusaCadatroDomiciliarAtencaoBasica %>
 </p>
-
 <p>
   <strong>Tpcdsorigem:</strong>
   <%= @household_registration.tpCdsOrigem %>
 </p>
-
 <p>
   <strong>Uuid:</strong>
   <%= @household_registration.uuid %>
 </p>
-
 <p>
   <strong>Uuidfichaoriginadora:</strong>
   <%= @household_registration.uuidFichaOriginadora %>
 </p>
-
 <p>
   <strong>Bairro:</strong>
   <%= @household_registration.bairro %>
 </p>
-
 <p>
   <strong>Cep:</strong>
   <%= @household_registration.cep %>
 </p>
-
 <p>
   <strong>Codigoibgemunicipio:</strong>
   <%= @household_registration.codigoIbgeMunicipio %>
 </p>
-
 <p>
   <strong>Complemento:</strong>
   <%= @household_registration.complemento %>
 </p>
-
 <p>
   <strong>Nomelogradouro:</strong>
   <%= @household_registration.nomeLogradouro %>
 </p>
-
 <p>
   <strong>Numero:</strong>
   <%= @household_registration.numero %>
 </p>
-
 <p>
   <strong>Numerodneuf:</strong>
   <%= @household_registration.numeroDneUf %>
 </p>
-
 <p>
   <strong>Telreferencial:</strong>
   <%= @household_registration.telReferencial %>
 </p>
-
 <p>
   <strong>Telresidencial:</strong>
   <%= @household_registration.telResidencial %>
 </p>
-
 <p>
   <strong>Tipologradouronumerodne:</strong>
   <%= @household_registration.tipoLogradouroNumeroDne %>
 </p>
-
 <p>
   <strong>Stsemnumero:</strong>
   <%= @household_registration.stSemNumero %>
 </p>
-
 <p>
   <strong>Abastecimentoagua:</strong>
   <%= @household_registration.abastecimentoAgua %>
 </p>
-
 <p>
   <strong>Areaproducaorural:</strong>
   <%= @household_registration.areaProducaoRural %>
 </p>
-
 <p>
   <strong>Destinolixo:</strong>
   <%= @household_registration.destinoLixo %>
 </p>
-
 <p>
   <strong>Formaescoamentobanheiro:</strong>
   <%= @household_registration.formaEscoamentoBanheiro %>
 </p>
-
 <p>
   <strong>Localizacao:</strong>
   <%= @household_registration.localizacao %>
 </p>
-
 <p>
   <strong>Materialpredominanteparedesextdomicilio:</strong>
   <%= @household_registration.materialPredominanteParedesExtDomicilio %>
 </p>
-
 <p>
   <strong>Nucomodos:</strong>
   <%= @household_registration.nuComodos %>
 </p>
-
 <p>
   <strong>Numoradores:</strong>
   <%= @household_registration.nuMoradores %>
 </p>
-
 <p>
   <strong>Situacaomoradiaposseterra:</strong>
   <%= @household_registration.situacaoMoradiaPosseTerra %>
 </p>
-
 <p>
   <strong>Stdiponibilidadeenergiaeletrica:</strong>
   <%= @household_registration.stDiponibilidadeEnergiaeletrica %>
 </p>
-
 <p>
   <strong>Tipoacessodomicilio:</strong>
   <%= @household_registration.tipoAcessoDomicilio %>
 </p>
-
 <p>
   <strong>Tipodomicilio:</strong>
   <%= @household_registration.tipoDomicilio %>
 </p>
-
 <p>
   <strong>Tratamentoaguadomicilio:</strong>
   <%= @household_registration.tratamentoAguaDomicilio %>
 </p>
-
 <%= link_to 'Edit', edit_household_registration_path(@household_registration) %> |
 <%= link_to 'Back', household_registrations_path %>

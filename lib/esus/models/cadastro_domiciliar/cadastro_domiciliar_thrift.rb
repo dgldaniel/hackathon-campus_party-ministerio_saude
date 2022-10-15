@@ -27,17 +27,21 @@ class CadastroDomiciliarGerenciarThrift
     end
 
     fill_instance_methods_with_array = -> (array, methods, class_thirft) do
+      new_array = []
+
       array.each do |record_data|
         instance_thirft = class_thirft.new
 
         methods.each do |each_method|
           method_sym = each_method.to_sym
 
-          instance_thirft.send("#{each_method}=", record_data[method_sym]) unless each_familia[method_sym].nil?
+          instance_thirft.send("#{each_method}=", record_data[method_sym]) unless record_data[method_sym].nil?
         end
 
-        return instance_thirft
+        new_array.push(instance_thirft)
       end
+
+      new_array
     end
 
     condicao_moradia_class = Br::Gov::Saude::Esusab::Ras::Cadastrodomiciliar::CondicaoMoradiaThrift

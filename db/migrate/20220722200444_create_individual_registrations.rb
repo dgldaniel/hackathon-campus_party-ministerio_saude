@@ -52,7 +52,7 @@ class CreateIndividualRegistrations < ActiveRecord::Migration[6.1]
       t.integer(:numLote)
       t.boolean(:fichaAtualizada)
       t.boolean(:motivoSaidaCidadao, null: true)
-      t.integer(:tpCdsOrigem, null: false)
+      t.integer(:tpCdsOrigem, null: true)
       t.string(:descricaoCausaInternacaoEm12Meses, null: true, limit: 100)
       t.string(:descricaoOutraCondicao1, null: true, limit: 100)
       t.string(:descricaoOutraCondicao2, null: true, limit: 100)

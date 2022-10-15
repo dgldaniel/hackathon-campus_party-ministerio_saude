@@ -25,10 +25,10 @@ class HouseholdRegistration < ApplicationRecord
     manager_thrift = CadastroDomiciliarGerenciarThrift.new(self)
     serialized_record = manager_thrift.serialize
 
-    manager_dado_transporte = DadoTransporteGerenciarThrift.new(doctor, serialized_record)
+    manager_dado_transporte = DadoTransporteGerenciarThrift.new(doctor, serialized_record, 3)
     serialized_file = manager_dado_transporte.serialize
 
-    thrift_file.attach(io: serialized_file, filename: "#{uuid}.thrift")
+    SerializeEsusJob.perform_now(self, serialized_file, uuid_random)
   end
 
   def self.build_options

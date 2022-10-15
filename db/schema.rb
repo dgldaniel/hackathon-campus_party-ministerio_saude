@@ -59,14 +59,14 @@ ActiveRecord::Schema.define(version: 2022_10_10_191618) do
   create_table "care_procedures", force: :cascade do |t|
     t.string "numProntuario"
     t.string "cnsCidadao"
-    t.string "dtNascimento"
+    t.datetime "dtNascimento"
     t.integer "sexo"
     t.integer "localAtendimento"
     t.integer "turn"
     t.boolean "statusEscutaInicialOrientacao"
     t.string "procedimentos", default: [], array: true
-    t.string "dataHoraInicialAtendimento"
-    t.string "dataHoraFinalAtendimento"
+    t.datetime "dataHoraInicialAtendimento"
+    t.datetime "dataHoraFinalAtendimento"
     t.float "pesoAcompanhamentoNutricional"
     t.float "alturaAcompanhamentoNutricional"
     t.datetime "created_at", precision: 6, null: false
@@ -83,7 +83,7 @@ ActiveRecord::Schema.define(version: 2022_10_10_191618) do
     t.integer "localAtividade"
     t.time "horaInicio"
     t.time "horaFim"
-    t.string "inep"
+    t.integer "inep"
     t.string "responsavelCns"
     t.string "responsavelCnesUnidade"
     t.integer "responsavelNumIne"
@@ -306,7 +306,7 @@ ActiveRecord::Schema.define(version: 2022_10_10_191618) do
     t.integer "numLote"
     t.boolean "fichaAtualizada"
     t.boolean "motivoSaidaCidadao"
-    t.integer "tpCdsOrigem", null: false
+    t.integer "tpCdsOrigem"
     t.string "descricaoCausaInternacaoEm12Meses", limit: 100
     t.string "descricaoOutraCondicao1", limit: 100
     t.string "descricaoOutraCondicao2", limit: 100

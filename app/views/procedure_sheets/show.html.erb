@@ -5,6 +5,10 @@
       <% if @procedure_sheet.xml_file.attached? %>
         <%= link_to 'Baixar XML', rails_blob_url(@procedure_sheet.xml_file) %>
       <% end %>
+      <br>
+      <% if @procedure_sheet.thrift_file.attached? %>
+        <%= link_to 'Baixar Thrift', rails_blob_url(@procedure_sheet.thrift_file) %>
+      <% end %>
     </div>
     <div class="card-body">
       <p>

@@ -5,6 +5,10 @@
       <% if @individual_registration.xml_file.attached? %>
         <%= link_to 'Baixar XML', rails_blob_url(@individual_registration.xml_file), class: "btn btn-square btn-primary" %>
       <% end %>
+      <br>
+      <% if @individual_registration.thrift_file.attached? %>
+        <%= link_to 'Baixar Thrift', rails_blob_url(@individual_registration.thrift_file) %>
+      <% end %>
     </div>
     <div class="card-body">
       <p>

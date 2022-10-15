@@ -27,10 +27,10 @@ class IndividualRegistration < ApplicationRecord
     manager_thrift = CadastroIndividualGerenciarThrift.new(self)
     serialized_record = manager_thrift.serialize
 
-    manager_dado_transporte = DadoTransporteGerenciarThrift.new(doctor, serialized_record)
+    manager_dado_transporte = DadoTransporteGerenciarThrift.new(doctor, serialized_record, 2)
     serialized_file = manager_dado_transporte.serialize
 
-    thrift_file.attach(io: serialized_file, filename: "#{uuid}.thrift")
+    SerializeEsusJob.perform_now(self, serialized_file, uuid_random)
   end
 
   def serialize_data

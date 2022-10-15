@@ -8,7 +8,7 @@ class CreateCollectiveActivitySheets < ActiveRecord::Migration[6.1]
       t.integer(:localAtividade)
       t.time(:horaInicio)
       t.time(:horaFim)
-      t.string(:inep)
+      t.integer(:inep)
       t.string(:responsavelCns)
       t.string(:responsavelCnesUnidade)
       t.integer(:responsavelNumIne)

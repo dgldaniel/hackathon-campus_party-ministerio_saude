@@ -6,12 +6,13 @@ class DadoTransporteGerenciarThrift
   require_relative './dado_transporte_types'
   require_relative '../common_types'
 
-  def initialize(doctor, serialized_file)
+  def initialize(doctor, serialized_file, tipo_dado_serializado)
     @doctor = doctor
     @serialized_file = serialized_file
+    @tipo_dado_serializado = tipo_dado_serializado
   end
 
-  def serializar
+  def serialize
     header_thrift = Br::Gov::Saude::Esusab::Ras::Common::UnicaLotacaoHeaderThrift.new
 
     header_thrift.profissionalCNS = @doctor.profissionalCNS
@@ -42,9 +43,11 @@ class DadoTransporteGerenciarThrift
     remetente.fone = '98888888'
     remetente.email = 'b@a.com'
 
+    dado_transporte_instance.uuidDadoSerializado = 'UUIDUNICO222'
+    dado_transporte_instance.cnesDadoSerializado = 'UUIDUNICO222'
     dado_transporte_instance.remetente = originadora
     dado_transporte_instance.numLote = 1
-    dado_transporte_instance.tipoDadoSerializado = 2
+    dado_transporte_instance.tipoDadoSerializado = @tipo_dado_serializado
 
     versao_thrift.major = 3
     versao_thrift.minor = 2

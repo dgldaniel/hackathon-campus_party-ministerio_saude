@@ -80,19 +80,7 @@ class CollectiveActivitySheetsController < ApplicationController
     # Only allow a list of trusted parameters through.
     def collective_activity_sheet_params
       params.require(:collective_activity_sheet)
-            .permit(:uuidFicha,
-                    :inep,
-                    :numParticipantes,
-                    :numAvaliacoesAlterada,
-                    :atividadeTipo,
-                    :publicoAlvo,
-                    :tbCdsOrigem,
-                    :procedimento,
-                    :turno,
-                    :pseEducacao,
-                    :pseSaude,
-                    :temasParaSaude,
-                    :praticasEmSaude,
+            .permit(:uuidFicha, :dtAtividadeColetiva, :numParticipantesProgramados, :localAtividade, :horaInicio, :horaFim, :inep, :responsavelCns, :responsavelCnesUnidade, :responsavelNumIne, :numParticipantes, :numAvaliacoesAlteradas, :atividadeTipo, :temasParaReuniao, :publicoAlvo, :praticasTemasParaSaude, :tbCdsOrigem, :codigoIbgeMunicipio,
                     participants_attributes: [
                       :id,
                       :cnsParticipante,
@@ -109,6 +97,6 @@ class CollectiveActivitySheetsController < ApplicationController
                       :codigoCbo2002,
                       :_destroy,
                     ]
-                   )
+            )
     end
 end

@@ -27,17 +27,21 @@ class FichaProcedimentoGerenciarThrift
     end
 
     fill_instance_methods_with_array = -> (array, methods, class_thirft) do
+      new_array = []
+
       array.each do |record_data|
         instance_thirft = class_thirft.new
 
         methods.each do |each_method|
           method_sym = each_method.to_sym
 
-          instance_thirft.send("#{each_method}=", record_data[method_sym]) unless each_familia[method_sym].nil?
+          instance_thirft.send("#{each_method}=", record_data[method_sym]) unless record_data[method_sym].nil?
         end
 
-        return instance_thirft
+        new_array.push(instance_thirft)
       end
+
+      new_array
     end
 
     ficha_procedimento_child_class = Br::Gov::Saude::Esusab::Ras::Atendprocedimentos::FichaProcedimentoChildThrift
@@ -49,7 +53,7 @@ class FichaProcedimentoGerenciarThrift
     ficha_procedimento_master_instance = ficha_procedimento_master_class.new
 
     fill_instance_methods.call(ficha_procedimento_master_methods, ficha_procedimento_master_instance)
-    ficha_procedimento_child_array = fill_instance_methods_with_array.call(@procedure_sheet.care_procedures, ficha_procedimento_child_methods, ficha_procedimento_master_class)
+    ficha_procedimento_child_array = fill_instance_methods_with_array.call(@procedure_sheet.care_procedures, ficha_procedimento_child_methods, ficha_procedimento_child_class)
 
     ficha_procedimento_master_instance.atendProcedimentos = ficha_procedimento_child_array
 

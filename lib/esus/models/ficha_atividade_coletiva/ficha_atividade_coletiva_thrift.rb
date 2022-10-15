@@ -27,17 +27,21 @@ class FichaAtividadeColetivaGerenciarThrift
     end
 
     fill_instance_methods_with_array = -> (array, methods, class_thirft) do
+      new_array = []
+
       array.each do |record_data|
         instance_thirft = class_thirft.new
 
         methods.each do |each_method|
           method_sym = each_method.to_sym
 
-          instance_thirft.send("#{each_method}=", record_data[method_sym]) unless each_familia[method_sym].nil?
+          instance_thirft.send("#{each_method}=", record_data[method_sym]) unless record_data[method_sym].nil?
         end
 
-        return instance_thirft
+        new_array.push(instance_thirft)
       end
+
+      new_array
     end
 
     participante_class = Br::Gov::Saude::Esusab::Ras::Atividadecoletiva::ParticipanteRowItemThrift
@@ -52,13 +56,15 @@ class FichaAtividadeColetivaGerenciarThrift
 
     fill_instance_methods.call(ficha_coletiva_methods, ficha_coletiva_instance)
 
-    profissional_array = fill_instance_methods_with_array.call(@collective_activity_sheets.professionals, profissional_methods, familia_row_class)
+    profissional_array = fill_instance_methods_with_array.call(@collective_activity_sheets.professionals, profissional_methods, profissional_class)
     participante_array = fill_instance_methods_with_array.call(@collective_activity_sheets.participants, participante_methods, participante_class)
 
     ficha_coletiva_instance.profissionais = profissional_array
     ficha_coletiva_instance.participantes = participante_array
 
     serializer = Thrift::Serializer.new
+
+    puts ficha_coletiva_instance.inspect
 
     ficha_coletiva_serializado = serializer.serialize(ficha_coletiva_instance)
 

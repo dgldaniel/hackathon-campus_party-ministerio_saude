@@ -2,7 +2,6 @@
   <% if care_procedure.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(care_procedure.errors.count, "error") %> prohibited this care_procedure from being saved:</h2>
-
       <ul>
         <% care_procedure.errors.each do |error| %>
           <li><%= error.full_message %></li>
@@ -10,67 +9,50 @@
       </ul>
     </div>
   <% end %>
-
   <div class="field">
     <%= form.label :numProntuario %>
     <%= form.text_field :numProntuario %>
   </div>
-
   <div class="field">
     <%= form.label :cnsCidadao %>
     <%= form.text_field :cnsCidadao %>
   </div>
-
   <div class="field">
     <%= form.label :dtNascimento %>
     <%= form.text_field :dtNascimento %>
   </div>
-
-  <div class="field">
-    <%= form.label :sexo %>
-    <%= form.number_field :sexo %>
-  </div>
-
   <div class="field">
     <%= form.label :localAtendimento %>
     <%= form.number_field :localAtendimento %>
   </div>
-
   <div class="field">
     <%= form.label :turn %>
     <%= form.number_field :turn %>
   </div>
-
   <div class="field">
     <%= form.label :statusEscutaInicialOrientacao %>
     <%= form.check_box :statusEscutaInicialOrientacao %>
   </div>
-
   <div class="field">
     <%= form.label :procedimentos %>
     <%= form.text_field :procedimentos %>
   </div>
-
   <div class="field">
     <%= form.label :dataHoraInicialAtendimento %>
     <%= form.text_field :dataHoraInicialAtendimento %>
   </div>
-
   <div class="field">
     <%= form.label :dataHoraFinalAtendimento %>
     <%= form.text_field :dataHoraFinalAtendimento %>
   </div>
-
   <div class="field">
     <%= form.label :pesoAcompanhamentoNutricional %>
     <%= form.text_field :pesoAcompanhamentoNutricional %>
   </div>
-
   <div class="field">
     <%= form.label :alturaAcompanhamentoNutricional %>
     <%= form.text_field :alturaAcompanhamentoNutricional %>
   </div>
-
   <div class="actions">
     <%= form.submit %>
   </div>
