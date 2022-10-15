@@ -1,6 +1,9 @@
 # frozen_string_literal: true
-# municipios, cbo e comunidade
 class IndividualRegistration < ApplicationRecord
+  require 'esus/models/cadastro_individual/cadastro_individual_thrift'
+  require 'esus/models/dado_transporte/dado_transporte_thirft'
+  require 'esus/models/common_types'
+
   belongs_to :doctor
 
   has_one_attached :xml_file
@@ -10,9 +13,25 @@ class IndividualRegistration < ApplicationRecord
   # validates :cnsCidadao, uniqueness: true
 
   # before_create :serialize_data
-  before_update :serialize_data
+  before_update :serialize_thrift
 
   scope :generate_xml_from, -> (start_date, end_date) { where("created_at >= ? AND created_at <= ?", start_date, end_date)}
+
+  def serialize_thrift
+    uuid_random = Digest::UUID.uuid_v4
+
+    self.uuid = uuid_random
+    self.uuidFichaOriginadora = uuid_random
+    self.tpCdsOrigem = 3
+
+    manager_thrift = CadastroIndividualGerenciarThrift.new(self)
+    serialized_record = manager_thrift.serialize
+
+    manager_dado_transporte = DadoTransporteGerenciarThrift.new(doctor, serialized_record)
+    serialized_file = manager_dado_transporte.serialize
+
+    thrift_file.attach(io: serialized_file, filename: "#{uuid}.thrift")
+  end
 
   def serialize_data
     self.uuid = Digest::UUID.uuid_v4

@@ -5,8 +5,6 @@ class HouseholdRegistration < ApplicationRecord
   require 'esus/models/dado_transporte/dado_transporte_thirft'
   require 'esus/models/common_types'
 
-  require 'date'
-
   belongs_to :doctor
 
   has_many :families, inverse_of: :household_registration, dependent: :destroy
@@ -25,10 +23,12 @@ class HouseholdRegistration < ApplicationRecord
     self.tpCdsOrigem = 3
 
     manager_thrift = CadastroDomiciliarGerenciarThrift.new(self)
-
     serialized_record = manager_thrift.serialize
 
-    thrift_file.attach(io: serialized_record, filename: "#{uuid}.thrift")
+    manager_dado_transporte = DadoTransporteGerenciarThrift.new(doctor, serialized_record)
+    serialized_file = manager_dado_transporte.serialize
+
+    thrift_file.attach(io: serialized_file, filename: "#{uuid}.thrift")
   end
 
   def self.build_options
