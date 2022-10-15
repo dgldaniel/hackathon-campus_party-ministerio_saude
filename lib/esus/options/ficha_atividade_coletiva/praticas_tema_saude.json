@@ -1,0 +1,142 @@
+[
+  {
+    "Código": 1,
+    "Descrição": "Alimentação saudável",
+    "Observações": "-"
+  },
+  {
+    "Código": 2,
+    "Descrição": "Aplicação tópica de fluor",
+    "Observações": "-"
+  },
+  {
+    "Código": 3,
+    "Descrição": "Saúde ocular",
+    "Observações": "-"
+  },
+  {
+    "Código": 4,
+    "Descrição": "Autocuidado de pessoas com doenças crônicas",
+    "Observações": "-"
+  },
+  {
+    "Código": 5,
+    "Descrição": "Cidadania e direitos homanos",
+    "Observações": "-"
+  },
+  {
+    "Código": 6,
+    "Descrição": "Saúde do trabalhador",
+    "Observações": "-"
+  },
+  {
+    "Código": 7,
+    "Descrição": "Dependência química / tabaco / álcool / outras drogas",
+    "Observações": "-"
+  },
+  {
+    "Código": 8,
+    "Descrição": "Envelhecimento / Climatério / Andropausa  / Etc",
+    "Observações": "-"
+  },
+  {
+    "Código": 9,
+    "Descrição": "Escovação dentária supervisionada",
+    "Observações": "-"
+  },
+  {
+    "Código": 10,
+    "Descrição": "Plantas medicinais / Fitoterapia",
+    "Observações": "-"
+  },
+  {
+    "Código": 11,
+    "Descrição": "Práticas corporais / Atividade física",
+    "Observações": "-"
+  },
+  {
+    "Código": 12,
+    "Descrição": "Práticas corporais e mentais em PIC",
+    "Observações": "-"
+  },
+  {
+    "Código": 13,
+    "Descrição": "Prevenção da violência e promoção da cultura da paz",
+    "Observações": "-"
+  },
+  {
+    "Código": 14,
+    "Descrição": "Saúde ambiental",
+    "Observações": "-"
+  },
+  {
+    "Código": 15,
+    "Descrição": "Saúde bucal",
+    "Observações": "-"
+  },
+  {
+    "Código": 16,
+    "Descrição": "Saúde mental",
+    "Observações": "-"
+  },
+  {
+    "Código": 17,
+    "Descrição": "Saúde sexual e reprodutiva",
+    "Observações": "-"
+  },
+  {
+    "Código": 18,
+    "Descrição": "Semana saúde na escola",
+    "Observações": "-"
+  },
+  {
+    "Código": 19,
+    "Descrição": "Agravos negligenciados",
+    "Observações": "-"
+  },
+  {
+    "Código": 20,
+    "Descrição": "Antropometria",
+    "Observações": "-"
+  },
+  {
+    "Código": 21,
+    "Descrição": "Outros",
+    "Observações": "-"
+  },
+  {
+    "Código": 22,
+    "Descrição": "Saúde auditiva",
+    "Observações": "-"
+  },
+  {
+    "Código": 23,
+    "Descrição": "Desenvolvimento da linguagem",
+    "Observações": "-"
+  },
+  {
+    "Código": 24,
+    "Descrição": "Verificação da situação vacinal",
+    "Observações": "-"
+  },
+  {
+    "Código": 25,
+    "Descrição": "PNCT 1",
+    "Observações": "-"
+  },
+  {
+    "Código": 26,
+    "Descrição": "PNCT 2",
+    "Observações": "-"
+  },
+  {
+    "Código": 27,
+    "Descrição": "PNCT 3",
+    "Observações": "-"
+  },
+  {
+    "Código": 28,
+    "Descrição": "PNCT 4",
+    "Observações": "-"
+  }
+]

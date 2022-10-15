@@ -78,18 +78,23 @@ ActiveRecord::Schema.define(version: 2022_10_10_191618) do
 
   create_table "collective_activity_sheets", force: :cascade do |t|
     t.uuid "uuidFicha"
-    t.uuid "inep"
+    t.datetime "dtAtividadeColetiva"
+    t.integer "numParticipantesProgramados"
+    t.integer "localAtividade"
+    t.time "horaInicio"
+    t.time "horaFim"
+    t.string "inep"
+    t.string "responsavelCns"
+    t.string "responsavelCnesUnidade"
+    t.integer "responsavelNumIne"
     t.integer "numParticipantes"
-    t.integer "numAvaliacoesAlterada"
+    t.integer "numAvaliacoesAlteradas"
     t.integer "atividadeTipo"
-    t.string "publicoAlvo", default: [], array: true
+    t.integer "temasParaReuniao", default: [], array: true
+    t.integer "publicoAlvo", default: [], array: true
+    t.integer "praticasTemasParaSaude", default: [], array: true
     t.integer "tbCdsOrigem"
-    t.string "procedimento"
-    t.integer "turno"
-    t.boolean "pseEducacao"
-    t.boolean "pseSaude"
-    t.string "temasParaSaude", default: [], array: true
-    t.string "praticasEmSaude", default: [], array: true
+    t.string "codigoIbgeMunicipio"
     t.bigint "doctor_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -390,7 +395,6 @@ ActiveRecord::Schema.define(version: 2022_10_10_191618) do
     t.boolean "avaliacaoAlterada"
     t.boolean "cessouHabitoFumar"
     t.boolean "abandonouGrupo"
-    t.integer "sexo"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "collective_activity_sheet_id"

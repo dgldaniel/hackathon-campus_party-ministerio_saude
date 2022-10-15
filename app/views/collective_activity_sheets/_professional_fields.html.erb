@@ -1,17 +1,23 @@
 <div class="nested-fields">
   <h3>Professional</h3>
-
-  <div class="field">
-    <%= f.label :cnsProfissional %>
-    <%= f.text_field :cnsProfissional %>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :cnsProfissional %>
+        <%= f.text_field :cnsProfissional, class: 'form-control btn-pill' %>
+      </div>
+    </div>
   </div>
-
-  <div class="field">
-    <%= f.label :codigoCbo2002 %>
-    <%= f.text_field :codigoCbo2002 %>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :codigoCbo2002 %>
+        <%= f.select :codigoCbo2002, @options[:cbo], {}, { class: 'js-example-basic-single col-sm-12' } %>
+      </div>
+    </div>
   </div>
-
   <%= link_to_remove_association "remove professional", f %>
-
-  <br><br><br>
+  <br>
+  <br>
+  <br>
 </div>

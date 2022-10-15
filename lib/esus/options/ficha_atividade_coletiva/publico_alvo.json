@@ -1,0 +1,87 @@
+[
+  {
+    "Código": 1,
+    "Descrição": "Comunidade em geral",
+    "Observações": "-"
+  },
+  {
+    "Código": 2,
+    "Descrição": "Criança de 0 a 3 anos",
+    "Observações": "-"
+  },
+  {
+    "Código": 3,
+    "Descrição": "Criança de 4 a 5 anos",
+    "Observações": "-"
+  },
+  {
+    "Código": 4,
+    "Descrição": "Criança de 6 a 11 anos",
+    "Observações": "-"
+  },
+  {
+    "Código": 5,
+    "Descrição": "Adolescente",
+    "Observações": "-"
+  },
+  {
+    "Código": 6,
+    "Descrição": "Mulher",
+    "Observações": "-"
+  },
+  {
+    "Código": 7,
+    "Descrição": "Gestante",
+    "Observações": "-"
+  },
+  {
+    "Código": 8,
+    "Descrição": "Homem",
+    "Observações": "-"
+  },
+  {
+    "Código": 9,
+    "Descrição": "Familiares",
+    "Observações": "-"
+  },
+  {
+    "Código": 10,
+    "Descrição": "Idoso",
+    "Observações": "-"
+  },
+  {
+    "Código": 12,
+    "Descrição": "Pessoas com doenças crônicas",
+    "Observações": "-"
+  },
+  {
+    "Código": 13,
+    "Descrição": "Usuário de tabaco",
+    "Observações": "-"
+  },
+  {
+    "Código": 14,
+    "Descrição": "Usuário de álcool",
+    "Observações": "-"
+  },
+  {
+    "Código": 15,
+    "Descrição": "Usuário de outras drogas",
+    "Observações": "-"
+  },
+  {
+    "Código": 16,
+    "Descrição": "Portador com sofrimento ou transtorno mental",
+    "Observações": "-"
+  },
+  {
+    "Código": 17,
+    "Descrição": "Profissional da educação",
+    "Observações": "-"
+  },
+  {
+    "Código": 18,
+    "Descrição": "Outros",
+    "Observações": "-"
+  }
+]

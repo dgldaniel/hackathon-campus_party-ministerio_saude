@@ -10,57 +10,163 @@
     </div>
   <% end %>
   <div class="tab">
-    <div class="field">
-      <%= form.label :uuidFicha %>
-      <%= form.text_field :uuidFicha %>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :dtAtividadeColetiva %>
+          <div class="input-group">
+            <%= form.text_field :dtAtividadeColetiva, class: 'btn-pill datepicker-here form-control digits', 'data-language': "en", 'data-bs-original-title': 'data-bs-original-title', title: 'title' %>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="field">
-      <%= form.label :inep %>
-      <%= form.text_field :inep %>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :numParticipantesProgramados %>
+          <%= form.number_field :numParticipantesProgramados, class: 'form-control btn-pill' %>
+        </div>
+      </div>
     </div>
-    <div class="field">
-      <%= form.label :numParticipantes %>
-      <%= form.number_field :numParticipantes %>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :localAtividade %>
+          <%= form.number_field :localAtividade, class: 'form-control btn-pill' %>
+        </div>
+      </div>
     </div>
-    <div class="field">
-      <%= form.label :numAvaliacoesAlterada %>
-      <%= form.number_field :numAvaliacoesAlterada %>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :horaInicio %>
+          <%= form.text_field :horaInicio, class: 'form-control btn-pill' %>
+        </div>
+      </div>
     </div>
-    <div class="field">
-      <%= form.label :atividadeTipo %>
-      <%= form.number_field :atividadeTipo %>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :horaFim %>
+          <%= form.text_field :horaFim, class: 'form-control btn-pill' %>
+        </div>
+      </div>
     </div>
-    <div class="field">
-      <%= form.label :publicoAlvo %>
-      <%= form.text_field :publicoAlvo %>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :inep %>
+          <%= form.text_field :inep, class: 'form-control btn-pill' %>
+        </div>
+      </div>
     </div>
-    <div class="field">
-      <%= form.label :tbCdsOrigem %>
-      <%= form.number_field :tbCdsOrigem %>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :responsavelCns %>
+          <%= form.text_field :responsavelCns, class: 'form-control btn-pill' %>
+        </div>
+      </div>
     </div>
-    <div class="field">
-      <%= form.label :procedimento %>
-      <%= form.text_field :procedimento %>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :responsavelCnesUnidade %>
+          <%= form.text_field :responsavelCnesUnidade, class: 'form-control btn-pill' %>
+        </div>
+      </div>
     </div>
-    <div class="field">
-      <%= form.label :turno %>
-      <%= form.number_field :turno %>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :responsavelNumIne %>
+          <%= form.number_field :responsavelNumIne, class: 'form-control btn-pill' %>
+        </div>
+      </div>
     </div>
-    <div class="field">
-      <%= form.label :pseEducacao %>
-      <%= form.check_box :pseEducacao %>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :numParticipantes %>
+          <%= form.number_field :numParticipantes, class: 'form-control btn-pill' %>
+        </div>
+      </div>
     </div>
-    <div class="field">
-      <%= form.label :pseSaude %>
-      <%= form.check_box :pseSaude %>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :numAvaliacoesAlteradas %>
+          <%= form.number_field :numAvaliacoesAlteradas, class: 'form-control btn-pill' %>
+        </div>
+      </div>
     </div>
-    <div class="field">
-      <%= form.label :temasParaSaude %>
-      <%= form.text_field :temasParaSaude %>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :atividadeTipo %>
+          <%= form.collection_radio_buttons :atividadeTipo, @options[:tipo_atividade_coletiva], :second, :first do |b| %>
+            <div class="d-block">
+              <%= b.radio_button %>
+              <%= b.label %>
+            </div>
+          <% end %>
+        </div>
+      </div>
     </div>
-    <div class="field">
-      <%= form.label :praticasEmSaude %>
-      <%= form.text_field :praticasEmSaude %>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :temasParaReuniao %>
+          <%= form.collection_check_boxes :temasParaReuniao, @options[:temas_reuniao], :second, :first do |b| %>
+            <div class="d-block">
+              <%= b.check_box %>
+              <%= b.label %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :publicoAlvo %>
+          <%= form.collection_check_boxes :publicoAlvo, @options[:publico_alvo], :second, :first do |b| %>
+            <div class="d-block">
+              <%= b.check_box %>
+              <%= b.label %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :praticasTemasParaSaude %>
+          <%= form.collection_check_boxes :praticasTemasParaSaude, @options[:praticas_tema_saude], :second, :first do |b| %>
+            <div class="d-block">
+              <%= b.check_box %>
+              <%= b.label %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :tbCdsOrigem %>
+          <%= form.number_field :tbCdsOrigem, class: 'form-control btn-pill' %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= form.label :codigoIbgeMunicipio %>
+          <%= form.select :codigoIbgeMunicipio, @options[:municipios], {}, { class: 'js-example-basic-single col-sm-12' } %>
+        </div>
+      </div>
     </div>
   </div>
   <div class="tab" id="professionals">

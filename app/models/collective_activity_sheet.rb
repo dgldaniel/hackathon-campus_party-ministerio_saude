@@ -34,6 +34,17 @@ class CollectiveActivitySheet < ApplicationRecord
     thrift_file.attach(io: serialized_file, filename: "#{uuidFicha}.thrift")
   end
 
+  def self.build_options
+    {
+      municipios: JSON.parse(Rails.cache.read('@CI_Municipio')),
+      cbo: JSON.parse(Rails.cache.read('@CI_CBO')),
+      praticas_tema_saude: JSON.parse(Rails.cache.read('@FAC_Pratica_Tema_Saude')),
+      publico_alvo: JSON.parse(Rails.cache.read('@FAC_Publico_Alvo')),
+      temas_reuniao: JSON.parse(Rails.cache.read('@FAC_Temas_Reuniao')),
+      tipo_atividade_coletiva: JSON.parse(Rails.cache.read('@FAC_Tipo_Atividade_Coletiva')),
+    }
+  end
+
   private
 
   def generate_xml

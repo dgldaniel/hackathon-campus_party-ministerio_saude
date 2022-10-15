@@ -151,6 +151,20 @@ namespace :store_records_on_cache do
 
     tratamento_agua_domicilio_data = get_path_json('cadastro_domiciliar', 'tratamento_agua_domicilio')
     store_json_cache(tratamento_agua_domicilio_data, { first: 'Descrição', second: 'Código' }, '@CD_Tratamento_Agua_Domicilio')
+
+    # Ficha de Atividade Coletiva
+
+    praticas_tema_saude_data = get_path_json('ficha_atividade_coletiva', 'praticas_tema_saude')
+    store_json_cache(praticas_tema_saude_data, { first: 'Descrição', second: 'Código' }, '@FAC_Pratica_Tema_Saude')
+
+    publico_alvo_data = get_path_json('ficha_atividade_coletiva', 'publico_alvo')
+    store_json_cache(publico_alvo_data, { first: 'Descrição', second: 'Código' }, '@FAC_Publico_Alvo')
+
+    temas_reuniao_data = get_path_json('ficha_atividade_coletiva', 'temas_reuniao')
+    store_json_cache(temas_reuniao_data, { first: 'Descrição', second: 'Código' }, '@FAC_Temas_Reuniao')
+
+    tipo_atividade_coletiva_data = get_path_json('ficha_atividade_coletiva', 'tipo_atividade_coletiva')
+    store_json_cache(tipo_atividade_coletiva_data, { first: 'Descrição', second: 'Código' }, '@FAC_Tipo_Atividade_Coletiva')
   end
 
   private

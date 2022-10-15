@@ -1,0 +1,37 @@
+[
+  {
+    "Código": 1,
+    "Descrição": "Questões administrativas / funcionamento",
+    "Observações": "-"
+  },
+  {
+    "Código": 2,
+    "Descrição": "Processo de trabalho",
+    "Observações": "-"
+  },
+  {
+    "Código": 3,
+    "Descrição": "Diagnóstico / Monitoramento do território",
+    "Observações": "-"
+  },
+  {
+    "Código": 4,
+    "Descrição": "Planejamento / Monitoramento das ações da equipe",
+    "Observações": "-"
+  },
+  {
+    "Código": 5,
+    "Descrição": "Discussão de caso ou projeto terapêutico singular",
+    "Observações": "-"
+  },
+  {
+    "Código": 6,
+    "Descrição": "Educação permanente",
+    "Observações": "-"
+  },
+  {
+    "Código": 7,
+    "Descrição": "Outros",
+    "Observações": "-"
+  }
+]

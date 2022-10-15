@@ -22,10 +22,13 @@ class CollectiveActivitySheetsController < ApplicationController
 
     @participant = @collective_activity_sheet.participants.build
     @professional = @collective_activity_sheet.professionals.build
+
+    @options = CollectiveActivitySheet.build_options
   end
 
   # GET /collective_activity_sheets/1/edit
   def edit
+    @options = CollectiveActivitySheet.build_options
   end
 
   # POST /collective_activity_sheets or /collective_activity_sheets.json

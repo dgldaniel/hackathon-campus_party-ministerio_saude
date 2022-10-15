@@ -1,0 +1,37 @@
+[
+  {
+    "Código": 1,
+    "Descrição": "Reunião de equipe",
+    "Observações": "-"
+  },
+  {
+    "Código": 2,
+    "Descrição": "Reunião com outras equipes de saúde",
+    "Observações": "-"
+  },
+  {
+    "Código": 3,
+    "Descrição": "Reunião intersetorial  / Conselho local de saúde  / Controle social",
+    "Observações": "-"
+  },
+  {
+    "Código": 4,
+    "Descrição": "Educação em saúde",
+    "Observações": "-"
+  },
+  {
+    "Código": 5,
+    "Descrição": "Atendimento em grupo",
+    "Observações": "-"
+  },
+  {
+    "Código": 6,
+    "Descrição": "Avaliação / Procedimento coletivo",
+    "Observações": "-"
+  },
+  {
+    "Código": 7,
+    "Descrição": "Mobilização social",
+    "Observações": "-"
+  }
+]
