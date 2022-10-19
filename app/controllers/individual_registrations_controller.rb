@@ -29,6 +29,8 @@ class IndividualRegistrationsController < ApplicationController
     @individual_registration = IndividualRegistration.new(individual_registration_params)
     @individual_registration.doctor = current_user.doctor
 
+    @options = IndividualRegistration.build_options
+
     respond_to do |format|
       if @individual_registration.save
         format.html { redirect_to(individual_registration_url(@individual_registration), notice: "Individual registration was successfully created.") }
@@ -42,6 +44,8 @@ class IndividualRegistrationsController < ApplicationController
 
   # PATCH/PUT /individual_registrations/1 or /individual_registrations/1.json
   def update
+    @options = IndividualRegistration.build_options
+
     respond_to do |format|
       if @individual_registration.update(individual_registration_params)
         format.html { redirect_to(individual_registration_url(@individual_registration), notice: "Individual registration was successfully updated.") }

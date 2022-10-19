@@ -9,8 +9,38 @@ class IndividualRegistration < ApplicationRecord
   has_one_attached :xml_file
   has_one_attached :thrift_file
 
-  # validates :cpfCidadao, uniqueness: true
-  # validates :cnsCidadao, uniqueness: true
+  validates :codigoIbgeMunicipioNascimento, presence: true, if: proc { |a| a.nacionalidadeCidadao == 1 }
+  validates :dataNascimentoCidadao, presence: true, if: :data_nascimento_cidadao_validates?
+  validates :nomeMaeCidadao, presence: true, if: proc { |a| a.desconheceNomeMae == false }
+  validates :cnsResponsavelFamiliar, numericality: true
+  validates :telefoneCelular, numericality: true
+  validates :numeroNisPisPasep, numericality: true
+  validates :paisNascimento, presence: true, if: proc { |a| a.nacionalidadeCidadao != 1 }
+  validates :cpfCidadao, uniqueness: true, numericality: true
+  validates :cnsCidadao, uniqueness: true, numericality: true
+
+  validates :descricaoCausaInternacaoEm12Meses, presence: true, if: proc { |a| a.statusTeveInternadoEm12Meses }
+  validates :doencaCardiaca,  presence: true,  if: proc { |a| a.statusTeveDoencaCardiaca }
+  validates :doencaRespiratoria,  presence: true,  if: proc { |a| a.statusTemDoencaRespiratoria }
+  validates :doencaRins,  presence: true,  if: proc { |a| a.statusTemTeveDoencasRins }
+  validates :maternidadeDeReferencia,  presence: true,  if: proc { |a| a.statusEhGestante }
+  validates :statusEhGestante, presence: true, if: :status_eh_gestante_validates?
+
+  validates :grauParentescoFamiliarFrequentado, presence: true, if: proc { |a| a.statusSituacaoRua && a.statusVisitaFamiliarFrequentemente == false }
+  validates :higienePessoalSituacaoRua, presence: true, if: proc { |a| a.statusSituacaoRua && a.statusTemAcessoHigienePessoalSituacaoRua == true }
+  validates :origemAlimentoSituacaoRua, presence: true, if: proc { |a| a.statusSituacaoRua }
+  validates :outraInstituicaoQueAcompanha, presence: true, if: proc { |a| a.statusSituacaoRua && a.statusAcompanhadoPorOutraInstituicao == false }
+  validates :quantidadeAlimentacoesAoDiaSituacaoRua, presence: true, if: proc { |a| a.statusSituacaoRua }
+  validates :statusAcompanhadoPorOutraInstituicao, presence: true, if: proc { |a| a.statusSituacaoRua }
+  validates :statusPossuiReferenciaFamiliar, presence: true, if: proc { |a| a.statusSituacaoRua }
+  validates :statusRecebeBeneficio, presence: true, if: proc { |a| a.statusSituacaoRua }
+  validates :statusTemAcessoHigienePessoalSituacaoRua, presence: true, if: proc { |a| a.statusSituacaoRua }
+  validates :statusVisitaFamiliarFrequentemente, presence: true, if: proc { |a| a.statusSituacaoRua }
+  validates :tempoSituacaoRua, presence: true, if: proc { |a| a.statusSituacaoRua }
+
+  validates :deficienciasCidadao, presence: true, if: proc { |a| a.statusTemAlgumaDeficiencia == true }
+  validates :orientacaoSexualCidadao, presence: true, if: proc { |a| a.statusDesejaInformarOrientacaoSexual == true }
+  validates :povoComunidadeTradicional, presence: true, if: proc { |a| a.statusMembroPovoComunidadeTradicional == true }
 
   # before_create :serialize_data
   before_update :serialize_thrift
@@ -76,6 +106,20 @@ class IndividualRegistration < ApplicationRecord
     }
   end
 
-  # private_class_method :build_options
-  # private_class_method :generate_xml
+  def status_eh_gestante_validates?
+    return false if dataNascimentoCidadao.nil? || dataAtendimento.nil?
+
+    age = (dataNascimentoCidadao.strftime('%Y%m%d').to_i - dataAtendimento.strftime('%Y%m%d').to_i) / 10000
+
+    sexoCidadao == 1 && age > 12
+  end
+
+  def data_nascimento_cidadao_validates?
+    return false if dataNascimentoCidadao.nil? || dataAtendimento.nil?
+
+    age = (dataNascimentoCidadao.strftime('%Y%m%d').to_i - dataAtendimento.strftime('%Y%m%d').to_i) / 10000
+
+    dataAtendimento < dataNascimentoCidadao && age > 130
+  end
+
 end
