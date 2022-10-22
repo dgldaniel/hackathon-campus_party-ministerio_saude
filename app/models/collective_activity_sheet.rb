@@ -15,6 +15,17 @@ class CollectiveActivitySheet < ApplicationRecord
   has_one_attached :xml_file
   has_one_attached :thrift_file
 
+  validates_presence_of :dtAtividadeColetiva,
+                        :responsavelCns,
+                        :responsavelCnesUnidade,
+                        :atividadeTipo,
+                        :tbCdsOrigem,
+                        :codigoIbgeMunicipio
+
+  validates_presence_of :temasParaSaude, if: :temas_reuniao_validates
+  validates_presence_of :publicoAlvo, if: :publico_alvo_validates
+  validates_presence_of :praticasEmSaude, if: :praticas_temas_reuniao_validates
+
   before_create :serialize_thrift
   before_update :serialize_thrift
 
@@ -43,6 +54,18 @@ class CollectiveActivitySheet < ApplicationRecord
       temas_reuniao: JSON.parse(Rails.cache.read('@FAC_Temas_Reuniao')),
       tipo_atividade_coletiva: JSON.parse(Rails.cache.read('@FAC_Tipo_Atividade_Coletiva')),
     }
+  end
+
+  def temas_reuniao_validates
+    atividadeTipo == 1 || atividadeTipo == 2 || atividadeTipo == 3
+  end
+
+  def publico_alvo_validates
+    atividadeTipo == 4 || atividadeTipo == 5 || atividadeTipo == 6 || atividadeTipo == 7
+  end
+
+  def praticas_temas_reuniao_validates
+    atividadeTipo == 4 || atividadeTipo == 5 || atividadeTipo == 6 || atividadeTipo == 7
   end
 
   private

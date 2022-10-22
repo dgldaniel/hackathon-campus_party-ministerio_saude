@@ -1,0 +1,2022 @@
+[
+  {
+    "código": "1",
+    "código cadsus": "0001",
+    "descrição": "ACONA (WAKONAS"
+  },
+  {
+    "código": "2",
+    "código cadsus": "0002",
+    "descrição": "AIKANA (AIKANA"
+  },
+  {
+    "código": "3",
+    "código cadsus": "0003",
+    "descrição": "AJURU"
+  },
+  {
+    "código": "4",
+    "código cadsus": "0004",
+    "descrição": "AKUNSU (AKUNT''SU)"
+  },
+  {
+    "código": "5",
+    "código cadsus": "0005",
+    "descrição": "AMANAYE"
+  },
+  {
+    "código": "6",
+    "código cadsus": "0006",
+    "descrição": "AMONDAWA"
+  },
+  {
+    "código": "7",
+    "código cadsus": "0007",
+    "descrição": "ANAMBE"
+  },
+  {
+    "código": "8",
+    "código cadsus": "0008",
+    "descrição": "APARAI (APALAI)"
+  },
+  {
+    "código": "9",
+    "código cadsus": "0009",
+    "descrição": "APIAKA (APIACA)"
+  },
+  {
+    "código": "10",
+    "código cadsus": "0010",
+    "descrição": "APINAYE (APINAJE/APINAIE/APINAGE)"
+  },
+  {
+    "código": "11",
+    "código cadsus": "0011",
+    "descrição": "APURINA (APORINA"
+  },
+  {
+    "código": "12",
+    "código cadsus": "0012",
+    "descrição": "ARANA (ARACUAI DO VALE DO JEQUITINHONHA)"
+  },
+  {
+    "código": "13",
+    "código cadsus": "0013",
+    "descrição": "ARAPASO (ARAPACO)"
+  },
+  {
+    "código": "14",
+    "código cadsus": "0014",
+    "descrição": "ARARA DE RONDONIA (KARO"
+  },
+  {
+    "código": "15",
+    "código cadsus": "0015",
+    "descrição": "ARARA DO ACRE (SHAWANAUA"
+  },
+  {
+    "código": "16",
+    "código cadsus": "0016",
+    "descrição": "ARARA DO ARIPUANA (ARARA DO BEIRADAO/ARI-PUANA)"
+  },
+  {
+    "código": "17",
+    "código cadsus": "0017",
+    "descrição": "ARARA DO PARA (UKARAGMA"
+  },
+  {
+    "código": "18",
+    "código cadsus": "0018",
+    "descrição": "ARAWETE (ARAUETE)"
+  },
+  {
+    "código": "19",
+    "código cadsus": "0019",
+    "descrição": "ARIKAPU (ARICAPU"
+  },
+  {
+    "código": "20",
+    "código cadsus": "0020",
+    "descrição": "ARIKEM (ARIQUEN"
+  },
+  {
+    "código": "21",
+    "código cadsus": "0021",
+    "descrição": "ARIKOSE (ARICOBE)"
+  },
+  {
+    "código": "22",
+    "código cadsus": "0022",
+    "descrição": "ARUA"
+  },
+  {
+    "código": "23",
+    "código cadsus": "0023",
+    "descrição": "ARUAK (ARAWAK)"
+  },
+  {
+    "código": "24",
+    "código cadsus": "0024",
+    "descrição": "ASHANINKA (KAMPA)"
+  },
+  {
+    "código": "25",
+    "código cadsus": "0025",
+    "descrição": "ASURINI DO TOCANTINS (AKUAWA/AKWAWA)"
+  },
+  {
+    "código": "26",
+    "código cadsus": "0026",
+    "descrição": "ASURINI DO XINGU (AWAETE)"
+  },
+  {
+    "código": "27",
+    "código cadsus": "0027",
+    "descrição": "ATIKUM (ATICUM)"
+  },
+  {
+    "código": "28",
+    "código cadsus": "0028",
+    "descrição": "AVA - CANOEIRO"
+  },
+  {
+    "código": "29",
+    "código cadsus": "0029",
+    "descrição": "AWETI (AUETI/AUETO)"
+  },
+  {
+    "código": "30",
+    "código cadsus": "0030",
+    "descrição": "BAKAIRI (KURA"
+  },
+  {
+    "código": "31",
+    "código cadsus": "0031",
+    "descrição": "BANAWA YAFI (BANAWA"
+  },
+  {
+    "código": "32",
+    "código cadsus": "0032",
+    "descrição": "BANIWA (BANIUA"
+  },
+  {
+    "código": "33",
+    "código cadsus": "0033",
+    "descrição": "BARA (WAIPINOMAKA)"
+  },
+  {
+    "código": "34",
+    "código cadsus": "0034",
+    "descrição": "BARASANA (HANERA)"
+  },
+  {
+    "código": "35",
+    "código cadsus": "0035",
+    "descrição": "BARE"
+  },
+  {
+    "código": "36",
+    "código cadsus": "0036",
+    "descrição": "BORORO (BOE)"
+  },
+  {
+    "código": "37",
+    "código cadsus": "0037",
+    "descrição": "BOTOCUDO (GEREN)"
+  },
+  {
+    "código": "38",
+    "código cadsus": "0038",
+    "descrição": "CANOE"
+  },
+  {
+    "código": "39",
+    "código cadsus": "0039",
+    "descrição": "CASSUPA"
+  },
+  {
+    "código": "40",
+    "código cadsus": "0040",
+    "descrição": "CHAMACOCO"
+  },
+  {
+    "código": "41",
+    "código cadsus": "0041",
+    "descrição": "CHIQUITANO (XIQUITANO)"
+  },
+  {
+    "código": "42",
+    "código cadsus": "0042",
+    "descrição": "CIKIYANA (SIKIANA)"
+  },
+  {
+    "código": "43",
+    "código cadsus": "0043",
+    "descrição": "CINTA LARGA (MATETAMAE)"
+  },
+  {
+    "código": "44",
+    "código cadsus": "0044",
+    "descrição": "COLUMBIARA (CORUMBIARA)"
+  },
+  {
+    "código": "45",
+    "código cadsus": "0045",
+    "descrição": "DENI"
+  },
+  {
+    "código": "46",
+    "código cadsus": "0046",
+    "descrição": "DESANA (DESANA"
+  },
+  {
+    "código": "47",
+    "código cadsus": "0047",
+    "descrição": "DIAHUI (JAHOI"
+  },
+  {
+    "código": "48",
+    "código cadsus": "0048",
+    "descrição": "ENAWENE-NAWE (SALUMA)"
+  },
+  {
+    "código": "49",
+    "código cadsus": "0049",
+    "descrição": "FULNI-O"
+  },
+  {
+    "código": "50",
+    "código cadsus": "0050",
+    "descrição": "GALIBI (GALIBI DO OIAPOQUE"
+  },
+  {
+    "código": "51",
+    "código cadsus": "0051",
+    "descrição": "GALIBI MARWORNO (GALIBI DO UACA"
+  },
+  {
+    "código": "52",
+    "código cadsus": "0052",
+    "descrição": "GAVIAO DE RONDONIA (DIGUT)"
+  },
+  {
+    "código": "53",
+    "código cadsus": "0053",
+    "descrição": "GAVIAO KRIKATEJE"
+  },
+  {
+    "código": "54",
+    "código cadsus": "0054",
+    "descrição": "GAVIAO PARKATEJE (PARKATEJE)"
+  },
+  {
+    "código": "55",
+    "código cadsus": "0055",
+    "descrição": "GAVIAO PUKOBIE (PUKOBIE"
+  },
+  {
+    "código": "56",
+    "código cadsus": "0056",
+    "descrição": "GUAJA (AWA"
+  },
+  {
+    "código": "57",
+    "código cadsus": "0057",
+    "descrição": "GUAJAJARA (TENETEHARA)"
+  },
+  {
+    "código": "58",
+    "código cadsus": "0058",
+    "descrição": "GUARANI KAIOWA (PAI TAVYTERA)"
+  },
+  {
+    "código": "59",
+    "código cadsus": "0059",
+    "descrição": "GUARANI M''BYA"
+  },
+  {
+    "código": "60",
+    "código cadsus": "0060",
+    "descrição": "GUARANI NANDEVA (AVAKATUETE"
+  },
+  {
+    "código": "61",
+    "código cadsus": "0061",
+    "descrição": "GUATO"
+  },
+  {
+    "código": "62",
+    "código cadsus": "0062",
+    "descrição": "HIMARIMA (HIMERIMA)"
+  },
+  {
+    "código": "63",
+    "código cadsus": "0063",
+    "descrição": "INGARIKO (INGARICO"
+  },
+  {
+    "código": "64",
+    "código cadsus": "0064",
+    "descrição": "IRANXE (IRANTXE)"
+  },
+  {
+    "código": "65",
+    "código cadsus": "0065",
+    "descrição": "ISSE"
+  },
+  {
+    "código": "66",
+    "código cadsus": "0066",
+    "descrição": "JABOTI (JABUTI"
+  },
+  {
+    "código": "67",
+    "código cadsus": "0067",
+    "descrição": "JAMAMADI (YAMAMADI"
+  },
+  {
+    "código": "68",
+    "código cadsus": "0068",
+    "descrição": "JARAWARA"
+  },
+  {
+    "código": "69",
+    "código cadsus": "0069",
+    "descrição": "JIRIPANCO (JERIPANCO"
+  },
+  {
+    "código": "70",
+    "código cadsus": "0070",
+    "descrição": "JUMA (YUMA)"
+  },
+  {
+    "código": "71",
+    "código cadsus": "0071",
+    "descrição": "JURUNA"
+  },
+  {
+    "código": "72",
+    "código cadsus": "0072",
+    "descrição": "JURUTI (YURITI)"
+  },
+  {
+    "código": "73",
+    "código cadsus": "0073",
+    "descrição": "KAAPOR (URUBU-KAAPOR"
+  },
+  {
+    "código": "74",
+    "código cadsus": "0074",
+    "descrição": "KADIWEU (CADUVEO"
+  },
+  {
+    "código": "75",
+    "código cadsus": "0075",
+    "descrição": "KAIABI (CAIABI"
+  },
+  {
+    "código": "76",
+    "código cadsus": "0076",
+    "descrição": "KAIMBE (CAIMBE)"
+  },
+  {
+    "código": "77",
+    "código cadsus": "0077",
+    "descrição": "KAINGANG (CAINGANGUE)"
+  },
+  {
+    "código": "78",
+    "código cadsus": "0078",
+    "descrição": "KAIXANA (CAIXANA)"
+  },
+  {
+    "código": "79",
+    "código cadsus": "0079",
+    "descrição": "KALABASSA (CALABASSA"
+  },
+  {
+    "código": "80",
+    "código cadsus": "0080",
+    "descrição": "KALANCO"
+  },
+  {
+    "código": "81",
+    "código cadsus": "0081",
+    "descrição": "KALAPALO (CALAPALO)"
+  },
+  {
+    "código": "82",
+    "código cadsus": "0082",
+    "descrição": "KAMAYURA (CAMAIURA"
+  },
+  {
+    "código": "83",
+    "código cadsus": "0083",
+    "descrição": "KAMBA (CAMBA)"
+  },
+  {
+    "código": "84",
+    "código cadsus": "0084",
+    "descrição": "KAMBEBA (CAMBEBA"
+  },
+  {
+    "código": "85",
+    "código cadsus": "0085",
+    "descrição": "KAMBIWA (CAMBIUA)"
+  },
+  {
+    "código": "86",
+    "código cadsus": "0086",
+    "descrição": "KAMBIWA PIPIPA (PIPIPA)"
+  },
+  {
+    "código": "87",
+    "código cadsus": "0087",
+    "descrição": "KAMPE"
+  },
+  {
+    "código": "88",
+    "código cadsus": "0088",
+    "descrição": "KANAMANTI (KANAMATI"
+  },
+  {
+    "código": "89",
+    "código cadsus": "0089",
+    "descrição": "KANAMARI (CANAMARI"
+  },
+  {
+    "código": "90",
+    "código cadsus": "0090",
+    "descrição": "KANELA APANIEKRA (CANELA)"
+  },
+  {
+    "código": "91",
+    "código cadsus": "0091",
+    "descrição": "KANELA RANKOKAMEKRA (CANELA)"
+  },
+  {
+    "código": "92",
+    "código cadsus": "0092",
+    "descrição": "KANINDE"
+  },
+  {
+    "código": "93",
+    "código cadsus": "0093",
+    "descrição": "KANOE (CANOE)"
+  },
+  {
+    "código": "94",
+    "código cadsus": "0094",
+    "descrição": "KANTARURE (CANTARURE)"
+  },
+  {
+    "código": "95",
+    "código cadsus": "0095",
+    "descrição": "KAPINAWA (CAPINAUA)"
+  },
+  {
+    "código": "96",
+    "código cadsus": "0096",
+    "descrição": "KARAJA (CARAJA)"
+  },
+  {
+    "código": "97",
+    "código cadsus": "0097",
+    "descrição": "KARAJA/JAVAE (JAVAE)"
+  },
+  {
+    "código": "98",
+    "código cadsus": "0098",
+    "descrição": "KARAJA/XAMBIOA (KARAJA DO NORTE)"
+  },
+  {
+    "código": "99",
+    "código cadsus": "0099",
+    "descrição": "KARAPANA (CARAPANA"
+  },
+  {
+    "código": "100",
+    "código cadsus": "0100",
+    "descrição": "KARAPOTO (CARAPOTO)"
+  },
+  {
+    "código": "101",
+    "código cadsus": "0101",
+    "descrição": "KARIPUNA (CARIPUNA)"
+  },
+  {
+    "código": "102",
+    "código cadsus": "0102",
+    "descrição": "KARIPUNA DO AMAPA (CARIPUNA)"
+  },
+  {
+    "código": "103",
+    "código cadsus": "0103",
+    "descrição": "KARIRI (CARIRI)"
+  },
+  {
+    "código": "104",
+    "código cadsus": "0104",
+    "descrição": "KARIRI-XOCO (CARIRI-CHOCO)"
+  },
+  {
+    "código": "105",
+    "código cadsus": "0105",
+    "descrição": "KARITIANA (CARITIANA)"
+  },
+  {
+    "código": "106",
+    "código cadsus": "0106",
+    "descrição": "KATAWIXI (KATAUIXI"
+  },
+  {
+    "código": "107",
+    "código cadsus": "0107",
+    "descrição": "KATUENA (CATUENA"
+  },
+  {
+    "código": "108",
+    "código cadsus": "0108",
+    "descrição": "KATUKINA (PEDA DJAPA)"
+  },
+  {
+    "código": "109",
+    "código cadsus": "0109",
+    "descrição": "KATUKINA DO ACRE"
+  },
+  {
+    "código": "110",
+    "código cadsus": "0110",
+    "descrição": "KAXARARI (CAXARARI)"
+  },
+  {
+    "código": "111",
+    "código cadsus": "0111",
+    "descrição": "KAXINAWA (HUNI-KUIN"
+  },
+  {
+    "código": "112",
+    "código cadsus": "0112",
+    "descrição": "KAXIXO"
+  },
+  {
+    "código": "113",
+    "código cadsus": "0113",
+    "descrição": "KAXUYANA (CAXUIANA)"
+  },
+  {
+    "código": "114",
+    "código cadsus": "0114",
+    "descrição": "KAYAPO (CAIAPO)"
+  },
+  {
+    "código": "115",
+    "código cadsus": "0115",
+    "descrição": "KAYAPO KARARAO (KARARAO)"
+  },
+  {
+    "código": "116",
+    "código cadsus": "0116",
+    "descrição": "KAYAPO TXUKAHAMAE (TXUKAHAMAE)"
+  },
+  {
+    "código": "117",
+    "código cadsus": "0117",
+    "descrição": "KAYAPO XICRIM (XIKRIN)"
+  },
+  {
+    "código": "118",
+    "código cadsus": "0118",
+    "descrição": "KAYUISANA (CAIXANA"
+  },
+  {
+    "código": "119",
+    "código cadsus": "0119",
+    "descrição": "KINIKINAWA (GUAN"
+  },
+  {
+    "código": "120",
+    "código cadsus": "0120",
+    "descrição": "KIRIRI"
+  },
+  {
+    "código": "121",
+    "código cadsus": "0121",
+    "descrição": "KOCAMA (COCAMA"
+  },
+  {
+    "código": "122",
+    "código cadsus": "0122",
+    "descrição": "KOKUIREGATEJE"
+  },
+  {
+    "código": "123",
+    "código cadsus": "0123",
+    "descrição": "KORUBO"
+  },
+  {
+    "código": "124",
+    "código cadsus": "0124",
+    "descrição": "KRAHO (CRAO"
+  },
+  {
+    "código": "125",
+    "código cadsus": "0125",
+    "descrição": "KREJE (KRENYE)"
+  },
+  {
+    "código": "126",
+    "código cadsus": "0126",
+    "descrição": "KRENAK (BORUN"
+  },
+  {
+    "código": "127",
+    "código cadsus": "0127",
+    "descrição": "KRIKATI (KRINKATI)"
+  },
+  {
+    "código": "128",
+    "código cadsus": "0128",
+    "descrição": "KUBEO (CUBEO"
+  },
+  {
+    "código": "129",
+    "código cadsus": "0129",
+    "descrição": "KUIKURO (KUIKURU"
+  },
+  {
+    "código": "130",
+    "código cadsus": "0130",
+    "descrição": "KUJUBIM (KUYUBI"
+  },
+  {
+    "código": "131",
+    "código cadsus": "0131",
+    "descrição": "KULINA PANO (CULINA)"
+  },
+  {
+    "código": "132",
+    "código cadsus": "0132",
+    "descrição": "KULINA/MADIHA (CULINA"
+  },
+  {
+    "código": "133",
+    "código cadsus": "0133",
+    "descrição": "KURIPAKO (CURIPACO"
+  },
+  {
+    "código": "134",
+    "código cadsus": "0134",
+    "descrição": "KURUAIA (CURUAIA)"
+  },
+  {
+    "código": "135",
+    "código cadsus": "0135",
+    "descrição": "KWAZA (COAIA"
+  },
+  {
+    "código": "136",
+    "código cadsus": "0136",
+    "descrição": "MACHINERI (MANCHINERI"
+  },
+  {
+    "código": "137",
+    "código cadsus": "0137",
+    "descrição": "MACURAP (MAKURAP)"
+  },
+  {
+    "código": "138",
+    "código cadsus": "0138",
+    "descrição": "MAKU DOW (DOW)"
+  },
+  {
+    "código": "139",
+    "código cadsus": "0139",
+    "descrição": "MAKU HUPDA (HUPDA)"
+  },
+  {
+    "código": "140",
+    "código cadsus": "0140",
+    "descrição": "MAKU NADEB (NADEB)"
+  },
+  {
+    "código": "141",
+    "código cadsus": "0141",
+    "descrição": "MAKU YUHUPDE (YUHUPDE)"
+  },
+  {
+    "código": "142",
+    "código cadsus": "0142",
+    "descrição": "MAKUNA (MACUNA"
+  },
+  {
+    "código": "143",
+    "código cadsus": "0143",
+    "descrição": "MAKUXI (MACUXI"
+  },
+  {
+    "código": "144",
+    "código cadsus": "0144",
+    "descrição": "MARIMAM (MARIMA)"
+  },
+  {
+    "código": "145",
+    "código cadsus": "0145",
+    "descrição": "MARUBO"
+  },
+  {
+    "código": "146",
+    "código cadsus": "0146",
+    "descrição": "MATIPU"
+  },
+  {
+    "código": "147",
+    "código cadsus": "0147",
+    "descrição": "MATIS"
+  },
+  {
+    "código": "148",
+    "código cadsus": "0148",
+    "descrição": "MATSE (MAYORUNA)"
+  },
+  {
+    "código": "149",
+    "código cadsus": "0149",
+    "descrição": "MAXAKALI (MAXACALI)"
+  },
+  {
+    "código": "150",
+    "código cadsus": "0150",
+    "descrição": "MAYA (MAYA)"
+  },
+  {
+    "código": "151",
+    "código cadsus": "0151",
+    "descrição": "MAYTAPU"
+  },
+  {
+    "código": "152",
+    "código cadsus": "0152",
+    "descrição": "MEHINAKO (MEINAKU"
+  },
+  {
+    "código": "153",
+    "código cadsus": "0153",
+    "descrição": "MEKEN (MEQUEM"
+  },
+  {
+    "código": "154",
+    "código cadsus": "0154",
+    "descrição": "MENKY (MYKY"
+  },
+  {
+    "código": "155",
+    "código cadsus": "0155",
+    "descrição": "MIRANHA (MIRANHA"
+  },
+  {
+    "código": "156",
+    "código cadsus": "0156",
+    "descrição": "MIRITI TAPUIA (MIRITI-TAPUYA"
+  },
+  {
+    "código": "157",
+    "código cadsus": "0157",
+    "descrição": "MUNDURUKU (MUNDURUCU)"
+  },
+  {
+    "código": "158",
+    "código cadsus": "0158",
+    "descrição": "MURA"
+  },
+  {
+    "código": "159",
+    "código cadsus": "0159",
+    "descrição": "NAHUKWA (NAFUQUA)"
+  },
+  {
+    "código": "160",
+    "código cadsus": "0160",
+    "descrição": "NAMBIKWARA DO CAMPO (HALOTESU"
+  },
+  {
+    "código": "161",
+    "código cadsus": "0161",
+    "descrição": "NAMBIKWARA DO NORTE (NEGAROTE "
+  },
+  {
+    "código": "162",
+    "código cadsus": "0162",
+    "descrição": "NAMBIKWARA DO SUL (WASUSU "
+  },
+  {
+    "código": "163",
+    "código cadsus": "0163",
+    "descrição": "NARAVUTE (NARUVOTO)"
+  },
+  {
+    "código": "164",
+    "código cadsus": "0164",
+    "descrição": "NAWA (NAUA)"
+  },
+  {
+    "código": "165",
+    "código cadsus": "0165",
+    "descrição": "NUKINI (NUQUINI"
+  },
+  {
+    "código": "166",
+    "código cadsus": "0166",
+    "descrição": "OFAIE (OFAYE-XAVANTE)"
+  },
+  {
+    "código": "167",
+    "código cadsus": "0167",
+    "descrição": "ORO WIN"
+  },
+  {
+    "código": "168",
+    "código cadsus": "0168",
+    "descrição": "PAIAKU (JENIPAPO-KANINDE)"
+  },
+  {
+    "código": "169",
+    "código cadsus": "0169",
+    "descrição": "PAKAA NOVA (WARI"
+  },
+  {
+    "código": "170",
+    "código cadsus": "0170",
+    "descrição": "PALIKUR (AUKWAYENE"
+  },
+  {
+    "código": "171",
+    "código cadsus": "0171",
+    "descrição": "PANARA (KRENHAKARORE "
+  },
+  {
+    "código": "172",
+    "código cadsus": "0172",
+    "descrição": "PANKARARE (PANCARARE)"
+  },
+  {
+    "código": "173",
+    "código cadsus": "0173",
+    "descrição": "PANKARARU (PANCARARU)"
+  },
+  {
+    "código": "174",
+    "código cadsus": "0174",
+    "descrição": "PANKARARU KALANKO (KALANKO)"
+  },
+  {
+    "código": "175",
+    "código cadsus": "0175",
+    "descrição": "PANKARARU KARUAZU (KARUAZU)"
+  },
+  {
+    "código": "176",
+    "código cadsus": "0176",
+    "descrição": "PANKARU (PANCARU)"
+  },
+  {
+    "código": "177",
+    "código cadsus": "0177",
+    "descrição": "PARAKANA (PARACANA"
+  },
+  {
+    "código": "178",
+    "código cadsus": "0178",
+    "descrição": "PARECI (PARESI"
+  },
+  {
+    "código": "179",
+    "código cadsus": "0179",
+    "descrição": "PARINTINTIN"
+  },
+  {
+    "código": "180",
+    "código cadsus": "0180",
+    "descrição": "PATAMONA (KAPON)"
+  },
+  {
+    "código": "181",
+    "código cadsus": "0181",
+    "descrição": "PATAXO"
+  },
+  {
+    "código": "182",
+    "código cadsus": "0182",
+    "descrição": "PATAXO HA-HA-HAE"
+  },
+  {
+    "código": "183",
+    "código cadsus": "0183",
+    "descrição": "PAUMARI (PALMARI)"
+  },
+  {
+    "código": "184",
+    "código cadsus": "0184",
+    "descrição": "PAUMELENHO"
+  },
+  {
+    "código": "185",
+    "código cadsus": "0185",
+    "descrição": "PIRAHA (MURA PIRAHA)"
+  },
+  {
+    "código": "186",
+    "código cadsus": "0186",
+    "descrição": "PIRATUAPUIA (PIRATAPUYA"
+  },
+  {
+    "código": "187",
+    "código cadsus": "0187",
+    "descrição": "PITAGUARI"
+  },
+  {
+    "código": "188",
+    "código cadsus": "0188",
+    "descrição": "POTIGUARA"
+  },
+  {
+    "código": "189",
+    "código cadsus": "0189",
+    "descrição": "POYANAWA (POIANAUA)"
+  },
+  {
+    "código": "190",
+    "código cadsus": "0190",
+    "descrição": "RIKBAKTSA (CANOEIROS"
+  },
+  {
+    "código": "191",
+    "código cadsus": "0191",
+    "descrição": "SAKURABIAT(MEKENS"
+  },
+  {
+    "código": "192",
+    "código cadsus": "0192",
+    "descrição": "SATERE-MAWE (SATERE-MAUE)"
+  },
+  {
+    "código": "193",
+    "código cadsus": "0193",
+    "descrição": "SHANENAWA (KATUKINA)"
+  },
+  {
+    "código": "194",
+    "código cadsus": "0194",
+    "descrição": "SIRIANO (SIRIA-MASA)"
+  },
+  {
+    "código": "195",
+    "código cadsus": "0195",
+    "descrição": "SURIANA"
+  },
+  {
+    "código": "196",
+    "código cadsus": "0196",
+    "descrição": "SURUI DE RONDONIA (PAITER)"
+  },
+  {
+    "código": "197",
+    "código cadsus": "0197",
+    "descrição": "SURUI DO PARA (AIKEWARA)"
+  },
+  {
+    "código": "198",
+    "código cadsus": "0198",
+    "descrição": "SUYA (SUIA/KISEDJE)"
+  },
+  {
+    "código": "199",
+    "código cadsus": "0199",
+    "descrição": "TAPAYUNA (BEICO-DE-PAU)"
+  },
+  {
+    "código": "200",
+    "código cadsus": "0200",
+    "descrição": "TAPEBA"
+  },
+  {
+    "código": "201",
+    "código cadsus": "0201",
+    "descrição": "TAPIRAPE (TAPI''IRAPE)"
+  },
+  {
+    "código": "202",
+    "código cadsus": "0202",
+    "descrição": "TAPUIA (TAPUIA-XAVANTE"
+  },
+  {
+    "código": "203",
+    "código cadsus": "0203",
+    "descrição": "TARIANO (TARIANA"
+  },
+  {
+    "código": "204",
+    "código cadsus": "0204",
+    "descrição": "TAUREPANG (TAULIPANG"
+  },
+  {
+    "código": "205",
+    "código cadsus": "0205",
+    "descrição": "TEMBE"
+  },
+  {
+    "código": "206",
+    "código cadsus": "0206",
+    "descrição": "TENHARIM"
+  },
+  {
+    "código": "207",
+    "código cadsus": "0207",
+    "descrição": "TERENA"
+  },
+  {
+    "código": "208",
+    "código cadsus": "0208",
+    "descrição": "TICUNA (TIKUNA"
+  },
+  {
+    "código": "209",
+    "código cadsus": "0209",
+    "descrição": "TINGUI BOTO"
+  },
+  {
+    "código": "210",
+    "código cadsus": "0210",
+    "descrição": "TIRIYO EWARHUYANA (TIRIYO"
+  },
+  {
+    "código": "211",
+    "código cadsus": "0211",
+    "descrição": "TIRIYO KAH''YANA (TIRIYO"
+  },
+  {
+    "código": "212",
+    "código cadsus": "0212",
+    "descrição": "TIRIYO TSIKUYANA (TIRIYO"
+  },
+  {
+    "código": "213",
+    "código cadsus": "0213",
+    "descrição": "TORA"
+  },
+  {
+    "código": "214",
+    "código cadsus": "0214",
+    "descrição": "TREMEMBE"
+  },
+  {
+    "código": "215",
+    "código cadsus": "0215",
+    "descrição": "TRUKA"
+  },
+  {
+    "código": "216",
+    "código cadsus": "0216",
+    "descrição": "TRUMAI"
+  },
+  {
+    "código": "217",
+    "código cadsus": "0217",
+    "descrição": "TSOHOM DJAPA (TSUNHUM-DJAPA)"
+  },
+  {
+    "código": "218",
+    "código cadsus": "0218",
+    "descrição": "TUKANO (TUCANO"
+  },
+  {
+    "código": "219",
+    "código cadsus": "0219",
+    "descrição": "TUMBALALA"
+  },
+  {
+    "código": "220",
+    "código cadsus": "0220",
+    "descrição": "TUNAYANA"
+  },
+  {
+    "código": "221",
+    "código cadsus": "0221",
+    "descrição": "TUPARI"
+  },
+  {
+    "código": "222",
+    "código cadsus": "0222",
+    "descrição": "TUPINAMBA"
+  },
+  {
+    "código": "223",
+    "código cadsus": "0223",
+    "descrição": "TUPINIQUIM"
+  },
+  {
+    "código": "224",
+    "código cadsus": "0224",
+    "descrição": "TURIWARA"
+  },
+  {
+    "código": "225",
+    "código cadsus": "0225",
+    "descrição": "TUXA"
+  },
+  {
+    "código": "226",
+    "código cadsus": "0226",
+    "descrição": "TUYUKA (TUIUCA"
+  },
+  {
+    "código": "227",
+    "código cadsus": "0227",
+    "descrição": "TXIKAO (TXICAO"
+  },
+  {
+    "código": "228",
+    "código cadsus": "0228",
+    "descrição": "UMUTINA (OMOTINA"
+  },
+  {
+    "código": "229",
+    "código cadsus": "0229",
+    "descrição": "URU-EU-WAU-WAU (URUEU-UAU-UAU"
+  },
+  {
+    "código": "230",
+    "código cadsus": "0230",
+    "descrição": "WAI WAI HIXKARYANA (HIXKARYANA)"
+  },
+  {
+    "código": "231",
+    "código cadsus": "0231",
+    "descrição": "WAI WAI KARAFAWYANA (KARAFAWYANA"
+  },
+  {
+    "código": "232",
+    "código cadsus": "0232",
+    "descrição": "WAI WAI XEREU (XEREU)"
+  },
+  {
+    "código": "233",
+    "código cadsus": "0233",
+    "descrição": "WAI WAI KATUENA (KATUENA)"
+  },
+  {
+    "código": "234",
+    "código cadsus": "0234",
+    "descrição": "WAI WAI MAWAYANA (MAWAYANA)"
+  },
+  {
+    "código": "235",
+    "código cadsus": "0235",
+    "descrição": "WAIAPI (WAYAMPI"
+  },
+  {
+    "código": "236",
+    "código cadsus": "0236",
+    "descrição": "WAIMIRI ATROARI (KINA)"
+  },
+  {
+    "código": "237",
+    "código cadsus": "0237",
+    "descrição": "WANANO (UANANO"
+  },
+  {
+    "código": "238",
+    "código cadsus": "0238",
+    "descrição": "WAPIXANA (UAPIXANA"
+  },
+  {
+    "código": "239",
+    "código cadsus": "0239",
+    "descrição": "WAREKENA (UAREQUENA"
+  },
+  {
+    "código": "240",
+    "código cadsus": "0240",
+    "descrição": "WASSU"
+  },
+  {
+    "código": "241",
+    "código cadsus": "0241",
+    "descrição": "WAURA (UAURA"
+  },
+  {
+    "código": "242",
+    "código cadsus": "0242",
+    "descrição": "WAYANA (WAIANA"
+  },
+  {
+    "código": "243",
+    "código cadsus": "0243",
+    "descrição": "WITOTO (UITOTO"
+  },
+  {
+    "código": "244",
+    "código cadsus": "0244",
+    "descrição": "XAKRIABA (XACRIABA)"
+  },
+  {
+    "código": "245",
+    "código cadsus": "0245",
+    "descrição": "XAVANTE (A''UWE"
+  },
+  {
+    "código": "246",
+    "código cadsus": "0246",
+    "descrição": "XERENTE (AKWE"
+  },
+  {
+    "código": "247",
+    "código cadsus": "0247",
+    "descrição": "XETA"
+  },
+  {
+    "código": "248",
+    "código cadsus": "0248",
+    "descrição": "XIPAIA (SHIPAYA"
+  },
+  {
+    "código": "249",
+    "código cadsus": "0249",
+    "descrição": "XOKLENG (SHOKLENG"
+  },
+  {
+    "código": "250",
+    "código cadsus": "0250",
+    "descrição": "XOKO (XOCO"
+  },
+  {
+    "código": "251",
+    "código cadsus": "0251",
+    "descrição": "XUKURU (XUCURU)"
+  },
+  {
+    "código": "252",
+    "código cadsus": "0252",
+    "descrição": "XUKURU KARIRI (XUCURU-KARIRI)"
+  },
+  {
+    "código": "253",
+    "código cadsus": "0253",
+    "descrição": "YAIPIYANA"
+  },
+  {
+    "código": "254",
+    "código cadsus": "0254",
+    "descrição": "YAMINAWA (JAMINAWA"
+  },
+  {
+    "código": "255",
+    "código cadsus": "0255",
+    "descrição": "YANOMAMI NINAM (IANOMAMI"
+  },
+  {
+    "código": "256",
+    "código cadsus": "0256",
+    "descrição": "YANOMAMI SANUMA (IANOMAMI"
+  },
+  {
+    "código": "257",
+    "código cadsus": "0257",
+    "descrição": "YANOMAMI YANOMAM (IANOMAMI"
+  },
+  {
+    "código": "258",
+    "código cadsus": "0258",
+    "descrição": "YAWALAPITI (IAUALAPITI)"
+  },
+  {
+    "código": "259",
+    "código cadsus": "0259",
+    "descrição": "YAWANAWA (IAUANAUA)"
+  },
+  {
+    "código": "260",
+    "código cadsus": "0260",
+    "descrição": "YEKUANA (MAIONGON"
+  },
+  {
+    "código": "261",
+    "código cadsus": "0261",
+    "descrição": "YUDJA (JURUNA"
+  },
+  {
+    "código": "262",
+    "código cadsus": "0262",
+    "descrição": "ZO''E (POTURU)"
+  },
+  {
+    "código": "263",
+    "código cadsus": "0263",
+    "descrição": "ZORO (PAGEYN)"
+  },
+  {
+    "código": "264",
+    "código cadsus": "0264",
+    "descrição": "ZURUAHA (SOROWAHA"
+  },
+  {
+    "código": "265",
+    "código cadsus": "X265",
+    "descrição": "AHANENAWA"
+  },
+  {
+    "código": "266",
+    "código cadsus": "X266",
+    "descrição": "AICABA"
+  },
+  {
+    "código": "267",
+    "código cadsus": "X267",
+    "descrição": "AIKANÃ-KWASÁ"
+  },
+  {
+    "código": "268",
+    "código cadsus": "X268",
+    "descrição": "AKUNTSU"
+  },
+  {
+    "código": "269",
+    "código cadsus": "X269",
+    "descrição": "ALANTESU"
+  },
+  {
+    "código": "271",
+    "código cadsus": "X271",
+    "descrição": "AMAWÁKA"
+  },
+  {
+    "código": "272",
+    "código cadsus": "X272",
+    "descrição": "ANACÉ"
+  },
+  {
+    "código": "273",
+    "código cadsus": "X273",
+    "descrição": "APURINÃ"
+  },
+  {
+    "código": "274",
+    "código cadsus": "X274",
+    "descrição": "ARANÃ"
+  },
+  {
+    "código": "275",
+    "código cadsus": "X275",
+    "descrição": "ARAPAÇO"
+  },
+  {
+    "código": "276",
+    "código cadsus": "X276",
+    "descrição": "ARARA APOLIMA"
+  },
+  {
+    "código": "277",
+    "código cadsus": "X277",
+    "descrição": "ARARA DO ARIPUANA"
+  },
+  {
+    "código": "278",
+    "código cadsus": "X278",
+    "descrição": "ARIPUANÁ"
+  },
+  {
+    "código": "279",
+    "código cadsus": "X279",
+    "descrição": "ASSURINI"
+  },
+  {
+    "código": "280",
+    "código cadsus": "X280",
+    "descrição": "AWUARÁ"
+  },
+  {
+    "código": "281",
+    "código cadsus": "X281",
+    "descrição": "BORBA"
+  },
+  {
+    "código": "282",
+    "código cadsus": "X282",
+    "descrição": "CABIXI"
+  },
+  {
+    "código": "283",
+    "código cadsus": "X283",
+    "descrição": "CAMARARÉ"
+  },
+  {
+    "código": "284",
+    "código cadsus": "X284",
+    "descrição": "CAMASURI"
+  },
+  {
+    "código": "285",
+    "código cadsus": "X285",
+    "descrição": "CARA PRETA"
+  },
+  {
+    "código": "286",
+    "código cadsus": "X286",
+    "descrição": "CHARRUA"
+  },
+  {
+    "código": "287",
+    "código cadsus": "X287",
+    "descrição": "CUJUBIM"
+  },
+  {
+    "código": "288",
+    "código cadsus": "X288",
+    "descrição": "DAW"
+  },
+  {
+    "código": "289",
+    "código cadsus": "X289",
+    "descrição": "GAVIÃO"
+  },
+  {
+    "código": "290",
+    "código cadsus": "X290",
+    "descrição": "GUARANI"
+  },
+  {
+    "código": "291",
+    "código cadsus": "X291",
+    "descrição": "HALANTESU"
+  },
+  {
+    "código": "292",
+    "código cadsus": "X292",
+    "descrição": "HALOTESU"
+  },
+  {
+    "código": "293",
+    "código cadsus": "X293",
+    "descrição": "HENGATÚ"
+  },
+  {
+    "código": "294",
+    "código cadsus": "X294",
+    "descrição": "HIXKARYANA"
+  },
+  {
+    "código": "295",
+    "código cadsus": "X295",
+    "descrição": "HUPDE"
+  },
+  {
+    "código": "296",
+    "código cadsus": "X296",
+    "descrição": "HUPDES"
+  },
+  {
+    "código": "297",
+    "código cadsus": "X297",
+    "descrição": "IAUANAUA"
+  },
+  {
+    "código": "298",
+    "código cadsus": "X298",
+    "descrição": "IAUARETE AÇU"
+  },
+  {
+    "código": "299",
+    "código cadsus": "X299",
+    "descrição": "IKPENG"
+  },
+  {
+    "código": "300",
+    "código cadsus": "X300",
+    "descrição": "INAMBU"
+  },
+  {
+    "código": "301",
+    "código cadsus": "X301",
+    "descrição": "INHABARANA"
+  },
+  {
+    "código": "302",
+    "código cadsus": "X302",
+    "descrição": "JAVAE"
+  },
+  {
+    "código": "303",
+    "código cadsus": "X303",
+    "descrição": "JENIPAPO"
+  },
+  {
+    "código": "304",
+    "código cadsus": "X304",
+    "descrição": "JENIPAPO-KANINDE"
+  },
+  {
+    "código": "305",
+    "código cadsus": "X305",
+    "descrição": "JIAHOI"
+  },
+  {
+    "código": "306",
+    "código cadsus": "X306",
+    "descrição": "KAIOWA"
+  },
+  {
+    "código": "307",
+    "código cadsus": "X307",
+    "descrição": "KAMPA"
+  },
+  {
+    "código": "308",
+    "código cadsus": "X308",
+    "descrição": "KANELA"
+  },
+  {
+    "código": "309",
+    "código cadsus": "X309",
+    "descrição": "KARAFAWYANA"
+  },
+  {
+    "código": "310",
+    "código cadsus": "X310",
+    "descrição": "KARARAO"
+  },
+  {
+    "código": "311",
+    "código cadsus": "X311",
+    "descrição": "KARUBO"
+  },
+  {
+    "código": "312",
+    "código cadsus": "X312",
+    "descrição": "KASSUPÁ"
+  },
+  {
+    "código": "313",
+    "código cadsus": "X313",
+    "descrição": "KATITHÃULU"
+  },
+  {
+    "código": "314",
+    "código cadsus": "X314",
+    "descrição": "KATOKIN"
+  },
+  {
+    "código": "315",
+    "código cadsus": "X315",
+    "descrição": "KATUKINA PANO"
+  },
+  {
+    "código": "316",
+    "código cadsus": "X316",
+    "descrição": "KATUKINA PEDA DJAPA"
+  },
+  {
+    "código": "317",
+    "código cadsus": "X317",
+    "descrição": "KATUKINA SHANENAUWA"
+  },
+  {
+    "código": "318",
+    "código cadsus": "X318",
+    "descrição": "KAXAGO"
+  },
+  {
+    "código": "319",
+    "código cadsus": "X319",
+    "descrição": "KAYABI"
+  },
+  {
+    "código": "320",
+    "código cadsus": "X320",
+    "descrição": "KINÃ (WAIMIRI-ATROARI)"
+  },
+  {
+    "código": "321",
+    "código cadsus": "X321",
+    "descrição": "KIRIRI-BARRA"
+  },
+  {
+    "código": "322",
+    "código cadsus": "X322",
+    "descrição": "KITHÃULU"
+  },
+  {
+    "código": "323",
+    "código cadsus": "X323",
+    "descrição": "KOIAIÁ"
+  },
+  {
+    "código": "324",
+    "código cadsus": "X324",
+    "descrição": "KOIUPANKÁ"
+  },
+  {
+    "código": "325",
+    "código cadsus": "X325",
+    "descrição": "KONTANAWA"
+  },
+  {
+    "código": "326",
+    "código cadsus": "X326",
+    "descrição": "KRAHÔ KANELA"
+  },
+  {
+    "código": "327",
+    "código cadsus": "X327",
+    "descrição": "KULINA"
+  },
+  {
+    "código": "328",
+    "código cadsus": "X328",
+    "descrição": "LATUNDÊ"
+  },
+  {
+    "código": "329",
+    "código cadsus": "X329",
+    "descrição": "MAKU"
+  },
+  {
+    "código": "330",
+    "código cadsus": "X330",
+    "descrição": "MAKUNAMBÉ"
+  },
+  {
+    "código": "331",
+    "código cadsus": "X331",
+    "descrição": "MAMAINDÊ"
+  },
+  {
+    "código": "332",
+    "código cadsus": "X332",
+    "descrição": "MAMURI"
+  },
+  {
+    "código": "333",
+    "código cadsus": "X333",
+    "descrição": "MANACAPURU"
+  },
+  {
+    "código": "334",
+    "código cadsus": "X334",
+    "descrição": "MANAIRISSU"
+  },
+  {
+    "código": "335",
+    "código cadsus": "X335",
+    "descrição": "MANCHINERI"
+  },
+  {
+    "código": "336",
+    "código cadsus": "X336",
+    "descrição": "MANDUCA"
+  },
+  {
+    "código": "337",
+    "código cadsus": "X337",
+    "descrição": "MARIBONDO"
+  },
+  {
+    "código": "338",
+    "código cadsus": "X338",
+    "descrição": "MASSAKA"
+  },
+  {
+    "código": "339",
+    "código cadsus": "X339",
+    "descrição": "MAWAYANA"
+  },
+  {
+    "código": "340",
+    "código cadsus": "X340",
+    "descrição": "MAWÉ"
+  },
+  {
+    "código": "341",
+    "código cadsus": "X341",
+    "descrição": "MAYORUNA"
+  },
+  {
+    "código": "342",
+    "código cadsus": "X342",
+    "descrição": "MIQUELENO"
+  },
+  {
+    "código": "343",
+    "código cadsus": "X343",
+    "descrição": "MOKURIÑ"
+  },
+  {
+    "código": "344",
+    "código cadsus": "X344",
+    "descrição": "MON ORO WARAM"
+  },
+  {
+    "código": "345",
+    "código cadsus": "X345",
+    "descrição": "MUTUM"
+  },
+  {
+    "código": "346",
+    "código cadsus": "X346",
+    "descrição": "MYKY"
+  },
+  {
+    "código": "347",
+    "código cadsus": "X347",
+    "descrição": "NADEB"
+  },
+  {
+    "código": "348",
+    "código cadsus": "X348",
+    "descrição": "NAMBIKWARA"
+  },
+  {
+    "código": "349",
+    "código cadsus": "X349",
+    "descrição": "NEGAROTÊ"
+  },
+  {
+    "código": "350",
+    "código cadsus": "X350",
+    "descrição": "NHENGATU"
+  },
+  {
+    "código": "351",
+    "código cadsus": "X351",
+    "descrição": "OFAIE XAVANTE"
+  },
+  {
+    "código": "352",
+    "código cadsus": "X352",
+    "descrição": "ONÇA"
+  },
+  {
+    "código": "353",
+    "código cadsus": "X353",
+    "descrição": "ORO AT"
+  },
+  {
+    "código": "354",
+    "código cadsus": "X354",
+    "descrição": "ORO EO"
+  },
+  {
+    "código": "355",
+    "código cadsus": "X355",
+    "descrição": "ORO JOWIN"
+  },
+  {
+    "código": "356",
+    "código cadsus": "X356",
+    "descrição": "ORO MIYLIN"
+  },
+  {
+    "código": "357",
+    "código cadsus": "X357",
+    "descrição": "ORO MON"
+  },
+  {
+    "código": "358",
+    "código cadsus": "X358",
+    "descrição": "ORO NÁO"
+  },
+  {
+    "código": "359",
+    "código cadsus": "X359",
+    "descrição": "ORO WAM"
+  },
+  {
+    "código": "360",
+    "código cadsus": "X360",
+    "descrição": "ORO WARAM"
+  },
+  {
+    "código": "361",
+    "código cadsus": "X361",
+    "descrição": "ORO WARAM XIJEIN"
+  },
+  {
+    "código": "362",
+    "código cadsus": "X362",
+    "descrição": "PACA"
+  },
+  {
+    "código": "363",
+    "código cadsus": "X363",
+    "descrição": "PANKARÁ"
+  },
+  {
+    "código": "364",
+    "código cadsus": "X364",
+    "descrição": "PAPAGAIO"
+  },
+  {
+    "código": "365",
+    "código cadsus": "X365",
+    "descrição": "PAYAYÁ"
+  },
+  {
+    "código": "366",
+    "código cadsus": "X366",
+    "descrição": "PIPIPAN"
+  },
+  {
+    "código": "367",
+    "código cadsus": "X367",
+    "descrição": "PIRATA"
+  },
+  {
+    "código": "368",
+    "código cadsus": "X368",
+    "descrição": "PUROBORÁ"
+  },
+  {
+    "código": "369",
+    "código cadsus": "X369",
+    "descrição": "SABANÊ"
+  },
+  {
+    "código": "370",
+    "código cadsus": "X370",
+    "descrição": "SANUMA"
+  },
+  {
+    "código": "371",
+    "código cadsus": "X371",
+    "descrição": "SAWENTESÚ"
+  },
+  {
+    "código": "372",
+    "código cadsus": "X372",
+    "descrição": "SILCY-TAPUYA"
+  },
+  {
+    "código": "373",
+    "código cadsus": "X373",
+    "descrição": "SIUCI"
+  },
+  {
+    "código": "374",
+    "código cadsus": "X374",
+    "descrição": "TABAJARA"
+  },
+  {
+    "código": "375",
+    "código cadsus": "X375",
+    "descrição": "TAKUARA"
+  },
+  {
+    "código": "376",
+    "código cadsus": "X376",
+    "descrição": "TATU"
+  },
+  {
+    "código": "377",
+    "código cadsus": "X377",
+    "descrição": "TAWANDÊ"
+  },
+  {
+    "código": "378",
+    "código cadsus": "X378",
+    "descrição": "TEFÉ"
+  },
+  {
+    "código": "379",
+    "código cadsus": "X379",
+    "descrição": "TIMBIRA"
+  },
+  {
+    "código": "380",
+    "código cadsus": "X380",
+    "descrição": "TORÁ DO BAIXO GRANDE"
+  },
+  {
+    "código": "381",
+    "código cadsus": "X381",
+    "descrição": "TSUNHUM-DJAPÁ"
+  },
+  {
+    "código": "382",
+    "código cadsus": "X382",
+    "descrição": "TUBARÃO"
+  },
+  {
+    "código": "383",
+    "código cadsus": "X383",
+    "descrição": "TUPAIU"
+  },
+  {
+    "código": "384",
+    "código cadsus": "X384",
+    "descrição": "TUPI"
+  },
+  {
+    "código": "385",
+    "código cadsus": "X385",
+    "descrição": "TUPINAMBÁ DE BELMONTE"
+  },
+  {
+    "código": "386",
+    "código cadsus": "X386",
+    "descrição": "URUBU"
+  },
+  {
+    "código": "387",
+    "código cadsus": "X387",
+    "descrição": "URUBU KAAPOR"
+  },
+  {
+    "código": "388",
+    "código cadsus": "X388",
+    "descrição": "URUPÁ"
+  },
+  {
+    "código": "389",
+    "código cadsus": "X389",
+    "descrição": "WAI WAI"
+  },
+  {
+    "código": "390",
+    "código cadsus": "X390",
+    "descrição": "WAIKISU"
+  },
+  {
+    "código": "391",
+    "código cadsus": "X391",
+    "descrição": "WAKALITESÚ"
+  },
+  {
+    "código": "392",
+    "código cadsus": "X392",
+    "descrição": "WASSUSU"
+  },
+  {
+    "código": "393",
+    "código cadsus": "X393",
+    "descrição": "XEREU"
+  },
+  {
+    "código": "394",
+    "código cadsus": "X394",
+    "descrição": "XI EIN"
+  },
+  {
+    "código": "395",
+    "código cadsus": "X395",
+    "descrição": "XICRIN"
+  },
+  {
+    "código": "396",
+    "código cadsus": "X396",
+    "descrição": "XIPAYA"
+  },
+  {
+    "código": "397",
+    "código cadsus": "X397",
+    "descrição": "XIRIANA"
+  },
+  {
+    "código": "398",
+    "código cadsus": "X398",
+    "descrição": "XIRUAI"
+  },
+  {
+    "código": "399",
+    "código cadsus": "X399",
+    "descrição": "YEPAMASSÃ"
+  },
+  {
+    "código": "400",
+    "código cadsus": "X400",
+    "descrição": "TIRIYÓ"
+  },
+  {
+    "código": "401",
+    "código cadsus": "X401",
+    "descrição": "YANOMAMI"
+  },
+  {
+    "código": "402",
+    "código cadsus": "X402",
+    "descrição": "ARARA"
+  },
+  {
+    "código": "403",
+    "código cadsus": "X403",
+    "descrição": "SAKIRIABAR"
+  },
+  {
+    "código": "404",
+    "código cadsus": "X404",
+    "descrição": "TATZ"
+  },
+  {
+    "código": "405",
+    "código cadsus": "X405",
+    "descrição": "SEM INFORMACAO"
+  }
+]

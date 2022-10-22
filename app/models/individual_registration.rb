@@ -103,6 +103,7 @@ class IndividualRegistration < ApplicationRecord
       relacao_parentesco: JSON.parse(Rails.cache.read('@CI_Relacao_Parentesco')),
       responsavel_crianca: JSON.parse(Rails.cache.read('@CI_Responsavel_Crianca')),
       situacao_mercado_trabalho: JSON.parse(Rails.cache.read('@CI_Situacao_Mercado')),
+      etnia: JSON.parse(Rails.cache.read('@CI_Etnia')),
     }
   end
 

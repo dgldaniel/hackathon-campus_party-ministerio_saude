@@ -12,6 +12,8 @@ class ProcedureSheet < ApplicationRecord
   has_one_attached :xml_file
   has_one_attached :thrift_file
 
+  validates_presence_of :tpCdsOrigem
+
   before_create :serialize_thrift
   before_update :serialize_thrift
 

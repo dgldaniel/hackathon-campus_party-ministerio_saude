@@ -29,6 +29,8 @@ class HouseholdRegistrationsController < ApplicationController
     @household_registration = HouseholdRegistration.new(household_registration_params)
     @household_registration.doctor = current_user.doctor
 
+    @options = HouseholdRegistration.build_options
+
     respond_to do |format|
       if @household_registration.save
         format.html { redirect_to(household_registration_url(@household_registration), notice: "Household registration was successfully created.") }
@@ -42,6 +44,8 @@ class HouseholdRegistrationsController < ApplicationController
 
   # PATCH/PUT /household_registrations/1 or /household_registrations/1.json
   def update
+    @options = HouseholdRegistration.build_options
+
     respond_to do |format|
       if @household_registration.update(household_registration_params)
         format.html { redirect_to(household_registration_url(@household_registration), notice: "Household registration was successfully updated.") }

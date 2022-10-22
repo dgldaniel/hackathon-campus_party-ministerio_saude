@@ -65,6 +65,9 @@ namespace :store_records_on_cache do
     situacao_mercado_trabalho_data = get_path_json('cadastro_individual', 'situacao_mercado_trabalho')
     store_json_cache(situacao_mercado_trabalho_data, { first: 'Descrição', second: 'Código' }, '@CI_Situacao_Mercado')
 
+    situacao_mercado_trabalho_data = get_path_json('cadastro_individual', 'etnia')
+    store_json_cache(situacao_mercado_trabalho_data, { first: 'descrição', second: 'código' }, '@CI_Etnia')
+
     # Ficha de Atendimento Individual
 
     aleitamento_materno_data = get_path_json('ficha_atendimento_individual', 'aleitamento_materno')

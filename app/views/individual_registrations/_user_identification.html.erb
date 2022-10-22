@@ -158,7 +158,7 @@
     <div class="col">
       <div class="mb-3">
         <%= form.label :etnia %>
-        <%= form.number_field :etnia, class: 'form-control btn-pill' %>
+        <%= form.select :etnia, @options[:etnia], {}, { class: 'js-example-basic-single col-sm-12' } %>
       </div>
     </div>
   </div>

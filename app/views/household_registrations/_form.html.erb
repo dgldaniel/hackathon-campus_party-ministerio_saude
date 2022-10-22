@@ -9,16 +9,6 @@
       </ul>
     </div>
   <% end %>
-  <div id="families" class="tab">
-    <%= form.fields_for :families do |family| %>
-      <%= render 'family_fields', f: family %>
-    <% end %>
-    <div class="links">
-      <%= link_to_add_association 'add family', form, :families %>
-      <br>
-      <br>
-    </div>
-  </div>
   <div class="tab">
     <div class="row">
       <div class="col">
@@ -334,6 +324,16 @@
           <% end %>
         </div>
       </div>
+    </div>
+  </div>
+  <div id="families" class="tab">
+    <%= form.fields_for :families do |family| %>
+      <%= render 'family_fields', f: family %>
+    <% end %>
+    <div class="links">
+      <%= link_to_add_association 'add family', form, :families %>
+      <br>
+      <br>
     </div>
   </div>
   <div class="text-end btn-mb">

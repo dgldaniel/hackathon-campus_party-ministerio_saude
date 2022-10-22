@@ -13,6 +13,33 @@ class HouseholdRegistration < ApplicationRecord
   has_one_attached :xml_file
   has_one_attached :thrift_file
 
+  validates_presence_of :quantosAnimaisNoDomicilio, if: proc { |a| a.statusTermoRecusaCadatroDomiciliarAtencaoBasica == false && a.stAnimaisNoDomicilio == true }
+  validates_presence_of :animaisNoDomicilio,
+                        :stAnimaisNoDomicilio,
+                        :bairro,
+                        :cep,
+                        :codigoIbgeMunicipio,
+                        :complemento,
+                        :nomeLogradouro,
+                        :numero,
+                        :numeroDneUf,
+                        :telReferencial,
+                        :telResidencial,
+                        :tipoLogradouroNumeroDne,
+                        :stSemNumero,
+                        :abastecimentoAgua,
+                        :areaProducaoRural,
+                        :localizacao,
+                        :materialPredominanteParedesExtDomicilio,
+                        :nuComodos,
+                        :nuMoradores,
+                        :situacaoMoradiaPosseTerra,
+                        :stDiponibilidadeEnergiaeletrica,
+                        :tipoAcessoDomicilio,
+                        :tipoDomicilio,
+                        :tratamentoAguaDomicilio,
+                        if: proc { |a| a.statusTermoRecusaCadatroDomiciliarAtencaoBasica == false }
+
   before_create :serialize_thrift
 
   def serialize_thrift
