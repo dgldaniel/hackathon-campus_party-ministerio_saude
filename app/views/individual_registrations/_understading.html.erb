@@ -1,95 +1,94 @@
-<div class="tab">
-  <div class="d-block">
-    <%= form.check_box :statusSituacaoRua %>
-    <%= form.label :statusSituacaoRua %>
+<h2>Cidadão em situação de rua</h2>
+<div class="d-block">
+  <%= form.check_box :statusSituacaoRua %>
+  <%= form.label :statusSituacaoRua %>
+</div>
+<div name="scope-understading">
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= form.label :tempoSituacaoRua %>
+        <%= form.collection_radio_buttons :tempoSituacaoRua, @options[:tempo_situacao_rua], :second, :first do |b| %>
+          <div class="d-block">
+            <%= b.radio_button %>
+            <%= b.label %>
+          </div>
+        <% end %>
+      </div>
+    </div>
   </div>
-  <div id="situacaoRua-container" style="display:none;">
-    <div class="d-block">
-      <%= form.check_box :statusVisitaFamiliarFrequentemente %>
-      <%= form.label :statusVisitaFamiliarFrequentemente %>
-    </div>
-    <div class="row">
-      <div class="col">
-        <div class="mb-3">
-          <%= form.label :grauParentescoFamiliarFrequentado %>
-          <%= form.text_field :grauParentescoFamiliarFrequentado, class: 'form-control btn-pill', disabled: true %>
-        </div>
+  <div class="d-block">
+    <%= form.check_box :statusRecebeBeneficio %>
+    <%= form.label :statusRecebeBeneficio %>
+  </div>
+  <div class="d-block">
+    <%= form.check_box :statusPossuiReferenciaFamiliar %>
+    <%= form.label :statusPossuiReferenciaFamiliar %>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= form.label :quantidadeAlimentacoesAoDiaSituacaoRua %>
+        <%= form.collection_radio_buttons :quantidadeAlimentacoesAoDiaSituacaoRua, @options[:quantas_vezes_alimentacao], :second, :first do |b| %>
+          <div class="d-block">
+            <%= b.radio_button %>
+            <%= b.label %>
+          </div>
+        <% end %>
       </div>
     </div>
-    <div class="d-block">
-      <%= form.check_box :statusTemAcessoHigienePessoalSituacaoRua %>
-      <%= form.label :statusTemAcessoHigienePessoalSituacaoRua %>
-    </div>
-    <div id="higienePessoalSituacaoRua-options" class="row" style="display:none;">
-      <div class="col">
-        <div class="mb-3">
-          <%= form.label :higienePessoalSituacaoRua %>
-          <%= form.collection_check_boxes :higienePessoalSituacaoRua, @options[:acesso_higiene], :second, :first do |b| %>
-            <div class="d-block">
-              <%= b.check_box %>
-              <%= b.label %>
-            </div>
-          <% end %>
-        </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= form.label :origemAlimentoSituacaoRua %>
+        <%= form.collection_check_boxes :origemAlimentoSituacaoRua, @options[:origem_alimento], :second, :first do |b| %>
+          <div class="d-block">
+            <%= b.check_box %>
+            <%= b.label %>
+          </div>
+        <% end %>
       </div>
     </div>
-    <div class="row">
-      <div class="col">
-        <div class="mb-3">
-          <%= form.label :origemAlimentoSituacaoRua %>
-          <%= form.collection_check_boxes :origemAlimentoSituacaoRua, @options[:origem_alimento], :second, :first do |b| %>
-            <div class="d-block">
-              <%= b.check_box %>
-              <%= b.label %>
-            </div>
-          <% end %>
-        </div>
+  </div>
+  <div class="d-block">
+    <%= form.check_box :statusAcompanhadoPorOutraInstituicao %>
+    <%= form.label :statusAcompanhadoPorOutraInstituicao %>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= form.label :outraInstituicaoQueAcompanha %>
+        <%= form.text_field :outraInstituicaoQueAcompanha, class: 'form-control btn-pill' %>
       </div>
     </div>
-    <div class="d-block">
-      <%= form.check_box :statusAcompanhadoPorOutraInstituicao %>
-      <%= form.label :statusAcompanhadoPorOutraInstituicao %>
-    </div>
-    <div class="row">
-      <div class="col">
-        <div class="mb-3">
-          <%= form.label :outraInstituicaoQueAcompanha %>
-          <%= form.text_field :outraInstituicaoQueAcompanha, class: 'form-control btn-pill', disabled: true %>
-        </div>
+  </div>
+  <div class="d-block">
+    <%= form.check_box :statusVisitaFamiliarFrequentemente %>
+    <%= form.label :statusVisitaFamiliarFrequentemente %>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= form.label :grauParentescoFamiliarFrequentado %>
+        <%= form.text_field :grauParentescoFamiliarFrequentado, class: 'form-control btn-pill' %>
       </div>
     </div>
-    <div class="row">
-      <div class="col">
-        <div class="mb-3">
-          <%= form.label :quantidadeAlimentacoesAoDiaSituacaoRua %>
-          <%= form.collection_radio_buttons :quantidadeAlimentacoesAoDiaSituacaoRua, @options[:quantas_vezes_alimentacao], :second, :first do |b| %>
-            <div class="d-block">
-              <%= b.radio_button %>
-              <%= b.label %>
-            </div>
-          <% end %>
-        </div>
-      </div>
-    </div>
-    <div class="d-block">
-      <%= form.check_box :statusRecebeBeneficio %>
-      <%= form.label :statusRecebeBeneficio %>
-    </div>
-    <div class="d-block">
-      <%= form.check_box :statusPossuiReferenciaFamiliar %>
-      <%= form.label :statusPossuiReferenciaFamiliar %>
-    </div>
-    <div class="row">
-      <div class="col">
-        <div class="mb-3">
-          <%= form.label :tempoSituacaoRua %>
-          <%= form.collection_radio_buttons :tempoSituacaoRua, @options[:tempo_situacao_rua], :second, :first do |b| %>
-            <div class="d-block">
-              <%= b.radio_button %>
-              <%= b.label %>
-            </div>
-          <% end %>
-        </div>
+  </div>
+  <div class="d-block">
+    <%= form.check_box :statusTemAcessoHigienePessoalSituacaoRua %>
+    <%= form.label :statusTemAcessoHigienePessoalSituacaoRua %>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= form.label :higienePessoalSituacaoRua %>
+        <%= form.collection_check_boxes :higienePessoalSituacaoRua, @options[:acesso_higiene], :second, :first do |b| %>
+          <div class="d-block">
+            <%= b.check_box %>
+            <%= b.label %>
+          </div>
+        <% end %>
       </div>
     </div>
   </div>

@@ -87,84 +87,290 @@ function calculateAge(inputText) {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  // CondicoesDeSaude
+  const currentInputs = Array.from(document.querySelectorAll('input[id^="individual_registration"]'));
 
-  const $statusTeveInternadoem12MesesInput = document.getElementById('individual_registration_statusTeveInternadoEm12Meses')
-  const $descricaoCausaInternacaoEm12MesessInput = document.getElementById('individual_registration_descricaoCausaInternacaoEm12Meses')
-  const $descricaoPlantasMedicinaisUsadasInput = document.getElementById('individual_registration_descricaoPlantasMedicinaisUsadas')
-  const $statusUsaPlantasMedicinaisInput = document.getElementById('individual_registration_statusUsaPlantasMedicinais')
-  const $statusTeveDoencaCardiacaInput = document.getElementById('individual_registration_statusTeveDoencaCardiaca')
-  const $statusTemDoencaRespiratoriaInput = document.getElementById('individual_registration_statusTemDoencaRespiratoria')
-  const $statusTemTeveDoencasRinsInput = document.getElementById('individual_registration_statusTemTeveDoencasRins')
-  const $maternidadeDeReferenciaInput = document.getElementById('individual_registration_maternidadeDeReferencia')
-  const $statusEhGestanteInput = document.getElementById('individual_registration_statusEhGestante')
+  const inputs = currentInputs.reduce((acc, cur) => {
+    if (cur.id.includes('attributes')) return { ...acc };
 
-  const $doencaCardiacaOptions = document.getElementById('doencaCardiaca-options');
-  const $doencaRespiratoriaOptions = document.getElementById('doencaRespiratoria-options');
-  const $doencaRinsOptions = document.getElementById('doencaRins-options');
+    const splitData = cur.id.split('_');
+    const key = splitData[splitData.length - 1]
 
-  handleDisabledInputTextByInputCheckbox($descricaoCausaInternacaoEm12MesessInput, $statusTeveInternadoem12MesesInput)
-  handleDisabledInputTextByInputCheckbox($descricaoPlantasMedicinaisUsadasInput, $statusUsaPlantasMedicinaisInput)
-  handleDisabledInputTextByInputCheckbox($maternidadeDeReferenciaInput, $statusEhGestanteInput)
-
-  handleDisplayOptionsByInputCheckbox($doencaCardiacaOptions, $statusTeveDoencaCardiacaInput)
-  handleDisplayOptionsByInputCheckbox($doencaRespiratoriaOptions,  $statusTemDoencaRespiratoriaInput)
-  handleDisplayOptionsByInputCheckbox($doencaRinsOptions, $statusTemTeveDoencasRinsInput)
+    return { ...acc, [key]: cur };
+  }, {})
 
   // Dados Gerais
-  const $nacionalidadeCidadaoInput = document.querySelectorAll('input[name="individual_registration[nacionalidadeCidadao]"]');
+  inputs['statusEhResponsavel'].addEventListener('change', event => {
+    if (event.target.checked) {
+      inputs['cpfResponsavelFamiliar'].disabled = true;
+      inputs['cnsResponsavelFamiliar'].disabled = true;
+    } else {
+      inputs['cpfResponsavelFamiliar'].disabled = false;
+      inputs['cnsResponsavelFamiliar'].disabled = false;
+    }
+  });
 
-  const $nomeMaeCidadao = document.getElementById('individual_registration_nomeMaeCidadao')
-  const $desconheceNomeMae = document.getElementById('individual_registration_desconheceNomeMae')
-  const $nomePaiCidadao = document.getElementById('individual_registration_nomePaiCidadao')
-  const $desconheceNomePai = document.getElementById('individual_registration_desconheceNomePai')
-  const $numeroCartaoSusResponsavel = document.getElementById('individual_registration_numeroCartaoSusResponsavel')
-  const $statusEhResponsavel = document.getElementById('individual_registration_statusEhResponsavel')
-  const $dataNascimentoResponsavel = document.getElementById('individual_registration_dataNascimentoResponsavel')
-  const $dataNascimentoCidadao = document.getElementById('individual_registration_dataNascimentoCidadao')
+  inputs['stForaArea'].addEventListener('change', event => {
+    if (event.target.checked) {
+      inputs['microArea'].readOnly = true;
+      inputs['microArea'].value = 'FA';
+    } else {
+      inputs['microArea'].readOnly = false;
+      inputs['microArea'].value = '';
+    }
+  });
 
-  for (const $inputButton of $nacionalidadeCidadaoInput) {
-    $inputButton.addEventListener('change', showSelectedOnNacionalidade);
-  }
+  const sexoRadioButton = document.getElementsByName("individual_registration[sexoCidadao]");
 
-  handleDisabledInputTextByInputCheckboxInverse($nomeMaeCidadao, $desconheceNomeMae)
-  handleDisabledInputTextByInputCheckboxInverse($nomePaiCidadao, $desconheceNomePai)
-  handleDisabledInputTextByInputCheckbox($numeroCartaoSusResponsavel, $statusEhResponsavel)
+  sexoRadioButton.forEach(eachInput => {
+    eachInput.addEventListener('change', event => {
+      if (event.target.value === "0") {
+        inputs['statusEhGestante'].disabled = true;
+        inputs['maternidadeDeReferencia'].disabled = true;
+      } else {
+        inputs['statusEhGestante'].disabled = false;
+        inputs['maternidadeDeReferencia'].disabled = false;
+      }});
+  });
 
-  calculateAge($dataNascimentoResponsavel)
-  calculateAge($dataNascimentoCidadao)
+  const racaCorRadioButton = document.getElementsByName("individual_registration[racaCorCidadao]");
+
+  racaCorRadioButton.forEach(eachInput => {
+    eachInput.addEventListener('change', event => {
+      if (event.target.value !== "5") {
+       document.getElementById('individual_registration_etnia').disabled = true;
+      } else {
+       document.getElementById('individual_registration_etnia').disabled = false;
+      }});
+  });
+
+  inputs['desconheceNomeMae'].addEventListener('change', event => {
+    if (event.target.checked) {
+      inputs['nomeMaeCidadao'].disabled = true;
+    } else {
+      inputs['nomeMaeCidadao'].disabled = false;
+    }
+  });
+
+  inputs['desconheceNomePai'].addEventListener('change', event => {
+    if (event.target.checked) {
+      inputs['nomePaiCidadao'].disabled = true;
+    } else {
+      inputs['nomePaiCidadao'].disabled = false;
+    }
+  });
+
+  const nacionalidadeRadioButton = document.getElementsByName("individual_registration[nacionalidadeCidadao]");
+
+  nacionalidadeRadioButton.forEach(eachInput => {
+    eachInput.addEventListener('change', event => {
+      if (event.target.value === "1") {
+        inputs['paisNascimento'].readOnly = true;
+        inputs['paisNascimento'].value = 'BRASIL';
+
+        inputs['dtNaturalizacao'].disabled = true;
+        inputs['dtNaturalizacao'].value = '';
+
+        inputs['portariaNaturalizacao'].disabled = true;
+        inputs['portariaNaturalizacao'].value = '';
+
+        inputs['dtEntradaBrasil'].disabled = true;
+        inputs['dtEntradaBrasil'].value = '';
+
+        document.getElementById('individual_registration_codigoIbgeMunicipioNascimento').disabled = false;
+
+      } else if (event.target.value === "2") {
+        inputs['paisNascimento'].readOnly = false;
+        inputs['paisNascimento'].disabled = true;
+        inputs['paisNascimento'].value = '';
+
+        inputs['dtNaturalizacao'].disabled = false;
+        inputs['portariaNaturalizacao'].disabled = false;
+
+        document.getElementById('individual_registration_codigoIbgeMunicipioNascimento').disabled = true;
+
+        inputs['dtEntradaBrasil'].disabled = true;
+        inputs['dtEntradaBrasil'].value = '';
+      } else {
+        inputs['paisNascimento'].readOnly = false;
+        inputs['paisNascimento'].disabled = false;
+
+        inputs['dtNaturalizacao'].disabled = true;
+        inputs['dtNaturalizacao'].value = '';
+
+        inputs['portariaNaturalizacao'].disabled = true;
+        inputs['portariaNaturalizacao'].value = '';
+
+        document.getElementById('individual_registration_codigoIbgeMunicipioNascimento').disabled = true;
+
+        inputs['dtEntradaBrasil'].disabled = false;
+      }});
+  });
+
+  inputs['statusMembroPovoComunidadeTradicional'].addEventListener('change', event => {
+    if (event.target.checked) {
+      inputs['coPovoComunidadeTradicional'].disabled = false;
+    } else {
+      inputs['coPovoComunidadeTradicional'].disabled = true;
+    }
+  });
+
+  const orientacaoSexualRadioButton = document.getElementsByName("individual_registration[orientacaoSexualCidadao]");
+
+  inputs['statusDesejaInformarOrientacaoSexual'].addEventListener('change', event => {
+    if (event.target.checked) {
+      orientacaoSexualRadioButton.forEach((eachInput) => {
+        eachInput.disabled = false;
+      })
+    } else {
+      orientacaoSexualRadioButton.forEach((eachInput) => {
+        eachInput.disabled = true;
+      })
+    }
+  });
+
+  const deficienciasCidadaoRadioButton = document.getElementsByName("individual_registration[deficienciasCidadao][]");
+
+  inputs['statusTemAlgumaDeficiencia'].addEventListener('change', event => {
+    if (event.target.checked) {
+      deficienciasCidadaoRadioButton.forEach((eachInput) => {
+        eachInput.disabled = false;
+      })
+    } else {
+      deficienciasCidadaoRadioButton.forEach((eachInput) => {
+        eachInput.disabled = true;
+      })
+    }
+  });
+
+  inputs['statusEhGestante'].addEventListener('change', event => {
+    if (event.target.checked) {
+      inputs['maternidadeDeReferencia'].disabled = false;
+    } else {
+      inputs['maternidadeDeReferencia'].disabled = true;
+    }
+  });
+
+  const doencaCardiacaRadioButton = document.getElementsByName("individual_registration[doencaCardiaca][]");
+
+  inputs['statusTeveDoencaCardiaca'].addEventListener('change', event => {
+    if (event.target.checked) {
+      doencaCardiacaRadioButton.forEach((eachInput) => {
+        eachInput.disabled = false;
+      })
+    } else {
+      doencaCardiacaRadioButton.forEach((eachInput) => {
+        eachInput.disabled = true;
+      })
+    }
+  });
+
+  const doencaRinsRadioButton = document.getElementsByName("individual_registration[doencaRins][]");
+
+  inputs['statusTemTeveDoencasRins'].addEventListener('change', event => {
+    if (event.target.checked) {
+      doencaRinsRadioButton.forEach((eachInput) => {
+        eachInput.disabled = false;
+      })
+    } else {
+      doencaRinsRadioButton.forEach((eachInput) => {
+        eachInput.disabled = true;
+      })
+    }
+  });
+
+  const doencaRespiratoriaRadioButton = document.getElementsByName("individual_registration[doencaRespiratoria][]");
+
+  inputs['statusTemDoencaRespiratoria'].addEventListener('change', event => {
+    if (event.target.checked) {
+      doencaRespiratoriaRadioButton.forEach((eachInput) => {
+        eachInput.disabled = false;
+      })
+    } else {
+      doencaRespiratoriaRadioButton.forEach((eachInput) => {
+        eachInput.disabled = true;
+      })
+    }
+  });
+
+  inputs['statusTeveInternadoEm12Meses'].addEventListener('change', event => {
+    if (event.target.checked) {
+      inputs['descricaoCausaInternacaoEm12Meses'].disabled = false;
+    } else {
+      inputs['descricaoCausaInternacaoEm12Meses'].disabled = true;
+    }
+  });
+
+  inputs['statusUsaPlantasMedicinais'].addEventListener('change', event => {
+    if (event.target.checked) {
+      inputs['descricaoPlantasMedicinaisUsadas'].disabled = false;
+    } else {
+      inputs['descricaoPlantasMedicinaisUsadas'].disabled = true;
+    }
+  });
+
+  inputs['statusAcompanhadoPorOutraInstituicao'].addEventListener('change', event => {
+    if (event.target.checked) {
+      inputs['outraInstituicaoQueAcompanha'].disabled = false;
+    } else {
+      inputs['outraInstituicaoQueAcompanha'].disabled = true;
+    }
+  });
+
+  inputs['statusVisitaFamiliarFrequentemente'].addEventListener('change', event => {
+    if (event.target.checked) {
+      inputs['grauParentescoFamiliarFrequentado'].disabled = false;
+    } else {
+      inputs['grauParentescoFamiliarFrequentado'].disabled = true;
+    }
+  });
+
+  const higienePessoalRadioButton = document.getElementsByName("individual_registration[higienePessoalSituacaoRua][]");
+
+  inputs['statusTemAcessoHigienePessoalSituacaoRua'].addEventListener('change', event => {
+    if (event.target.checked) {
+      higienePessoalRadioButton.forEach((eachInput) => {
+        eachInput.disabled = false;
+      })
+    } else {
+      higienePessoalRadioButton.forEach((eachInput) => {
+        eachInput.disabled = true;
+      })
+    }
+  });
+
+  const inputsFromUnderstading = document.querySelectorAll('div[name="scope-understading"] input');
+
+  inputs['statusSituacaoRua'].addEventListener('change', event => {
+    if (event.target.checked) {
+
+      inputsFromUnderstading.forEach((eachInput) => {
+        eachInput.disabled = true;
+      });
+    } else {
+      inputsFromUnderstading.forEach((eachInput) => {
+        eachInput.disabled = false;
+      });
+    }
+  });
+
+  const inputsFromStatusTerm = document.querySelectorAll('div[name="status-term"] input');
+
+  inputs['statusTermoRecusaCadastroIndividualAtencaoBasica'].addEventListener('change', event => {
+    if (event.target.checked) {
+      inputsFromStatusTerm.forEach((eachInput) => {
+        eachInput.disabled = true;
+      });
+    } else {
+      inputsFromStatusTerm.forEach((eachInput) => {
+        eachInput.disabled = false;
+      });
+    }
+  });
 
 
-  // Informações Socio Demograficas
-  const $statusTemAlgumaDeficienciaInput = document.getElementById('individual_registration_statusTemAlgumaDeficiencia');
-  const $statusDesejaInformarOrientacaoSexualInput = document.getElementById('individual_registration_statusDesejaInformarOrientacaoSexual');
-  const $statusMembroPovoComunidadeTradicionalInput = document.getElementById('individual_registration_statusMembroPovoComunidadeTradicional');
-  const $coPovoComunidadeTradicionalInput = document.getElementById('individual_registration_coPovoComunidadeTradicional');
 
-  const $deficienciasCidadaoOptions = document.getElementById('deficienciasCidadao-options');
-  const $orientacaoSexualCidadaoOptions = document.getElementById('orientacaoSexualCidadao-options');
 
-  handleDisplayOptionsByInputCheckbox($deficienciasCidadaoOptions, $statusTemAlgumaDeficienciaInput)
-  handleDisplayOptionsByInputCheckbox($orientacaoSexualCidadaoOptions, $statusDesejaInformarOrientacaoSexualInput)
-  handleDisabledInputTextByInputCheckbox($coPovoComunidadeTradicionalInput, $statusMembroPovoComunidadeTradicionalInput)
 
-  // Em Situação de Rua
-
-  const $statusSituacaoRuaInput = document.getElementById('individual_registration_statusSituacaoRua');
-  const $statusVisitaFamiliarFrequentementeInput = document.getElementById('individual_registration_statusVisitaFamiliarFrequentemente');
-  const $grauParentescoFamiliarFrequentadoInput = document.getElementById('individual_registration_grauParentescoFamiliarFrequentado');
-  const $statusTemAcessoHigienePessoalSituacaoRuaInput = document.getElementById('individual_registration_statusTemAcessoHigienePessoalSituacaoRua');
-  const $higienePessoalSituacaoRuaOptions = document.getElementById('higienePessoalSituacaoRua-options');
-  const $statusAcompanhadoPorOutraInstituicaoInput = document.getElementById('individual_registration_statusAcompanhadoPorOutraInstituicao');
-  const $outraInstituicaoQueAcompanhaInput = document.getElementById('individual_registration_outraInstituicaoQueAcompanha');
-
-  const $containerSituacaoRua = document.getElementById('situacaoRua-container')
-
-  handleDisplayOptionsByInputCheckbox($higienePessoalSituacaoRuaOptions, $statusTemAcessoHigienePessoalSituacaoRuaInput)
-  handleDisplayOptionsByInputCheckbox($containerSituacaoRua, $statusSituacaoRuaInput)
-
-  handleDisabledInputTextByInputCheckbox($grauParentescoFamiliarFrequentadoInput, $statusVisitaFamiliarFrequentementeInput)
-  handleDisabledInputTextByInputCheckbox($outraInstituicaoQueAcompanhaInput, $statusAcompanhadoPorOutraInstituicaoInput)
 });
 
 

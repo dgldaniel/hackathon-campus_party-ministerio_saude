@@ -1,233 +1,224 @@
-<div class="tab">
-  <div class="row">
-    <div class="col">
-      <div class="mb-3">
-        <%= form.label :nomeSocial %>
-        <%= form.text_field :nomeSocial, class: 'form-control btn-pill', maxlength: 70 %>
+<h2>Identificação do usuário / cidadão</h2>
+<div class="row">
+  <div class="col">
+    <div class="mb-3">
+      <%= form.label :cpfCidadao %>
+      <%= form.text_field :cpfCidadao, class: 'form-control btn-pill' %>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <div class="mb-3">
+      <%= form.label :cnsCidadao %>
+      <%= form.text_field :cnsCidadao, class: 'form-control btn-pill' %>
+    </div>
+  </div>
+</div>
+<div class="d-block">
+  <%= form.check_box :statusEhResponsavel %>
+  <%= form.label :statusEhResponsavel %>
+</div>
+<div class="row">
+  <div class="col">
+    <div class="mb-3">
+      <%= form.label :cpfResponsavelFamiliar %>
+      <%= form.text_field :cpfResponsavelFamiliar, class: 'form-control btn-pill' %>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <div class="mb-3">
+      <%= form.label :cnsResponsavelFamiliar %>
+      <%= form.text_field :cnsResponsavelFamiliar, class: 'form-control btn-pill' %>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <div class="mb-3">
+      <%= form.label :nomeCidadao %>
+      <%= form.text_field :nomeCidadao, class: 'form-control btn-pill' %>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <div class="mb-3">
+      <%= form.label :microArea %>
+      <%= form.text_field :microArea, class: 'form-control btn-pill' %>
+    </div>
+  </div>
+</div>
+<div class="d-block">
+  <%= form.check_box :stForaArea %>
+  <%= form.label :stForaArea %>
+</div>
+<div class="row">
+  <div class="col">
+    <div class="mb-3">
+      <%= form.label :nomeSocial %>
+      <%= form.text_field :nomeSocial, class: 'form-control btn-pill', maxlength: 70 %>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <div class="mb-3">
+      <%= form.label :dataNascimentoCidadao %>
+      <div class="input-group">
+        <%= form.text_field :dataNascimentoCidadao, class: 'btn-pill datepicker-here form-control digits', 'data-language': "en", 'data-bs-original-title': 'data-bs-original-title', title: 'title' %>
       </div>
     </div>
   </div>
-  <div id='container-codigoIbgeMunicipioNascimento' class="row" style="display:none;">
-    <div class="col">
-      <div class="mb-3">
-        <%= form.label :codigoIbgeMunicipioNascimento %>
-        <%= form.select :codigoIbgeMunicipioNascimento, @options[:municipios], {}, { class: 'js-example-basic-single col-sm-12' } %>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      <div class="mb-3">
-        <%= form.label :dataNascimentoCidadao %>
-        <div class="input-group">
-          <%= form.text_field :dataNascimentoCidadao, class: 'btn-pill datepicker-here form-control digits', 'data-language': "en", 'data-bs-original-title': 'data-bs-original-title', title: 'title' %>
+</div>
+<div class="row">
+  <div class="col">
+    <div class="mb-3">
+      <%= form.label :sexoCidadao %>
+      <%= form.collection_radio_buttons :sexoCidadao, @options[:sexo], :second, :first do |b| %>
+        <div class="d-block">
+          <%= b.radio_button %>
+          <%= b.label %>
         </div>
-      </div>
+      <% end %>
     </div>
   </div>
-  <div class="row">
-    <div class="col">
-      <div class="mb-3">
-        <%= form.label :dataNascimentoResponsavel %>
-        <div class="input-group">
-          <%= form.text_field :dataNascimentoResponsavel, class: 'btn-pill datepicker-here form-control digits', 'data-language': "en", 'data-bs-original-title': 'data-bs-original-title', title: 'title' %>
+</div>
+<div class="row">
+  <div class="col">
+    <div class="mb-3">
+      <%= form.label :racaCorCidadao %>
+      <%= form.collection_radio_buttons :racaCorCidadao, @options[:raca_cor], :second, :first do |b| %>
+        <div class="d-block">
+          <%= b.radio_button %>
+          <%= b.label %>
         </div>
-      </div>
+      <% end %>
     </div>
   </div>
-  <div class="row">
-    <div class="col">
-      <div class="mb-3">
-        <%= form.label :emailCidadao %>
-        <%= form.text_field :emailCidadao, class: 'form-control btn-pill' %>
-      </div>
+</div>
+<div class="row">
+  <div class="col">
+    <div class="mb-3">
+      <%= form.label :etnia %>
+      <%= form.select :etnia, @options[:etnia], { prompt: "Selecione Etnia" }, { class: 'js-example-basic-single col-sm-12'} %>
     </div>
   </div>
-  <div class="row">
-    <div class="col">
-      <div class="mb-3">
-        <%= form.label :nacionalidadeCidadao %>
-        <%= form.collection_radio_buttons :nacionalidadeCidadao, @options[:nacionalidade], :second, :first do |b| %>
-          <div class="d-block">
-            <%= b.radio_button %>
-            <%= b.label %>
-          </div>
-        <% end %>
-      </div>
+</div>
+<div class="row">
+  <div class="col">
+    <div class="mb-3">
+      <%= form.label :numeroNisPisPasep %>
+      <%= form.text_field :numeroNisPisPasep, class: 'form-control btn-pill' %>
     </div>
   </div>
-  <div class="row">
-    <div class="col">
-      <div class="mb-3">
-        <%= form.label :nomeCidadao %>
-        <%= form.text_field :nomeCidadao, class: 'form-control btn-pill' %>
-      </div>
+</div>
+<div class="row">
+  <div class="col">
+    <div class="mb-3">
+      <%= form.label :nomeMaeCidadao %>
+      <%= form.text_field :nomeMaeCidadao, class: 'form-control btn-pill' %>
     </div>
   </div>
-  <div class="row">
-    <div class="col">
-      <div class="mb-3">
-        <%= form.label :nomeMaeCidadao %>
-        <%= form.text_field :nomeMaeCidadao, class: 'form-control btn-pill' %>
-      </div>
+</div>
+<div class="d-block">
+  <%= form.check_box :desconheceNomeMae %>
+  <%= form.label :desconheceNomeMae %>
+</div>
+<div class="row">
+  <div class="col">
+    <div class="mb-3">
+      <%= form.label :nomePaiCidadao %>
+      <%= form.text_field :nomePaiCidadao, class: 'form-control btn-pill' %>
     </div>
   </div>
-  <div class="d-block">
-    <%= form.check_box :desconheceNomeMae %>
-    <%= form.label :desconheceNomeMae %>
-  </div>
-  <div class="row">
-    <div class="col">
-      <div class="mb-3">
-        <%= form.label :cnsCidadao %>
-        <%= form.text_field :cnsCidadao, class: 'form-control btn-pill' %>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      <div class="mb-3">
-        <%= form.label :cnsResponsavelFamiliar %>
-        <%= form.text_field :cnsResponsavelFamiliar, class: 'form-control btn-pill' %>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      <div class="mb-3">
-        <%= form.label :telefoneCelular %>
-        <%= form.text_field :telefoneCelular, class: 'form-control btn-pill' %>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      <div class="mb-3">
-        <%= form.label :numeroNisPisPasep %>
-        <%= form.text_field :numeroNisPisPasep, class: 'form-control btn-pill' %>
-      </div>
-    </div>
-  </div>
-  <div id='container-paisNascimento' class="row" style="display:none;">
-    <div class="col">
-      <div class="mb-3">
-        <%= form.label :paisNascimento %>
-        <%= form.text_field :paisNascimento, class: 'form-control btn-pill' %>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      <div class="mb-3">
-        <%= form.label :racaCorCidadao %>
-        <%= form.collection_radio_buttons :racaCorCidadao, @options[:raca_cor], :second, :first do |b| %>
-          <div class="d-block">
-            <%= b.radio_button %>
-            <%= b.label %>
-          </div>
-        <% end %>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      <div class="mb-3">
-        <%= form.label :sexoCidadao %>
-        <%= form.collection_radio_buttons :sexoCidadao, @options[:sexo], :second, :first do |b| %>
-          <div class="d-block">
-            <%= b.radio_button %>
-            <%= b.label %>
-          </div>
-        <% end %>
-      </div>
-    </div>
-  </div>
-  <div class="d-block">
-    <%= form.check_box :statusEhResponsavel %>
-    <%= form.label :statusEhResponsavel %>
-  </div>
-  <div class="row">
-    <div class="col">
-      <div class="mb-3">
-        <%= form.label :numeroCartaoSusResponsavel %>
-        <%= form.text_field :numeroCartaoSusResponsavel, class: 'form-control btn-pill', disabled: true %>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      <div class="mb-3">
-        <%= form.label :etnia %>
-        <%= form.select :etnia, @options[:etnia], {}, { class: 'js-example-basic-single col-sm-12' } %>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      <div class="mb-3">
-        <%= form.label :nomePaiCidadao %>
-        <%= form.text_field :nomePaiCidadao, class: 'form-control btn-pill' %>
-      </div>
-    </div>
-  </div>
-  <div class="d-block">
-    <%= form.check_box :desconheceNomePai %>
-    <%= form.label :desconheceNomePai %>
-  </div>
-  <div class="row">
-    <div class="col">
-      <div class="mb-3">
-        <%= form.label :dtNaturalizacao %>
-        <div class="input-group">
-          <%= form.text_field :dtNaturalizacao, class: 'btn-pill datepicker-here form-control digits', 'data-language': "en", 'data-bs-original-title': 'data-bs-original-title', title: 'title' %>
+</div>
+<div class="d-block">
+  <%= form.check_box :desconheceNomePai %>
+  <%= form.label :desconheceNomePai %>
+</div>
+<div class="row">
+  <div class="col">
+    <div class="mb-3">
+      <%= form.label :nacionalidadeCidadao %>
+      <%= form.collection_radio_buttons :nacionalidadeCidadao, @options[:nacionalidade], :second, :first do |b| %>
+        <div class="d-block">
+          <%= b.radio_button %>
+          <%= b.label %>
         </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+<div id='container-paisNascimento' class="row">
+  <div class="col">
+    <div class="mb-3">
+      <%= form.label :paisNascimento %>
+      <%= form.text_field :paisNascimento, class: 'form-control btn-pill' %>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <div class="mb-3">
+      <%= form.label :dtNaturalizacao %>
+      <div class="input-group">
+        <%= form.text_field :dtNaturalizacao, class: 'btn-pill datepicker-here form-control digits', 'data-language': "en", 'data-bs-original-title': 'data-bs-original-title', title: 'title' %>
       </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col">
-      <div class="mb-3">
-        <%= form.label :portariaNaturalizacao %>
-        <%= form.text_field :portariaNaturalizacao, class: 'form-control btn-pill' %>
+</div>
+<div class="row">
+  <div class="col">
+    <div class="mb-3">
+      <%= form.label :portariaNaturalizacao %>
+      <%= form.text_field :portariaNaturalizacao, class: 'form-control btn-pill' %>
+    </div>
+  </div>
+</div>
+<div id='container-codigoIbgeMunicipioNascimento' class="row">
+  <div class="col">
+    <div class="mb-3">
+      <%= form.label :codigoIbgeMunicipioNascimento %>
+      <%= form.select :codigoIbgeMunicipioNascimento, @options[:municipios], { prompt: "Selecione Munícipio" }, { class: 'js-example-basic-single col-sm-12' } %>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <div class="mb-3">
+      <%= form.label :dtEntradaBrasil %>
+      <div class="input-group">
+        <%= form.text_field :dtEntradaBrasil, class: 'btn-pill datepicker-here form-control digits', 'data-language': "en", 'data-bs-original-title': 'data-bs-original-title', title: 'title' %>
       </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col">
-      <div class="mb-3">
-        <%= form.label :dtEntradaBrasil %>
-        <div class="input-group">
-          <%= form.text_field :dtEntradaBrasil, class: 'btn-pill datepicker-here form-control digits', 'data-language': "en", 'data-bs-original-title': 'data-bs-original-title', title: 'title' %>
-        </div>
+</div>
+<div class="row">
+  <div class="col">
+    <div class="mb-3">
+      <%= form.label :dataNascimentoResponsavel %>
+      <div class="input-group">
+        <%= form.text_field :dataNascimentoResponsavel, class: 'btn-pill datepicker-here form-control digits', 'data-language': "en", 'data-bs-original-title': 'data-bs-original-title', title: 'title' %>
       </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col">
-      <div class="mb-3">
-        <%= form.label :microArea %>
-        <%= form.text_field :microArea, class: 'form-control btn-pill' %>
-      </div>
+</div>
+<div class="row">
+  <div class="col">
+    <div class="mb-3">
+      <%= form.label :telefoneCelular %>
+      <%= form.text_field :telefoneCelular, class: 'form-control btn-pill' %>
     </div>
   </div>
-  <div class="d-block">
-    <%= form.check_box :stForaArea %>
-    <%= form.label :stForaArea %>
-  </div>
-  <div class="row">
-    <div class="col">
-      <div class="mb-3">
-        <%= form.label :cpfCidadao %>
-        <%= form.text_field :cpfCidadao, class: 'form-control btn-pill' %>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      <div class="mb-3">
-        <%= form.label :cpfResponsavelFamiliar %>
-        <%= form.text_field :cpfResponsavelFamiliar, class: 'form-control btn-pill' %>
-      </div>
+</div>
+<div class="row">
+  <div class="col">
+    <div class="mb-3">
+      <%= form.label :emailCidadao %>
+      <%= form.text_field :emailCidadao, class: 'form-control btn-pill' %>
     </div>
   </div>
 </div>
