@@ -115,8 +115,8 @@
   <div class="row">
     <div class="col">
       <div class="mb-3">
-        <%= form.label :localizacao %>
-        <%= form.collection_radio_buttons :localizacao, @options[:localizacao_moradia], :second, :first do |b| %>
+        <%= form.label :tipoDomicilio %>
+        <%= form.collection_radio_buttons :tipoDomicilio, @options[:tipo_domicilio], :second, :first do |b| %>
           <div class="d-block">
             <%= b.radio_button %>
             <%= b.label %>
@@ -125,11 +125,11 @@
       </div>
     </div>
   </div>
-  <div class="row">
+   <div class="row">
     <div class="col">
       <div class="mb-3">
-        <%= form.label :tipoDomicilio %>
-        <%= form.collection_radio_buttons :tipoDomicilio, @options[:tipo_domicilio], :second, :first do |b| %>
+        <%= form.label :localizacao %>
+        <%= form.collection_radio_buttons :localizacao, @options[:localizacao_moradia], :second, :first do |b| %>
           <div class="d-block">
             <%= b.radio_button %>
             <%= b.label %>
