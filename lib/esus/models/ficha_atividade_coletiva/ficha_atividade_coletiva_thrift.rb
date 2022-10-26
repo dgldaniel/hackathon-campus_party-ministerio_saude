@@ -64,8 +64,6 @@ class FichaAtividadeColetivaGerenciarThrift
 
     serializer = Thrift::Serializer.new
 
-    puts ficha_coletiva_instance.inspect
-
     ficha_coletiva_serializado = serializer.serialize(ficha_coletiva_instance)
 
     ficha_coletiva_serializado

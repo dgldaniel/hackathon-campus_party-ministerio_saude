@@ -20,7 +20,7 @@
       <div class="mb-3">
         <%= f.label :dtNascimento %>
         <div class="input-group">
-          <%= f.text_field :dtNascimento, class: 'btn-pill datepicker-here form-control digits', 'data-language': "en", 'data-bs-original-title': 'data-bs-original-title', title: 'title' %>
+          <%= f.text_field :dtNascimento, class: 'btn-pill datepicker-here form-control digits', 'data-language': "pt-BR", 'data-bs-original-title': 'data-bs-original-title', title: 'title' %>
         </div>
       </div>
     </div>
@@ -42,7 +42,7 @@
     <div class="col">
       <div class="mb-3">
         <%= f.label :localAtendimento %>
-        <%= f.select :localAtendimento, @options[:local_atendimento], {}, { class: 'js-example-basic-single col-sm-12' } %>
+        <%= f.select :localAtendimento, @options[:local_atendimento], { prompt: "Selecione Local de Atendimento" }, { class: 'js-example-basic-single col-sm-12' } %>
       </div>
     </div>
   </div>

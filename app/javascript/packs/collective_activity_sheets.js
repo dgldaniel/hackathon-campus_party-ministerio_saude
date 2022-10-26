@@ -1,17 +1,6 @@
 import "cocoon-js-vanilla";
 
 document.addEventListener('DOMContentLoaded', () => {
-  const currentInputs = Array.from(document.querySelectorAll('input[id^="collective_activity_sheet"]'));
-
-  const inputs = currentInputs.reduce((acc, cur) => {
-    if (cur.id.includes('attributes')) return { ...acc };
-
-    const splitData = cur.id.split('_');
-    const key = splitData[splitData.length - 1]
-
-    return { ...acc, [key]: cur };
-  }, {});
-
   const tipoAtividadeOptions = document.getElementsByName("collective_activity_sheet[atividadeTipo]");
   const temasReuniaoOptions = document.getElementsByName("collective_activity_sheet[temasParaReuniao][]");
   const publicAlvoOptions = document.getElementsByName("collective_activity_sheet[publicoAlvo][]");

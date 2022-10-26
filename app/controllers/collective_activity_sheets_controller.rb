@@ -36,6 +36,8 @@ class CollectiveActivitySheetsController < ApplicationController
     @collective_activity_sheet = CollectiveActivitySheet.new(collective_activity_sheet_params)
     @collective_activity_sheet.doctor = current_user.doctor
 
+    @options = CollectiveActivitySheet.build_options
+
     respond_to do |format|
       if @collective_activity_sheet.save
         format.html { redirect_to(collective_activity_sheet_url(@collective_activity_sheet), notice: "Collective activity sheet was successfully created.") }
@@ -49,6 +51,8 @@ class CollectiveActivitySheetsController < ApplicationController
 
   # PATCH/PUT /collective_activity_sheets/1 or /collective_activity_sheets/1.json
   def update
+    @options = CollectiveActivitySheet.build_options
+
     respond_to do |format|
       if @collective_activity_sheet.update(collective_activity_sheet_params)
         format.html { redirect_to(collective_activity_sheet_url(@collective_activity_sheet), notice: "Collective activity sheet was successfully updated.") }

@@ -19,12 +19,10 @@ class CollectiveActivitySheet < ApplicationRecord
                         :responsavelCns,
                         :responsavelCnesUnidade,
                         :atividadeTipo,
-                        :tbCdsOrigem,
                         :codigoIbgeMunicipio
 
-  validates_presence_of :temasParaSaude, if: :temas_reuniao_validates
+  validates_presence_of :praticasTemasParaSaude, if: :praticas_temas_reuniao_validates
   validates_presence_of :publicoAlvo, if: :publico_alvo_validates
-  validates_presence_of :praticasEmSaude, if: :praticas_temas_reuniao_validates
 
   before_create :serialize_thrift
   before_update :serialize_thrift
@@ -35,6 +33,7 @@ class CollectiveActivitySheet < ApplicationRecord
     uuid_random = Digest::UUID.uuid_v4
 
     self.uuidFicha = uuid_random
+    self.tbCdsOrigem = 6
 
     manager_thrift = FichaAtividadeColetivaGerenciarThrift.new(self)
     serialized_record = manager_thrift.serialize
@@ -54,10 +53,6 @@ class CollectiveActivitySheet < ApplicationRecord
       temas_reuniao: JSON.parse(Rails.cache.read('@FAC_Temas_Reuniao')),
       tipo_atividade_coletiva: JSON.parse(Rails.cache.read('@FAC_Tipo_Atividade_Coletiva')),
     }
-  end
-
-  def temas_reuniao_validates
-    atividadeTipo == 1 || atividadeTipo == 2 || atividadeTipo == 3
   end
 
   def publico_alvo_validates

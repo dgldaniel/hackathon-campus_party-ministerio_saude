@@ -2,5 +2,5 @@
 class Participant < ApplicationRecord
   belongs_to :collective_activity_sheet
 
-  validates_presence_of :cns
+  validates_presence_of :cnsParticipante
 end

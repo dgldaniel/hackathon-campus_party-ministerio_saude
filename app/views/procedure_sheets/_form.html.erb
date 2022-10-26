@@ -1,4 +1,4 @@
-<%= form_with(model: procedure_sheet, id: 'regForm', class: 'form-wizard') do |form| %>
+<%= form_with(model: procedure_sheet) do |form| %>
   <% if procedure_sheet.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(procedure_sheet.errors.count, "error") %> prohibited this procedure_sheet from being saved:</h2>
@@ -9,23 +9,6 @@
       </ul>
     </div>
   <% end %>
-  <div class="tab">
-    <div class="row">
-      <div class="col">
-        <div class="mb-3">
-          <%= form.label :uuidFicha %>
-          <%= form.text_field :uuidFicha, class: 'form-control btn-pill' %>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <div class="mb-3">
-          <%= form.label :tpCdsOrigem %>
-          <%= form.number_field :tpCdsOrigem, class: 'form-control btn-pill' %>
-        </div>
-      </div>
-    </div>
     <div class="row">
       <div class="col">
         <div class="mb-3">
@@ -82,8 +65,7 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="tab">
+    <h2>Procedimentos</h2>
     <div id="care-procedures">
       <%= form.fields_for :care_procedures do |care_procedure| %>
         <%= render 'care_procedure_fields', f: care_procedure %>
@@ -94,14 +76,7 @@
         <br>
       </div>
     </div>
-  </div>
-  <div class="text-end btn-mb">
-    <button class="btn btn-warning" id="prevBtn" type="button">Anterior</button>
-    <button class="btn btn-primary" id="nextBtn" type="button">Próximo</button>
-    <%= form.submit "Registrar Ficha de Procedimento", class: "btn btn-success", id: 'submitBtn', style: "display:none" %>
-  </div>
-  <div class="text-center">
-    <span class="step"></span>
-    <span class="step"></span>
+   <div class="text-end btn-mb">
+    <%= form.submit class: "btn btn-success" %>
   </div>
 <% end %>
