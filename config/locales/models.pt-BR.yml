@@ -34,6 +34,18 @@
       family:
         one: Família
         others: Familias
+      collective_activity_sheet:
+        one: Ficha de Atividade Coletiva
+        others: Fichas de Atividade Coletiva
+      collective_activity_sheet:
+        one: Ficha de Atividade Coletiva
+        others: Fichas de Atividade Coletiva
+      participant:
+        one: Participante
+        others: Participantes
+      professional:
+        one: Profissional
+        others: Profissionais
     attributes:
       patient:
         email: E-mail
@@ -271,4 +283,32 @@
         rendaFamiliar: Renda familiar em salários mínimos
         resideDesde: Mês e ano que a família começou a residir no domicílio
         stMudanca: Indica se a familia mudou-se
+      collective_activity_sheet:
+        uuidFicha: UUID da Ficha
+        dtAtividadeColetiva: Data da Atividade Coletiva
+        numParticipantesProgramados: Número de Participantes Programados
+        localAtividade: Local da Atividade
+        horaInicio: Hora de Ínicio
+        horaFim: Hora do Fim
+        inep: INEP
+        responsavelCns: CNS do Responsável
+        responsavelCnesUnidade: CNES da Unidade Responsável
+        responsavelNumIne: Número do INE do Responsável
+        numParticipantes: Número de Participantes
+        numAvaliacoesAlteradas: Número de Avaliações Alteradas
+        atividadeTipo: Tipo de Atividade
+        temasParaReuniao: Temas para Reunião
+        publicoAlvo: Público Alvo
+        praticasTemasParaSaude: Temas para Saúde
+        tbCdsOrigem: Tipo de origem dos dados do registro
+        codigoIbgeMunicipio: Código IBGE do Munícipio
+      participant:
+        cnsParticipante: CNS do Participante
+        dataNascimento: Data de Nascimento
+        avaliacaoAlterada: Avaliação Alterada
+        cessouHabitoFumar: Cessou Hábito de Fumar
+        abandonouGrupo: Abandonou Grupo
+      professional:
+        cnsProfissional: CNS do Profissional
+        codigoCbo2002: Código CBO
 
