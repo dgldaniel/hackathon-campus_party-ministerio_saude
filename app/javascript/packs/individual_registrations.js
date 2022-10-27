@@ -8,282 +8,309 @@ document.addEventListener('DOMContentLoaded', () => {
     const key = splitData[splitData.length - 1]
 
     return { ...acc, [key]: cur };
-  }, {})
+  }, {});
 
-  // Dados Gerais
+  const relacaoParentescoRadioButton = document.getElementsByName("individual_registration[relacaoParentescoCidadao]");
+
+  function managerStatusEhResponsavel(checked) {
+    inputs['cpfResponsavelFamiliar'].disabled = checked;
+    inputs['cnsResponsavelFamiliar'].disabled = checked;
+
+    relacaoParentescoRadioButton.forEach((eachInput) => {
+      eachInput.disabled = checked;
+    });
+  }
+
+  managerStatusEhResponsavel(inputs['statusEhResponsavel'].checked);
+
   inputs['statusEhResponsavel'].addEventListener('change', event => {
-    if (event.target.checked) {
-      inputs['cpfResponsavelFamiliar'].disabled = true;
-      inputs['cnsResponsavelFamiliar'].disabled = true;
-    } else {
-      inputs['cpfResponsavelFamiliar'].disabled = false;
-      inputs['cnsResponsavelFamiliar'].disabled = false;
-    }
+    managerStatusEhResponsavel(event.target.checked)
   });
 
+  function managerStForaArea(checked) {
+    inputs['microArea'].readOnly = checked;
+    inputs['microArea'].value = checked ? 'FA' : '';
+  }
+
+  managerStForaArea(inputs['stForaArea'].checked);
+
   inputs['stForaArea'].addEventListener('change', event => {
-    if (event.target.checked) {
-      inputs['microArea'].readOnly = true;
-      inputs['microArea'].value = 'FA';
-    } else {
-      inputs['microArea'].readOnly = false;
-      inputs['microArea'].value = '';
-    }
+    managerStForaArea(event.target.checked);
   });
 
   const sexoRadioButton = document.getElementsByName("individual_registration[sexoCidadao]");
 
+  function managerSexoOptions(value) {
+    inputs['statusEhGestante'].disabled = value === '0';
+    inputs['maternidadeDeReferencia'].disabled = value === '0';
+  }
+
   sexoRadioButton.forEach(eachInput => {
+    managerSexoOptions(eachInput.value);
+
     eachInput.addEventListener('change', event => {
-      if (event.target.value === "0") {
-        inputs['statusEhGestante'].disabled = true;
-        inputs['maternidadeDeReferencia'].disabled = true;
-      } else {
-        inputs['statusEhGestante'].disabled = false;
-        inputs['maternidadeDeReferencia'].disabled = false;
-      }});
+      managerSexoOptions(event.target.value);
+    });
   });
 
   const racaCorRadioButton = document.getElementsByName("individual_registration[racaCorCidadao]");
 
+  function managerRacaCor(value) {
+    document.getElementById('individual_registration_etnia').disabled = value !== "5";
+  }
+
   racaCorRadioButton.forEach(eachInput => {
+    managerRacaCor(eachInput.value);
+
     eachInput.addEventListener('change', event => {
-      if (event.target.value !== "5") {
-       document.getElementById('individual_registration_etnia').disabled = true;
-      } else {
-       document.getElementById('individual_registration_etnia').disabled = false;
-      }});
+      managerRacaCor(event.target.value)
+    });
   });
+
+  function managerDesconheceNomeMae(checked) {
+    inputs['nomeMaeCidadao'].disabled = checked;
+  }
+
+  managerDesconheceNomeMae(inputs['nomeMaeCidadao'].checked)
 
   inputs['desconheceNomeMae'].addEventListener('change', event => {
-    if (event.target.checked) {
-      inputs['nomeMaeCidadao'].disabled = true;
-    } else {
-      inputs['nomeMaeCidadao'].disabled = false;
-    }
+    managerDesconheceNomeMae(event.target.checked);
   });
 
+  function managerDesconheceNomePai(checked) {
+    inputs['nomePaiCidadao'].disabled = checked;
+  }
+
+  managerDesconheceNomePai(inputs['nomePaiCidadao'].checked)
+
   inputs['desconheceNomePai'].addEventListener('change', event => {
-    if (event.target.checked) {
-      inputs['nomePaiCidadao'].disabled = true;
-    } else {
-      inputs['nomePaiCidadao'].disabled = false;
-    }
+    managerDesconheceNomePai(event.target.checked)
   });
 
   const nacionalidadeRadioButton = document.getElementsByName("individual_registration[nacionalidadeCidadao]");
 
+  function managerNacionalidade(value) {
+    if (value === "1") {
+      inputs['paisNascimento'].readOnly = true;
+      inputs['paisNascimento'].value = 'BRASIL';
+
+      inputs['dtNaturalizacao'].disabled = true;
+      inputs['dtNaturalizacao'].value = '';
+
+      inputs['portariaNaturalizacao'].disabled = true;
+      inputs['portariaNaturalizacao'].value = '';
+
+      inputs['dtEntradaBrasil'].disabled = true;
+      inputs['dtEntradaBrasil'].value = '';
+
+      document.getElementById('individual_registration_codigoIbgeMunicipioNascimento').disabled = false;
+
+    } else if (value === "2") {
+      inputs['paisNascimento'].readOnly = false;
+      inputs['paisNascimento'].disabled = true;
+      inputs['paisNascimento'].value = '';
+
+      inputs['dtNaturalizacao'].disabled = false;
+      inputs['portariaNaturalizacao'].disabled = false;
+
+      document.getElementById('individual_registration_codigoIbgeMunicipioNascimento').disabled = true;
+
+      inputs['dtEntradaBrasil'].disabled = true;
+      inputs['dtEntradaBrasil'].value = '';
+    } else {
+      inputs['paisNascimento'].readOnly = false;
+      inputs['paisNascimento'].disabled = false;
+
+      inputs['dtNaturalizacao'].disabled = true;
+      inputs['dtNaturalizacao'].value = '';
+
+      inputs['portariaNaturalizacao'].disabled = true;
+      inputs['portariaNaturalizacao'].value = '';
+
+      document.getElementById('individual_registration_codigoIbgeMunicipioNascimento').disabled = true;
+
+      inputs['dtEntradaBrasil'].disabled = false;
+    }
+  }
+
   nacionalidadeRadioButton.forEach(eachInput => {
+    managerNacionalidade(eachInput.value );
+
     eachInput.addEventListener('change', event => {
-      if (event.target.value === "1") {
-        inputs['paisNascimento'].readOnly = true;
-        inputs['paisNascimento'].value = 'BRASIL';
-
-        inputs['dtNaturalizacao'].disabled = true;
-        inputs['dtNaturalizacao'].value = '';
-
-        inputs['portariaNaturalizacao'].disabled = true;
-        inputs['portariaNaturalizacao'].value = '';
-
-        inputs['dtEntradaBrasil'].disabled = true;
-        inputs['dtEntradaBrasil'].value = '';
-
-        document.getElementById('individual_registration_codigoIbgeMunicipioNascimento').disabled = false;
-
-      } else if (event.target.value === "2") {
-        inputs['paisNascimento'].readOnly = false;
-        inputs['paisNascimento'].disabled = true;
-        inputs['paisNascimento'].value = '';
-
-        inputs['dtNaturalizacao'].disabled = false;
-        inputs['portariaNaturalizacao'].disabled = false;
-
-        document.getElementById('individual_registration_codigoIbgeMunicipioNascimento').disabled = true;
-
-        inputs['dtEntradaBrasil'].disabled = true;
-        inputs['dtEntradaBrasil'].value = '';
-      } else {
-        inputs['paisNascimento'].readOnly = false;
-        inputs['paisNascimento'].disabled = false;
-
-        inputs['dtNaturalizacao'].disabled = true;
-        inputs['dtNaturalizacao'].value = '';
-
-        inputs['portariaNaturalizacao'].disabled = true;
-        inputs['portariaNaturalizacao'].value = '';
-
-        document.getElementById('individual_registration_codigoIbgeMunicipioNascimento').disabled = true;
-
-        inputs['dtEntradaBrasil'].disabled = false;
-      }});
+      managerNacionalidade(event.target.value );
+    });
   });
 
+  function managerStatusMembroPovoComunidadeTradicional(checked) {
+    inputs['coPovoComunidadeTradicional'].disabled = !checked;
+  }
+
+  managerStatusMembroPovoComunidadeTradicional(inputs['statusMembroPovoComunidadeTradicional'].checked)
+
   inputs['statusMembroPovoComunidadeTradicional'].addEventListener('change', event => {
-    if (event.target.checked) {
-      inputs['coPovoComunidadeTradicional'].disabled = false;
-    } else {
-      inputs['coPovoComunidadeTradicional'].disabled = true;
-    }
+    managerStatusMembroPovoComunidadeTradicional(event.target.checked)
   });
 
   const orientacaoSexualRadioButton = document.getElementsByName("individual_registration[orientacaoSexualCidadao]");
 
+  function managerStatusDesejaInformarOrientacaoSexual(checked) {
+    orientacaoSexualRadioButton.forEach((eachInput) => {
+      eachInput.disabled = !checked;
+    })
+  }
+
+  managerStatusDesejaInformarOrientacaoSexual(inputs['statusDesejaInformarOrientacaoSexual'].checked)
+
   inputs['statusDesejaInformarOrientacaoSexual'].addEventListener('change', event => {
-    if (event.target.checked) {
-      orientacaoSexualRadioButton.forEach((eachInput) => {
-        eachInput.disabled = false;
-      })
-    } else {
-      orientacaoSexualRadioButton.forEach((eachInput) => {
-        eachInput.disabled = true;
-      })
-    }
+    managerStatusDesejaInformarOrientacaoSexual(event.target.checked);
   });
 
   const deficienciasCidadaoRadioButton = document.getElementsByName("individual_registration[deficienciasCidadao][]");
 
+  function managerDeficienciasCidadao(checked) {
+    deficienciasCidadaoRadioButton.forEach((eachInput) => {
+      eachInput.disabled = !checked;
+    })
+  }
+
+  managerDeficienciasCidadao(inputs['statusTemAlgumaDeficiencia'].checked)
+
   inputs['statusTemAlgumaDeficiencia'].addEventListener('change', event => {
-    if (event.target.checked) {
-      deficienciasCidadaoRadioButton.forEach((eachInput) => {
-        eachInput.disabled = false;
-      })
-    } else {
-      deficienciasCidadaoRadioButton.forEach((eachInput) => {
-        eachInput.disabled = true;
-      })
-    }
+    managerDeficienciasCidadao(event.target.checked)
   });
 
+  function managerStatusEhGestante(checked) {
+    inputs['maternidadeDeReferencia'].disabled = !checked;
+  }
+
+  managerStatusEhGestante(inputs['statusEhGestante'].checked)
+
   inputs['statusEhGestante'].addEventListener('change', event => {
-    if (event.target.checked) {
-      inputs['maternidadeDeReferencia'].disabled = false;
-    } else {
-      inputs['maternidadeDeReferencia'].disabled = true;
-    }
+    managerStatusEhGestante(event.target.checked);
   });
 
   const doencaCardiacaRadioButton = document.getElementsByName("individual_registration[doencaCardiaca][]");
 
+  function managerDoencaCardiaca(checked) {
+    doencaCardiacaRadioButton.forEach((eachInput) => {
+      eachInput.disabled = !checked;
+    })
+  }
+
+  managerDoencaCardiaca(inputs['statusTeveDoencaCardiaca'].checked)
+
   inputs['statusTeveDoencaCardiaca'].addEventListener('change', event => {
-    if (event.target.checked) {
-      doencaCardiacaRadioButton.forEach((eachInput) => {
-        eachInput.disabled = false;
-      })
-    } else {
-      doencaCardiacaRadioButton.forEach((eachInput) => {
-        eachInput.disabled = true;
-      })
-    }
+    managerDoencaCardiaca(event.target.checked);
   });
 
   const doencaRinsRadioButton = document.getElementsByName("individual_registration[doencaRins][]");
 
+  function managerDoencaRins(checked) {
+    doencaRinsRadioButton.forEach((eachInput) => {
+      eachInput.disabled = !checked;
+    })
+  }
+
+  managerDoencaRins(inputs['statusTemTeveDoencasRins'].checked)
+
   inputs['statusTemTeveDoencasRins'].addEventListener('change', event => {
-    if (event.target.checked) {
-      doencaRinsRadioButton.forEach((eachInput) => {
-        eachInput.disabled = false;
-      })
-    } else {
-      doencaRinsRadioButton.forEach((eachInput) => {
-        eachInput.disabled = true;
-      })
-    }
+    managerDoencaRins(event.target.checked);
   });
 
   const doencaRespiratoriaRadioButton = document.getElementsByName("individual_registration[doencaRespiratoria][]");
 
+  function managerDoencaRespiratoria(checked) {
+    doencaRespiratoriaRadioButton.forEach((eachInput) => {
+      eachInput.disabled = !checked;
+    })
+  }
+
+  managerDoencaRespiratoria(inputs['statusTemDoencaRespiratoria'].checked)
+
   inputs['statusTemDoencaRespiratoria'].addEventListener('change', event => {
-    if (event.target.checked) {
-      doencaRespiratoriaRadioButton.forEach((eachInput) => {
-        eachInput.disabled = false;
-      })
-    } else {
-      doencaRespiratoriaRadioButton.forEach((eachInput) => {
-        eachInput.disabled = true;
-      })
-    }
+    managerDoencaRespiratoria(event.target.checked);
   });
+
+  function managerStatusTeveInternadoEm12Meses(checked) {
+    inputs['descricaoCausaInternacaoEm12Meses'].disabled = !checked;
+  }
+
+  managerStatusTeveInternadoEm12Meses(inputs['statusTeveInternadoEm12Meses'].checked)
 
   inputs['statusTeveInternadoEm12Meses'].addEventListener('change', event => {
-    if (event.target.checked) {
-      inputs['descricaoCausaInternacaoEm12Meses'].disabled = false;
-    } else {
-      inputs['descricaoCausaInternacaoEm12Meses'].disabled = true;
-    }
+    managerStatusTeveInternadoEm12Meses(event.target.checked)
   });
+
+  function managerStatusUsaPlantasMedicinais(checked) {
+    inputs['descricaoPlantasMedicinaisUsadas'].disabled = !checked;
+  }
+
+  managerStatusUsaPlantasMedicinais(inputs['statusUsaPlantasMedicinais'].checked)
 
   inputs['statusUsaPlantasMedicinais'].addEventListener('change', event => {
-    if (event.target.checked) {
-      inputs['descricaoPlantasMedicinaisUsadas'].disabled = false;
-    } else {
-      inputs['descricaoPlantasMedicinaisUsadas'].disabled = true;
-    }
+    managerStatusUsaPlantasMedicinais(event.target.checked)
   });
 
-  inputs['statusAcompanhadoPorOutraInstituicao'].addEventListener('change', event => {
-    if (event.target.checked) {
-      inputs['outraInstituicaoQueAcompanha'].disabled = false;
-    } else {
-      inputs['outraInstituicaoQueAcompanha'].disabled = true;
-    }
-  });
-
-  inputs['statusVisitaFamiliarFrequentemente'].addEventListener('change', event => {
-    if (event.target.checked) {
-      inputs['grauParentescoFamiliarFrequentado'].disabled = false;
-    } else {
-      inputs['grauParentescoFamiliarFrequentado'].disabled = true;
-    }
-  });
-
-  const higienePessoalRadioButton = document.getElementsByName("individual_registration[higienePessoalSituacaoRua][]");
-
-  inputs['statusTemAcessoHigienePessoalSituacaoRua'].addEventListener('change', event => {
-    if (event.target.checked) {
-      higienePessoalRadioButton.forEach((eachInput) => {
-        eachInput.disabled = false;
-      })
-    } else {
-      higienePessoalRadioButton.forEach((eachInput) => {
-        eachInput.disabled = true;
-      })
-    }
-  });
 
   const inputsFromUnderstading = document.querySelectorAll('div[name="scope-understading"] input');
 
-  inputs['statusSituacaoRua'].addEventListener('change', event => {
-    if (event.target.checked) {
+  function managerStatusSituacaoRua(checked) {
+    inputsFromUnderstading.forEach((eachInput) => {
+      eachInput.disabled = !checked;
+    });
 
-      inputsFromUnderstading.forEach((eachInput) => {
-        eachInput.disabled = true;
-      });
-    } else {
-      inputsFromUnderstading.forEach((eachInput) => {
-        eachInput.disabled = false;
-      });
+    function managerStatusAcompanhadoPorOutraInstituicao(checked) {
+      inputs['outraInstituicaoQueAcompanha'].disabled = !checked;
     }
+
+    managerStatusAcompanhadoPorOutraInstituicao(inputs['statusAcompanhadoPorOutraInstituicao'].checked)
+
+    inputs['statusAcompanhadoPorOutraInstituicao'].addEventListener('change', event => {
+      managerStatusAcompanhadoPorOutraInstituicao(event.target.checked);
+    });
+
+    function managerStatusVisitaFamiliarFrequentemente(checked) {
+      inputs['grauParentescoFamiliarFrequentado'].disabled = !checked;
+    }
+
+    managerStatusVisitaFamiliarFrequentemente(inputs['statusVisitaFamiliarFrequentemente'].checked)
+
+    inputs['statusVisitaFamiliarFrequentemente'].addEventListener('change', event => {
+      managerStatusVisitaFamiliarFrequentemente(event.target.checked);
+    });
+
+    const higienePessoalRadioButton = document.getElementsByName("individual_registration[higienePessoalSituacaoRua][]");
+
+    function managerStatusTemAcessoHigienePessoalSituacaoRua(checked) {
+      higienePessoalRadioButton.forEach((eachInput) => {
+        eachInput.disabled = !checked;
+      })
+    }
+
+    managerStatusTemAcessoHigienePessoalSituacaoRua(inputs['statusTemAcessoHigienePessoalSituacaoRua'].checked)
+
+    inputs['statusTemAcessoHigienePessoalSituacaoRua'].addEventListener('change', event => {
+      managerStatusTemAcessoHigienePessoalSituacaoRua(event.target.checked);
+    });
+  }
+
+  managerStatusSituacaoRua(inputs['statusSituacaoRua'].checked)
+
+  inputs['statusSituacaoRua'].addEventListener('change', event => {
+    managerStatusSituacaoRua(event.target.checked);
   });
 
   const inputsFromStatusTerm = document.querySelectorAll('div[name="status-term"] input');
 
+  function managerStatusTermoRecusaCadastroIndividualAtencaoBasica(checked) {
+    inputsFromStatusTerm.forEach((eachInput) => {
+      eachInput.setAttribute('disabled', checked)
+    });
+  }
+
+  managerStatusTermoRecusaCadastroIndividualAtencaoBasica(inputs['statusTermoRecusaCadastroIndividualAtencaoBasica'].checked)
+
   inputs['statusTermoRecusaCadastroIndividualAtencaoBasica'].addEventListener('change', event => {
-    if (event.target.checked) {
-      inputsFromStatusTerm.forEach((eachInput) => {
-        eachInput.disabled = true;
-      });
-    } else {
-      inputsFromStatusTerm.forEach((eachInput) => {
-        eachInput.disabled = false;
-      });
-    }
+    managerStatusTermoRecusaCadastroIndividualAtencaoBasica(event.target.checked)
   });
-
-
-
-
-
 });
-
-
-

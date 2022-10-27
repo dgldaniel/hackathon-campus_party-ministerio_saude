@@ -135,8 +135,8 @@
         tpCdsOrigem: CDS de Origem
         descricaoCausaInternacaoEm12Meses: Se sim, por qual causa?
         descricaoOutraCondicao1: Outra Condição 1
-        descricaoOutraCondicao2: Outra Condição 1
-        descricaoOutraCondicao3: Outra Condição 1
+        descricaoOutraCondicao2: Outra Condição 2
+        descricaoOutraCondicao3: Outra Condição 3
         descricaoPlantasMedicinaisUsadas: Se sim, indique qual(is)
         doencaCardiaca: Se sim, indique qual(is)
         doencaRespiratoria: Se sim, indique qual(is)
