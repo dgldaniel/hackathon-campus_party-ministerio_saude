@@ -119,7 +119,7 @@
         uuid: UUID
         uuidFichaOriginadora: UUID da Ficha Originadora
         profissionalCNS: CNS do Profissional
-        cboCodigo_2002: CBO
+        cboCodigo_2002: Ocupação
         cnes: CNES
         ine: INE
         dataAtendimento: Data de Atendimento
@@ -161,13 +161,13 @@
         statusRecebeBeneficio: Recebe algum Benefício?
         statusSituacaoRua: Está em Situação de Rua?
         dataNascimentoCidadao: Data de Nascimento
-        emailCidadao: E-mail
-        nacionalidadeCidadao: Nacionalidade
-        nomeCidadao: Nome
+        emailCidadao: E-mail do Cidadão
+        nacionalidadeCidadao: Nacionalidade do Cidadão
+        nomeCidadao: Nome Completo
         nomeMaeCidadao: Nome Completo da Mãe
-        cpfCidadao: CPF
+        cpfCidadao: CPF do Cidadão
         cpfResponsavelFamiliar: CPF do Responsável Familiar
-        cnsCidadao: CNS
+        cnsCidadao: CNS do Cidadão
         cnsResponsavelFamiliar: CNS do Responsável Familiar
         telefoneCelular: Telefone Celular
         numeroNisPisPasep: Nº NIS (PIS/PASEP)

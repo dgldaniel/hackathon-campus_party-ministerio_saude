@@ -1,8 +1,6 @@
 const { validateCns } = require('validateCns');
 import { cpf } from 'cpf-cnpj-validator';
 
-//'DOMContentLoaded'
-
 document.addEventListener('DOMContentLoaded', () => {
   const currentInputs = Array.from(document.querySelectorAll('input[id^="individual_registration"]'));
 
@@ -79,6 +77,13 @@ document.addEventListener('DOMContentLoaded', () => {
   function managerStatusEhResponsavel(checked) {
     inputs['cpfResponsavelFamiliar'].disabled = checked;
     inputs['cnsResponsavelFamiliar'].disabled = checked;
+
+    if (checked) {
+      inputs['cpfResponsavelFamiliar'].classList.remove('is-invalid')
+      inputs['cpfResponsavelFamiliar'].classList.remove('is-invalid')
+      inputs['cnsResponsavelFamiliar'].classList.remove('is-valid')
+      inputs['cnsResponsavelFamiliar'].classList.remove('is-valid')
+    }
 
     relacaoParentescoRadioButton.forEach((eachInput) => {
       eachInput.disabled = checked;

@@ -46,7 +46,7 @@ class IndividualRegistration < ApplicationRecord
   validates_presence_of :orientacaoSexualCidadao, if: proc { |field| field.statusDesejaInformarOrientacaoSexual == true }
   validates_presence_of :povoComunidadeTradicional, if: proc { |field| field.statusMembroPovoComunidadeTradicional == true }
 
-  # before_create :serialize_thrift
+  before_create :serialize_thrift
   before_update :serialize_thrift
 
   scope :generate_xml_from, -> (start_date, end_date) { where("created_at >= ? AND created_at <= ?", start_date, end_date)}
@@ -57,7 +57,9 @@ class IndividualRegistration < ApplicationRecord
     self.uuid = uuid_random
     self.uuidFichaOriginadora = uuid_random
     self.tpCdsOrigem = 3
-    self.dataNascimentoCidadao = self.dataNascimentoCidadao.to_datetime
+    # self.dataNascimentoCidadao = self.dataNascimentoCidadao.nil? ? nil : self.dataNascimentoCidadao.to_time.to_i.to_s
+    # self.dtNaturalizacao = self.dtNaturalizacao.nil? ? nil : self.dtNaturalizacao.to_time.to_i.to_s
+    # self.dtEntradaBrasil = self.dtEntradaBrasil.nil? ? nil : self.dtEntradaBrasil.to_time.to_i.to_s
 
     manager_thrift = CadastroIndividualGerenciarThrift.new(self)
     serialized_record = manager_thrift.serialize
@@ -72,7 +74,6 @@ class IndividualRegistration < ApplicationRecord
     self.uuid = Digest::UUID.uuid_v4
     self.uuidFichaOriginadora = Digest::UUID.uuid_v4
     self.tpCdsOrigem = 3
-    self.dataNascimentoCidadao = self.dataNascimentoCidadao.to_datetime
 
     generate_xml = ActionController::Base.new.render_to_string(
       'individual_registrations/show.xml.erb',
@@ -116,7 +117,7 @@ class IndividualRegistration < ApplicationRecord
   def status_eh_gestante_validates?
     return false if dataNascimentoCidadao.nil? || dataAtendimento.nil?
 
-    age = (dataNascimentoCidadao.strftime('%Y%m%d').to_i - dataAtendimento.strftime('%Y%m%d').to_i) / 10000
+    age = (dataNascimentoCidadao.to_time.to_i - dataAtendimento.to_time.to_i) / 10000
 
     sexoCidadao == 1 && age > 12
   end
@@ -124,7 +125,7 @@ class IndividualRegistration < ApplicationRecord
   def data_nascimento_cidadao_validates?
     return false if dataNascimentoCidadao.nil? || dataAtendimento.nil?
 
-    age = (dataNascimentoCidadao.strftime('%Y%m%d').to_i - dataAtendimento.strftime('%Y%m%d').to_i) / 10000
+    age = (dataNascimentoCidadao.to_time.to_i - dataAtendimento.to_time.to_i) / 10000
 
     dataAtendimento < dataNascimentoCidadao && age > 130
   end

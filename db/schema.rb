@@ -277,8 +277,8 @@ ActiveRecord::Schema.define(version: 2022_10_10_191618) do
     t.boolean "statusEhResponsavel"
     t.string "nomePaiCidadao"
     t.boolean "desconheceNomePai"
-    t.date "dtNaturalizacao"
-    t.date "dtEntradaBrasil"
+    t.string "dtNaturalizacao"
+    t.string "dtEntradaBrasil"
     t.string "microArea"
     t.boolean "stForaArea"
     t.integer "deficienciasCidadao", default: [], array: true
@@ -334,7 +334,7 @@ ActiveRecord::Schema.define(version: 2022_10_10_191618) do
     t.boolean "statusPossuiReferenciaFamiliar"
     t.boolean "statusRecebeBeneficio"
     t.boolean "statusSituacaoRua"
-    t.date "dataNascimentoCidadao", null: false
+    t.string "dataNascimentoCidadao", null: false
     t.string "emailCidadao"
     t.integer "nacionalidadeCidadao", null: false
     t.string "nomeCidadao", null: false
