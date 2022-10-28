@@ -1,4 +1,4 @@
-  <%= form_with(model: individual_registration) do |form| %>
+  <%= form_with(model: individual_registration, id: 'individual_registration_form') do |form| %>
   <% if individual_registration.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(individual_registration.errors.count, "error") %> prohibited this individual_registration from being saved:</h2>

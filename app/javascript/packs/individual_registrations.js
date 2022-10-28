@@ -1,3 +1,8 @@
+const { validateCns } = require('validateCns');
+import { cpf } from 'cpf-cnpj-validator';
+
+//'DOMContentLoaded'
+
 document.addEventListener('DOMContentLoaded', () => {
   const currentInputs = Array.from(document.querySelectorAll('input[id^="individual_registration"]'));
 
@@ -9,6 +14,65 @@ document.addEventListener('DOMContentLoaded', () => {
 
     return { ...acc, [key]: cur };
   }, {});
+
+  inputs['cpfCidadao'].addEventListener('input', event => {
+    event.target.value = event.target.value.replace(/\D+/g, '')
+                                            .replace(/(\d{3})(\d)/, '$1.$2')
+                                            .replace(/(\d{3})(\d)/, '$1.$2')
+                                            .replace(/(\d{3})(\d{1,2})/, '$1-$2')
+                                            .replace(/(-\d{2})\d+?$/, '$1');
+  });
+
+  inputs['cpfResponsavelFamiliar'].addEventListener('input', event => {
+    event.target.value = event.target.value.replace(/\D+/g, '')
+                                            .replace(/(\d{3})(\d)/, '$1.$2')
+                                            .replace(/(\d{3})(\d)/, '$1.$2')
+                                            .replace(/(\d{3})(\d{1,2})/, '$1-$2')
+                                            .replace(/(-\d{2})\d+?$/, '$1');
+  });
+
+  inputs['numeroNisPisPasep'].addEventListener('input', event => {
+    event.target.value = event.target.value.replace(/\D+/g, '')
+                                            .replace(/(\d{3})(\d)/, '$1.$2')
+                                            .replace(/(\d{5})(\d)/, '$1.$2')
+                                            .replace(/(\d{5}\.)(\d{2})(\d)/, '$1$2-$3')
+                                            .replace(/(-\d)\d+?$/, '$1')
+  });
+
+  inputs['telefoneCelular'].addEventListener('input', event => {
+    event.target.value = event.target.value.replace(/\D+/g, '')
+                                            .replace(/(\d{2})(\d)/, '($1) $2')
+                                            .replace(/(\d{4})(\d)/, '$1-$2')
+                                            .replace(/(\d{4})-(\d)(\d{4})/, '$1$2-$3')
+                                            .replace(/(-\d{4})\d+?$/, '$1')
+  });
+
+  inputs['cpfCidadao'].addEventListener('blur', event => {
+    const isValidCPF = cpf.isValid(event.target.value);
+
+    if (isValidCPF) {
+      event.target.classList.remove('is-invalid')
+      event.target.classList.add('is-valid')
+    } else {
+      event.target.classList.add('is-invalid')
+      event.target.classList.remove('is-valid')
+    }
+  });
+
+  inputs['cpfResponsavelFamiliar'].addEventListener('blur', event => {
+    const isValidCPF = cpf.isValid(event.target.value);
+
+    if (isValidCPF) {
+      event.target.classList.remove('is-invalid')
+      event.target.classList.add('is-valid')
+    } else {
+      event.target.classList.add('is-invalid')
+      event.target.classList.remove('is-valid')
+    }
+  });
+
+  inputs['cnsCidadao'].addEventListener('blur', (event) => validateCns(event, inputs['cnsCidadao']))
+  inputs['cnsResponsavelFamiliar'].addEventListener('blur', (event) => validateCns(event, inputs['cnsResponsavelFamiliar']))
 
   const relacaoParentescoRadioButton = document.getElementsByName("individual_registration[relacaoParentescoCidadao]");
 
@@ -117,7 +181,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       inputs['dtEntradaBrasil'].disabled = true;
       inputs['dtEntradaBrasil'].value = '';
-    } else {
+    } else if (value === "3") {
       inputs['paisNascimento'].readOnly = false;
       inputs['paisNascimento'].disabled = false;
 
@@ -134,10 +198,10 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   nacionalidadeRadioButton.forEach(eachInput => {
-    managerNacionalidade(eachInput.value );
+    managerNacionalidade(eachInput.value);
 
-    eachInput.addEventListener('change', event => {
-      managerNacionalidade(event.target.value );
+    eachInput.addEventListener('click', event => {
+      managerNacionalidade(event.target.value);
     });
   });
 
@@ -300,17 +364,17 @@ document.addEventListener('DOMContentLoaded', () => {
     managerStatusSituacaoRua(event.target.checked);
   });
 
-  const inputsFromStatusTerm = document.querySelectorAll('div[name="status-term"] input');
+  // const inputsFromStatusTerm = document.querySelectorAll('div[name="status-term"] input');
 
-  function managerStatusTermoRecusaCadastroIndividualAtencaoBasica(checked) {
-    inputsFromStatusTerm.forEach((eachInput) => {
-      eachInput.setAttribute('disabled', checked)
-    });
-  }
+  // function managerStatusTermoRecusaCadastroIndividualAtencaoBasica(checked) {
+  //   inputsFromStatusTerm.forEach((eachInput) => {
+  //     eachInput.setAttribute('disabled', !checked)
+  //   });
+  // }
 
-  managerStatusTermoRecusaCadastroIndividualAtencaoBasica(inputs['statusTermoRecusaCadastroIndividualAtencaoBasica'].checked)
+  // managerStatusTermoRecusaCadastroIndividualAtencaoBasica(inputs['statusTermoRecusaCadastroIndividualAtencaoBasica'].checked)
 
-  inputs['statusTermoRecusaCadastroIndividualAtencaoBasica'].addEventListener('change', event => {
-    managerStatusTermoRecusaCadastroIndividualAtencaoBasica(event.target.checked)
-  });
+  // inputs['statusTermoRecusaCadastroIndividualAtencaoBasica'].addEventListener('change', event => {
+  //   managerStatusTermoRecusaCadastroIndividualAtencaoBasica(event.target.checked)
+  // });
 });

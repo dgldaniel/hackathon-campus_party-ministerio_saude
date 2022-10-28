@@ -3,7 +3,7 @@
   <div class="col">
     <div class="mb-3">
       <%= form.label :cpfCidadao %>
-      <%= form.text_field :cpfCidadao, class: 'form-control btn-pill' %>
+      <%= form.text_field :cpfCidadao, class: 'form-control btn-pill', 'data-inputmask': "'mask': '999.999.999-99'" %>
     </div>
   </div>
 </div>
@@ -11,7 +11,7 @@
   <div class="col">
     <div class="mb-3">
       <%= form.label :cnsCidadao %>
-      <%= form.text_field :cnsCidadao, class: 'form-control btn-pill' %>
+      <%= form.text_field :cnsCidadao, class: 'form-control btn-pill', size: 15, maxlength: 15 %>
     </div>
   </div>
 </div>
@@ -31,7 +31,7 @@
   <div class="col">
     <div class="mb-3">
       <%= form.label :cnsResponsavelFamiliar %>
-      <%= form.text_field :cnsResponsavelFamiliar, class: 'form-control btn-pill' %>
+      <%= form.text_field :cnsResponsavelFamiliar, class: 'form-control btn-pill', size: 15, maxlength: 15 %>
     </div>
   </div>
 </div>
@@ -68,7 +68,7 @@
     <div class="mb-3">
       <%= form.label :dataNascimentoCidadao %>
       <div class="input-group">
-        <%= form.text_field :dataNascimentoCidadao, class: 'btn-pill datepicker-here form-control digits', 'data-language': "pt", 'data-bs-original-title': 'data-bs-original-title', title: 'title' %>
+        <%= form.text_field :dataNascimentoCidadao, class: 'btn-pill datepicker-here form-control digits', 'data-language': "en", 'data-bs-original-title': 'data-bs-original-title', title: 'title' %>
       </div>
     </div>
   </div>
@@ -165,7 +165,7 @@
     <div class="mb-3">
       <%= form.label :dtNaturalizacao %>
       <div class="input-group">
-        <%= form.text_field :dtNaturalizacao, class: 'btn-pill datepicker-here form-control digits', 'data-language': "pt", 'data-bs-original-title': 'data-bs-original-title', title: 'title' %>
+        <%= form.text_field :dtNaturalizacao, class: 'btn-pill datepicker-here form-control digits', 'data-language': "en", 'data-bs-original-title': 'data-bs-original-title', title: 'title' %>
       </div>
     </div>
   </div>
@@ -191,7 +191,7 @@
     <div class="mb-3">
       <%= form.label :dtEntradaBrasil %>
       <div class="input-group">
-        <%= form.text_field :dtEntradaBrasil, class: 'btn-pill datepicker-here form-control digits', 'data-language': "pt", 'data-bs-original-title': 'data-bs-original-title', title: 'title' %>
+        <%= form.text_field :dtEntradaBrasil, class: 'btn-pill datepicker-here form-control digits', 'data-language': "en", 'data-bs-original-title': 'data-bs-original-title', title: 'title' %>
       </div>
     </div>
   </div>
