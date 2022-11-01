@@ -13,7 +13,7 @@ class HouseholdRegistration < ApplicationRecord
   has_one_attached :xml_file
   has_one_attached :thrift_file
 
-  validates_presence_of :quantosAnimaisNoDomicilio, if: proc { |a| a.statusTermoRecusaCadatroDomiciliarAtencaoBasica == false && a.stAnimaisNoDomicilio == true }
+  validates_presence_of :quantosAnimaisNoDomicilio, if: proc { |field| field.statusTermoRecusaCadatroDomiciliarAtencaoBasica == false && field.stAnimaisNoDomicilio == true }
   validates_presence_of :animaisNoDomicilio,
                         :stAnimaisNoDomicilio,
                         :bairro,
@@ -38,7 +38,7 @@ class HouseholdRegistration < ApplicationRecord
                         :tipoAcessoDomicilio,
                         :tipoDomicilio,
                         :tratamentoAguaDomicilio,
-                        if: proc { |a| a.statusTermoRecusaCadatroDomiciliarAtencaoBasica == false }
+                        if: proc { |field| field.statusTermoRecusaCadatroDomiciliarAtencaoBasica == false }
 
   before_create :serialize_thrift
 

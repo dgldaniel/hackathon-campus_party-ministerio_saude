@@ -57,9 +57,6 @@ class IndividualRegistration < ApplicationRecord
     self.uuid = uuid_random
     self.uuidFichaOriginadora = uuid_random
     self.tpCdsOrigem = 3
-    # self.dataNascimentoCidadao = self.dataNascimentoCidadao.nil? ? nil : self.dataNascimentoCidadao.to_time.to_i.to_s
-    # self.dtNaturalizacao = self.dtNaturalizacao.nil? ? nil : self.dtNaturalizacao.to_time.to_i.to_s
-    # self.dtEntradaBrasil = self.dtEntradaBrasil.nil? ? nil : self.dtEntradaBrasil.to_time.to_i.to_s
 
     manager_thrift = CadastroIndividualGerenciarThrift.new(self)
     serialized_record = manager_thrift.serialize

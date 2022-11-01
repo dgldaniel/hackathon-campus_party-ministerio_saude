@@ -16,6 +16,7 @@
     "cpf-cnpj-validator": "^1.0.3",
     "inputmask": "^5.0.7",
     "jquery": "3.5.1",
+    "jquery-validation": "^1.19.5",
     "js-autocomplete": "^1.0.4",
     "moment": "^2.29.4"
   },

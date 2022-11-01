@@ -1,6 +1,9 @@
 const { validateCns } = require('validateCns');
 import { cpf } from 'cpf-cnpj-validator';
 
+import 'jquery-validation';
+// import 'jquery-validation/src/localization/messages_pt_BR';
+
 document.addEventListener('DOMContentLoaded', () => {
   const currentInputs = Array.from(document.querySelectorAll('input[id^="individual_registration"]'));
 
@@ -382,4 +385,151 @@ document.addEventListener('DOMContentLoaded', () => {
   // inputs['statusTermoRecusaCadastroIndividualAtencaoBasica'].addEventListener('change', event => {
   //   managerStatusTermoRecusaCadastroIndividualAtencaoBasica(event.target.checked)
   // });
+});
+
+$(function() {
+  $.validator.setDefaults({
+    onkeyup: false,
+    highlight: function (element) {
+        jQuery(element).closest('.form-control').addClass('is-invalid');
+    },
+    unhighlight: function (element) {
+        jQuery(element).closest('.form-control').removeClass('is-invalid');
+    },
+    errorElement: 'div',
+    errorClass: 'invalid-feedback',
+    errorPlacement: function (error, element) {
+        if (element.parent('.input-group-prepend').length) {
+            $(element).siblings(".invalid-feedback").append(error);
+            //error.insertAfter(element.parent());
+        } else {
+            error.insertAfter(element);
+        }
+      },
+  });
+
+  $("#individual_registration_form").validate({
+    rules: {
+      'individual_registration[cpfCidadao]': {
+        required: true,
+      },
+      'individual_registration[cnsCidadao]': {
+        required: true,
+      },
+      'individual_registration[cpfResponsavelFamiliar]': {
+        required: {
+          depends: function() {
+            return $("#individual_registration_statusEhResponsavel").is(':checked');
+          }
+        },
+      },
+      'individual_registration[cnsResponsavelFamiliar]': {
+        required: {
+          depends: function() {
+            return $("#individual_registration_statusEhResponsavel").is(':checked');
+          }
+        },
+      },
+      'individual_registration[nomeCidadao]': {
+        required: true,
+      },
+      'individual_registration[dataNascimentoCidadao]': {
+        required: true,
+      },
+      'individual_registration[nomeMaeCidadao]': {
+        required: {
+          depends: function() {
+            return !$("#individual_registration_desconheceNomeMae").is(':checked');
+          }
+        },
+      },
+      'individual_registration[nomePaiCidadao]': {
+        required: {
+          depends: function() {
+            return !$("#iindividual_registration_desconheceNomePai").is(':checked');
+          }
+        },
+      },
+      'individual_registration[codigoIbgeMunicipioNascimento]': {
+        required: {
+          depends: function() {
+            return $("#individual_registration_nacionalidadeCidadao_1").is(':checked');
+          }
+        },
+      },
+      'individual_registration[dtNaturalizacao]': {
+        required: {
+          depends: function() {
+            return $("#individual_registration_nacionalidadeCidadao_2").is(':checked');
+          }
+        },
+      },
+      'individual_registration[portariaNaturalizacao]': {
+        required: {
+          depends: function() {
+            return $("#individual_registration_nacionalidadeCidadao_2").is(':checked');
+          }
+        },
+      },
+      'individual_registration[paisNascimento]': {
+        required: {
+          depends: function() {
+            return $("#individual_registration_nacionalidadeCidadao_3").is(':checked');
+          }
+        },
+      },
+      'individual_registration[dtEntradaBrasil]': {
+        required: {
+          depends: function() {
+            return $("#individual_registration_nacionalidadeCidadao_3").is(':checked');
+          }
+        },
+      },
+      'individual_registration[telefoneCelular]': {
+        required: true,
+      },
+      'individual_registration[coPovoComunidadeTradicional]': {
+        required: {
+          depends: function() {
+            return $("#individual_registration_statusMembroPovoComunidadeTradicional").is(':checked');
+          }
+        },
+      },
+      'individual_registration[maternidadeDeReferencia]': {
+        required: {
+          depends: function() {
+            return $("#individual_registration_statusEhGestante").is(':checked');
+          }
+        },
+      },
+      'individual_registration[descricaoCausaInternacaoEm12Meses]': {
+        required: {
+          depends: function() {
+            return $("#individual_registration_statusTeveInternadoEm12Meses").is(':checked');
+          }
+        },
+      },
+      'individual_registration[descricaoPlantasMedicinaisUsadas]': {
+        required: {
+          depends: function() {
+            return $("#individual_registration_statusUsaPlantasMedicinais").is(':checked');
+          }
+        },
+      },
+      'individual_registration[outraInstituicaoQueAcompanha]': {
+        required: {
+          depends: function() {
+            return $("#individual_registration_statusAcompanhadoPorOutraInstituicao").is(':checked');
+          }
+        },
+      },
+      'individual_registration[grauParentescoFamiliarFrequentado]': {
+        required: {
+          depends: function() {
+            return $("#individual_registration_statusVisitaFamiliarFrequentemente").is(':checked');
+          }
+        },
+      },
+    }
+  });
 });

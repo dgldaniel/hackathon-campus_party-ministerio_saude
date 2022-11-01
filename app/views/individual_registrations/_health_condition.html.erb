@@ -15,9 +15,9 @@
   <div class="col">
     <div class="mb-3">
       <%= form.label :situacaoPeso %>
-      <%= form.collection_check_boxes :situacaoPeso, @options[:situacao_peso], :second, :first do |b| %>
+      <%= form.collection_radio_buttons :situacaoPeso, @options[:situacao_peso], :second, :first do |b| %>
         <div class="d-block">
-          <%= b.check_box %>
+          <%= b.radio_button %>
           <%= b.label %>
         </div>
       <% end %>
