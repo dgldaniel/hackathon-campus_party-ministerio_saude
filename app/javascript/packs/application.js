@@ -8,9 +8,7 @@ require("@rails/ujs").start()
 require("@rails/activestorage").start()
 require("channels")
 
-require('icons/feather-icon/feather.min')
-// require('icons/feather-icon/feather-icon')
-// require('sidebar-menu')
+require('sidebar-menu')
 require('config')
 require('bootstrap/bootstrap.min')
 // require('datatable/datatables/jquery.dataTables.min')
@@ -25,5 +23,9 @@ require('select2/select2.full.min')
 require('select2/select2-custom')
 // require('tooltip-init')
 require('script')
-// require('theme-customizer/customizer')
-require('hello')
+
+window.onload = () => {
+  const feather = require('feather-icons')
+
+  feather.replace();
+}
