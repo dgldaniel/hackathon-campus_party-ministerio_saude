@@ -1,4 +1,4 @@
-import "cocoon-js-vanilla";
+import "@nathanvda/cocoon";
 
 /*
 

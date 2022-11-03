@@ -1,4 +1,4 @@
-import "cocoon-js-vanilla";
+import "@nathanvda/cocoon";
 
 function showSelectedOnNacionalidade(event, inputs) {
   const $containerGravidez = document.getElementById('container-stGravidezPlanejada');

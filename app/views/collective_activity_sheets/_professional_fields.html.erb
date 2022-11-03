@@ -4,7 +4,7 @@
     <div class="col">
       <div class="mb-3">
         <%= f.label :cnsProfissional %>
-        <%= f.text_field :cnsProfissional, class: 'form-control btn-pill' %>
+        <%= f.text_field :cnsProfissional, class: 'form-control btn-pill required' %>
       </div>
     </div>
   </div>
@@ -16,7 +16,7 @@
       </div>
     </div>
   </div>
-  <%= link_to_remove_association "remove professional", f %>
+  <%= link_to_remove_association "Remover Profissional", f, class: "btn btn-danger" %>
   <br>
   <br>
   <br>
