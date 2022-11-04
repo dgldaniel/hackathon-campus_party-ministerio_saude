@@ -34,6 +34,8 @@ class ProcedureSheetsController < ApplicationController
     @procedure_sheet = ProcedureSheet.new(procedure_sheet_params)
     @procedure_sheet.doctor = current_user.doctor
 
+    @options = ProcedureSheet.build_options
+
     respond_to do |format|
       if @procedure_sheet.save
         format.html { redirect_to(procedure_sheet_url(@procedure_sheet), notice: "Procedure sheet was successfully created.") }
@@ -47,6 +49,8 @@ class ProcedureSheetsController < ApplicationController
 
   # PATCH/PUT /procedure_sheets/1 or /procedure_sheets/1.json
   def update
+    @options = ProcedureSheet.build_options
+
     respond_to do |format|
       if @procedure_sheet.update(procedure_sheet_params)
         format.html { redirect_to(procedure_sheet_url(@procedure_sheet), notice: "Procedure sheet was successfully updated.") }

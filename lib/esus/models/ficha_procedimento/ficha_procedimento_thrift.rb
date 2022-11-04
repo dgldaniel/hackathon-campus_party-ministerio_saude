@@ -52,8 +52,13 @@ class FichaProcedimentoGerenciarThrift
 
     ficha_procedimento_master_instance = ficha_procedimento_master_class.new
 
+    ficha_procedimento_child_array_formatted = @procedure_sheet.care_procedures.map do |each_care_procedure|
+      each_care_procedure.dtNascimento = each_care_procedure.dtNascimento.nil? ? nil : each_care_procedure.dtNascimento.to_time.to_i
+      each_care_procedure
+    end
+
     fill_instance_methods.call(ficha_procedimento_master_methods, ficha_procedimento_master_instance)
-    ficha_procedimento_child_array = fill_instance_methods_with_array.call(@procedure_sheet.care_procedures, ficha_procedimento_child_methods, ficha_procedimento_child_class)
+    ficha_procedimento_child_array = fill_instance_methods_with_array.call(ficha_procedimento_child_array_formatted, ficha_procedimento_child_methods, ficha_procedimento_child_class)
 
     ficha_procedimento_master_instance.atendProcedimentos = ficha_procedimento_child_array
 

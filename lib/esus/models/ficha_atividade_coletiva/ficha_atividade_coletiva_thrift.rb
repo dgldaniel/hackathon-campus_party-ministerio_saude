@@ -56,8 +56,13 @@ class FichaAtividadeColetivaGerenciarThrift
 
     fill_instance_methods.call(ficha_coletiva_methods, ficha_coletiva_instance)
 
+    participante_array_formatted = @collective_activity_sheets.participants.map do |each_participante|
+      each_participante.dataNascimento = each_participante.dataNascimento.nil? ? nil : each_participante.dataNascimento.to_time.to_i
+      each_participante
+    end
+
     profissional_array = fill_instance_methods_with_array.call(@collective_activity_sheets.professionals, profissional_methods, profissional_class)
-    participante_array = fill_instance_methods_with_array.call(@collective_activity_sheets.participants, participante_methods, participante_class)
+    participante_array = fill_instance_methods_with_array.call(participante_array_formatted, participante_methods, participante_class)
 
     ficha_coletiva_instance.profissionais = profissional_array
     ficha_coletiva_instance.participantes = participante_array

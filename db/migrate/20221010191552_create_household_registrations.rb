@@ -28,7 +28,7 @@ class CreateHouseholdRegistrations < ActiveRecord::Migration[6.1]
       t.integer(:localizacao)
       t.integer(:materialPredominanteParedesExtDomicilio)
       t.string(:nuComodos)
-      t.integer(:nuMoradores)
+      t.string(:nuMoradores)
       t.integer(:situacaoMoradiaPosseTerra)
       t.boolean(:stDiponibilidadeEnergiaeletrica)
       t.integer(:tipoAcessoDomicilio)

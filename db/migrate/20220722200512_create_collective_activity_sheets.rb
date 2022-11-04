@@ -5,7 +5,7 @@ class CreateCollectiveActivitySheets < ActiveRecord::Migration[6.1]
       t.uuid(:uuidFicha)
       t.datetime(:dtAtividadeColetiva)
       t.integer(:numParticipantesProgramados)
-      t.integer(:localAtividade)
+      t.string(:cnesLocalAtividade)
       t.time(:horaInicio)
       t.time(:horaFim)
       t.integer(:inep)

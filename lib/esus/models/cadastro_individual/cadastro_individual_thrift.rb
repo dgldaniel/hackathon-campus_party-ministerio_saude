@@ -64,8 +64,6 @@ class CadastroIndividualGerenciarThrift
     cadastro_individual_instance.identificacaoUsuarioCidadao.dtNaturalizacao = cadastro_individual_instance.identificacaoUsuarioCidadao.dtNaturalizacao.nil? ? nil : @individual_registration.dtNaturalizacao.to_time.to_i
     cadastro_individual_instance.identificacaoUsuarioCidadao.dtEntradaBrasil = cadastro_individual_instance.identificacaoUsuarioCidadao.dtEntradaBrasil.nil? ? nil : @individual_registration.dtEntradaBrasil.to_time.to_i
 
-    p cadastro_individual_instance.identificacaoUsuarioCidadao
-
     serializer = Thrift::Serializer.new
 
     cadastro_individual_serializado = serializer.serialize(cadastro_individual_instance)

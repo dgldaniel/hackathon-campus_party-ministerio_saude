@@ -11,40 +11,40 @@ class IndividualRegistration < ApplicationRecord
 
   # before_validation :yet_another_method, on: :save
 
-  validates_presence_of :dataNascimentoCidadao, if: :data_nascimento_cidadao_validates?
-  validates_presence_of :nomeMaeCidadao, if: proc { |field| field.desconheceNomeMae == false }
-  validates_presence_of :nomePaiCidadao, if: proc { |field| field.desconheceNomePai == false }
-  validates_presence_of :telefoneCelular
-  validates_presence_of :paisNascimento, if: proc { |field| field.nacionalidadeCidadao != 2 }
-  validates_presence_of :dtNaturalizacao, if: proc { |field| field.nacionalidadeCidadao == 2 }
-  validates_presence_of :portariaNaturalizacao, if: proc { |field| field.nacionalidadeCidadao == 2 }
-  validates_presence_of :codigoIbgeMunicipioNascimento, if: proc { |field| field.nacionalidadeCidadao == 1 }
-  validates_presence_of :cpfCidadao
-  validates_presence_of :cnsCidadao
+  # validates_presence_of :dataNascimentoCidadao, if: :data_nascimento_cidadao_validates?
+  # validates_presence_of :nomeMaeCidadao, if: proc { |field| field.desconheceNomeMae == false }
+  # validates_presence_of :nomePaiCidadao, if: proc { |field| field.desconheceNomePai == false }
+  # validates_presence_of :telefoneCelular
+  # validates_presence_of :paisNascimento, if: proc { |field| field.nacionalidadeCidadao != 2 }
+  # validates_presence_of :dtNaturalizacao, if: proc { |field| field.nacionalidadeCidadao == 2 }
+  # validates_presence_of :portariaNaturalizacao, if: proc { |field| field.nacionalidadeCidadao == 2 }
+  # validates_presence_of :codigoIbgeMunicipioNascimento, if: proc { |field| field.nacionalidadeCidadao == 1 }
+  # validates_presence_of :cpfCidadao
+  # validates_presence_of :cnsCidadao
 
-  validates_presence_of :descricaoCausaInternacaoEm12Meses, if: proc { |field| field.statusTeveInternadoEm12Meses == true }
-  validates_presence_of :doencaCardiaca,  if: proc { |field| field.statusTeveDoencaCardiaca == true }
-  validates_presence_of :doencaRespiratoria,  if: proc { |field| field.statusTemDoencaRespiratoria == true }
-  validates_presence_of :doencaRins,  if: proc { |field| field.statusTemTeveDoencasRins == true }
-  validates_presence_of :maternidadeDeReferencia,  if: proc { |field| field.statusEhGestante == true }
-  validates_presence_of :statusEhGestante, if: :status_eh_gestante_validates?
-  validates_presence_of :descricaoPlantasMedicinaisUsadas,  if: proc { |field| field.statusUsaPlantasMedicinais == true }
+  # validates_presence_of :descricaoCausaInternacaoEm12Meses, if: proc { |field| field.statusTeveInternadoEm12Meses == true }
+  # validates_presence_of :doencaCardiaca,  if: proc { |field| field.statusTeveDoencaCardiaca == true }
+  # validates_presence_of :doencaRespiratoria,  if: proc { |field| field.statusTemDoencaRespiratoria == true }
+  # validates_presence_of :doencaRins,  if: proc { |field| field.statusTemTeveDoencasRins == true }
+  # validates_presence_of :maternidadeDeReferencia,  if: proc { |field| field.statusEhGestante == true }
+  # validates_presence_of :statusEhGestante, if: :status_eh_gestante_validates?
+  # validates_presence_of :descricaoPlantasMedicinaisUsadas,  if: proc { |field| field.statusUsaPlantasMedicinais == true }
 
-  validates_presence_of :grauParentescoFamiliarFrequentado, if: proc { |field| field.statusSituacaoRua && field.statusVisitaFamiliarFrequentemente == false }
-  validates_presence_of :higienePessoalSituacaoRua, if: proc { |field| field.statusSituacaoRua && field.statusTemAcessoHigienePessoalSituacaoRua == true }
-  validates_presence_of :origemAlimentoSituacaoRua, if: proc { |field| field.statusSituacaoRua }
-  validates_presence_of :outraInstituicaoQueAcompanha, if: proc { |field| field.statusSituacaoRua && field.statusAcompanhadoPorOutraInstituicao == false }
-  validates_presence_of :quantidadeAlimentacoesAoDiaSituacaoRua, if: proc { |field| field.statusSituacaoRua }
-  validates_presence_of :statusAcompanhadoPorOutraInstituicao, if: proc { |field| field.statusSituacaoRua }
-  validates_presence_of :statusPossuiReferenciaFamiliar, if: proc { |field| field.statusSituacaoRua }
-  validates_presence_of :statusRecebeBeneficio, if: proc { |field| field.statusSituacaoRua }
-  validates_presence_of :statusTemAcessoHigienePessoalSituacaoRua, if: proc { |field| field.statusSituacaoRua }
-  validates_presence_of :statusVisitaFamiliarFrequentemente, if: proc { |field| field.statusSituacaoRua }
-  validates_presence_of :tempoSituacaoRua, if: proc { |field| field.statusSituacaoRua }
+  # validates_presence_of :grauParentescoFamiliarFrequentado, if: proc { |field| field.statusSituacaoRua && field.statusVisitaFamiliarFrequentemente == false }
+  # validates_presence_of :higienePessoalSituacaoRua, if: proc { |field| field.statusSituacaoRua && field.statusTemAcessoHigienePessoalSituacaoRua == true }
+  # validates_presence_of :origemAlimentoSituacaoRua, if: proc { |field| field.statusSituacaoRua }
+  # validates_presence_of :outraInstituicaoQueAcompanha, if: proc { |field| field.statusSituacaoRua && field.statusAcompanhadoPorOutraInstituicao == false }
+  # validates_presence_of :quantidadeAlimentacoesAoDiaSituacaoRua, if: proc { |field| field.statusSituacaoRua }
+  # validates_presence_of :statusAcompanhadoPorOutraInstituicao, if: proc { |field| field.statusSituacaoRua }
+  # validates_presence_of :statusPossuiReferenciaFamiliar, if: proc { |field| field.statusSituacaoRua }
+  # validates_presence_of :statusRecebeBeneficio, if: proc { |field| field.statusSituacaoRua }
+  # validates_presence_of :statusTemAcessoHigienePessoalSituacaoRua, if: proc { |field| field.statusSituacaoRua }
+  # validates_presence_of :statusVisitaFamiliarFrequentemente, if: proc { |field| field.statusSituacaoRua }
+  # validates_presence_of :tempoSituacaoRua, if: proc { |field| field.statusSituacaoRua }
 
-  validates_presence_of :deficienciasCidadao, if: proc { |field| field.statusTemAlgumaDeficiencia == true }
-  validates_presence_of :orientacaoSexualCidadao, if: proc { |field| field.statusDesejaInformarOrientacaoSexual == true }
-  validates_presence_of :povoComunidadeTradicional, if: proc { |field| field.statusMembroPovoComunidadeTradicional == true }
+  # validates_presence_of :deficienciasCidadao, if: proc { |field| field.statusTemAlgumaDeficiencia == true }
+  # validates_presence_of :orientacaoSexualCidadao, if: proc { |field| field.statusDesejaInformarOrientacaoSexual == true }
+  # validates_presence_of :povoComunidadeTradicional, if: proc { |field| field.statusMembroPovoComunidadeTradicional == true }
 
   before_create :serialize_thrift
   before_update :serialize_thrift

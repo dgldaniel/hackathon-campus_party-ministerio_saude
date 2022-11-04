@@ -58,7 +58,13 @@ class CadastroDomiciliarGerenciarThrift
     fill_instance_methods.call(condicao_moradia_methods, condicao_moradia_instance)
     fill_instance_methods.call(cadastro_domiciliar_methods, cadastro_domiciliar_instance)
 
-    familias_array = fill_instance_methods_with_array.call(@household_registration.families, familia_row_methods, familia_row_class)
+    familias_array_formatted = @household_registration.families.map do |each_family|
+      each_family.dataNascimentoResponsavel = each_family.dataNascimentoResponsavel.nil? ? nil : each_family.dataNascimentoResponsavel.to_time.to_i
+      each_family.resideDesde = each_family.resideDesde.nil? ? nil : each_family.resideDesde.to_time.to_i
+      each_family
+    end
+
+    familias_array = fill_instance_methods_with_array.call(familias_array_formatted, familia_row_methods, familia_row_class)
 
     cadastro_domiciliar_instance.familias = familias_array
     cadastro_domiciliar_instance.condicaoMoradia = condicao_moradia_instance

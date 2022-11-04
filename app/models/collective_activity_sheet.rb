@@ -15,14 +15,14 @@ class CollectiveActivitySheet < ApplicationRecord
   has_one_attached :xml_file
   has_one_attached :thrift_file
 
-  validates_presence_of :dtAtividadeColetiva,
-                        :responsavelCns,
-                        :responsavelCnesUnidade,
-                        :atividadeTipo,
-                        :codigoIbgeMunicipio
+  # validates_presence_of :dtAtividadeColetiva,
+  #                       :responsavelCns,
+  #                       :responsavelCnesUnidade,
+  #                       :atividadeTipo,
+  #                       :codigoIbgeMunicipio
 
-  validates_presence_of :praticasTemasParaSaude, if: :praticas_temas_reuniao_validates
-  validates_presence_of :publicoAlvo, if: :publico_alvo_validates
+  # validates_presence_of :praticasTemasParaSaude, if: :praticas_temas_reuniao_validates
+  # validates_presence_of :publicoAlvo, if: :publico_alvo_validates
 
   before_create :serialize_thrift
   before_update :serialize_thrift

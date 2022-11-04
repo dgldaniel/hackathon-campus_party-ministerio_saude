@@ -13,32 +13,32 @@ class HouseholdRegistration < ApplicationRecord
   has_one_attached :xml_file
   has_one_attached :thrift_file
 
-  validates_presence_of :quantosAnimaisNoDomicilio, if: proc { |field| field.statusTermoRecusaCadatroDomiciliarAtencaoBasica == false && field.stAnimaisNoDomicilio == true }
-  validates_presence_of :animaisNoDomicilio,
-                        :stAnimaisNoDomicilio,
-                        :bairro,
-                        :cep,
-                        :codigoIbgeMunicipio,
-                        :complemento,
-                        :nomeLogradouro,
-                        :numero,
-                        :numeroDneUf,
-                        :telReferencial,
-                        :telResidencial,
-                        :tipoLogradouroNumeroDne,
-                        :stSemNumero,
-                        :abastecimentoAgua,
-                        :areaProducaoRural,
-                        :localizacao,
-                        :materialPredominanteParedesExtDomicilio,
-                        :nuComodos,
-                        :nuMoradores,
-                        :situacaoMoradiaPosseTerra,
-                        :stDiponibilidadeEnergiaeletrica,
-                        :tipoAcessoDomicilio,
-                        :tipoDomicilio,
-                        :tratamentoAguaDomicilio,
-                        if: proc { |field| field.statusTermoRecusaCadatroDomiciliarAtencaoBasica == false }
+  # validates_presence_of :quantosAnimaisNoDomicilio, if: proc { |field| field.statusTermoRecusaCadatroDomiciliarAtencaoBasica == false && field.stAnimaisNoDomicilio == true }
+  # validates_presence_of :animaisNoDomicilio,
+  #                       :stAnimaisNoDomicilio,
+  #                       :bairro,
+  #                       :cep,
+  #                       :codigoIbgeMunicipio,
+  #                       :complemento,
+  #                       :nomeLogradouro,
+  #                       :numero,
+  #                       :numeroDneUf,
+  #                       :telReferencial,
+  #                       :telResidencial,
+  #                       :tipoLogradouroNumeroDne,
+  #                       :stSemNumero,
+  #                       :abastecimentoAgua,
+  #                       :areaProducaoRural,
+  #                       :localizacao,
+  #                       :materialPredominanteParedesExtDomicilio,
+  #                       :nuComodos,
+  #                       :nuMoradores,
+  #                       :situacaoMoradiaPosseTerra,
+  #                       :stDiponibilidadeEnergiaeletrica,
+  #                       :tipoAcessoDomicilio,
+  #                       :tipoDomicilio,
+  #                       :tratamentoAguaDomicilio,
+  #                       if: proc { |field| field.statusTermoRecusaCadatroDomiciliarAtencaoBasica == false }
 
   before_create :serialize_thrift
 

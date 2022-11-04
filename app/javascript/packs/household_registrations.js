@@ -41,10 +41,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const animaisDomicilioOptions = document.getElementsByName("household_registration[animaisNoDomicilio][]");
 
   function managerStAnimaisNoDomicilio(checked) {
-    inputs['quantosAnimaisNoDomicilio'].disabled = checked;
+    inputs['quantosAnimaisNoDomicilio'].disabled = !checked;
 
       animaisDomicilioOptions.forEach(eachInput => {
-        eachInput.disabled = checked;
+        eachInput.disabled = !checked;
       })
   }
 
@@ -63,18 +63,33 @@ $(function() {
     },
     unhighlight: function (element) {
         jQuery(element).closest('.form-control').removeClass('is-invalid');
-        // jQuery(element).closest('.form-control').addClass('is-valid');
     },
     errorElement: 'div',
     errorClass: 'invalid-feedback',
     errorPlacement: function (error, element) {
-        if (element.parent('.input-group-prepend').length) {
-            $(element).siblings(".invalid-feedback").append(error);
-            //error.insertAfter(element.parent());
+      if (element.prop("type") === "radio" || element.prop("type") === "checkbox" ) {
+        error.appendTo(element.closest('.mb-3'));
+
+        return;
+      }
+
+      if (element.prop("tagName") === 'SELECT') {
+        error.appendTo(element.closest('.mb-3'));
+
+        return;
+      }
+
+      if (element.parent('.input-group-prepend').length) {
+          $(element).siblings(".invalid-feedback").append(error);
+          //error.insertAfter(element.parent());
         } else {
             error.insertAfter(element);
         }
       },
+  });
+
+  $.validator.addClassRules('required', {
+    required: true,
   });
 
   $("#household_registration_form").validate({
@@ -103,6 +118,44 @@ $(function() {
             return !$("#household_registration_stSemNumero").is(':checked');
           }
         },
+      },
+      'household_registration[condicaoMoradia]': {
+        required: {
+          depends: function() {
+            return !$("#household_registration_statusTermoRecusaCadatroDomiciliarAtencaoBasica").is(':checked');
+          }
+        },
+      },
+      'household_registration[quantosAnimaisNoDomicilio]': {
+        required: {
+          depends: function() {
+            return !$("#household_registration_statusTermoRecusaCadatroDomiciliarAtencaoBasica").is(':checked') ||
+                    $("#household_registration_stAnimaisNoDomicilio").is(':checked');
+          }
+        },
+      },
+      'household_registration[animaisNoDomicilio][]': {
+        required: {
+          depends: function() {
+            return !$("#household_registration_statusTermoRecusaCadatroDomiciliarAtencaoBasica").is(':checked') ||
+                    $("#household_registration_stAnimaisNoDomicilio").is(':checked');
+          }
+        },
+      },
+      'household_registration[areaProducaoRural]': {
+        required: {
+          depends: function() {
+            const radioValue = $("input[name='collective_activity_sheet[localizacao]']:checked").val();
+
+            return radioValue === '84';
+          }
+        },
+      },
+      'household_registration[localizacao]': {
+        required: true
+      },
+      'household_registration[situacaoMoradiaPosseTerra]': {
+        required: true
       },
     }
   });

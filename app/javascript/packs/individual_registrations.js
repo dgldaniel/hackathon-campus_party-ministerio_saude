@@ -1,6 +1,6 @@
 const { validateCns } = require('validateCns');
 import { cpf } from 'cpf-cnpj-validator';
-
+import moment from 'moment';
 import 'jquery-validation';
 // import 'jquery-validation/src/localization/messages_pt_BR';
 
@@ -399,14 +399,36 @@ $(function() {
     errorElement: 'div',
     errorClass: 'invalid-feedback',
     errorPlacement: function (error, element) {
-        if (element.parent('.input-group-prepend').length) {
-            $(element).siblings(".invalid-feedback").append(error);
-            //error.insertAfter(element.parent());
+      if (element.prop( "type" ) === "radio" || element.prop( "type" ) === "checkbox" ) {
+        error.appendTo(element.closest('.mb-3'));
+
+        return;
+
+      }
+
+      if (element.prop("tagName") === 'SELECT') {
+        error.appendTo(element.closest('.mb-3'));
+
+        return;
+      }
+
+      if (element.parent('.input-group-prepend').length) {
+          $(element).siblings(".invalid-feedback").append(error);
+          //error.insertAfter(element.parent());
         } else {
             error.insertAfter(element);
         }
       },
   });
+
+  $.validator.addClassRules('required', {
+    required: true,
+  });
+
+  jQuery.validator.addMethod("validDate", function(value) {
+    console.log(value)
+    return moment(value, 'DD-MM-YYYY', true).isValid();
+}, "must be valid date");
 
   $("#individual_registration_form").validate({
     rules: {

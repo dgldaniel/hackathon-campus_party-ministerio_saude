@@ -64,26 +64,16 @@
     <div class="row">
       <div class="col">
         <div class="mb-3">
-          <%= form.label :dtAtividadeColetiva %>
-          <div class="input-group">
-            <%= form.text_field :dtAtividadeColetiva, class: 'btn-pill datepicker-here form-control digits', 'data-language': "pt-BR", 'data-bs-original-title': 'data-bs-original-title', title: 'title' %>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <div class="mb-3">
           <%= form.label :numParticipantesProgramados %>
-          <%= form.number_field :numParticipantesProgramados, class: 'form-control btn-pill', min: '0', max: '3' %>
+          <%= form.number_field :numParticipantesProgramados, class: 'form-control btn-pill', min: '0', max: '999' %>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col">
         <div class="mb-3">
-          <%= form.label :localAtividade %>
-          <%= form.number_field :localAtividade, class: 'form-control btn-pill' %>
+          <%= form.label :cnesLocalAtividade %>
+          <%= form.text_field :cnesLocalAtividade, class: 'form-control btn-pill' %>
         </div>
       </div>
     </div>
@@ -139,7 +129,7 @@
       <div class="col">
         <div class="mb-3">
           <%= form.label :numParticipantes %>
-          <%= form.number_field :numParticipantes, class: 'form-control btn-pill', min: '0', max: '3' %>
+          <%= form.number_field :numParticipantes, class: 'form-control btn-pill', min: '0', max: '999' %>
         </div>
       </div>
     </div>
@@ -147,7 +137,7 @@
       <div class="col">
         <div class="mb-3">
           <%= form.label :numAvaliacoesAlteradas %>
-          <%= form.number_field :numAvaliacoesAlteradas, class: 'form-control btn-pill', min: '0', max: '3' %>
+          <%= form.number_field :numAvaliacoesAlteradas, class: 'form-control btn-pill', min: '0', max: '999' %>
         </div>
       </div>
     </div>
