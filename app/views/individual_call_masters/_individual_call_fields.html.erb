@@ -1,0 +1,267 @@
+<div class="nested-fields">
+  <h3>Atendimento Individual</h3>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :numeroProntuario %>
+        <%= f.text_field :numeroProntuario, class: 'form-control btn-pill', maxlength: 30 %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :cns %>
+        <%= f.text_field :cns, class: 'form-control btn-pill' %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :dataNascimento %>
+          <div class="input-group">
+            <%= f.text_field :dataNascimento, class: 'btn-pill datepicker-here form-control', 'data-language': "pt-BR", 'data-bs-original-title': 'data-bs-original-title' %>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :localDeAtendimento %>
+        <%= f.text_field :localDeAtendimento, class: 'form-control btn-pill' %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+          <%= f.label :sexo %>
+          <%= f.collection_radio_buttons :sexo, @options[:sexo], :second, :first do |b| %>
+            <div class="d-block">
+              <%= b.radio_button %>
+              <%= b.label %>
+            </div>
+          <% end %>
+        </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+          <%= f.label :turno %>
+          <%= f.collection_radio_buttons :turno, @options[:turno], :second, :first do |b| %>
+            <div class="d-block">
+              <%= b.radio_button %>
+              <%= b.label %>
+            </div>
+          <% end %>
+        </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+          <%= f.label :tipoAtendimento %>
+          <%= f.collection_radio_buttons :tipoAtendimento, @options[:tipo_atendimento], :second, :first do |b| %>
+            <div class="d-block">
+              <%= b.radio_button %>
+              <%= b.label %>
+            </div>
+          <% end %>
+        </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :pesoAcompanhamentoNutricional %>
+        <%= f.number_field :pesoAcompanhamentoNutricional, class: 'form-control btn-pill' %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :alturaAcompanhamentoNutricional %>
+        <%= f.number_field :alturaAcompanhamentoNutricional, class: 'form-control btn-pill' %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= f.label :aleitamentoMaterno %>
+          <%= f.collection_radio_buttons :turno, @options[:aleitamento_materno], :second, :first do |b| %>
+            <div class="d-block">
+              <%= b.radio_button %>
+              <%= b.label %>
+            </div>
+          <% end %>
+        </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+       <div class="mb-3">
+          <%= f.label :dumDaGestante %>
+          <div class="input-group">
+            <%= f.text_field :dumDaGestante, class: 'btn-pill datepicker-here form-control', 'data-language': "pt-BR", 'data-bs-original-title': 'data-bs-original-title' %>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :idadeGestacional %>
+        <%= f.number_field :idadeGestacional, class: 'form-control btn-pill' %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= f.label :atencaoDomiciliarModalidade %>
+          <%= f.collection_radio_buttons :atencaoDomiciliarModalidade, @options[:modalidade_ad], :second, :first do |b| %>
+            <div class="d-block">
+              <%= b.radio_button %>
+              <%= b.label %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  <div class="d-block">
+      <%= f.check_box :vacinaEmDia %>
+      <%= f.label :vacinaEmDia %>
+    </div>
+  <div class="row">
+      <div class="col">
+        <div class="d-block">
+          <%= f.check_box :ficouEmObservacao %>
+          <%= f.label :ficouEmObservacao %>
+        </div>
+      </div>
+    </div>
+  <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= f.label :nasfs %>
+          <%= f.collection_radio_buttons :nasfs, @options[:nasf], :second, :first do |b| %>
+            <div class="d-block">
+              <%= b.radio_button %>
+              <%= b.label %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= f.label :condutas %>
+          <%= f.collection_check_boxes :condutas, @options[:conduta_encaminhamento], :second, :first do |b| %>
+            <div class="d-block">
+              <%= b.check_box %>
+              <%= b.label %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <%= f.check_box :stGravidezPlanejada %>
+          <%= f.label :stGravidezPlanejada %>
+        </div>
+      </div>
+    </div>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :nuGestasPrevias %>
+        <%= f.number_field :nuGestasPrevias, class: 'form-control btn-pill' %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :nuPartos %>
+        <%= f.number_field :nuPartos, class: 'form-control btn-pill' %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :racionalidadeSaude %>
+        <%= f.number_field :racionalidadeSaude, class: 'form-control btn-pill' %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :perimetroCefalico %>
+        <%= f.number_field :perimetroCefalico, class: 'form-control btn-pill' %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :dataHoraInicialAtendimento %>
+        <%= f.text_field :dataHoraInicialAtendimento, class: 'btn-pill datepicker-here form-control', 'data-language': "pt-BR", 'data-bs-original-title': 'data-bs-original-title' %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :dataHoraFinalAtendimento %>
+        <%= f.text_field :dataHoraFinalAtendimento, class: 'btn-pill datepicker-here form-control', 'data-language': "pt-BR", 'data-bs-original-title': 'data-bs-original-title' %>
+      </div>
+    </div>
+  </div>
+  <div>
+    <h3>Problema/Condição/Avaliação</h3>
+    <%= f.fields_for :problem_condition_evaluated do |field| %>
+      <div class="field">
+        <%= field.label :ciaps %>
+        <%= field.collection_check_boxes :ciaps, @options[:lista_ciap], :second, :first do |b| %>
+          <div class="d-block">
+            <%= b.check_box %>
+            <%= b.label %>
+          </div>
+        <% end %>
+      </div>
+      <div class="field">
+        <%= field.label :outroCiap1 %>
+        <%= field.select :outroCiap1, @options[:lista_ciap], {}, { class: 'js-example-basic-single col-sm-12' } %>
+      </div>
+      <div class="field">
+        <%= field.label :cid10 %>
+        <%= field.select :cid10, @options[:lista_ciap], {}, { class: 'js-example-basic-single col-sm-12' } %>
+      </div>
+      <div class="field">
+        <%= field.label :cid10_2 %>
+        <%= field.select :cid10_2, @options[:lista_ciap], {}, { class: 'js-example-basic-single col-sm-12' } %>
+      </div>
+    <% end %>
+  </div>
+  <%= link_to_remove_association "remove individual_call", f %>
+  <div id="exams">
+    <%= f.fields_for :exams do |exam| %>
+      <%= render 'exam_fields', f: exam %>
+    <% end %>
+    <div class="links">
+      <%= link_to_add_association 'add exam', f, :exams %>
+      <br>
+      <br>
+    </div>
+  </div>
+</div>

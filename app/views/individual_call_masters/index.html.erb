@@ -1,0 +1,49 @@
+<div class="col-sm-12">
+  <div class="card">
+    <div class="card-header">
+      <h4>Ficha de Atendimento</h4>
+      <p id="notice"><%= notice %></p>
+    </div>
+    <div class="card-body">
+      <% if @individual_call_masters.empty? %>
+        <h5>Sem Registros</h5>
+      <% end %>
+      <% unless @individual_call_masters.empty? %>
+        <div class="table-responsive">
+          <table class="display" id="API-2">
+            <thead>
+              <th>Uuid</th>
+              <th colspan="3"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @individual_call_masters.each do |individual_call_master| %>
+              <tr>
+                <td><%= individual_call_master.uuid %></td>
+                <td>
+                  <%= link_to individual_call_master do %>
+                    <i class="fa fa-eye fa-2x"></i>
+                  <% end %>
+                </td>
+                <td>
+                  <%= link_to edit_individual_call_master_path(individual_call_master) do %>
+                    <i class="fa fa-edit fa-2x"></i>
+                  <% end %>
+                </td>
+                <td>
+                  <%= link_to individual_call_master, method: :delete, data: { confirm: 'Are you sure?' } do %>
+                    <i class="fa fa-trash fa-2x"></i>
+                  <% end %>
+                </td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    <% end %>
+    <br>
+    <%= link_to 'New Individual Call Master', new_individual_call_master_path, id: "addRow", class: 'btn btn-primary mb-3' %>
+  </div>
+</div>
+</div>
+

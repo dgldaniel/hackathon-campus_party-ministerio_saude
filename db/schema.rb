@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_10_10_191618) do
+ActiveRecord::Schema.define(version: 2022_11_05_135627) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -221,9 +221,18 @@ ActiveRecord::Schema.define(version: 2022_10_10_191618) do
     t.index ["doctor_id"], name: "index_household_registrations_on_doctor_id"
   end
 
+  create_table "individual_call_masters", force: :cascade do |t|
+    t.integer "tpCdsOrigem"
+    t.uuid "uuid"
+    t.bigint "doctor_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["doctor_id"], name: "index_individual_call_masters_on_doctor_id"
+  end
+
   create_table "individual_calls", force: :cascade do |t|
     t.string "numeroProntuario"
-    t.string "cnsCidadao"
+    t.string "cns"
     t.datetime "dataNascimento"
     t.integer "localDeAtendimento"
     t.integer "sexo"
@@ -237,7 +246,7 @@ ActiveRecord::Schema.define(version: 2022_10_10_191618) do
     t.integer "atencaoDomiciliarModalidade"
     t.boolean "vacinaEmDia"
     t.boolean "ficouEmObservacao"
-    t.integer "nasfs"
+    t.integer "nasfs", default: [], array: true
     t.string "condutas", default: [], array: true
     t.boolean "stGravidezPlanejada"
     t.integer "nuGestasPrevias"
@@ -246,13 +255,14 @@ ActiveRecord::Schema.define(version: 2022_10_10_191618) do
     t.float "perimetroCefalico"
     t.datetime "dataHoraInicialAtendimento"
     t.datetime "dataHoraFinalAtendimento"
-    t.bigint "doctor_id", null: false
+    t.string "cpfCidadao"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "pic"
     t.string "examesSolicitados", default: [], array: true
     t.string "examesAvaliados", default: [], array: true
-    t.index ["doctor_id"], name: "index_individual_calls_on_doctor_id"
+    t.bigint "individual_call_master_id"
+    t.index ["individual_call_master_id"], name: "index_individual_calls_on_individual_call_master_id"
   end
 
   create_table "individual_registrations", force: :cascade do |t|
@@ -494,7 +504,7 @@ ActiveRecord::Schema.define(version: 2022_10_10_191618) do
   add_foreign_key "collective_calls", "professionals", column: "professionals_id"
   add_foreign_key "families", "household_registrations"
   add_foreign_key "household_registrations", "doctors"
-  add_foreign_key "individual_calls", "doctors"
+  add_foreign_key "individual_call_masters", "doctors"
   add_foreign_key "individual_registrations", "doctors"
   add_foreign_key "patients", "doctors"
   add_foreign_key "procedure_sheets", "doctors"

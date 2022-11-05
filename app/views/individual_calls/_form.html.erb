@@ -9,7 +9,7 @@
       </ul>
     </div>
   <% end %>
-  <div class="tab">
+  <div>
     <div class="row">
       <div class="col">
         <div class="mb-3">
@@ -241,7 +241,7 @@
       </div>
     </div>
   </div>
-  <div class="tab">
+  <div>
     <%= form.fields_for :problem_condition_evaluated do |field| %>
       <div class="field">
         <%= field.label :ciaps %>
@@ -266,7 +266,7 @@
       </div>
     <% end %>
   </div>
-  <div class="tab" id="exams">
+  <div id="exams">
     <%= form.fields_for :exams do |exam| %>
       <%= render 'exam_fields', f: exam %>
     <% end %>

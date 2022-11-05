@@ -2,6 +2,7 @@
 require 'sidekiq/web'
 
 Rails.application.routes.draw do
+  resources :individual_call_masters
   resources :families
   resources :household_registrations
   root to: 'pages#index'

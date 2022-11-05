@@ -1,0 +1,28 @@
+<%= form_with(model: individual_call_master) do |form| %>
+  <% if individual_call_master.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(individual_call_master.errors.count, "error") %> prohibited this individual_call_master from being saved:</h2>
+
+      <ul>
+        <% individual_call_master.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div id="individual_calls">
+    <%= form.fields_for :individual_calls do |individual_call| %>
+      <%= render 'individual_call_fields', f: individual_call %>
+    <% end %>
+    <div class="links">
+      <%= link_to_add_association 'add individual_call', form, :individual_calls %>
+      <br>
+      <br>
+    </div>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
