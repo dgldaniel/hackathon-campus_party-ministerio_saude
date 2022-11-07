@@ -4,7 +4,7 @@
 // that code so it'll be compiled.
 
 require("@rails/ujs").start()
-// require("turbolinks").start()
+require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 
@@ -23,6 +23,8 @@ require('select2/select2.full.min')
 require('select2/select2-custom')
 // require('tooltip-init')
 require('script')
+
+import "cocoon-js-vanilla";
 
 window.onload = () => {
   const feather = require('feather-icons')
