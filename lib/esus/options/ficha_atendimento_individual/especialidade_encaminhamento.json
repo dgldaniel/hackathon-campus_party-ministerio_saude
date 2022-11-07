@@ -1,0 +1,250 @@
+[
+  {
+    "Código": 1,
+    "Especialidade": "CONSULTA EM ACUPUNTURA"
+  },
+  {
+    "Código": 2,
+    "Especialidade": "CONSULTA EM ALERGIA E IMUNOLOGIA"
+  },
+  {
+    "Código": 3,
+    "Especialidade": "CONSULTA EM ANESTESIOLOGIA"
+  },
+  {
+    "Código": 4,
+    "Especialidade": "CONSULTA EM ANGIOLOGIA"
+  },
+  {
+    "Código": 5,
+    "Especialidade": "CONSULTA EM CIRURGIA ONCOLÓGICA"
+  },
+  {
+    "Código": 6,
+    "Especialidade": "CONSULTA EM CARDIOLOGIA"
+  },
+  {
+    "Código": 7,
+    "Especialidade": "CONSULTA EM CIRURGIA CARDÍACA"
+  },
+  {
+    "Código": 8,
+    "Especialidade": "CONSULTA EM CIRURGIA GERAL"
+  },
+  {
+    "Código": 9,
+    "Especialidade": "CONSULTA EM CIRURGIA REPARADORA"
+  },
+  {
+    "Código": 10,
+    "Especialidade": "CONSULTA EM CIRURGIA PEDIÁTRICA"
+  },
+  {
+    "Código": 11,
+    "Especialidade": "CONSULTA EM CIRURGIA PLÁSTICA"
+  },
+  {
+    "Código": 12,
+    "Especialidade": "CONSULTA EM CIRURGIA TORÁCICA"
+  },
+  {
+    "Código": 13,
+    "Especialidade": "CONSULTA EM DERMATOLOGIA"
+  },
+  {
+    "Código": 14,
+    "Especialidade": "CONSULTA MÉDICA EM SAÚDE DO TRABALHADOR"
+  },
+  {
+    "Código": 15,
+    "Especialidade": "CONSULTA EM CIRURGIA VASCULAR"
+  },
+  {
+    "Código": 16,
+    "Especialidade": "CONSULTA EM ENDOCRINOLOGIA"
+  },
+  {
+    "Código": 17,
+    "Especialidade": "CONSULTA EM FISIATRIA"
+  },
+  {
+    "Código": 18,
+    "Especialidade": "CONSULTA EM GASTROENTEROLOGIA"
+  },
+  {
+    "Código": 19,
+    "Especialidade": "CONSULTA EM CLÍNICA GERAL"
+  },
+  {
+    "Código": 20,
+    "Especialidade": "CONSULTA EM GENÉTICA MÉDICA"
+  },
+  {
+    "Código": 21,
+    "Especialidade": "CONSULTA EM GERIATRIA"
+  },
+  {
+    "Código": 22,
+    "Especialidade": "CONSULTA EM GINECOLOGIA E OBSTETRÍCIA"
+  },
+  {
+    "Código": 23,
+    "Especialidade": "CONSULTA EM CIRURGIA GINECOLÓGICA"
+  },
+  {
+    "Código": 24,
+    "Especialidade": "CONSULTA EM UROGINECOLOGIA"
+  },
+  {
+    "Código": 25,
+    "Especialidade": "CONSULTA EM HEMATOLOGIA"
+  },
+  {
+    "Código": 26,
+    "Especialidade": "CONSULTA EM HOMEOPATIA"
+  },
+  {
+    "Código": 27,
+    "Especialidade": "CONSULTA EM INFECTOLOGIA"
+  },
+  {
+    "Código": 28,
+    "Especialidade": "CONSULTA EM MASTOLOGIA"
+  },
+  {
+    "Código": 29,
+    "Especialidade": "CONSULTA EM NEFROLOGIA"
+  },
+  {
+    "Código": 30,
+    "Especialidade": "CONSULTA EM CIRURGIA NEUROLÓGICA"
+  },
+  {
+    "Código": 31,
+    "Especialidade": "CONSULTA EM NEUROLOGIA"
+  },
+  {
+    "Código": 32,
+    "Especialidade": "CONSULTA EM NEUROPEDIATRIA"
+  },
+  {
+    "Código": 33,
+    "Especialidade": "CONSULTA EM NUTROLOGIA"
+  },
+  {
+    "Código": 34,
+    "Especialidade": "CONSULTA EM OFTALMOLOGIA"
+  },
+  {
+    "Código": 35,
+    "Especialidade": "CONSULTA EM CIRURGIA OFTALMOLÓGICA"
+  },
+  {
+    "Código": 36,
+    "Especialidade": "CONSULTA EM ONCOLOGIA"
+  },
+  {
+    "Código": 37,
+    "Especialidade": "CONSULTA EM ORTOPEDIA"
+  },
+  {
+    "Código": 38,
+    "Especialidade": "CONSULTA EM TRAUMATOLOGIA"
+  },
+  {
+    "Código": 39,
+    "Especialidade": "CONSULTA EM CIRURGIA ORTOPÉDICA"
+  },
+  {
+    "Código": 40,
+    "Especialidade": "CONSULTA EM OTORRINOLARINGOLOGIA"
+  },
+  {
+    "Código": 41,
+    "Especialidade": "CONSULTA EM CIRURGIA OTORRINOLARINGOLOGIA"
+  },
+  {
+    "Código": 42,
+    "Especialidade": "CONSULTA EM PROCTOLOGIA"
+  },
+  {
+    "Código": 43,
+    "Especialidade": "CONSULTA EM PEDIATRIA"
+  },
+  {
+    "Código": 44,
+    "Especialidade": "CONSULTA EM NEONATOLOGIA"
+  },
+  {
+    "Código": 45,
+    "Especialidade": "CONSULTA EM PNEUMOLOGIA"
+  },
+  {
+    "Código": 46,
+    "Especialidade": "CONSULTA EM TISIOLOGIA"
+  },
+  {
+    "Código": 47,
+    "Especialidade": "CONSULTA EM PSIQUIATRIA"
+  },
+  {
+    "Código": 48,
+    "Especialidade": "CONSULTA EM REUMATOLOGIA"
+  },
+  {
+    "Código": 49,
+    "Especialidade": "CONSULTA EM UROLOGIA"
+  },
+  {
+    "Código": 50,
+    "Especialidade": "CONSULTA EM ANDROLOGIA"
+  },
+  {
+    "Código": 51,
+    "Especialidade": "CONSULTA EM CIRURGIA UROLÓGICA"
+  },
+  {
+    "Código": 52,
+    "Especialidade": "CONSULTA EM CIRURGIA POSTECTOMIA"
+  },
+  {
+    "Código": 53,
+    "Especialidade": "CONSULTA EM HEPATOLOGIA"
+  },
+  {
+    "Código": 54,
+    "Especialidade": "CONSULTA EM REABILITAÇÃO FÍSICA"
+  },
+  {
+    "Código": 55,
+    "Especialidade": "CONSULTA EM FISIOTERAPIA"
+  },
+  {
+    "Código": 56,
+    "Especialidade": "CONSULTA EM NUTRIÇÃO"
+  },
+  {
+    "Código": 57,
+    "Especialidade": "CONSULTA EM FONOAUDIOLOGIA"
+  },
+  {
+    "Código": 58,
+    "Especialidade": "CONSULTA EM TERAPIA OCUPACIONAL"
+  },
+  {
+    "Código": 59,
+    "Especialidade": "CONSULTA EM PSICOLOGIA"
+  },
+  {
+    "Código": 60,
+    "Especialidade": "CONSULTA EM SEXOLOGIA"
+  },
+  {
+    "Código": 61,
+    "Especialidade": "CONSULTA EM ASSISTENCIA SOCIAL"
+  },
+  {
+    "Código": 62,
+    "Especialidade": "CONSULTA EM ODONTOLOGIA"
+  }
+]

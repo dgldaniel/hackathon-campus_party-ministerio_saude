@@ -264,4 +264,34 @@
       <br>
     </div>
   </div>
+  <div id="exam_results">
+    <%= f.fields_for :exam_results do |exam_result| %>
+      <%= render 'exam_result_fields', f: exam_result %>
+    <% end %>
+    <div class="links">
+      <%= link_to_add_association 'add exam result', f, :exam_results %>
+      <br>
+      <br>
+    </div>
+  </div>
+  <div id="medicines">
+    <%= f.fields_for :medicines do |medicine| %>
+      <%= render 'medicine_fields', f: medicine %>
+    <% end %>
+    <div class="links">
+      <%= link_to_add_association 'add medicine', f, :medicines %>
+      <br>
+      <br>
+    </div>
+  </div>
+  <div id="forwardings">
+    <%= f.fields_for :forwardings do |forwarding| %>
+      <%= render 'forwarding_fields', f: forwarding %>
+    <% end %>
+    <div class="links">
+      <%= link_to_add_association 'add forwarding', f, :forwardings %>
+      <br>
+      <br>
+    </div>
+  </div>
 </div>

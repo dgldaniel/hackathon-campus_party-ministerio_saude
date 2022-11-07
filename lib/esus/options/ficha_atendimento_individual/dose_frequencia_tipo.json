@@ -1,0 +1,17 @@
+[
+  {
+    "Código": 1,
+    "Descrição": "Turno",
+    "Observações": "Turno"
+  },
+  {
+    "Código": 2,
+    "Descrição": "Frequência",
+    "Observações": "Vezes ao dia"
+  },
+  {
+    "Código": 3,
+    "Descrição": "Intervalo",
+    "Observações": "Intervalo de horas"
+  }
+]

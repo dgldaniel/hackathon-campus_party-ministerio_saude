@@ -106,6 +106,27 @@ namespace :store_records_on_cache do
     pic_data = get_path_json('ficha_atendimento_individual', 'pic')
     store_json_cache(pic_data, { first: 'Descrição', second: 'Código' }, '@FAI_PIC')
 
+    classificacao_risco_data = get_path_json('ficha_atendimento_individual', 'classificacao_risco')
+    store_json_cache(classificacao_risco_data, { first: 'Descrição', second: 'Código' }, '@FAI_Classicacao_Risco')
+
+    dose_frequencia_tipo_data = get_path_json('ficha_atendimento_individual', 'dose_frequencia_tipo')
+    store_json_cache(dose_frequencia_tipo_data, { first: 'Descrição', second: 'Código' }, '@FAI_Dose_Frequencia_Tipo')
+
+    dose_frequencia_unidade_medida_data = get_path_json('ficha_atendimento_individual', 'dose_frequencia_unidade_medida')
+    store_json_cache(dose_frequencia_unidade_medida_data, { first: 'Descrição', second: 'Código' }, '@FAI_Dose_Frequencia_Unidade_Medida')
+
+    duracao_tratamento_medida_data = get_path_json('ficha_atendimento_individual', 'duracao_tratamento_medida')
+    store_json_cache(duracao_tratamento_medida_data, { first: 'Descrição', second: 'Código' }, '@FAI_Duracao_Tratamento_Medida')
+
+    especialidade_encaminhamento_data = get_path_json('ficha_atendimento_individual', 'especialidade_encaminhamento')
+    store_json_cache(especialidade_encaminhamento_data, { first: 'Especialidade', second: 'Código' }, '@FAI_Especialidade_Encaminhamento')
+
+    tipo_resultado_exame_data = get_path_json('ficha_atendimento_individual', 'tipo_resultado_exame')
+    store_json_cache(tipo_resultado_exame_data, { first: 'Descrição', second: 'Código' }, '@FAI_Tipo_Resultado_Exame')
+
+    via_administracao_data = get_path_json('ficha_atendimento_individual', 'via_administracao')
+    store_json_cache(via_administracao_data, { first: 'Descrição', second: 'Código' }, '@FAI_Via_Administracao')
+
     # Ficha de Procedimentos
 
     lista_procedimentos_data = get_path_json('ficha_procedimentos', 'lista_procedimentos')

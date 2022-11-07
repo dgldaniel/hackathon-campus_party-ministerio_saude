@@ -106,15 +106,17 @@
   <%= form.check_box :statusTemAlgumaDeficiencia %>
   <%= form.label :statusTemAlgumaDeficiencia %>
 </div>
-<div class="col">
-  <div class="mb-3">
-    <%= form.label :deficienciasCidadao %>
-    <%= form.collection_check_boxes :deficienciasCidadao, @options[:deficiencia_cidadao], :second, :first do |b| %>
-      <div class="d-block">
-        <%= b.check_box %>
-        <%= b.label %>
-      </div>
-    <% end %>
+<div class="row">
+  <div class="col">
+    <div class="mb-3">
+      <%= form.label :deficienciasCidadao %>
+      <%= form.collection_check_boxes :deficienciasCidadao, @options[:deficiencia_cidadao], :second, :first do |b| %>
+        <div class="d-block">
+          <%= b.check_box %>
+          <%= b.label %>
+        </div>
+      <% end %>
+    </div>
   </div>
 </div>
 <div class="row">

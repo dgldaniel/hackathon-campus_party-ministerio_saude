@@ -1,34 +1,46 @@
 <div class="nested-fields">
-  <h3>Exam_Result</h3>
+  <h3>Resultados de Exame</h3>
 
-  <div class="field">
-    <%= f.label :exame %>
-    <%= f.text_field :exame %>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :exame %>
+        <%= f.text_field :exame, class: 'form-control btn-pill' %>
+      </div>
+    </div>
   </div>
 
-  <div class="field">
-    <%= f.label :dataSolicitacao %>
-    <%= f.text_field :dataSolicitacao %>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :dataSolicitacao %>
+        <div class="input-group">
+          <%= f.text_field :dataSolicitacao, class: 'btn-pill datepicker-here form-control', 'data-language': "pt-BR", 'data-bs-original-title': 'data-bs-original-title' %>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div class="field">
-    <%= f.label :dataRealizacao %>
-    <%= f.text_field :dataRealizacao %>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :dataRealizacao %>
+        <div class="input-group">
+          <%= f.text_field :dataRealizacao, class: 'btn-pill datepicker-here form-control', 'data-language': "pt-BR", 'data-bs-original-title': 'data-bs-original-title' %>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div class="field">
-    <%= f.label :dataResultado %>
-    <%= f.text_field :dataResultado %>
-  </div>
-
-  <div class="field">
-    <%= f.label :tipoResultado %>
-    <%= f.text_field :tipoResultado %>
-  </div>
-
-  <div class="field">
-    <%= f.label :valorResultado %>
-    <%= f.text_field :valorResultado %>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :dataResultado %>
+        <div class="input-group">
+          <%= f.text_field :dataResultado, class: 'btn-pill datepicker-here form-control', 'data-language': "pt-BR", 'data-bs-original-title': 'data-bs-original-title' %>
+        </div>
+      </div>
+    </div>
   </div>
 
   <%= link_to_remove_association "remove exam_result", f %>

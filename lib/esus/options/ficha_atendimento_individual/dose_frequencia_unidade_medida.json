@@ -1,0 +1,14 @@
+[
+  {
+    "Código": 1,
+    "Descrição": "Dia(s)"
+  },
+  {
+    "Código": 2,
+    "Descrição": "Semana(s)"
+  },
+  {
+    "Código": 3,
+    "Descrição": "Mês/Meses"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "Código": 1,
+    "Descrição": "Valor",
+    "Observações": "Usado quando o resultado do exame é um número"
+  },
+  {
+    "Código": 2,
+    "Descrição": "Dias",
+    "Observações": "Usado quando o resultado do exame é apresentado em quantidade de dias"
+  },
+  {
+    "Código": 3,
+    "Descrição": "Semanas",
+    "Observações": "Usado quando o resultado do exame é apresentado em quantidade de semanas"
+  },
+  {
+    "Código": 4,
+    "Descrição": "Data",
+    "Observações": "Usado quando o resultado do exame é uma data"
+  }
+]

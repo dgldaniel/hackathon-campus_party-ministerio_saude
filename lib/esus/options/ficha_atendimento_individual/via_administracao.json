@@ -1,0 +1,114 @@
+[
+  {
+    "Código": 0,
+    "Descrição": "Oral"
+  },
+  {
+    "Código": 1,
+    "Descrição": "Parenteral"
+  },
+  {
+    "Código": 2,
+    "Descrição": "Local"
+  },
+  {
+    "Código": 3,
+    "Descrição": "Outros"
+  },
+  {
+    "Código": 4,
+    "Descrição": "Bucal"
+  },
+  {
+    "Código": 5,
+    "Descrição": "Capilar"
+  },
+  {
+    "Código": 6,
+    "Descrição": "Dermatológica"
+  },
+  {
+    "Código": 7,
+    "Descrição": "Epidural"
+  },
+  {
+    "Código": 8,
+    "Descrição": "Inalatória"
+  },
+  {
+    "Código": 9,
+    "Descrição": "Inalatória por via nasal"
+  },
+  {
+    "Código": 10,
+    "Descrição": "Inalatória por via oral"
+  },
+  {
+    "Código": 11,
+    "Descrição": "Intra-arterial"
+  },
+  {
+    "Código": 12,
+    "Descrição": "Intra-articular"
+  },
+  {
+    "Código": 13,
+    "Descrição": "Intradérmica"
+  },
+  {
+    "Código": 14,
+    "Descrição": "Intramuscular"
+  },
+  {
+    "Código": 15,
+    "Descrição": "Intratecal"
+  },
+  {
+    "Código": 16,
+    "Descrição": "Intrauterina"
+  },
+  {
+    "Código": 17,
+    "Descrição": "Intravenosa"
+  },
+  {
+    "Código": 18,
+    "Descrição": "Irrigação"
+  },
+  {
+    "Código": 19,
+    "Descrição": "Nasal"
+  },
+  {
+    "Código": 20,
+    "Descrição": "Oftálmica"
+  },
+  {
+    "Código": 21,
+    "Descrição": "Otológica"
+  },
+  {
+    "Código": 22,
+    "Descrição": "Retal"
+  },
+  {
+    "Código": 23,
+    "Descrição": "Subcutânea"
+  },
+  {
+    "Código": 24,
+    "Descrição": "Sublingual"
+  },
+  {
+    "Código": 25,
+    "Descrição": "Transdérmica"
+  },
+  {
+    "Código": 26,
+    "Descrição": "Uretral"
+  },
+  {
+    "Código": 27,
+    "Descrição": "Vaginal"
+  }
+]

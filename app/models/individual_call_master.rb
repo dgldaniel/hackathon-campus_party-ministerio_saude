@@ -39,6 +39,13 @@ class IndividualCallMaster < ApplicationRecord
       turno: JSON.parse(Rails.cache.read('@FAI_Turno')),
       sexo: JSON.parse(Rails.cache.read('@CI_Sexo')),
       pic: JSON.parse(Rails.cache.read('@FAI_PIC')),
+      classificacao_risco: JSON.parse(Rails.cache.read('@FAI_Classicacao_Risco')),
+      dose_frequencia_tipo: JSON.parse(Rails.cache.read('@FAI_Dose_Frequencia_Unidade_Medida')),
+      dose_frequencia_unidade_medida: JSON.parse(Rails.cache.read('@FAI_Duracao_Tratamento_Medida')),
+      duracao_tratamento_medida: JSON.parse(Rails.cache.read('@FAI_Duracao_Tratamento_Medida')),
+      especialidade_encaminhamento: JSON.parse(Rails.cache.read('@FAI_Especialidade_Encaminhamento')),
+      tipo_resultado_exame: JSON.parse(Rails.cache.read('@FAI_Tipo_Resultado_Exame')),
+      via_administracao: JSON.parse(Rails.cache.read('@FAI_Via_Administracao')),
     }
   end
 end

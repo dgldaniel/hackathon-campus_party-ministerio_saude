@@ -18,6 +18,9 @@ class IndividualCallMastersController < ApplicationController
     individual_calls_builded = @individual_call_master.individual_calls.build
     individual_calls_builded.build_problem_condition_evaluated
     individual_calls_builded.exams.build
+    individual_calls_builded.exam_results.build
+    individual_calls_builded.medicines.build
+    individual_calls_builded.forwardings.build
 
     @options = IndividualCallMaster.build_options
   end

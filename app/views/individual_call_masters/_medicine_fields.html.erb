@@ -1,74 +1,138 @@
 <div class="nested-fields">
-  <h3>Medicine</h3>
+  <h3>Medicamentos</h3>
 
-  <div class="field">
-    <%= f.label :codigoCatmat %>
-    <%= f.text_field :codigoCatmat %>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :codigoCatmat %>
+        <%= f.text_field :codigoCatmat, class: 'form-control btn-pill' %>
+      </div>
+    </div>
   </div>
 
-  <div class="field">
-    <%= f.label :viaAdministracao %>
-    <%= f.text_field :viaAdministracao %>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :viaAdministracao %>
+        <%= f.select :viaAdministracao, @options[:via_administracao], { prompt: "Selecione Via de Administração" }, { class: 'js-example-basic-single col-sm-12'} %>
+      </div>
+    </div>
   </div>
 
-  <div class="field">
-    <%= f.label :dose %>
-    <%= f.text_field :dose %>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :dose %>
+        <%= f.text_field :dose, class: 'form-control btn-pill' %>
+      </div>
+    </div>
   </div>
 
-  <div class="field">
-    <%= f.label :doseUnica %>
-    <%= f.text_field :doseUnica %>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :doseUnica %>
+        <%= f.text_field :doseUnica, class: 'form-control btn-pill' %>
+      </div>
+    </div>
   </div>
 
-  <div class="field">
-    <%= f.label :usoContinuo %>
-    <%= f.text_field :usoContinuo %>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :usoContinuo %>
+        <%= f.text_field :usoContinuo, class: 'form-control btn-pill' %>
+      </div>
+    </div>
   </div>
 
-  <div class="field">
-    <%= f.label :doseFrequenciaTipo %>
-    <%= f.text_field :doseFrequenciaTipo %>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :doseFrequenciaTipo %>
+        <%= f.collection_radio_buttons :doseFrequenciaTipo, @options[:dose_frequencia_tipo], :second, :first do |b| %>
+          <div class="d-block">
+            <%= b.radio_button %>
+            <%= b.label %>
+          </div>
+        <% end %>
+      </div>
+    </div>
   </div>
 
-  <div class="field">
-    <%= f.label :doseFrequencia %>
-    <%= f.text_field :doseFrequencia %>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :doseFrequencia %>
+        <%= f.number_field :doseFrequencia, class: 'form-control btn-pill' %>
+      </div>
+    </div>
   </div>
 
-  <div class="field">
-    <%= f.label :doseFrequenciaQuantidade %>
-    <%= f.text_field :doseFrequenciaQuantidade %>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :doseFrequenciaQuantidade %>
+        <%= f.number_field :doseFrequenciaQuantidade, class: 'form-control btn-pill' %>
+      </div>
+    </div>
   </div>
 
-  <div class="field">
-    <%= f.label :doseFrequenciaQuantidade %>
-    <%= f.text_field :doseFrequenciaQuantidade %>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :doseFrequenciaUnidadeMedida %>
+        <%= f.collection_radio_buttons :doseFrequenciaUnidadeMedida, @options[:dose_frequencia_unidade_medida], :second, :first do |b| %>
+          <div class="d-block">
+            <%= b.radio_button %>
+            <%= b.label %>
+          </div>
+        <% end %>
+      </div>
+    </div>
   </div>
 
-  <div class="field">
-    <%= f.label :doseFrequenciaUnidadeMedida %>
-    <%= f.text_field :doseFrequenciaUnidadeMedida %>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :dtInicioTratamento %>
+        <div class="input-group">
+          <%= f.text_field :dtInicioTratamento, class: 'btn-pill datepicker-here form-control', 'data-language': "pt-BR", 'data-bs-original-title': 'data-bs-original-title' %>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div class="field">
-    <%= f.label :dtInicioTratamento %>
-    <%= f.text_field :dtInicioTratamento %>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :duracaoTratamento %>
+        <%= f.number_field :duracaoTratamento, class: 'form-control btn-pill' %>
+      </div>
+    </div>
   </div>
 
-  <div class="field">
-    <%= f.label :duracaoTratamento %>
-    <%= f.text_field :duracaoTratamento %>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :duracaoTratamentoMedida %>
+        <%= f.collection_radio_buttons :duracaoTratamentoMedida, @options[:duracao_tratamento_medida], :second, :first do |b| %>
+          <div class="d-block">
+            <%= b.radio_button %>
+            <%= b.label %>
+          </div>
+        <% end %>
+      </div>
+    </div>
   </div>
 
-  <div class="field">
-    <%= f.label :duracaoTratamentoMedida %>
-    <%= f.text_field :duracaoTratamentoMedida %>
-  </div>
-
-  <div class="field">
-    <%= f.label :quantidadeReceitada %>
-    <%= f.text_field :quantidadeReceitada %>
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <%= f.label :quantidadeReceitada %>
+        <%= f.number_field :quantidadeReceitada, class: 'form-control btn-pill' %>
+      </div>
+    </div>
   </div>
 
   <%= link_to_remove_association "remove medicine", f %>

@@ -1,0 +1,18 @@
+[
+  {
+    "Código": 0,
+    "Descrição": "Emergência"
+  },
+  {
+    "Código": 1,
+    "Descrição": "Urgência"
+  },
+  {
+    "Código": 2,
+    "Descrição": "Prioritário"
+  },
+  {
+    "Código": 3,
+    "Descrição": "Eletivo"
+  }
+]
