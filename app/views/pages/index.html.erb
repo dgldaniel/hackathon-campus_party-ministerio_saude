@@ -1,24 +1,77 @@
-<h1>Pages#index</h1>
-<p>Find me in app/views/pages/index.html.erb</p>
-<ul>
-  <li><%= link_to 'Cadastro Individual', individual_registrations_path %> </li>
-  <li><%= link_to 'Cadastro Domiliciar', household_registrations_path %> </li>
-  <li><%= link_to 'Atendimento Individual', individual_call_masters_path %> </li>
-  <li><%= link_to 'Ficha de Procedimento', procedure_sheets_path %> </li>
-  <li><%= link_to 'Ficha de Atividade Coletiva', collective_activity_sheets_path %> </li>
-  <li><%= link_to 'Diabetes/Hipertensão', patients_path %> </li>
-  <%# <li><a href='#'>Saúde da mulher</a> </li> </li>
-  <li><a href='#'>Idoso</a> </li> </li>
-  <li><a href='#'>Hanseniase</a> </li> </li>
-  <li><a href='#'>Tuberculose</a> </li> </li>
-  <li><a href='#'>População LGBT ( em construção)</a> </li> </li>
-  <li><a href='#'>TDAH</a> </li> </li>
-  <li><a href='#'>Autismo</a> </li> </li>
-  <li><a href='#'>Localização espacial</a> </li> </li>
-  <li><a href='#'>Em controle</a> </li> </li>
-  <li><a href='#'>Precisando de atenção</a> </li> </li>
-  <li><a href='#'>Atenção urgente</a> </li> </li>
-  <li><a href='#'>Mensagens enviadas e respondidas</a> </li> </li>
-  <li><a href='#'>Tipo de mensagem ou alarme para população alvo</a> </li> </li>
-  <li><a href='#'>Sobreposição de risco</a> </li> </li> %>
-</ul>
+<div class="container-fluid general-widget">
+  <div class="row">
+    <div class="col-sm-6 col-xl-3 col-lg-6">
+      <%= link_to individual_registrations_path do %>
+        <div class="card o-hidden border-0">
+          <div class="bg-primary b-r-4 card-body">
+            <div class="media static-top-widget">
+              <div class="align-self-center text-center"><i data-feather="user-plus"></i></div>
+              <div class="media-body"><span class="m-0">Cadastro</span>
+                <h4 class="mb-0 counter">Individual</h4>
+                <i class="icon-bg" data-feather="user-plus"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <div class="col-sm-6 col-xl-3 col-lg-6">
+      <%= link_to household_registrations_path do %>
+        <div class="card o-hidden border-0">
+          <div class="bg-primary b-r-4 card-body">
+            <div class="media static-top-widget">
+              <div class="align-self-center text-center"><i data-feather="home"></i></div>
+              <div class="media-body"><span class="m-0">Cadastro</span>
+                <h4 class="mb-0 counter">Domiciliar</h4>
+                <i class="icon-bg" data-feather="home"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <div class="col-sm-6 col-xl-3 col-lg-6">
+      <div class="card o-hidden border-0">
+        <div class="bg-secondary b-r-4 card-body">
+          <div class="media static-top-widget">
+            <div class="align-self-center text-center"><i data-feather="user-check"></i></div>
+            <div class="media-body"><span class="m-0">Atendimento</span>
+              <h4 class="mb-0 counter">Individual</h4>
+              <i class="icon-bg" data-feather="user-check"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-xl-3 col-lg-6">
+      <%= link_to procedure_sheets_path do %>
+        <div class="card o-hidden border-0">
+          <div class="bg-primary b-r-4 card-body">
+            <div class="media static-top-widget">
+              <div class="align-self-center text-center"><i data-feather="activity"></i></div>
+              <div class="media-body"><span class="m-0">Ficha de</span>
+                <h4 class="mb-0 counter">Procedimento</h4>
+                <i class="icon-bg" data-feather="activity"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <div class="col-sm-6 col-xl-3 col-lg-6">
+      <%= link_to collective_activity_sheets_path do %>
+        <div class="card o-hidden border-0">
+          <div class="bg-primary b-r-4 card-body">
+            <div class="media static-top-widget">
+              <div class="align-self-center text-center"><i data-feather="users"></i></div>
+              <div class="media-body"><span class="m-0">Atividade</span>
+                <h4 class="mb-0 counter">Coletiva</h4>
+                <i class="icon-bg" data-feather="users"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
