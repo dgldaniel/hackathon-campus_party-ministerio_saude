@@ -15,6 +15,8 @@ class CollectiveActivitySheet < ApplicationRecord
   has_one_attached :xml_file
   has_one_attached :thrift_file
 
+  paginates_per 10
+
   # validates_presence_of :dtAtividadeColetiva,
   #                       :responsavelCns,
   #                       :responsavelCnesUnidade,

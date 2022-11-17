@@ -5,7 +5,7 @@ class IndividualRegistrationsController < ApplicationController
 
   # GET /individual_registrations or /individual_registrations.json
   def index
-    @individual_registrations = current_user.doctor.individual_registrations.page params[:page]
+    @individual_registrations = current_user.doctor.individual_registrations.page(params[:page])
   end
 
   # GET /individual_registrations/1 or /individual_registrations/1.json

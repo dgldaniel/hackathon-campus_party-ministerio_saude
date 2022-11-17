@@ -11,21 +11,25 @@ The container tag
 
 =end
 %>
-
 <%= paginator.render do %>
-  <nav class="pagination">
-    <%= prev_page_tag unless current_page.first? %>
-    <%= next_page_tag unless current_page.last? %>
-    <ul class="pagination-list">
-      <%= first_page_tag unless current_page.first? %>
-      <% each_page do |page| %>
-        <% if page.display_tag? %>
-          <%= page_tag page %>
-        <% elsif !page.was_truncated? %>
-          <%= gap_tag %>
+  <div class="card-body">
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <%= prev_page_tag unless current_page.first? %>
+      <%= next_page_tag unless current_page.last? %>
+    </div>
+    <nav aria-label="Page navigation example">
+      <br>
+      <ul class="pagination pagination-primary">
+        <%= first_page_tag unless current_page.first? %>
+        <% each_page do |page| %>
+          <% if page.display_tag? %>
+            <%= page_tag page %>
+          <% elsif !page.was_truncated? %>
+            <%= gap_tag %>
+          <% end %>
         <% end %>
-      <% end %>
-      <%= last_page_tag unless current_page.last? %>
-    </ul>
-  </nav>
+        <%= last_page_tag unless current_page.last? %>
+      </ul>
+    </nav>
+  </div>
 <% end %>

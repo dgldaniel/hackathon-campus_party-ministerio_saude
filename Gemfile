@@ -23,18 +23,18 @@ gem 'jbuilder', '~> 2.7'
 gem 'devise'
 # Repository for collecting Locale data for Ruby on Rails I18n as well as other interesting, Rails related I18n stuff
 gem 'rails-i18n', '~> 6.0.0'
+
 gem 'sidekiq'
+
 gem 'redis'
 gem 'hiredis'
-gem 'kaminari'
+
 gem 'ransack'
 
 gem 'apexcharts'
 gem 'groupdate'
 
 gem 'twilio-ruby', '~> 5.67.3'
-
-gem 'image_processing', '~> 1.2'
 
 # Dynamic nested forms using jQuery made easy;
 gem "cocoon"
@@ -45,7 +45,13 @@ gem 'rubyzip'
 gem 'thrift'
 
 # Use Active Storage variant
-# gem 'image_processing', '~> 1.2'
+gem 'image_processing', '~> 1.2'
+
+# A Scope & Engine based, clean, powerful, customizable and sophisticated paginator for Ruby webapps
+gem 'kaminari'
+
+# Translations for the kaminari gem
+gem 'kaminari-i18n', '~> 0.3.2'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false

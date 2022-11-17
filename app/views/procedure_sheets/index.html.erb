@@ -43,6 +43,8 @@
         </div>
       <% end %>
       <br>
+      <%= paginate @procedure_sheets %>
+      <br>
       <%= link_to 'Nova Ficha de Procedimento', new_procedure_sheet_path, id: "addRow", class: 'btn btn-primary mb-3' %>
     </div>
   </div>

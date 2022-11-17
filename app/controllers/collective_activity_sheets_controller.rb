@@ -5,7 +5,7 @@ class CollectiveActivitySheetsController < ApplicationController
 
   # GET /collective_activity_sheets or /collective_activity_sheets.json
   def index
-    @collective_activity_sheets = current_user.doctor.collective_activity_sheets
+    @collective_activity_sheets = current_user.doctor.collective_activity_sheets.page(params[:page])
   end
 
   # GET /collective_activity_sheets/1 or /collective_activity_sheets/1.json

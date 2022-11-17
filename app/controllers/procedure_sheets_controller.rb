@@ -5,7 +5,7 @@ class ProcedureSheetsController < ApplicationController
 
   # GET /procedure_sheets or /procedure_sheets.json
   def index
-    @procedure_sheets = current_user.doctor.procedure_sheets
+    @procedure_sheets = current_user.doctor.procedure_sheets.page(params[:page])
   end
 
   # GET /procedure_sheets/1 or /procedure_sheets/1.json

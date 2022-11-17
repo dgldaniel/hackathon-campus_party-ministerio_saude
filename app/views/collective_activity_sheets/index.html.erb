@@ -45,6 +45,8 @@
         </div>
       <% end %>
       <br>
+      <%= paginate @collective_activity_sheets %>
+      <br>
       <%= link_to 'Nova Atividade Coletiva', new_collective_activity_sheet_path, id: "addRow", class: 'btn btn-primary mb-3' %>
     </div>
   </div>

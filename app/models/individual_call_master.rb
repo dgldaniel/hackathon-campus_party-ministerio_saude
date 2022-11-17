@@ -11,6 +11,8 @@ class IndividualCallMaster < ApplicationRecord
   before_create :generate_xml
   before_update :generate_xml
 
+  paginates_per 10
+
   scope :generate_xml_from, -> (start_date, end_date) { where("created_at >= ? AND created_at <= ?", start_date, end_date)}
 
   def generate_xml
