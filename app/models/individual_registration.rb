@@ -6,6 +6,8 @@ class IndividualRegistration < ApplicationRecord
 
   belongs_to :doctor
 
+  paginates_per 10
+
   has_one_attached :xml_file
   has_one_attached :thrift_file
 
@@ -46,7 +48,7 @@ class IndividualRegistration < ApplicationRecord
   # validates_presence_of :orientacaoSexualCidadao, if: proc { |field| field.statusDesejaInformarOrientacaoSexual == true }
   # validates_presence_of :povoComunidadeTradicional, if: proc { |field| field.statusMembroPovoComunidadeTradicional == true }
 
-  before_create :serialize_thrift
+  # before_create :serialize_thrift
   before_update :serialize_thrift
 
   scope :generate_xml_from, -> (start_date, end_date) { where("created_at >= ? AND created_at <= ?", start_date, end_date)}

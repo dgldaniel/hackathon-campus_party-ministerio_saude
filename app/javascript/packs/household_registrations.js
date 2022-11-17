@@ -1,4 +1,3 @@
-import "@nathanvda/cocoon";
 import 'jquery-validation';
 
 document.addEventListener('DOMContentLoaded', () => {

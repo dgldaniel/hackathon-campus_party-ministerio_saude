@@ -7,6 +7,8 @@ class HouseholdRegistration < ApplicationRecord
 
   belongs_to :doctor
 
+  paginates_per 10
+
   has_many :families, inverse_of: :household_registration, dependent: :destroy
   accepts_nested_attributes_for :families, reject_if: :all_blank, allow_destroy: true
 
@@ -40,7 +42,7 @@ class HouseholdRegistration < ApplicationRecord
   #                       :tratamentoAguaDomicilio,
   #                       if: proc { |field| field.statusTermoRecusaCadatroDomiciliarAtencaoBasica == false }
 
-  before_create :serialize_thrift
+  # before_create :serialize_thrift
 
   def serialize_thrift
     uuid_random = Digest::UUID.uuid_v4

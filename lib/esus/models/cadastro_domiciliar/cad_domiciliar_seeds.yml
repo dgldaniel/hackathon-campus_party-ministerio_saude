@@ -1,0 +1,3257 @@
+---
+- id: '6537'
+  uuid: 1bf6463b-77de-4606-97d4-dce4a63a0248
+  uuidFichaOriginadora: 2b413e23-4a87-4d2d-855e-9921d2692b62
+  nuMoradores: 
+  nuComodos: 
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '1'
+  tipoDomicilio: '5'
+  tipoAcessoDomicilio: '5'
+  materialPredominanteParedesExtDomicilio: '9'
+  abastecimentoAgua: '6'
+  tratamentoAguaDomicilio: '1'
+  formaEscoamentoBanheiro: '7'
+  destinoLixo: '1'
+  stDiponibilidadeEnergiaeletrica: 
+  stAnimaisNoDomicilio: 
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 06f5adc3181114d28e1ef1acc6c6d1cc
+  numero: 1ebac174d9db19b8bd7717bd3ce56de0
+  complemento: 
+  bairro: aec4068a8b4ab2891a63c48d73e7fb58
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '43212'
+  uuid: ce9ab752-9aa4-4e0d-aeef-269928c09da1
+  uuidFichaOriginadora: cfd680be-9f5b-4109-9cbf-8245cbb1ab9d
+  nuMoradores: '1'
+  nuComodos: '6'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '1'
+  localizacao: '3'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '1'
+  abastecimentoAgua: '1'
+  tratamentoAguaDomicilio: '2'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '2'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '0'
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 2e56d10f18e974c81d10fc4de8bbf12a0aa43d5465c06b838382845969574c91
+  numero: 950f9906a3e95ac155f0df6d867f8aef
+  complemento: 
+  bairro: 7d9704fec057702c604873a73b75e265
+  telReferencial: c7e98d1d14375cc9b8c08b3df26f82bd6e2f5988d3067af382c72df3dbaabe7e958a60b8865e5ddd7f76c1763e28db11
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '13001'
+  uuid: 7392826-773de29a-e489-4df4-8bf3-6104f0b84d4b
+  uuidFichaOriginadora: 7392826-773de29a-e489-4df4-8bf3-6104f0b84d4b
+  nuMoradores: '4'
+  nuComodos: '5'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '1'
+  localizacao: '3'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '1'
+  abastecimentoAgua: '2'
+  tratamentoAguaDomicilio: '2'
+  formaEscoamentoBanheiro: '2'
+  destinoLixo: '3'
+  stDiponibilidadeEnergiaeletrica: 
+  stAnimaisNoDomicilio: '0'
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 7be834f2c278b69c89701b666012ca9f
+  numero: fe7e5322ad1c6b976aad15dc8a4847e5
+  complemento: 
+  bairro: 30c2dc5674f5ca0efd3c928538b86227
+  telReferencial: 
+  telResidencial: eb772d3ca73cf671024fa430c68474b2
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '6538'
+  uuid: cb458fb2-f6c2-4ef5-803b-449986f8fe7d
+  uuidFichaOriginadora: beccd686-9167-4b14-ad73-6c84e8188e91
+  nuMoradores: 
+  nuComodos: 
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '1'
+  tipoDomicilio: '5'
+  tipoAcessoDomicilio: '5'
+  materialPredominanteParedesExtDomicilio: '9'
+  abastecimentoAgua: '6'
+  tratamentoAguaDomicilio: '1'
+  formaEscoamentoBanheiro: '7'
+  destinoLixo: '1'
+  stDiponibilidadeEnergiaeletrica: 
+  stAnimaisNoDomicilio: 
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 06f5adc3181114d28e1ef1acc6c6d1cc
+  numero: 32d03e8af0020650d9250d14b69a8bc8
+  complemento: 
+  bairro: aec4068a8b4ab2891a63c48d73e7fb58
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '12070'
+  uuid: 112fb124-6160-4bc5-a558-71c21ecbb8fc
+  uuidFichaOriginadora: 4e5b386e-48f6-4dfc-8cf6-89c58b933323
+  nuMoradores: 
+  nuComodos: 
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '1'
+  tipoDomicilio: '5'
+  tipoAcessoDomicilio: '5'
+  materialPredominanteParedesExtDomicilio: '9'
+  abastecimentoAgua: '6'
+  tratamentoAguaDomicilio: '1'
+  formaEscoamentoBanheiro: '7'
+  destinoLixo: '1'
+  stDiponibilidadeEnergiaeletrica: 
+  stAnimaisNoDomicilio: 
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 06f5adc3181114d28e1ef1acc6c6d1cc
+  numero: 1ebac174d9db19b8bd7717bd3ce56de0
+  complemento: 
+  bairro: aec4068a8b4ab2891a63c48d73e7fb58
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '12071'
+  uuid: b53d585b-d799-48be-95c7-0808bfebdeb7
+  uuidFichaOriginadora: 112fb124-6160-4bc5-a558-71c21ecbb8fc
+  nuMoradores: 
+  nuComodos: 
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '1'
+  tipoDomicilio: '5'
+  tipoAcessoDomicilio: '5'
+  materialPredominanteParedesExtDomicilio: '9'
+  abastecimentoAgua: '6'
+  tratamentoAguaDomicilio: '1'
+  formaEscoamentoBanheiro: '7'
+  destinoLixo: '1'
+  stDiponibilidadeEnergiaeletrica: 
+  stAnimaisNoDomicilio: 
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 06f5adc3181114d28e1ef1acc6c6d1cc
+  numero: 1ebac174d9db19b8bd7717bd3ce56de0
+  complemento: 
+  bairro: aec4068a8b4ab2891a63c48d73e7fb58
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '42854'
+  uuid: d97d94f9-908a-4aa6-a6c4-ce862cd414fa
+  uuidFichaOriginadora: 2e1956a2-b52a-4d75-b18a-fe16e7fc5bc8
+  nuMoradores: '1'
+  nuComodos: '5'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '4'
+  localizacao: '3'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '2'
+  abastecimentoAgua: '2'
+  tratamentoAguaDomicilio: '6'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '3'
+  stDiponibilidadeEnergiaeletrica: '0'
+  stAnimaisNoDomicilio: '1'
+  quantosAnimaisNoDomicilio: '50'
+  '0': '1'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 23da15dab9083d76107ee6c80d36f4ea
+  numero: 
+  complemento: 
+  bairro: aec4068a8b4ab2891a63c48d73e7fb58
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio:
+  - '131'
+  doctor_id: 1
+- id: '2525'
+  uuid: 3a140ee4-20f9-4e81-a54d-658914bf3d76
+  uuidFichaOriginadora: 3a140ee4-20f9-4e81-a54d-658914bf3d76
+  nuMoradores: '5'
+  nuComodos: '4'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '4'
+  localizacao: '3'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '4'
+  abastecimentoAgua: '2'
+  tratamentoAguaDomicilio: '6'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '3'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '0'
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: b26c152401a5260d0d2b3b54e5f00e04
+  numero: 69753d81386a377bce97f82308cd0255
+  complemento: 
+  bairro: 75a48ff1a2fd2308b8a1cc69b0698767
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '12072'
+  uuid: 5c739f77-354a-4b95-ab42-a510f7379aa4
+  uuidFichaOriginadora: 585b43c6-837c-4118-a857-7baed4a3f518
+  nuMoradores: 
+  nuComodos: 
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '1'
+  tipoDomicilio: '5'
+  tipoAcessoDomicilio: '5'
+  materialPredominanteParedesExtDomicilio: '9'
+  abastecimentoAgua: '6'
+  tratamentoAguaDomicilio: '1'
+  formaEscoamentoBanheiro: '7'
+  destinoLixo: '1'
+  stDiponibilidadeEnergiaeletrica: 
+  stAnimaisNoDomicilio: 
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 06f5adc3181114d28e1ef1acc6c6d1cc
+  numero: 32d03e8af0020650d9250d14b69a8bc8
+  complemento: 
+  bairro: aec4068a8b4ab2891a63c48d73e7fb58
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '34152'
+  uuid: d99c8efb-f452-46d5-beac-0b744564cf99
+  uuidFichaOriginadora: 64b6ffbf-a73f-4d70-a308-8038f26ed981
+  nuMoradores: '1'
+  nuComodos: '5'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '57'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '2'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '1'
+  abastecimentoAgua: '1'
+  tratamentoAguaDomicilio: '4'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '2'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '0'
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: df6b08f5c2a2bbcec9a2a2ac3fb83cd1
+  numero: 6778ecd71390d33924c7ef95411ab352
+  complemento: 
+  bairro: 5644f3d361abdce032037362ac0d1627
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '34173'
+  uuid: a268e591-94a7-4d29-a8ba-c33f6cd6d79b
+  uuidFichaOriginadora: d99c8efb-f452-46d5-beac-0b744564cf99
+  nuMoradores: '1'
+  nuComodos: '5'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '57'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '2'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '1'
+  abastecimentoAgua: '1'
+  tratamentoAguaDomicilio: '4'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '2'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '0'
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: df6b08f5c2a2bbcec9a2a2ac3fb83cd1
+  numero: 6778ecd71390d33924c7ef95411ab352
+  complemento: 
+  bairro: 5644f3d361abdce032037362ac0d1627
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '32612'
+  uuid: 5a707b27-c204-4266-9034-1bb1b22951e5
+  uuidFichaOriginadora: 9d54445f-8cef-463b-af22-ddbd99d1463d
+  nuMoradores: '2'
+  nuComodos: '5'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '1'
+  localizacao: '3'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '1'
+  abastecimentoAgua: '1'
+  tratamentoAguaDomicilio: '2'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '3'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '0'
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 2a6082fe443c20d9862c955832de98c4
+  numero: 744acf494e9e254c376dafa87a5fb82d
+  complemento: 
+  bairro: '03738f3dcf5480c24a1181ba4db970f2'
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '45761'
+  uuid: d09a092f-29c1-4445-923b-0a316c2a7f69
+  uuidFichaOriginadora: d09a092f-29c1-4445-923b-0a316c2a7f69
+  nuMoradores: '1'
+  nuComodos: '4'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '1'
+  localizacao: '3'
+  tipoDomicilio: '2'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '4'
+  abastecimentoAgua: '2'
+  tratamentoAguaDomicilio: '6'
+  formaEscoamentoBanheiro: '2'
+  destinoLixo: '4'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '1'
+  quantosAnimaisNoDomicilio: '3'
+  '0': '1'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 20204581c2731f39295bb447fa787a5a
+  numero: 25052c5615c842ad3a08ff7946f88777
+  complemento: 
+  bairro: 8550466e07ecb09f9200a4914ea79905
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio:
+  - '131'
+  doctor_id: 1
+- id: '35596'
+  uuid: aa0fac2a-c891-4934-8d0d-441a7f56297b
+  uuidFichaOriginadora: b6430ac2-a075-409b-a5fc-3396d3eda1cf
+  nuMoradores: '1'
+  nuComodos: '6'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '57'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '2'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '1'
+  abastecimentoAgua: '1'
+  tratamentoAguaDomicilio: '2'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '2'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '0'
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 2758726925be4bb7286944a042e12dbc
+  numero: 9483466d8dc01ea23519aada22112c47
+  complemento: 
+  bairro: b3387a10128193d1792bf7f188fe5583
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '9016'
+  uuid: 1019905e-2dbb-4836-aa7b-6bed2e4247e2
+  uuidFichaOriginadora: 071d2bf2-7eab-4fd2-a948-ff82a089fc45
+  nuMoradores: 
+  nuComodos: 
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '1'
+  tipoDomicilio: '5'
+  tipoAcessoDomicilio: '5'
+  materialPredominanteParedesExtDomicilio: '9'
+  abastecimentoAgua: '6'
+  tratamentoAguaDomicilio: '1'
+  formaEscoamentoBanheiro: '7'
+  destinoLixo: '1'
+  stDiponibilidadeEnergiaeletrica: 
+  stAnimaisNoDomicilio: 
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 06f5adc3181114d28e1ef1acc6c6d1cc
+  numero: 32d03e8af0020650d9250d14b69a8bc8
+  complemento: 
+  bairro: aec4068a8b4ab2891a63c48d73e7fb58
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '20029'
+  uuid: 2682850-ca1f69fd-c2bd-41aa-b6b5-ac731eb7533e
+  uuidFichaOriginadora: 2682850-ca1f69fd-c2bd-41aa-b6b5-ac731eb7533e
+  nuMoradores: '7'
+  nuComodos: '1'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '8'
+  localizacao: '3'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '4'
+  abastecimentoAgua: '2'
+  tratamentoAguaDomicilio: '4'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '3'
+  stDiponibilidadeEnergiaeletrica: 
+  stAnimaisNoDomicilio: '1'
+  quantosAnimaisNoDomicilio: '7'
+  '0': '1'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 15000ff9278119c922a755462c76f27c
+  numero: fe7e5322ad1c6b976aad15dc8a4847e5
+  complemento: 
+  bairro: 8550466e07ecb09f9200a4914ea79905
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio:
+  - '129'
+  - '131'
+  doctor_id: 1
+- id: '36595'
+  uuid: 8ce39479-5a99-4129-8fb8-048c1fb4515b
+  uuidFichaOriginadora: 5847be8d-11fd-4362-8fe8-2ad4dc874cca
+  nuMoradores: '10'
+  nuComodos: '4'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '1'
+  localizacao: '3'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '3'
+  materialPredominanteParedesExtDomicilio: '4'
+  abastecimentoAgua: '2'
+  tratamentoAguaDomicilio: '2'
+  formaEscoamentoBanheiro: '5'
+  destinoLixo: '3'
+  stDiponibilidadeEnergiaeletrica: '0'
+  stAnimaisNoDomicilio: '0'
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: e8e9c9248a25ff1bcd4c075f14d0f70c
+  numero: c4d44b47ea8f7af84e71788270a911e9
+  complemento: 
+  bairro: e8e9c9248a25ff1bcd4c075f14d0f70c
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '44064'
+  uuid: 9cec347e-b546-4f9e-8000-11da6142d6d4
+  uuidFichaOriginadora: 78fd726f-6edf-4f5e-a2cd-eb0838b3e0a9
+  nuMoradores: '1'
+  nuComodos: '6'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '57'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '3'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '1'
+  materialPredominanteParedesExtDomicilio: '1'
+  abastecimentoAgua: '1'
+  tratamentoAguaDomicilio: '6'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '2'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '0'
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: f1f6f05ee1564982757f794f745842395eab02c15293dea16156120b37259edc
+  numero: 0b623a731fac4f62e98294f3f64e0c89
+  complemento: 
+  bairro: 4d84d8f6f62e5241766166a5baa5b034
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '43033'
+  uuid: 5df99659-ff5d-4b63-b02d-c117bbb44739
+  uuidFichaOriginadora: 4f58ed3a-fa02-4397-9208-bc4ef8eb2087
+  nuMoradores: '1'
+  nuComodos: '4'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '1'
+  localizacao: '3'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '4'
+  abastecimentoAgua: '2'
+  tratamentoAguaDomicilio: '6'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '3'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '1'
+  quantosAnimaisNoDomicilio: '2'
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 5f43cff0123f55f998aa2127c364381c
+  numero: d9df539592e2da8c3ffbada9ae05f7e3
+  complemento: 
+  bairro: 5f43cff0123f55f998aa2127c364381c
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio:
+  - '128'
+  - '129'
+  doctor_id: 1
+- id: '44154'
+  uuid: d8683aa9-a124-4649-893d-61874f1882a5
+  uuidFichaOriginadora: 5a6c27d7-2eaa-479b-a65c-c3689efef2d6
+  nuMoradores: '1'
+  nuComodos: '5'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '57'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '8'
+  localizacao: '3'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '2'
+  abastecimentoAgua: '1'
+  tratamentoAguaDomicilio: '2'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '3'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '1'
+  quantosAnimaisNoDomicilio: '1'
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 27374daa07041b6eaa2d551971984eb3
+  numero: 309561d8a444f4cb99c14edf6dd72573
+  complemento: 
+  bairro: f6287ec28b17ecc662db0c73d8301411
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio:
+  - '129'
+  doctor_id: 1
+- id: '42636'
+  uuid: 7d5bc274-f537-40a2-8baf-e9a1e397f061
+  uuidFichaOriginadora: 8c88950c-f3d1-4b6e-8e96-a8e180582542
+  nuMoradores: '1'
+  nuComodos: 
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '71'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '2'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '2'
+  abastecimentoAgua: '1'
+  tratamentoAguaDomicilio: '6'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '2'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '1'
+  quantosAnimaisNoDomicilio: '2'
+  '0': '1'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 746135ff91c954889c174a36e00e8dd5
+  numero: 
+  complemento: 
+  bairro: '0285e85229fd2819435438408063074d96387d8f4806be458c5f723e35ffe124'
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio:
+  - '131'
+  doctor_id: 1
+- id: '13598'
+  uuid: 49035c86-9ef4-4321-859f-e099b75f6993
+  uuidFichaOriginadora: ed5c5aeb-38f0-4af3-ac10-6c6ce0325c33
+  nuMoradores: '1'
+  nuComodos: '2'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '248'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '2'
+  tipoDomicilio: '4'
+  tipoAcessoDomicilio: '1'
+  materialPredominanteParedesExtDomicilio: '1'
+  abastecimentoAgua: '1'
+  tratamentoAguaDomicilio: '2'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '2'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '0'
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 484eb8feee9ecc47fd0a2fbf42bf5e3c
+  numero: 29b8dac75f6c57d112206e43bc598dcf
+  complemento: 6219ba34442c597c4704bf0562bad5ec965bcf696923d8fe76c633670faa7ac5
+  bairro: ae36abaf234e0dc0217b3c3598a5a1ec
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '14548'
+  uuid: f182503d-9068-407c-a4f2-dae0fa3b8d81
+  uuidFichaOriginadora: c53a9a40-11e3-4bd5-ae44-544d3442c4ba
+  nuMoradores: 
+  nuComodos: 
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '57'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '1'
+  tipoDomicilio: '5'
+  tipoAcessoDomicilio: '5'
+  materialPredominanteParedesExtDomicilio: '9'
+  abastecimentoAgua: '6'
+  tratamentoAguaDomicilio: '1'
+  formaEscoamentoBanheiro: '7'
+  destinoLixo: '1'
+  stDiponibilidadeEnergiaeletrica: 
+  stAnimaisNoDomicilio: 
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 7714e47d656dd868dd8fb51e162ab69de7e304942b6cf4422ccaf02dabd9421f
+  numero: 30a886ead8117db13bc629a6932ff729
+  complemento: 
+  bairro: a4b62f5dc875113c590db1a5654bcb10
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '42638'
+  uuid: 1d523bf3-bd5e-488a-bf75-5906d130c3a1
+  uuidFichaOriginadora: 86766045-39fa-489f-84c6-d247b149b84a
+  nuMoradores: '5'
+  nuComodos: '5'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '57'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '2'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '1'
+  materialPredominanteParedesExtDomicilio: '2'
+  abastecimentoAgua: '1'
+  tratamentoAguaDomicilio: '6'
+  formaEscoamentoBanheiro: '5'
+  destinoLixo: '2'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '0'
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 2d8e1e01979e1deb0ae4fc7bee4f4a92
+  numero: 
+  complemento: 
+  bairro: '0285e85229fd2819435438408063074d96387d8f4806be458c5f723e35ffe124'
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '2968'
+  uuid: 1067a735-4a38-49c9-a693-bd78eff373b0
+  uuidFichaOriginadora: 1067a735-4a38-49c9-a693-bd78eff373b0
+  nuMoradores: '1'
+  nuComodos: '4'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '3'
+  localizacao: '3'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '1'
+  abastecimentoAgua: '2'
+  tratamentoAguaDomicilio: '6'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '3'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '1'
+  quantosAnimaisNoDomicilio: '3'
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: ee81355e933c5fdd5d41e843b60127c1
+  numero: '09d4a309ac80bfedf57a8025d87c8728'
+  complemento: 
+  bairro: ee81355e933c5fdd5d41e843b60127c1
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio:
+  - '128'
+  - '129'
+  doctor_id: 1
+- id: '4504'
+  uuid: 1be7c144-65a6-4bfb-9ea0-a5d1b9b223d6
+  uuidFichaOriginadora: 1be7c144-65a6-4bfb-9ea0-a5d1b9b223d6
+  nuMoradores: '2'
+  nuComodos: '5'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '57'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '2'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '1'
+  materialPredominanteParedesExtDomicilio: '1'
+  abastecimentoAgua: '1'
+  tratamentoAguaDomicilio: '2'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '2'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '0'
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: f66de410e6d7a5154cf3b318b375eeb6
+  numero: 1db3d531fafe7f1d65ce277e79969b5c
+  complemento: 
+  bairro: ae36abaf234e0dc0217b3c3598a5a1ec
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '36564'
+  uuid: a313652c-95d6-4fdc-9d1c-6a717dcc9892
+  uuidFichaOriginadora: b3a50b74-ed54-45f4-8bac-9eacde92bae5
+  nuMoradores: '4'
+  nuComodos: '6'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '6'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '2'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '1'
+  materialPredominanteParedesExtDomicilio: '2'
+  abastecimentoAgua: '2'
+  tratamentoAguaDomicilio: '2'
+  formaEscoamentoBanheiro: '2'
+  destinoLixo: '2'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '1'
+  quantosAnimaisNoDomicilio: '12'
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 56cc7fa0191a3aa8a7d7210c714483dc
+  numero: 
+  complemento: 
+  bairro: 61e8b5f94ef047b17cb5b8259c0440cf
+  telReferencial: 5c846f0f9f92ff412dab4a06952e2e65
+  telResidencial: b846fea8b9d2298b608e1e6ea22bf8f4
+  animaisNoDomicilio:
+  - '128'
+  - '129'
+  doctor_id: 1
+- id: '5176'
+  uuid: cefa78e0-9237-4194-aee2-a930d35a05b4
+  uuidFichaOriginadora: 20819543-aad8-4c2b-96b1-e96fa79fc502
+  nuMoradores: '1'
+  nuComodos: '4'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '3'
+  localizacao: '3'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '1'
+  abastecimentoAgua: '2'
+  tratamentoAguaDomicilio: '6'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '3'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '1'
+  quantosAnimaisNoDomicilio: '1'
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: ee81355e933c5fdd5d41e843b60127c1
+  numero: '09d4a309ac80bfedf57a8025d87c8728'
+  complemento: 
+  bairro: ee81355e933c5fdd5d41e843b60127c1
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio:
+  - '128'
+  doctor_id: 1
+- id: '6504'
+  uuid: 7b9b2859-c325-4c97-9a13-8c414b2b87b8
+  uuidFichaOriginadora: 17f392c5-5e24-41be-bc66-d6b71b1013d1
+  nuMoradores: '2'
+  nuComodos: '3'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '1'
+  localizacao: '3'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '7'
+  abastecimentoAgua: '2'
+  tratamentoAguaDomicilio: '4'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '3'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '1'
+  quantosAnimaisNoDomicilio: '12'
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: d964ea18cee3ea47de408bafce33f9d2
+  numero: 
+  complemento: 
+  bairro: 4d84d8f6f62e5241766166a5baa5b034
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio:
+  - '128'
+  - '129'
+  doctor_id: 1
+- id: '22036'
+  uuid: d1e4d9cb-b8b8-4267-80b1-cb13fd9347c1
+  uuidFichaOriginadora: f1241c96-75e9-4072-9410-1f58daeaeb11
+  nuMoradores: 
+  nuComodos: 
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '1'
+  tipoDomicilio: '5'
+  tipoAcessoDomicilio: '5'
+  materialPredominanteParedesExtDomicilio: '9'
+  abastecimentoAgua: '6'
+  tratamentoAguaDomicilio: '1'
+  formaEscoamentoBanheiro: '7'
+  destinoLixo: '1'
+  stDiponibilidadeEnergiaeletrica: 
+  stAnimaisNoDomicilio: 
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: d964ea18cee3ea47de408bafce33f9d2
+  numero: 
+  complemento: 
+  bairro: 4d84d8f6f62e5241766166a5baa5b034
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '27179'
+  uuid: 7392826-f3f383ba-d44d-44e1-a643-d9aaae1f7afd
+  uuidFichaOriginadora: 7392826-f3f383ba-d44d-44e1-a643-d9aaae1f7afd
+  nuMoradores: 
+  nuComodos: 
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '1'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '57'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '1'
+  tipoDomicilio: '5'
+  tipoAcessoDomicilio: '5'
+  materialPredominanteParedesExtDomicilio: '9'
+  abastecimentoAgua: '6'
+  tratamentoAguaDomicilio: '1'
+  formaEscoamentoBanheiro: '7'
+  destinoLixo: '1'
+  stDiponibilidadeEnergiaeletrica: 
+  stAnimaisNoDomicilio: 
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 261fe90f087dca36da0989aefa250e73
+  numero: fe7e5322ad1c6b976aad15dc8a4847e5
+  complemento: 
+  bairro: 3ecc61ec15dcdda586ac2ecb8f218fdd
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '34115'
+  uuid: 40da0dac-31b9-4b0a-bdfe-9cf0a28b80b4
+  uuidFichaOriginadora: 34256473-cd18-422e-849e-adb930d791c8
+  nuMoradores: 
+  nuComodos: 
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '57'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '1'
+  tipoDomicilio: '5'
+  tipoAcessoDomicilio: '5'
+  materialPredominanteParedesExtDomicilio: '9'
+  abastecimentoAgua: '6'
+  tratamentoAguaDomicilio: '1'
+  formaEscoamentoBanheiro: '7'
+  destinoLixo: '1'
+  stDiponibilidadeEnergiaeletrica: 
+  stAnimaisNoDomicilio: 
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 7714e47d656dd868dd8fb51e162ab69de7e304942b6cf4422ccaf02dabd9421f
+  numero: 30a886ead8117db13bc629a6932ff729
+  complemento: 
+  bairro: a4b62f5dc875113c590db1a5654bcb10
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '42653'
+  uuid: 126c5c35-bf4c-4020-a83d-ef52adacccb1
+  uuidFichaOriginadora: 5a85be06-7f65-441a-8cfd-28a365c5ac7e
+  nuMoradores: '1'
+  nuComodos: '3'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '2'
+  localizacao: '3'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '4'
+  abastecimentoAgua: '2'
+  tratamentoAguaDomicilio: '6'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '3'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '0'
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: c794dba2aa19aa6dd84a680dea522e0f
+  numero: 
+  complemento: 
+  bairro: aec4068a8b4ab2891a63c48d73e7fb58
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '5163'
+  uuid: 20819543-aad8-4c2b-96b1-e96fa79fc502
+  uuidFichaOriginadora: 1067a735-4a38-49c9-a693-bd78eff373b0
+  nuMoradores: '1'
+  nuComodos: '4'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '3'
+  localizacao: '3'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '1'
+  abastecimentoAgua: '2'
+  tratamentoAguaDomicilio: '6'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '3'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '1'
+  quantosAnimaisNoDomicilio: '1'
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: ee81355e933c5fdd5d41e843b60127c1
+  numero: '09d4a309ac80bfedf57a8025d87c8728'
+  complemento: 
+  bairro: ee81355e933c5fdd5d41e843b60127c1
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio:
+  - '128'
+  doctor_id: 1
+- id: '23043'
+  uuid: a3d1a116-aa98-4729-8588-fd070d147249
+  uuidFichaOriginadora: f3baba15-a016-42d9-b28f-25af4abc87f9
+  nuMoradores: 
+  nuComodos: 
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '1'
+  tipoDomicilio: '5'
+  tipoAcessoDomicilio: '5'
+  materialPredominanteParedesExtDomicilio: '9'
+  abastecimentoAgua: '6'
+  tratamentoAguaDomicilio: '1'
+  formaEscoamentoBanheiro: '7'
+  destinoLixo: '1'
+  stDiponibilidadeEnergiaeletrica: 
+  stAnimaisNoDomicilio: 
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 06f5adc3181114d28e1ef1acc6c6d1cc
+  numero: 1ebac174d9db19b8bd7717bd3ce56de0
+  complemento: 
+  bairro: aec4068a8b4ab2891a63c48d73e7fb58
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '5122'
+  uuid: 2fad78ee-9d73-4910-aefc-0a4e5315e5fa
+  uuidFichaOriginadora: 9077ccc6-b9fe-4f0e-984d-592b0a14811a
+  nuMoradores: '3'
+  nuComodos: '5'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '28'
+  situacaoMoradiaPosseTerra: '1'
+  localizacao: '3'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '5'
+  abastecimentoAgua: '2'
+  tratamentoAguaDomicilio: '2'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '3'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '1'
+  quantosAnimaisNoDomicilio: '27'
+  '0': '1'
+  cep: dcd73bde6b4df07b576c581b7f1ff6f7
+  nomeLogradouro: d964ea18cee3ea47de408bafce33f9d2
+  numero: 
+  complemento: 
+  bairro: 4d84d8f6f62e5241766166a5baa5b034
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio:
+  - '128'
+  - '129'
+  - '131'
+  doctor_id: 1
+- id: '42071'
+  uuid: dde9d409-2ae2-48e1-8aec-697909e77a60
+  uuidFichaOriginadora: 5a2af5af-746f-4f83-9988-1973dfdffbd5
+  nuMoradores: '2'
+  nuComodos: '5'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '1'
+  localizacao: '3'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '1'
+  abastecimentoAgua: '2'
+  tratamentoAguaDomicilio: '2'
+  formaEscoamentoBanheiro: '2'
+  destinoLixo: '3'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '1'
+  quantosAnimaisNoDomicilio: '8'
+  '0': '1'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: c654fd2638173dc1cebd77d87f3587c7
+  numero: f8f8bf0435be026537ab3adbd4ff2195
+  complemento: 
+  bairro: 8550466e07ecb09f9200a4914ea79905
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio:
+  - '129'
+  - '131'
+  doctor_id: 1
+- id: '32586'
+  uuid: 6a23707b-6c5b-4893-80a6-da8766464d1f
+  uuidFichaOriginadora: 5fc6c40f-4c14-45a6-b220-467564bc5d3c
+  nuMoradores: '1'
+  nuComodos: '4'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '57'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '2'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '2'
+  abastecimentoAgua: '5'
+  tratamentoAguaDomicilio: '6'
+  formaEscoamentoBanheiro: '2'
+  destinoLixo: '2'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '0'
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: aa7025fa752d1ef11d28e031532651c8
+  numero: 
+  complemento: 
+  bairro: a4b62f5dc875113c590db1a5654bcb10
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '32587'
+  uuid: 6cc9a0b6-375a-4073-90cc-f8eb662ae5d0
+  uuidFichaOriginadora: c94b3c87-db97-40f8-8b69-fe2989230904
+  nuMoradores: '2'
+  nuComodos: '6'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '6'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '2'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '1'
+  materialPredominanteParedesExtDomicilio: '1'
+  abastecimentoAgua: '2'
+  tratamentoAguaDomicilio: '2'
+  formaEscoamentoBanheiro: '2'
+  destinoLixo: '2'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '0'
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 216659f1b9d6b916c684f82056710e54
+  numero: 
+  complemento: 
+  bairro: bf53336a3ba261353eb577c8d8c8a021
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '32591'
+  uuid: e431a5b7-206a-4ee8-8fab-3316b1072ddd
+  uuidFichaOriginadora: 199864cd-a5ff-4782-af8b-8e9c011e92fa
+  nuMoradores: '1'
+  nuComodos: '6'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '57'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '2'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '1'
+  materialPredominanteParedesExtDomicilio: '1'
+  abastecimentoAgua: '1'
+  tratamentoAguaDomicilio: '5'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '2'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '0'
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 29744c8047fc9ba2bab510a3b43c9f4a
+  numero: 19aba936c8f2fa36be773a9d9be89661
+  complemento: 
+  bairro: ae36abaf234e0dc0217b3c3598a5a1ec
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '13897'
+  uuid: 33813450-a203-46fb-b4f9-5c44ce88e01e
+  uuidFichaOriginadora: 33813450-a203-46fb-b4f9-5c44ce88e01e
+  nuMoradores: '3'
+  nuComodos: '4'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '57'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '2'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '3'
+  materialPredominanteParedesExtDomicilio: '4'
+  abastecimentoAgua: '2'
+  tratamentoAguaDomicilio: '6'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '3'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '0'
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: '058cef40a385e86709ac24f0566ff961'
+  numero: 2416d3e18a54ecc08e6ba63586318a3d
+  complemento: 
+  bairro: c9edee1bd2fb1c0a322363ef6d565250
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '42819'
+  uuid: 68633d73-d8d9-4b81-8bab-0ec0d93e58a6
+  uuidFichaOriginadora: 0d1d7560-a263-405a-9654-dfb611b4fdb0
+  nuMoradores: '1'
+  nuComodos: '5'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '47'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '1'
+  localizacao: '3'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '1'
+  abastecimentoAgua: '1'
+  tratamentoAguaDomicilio: '2'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '2'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '1'
+  quantosAnimaisNoDomicilio: '1'
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 79abc02d6de261b6f9c5c3930cf538b1
+  numero: a647c7180886b4202ca65e83000c4af3
+  complemento: 
+  bairro: 7d9704fec057702c604873a73b75e265
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio:
+  - '129'
+  doctor_id: 1
+- id: '73697'
+  uuid: d6c3b3cd-d221-4d55-bd18-f04b6a39d374
+  uuidFichaOriginadora: d6c3b3cd-d221-4d55-bd18-f04b6a39d374
+  nuMoradores: '1'
+  nuComodos: '4'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '57'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '2'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '1'
+  abastecimentoAgua: '1'
+  tratamentoAguaDomicilio: '6'
+  formaEscoamentoBanheiro: '2'
+  destinoLixo: '3'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '0'
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 3dad87bf61a76951550e6c60eaf174cb
+  numero: 
+  complemento: 
+  bairro: 4576063821c41a508434b5b4545e3f3c
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '85080'
+  uuid: 6fef4e01-ba9f-4df5-b861-f277f81f19d8
+  uuidFichaOriginadora: 6fef4e01-ba9f-4df5-b861-f277f81f19d8
+  nuMoradores: 
+  nuComodos: '2'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '57'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '8'
+  localizacao: '3'
+  tipoDomicilio: '3'
+  tipoAcessoDomicilio: '1'
+  materialPredominanteParedesExtDomicilio: '1'
+  abastecimentoAgua: '1'
+  tratamentoAguaDomicilio: '6'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '2'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '0'
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: faf4391430fe022224355a0d484d155c
+  numero: 4b2c2d128b390097d4a5e9f9154e38ed
+  complemento: 
+  bairro: 7d9704fec057702c604873a73b75e265
+  telReferencial: e5e17a4bcd4e230f56da8f8ac35d06e8
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '42850'
+  uuid: 5a85be06-7f65-441a-8cfd-28a365c5ac7e
+  uuidFichaOriginadora: 5e9c5971-51a8-4cdf-8cc3-464f1ffd85da
+  nuMoradores: '1'
+  nuComodos: '3'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '2'
+  localizacao: '3'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '4'
+  abastecimentoAgua: '2'
+  tratamentoAguaDomicilio: '6'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '3'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '0'
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: c794dba2aa19aa6dd84a680dea522e0f
+  numero: 
+  complemento: 
+  bairro: aec4068a8b4ab2891a63c48d73e7fb58
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '5123'
+  uuid: 1ab0cb20-40ff-41f0-8cf6-f244598452ec
+  uuidFichaOriginadora: 714fb9c3-7a5b-4e84-b6ba-8a80496a23ed
+  nuMoradores: '4'
+  nuComodos: '4'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '3'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '4'
+  abastecimentoAgua: '2'
+  tratamentoAguaDomicilio: '2'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '3'
+  stDiponibilidadeEnergiaeletrica: '0'
+  stAnimaisNoDomicilio: '1'
+  quantosAnimaisNoDomicilio: '2'
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 4b866f4e41f55cc08f9396e65a1f6c41
+  numero: 
+  complemento: 
+  bairro: 4d84d8f6f62e5241766166a5baa5b034
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio:
+  - '129'
+  doctor_id: 1
+- id: '43369'
+  uuid: 7d7ff60f-8acc-41fa-bb23-3ca7d7ec3eb3
+  uuidFichaOriginadora: 9bf687c4-de62-41d6-96b3-9f35d5ad30e2
+  nuMoradores: '2'
+  nuComodos: '5'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '57'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '2'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '1'
+  materialPredominanteParedesExtDomicilio: '1'
+  abastecimentoAgua: '1'
+  tratamentoAguaDomicilio: '6'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '2'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '0'
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: f9b47270283e969010c7025e891f5b16
+  numero: 4c7aed887120e5da14010543ad091afd
+  complemento: 
+  bairro: aa5e6f2292d90f143fee34720d3ebb43
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '32592'
+  uuid: 525153c0-2ea4-4bbb-87db-9ab8ae616631
+  uuidFichaOriginadora: cbdd7910-0fd5-4be9-8a5a-8138a49416f3
+  nuMoradores: '1'
+  nuComodos: '7'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '158'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '2'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '1'
+  materialPredominanteParedesExtDomicilio: '1'
+  abastecimentoAgua: '1'
+  tratamentoAguaDomicilio: '6'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '2'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '0'
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 29744c8047fc9ba2bab510a3b43c9f4a
+  numero: 0102b01d23f808fafe1f8db6dc615abb
+  complemento: 71db8a1d593ca791e1fbf7b3df49d18cfc0b954323f5b1dda8a66f9bc86fadc8
+  bairro: ae36abaf234e0dc0217b3c3598a5a1ec
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '14066'
+  uuid: f1ed1bc9-94db-41a3-9c11-f102425afc51
+  uuidFichaOriginadora: 8824840c-c611-4f7a-8553-3e9a2c01d98c
+  nuMoradores: '1'
+  nuComodos: '6'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '57'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '2'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '1'
+  materialPredominanteParedesExtDomicilio: '1'
+  abastecimentoAgua: '1'
+  tratamentoAguaDomicilio: '2'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '2'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '0'
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 0a6d6dd7a402bcab50a4abde11793854bbfa3389df1e696375a85b137da22d4a
+  numero: 040e66ab69c41675500e7ca22fca33bc
+  complemento: 
+  bairro: 83f50e127e9bc8eab946340be78fb2b2
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '10024'
+  uuid: 1ceeb0c8-ba5d-4ea1-983b-be68f1bbf8f5
+  uuidFichaOriginadora: 1ceeb0c8-ba5d-4ea1-983b-be68f1bbf8f5
+  nuMoradores: '1'
+  nuComodos: '3'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '57'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '2'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '2'
+  abastecimentoAgua: '1'
+  tratamentoAguaDomicilio: '6'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '2'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '0'
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 67c78e76bf9290c061b3a480601b4cae
+  numero: '09d4a309ac80bfedf57a8025d87c8728'
+  complemento: 
+  bairro: 2d930ce9f04ebec66a689509e828378f
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '42103'
+  uuid: f6c111e4-73f0-4081-b65f-5b0a3abdab28
+  uuidFichaOriginadora: fad7d355-f312-4b00-9013-65b5b3b2c797
+  nuMoradores: '1'
+  nuComodos: '8'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '57'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '2'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '1'
+  abastecimentoAgua: '1'
+  tratamentoAguaDomicilio: '6'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '2'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '1'
+  quantosAnimaisNoDomicilio: '1'
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 67c78e76bf9290c061b3a480601b4cae
+  numero: bbea237177908f93c548f03a1e1a58d7
+  complemento: 
+  bairro: 2d930ce9f04ebec66a689509e828378f
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio:
+  - '129'
+  doctor_id: 1
+- id: '83141'
+  uuid: b92a8c78-4afc-4685-a3ab-9260f12affda
+  uuidFichaOriginadora: b92a8c78-4afc-4685-a3ab-9260f12affda
+  nuMoradores: 
+  nuComodos: '5'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '3'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '1'
+  abastecimentoAgua: '2'
+  tratamentoAguaDomicilio: '6'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '3'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '0'
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 7ac4d29478b81a6a10ee1cf02f8bacbd
+  nomeLogradouro: 102f56e30c69c7b939777e85d8db14a8
+  numero: c36e1d7582d2d4028f9146c601c8871b
+  complemento: 
+  bairro: 7be834f2c278b69c89701b666012ca9f
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '42115'
+  uuid: 67524192-9d55-4113-bdc6-65460b8ee095
+  uuidFichaOriginadora: 016e0185-119a-45c8-a796-ca951490d6d8
+  nuMoradores: '1'
+  nuComodos: '4'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '1'
+  localizacao: '3'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '4'
+  abastecimentoAgua: '2'
+  tratamentoAguaDomicilio: '2'
+  formaEscoamentoBanheiro: '5'
+  destinoLixo: '4'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '0'
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 87c7518cadce02a0d5c08cadd0fa01fa
+  numero: a647c7180886b4202ca65e83000c4af3
+  complemento: 
+  bairro: 87c7518cadce02a0d5c08cadd0fa01fa
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '22033'
+  uuid: f1241c96-75e9-4072-9410-1f58daeaeb11
+  uuidFichaOriginadora: 4eec169c-d619-45a9-81b1-00ff011983f5
+  nuMoradores: 
+  nuComodos: 
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '1'
+  tipoDomicilio: '5'
+  tipoAcessoDomicilio: '5'
+  materialPredominanteParedesExtDomicilio: '9'
+  abastecimentoAgua: '6'
+  tratamentoAguaDomicilio: '1'
+  formaEscoamentoBanheiro: '7'
+  destinoLixo: '1'
+  stDiponibilidadeEnergiaeletrica: 
+  stAnimaisNoDomicilio: 
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: d964ea18cee3ea47de408bafce33f9d2
+  numero: 
+  complemento: 
+  bairro: 4d84d8f6f62e5241766166a5baa5b034
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '34139'
+  uuid: 2f2ab3ba-911d-4430-b985-2b262a11aa45
+  uuidFichaOriginadora: af067dd9-79a6-4201-a72c-ad1fadbd0a50
+  nuMoradores: '3'
+  nuComodos: '6'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '2'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '1'
+  materialPredominanteParedesExtDomicilio: '2'
+  abastecimentoAgua: '1'
+  tratamentoAguaDomicilio: '6'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '2'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '0'
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 5f6ed0e8164a57354c42e07619988304ec3398a3a79fd6783b6d2a237577bfbd
+  numero: 744acf494e9e254c376dafa87a5fb82d
+  complemento: 
+  bairro: f95e0fdae12709be9521254b944a2f06
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '34216'
+  uuid: ac6c1e6f-652f-4e48-8929-fc4923c8a858
+  uuidFichaOriginadora: 2f2ab3ba-911d-4430-b985-2b262a11aa45
+  nuMoradores: '3'
+  nuComodos: '6'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '2'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '1'
+  materialPredominanteParedesExtDomicilio: '2'
+  abastecimentoAgua: '1'
+  tratamentoAguaDomicilio: '6'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '2'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '0'
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 5f6ed0e8164a57354c42e07619988304ec3398a3a79fd6783b6d2a237577bfbd
+  numero: 744acf494e9e254c376dafa87a5fb82d
+  complemento: 
+  bairro: f95e0fdae12709be9521254b944a2f06
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '96769'
+  uuid: c8e826b5-bd2d-4a68-91ab-618442257ebd
+  uuidFichaOriginadora: 81dcc9a0-19bc-42b2-9cc6-6a016979caff
+  nuMoradores: '3'
+  nuComodos: '4'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '1'
+  localizacao: '3'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '1'
+  abastecimentoAgua: '2'
+  tratamentoAguaDomicilio: '6'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '3'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '1'
+  quantosAnimaisNoDomicilio: '6'
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: e626ac1c1dd2cb2dab48ef266aa8f8db
+  numero: 1ebac174d9db19b8bd7717bd3ce56de0
+  complemento: 
+  bairro: e626ac1c1dd2cb2dab48ef266aa8f8db
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio:
+  - '128'
+  - '129'
+  doctor_id: 1
+- id: '32596'
+  uuid: d1c3fe0d-e614-4403-8de0-dbe92e70438f
+  uuidFichaOriginadora: fbb77a93-e6fb-484a-901b-705214c7cea5
+  nuMoradores: '1'
+  nuComodos: '6'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '57'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '2'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '1'
+  abastecimentoAgua: '2'
+  tratamentoAguaDomicilio: '2'
+  formaEscoamentoBanheiro: '2'
+  destinoLixo: '2'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '1'
+  quantosAnimaisNoDomicilio: '1'
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: bb782d3e79c2eb02a68d81b8ec57e4bde607df868efaf5b9b3c7f0c573d9afb0
+  numero: 
+  complemento: 
+  bairro: a4b62f5dc875113c590db1a5654bcb10
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio:
+  - '128'
+  doctor_id: 1
+- id: '2607'
+  uuid: edce590b-d129-4999-8366-ee5cd22960e1
+  uuidFichaOriginadora: 131aca15-25ff-4b92-bd7b-2723ae43d694
+  nuMoradores: '3'
+  nuComodos: '5'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '4'
+  localizacao: '3'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '2'
+  abastecimentoAgua: '2'
+  tratamentoAguaDomicilio: '6'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '3'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '1'
+  quantosAnimaisNoDomicilio: '21'
+  '0': '1'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 05a6b953b13dae1d57deeee49a817f33506e0cc21e4b46cab7d2e35c96e2df22
+  numero: 8c025da502fe78112152a559cb363e53
+  complemento: 
+  bairro: aec4068a8b4ab2891a63c48d73e7fb58
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio:
+  - '129'
+  - '131'
+  doctor_id: 1
+- id: '23038'
+  uuid: e4d132ff-4020-4619-a51b-74ab9030dc93
+  uuidFichaOriginadora: 7949eba9-7419-4207-a54d-e91674dbe9d0
+  nuMoradores: 
+  nuComodos: 
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '57'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '1'
+  tipoDomicilio: '5'
+  tipoAcessoDomicilio: '5'
+  materialPredominanteParedesExtDomicilio: '9'
+  abastecimentoAgua: '6'
+  tratamentoAguaDomicilio: '1'
+  formaEscoamentoBanheiro: '7'
+  destinoLixo: '1'
+  stDiponibilidadeEnergiaeletrica: 
+  stAnimaisNoDomicilio: 
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 7714e47d656dd868dd8fb51e162ab69de7e304942b6cf4422ccaf02dabd9421f
+  numero: 30a886ead8117db13bc629a6932ff729
+  complemento: 
+  bairro: a4b62f5dc875113c590db1a5654bcb10
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '22034'
+  uuid: e3b8f272-9a50-4ade-b841-44caf276c35e
+  uuidFichaOriginadora: d1e4d9cb-b8b8-4267-80b1-cb13fd9347c1
+  nuMoradores: 
+  nuComodos: 
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '1'
+  tipoDomicilio: '5'
+  tipoAcessoDomicilio: '5'
+  materialPredominanteParedesExtDomicilio: '9'
+  abastecimentoAgua: '6'
+  tratamentoAguaDomicilio: '1'
+  formaEscoamentoBanheiro: '7'
+  destinoLixo: '1'
+  stDiponibilidadeEnergiaeletrica: 
+  stAnimaisNoDomicilio: 
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: d964ea18cee3ea47de408bafce33f9d2
+  numero: 
+  complemento: 
+  bairro: 4d84d8f6f62e5241766166a5baa5b034
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '21533'
+  uuid: 4eec169c-d619-45a9-81b1-00ff011983f5
+  uuidFichaOriginadora: f1fcef00-1db7-4235-8c4a-5009844d9708
+  nuMoradores: 
+  nuComodos: 
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '1'
+  tipoDomicilio: '5'
+  tipoAcessoDomicilio: '5'
+  materialPredominanteParedesExtDomicilio: '9'
+  abastecimentoAgua: '6'
+  tratamentoAguaDomicilio: '1'
+  formaEscoamentoBanheiro: '7'
+  destinoLixo: '1'
+  stDiponibilidadeEnergiaeletrica: 
+  stAnimaisNoDomicilio: 
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: d964ea18cee3ea47de408bafce33f9d2
+  numero: 
+  complemento: 
+  bairro: 4d84d8f6f62e5241766166a5baa5b034
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '54565'
+  uuid: adf2e39a-3b1f-4c3e-84ae-b72c2253c5d9
+  uuidFichaOriginadora: adf2e39a-3b1f-4c3e-84ae-b72c2253c5d9
+  nuMoradores: '3'
+  nuComodos: '5'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '57'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '2'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '1'
+  materialPredominanteParedesExtDomicilio: '1'
+  abastecimentoAgua: '1'
+  tratamentoAguaDomicilio: '6'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '2'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '0'
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 93660fa9fd751d4df07a40bdb7c6feb42a16e900834941accf8005ff61101af7
+  numero: c36e1d7582d2d4028f9146c601c8871b
+  complemento: 
+  bairro: 8a3a75d05c2d8902111107f5bea664a9
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '83143'
+  uuid: 0735c6de-9572-42e7-b9f2-69f9060b48da
+  uuidFichaOriginadora: 0735c6de-9572-42e7-b9f2-69f9060b48da
+  nuMoradores: 
+  nuComodos: '5'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '4'
+  localizacao: '3'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '1'
+  abastecimentoAgua: '2'
+  tratamentoAguaDomicilio: '6'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '3'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '0'
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 102f56e30c69c7b939777e85d8db14a8
+  numero: 3c63935e9f275a9e0c9c8a312742041d
+  complemento: 
+  bairro: 7be834f2c278b69c89701b666012ca9f
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '34137'
+  uuid: c7d03003-b4ad-4cb7-9227-72716d17eae8
+  uuidFichaOriginadora: df73199f-fcff-4ef5-a44a-ccae8ad85d27
+  nuMoradores: '6'
+  nuComodos: '5'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '2'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '1'
+  materialPredominanteParedesExtDomicilio: '1'
+  abastecimentoAgua: '2'
+  tratamentoAguaDomicilio: '4'
+  formaEscoamentoBanheiro: '2'
+  destinoLixo: '2'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '1'
+  quantosAnimaisNoDomicilio: '3'
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 5f6ed0e8164a57354c42e07619988304ec3398a3a79fd6783b6d2a237577bfbd
+  numero: 3f7902f87a508cba0554a0a2e4b4b353
+  complemento: 
+  bairro: f95e0fdae12709be9521254b944a2f06
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio:
+  - '128'
+  - '129'
+  doctor_id: 1
+- id: '88800'
+  uuid: 7285bb8e-d46e-42b1-af1f-1b4fc006cb33
+  uuidFichaOriginadora: b5dd8ff8-121f-44da-8dc7-219641b90b7d
+  nuMoradores: '1'
+  nuComodos: '3'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '57'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '2'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '2'
+  abastecimentoAgua: '1'
+  tratamentoAguaDomicilio: '6'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '2'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '1'
+  quantosAnimaisNoDomicilio: '1'
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: eb9d5730e9266f04042b9067eac0e5648af8b30b9092654c622491ffcad5a157
+  numero: 45219fb8df6505928688eca442d6787c
+  complemento: 
+  bairro: b3387a10128193d1792bf7f188fe5583
+  telReferencial: 43afe2a7106910b5286a64e54ffd6f073774882133286acb650ca6c94cf9fa7f
+  telResidencial: 
+  animaisNoDomicilio:
+  - '128'
+  doctor_id: 1
+- id: '32599'
+  uuid: afb7ea17-15e3-4356-a70e-4ab4ab042000
+  uuidFichaOriginadora: f00f29b4-4fe4-40a2-a435-84d38f0a8972
+  nuMoradores: '1'
+  nuComodos: '6'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '57'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '2'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '1'
+  materialPredominanteParedesExtDomicilio: '1'
+  abastecimentoAgua: '1'
+  tratamentoAguaDomicilio: '6'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '2'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '0'
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: eca13600ba78a78b1c4c7e8bb4d45056
+  numero: 3c63935e9f275a9e0c9c8a312742041d
+  complemento: 
+  bairro: ae36abaf234e0dc0217b3c3598a5a1ec
+  telReferencial: 4dc1bf93c7c8111bb75cd62cc51a0d11ee190bb745f05e9b283462d944d59d86
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '17015'
+  uuid: 1d369a81-2630-4f4d-b8f5-f4e671537bee
+  uuidFichaOriginadora: df39bba1-0720-4f61-9cbc-173e8e7ce8ab
+  nuMoradores: 
+  nuComodos: 
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '6'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '1'
+  tipoDomicilio: '5'
+  tipoAcessoDomicilio: '5'
+  materialPredominanteParedesExtDomicilio: '9'
+  abastecimentoAgua: '6'
+  tratamentoAguaDomicilio: '1'
+  formaEscoamentoBanheiro: '7'
+  destinoLixo: '1'
+  stDiponibilidadeEnergiaeletrica: 
+  stAnimaisNoDomicilio: 
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 5c45002868722ce51508bf1bb01232959a3c9318f3b1f72d702f53630448d8de
+  numero: a276563ab1d9e4680e76fc1e01d71de7
+  complemento: 
+  bairro: c9edee1bd2fb1c0a322363ef6d565250
+  telReferencial: b9929b770994ba8d52f16d8043e1da33e8d2d8cd51a671f3a3cee7f1532f5e5f
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '17016'
+  uuid: 0dd3591a-c38d-40f2-8f8f-7b5445f338e9
+  uuidFichaOriginadora: 63436b3b-696b-4af1-91ac-ebb2265c56b9
+  nuMoradores: 
+  nuComodos: 
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '6'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '1'
+  tipoDomicilio: '5'
+  tipoAcessoDomicilio: '5'
+  materialPredominanteParedesExtDomicilio: '9'
+  abastecimentoAgua: '6'
+  tratamentoAguaDomicilio: '1'
+  formaEscoamentoBanheiro: '7'
+  destinoLixo: '1'
+  stDiponibilidadeEnergiaeletrica: 
+  stAnimaisNoDomicilio: 
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 5c45002868722ce51508bf1bb01232959a3c9318f3b1f72d702f53630448d8de
+  numero: a276563ab1d9e4680e76fc1e01d71de7
+  complemento: 
+  bairro: c9edee1bd2fb1c0a322363ef6d565250
+  telReferencial: b9929b770994ba8d52f16d8043e1da33e8d2d8cd51a671f3a3cee7f1532f5e5f
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '32598'
+  uuid: 238d053c-9cdb-4612-a590-742ff7bfa5a9
+  uuidFichaOriginadora: 27d17619-582e-4c84-afd8-78a7c817f735
+  nuMoradores: '4'
+  nuComodos: '6'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '2'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '1'
+  materialPredominanteParedesExtDomicilio: '1'
+  abastecimentoAgua: '5'
+  tratamentoAguaDomicilio: '6'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '2'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '0'
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 5f6ed0e8164a57354c42e07619988304ec3398a3a79fd6783b6d2a237577bfbd
+  numero: 
+  complemento: 
+  bairro: c44773a32c82c5fd6325a77c2b0c67f0
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '44070'
+  uuid: ac127d08-a94b-4e68-a52a-8ab300705dc9
+  uuidFichaOriginadora: 32bfd10a-6e26-424d-b126-6bd26a9fe17b
+  nuMoradores: '1'
+  nuComodos: '5'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '57'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '4'
+  localizacao: '3'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '1'
+  materialPredominanteParedesExtDomicilio: '2'
+  abastecimentoAgua: '1'
+  tratamentoAguaDomicilio: '2'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '2'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '0'
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 3eb24cd4624939c81c8e98c8fb1318fe4a83cd5ca413ca6942d05f7e21351f1a
+  numero: 4cffebbcbe4208bc34291d2302d2df82
+  complemento: 
+  bairro: 7d9704fec057702c604873a73b75e265
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '44071'
+  uuid: e0962ccc-aba3-4194-ace6-22409e379148
+  uuidFichaOriginadora: 913b3bd4-4636-4061-b424-ba2889c87cf0
+  nuMoradores: '1'
+  nuComodos: '6'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '57'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '3'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '1'
+  materialPredominanteParedesExtDomicilio: '2'
+  abastecimentoAgua: '1'
+  tratamentoAguaDomicilio: '2'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '2'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '0'
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 3eb24cd4624939c81c8e98c8fb1318fe4a83cd5ca413ca6942d05f7e21351f1a
+  numero: c4d44b47ea8f7af84e71788270a911e9
+  complemento: 
+  bairro: 7d9704fec057702c604873a73b75e265
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '22040'
+  uuid: 471fe23b-7efa-407d-a226-8868842a3cac
+  uuidFichaOriginadora: 0ac347dc-86f0-4a35-ad69-9b3eb16939e5
+  nuMoradores: 
+  nuComodos: 
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '6'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '1'
+  tipoDomicilio: '5'
+  tipoAcessoDomicilio: '5'
+  materialPredominanteParedesExtDomicilio: '9'
+  abastecimentoAgua: '6'
+  tratamentoAguaDomicilio: '1'
+  formaEscoamentoBanheiro: '7'
+  destinoLixo: '1'
+  stDiponibilidadeEnergiaeletrica: 
+  stAnimaisNoDomicilio: 
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 5c45002868722ce51508bf1bb01232959a3c9318f3b1f72d702f53630448d8de
+  numero: a276563ab1d9e4680e76fc1e01d71de7
+  complemento: 
+  bairro: c9edee1bd2fb1c0a322363ef6d565250
+  telReferencial: b9929b770994ba8d52f16d8043e1da33e8d2d8cd51a671f3a3cee7f1532f5e5f
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '21537'
+  uuid: 0ac347dc-86f0-4a35-ad69-9b3eb16939e5
+  uuidFichaOriginadora: 12cb98d3-6cc7-4c13-9678-5ac05966b58f
+  nuMoradores: 
+  nuComodos: 
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '6'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '1'
+  tipoDomicilio: '5'
+  tipoAcessoDomicilio: '5'
+  materialPredominanteParedesExtDomicilio: '9'
+  abastecimentoAgua: '6'
+  tratamentoAguaDomicilio: '1'
+  formaEscoamentoBanheiro: '7'
+  destinoLixo: '1'
+  stDiponibilidadeEnergiaeletrica: 
+  stAnimaisNoDomicilio: 
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 5c45002868722ce51508bf1bb01232959a3c9318f3b1f72d702f53630448d8de
+  numero: a276563ab1d9e4680e76fc1e01d71de7
+  complemento: 
+  bairro: c9edee1bd2fb1c0a322363ef6d565250
+  telReferencial: b9929b770994ba8d52f16d8043e1da33e8d2d8cd51a671f3a3cee7f1532f5e5f
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '9510'
+  uuid: f3a40e34-cfbf-4a56-b938-ca8572997f92
+  uuidFichaOriginadora: f3a40e34-cfbf-4a56-b938-ca8572997f92
+  nuMoradores: '5'
+  nuComodos: '5'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '4'
+  localizacao: '3'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '2'
+  abastecimentoAgua: '2'
+  tratamentoAguaDomicilio: '2'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '3'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '1'
+  quantosAnimaisNoDomicilio: '6'
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 8485316fbd2e885e05d7e855511f1d7d
+  numero: 
+  complemento: 
+  bairro: 4d84d8f6f62e5241766166a5baa5b034
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio:
+  - '128'
+  - '129'
+  doctor_id: 1
+- id: '34227'
+  uuid: fe12aa8f-9e54-4fb2-a43e-25beb316b85f
+  uuidFichaOriginadora: 525c8da7-be41-4074-9fb3-c2a6c2934729
+  nuMoradores: '2'
+  nuComodos: '4'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '57'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '2'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '2'
+  abastecimentoAgua: '2'
+  tratamentoAguaDomicilio: '6'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '2'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '0'
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: ef5cafd6f2d784ea60bd3373bca0149a
+  numero: 744acf494e9e254c376dafa87a5fb82d
+  complemento: 
+  bairro: 04ea37b1cf39bc9608e7c1573d5a62be
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '2796'
+  uuid: c219a226-f569-4adc-bce9-608c870423f9
+  uuidFichaOriginadora: c219a226-f569-4adc-bce9-608c870423f9
+  nuMoradores: '4'
+  nuComodos: '7'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '1'
+  localizacao: '3'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '2'
+  abastecimentoAgua: '2'
+  tratamentoAguaDomicilio: '2'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '3'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '1'
+  quantosAnimaisNoDomicilio: '17'
+  '0': '1'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 1521d62539f96ba01aa8e71b9a15ecae
+  numero: 
+  complemento: 
+  bairro: 4d84d8f6f62e5241766166a5baa5b034
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio:
+  - '128'
+  - '129'
+  - '131'
+  doctor_id: 1
+- id: '22042'
+  uuid: 3fba8080-3eba-4386-8a88-a08adf3c2a2e
+  uuidFichaOriginadora: d2c69bf6-03ac-46c6-b501-acd287578372
+  nuMoradores: 
+  nuComodos: 
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '1'
+  tipoDomicilio: '5'
+  tipoAcessoDomicilio: '5'
+  materialPredominanteParedesExtDomicilio: '9'
+  abastecimentoAgua: '6'
+  tratamentoAguaDomicilio: '1'
+  formaEscoamentoBanheiro: '7'
+  destinoLixo: '1'
+  stDiponibilidadeEnergiaeletrica: 
+  stAnimaisNoDomicilio: 
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 06f5adc3181114d28e1ef1acc6c6d1cc
+  numero: 1ebac174d9db19b8bd7717bd3ce56de0
+  complemento: 
+  bairro: aec4068a8b4ab2891a63c48d73e7fb58
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '13595'
+  uuid: f84d459a-c46e-48a4-bbd4-a33bf2696866
+  uuidFichaOriginadora: e1805d6a-e8d1-499c-97a3-7a2d6e470204
+  nuMoradores: '1'
+  nuComodos: '5'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '248'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '2'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '1'
+  materialPredominanteParedesExtDomicilio: '1'
+  abastecimentoAgua: '1'
+  tratamentoAguaDomicilio: '2'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '2'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '0'
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 86e50c7cba4fd6a59f5d42f846b1b323
+  numero: 
+  complemento: 657fe0fa2aef22ca5a2137c025aae12ca034bd58ceacc7a15a61f4e715ef9968
+  bairro: ae36abaf234e0dc0217b3c3598a5a1ec
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '42121'
+  uuid: 4b9df90e-f4ea-441f-9e40-fa2f0f95d262
+  uuidFichaOriginadora: f8154cbc-ec02-48df-a605-75b81668799f
+  nuMoradores: '3'
+  nuComodos: '5'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '57'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '2'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '1'
+  abastecimentoAgua: '5'
+  tratamentoAguaDomicilio: '6'
+  formaEscoamentoBanheiro: '2'
+  destinoLixo: '2'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '0'
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: bb782d3e79c2eb02a68d81b8ec57e4bde607df868efaf5b9b3c7f0c573d9afb0
+  numero: 
+  complemento: 
+  bairro: e6528899fb26b6e809cfb6632bfa2c0a
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '11659'
+  uuid: 27048909-0ea7-4d69-8959-0d410b841586
+  uuidFichaOriginadora: 5c59ddc8-acfc-4c70-9771-d01d1408f02b
+  nuMoradores: '3'
+  nuComodos: '7'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '57'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '2'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '1'
+  materialPredominanteParedesExtDomicilio: '1'
+  abastecimentoAgua: '1'
+  tratamentoAguaDomicilio: '4'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '2'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '1'
+  quantosAnimaisNoDomicilio: '3'
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 56cc7fa0191a3aa8a7d7210c714483dc
+  numero: c4d44b47ea8f7af84e71788270a911e9
+  complemento: 
+  bairro: ae36abaf234e0dc0217b3c3598a5a1ec
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio:
+  - '129'
+  - '130'
+  doctor_id: 1
+- id: '11660'
+  uuid: c4ee7a2f-31e3-41e7-a1ef-4b6276fa4a2b
+  uuidFichaOriginadora: ed372935-808f-412a-9a5e-2cd9a7a55ceb
+  nuMoradores: '3'
+  nuComodos: '6'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '71'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '2'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '1'
+  abastecimentoAgua: '1'
+  tratamentoAguaDomicilio: '3'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '2'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '1'
+  quantosAnimaisNoDomicilio: '2'
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 498076ff1fd4e7b69a61c00d20bce6c0
+  numero: c86e7f4acaa932dae6f9d18be788ef9c
+  complemento: 0b7db0448f9ee1d254219af977394df75ffaddef64c5bae3b08f0dd17ac8027d
+  bairro: ae36abaf234e0dc0217b3c3598a5a1ec
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio:
+  - '128'
+  - '129'
+  doctor_id: 1
+- id: '11661'
+  uuid: 2e48af34-f8bd-4e18-bab3-e498d0970fa6
+  uuidFichaOriginadora: ebef8aac-f99f-4955-8f1c-6f217c3f0394
+  nuMoradores: '2'
+  nuComodos: '9'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '57'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '2'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '1'
+  materialPredominanteParedesExtDomicilio: '1'
+  abastecimentoAgua: '1'
+  tratamentoAguaDomicilio: '2'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '2'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '0'
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 56cc7fa0191a3aa8a7d7210c714483dc
+  numero: c8f4ac5e534b24638bcab2f968200050
+  complemento: 
+  bairro: ae36abaf234e0dc0217b3c3598a5a1ec
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '21539'
+  uuid: 1d8a1342-f2c0-4bff-a1ad-669262d7a56e
+  uuidFichaOriginadora: 6046aabc-991f-424a-9e27-f1bb58e96436
+  nuMoradores: 
+  nuComodos: 
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '1'
+  tipoDomicilio: '5'
+  tipoAcessoDomicilio: '5'
+  materialPredominanteParedesExtDomicilio: '9'
+  abastecimentoAgua: '6'
+  tratamentoAguaDomicilio: '1'
+  formaEscoamentoBanheiro: '7'
+  destinoLixo: '1'
+  stDiponibilidadeEnergiaeletrica: 
+  stAnimaisNoDomicilio: 
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 06f5adc3181114d28e1ef1acc6c6d1cc
+  numero: 1ebac174d9db19b8bd7717bd3ce56de0
+  complemento: 
+  bairro: aec4068a8b4ab2891a63c48d73e7fb58
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '21538'
+  uuid: 12cb98d3-6cc7-4c13-9678-5ac05966b58f
+  uuidFichaOriginadora: c20e3a73-758e-4e98-8747-d823d7a96853
+  nuMoradores: 
+  nuComodos: 
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '6'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '1'
+  tipoDomicilio: '5'
+  tipoAcessoDomicilio: '5'
+  materialPredominanteParedesExtDomicilio: '9'
+  abastecimentoAgua: '6'
+  tratamentoAguaDomicilio: '1'
+  formaEscoamentoBanheiro: '7'
+  destinoLixo: '1'
+  stDiponibilidadeEnergiaeletrica: 
+  stAnimaisNoDomicilio: 
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 5c45002868722ce51508bf1bb01232959a3c9318f3b1f72d702f53630448d8de
+  numero: a276563ab1d9e4680e76fc1e01d71de7
+  complemento: 
+  bairro: c9edee1bd2fb1c0a322363ef6d565250
+  telReferencial: b9929b770994ba8d52f16d8043e1da33e8d2d8cd51a671f3a3cee7f1532f5e5f
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '34169'
+  uuid: 827f2bec-4469-451d-b67a-63a6c88ef6de
+  uuidFichaOriginadora: eda8ebdb-64e5-4f79-86b7-a9546b1e8f80
+  nuMoradores: '2'
+  nuComodos: '4'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '1'
+  localizacao: '3'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '2'
+  abastecimentoAgua: '2'
+  tratamentoAguaDomicilio: '6'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '3'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '0'
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: d9f7a1f8eb43292770e55268e77a2e50873eeb6f53b9d1bb1ea9d2e1251a0e9d
+  numero: e7d194e1f8de025f4deef4ecedaba3f5
+  complemento: 
+  bairro: 8550466e07ecb09f9200a4914ea79905
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '111221'
+  uuid: 92197d17-62f3-44aa-a8b0-01e50a1950ef
+  uuidFichaOriginadora: bbc6483a-b11b-4472-88fb-336f8696f33a
+  nuMoradores: '4'
+  nuComodos: '4'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '1'
+  localizacao: '3'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '6'
+  abastecimentoAgua: '2'
+  tratamentoAguaDomicilio: '2'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '3'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '0'
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: cf3303bfbaf08147e42d640c43fc5fa1
+  numero: c0defbbb326a352b9a1acd79bae73343
+  complemento: 
+  bairro: aec4068a8b4ab2891a63c48d73e7fb58
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '16512'
+  uuid: 1a05d95a-2ac9-466b-92cb-f4c66864fece
+  uuidFichaOriginadora: 1606e293-23fd-4208-8a10-a7955256908d
+  nuMoradores: 
+  nuComodos: 
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '57'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '1'
+  tipoDomicilio: '5'
+  tipoAcessoDomicilio: '5'
+  materialPredominanteParedesExtDomicilio: '9'
+  abastecimentoAgua: '6'
+  tratamentoAguaDomicilio: '1'
+  formaEscoamentoBanheiro: '7'
+  destinoLixo: '1'
+  stDiponibilidadeEnergiaeletrica: 
+  stAnimaisNoDomicilio: 
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 7714e47d656dd868dd8fb51e162ab69de7e304942b6cf4422ccaf02dabd9421f
+  numero: 30a886ead8117db13bc629a6932ff729
+  complemento: 
+  bairro: a4b62f5dc875113c590db1a5654bcb10
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '2790'
+  uuid: 1c954e05-ee6a-4aa6-a3b6-af8a8334416e
+  uuidFichaOriginadora: 1c954e05-ee6a-4aa6-a3b6-af8a8334416e
+  nuMoradores: '4'
+  nuComodos: '5'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '1'
+  localizacao: '3'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '4'
+  abastecimentoAgua: '2'
+  tratamentoAguaDomicilio: '2'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '3'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '1'
+  quantosAnimaisNoDomicilio: '9'
+  '0': '1'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 1521d62539f96ba01aa8e71b9a15ecae
+  numero: 
+  complemento: 
+  bairro: 4d84d8f6f62e5241766166a5baa5b034
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio:
+  - '128'
+  - '129'
+  - '131'
+  doctor_id: 1
+- id: '22046'
+  uuid: 7300e025-ce62-430d-8ece-310a384b32f5
+  uuidFichaOriginadora: 1a05d95a-2ac9-466b-92cb-f4c66864fece
+  nuMoradores: 
+  nuComodos: 
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '57'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '1'
+  tipoDomicilio: '5'
+  tipoAcessoDomicilio: '5'
+  materialPredominanteParedesExtDomicilio: '9'
+  abastecimentoAgua: '6'
+  tratamentoAguaDomicilio: '1'
+  formaEscoamentoBanheiro: '7'
+  destinoLixo: '1'
+  stDiponibilidadeEnergiaeletrica: 
+  stAnimaisNoDomicilio: 
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 7714e47d656dd868dd8fb51e162ab69de7e304942b6cf4422ccaf02dabd9421f
+  numero: 30a886ead8117db13bc629a6932ff729
+  complemento: 
+  bairro: a4b62f5dc875113c590db1a5654bcb10
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '22047'
+  uuid: d552a2eb-bfaf-41ca-a7bc-aefdd3528758
+  uuidFichaOriginadora: 7300e025-ce62-430d-8ece-310a384b32f5
+  nuMoradores: 
+  nuComodos: 
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '57'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '1'
+  tipoDomicilio: '5'
+  tipoAcessoDomicilio: '5'
+  materialPredominanteParedesExtDomicilio: '9'
+  abastecimentoAgua: '6'
+  tratamentoAguaDomicilio: '1'
+  formaEscoamentoBanheiro: '7'
+  destinoLixo: '1'
+  stDiponibilidadeEnergiaeletrica: 
+  stAnimaisNoDomicilio: 
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 7714e47d656dd868dd8fb51e162ab69de7e304942b6cf4422ccaf02dabd9421f
+  numero: 30a886ead8117db13bc629a6932ff729
+  complemento: 
+  bairro: a4b62f5dc875113c590db1a5654bcb10
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '43385'
+  uuid: d094dca4-ae66-475d-88cf-3fed8e986922
+  uuidFichaOriginadora: 3c7c8036-f233-4517-a6c7-70e9cbc51c76
+  nuMoradores: '1'
+  nuComodos: '4'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '1'
+  localizacao: '3'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '4'
+  abastecimentoAgua: '2'
+  tratamentoAguaDomicilio: '6'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '3'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '0'
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 15000ff9278119c922a755462c76f27c
+  numero: 2999328c20dd894a10768c0ae76e32f6
+  complemento: 
+  bairro: 8550466e07ecb09f9200a4914ea79905
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '46728'
+  uuid: 764ba6b7-cb8b-49f7-9f1e-9126465d2d78
+  uuidFichaOriginadora: 764ba6b7-cb8b-49f7-9f1e-9126465d2d78
+  nuMoradores: '1'
+  nuComodos: '5'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '1'
+  localizacao: '3'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '2'
+  abastecimentoAgua: '2'
+  tratamentoAguaDomicilio: '6'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '3'
+  stDiponibilidadeEnergiaeletrica: '0'
+  stAnimaisNoDomicilio: '1'
+  quantosAnimaisNoDomicilio: '2'
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: b235f36269800b712883b10b33ee424c0d79ea61f0661ed486854d865d0939b2
+  numero: 9c866ef005d79c00f5d7ef3156afa3be
+  complemento: 
+  bairro: ba8ddfebb8255d455afbaa812e93ced000d7e55d9286a8198fe6c5b7a5ea422d
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio:
+  - '129'
+  doctor_id: 1
+- id: '36566'
+  uuid: 7d0efe6c-4b38-4bbc-bfe0-08bbf1700845
+  uuidFichaOriginadora: 035cadc0-5333-4e0e-ba04-e0802b0009d7
+  nuMoradores: '4'
+  nuComodos: '5'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '1'
+  localizacao: '3'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '4'
+  abastecimentoAgua: '1'
+  tratamentoAguaDomicilio: '2'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '3'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '1'
+  quantosAnimaisNoDomicilio: '2'
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 3ce3ce944dba7177dc96e1b9461768ad
+  numero: 
+  complemento: 
+  bairro: e5d9d3fcf4f4a26277da9e9efa67e700
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio:
+  - '129'
+  doctor_id: 1
+- id: '2956'
+  uuid: fac11eba-c233-4fdd-8764-1ea629ddf108
+  uuidFichaOriginadora: 06f47dee-cb14-4a1a-877d-95a9efddf8a2
+  nuMoradores: '2'
+  nuComodos: '5'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '57'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '9'
+  localizacao: '2'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '2'
+  abastecimentoAgua: '1'
+  tratamentoAguaDomicilio: '2'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '2'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '0'
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 17467d73168eac4d90b453c1035f0dd76e6ad3ce51a844241426a261989d3121
+  numero: 48eea68d6e1b97702e348ce3cd688457
+  complemento: 
+  bairro: d74f27d65a4f9a4d33e7d0db6dc567be
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1
+- id: '2846'
+  uuid: 3af016d5-cc74-42fd-9775-5016055666df
+  uuidFichaOriginadora: 9cc01c20-f1ca-40dd-b795-bd145a3c9137
+  nuMoradores: '2'
+  nuComodos: '5'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '1'
+  localizacao: '3'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '2'
+  abastecimentoAgua: '2'
+  tratamentoAguaDomicilio: '2'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '3'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '1'
+  quantosAnimaisNoDomicilio: '28'
+  '0': '1'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: d964ea18cee3ea47de408bafce33f9d2
+  numero: 
+  complemento: 
+  bairro: 4d84d8f6f62e5241766166a5baa5b034
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio:
+  - '128'
+  - '129'
+  - '131'
+  doctor_id: 1
+- id: '2847'
+  uuid: 00fd2b2d-0d63-4389-808b-f961b7d456de
+  uuidFichaOriginadora: 67be04fe-940b-49c6-b82b-6faea07595e8
+  nuMoradores: '3'
+  nuComodos: '3'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '1'
+  localizacao: '3'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '7'
+  abastecimentoAgua: '2'
+  tratamentoAguaDomicilio: '2'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '3'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '1'
+  quantosAnimaisNoDomicilio: '79'
+  '0': '1'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: d964ea18cee3ea47de408bafce33f9d2
+  numero: 
+  complemento: 
+  bairro: 4d84d8f6f62e5241766166a5baa5b034
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio:
+  - '128'
+  - '129'
+  - '130'
+  - '131'
+  doctor_id: 1
+- id: '2851'
+  uuid: a6731573-bafe-439b-bea7-856074d6ae61
+  uuidFichaOriginadora: 30c936f6-8211-4e10-ac74-ab06ff4f32ab
+  nuMoradores: '1'
+  nuComodos: '1'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '1'
+  localizacao: '3'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '4'
+  abastecimentoAgua: '2'
+  tratamentoAguaDomicilio: '2'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '3'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '1'
+  quantosAnimaisNoDomicilio: '11'
+  '0': '1'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 1521d62539f96ba01aa8e71b9a15ecae
+  numero: 
+  complemento: 
+  bairro: 4d84d8f6f62e5241766166a5baa5b034
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio:
+  - '131'
+  doctor_id: 1
+- id: '2852'
+  uuid: 7349eea3-9c36-4c8c-918c-811d18214759
+  uuidFichaOriginadora: 83bf1e2a-9bfb-4b18-846c-83aa33b05654
+  nuMoradores: '2'
+  nuComodos: 
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '1'
+  localizacao: '3'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '4'
+  abastecimentoAgua: '2'
+  tratamentoAguaDomicilio: '2'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '3'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '1'
+  quantosAnimaisNoDomicilio: '6'
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 1521d62539f96ba01aa8e71b9a15ecae
+  numero: 
+  complemento: 
+  bairro: 4d84d8f6f62e5241766166a5baa5b034
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio:
+  - '128'
+  - '129'
+  doctor_id: 1
+- id: '43388'
+  uuid: 852fc670-df83-4f5a-bfff-6c4db8df271c
+  uuidFichaOriginadora: a00bff57-fa58-4e5c-8176-cc899a752de4
+  nuMoradores: '3'
+  nuComodos: '5'
+  statusTermoRecusaCadatroDomiciliarAtencaoBasica: '0'
+  tpCdsOrigem: '3'
+  ! '': 
+  tipoLogradouroNumeroDne: '74'
+  codigoIbgeMunicipio: '27'
+  situacaoMoradiaPosseTerra: '1'
+  localizacao: '3'
+  tipoDomicilio: '1'
+  tipoAcessoDomicilio: '2'
+  materialPredominanteParedesExtDomicilio: '4'
+  abastecimentoAgua: '2'
+  tratamentoAguaDomicilio: '6'
+  formaEscoamentoBanheiro: '3'
+  destinoLixo: '3'
+  stDiponibilidadeEnergiaeletrica: '1'
+  stAnimaisNoDomicilio: '0'
+  quantosAnimaisNoDomicilio: 
+  '0': '0'
+  cep: 46f2abbf162fb4a5f44b85beddb1968d
+  nomeLogradouro: 15000ff9278119c922a755462c76f27c
+  numero: 495e85c6c6bc1ce07881a43d82ccc1fa
+  complemento: 
+  bairro: 8550466e07ecb09f9200a4914ea79905
+  telReferencial: 
+  telResidencial: 
+  animaisNoDomicilio: []
+  doctor_id: 1

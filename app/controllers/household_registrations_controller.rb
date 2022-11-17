@@ -4,7 +4,7 @@ class HouseholdRegistrationsController < ApplicationController
 
   # GET /household_registrations or /household_registrations.json
   def index
-    @household_registrations = current_user.doctor.household_registrations
+    @household_registrations = current_user.doctor.household_registrations.page(params[:page])
   end
 
   # GET /household_registrations/1 or /household_registrations/1.json

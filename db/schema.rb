@@ -124,6 +124,8 @@ ActiveRecord::Schema.define(version: 2022_11_05_135627) do
   end
 
   create_table "doctors", force: :cascade do |t|
+    t.string "name", null: false
+    t.boolean "checked_exists", default: false
     t.string "profissionalCNS", limit: 15, null: false
     t.string "cboCodigo_2002", null: false
     t.string "cnes", limit: 7, null: false

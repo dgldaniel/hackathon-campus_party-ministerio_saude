@@ -42,6 +42,8 @@
       </div>
     <% end %>
     <br>
+    <%= paginate @household_registrations %>
+    <br>
     <%= link_to 'New Household Registration', new_household_registration_path, id: "addRow", class: 'btn btn-primary mb-3' %>
   </div>
 </div>

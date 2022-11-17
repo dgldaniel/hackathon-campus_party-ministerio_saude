@@ -45,6 +45,8 @@
         </div>
       <% end %>
       <br>
+      <%= paginate @individual_registrations %>
+      <br>
       <%= link_to 'Novo Cadastro Individual', new_individual_registration_path, id: "addRow", class: 'btn btn-primary mb-3' %>
     </div>
   </div>

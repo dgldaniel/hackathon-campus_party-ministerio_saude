@@ -46,7 +46,20 @@
       professional:
         one: Profissional
         others: Profissionais
+      doctor:
+        one: Doutor
+        others: Doutores
+      user:
+        one: Usuãrio
+        others: Usuários
     attributes:
+      doctor:
+        profissionalCNS: Profissional CNS
+        cboCodigo_2002: Ocupação
+        cnes: CNES
+        ineDadoSerializado: INE
+        dataAtendimento: Data de Atendimento
+        codigoIbgeMunicipio: Município
       patient:
         email: E-mail
         full_name: Nome Completo

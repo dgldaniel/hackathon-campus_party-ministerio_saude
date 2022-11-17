@@ -34,6 +34,8 @@ gem 'groupdate'
 
 gem 'twilio-ruby', '~> 5.67.3'
 
+gem 'image_processing', '~> 1.2'
+
 # Dynamic nested forms using jQuery made easy;
 gem "cocoon"
 

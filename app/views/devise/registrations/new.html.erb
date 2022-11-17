@@ -1,46 +1,51 @@
 <div class="card">
   <div class="card-header pb-0">
-    <h5>Default Form Layout</h5>
+    <h5>Cadastrar Profissional</h5>
   </div>
   <div class="card-body">
-    <%= form_for(resource, as: resource_name, url: registration_path(resource_name),  html: { class: 'theme-form' }) do |f| %>
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name),  html: { id: 'doctor_form', class: 'theme-form' }) do |f| %>
       <%= render "devise/shared/error_messages", resource: resource %>
       <%= f.fields_for :doctor do |doctor_form| %>
         <div class="mb-3">
-          <%= doctor_form.label :profissionalCNS, class: 'col-form-label pt-0' %>
-          <%= doctor_form.text_field :profissionalCNS, autofocus: true, class: 'form-control' %>
+          <%= doctor_form.label :avatar %>
+          <%= doctor_form.file_field :avatar, class: 'form-control btn-pill', accept: "image/*" %>
         </div>
         <div class="mb-3">
-          <%= doctor_form.label :cboCodigo_2002 , class: 'col-form-label pt-0' %>
-          <%= doctor_form.text_field :cboCodigo_2002, class: 'form-control' %>
+          <%= doctor_form.label :name %>
+          <%= doctor_form.text_field :name, class: 'form-control btn-pill' %>
         </div>
         <div class="mb-3">
-          <%= doctor_form.label :cnes , class: 'col-form-label pt-0' %>
-          <%= doctor_form.text_field :cnes, class: 'form-control' %>
+          <%= doctor_form.label :profissionalCNS %>
+          <%= doctor_form.text_field :profissionalCNS, class: 'form-control btn-pill' %>
         </div>
         <div class="mb-3">
-          <%= doctor_form.label :ine , class: 'col-form-label pt-0' %>
-          <%= doctor_form.text_field :ine, class: 'form-control' %>
+          <%= doctor_form.label :cboCodigo_2002 %>
+          <%= doctor_form.select :cboCodigo_2002, @options[:cbo], { prompt: "Selecione CBO" }, { class: 'js-example-basic-single col-sm-12' } %>
         </div>
         <div class="mb-3">
-          <%= doctor_form.label :codigoIbgeMunicipio , class: 'col-form-label pt-0' %>
-          <%= doctor_form.text_field :codigoIbgeMunicipio, class: 'form-control' %>
+          <%= doctor_form.label :cnes %>
+          <%= doctor_form.text_field :cnes, class: 'form-control btn-pill' %>
+        </div>
+        <div class="mb-3">
+          <%= doctor_form.label :ine %>
+          <%= doctor_form.text_field :ine, class: 'form-control btn-pill' %>
+        </div>
+        <div class="mb-3">
+          <%= doctor_form.label :codigoIbgeMunicipio %>
+          <%= doctor_form.select :codigoIbgeMunicipio, @options[:municipios], { prompt: "Selecione Munícipio" }, { class: 'js-example-basic-single col-sm-12' } %>
         </div>
       <% end %>
       <div class="mb-3">
-        <%= f.label :email, class: 'col-form-label pt-0' %>
-        <%= f.email_field :email, class: 'form-control' %>
+        <%= f.label :email %>
+        <%= f.email_field :email, class: 'form-control btn-pill' %>
       </div>
       <div class="mb-3">
-        <%= f.label :password, class: 'col-form-label pt-0' %>
-        <% if @minimum_password_length %>
-          <em>(<%= @minimum_password_length %> characters minimum)</em>
-        <% end %><br />
-        <%= f.password_field :password, autocomplete: "new-password", class: 'form-control' %>
+        <%= f.label :password %>
+        <%= f.password_field :password, autocomplete: "new-password", class: 'form-control btn-pill' %>
       </div>
       <div class="mb-3">
-        <%= f.label :password_confirmation, class: 'col-form-label pt-0'%>
-        <%= f.password_field :password_confirmation, autocomplete: "new-password", class: 'form-control' %>
+        <%= f.label :password_confirmation %>
+        <%= f.password_field :password_confirmation, autocomplete: "new-password", class: 'form-control btn-pill' %>
       </div>
       <div class="card-footer">
         <%= f.submit "Sign up", class: "btn btn-primary" %>

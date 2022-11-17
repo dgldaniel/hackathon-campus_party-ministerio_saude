@@ -6,17 +6,21 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
   # GET /resource/sign_up
   def new
+    @options = Doctor.build_options
+
     build_resource({})
     resource.build_doctor
     respond_with(resource)
   end
 
   # POST /resource
-  # def create
-  #   build_resource({})
-  #   resource.build_doctor
-  #   respond_with self.resource
-  # end
+  def create
+    @options = Doctor.build_options
+
+    build_resource({})
+    resource.build_doctor
+    respond_with(resource)
+  end
 
   # GET /resource/edit
   # def edit
@@ -52,7 +56,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
         :email,
         :password,
         :password_confirmation,
-        doctor_attributes: %i[profissionalCNS cboCodigo_2002 cnes ine codigoIbgeMunicipio],
+        doctor_attributes: %i[avatar name checked_exists profissionalCNS cboCodigo_2002 cnes ine codigoIbgeMunicipio],
       ]
     )
   end
