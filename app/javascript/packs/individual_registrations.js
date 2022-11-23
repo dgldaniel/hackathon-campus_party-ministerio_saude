@@ -4,6 +4,9 @@ import moment from 'moment';
 import 'jquery-validation';
 // import 'jquery-validation/src/localization/messages_pt_BR';
 
+import 'typeahead/handlebbars';
+import 'typeahead/typeahead.bundle';
+
 document.addEventListener('DOMContentLoaded', () => {
   const currentInputs = Array.from(document.querySelectorAll('input[id^="individual_registration"]'));
 

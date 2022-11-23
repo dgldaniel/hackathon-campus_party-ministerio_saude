@@ -2,9 +2,6 @@
 require 'sidekiq/web'
 
 Rails.application.routes.draw do
-  resources :individual_call_masters
-  resources :families
-  resources :household_registrations
   root to: 'pages#index'
 
   mount Sidekiq::Web => '/sidekiq'
@@ -26,6 +23,9 @@ Rails.application.routes.draw do
   resources :doctors
   resources :reports
   resources :addresses
+  resources :individual_call_masters
+  resources :families
+  resources :household_registrations
 
   devise_for :users,
              controllers: {
@@ -42,4 +42,6 @@ Rails.application.routes.draw do
 
   get 'upload_esus_files' => 'pages#upload_esus_files'
   post 'handle_upload_esus_files' => 'pages#handle_upload_esus_files'
+
+  get 'search/individual_registrations'
 end
